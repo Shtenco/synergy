@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Rebuild registry/repos.json from GitHub repositories visible to gh CLI."""
+"""Rebuild the complete Shtenco portfolio registry for the SYNERGY umbrella.
+
+Important: ecosystem membership is NOT inferred from the repository name.
+Every repository owned by Shtenco is inventoried. Classification is enriched
+by M0/M1 audit metadata in registry/master_graph.json.
+"""
 
 import json
 import subprocess
@@ -7,54 +12,49 @@ from pathlib import Path
 
 OWNER = "Shtenco"
 OUT = Path("registry/repos.json")
-MATCH = ("synergy", "sinergy", "synegy")
-
-def domain(name: str) -> str:
-    n = name.lower()
-    if any(x in n for x in ("agi","nexus","agent","company","coder","olga")):
-        return "agi-agentic"
-    if any(x in n for x in ("midas","trade","trader","quant","risk","market","relative","pump","algotrading")):
-        return "trading-quant"
-    if any(x in n for x in ("financial","finance","pay","usds","qe","money","budget","cashero","economy")):
-        return "finance-economy"
-    if any(x in n for x in ("chain","blockchain","blochain","metachain","post_quantum","radio")):
-        return "blockchain-protocol"
-    if any(x in n for x in ("compress","linux","meta_os","motherboard","xpu","computing","matrix")):
-        return "compute-os"
-    if any(x in n for x in ("app","messenger","terminal")):
-        return "apps-interface"
-    if any(x in n for x in ("search","lead")):
-        return "search-growth"
-    return "research-other"
+GRAPH = Path("registry/master_graph.json")
 
 cmd = [
-    "gh","repo","list",OWNER,
-    "--limit","1000",
-    "--json","name,nameWithOwner,visibility,isArchived,url"
+    "gh", "repo", "list", OWNER,
+    "--limit", "1000",
+    "--json", "name,nameWithOwner,visibility,isArchived,url,defaultBranchRef"
 ]
 repos = json.loads(subprocess.check_output(cmd, text=True))
-all_count = len(repos)
-synergy = [r for r in repos if any(k in r["name"].lower() for k in MATCH)]
+
+graph_by_repo = {}
+if GRAPH.exists():
+    graph = json.loads(GRAPH.read_text(encoding="utf-8"))
+    graph_by_repo = {n["repository"]: n for n in graph.get("nodes", [])}
+
+items = []
+for r in sorted(repos, key=lambda x: x["name"].lower()):
+    full = r["nameWithOwner"]
+    g = graph_by_repo.get(full, {})
+    items.append({
+        "name": r["name"],
+        "full_name": full,
+        "visibility": r["visibility"].lower(),
+        "archived": r["isArchived"],
+        "url": r["url"],
+        "default_branch": (r.get("defaultBranchRef") or {}).get("name"),
+        "ecosystem_relation": g.get("ecosystem_relation", "unclassified"),
+        "category": g.get("domain", "unclassified"),
+        "node_type": g.get("node_type", "unclassified"),
+        "maturity": g.get("maturity", "UNCLASSIFIED"),
+        "capabilities": g.get("capabilities", []),
+        "dependencies": g.get("dependencies", []),
+        "risks": g.get("risks", []),
+    })
 
 payload = {
-    "schema_version":"1.0.0",
-    "generated_from":f"GitHub account {OWNER}",
-    "umbrella_repository":f"{OWNER}/synergy",
-    "discovery_rule":"repository name contains synergy, sinergy, or synegy",
-    "total_account_repositories":all_count,
-    "synergy_repository_count":len(synergy),
-    "repositories":[
-        {
-            "name":r["name"],
-            "full_name":r["nameWithOwner"],
-            "visibility":r["visibility"].lower(),
-            "archived":r["isArchived"],
-            "url":r["url"],
-            "category":domain(r["name"]),
-        }
-        for r in sorted(synergy, key=lambda x: x["name"].lower())
-    ],
+    "schema_version": "2.0.0",
+    "generated_from": "Full GitHub inventory + M0/M1 graph enrichment",
+    "umbrella_repository": f"{OWNER}/synergy",
+    "discovery_rule": "ALL repositories owned by Shtenco are inventoried; classification is content/graph based.",
+    "total_account_repositories": len(items),
+    "inventoried_repositories": len(items),
+    "repositories": items,
 }
 OUT.parent.mkdir(parents=True, exist_ok=True)
-OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
-print(f"Wrote {len(synergy)} SYNERGY repositories to {OUT}")
+OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+print(f"Wrote {len(items)} repositories to {OUT}")
