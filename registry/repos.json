@@ -1,0 +1,554 @@
+{
+  "schema_version": "1.0.0",
+  "generated_from": "GitHub account Shtenco",
+  "umbrella_repository": "Shtenco/synergy",
+  "discovery_rule": "repository name contains synergy, sinergy, or synegy",
+  "total_account_repositories": 81,
+  "synergy_repository_count": 68,
+  "repositories": [
+    {
+      "name": "synergy_midas_ai_trading_system",
+      "full_name": "Shtenco/synergy_midas_ai_trading_system",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_midas_ai_trading_system",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_turbo_linux",
+      "full_name": "Shtenco/synergy_turbo_linux",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_turbo_linux",
+      "category": "compute-os"
+    },
+    {
+      "name": "synergy_agi_olga",
+      "full_name": "Shtenco/synergy_agi_olga",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_agi_olga",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "synergy_ai_coder",
+      "full_name": "Shtenco/synergy_ai_coder",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_coder",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "synergy_ai_trade_terminal",
+      "full_name": "Shtenco/synergy_ai_trade_terminal",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_trade_terminal",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_cashero",
+      "full_name": "Shtenco/synergy_cashero",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_cashero",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_ai_language",
+      "full_name": "Shtenco/synergy_ai_language",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_language",
+      "category": "research-other"
+    },
+    {
+      "name": "sinergy_super_app",
+      "full_name": "Shtenco/sinergy_super_app",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/sinergy_super_app",
+      "category": "apps-interface"
+    },
+    {
+      "name": "synergy_ai_financial_system",
+      "full_name": "Shtenco/synergy_ai_financial_system",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_financial_system",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_algotrading_graph_system",
+      "full_name": "Shtenco/synergy_algotrading_graph_system",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_algotrading_graph_system",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synegy_ai_compress",
+      "full_name": "Shtenco/synegy_ai_compress",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synegy_ai_compress",
+      "category": "compute-os"
+    },
+    {
+      "name": "synergy_pay_system",
+      "full_name": "Shtenco/synergy_pay_system",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_pay_system",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_ai_blockchain",
+      "full_name": "Shtenco/synergy_ai_blockchain",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_blockchain",
+      "category": "blockchain-protocol"
+    },
+    {
+      "name": "synergy_chain",
+      "full_name": "Shtenco/synergy_chain",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_chain",
+      "category": "blockchain-protocol"
+    },
+    {
+      "name": "synergychain.github.io",
+      "full_name": "Shtenco/synergychain.github.io",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergychain.github.io",
+      "category": "blockchain-protocol"
+    },
+    {
+      "name": "synergy_cold_nuclear",
+      "full_name": "Shtenco/synergy_cold_nuclear",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_cold_nuclear",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_usds",
+      "full_name": "Shtenco/synergy_usds",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_usds",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_financial_os",
+      "full_name": "Shtenco/synergy_financial_os",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_financial_os",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_eurasian",
+      "full_name": "Shtenco/synergy_eurasian",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_eurasian",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_matrix_sota",
+      "full_name": "Shtenco/synergy_matrix_sota",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_matrix_sota",
+      "category": "compute-os"
+    },
+    {
+      "name": "synergy_agi_nexus",
+      "full_name": "Shtenco/synergy_agi_nexus",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_agi_nexus",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "synergy_midas_ai",
+      "full_name": "Shtenco/synergy_midas_ai",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_midas_ai",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_system",
+      "full_name": "Shtenco/synergy_system",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_system",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_nexus_science_agent",
+      "full_name": "Shtenco/synergy_nexus_science_agent",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_nexus_science_agent",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "synergy_net",
+      "full_name": "Shtenco/synergy_net",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_net",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_meta_os",
+      "full_name": "Shtenco/synergy_meta_os",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_meta_os",
+      "category": "compute-os"
+    },
+    {
+      "name": "synergy_blochain_budget",
+      "full_name": "Shtenco/synergy_blochain_budget",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_blochain_budget",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_agi_autopilot",
+      "full_name": "Shtenco/synergy_agi_autopilot",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_agi_autopilot",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "sinergy_app",
+      "full_name": "Shtenco/sinergy_app",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/sinergy_app",
+      "category": "apps-interface"
+    },
+    {
+      "name": "synergy_app",
+      "full_name": "Shtenco/synergy_app",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_app",
+      "category": "apps-interface"
+    },
+    {
+      "name": "synergy_qr_compress",
+      "full_name": "Shtenco/synergy_qr_compress",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_qr_compress",
+      "category": "compute-os"
+    },
+    {
+      "name": "synergy_metachain",
+      "full_name": "Shtenco/synergy_metachain",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_metachain",
+      "category": "blockchain-protocol"
+    },
+    {
+      "name": "synergy_motherboard_xpu_xml",
+      "full_name": "Shtenco/synergy_motherboard_xpu_xml",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml",
+      "category": "compute-os"
+    },
+    {
+      "name": "print_money_synergychain",
+      "full_name": "Shtenco/print_money_synergychain",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/print_money_synergychain",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_project",
+      "full_name": "Shtenco/synergy_project",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_project",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_crypto_pump",
+      "full_name": "Shtenco/synergy_crypto_pump",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_crypto_pump",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_graph_print_money",
+      "full_name": "Shtenco/synergy_graph_print_money",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_graph_print_money",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_app_family",
+      "full_name": "Shtenco/synergy_app_family",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_app_family",
+      "category": "apps-interface"
+    },
+    {
+      "name": "synergy_chain_print_money",
+      "full_name": "Shtenco/synergy_chain_print_money",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_chain_print_money",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_ai_company",
+      "full_name": "Shtenco/synergy_ai_company",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_company",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "synergy_shhts",
+      "full_name": "Shtenco/synergy_shhts",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_shhts",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_shttps",
+      "full_name": "Shtenco/synergy_shttps",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_shttps",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_gguf_compress",
+      "full_name": "Shtenco/synergy_gguf_compress",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_gguf_compress",
+      "category": "compute-os"
+    },
+    {
+      "name": "synergy_gllm_nexus",
+      "full_name": "Shtenco/synergy_gllm_nexus",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_gllm_nexus",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "synergy_messenger",
+      "full_name": "Shtenco/synergy_messenger",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_messenger",
+      "category": "apps-interface"
+    },
+    {
+      "name": "synergy_apps",
+      "full_name": "Shtenco/synergy_apps",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_apps",
+      "category": "apps-interface"
+    },
+    {
+      "name": "synergy_agi_trader",
+      "full_name": "Shtenco/synergy_agi_trader",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_agi_trader",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "synergy_quantlab",
+      "full_name": "Shtenco/synergy_quantlab",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_quantlab",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_riskguard",
+      "full_name": "Shtenco/synergy_riskguard",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_riskguard",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_market_graph",
+      "full_name": "Shtenco/synergy_market_graph",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_market_graph",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_midas_institutional",
+      "full_name": "Shtenco/synergy_midas_institutional",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_midas_institutional",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_relative_value",
+      "full_name": "Shtenco/synergy_relative_value",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_relative_value",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_ai_investment_committee",
+      "full_name": "Shtenco/synergy_ai_investment_committee",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_investment_committee",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_market_maker",
+      "full_name": "Shtenco/synergy_market_maker",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_market_maker",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_adaptive_engine",
+      "full_name": "Shtenco/synergy_adaptive_engine",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_adaptive_engine",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_marketvision",
+      "full_name": "Shtenco/synergy_marketvision",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_marketvision",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_trademux",
+      "full_name": "Shtenco/synergy_trademux",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_trademux",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_2chain_qe",
+      "full_name": "Shtenco/synergy_2chain_qe",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_2chain_qe",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_qe",
+      "full_name": "Shtenco/synergy_qe",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_qe",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy_agentic_ai_economy",
+      "full_name": "Shtenco/synergy_agentic_ai_economy",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_agentic_ai_economy",
+      "category": "agi-agentic"
+    },
+    {
+      "name": "synergy_megaproject",
+      "full_name": "Shtenco/synergy_megaproject",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_megaproject",
+      "category": "research-other"
+    },
+    {
+      "name": "synergy_post_quantum_radio",
+      "full_name": "Shtenco/synergy_post_quantum_radio",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_post_quantum_radio",
+      "category": "trading-quant"
+    },
+    {
+      "name": "synergy_complex_matrix_multiplication",
+      "full_name": "Shtenco/synergy_complex_matrix_multiplication",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_complex_matrix_multiplication",
+      "category": "compute-os"
+    },
+    {
+      "name": "synergy_computing_topology",
+      "full_name": "Shtenco/synergy_computing_topology",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_computing_topology",
+      "category": "compute-os"
+    },
+    {
+      "name": "synergy_search_engline",
+      "full_name": "Shtenco/synergy_search_engline",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_search_engline",
+      "category": "search-growth"
+    },
+    {
+      "name": "synergy_lead_search_engline",
+      "full_name": "Shtenco/synergy_lead_search_engline",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_lead_search_engline",
+      "category": "search-growth"
+    },
+    {
+      "name": "synergy_triangle_money_system",
+      "full_name": "Shtenco/synergy_triangle_money_system",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_triangle_money_system",
+      "category": "finance-economy"
+    },
+    {
+      "name": "synergy",
+      "full_name": "Shtenco/synergy",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy",
+      "category": "research-other"
+    }
+  ]
+}
