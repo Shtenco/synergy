@@ -1,18 +1,205 @@
 {
-  "schema_version": "1.0.0",
-  "generated_from": "GitHub account Shtenco",
+  "schema_version": "2.0.0",
+  "generated_from": "Full GitHub inventory + M0 content audit",
+  "generated_at": "2026-10-08",
   "umbrella_repository": "Shtenco/synergy",
-  "discovery_rule": "repository name contains synergy, sinergy, or synegy",
+  "discovery_rule": "ALL repositories accessible under Shtenco are inventoried; SYNERGY relation is determined by content/role, not name alone.",
   "total_account_repositories": 81,
-  "synergy_repository_count": 68,
+  "inventoried_repositories": 81,
   "repositories": [
+    {
+      "name": "shtenco.github.io",
+      "full_name": "Shtenco/shtenco.github.io",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/shtenco.github.io",
+      "ecosystem_relation": "presentation",
+      "category": "presentation",
+      "node_type": "presentation",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "public-presentation",
+        "navigation"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "quantum-trading_metatrader5",
+      "full_name": "Shtenco/quantum-trading_metatrader5",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/quantum-trading_metatrader5",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "computer_vision_trading_metatrader_5",
+      "full_name": "Shtenco/computer_vision_trading_metatrader_5",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/computer_vision_trading_metatrader_5",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system"
+      ],
+      "risks": []
+    },
+    {
+      "name": "swap_arbitrage_metatrader_5",
+      "full_name": "Shtenco/swap_arbitrage_metatrader_5",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/swap_arbitrage_metatrader_5",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "cross_forex_arbitrage_trading_metatrader_5",
+      "full_name": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "global_liquidity_dataminer",
+      "full_name": "Shtenco/global_liquidity_dataminer",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/global_liquidity_dataminer",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "3D_bars_market_structure",
+      "full_name": "Shtenco/3D_bars_market_structure",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/3D_bars_market_structure",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "multi_threaded_trading_robot_with_machine_learning_python",
+      "full_name": "Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
     {
       "name": "synergy_midas_ai_trading_system",
       "full_name": "Shtenco/synergy_midas_ai_trading_system",
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_midas_ai_trading_system",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "midas"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "midas_lite",
+      "full_name": "Shtenco/midas_lite",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/midas_lite",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "midas"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_turbo_linux",
@@ -20,7 +207,23 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_turbo_linux",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "SECURITY_REVIEW",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "credential-file-review-required"
+      ]
     },
     {
       "name": "synergy_agi_olga",
@@ -28,7 +231,20 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_agi_olga",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_ai_coder",
@@ -36,7 +252,20 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_ai_coder",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_nexus"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_ai_trade_terminal",
@@ -44,7 +273,39 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_ai_trade_terminal",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system"
+      ],
+      "risks": []
+    },
+    {
+      "name": "shtencoauantai.github.io",
+      "full_name": "Shtenco/shtencoauantai.github.io",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/shtencoauantai.github.io",
+      "ecosystem_relation": "presentation",
+      "category": "presentation",
+      "node_type": "presentation",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "public-presentation",
+        "navigation"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_cashero",
@@ -52,7 +313,23 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_cashero",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "SECURITY_BLOCKED",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "committed-credential-indicators",
+        "deployment-blocked"
+      ]
     },
     {
       "name": "synergy_ai_language",
@@ -60,7 +337,18 @@
       "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_ai_language",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "sinergy_super_app",
@@ -68,7 +356,35 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/sinergy_super_app",
-      "category": "apps-interface"
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "node_type": "application",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "binary_quantum_theory",
+      "full_name": "Shtenco/binary_quantum_theory",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/binary_quantum_theory",
+      "ecosystem_relation": "federated-research",
+      "category": "science-research",
+      "node_type": "research",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "scientific-research",
+        "evidence"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_ai_financial_system",
@@ -76,7 +392,21 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_ai_financial_system",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "RND_LOCAL_TESTING",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_system"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_algotrading_graph_system",
@@ -84,7 +414,20 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_algotrading_graph_system",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synegy_ai_compress",
@@ -92,7 +435,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synegy_ai_compress",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os",
+        "compression"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_pay_system",
@@ -100,7 +455,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_pay_system",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow",
+        "payments"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_ai_blockchain",
@@ -108,7 +475,21 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_ai_blockchain",
-      "category": "blockchain-protocol"
+      "ecosystem_relation": "core",
+      "category": "blockchain-protocol",
+      "node_type": "protocol-runtime",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_olga",
+        "Shtenco/synergy_system"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_chain",
@@ -116,7 +497,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_chain",
-      "category": "blockchain-protocol"
+      "ecosystem_relation": "core",
+      "category": "blockchain-protocol",
+      "node_type": "protocol-runtime",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergychain.github.io",
@@ -124,7 +516,18 @@
       "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergychain.github.io",
-      "category": "blockchain-protocol"
+      "ecosystem_relation": "core",
+      "category": "blockchain-protocol",
+      "node_type": "protocol-runtime",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_cold_nuclear",
@@ -132,7 +535,16 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_cold_nuclear",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "research-other",
+      "node_type": "research",
+      "maturity": "RND_SCIENCE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "research"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_usds",
@@ -140,7 +552,24 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_usds",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "SECURITY_BLOCKED",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "committed-credential-indicators",
+        "deployment-blocked"
+      ]
     },
     {
       "name": "synergy_financial_os",
@@ -148,7 +577,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_financial_os",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "RND_FEDERATION",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_eurasian",
@@ -156,7 +596,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_eurasian",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "MODEL_SPEC_READY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_matrix_sota",
@@ -164,7 +615,20 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_matrix_sota",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_agi_nexus",
@@ -172,7 +636,26 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_agi_nexus",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration",
+        "nexus"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_agi_olga",
+        "Shtenco/synergy_nexus_science_agent",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_chain",
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_midas_ai",
@@ -180,7 +663,33 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_midas_ai",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "midas"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_midas_ai_trading_system",
+        "Shtenco/midas_lite",
+        "Shtenco/synergy_ai_trade_terminal",
+        "Shtenco/synergy_algotrading_graph_system",
+        "Shtenco/3D_bars_market_structure",
+        "Shtenco/computer_vision_trading_metatrader_5",
+        "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+        "Shtenco/swap_arbitrage_metatrader_5",
+        "Shtenco/global_liquidity_dataminer",
+        "Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+        "Shtenco/quantum-trading_metatrader5"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_system",
@@ -188,7 +697,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_system",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "architecture-governance",
+      "node_type": "architecture-registry",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "registry",
+        "federation",
+        "architecture",
+        "governance"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_nexus_science_agent",
@@ -196,7 +717,23 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_nexus_science_agent",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration",
+        "nexus"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_cold_nuclear"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_net",
@@ -204,7 +741,23 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_net",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "protocol-transport",
+      "node_type": "protocol-runtime",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synegy_ai_compress",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_turbo_linux"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_meta_os",
@@ -212,7 +765,23 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_meta_os",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_turbo_linux",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_blochain_budget",
@@ -220,7 +789,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_blochain_budget",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_agi_autopilot",
@@ -228,7 +808,27 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_agi_autopilot",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_agentic_ai_economy",
+        "Shtenco/synergy_ai_coder",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "sinergy_app",
@@ -236,7 +836,27 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/sinergy_app",
-      "category": "apps-interface"
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_apps",
+        "Shtenco/synergy_app",
+        "Shtenco/sinergy_super_app",
+        "Shtenco/synergy_messenger",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_pay_system"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_app",
@@ -244,7 +864,17 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_app",
-      "category": "apps-interface"
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "node_type": "application",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_qr_compress",
@@ -252,7 +882,21 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_qr_compress",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os",
+        "compression"
+      ],
+      "dependencies": [
+        "Shtenco/synegy_ai_compress"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_metachain",
@@ -260,7 +904,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_metachain",
-      "category": "blockchain-protocol"
+      "ecosystem_relation": "core",
+      "category": "blockchain-protocol",
+      "node_type": "protocol-runtime",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_motherboard_xpu_xml",
@@ -268,7 +923,21 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system"
+      ],
+      "risks": []
     },
     {
       "name": "print_money_synergychain",
@@ -276,7 +945,20 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/print_money_synergychain",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_project",
@@ -284,7 +966,41 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_project",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "architecture-governance",
+      "node_type": "architecture-registry",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "registry",
+        "federation",
+        "architecture",
+        "governance"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_pay_system",
+        "Shtenco/synergy_algotrading_graph_system"
+      ],
+      "risks": []
+    },
+    {
+      "name": "dlp_solver",
+      "full_name": "Shtenco/dlp_solver",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/dlp_solver",
+      "ecosystem_relation": "federated-research",
+      "category": "science-research",
+      "node_type": "research",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "scientific-research",
+        "evidence"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_crypto_pump",
@@ -292,7 +1008,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_crypto_pump",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_graph_print_money",
@@ -300,7 +1027,21 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_graph_print_money",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_app_family",
@@ -308,7 +1049,21 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_app_family",
-      "category": "apps-interface"
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_apps"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_chain_print_money",
@@ -316,7 +1071,22 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_chain_print_money",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_ai_blockchain"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_ai_company",
@@ -324,7 +1094,27 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_ai_company",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_agentic_ai_economy",
+        "Shtenco/synergy_agi_autopilot",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_shhts",
@@ -332,7 +1122,27 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_shhts",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "protocol-transport",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_shttps",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_shttps",
@@ -340,7 +1150,27 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_shttps",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "protocol-transport",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_shhts",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_post_quantum_radio",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_gguf_compress",
@@ -348,7 +1178,23 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_gguf_compress",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os",
+        "compression"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_gllm_nexus",
@@ -356,7 +1202,22 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_gllm_nexus",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration",
+        "nexus"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_system"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_messenger",
@@ -364,7 +1225,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_messenger",
-      "category": "apps-interface"
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "node_type": "application",
+      "maturity": "HARDENED_ALPHA",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "client-ui",
+        "control-plane",
+        "messaging"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_apps",
@@ -372,7 +1244,25 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_apps",
-      "category": "apps-interface"
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "node_type": "application",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_app",
+        "Shtenco/sinergy_app",
+        "Shtenco/sinergy_super_app",
+        "Shtenco/synergy_app_family",
+        "Shtenco/synergy_messenger",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_agi_trader",
@@ -380,7 +1270,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_agi_trader",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_quantlab",
@@ -388,7 +1289,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_quantlab",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "validation-lab",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "benchmark-validation"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_riskguard",
@@ -396,7 +1309,25 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_riskguard",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "risk-gating"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_quantlab",
+        "Shtenco/synergy_trademux",
+        "Shtenco/synergy_financial_os"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_market_graph",
@@ -404,7 +1335,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_market_graph",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "fair-value-graph"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_midas_institutional",
@@ -412,7 +1355,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_midas_institutional",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "midas"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_relative_value",
@@ -420,7 +1375,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_relative_value",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_ai_investment_committee",
@@ -428,7 +1394,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_ai_investment_committee",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "portfolio-governance"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_market_maker",
@@ -436,7 +1414,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_market_maker",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "market-making"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_adaptive_engine",
@@ -444,7 +1434,25 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_adaptive_engine",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "regime-adaptation"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_quantlab",
+        "Shtenco/synergy_riskguard",
+        "Shtenco/synergy_ai_investment_committee"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_marketvision",
@@ -452,7 +1460,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_marketvision",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "market-feature-cube"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_trademux",
@@ -460,7 +1480,41 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_trademux",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "execution-planning"
+      ],
+      "dependencies": [],
+      "risks": []
+    },
+    {
+      "name": "epstein_network",
+      "full_name": "Shtenco/epstein_network",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/epstein_network",
+      "ecosystem_relation": "federated-research",
+      "category": "graph-research",
+      "node_type": "research",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "graph",
+        "provenance",
+        "research"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_megaproject",
+        "Shtenco/synergy_system"
+      ],
+      "risks": []
     },
     {
       "name": "synergy_2chain_qe",
@@ -468,7 +1522,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_2chain_qe",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_qe",
@@ -476,7 +1541,20 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_qe",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_agentic_ai_economy",
@@ -484,7 +1562,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_agentic_ai_economy",
-      "category": "agi-agentic"
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "RND_SIMULATION",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_megaproject",
@@ -492,7 +1581,17 @@
       "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_megaproject",
-      "category": "research-other"
+      "ecosystem_relation": "core",
+      "category": "research-strategy",
+      "node_type": "research",
+      "maturity": "ACTIVE_RESEARCH",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "strategic-research",
+        "graph"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_post_quantum_radio",
@@ -500,7 +1599,22 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_post_quantum_radio",
-      "category": "trading-quant"
+      "ecosystem_relation": "core",
+      "category": "protocol-transport",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_complex_matrix_multiplication",
@@ -508,7 +1622,18 @@
       "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_complex_matrix_multiplication",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_computing_topology",
@@ -516,7 +1641,18 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_computing_topology",
-      "category": "compute-os"
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_search_engline",
@@ -524,7 +1660,20 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_search_engline",
-      "category": "search-growth"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow",
+        "hardnav",
+        "triangular-economy"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy_lead_search_engline",
@@ -532,7 +1681,21 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_lead_search_engline",
-      "category": "search-growth"
+      "ecosystem_relation": "core",
+      "category": "search-growth",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "search",
+        "lead-discovery",
+        "hardnav",
+        "triangular-economy"
+      ],
+      "dependencies": [],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ]
     },
     {
       "name": "synergy_triangle_money_system",
@@ -540,7 +1703,20 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_triangle_money_system",
-      "category": "finance-economy"
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow",
+        "hardnav",
+        "triangular-economy"
+      ],
+      "dependencies": [],
+      "risks": []
     },
     {
       "name": "synergy",
@@ -548,7 +1724,19 @@
       "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy",
-      "category": "research-other"
+      "ecosystem_relation": "umbrella",
+      "category": "architecture-governance",
+      "node_type": "architecture-registry",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "registry",
+        "federation",
+        "architecture",
+        "governance"
+      ],
+      "dependencies": [],
+      "risks": []
     }
   ]
 }
