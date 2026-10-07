@@ -1,0 +1,3473 @@
+{
+  "schema_version": "0.2.0",
+  "generated_at": "2026-10-08",
+  "owner": "Shtenco",
+  "umbrella_repository": "Shtenco/synergy",
+  "project_target": "https://github.com/users/Shtenco/projects/3",
+  "inventory": {
+    "repositories_total": 81,
+    "scope": "all repositories accessible to the installed GitHub App",
+    "domains": {
+      "presentation": 2,
+      "trading-quant": 23,
+      "compute-os": 9,
+      "agi-agentic": 10,
+      "finance-economy": 14,
+      "apps-interface": 6,
+      "science-research": 2,
+      "blockchain-protocol": 4,
+      "research-other": 1,
+      "architecture-governance": 3,
+      "protocol-transport": 4,
+      "graph-research": 1,
+      "research-strategy": 1,
+      "search-growth": 1
+    },
+    "maturity": {
+      "PRESENTATION_CANDIDATE": 3,
+      "LEGACY_RND": 9,
+      "SECURITY_REVIEW": 1,
+      "CANDIDATE": 32,
+      "RND": 4,
+      "SECURITY_BLOCKED": 2,
+      "ACTIVE_EXPERIMENTAL": 5,
+      "RND_LOCAL_TESTING": 1,
+      "STUB_SPEC_ONLY": 14,
+      "RND_SCIENCE": 1,
+      "RND_FEDERATION": 1,
+      "MODEL_SPEC_READY": 1,
+      "ARCHITECTURAL_MASTER": 3,
+      "HARDENED_ALPHA": 1,
+      "RND_CANDIDATE": 1,
+      "RND_SIMULATION": 1,
+      "ACTIVE_RESEARCH": 1
+    }
+  },
+  "graph_model": [
+    "repo",
+    "service",
+    "API",
+    "model",
+    "protocol",
+    "database",
+    "blockchain-contract",
+    "AI-employee",
+    "runtime",
+    "dependency",
+    "capability"
+  ],
+  "nodes": [
+    {
+      "id": "shtenco.github.io",
+      "repository": "Shtenco/shtenco.github.io",
+      "url": "https://github.com/Shtenco/shtenco.github.io",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 175,
+      "default_branch": "main",
+      "ecosystem_relation": "presentation",
+      "domain": "presentation",
+      "node_type": "presentation",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "purpose": "Public portfolio and navigation surface for Quant/AI/Web3/Blockchain projects.",
+      "capabilities": [
+        "public-presentation",
+        "navigation"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "quantum-trading_metatrader5",
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "url": "https://github.com/Shtenco/quantum-trading_metatrader5",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 37,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-legacy",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "computer_vision_trading_metatrader_5",
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "url": "https://github.com/Shtenco/computer_vision_trading_metatrader_5",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 39,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-legacy",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "swap_arbitrage_metatrader_5",
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "url": "https://github.com/Shtenco/swap_arbitrage_metatrader_5",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 49,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-legacy",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "cross_forex_arbitrage_trading_metatrader_5",
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "url": "https://github.com/Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 43,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-legacy",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "global_liquidity_dataminer",
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "url": "https://github.com/Shtenco/global_liquidity_dataminer",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 24,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-legacy",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "3D_bars_market_structure",
+      "repository": "Shtenco/3D_bars_market_structure",
+      "url": "https://github.com/Shtenco/3D_bars_market_structure",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 196,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-legacy",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "multi_threaded_trading_robot_with_machine_learning_python",
+      "repository": "Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+      "url": "https://github.com/Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 45,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-legacy",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_midas_ai_trading_system",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "url": "https://github.com/Shtenco/synergy_midas_ai_trading_system",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 3631,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "midas"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "midas_lite",
+      "repository": "Shtenco/midas_lite",
+      "url": "https://github.com/Shtenco/midas_lite",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 496,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-legacy",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "LEGACY_RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "midas"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_turbo_linux",
+      "repository": "Shtenco/synergy_turbo_linux",
+      "url": "https://github.com/Shtenco/synergy_turbo_linux",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 338,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "SECURITY_REVIEW",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "credential-file-review-required"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_agi_olga",
+      "repository": "Shtenco/synergy_agi_olga",
+      "url": "https://github.com/Shtenco/synergy_agi_olga",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 16253,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "AGI, agent, orchestration, inference or autonomous-workforce capability.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_ai_coder",
+      "repository": "Shtenco/synergy_ai_coder",
+      "url": "https://github.com/Shtenco/synergy_ai_coder",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 34,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "AGI, agent, orchestration, inference or autonomous-workforce capability.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_nexus"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_ai_trade_terminal",
+      "repository": "Shtenco/synergy_ai_trade_terminal",
+      "url": "https://github.com/Shtenco/synergy_ai_trade_terminal",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 214,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "RND",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "shtencoauantai.github.io",
+      "repository": "Shtenco/shtencoauantai.github.io",
+      "url": "https://github.com/Shtenco/shtencoauantai.github.io",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 1016,
+      "default_branch": "main",
+      "ecosystem_relation": "presentation",
+      "domain": "presentation",
+      "node_type": "presentation",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "purpose": "Public Quant AI / MIDAS investor-presentation portal.",
+      "capabilities": [
+        "public-presentation",
+        "navigation"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_cashero",
+      "repository": "Shtenco/synergy_cashero",
+      "url": "https://github.com/Shtenco/synergy_cashero",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 233,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "SECURITY_BLOCKED",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "committed-credential-indicators",
+        "deployment-blocked"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_ai_language",
+      "repository": "Shtenco/synergy_ai_language",
+      "url": "https://github.com/Shtenco/synergy_ai_language",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 734,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "RND",
+      "purpose": "AGI, agent, orchestration, inference or autonomous-workforce capability.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "sinergy_super_app",
+      "repository": "Shtenco/sinergy_super_app",
+      "url": "https://github.com/Shtenco/sinergy_super_app",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 386,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "apps-interface",
+      "node_type": "application",
+      "maturity": "CANDIDATE",
+      "purpose": "End-user application or presentation/control-plane capability.",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "binary_quantum_theory",
+      "repository": "Shtenco/binary_quantum_theory",
+      "url": "https://github.com/Shtenco/binary_quantum_theory",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 6125,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-research",
+      "domain": "science-research",
+      "node_type": "research",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "purpose": "Binary quantum gravity / information-to-geometry fundamental research programme.",
+      "capabilities": [
+        "scientific-research",
+        "evidence"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_ai_financial_system",
+      "repository": "Shtenco/synergy_ai_financial_system",
+      "url": "https://github.com/Shtenco/synergy_ai_financial_system",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 3489,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "RND_LOCAL_TESTING",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_algotrading_graph_system",
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "url": "https://github.com/Shtenco/synergy_algotrading_graph_system",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 9,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synegy_ai_compress",
+      "repository": "Shtenco/synegy_ai_compress",
+      "url": "https://github.com/Shtenco/synegy_ai_compress",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 254,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "CANDIDATE",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os",
+        "compression"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_pay_system",
+      "repository": "Shtenco/synergy_pay_system",
+      "url": "https://github.com/Shtenco/synergy_pay_system",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 458,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow",
+        "payments"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_ai_blockchain",
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "url": "https://github.com/Shtenco/synergy_ai_blockchain",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 5679,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "blockchain-protocol",
+      "node_type": "protocol-runtime",
+      "maturity": "CANDIDATE",
+      "purpose": "PQ/EVM + NEXUS blockchain runtime and protocol research.",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_olga",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_chain",
+      "repository": "Shtenco/synergy_chain",
+      "url": "https://github.com/Shtenco/synergy_chain",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 329,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "blockchain-protocol",
+      "node_type": "protocol-runtime",
+      "maturity": "CANDIDATE",
+      "purpose": "Blockchain, smart-contract or chain-protocol capability.",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergychain.github.io",
+      "repository": "Shtenco/synergychain.github.io",
+      "url": "https://github.com/Shtenco/synergychain.github.io",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 2156,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "blockchain-protocol",
+      "node_type": "protocol-runtime",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "purpose": "Blockchain, smart-contract or chain-protocol capability.",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_cold_nuclear",
+      "repository": "Shtenco/synergy_cold_nuclear",
+      "url": "https://github.com/Shtenco/synergy_cold_nuclear",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 77,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "research-other",
+      "node_type": "research",
+      "maturity": "RND_SCIENCE",
+      "purpose": "Experimental research capability.",
+      "capabilities": [
+        "research"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_usds",
+      "repository": "Shtenco/synergy_usds",
+      "url": "https://github.com/Shtenco/synergy_usds",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 171,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "SECURITY_BLOCKED",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "committed-credential-indicators",
+        "deployment-blocked"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_financial_os",
+      "repository": "Shtenco/synergy_financial_os",
+      "url": "https://github.com/Shtenco/synergy_financial_os",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 864,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "RND_FEDERATION",
+      "purpose": "Financial operating system and federation layer.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_eurasian",
+      "repository": "Shtenco/synergy_eurasian",
+      "url": "https://github.com/Shtenco/synergy_eurasian",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 278,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "MODEL_SPEC_READY",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_matrix_sota",
+      "repository": "Shtenco/synergy_matrix_sota",
+      "url": "https://github.com/Shtenco/synergy_matrix_sota",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 39,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_agi_nexus",
+      "repository": "Shtenco/synergy_agi_nexus",
+      "url": "https://github.com/Shtenco/synergy_agi_nexus",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 388,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "AGI/NEXUS architecture, generations, contracts and benchmark governance.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration",
+        "nexus"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_agi_olga",
+        "Shtenco/synergy_nexus_science_agent",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_chain",
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_midas_ai",
+      "repository": "Shtenco/synergy_midas_ai",
+      "url": "https://github.com/Shtenco/synergy_midas_ai",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 964,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Canonical MIDAS trading federation integrating legacy and modern quantitative modules.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "midas"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_midas_ai_trading_system",
+        "Shtenco/midas_lite",
+        "Shtenco/synergy_ai_trade_terminal",
+        "Shtenco/synergy_algotrading_graph_system",
+        "Shtenco/3D_bars_market_structure",
+        "Shtenco/computer_vision_trading_metatrader_5",
+        "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+        "Shtenco/swap_arbitrage_metatrader_5",
+        "Shtenco/global_liquidity_dataminer",
+        "Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+        "Shtenco/quantum-trading_metatrader5"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_system",
+      "repository": "Shtenco/synergy_system",
+      "url": "https://github.com/Shtenco/synergy_system",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 873,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "architecture-governance",
+      "node_type": "architecture-registry",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "purpose": "Architectural constitution, federation map, authority boundaries and integration contracts.",
+      "capabilities": [
+        "registry",
+        "federation",
+        "architecture",
+        "governance"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_nexus_science_agent",
+      "repository": "Shtenco/synergy_nexus_science_agent",
+      "url": "https://github.com/Shtenco/synergy_nexus_science_agent",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 106,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "AGI, agent, orchestration, inference or autonomous-workforce capability.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration",
+        "nexus"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_cold_nuclear"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_net",
+      "repository": "Shtenco/synergy_net",
+      "url": "https://github.com/Shtenco/synergy_net",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 208,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "protocol-transport",
+      "node_type": "protocol-runtime",
+      "maturity": "CANDIDATE",
+      "purpose": "Network, secure transport or post-quantum communications capability.",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synegy_ai_compress",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_turbo_linux"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_meta_os",
+      "repository": "Shtenco/synergy_meta_os",
+      "url": "https://github.com/Shtenco/synergy_meta_os",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 288,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "CANDIDATE",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_turbo_linux",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_blochain_budget",
+      "repository": "Shtenco/synergy_blochain_budget",
+      "url": "https://github.com/Shtenco/synergy_blochain_budget",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 154,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_agi_autopilot",
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "url": "https://github.com/Shtenco/synergy_agi_autopilot",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 1126,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Agentic planning/DAG/autopilot specification for bounded autonomous execution.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_agentic_ai_economy",
+        "Shtenco/synergy_ai_coder",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "sinergy_app",
+      "repository": "Shtenco/sinergy_app",
+      "url": "https://github.com/Shtenco/sinergy_app",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 7,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "apps-interface",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "End-user application or presentation/control-plane capability.",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_apps",
+        "Shtenco/synergy_app",
+        "Shtenco/sinergy_super_app",
+        "Shtenco/synergy_messenger",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_pay_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_app",
+      "repository": "Shtenco/synergy_app",
+      "url": "https://github.com/Shtenco/synergy_app",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 115,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "apps-interface",
+      "node_type": "application",
+      "maturity": "CANDIDATE",
+      "purpose": "End-user application or presentation/control-plane capability.",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_qr_compress",
+      "repository": "Shtenco/synergy_qr_compress",
+      "url": "https://github.com/Shtenco/synergy_qr_compress",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 156,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "CANDIDATE",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os",
+        "compression"
+      ],
+      "dependencies": [
+        "Shtenco/synegy_ai_compress"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_metachain",
+      "repository": "Shtenco/synergy_metachain",
+      "url": "https://github.com/Shtenco/synergy_metachain",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 72,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "blockchain-protocol",
+      "node_type": "protocol-runtime",
+      "maturity": "CANDIDATE",
+      "purpose": "Blockchain, smart-contract or chain-protocol capability.",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_motherboard_xpu_xml",
+      "repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 203,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "CANDIDATE",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "print_money_synergychain",
+      "repository": "Shtenco/print_money_synergychain",
+      "url": "https://github.com/Shtenco/print_money_synergychain",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 164,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_project",
+      "repository": "Shtenco/synergy_project",
+      "url": "https://github.com/Shtenco/synergy_project",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 236,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "architecture-governance",
+      "node_type": "architecture-registry",
+      "maturity": "RND",
+      "purpose": "SYNERGY ecosystem module.",
+      "capabilities": [
+        "registry",
+        "federation",
+        "architecture",
+        "governance"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_pay_system",
+        "Shtenco/synergy_algotrading_graph_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "dlp_solver",
+      "repository": "Shtenco/dlp_solver",
+      "url": "https://github.com/Shtenco/dlp_solver",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 569,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-research",
+      "domain": "science-research",
+      "node_type": "research",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "purpose": "Reverse-exponential / discrete-logarithm research laboratory.",
+      "capabilities": [
+        "scientific-research",
+        "evidence"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_crypto_pump",
+      "repository": "Shtenco/synergy_crypto_pump",
+      "url": "https://github.com/Shtenco/synergy_crypto_pump",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 319,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_graph_print_money",
+      "repository": "Shtenco/synergy_graph_print_money",
+      "url": "https://github.com/Shtenco/synergy_graph_print_money",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 225,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_app_family",
+      "repository": "Shtenco/synergy_app_family",
+      "url": "https://github.com/Shtenco/synergy_app_family",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 8,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "apps-interface",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "End-user application or presentation/control-plane capability.",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_apps"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_chain_print_money",
+      "repository": "Shtenco/synergy_chain_print_money",
+      "url": "https://github.com/Shtenco/synergy_chain_print_money",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 8,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_ai_blockchain"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_ai_company",
+      "repository": "Shtenco/synergy_ai_company",
+      "url": "https://github.com/Shtenco/synergy_ai_company",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 90,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "AI-native company organization, roles, processes and authority model.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_agentic_ai_economy",
+        "Shtenco/synergy_agi_autopilot",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_shhts",
+      "repository": "Shtenco/synergy_shhts",
+      "url": "https://github.com/Shtenco/synergy_shhts",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 4,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "protocol-transport",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Network, secure transport or post-quantum communications capability.",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_shttps",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_shttps",
+      "repository": "Shtenco/synergy_shttps",
+      "url": "https://github.com/Shtenco/synergy_shttps",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 99,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "protocol-transport",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Network, secure transport or post-quantum communications capability.",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_shhts",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_post_quantum_radio",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_gguf_compress",
+      "repository": "Shtenco/synergy_gguf_compress",
+      "url": "https://github.com/Shtenco/synergy_gguf_compress",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 178,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os",
+        "compression"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_gllm_nexus",
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "url": "https://github.com/Shtenco/synergy_gllm_nexus",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 2570,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "AGI, agent, orchestration, inference or autonomous-workforce capability.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration",
+        "nexus"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_messenger",
+      "repository": "Shtenco/synergy_messenger",
+      "url": "https://github.com/Shtenco/synergy_messenger",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 324,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "apps-interface",
+      "node_type": "application",
+      "maturity": "HARDENED_ALPHA",
+      "purpose": "End-user application or presentation/control-plane capability.",
+      "capabilities": [
+        "client-ui",
+        "control-plane",
+        "messaging"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_apps",
+      "repository": "Shtenco/synergy_apps",
+      "url": "https://github.com/Shtenco/synergy_apps",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 518,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "apps-interface",
+      "node_type": "application",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "purpose": "Master registry and authority boundary for SYNERGY user applications.",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_app",
+        "Shtenco/sinergy_app",
+        "Shtenco/sinergy_super_app",
+        "Shtenco/synergy_app_family",
+        "Shtenco/synergy_messenger",
+        "Shtenco/dlp_solver"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_agi_trader",
+      "repository": "Shtenco/synergy_agi_trader",
+      "url": "https://github.com/Shtenco/synergy_agi_trader",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 143,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "CANDIDATE",
+      "purpose": "AGI, agent, orchestration, inference or autonomous-workforce capability.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_quantlab",
+      "repository": "Shtenco/synergy_quantlab",
+      "url": "https://github.com/Shtenco/synergy_quantlab",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 134,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "validation-lab",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "benchmark-validation"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_riskguard",
+      "repository": "Shtenco/synergy_riskguard",
+      "url": "https://github.com/Shtenco/synergy_riskguard",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 97,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "risk-gating"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_quantlab",
+        "Shtenco/synergy_trademux",
+        "Shtenco/synergy_financial_os"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_market_graph",
+      "repository": "Shtenco/synergy_market_graph",
+      "url": "https://github.com/Shtenco/synergy_market_graph",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 98,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "fair-value-graph"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_midas_institutional",
+      "repository": "Shtenco/synergy_midas_institutional",
+      "url": "https://github.com/Shtenco/synergy_midas_institutional",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 538,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "midas"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_relative_value",
+      "repository": "Shtenco/synergy_relative_value",
+      "url": "https://github.com/Shtenco/synergy_relative_value",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 96,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_ai_investment_committee",
+      "repository": "Shtenco/synergy_ai_investment_committee",
+      "url": "https://github.com/Shtenco/synergy_ai_investment_committee",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 92,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "portfolio-governance"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_market_maker",
+      "repository": "Shtenco/synergy_market_maker",
+      "url": "https://github.com/Shtenco/synergy_market_maker",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 96,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "market-making"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_adaptive_engine",
+      "repository": "Shtenco/synergy_adaptive_engine",
+      "url": "https://github.com/Shtenco/synergy_adaptive_engine",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 109,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "regime-adaptation"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_quantlab",
+        "Shtenco/synergy_riskguard",
+        "Shtenco/synergy_ai_investment_committee"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_marketvision",
+      "repository": "Shtenco/synergy_marketvision",
+      "url": "https://github.com/Shtenco/synergy_marketvision",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 97,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "market-feature-cube"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_trademux",
+      "repository": "Shtenco/synergy_trademux",
+      "url": "https://github.com/Shtenco/synergy_trademux",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 105,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "trading-quant",
+      "node_type": "trading-module",
+      "maturity": "CANDIDATE",
+      "purpose": "Quantitative trading, market modelling, validation or execution capability.",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "execution-planning"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "epstein_network",
+      "repository": "Shtenco/epstein_network",
+      "url": "https://github.com/Shtenco/epstein_network",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 1185,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-research",
+      "domain": "graph-research",
+      "node_type": "research",
+      "maturity": "CANDIDATE",
+      "purpose": "Provenance-oriented distilled master graph research project.",
+      "capabilities": [
+        "graph",
+        "provenance",
+        "research"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_megaproject",
+        "Shtenco/synergy_system"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_2chain_qe",
+      "repository": "Shtenco/synergy_2chain_qe",
+      "url": "https://github.com/Shtenco/synergy_2chain_qe",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 85689,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "RND_CANDIDATE",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_qe",
+      "repository": "Shtenco/synergy_qe",
+      "url": "https://github.com/Shtenco/synergy_qe",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 98,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_agentic_ai_economy",
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "url": "https://github.com/Shtenco/synergy_agentic_ai_economy",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 4470,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "agi-agentic",
+      "node_type": "agentic-module",
+      "maturity": "RND_SIMULATION",
+      "purpose": "AGI, agent, orchestration, inference or autonomous-workforce capability.",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_megaproject",
+      "repository": "Shtenco/synergy_megaproject",
+      "url": "https://github.com/Shtenco/synergy_megaproject",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 518,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "research-strategy",
+      "node_type": "research",
+      "maturity": "ACTIVE_RESEARCH",
+      "purpose": "Strategic / civilization-scale research graph capability.",
+      "capabilities": [
+        "strategic-research",
+        "graph"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_post_quantum_radio",
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "url": "https://github.com/Shtenco/synergy_post_quantum_radio",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 95,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "protocol-transport",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Network, secure transport or post-quantum communications capability.",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "dependencies": [
+        "Shtenco/synergy_meta_os"
+      ],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_complex_matrix_multiplication",
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "url": "https://github.com/Shtenco/synergy_complex_matrix_multiplication",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 168,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_computing_topology",
+      "repository": "Shtenco/synergy_computing_topology",
+      "url": "https://github.com/Shtenco/synergy_computing_topology",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 1360,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "compute-os",
+      "node_type": "compute-runtime",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "purpose": "Compute, OS, hardware abstraction or compression capability.",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_search_engline",
+      "repository": "Shtenco/synergy_search_engline",
+      "url": "https://github.com/Shtenco/synergy_search_engline",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 31,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "RND",
+      "purpose": "HARDNAV multiplier / triangular non-inflationary economy research despite legacy repository name.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow",
+        "hardnav",
+        "triangular-economy"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_lead_search_engline",
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "url": "https://github.com/Shtenco/synergy_lead_search_engline",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 0,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "search-growth",
+      "node_type": "specification",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Lead-search engine repository; currently initial/stub state.",
+      "capabilities": [
+        "search",
+        "lead-discovery",
+        "hardnav",
+        "triangular-economy"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy_triangle_money_system",
+      "repository": "Shtenco/synergy_triangle_money_system",
+      "url": "https://github.com/Shtenco/synergy_triangle_money_system",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 87,
+      "default_branch": "main",
+      "ecosystem_relation": "core",
+      "domain": "finance-economy",
+      "node_type": "financial-economic-module",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "purpose": "Financial/economic modelling, monetary mechanism or value-flow capability.",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow",
+        "hardnav",
+        "triangular-economy"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    },
+    {
+      "id": "synergy",
+      "repository": "Shtenco/synergy",
+      "url": "https://github.com/Shtenco/synergy",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 0,
+      "default_branch": "main",
+      "ecosystem_relation": "umbrella",
+      "domain": "architecture-governance",
+      "node_type": "architecture-registry",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "purpose": "Private umbrella repository, canonical portfolio index and master integration layer.",
+      "capabilities": [
+        "registry",
+        "federation",
+        "architecture",
+        "governance"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
+      },
+      "risks": [],
+      "audit": {
+        "date": "2026-10-08",
+        "evidence": [
+          "repository root",
+          "README when present",
+          "latest commit"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "Shtenco/computer_vision_trading_metatrader_5",
+      "to": "Shtenco/synergy_midas_ai",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/computer_vision_trading_metatrader_5",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_turbo_linux",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_turbo_linux",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_olga",
+      "to": "Shtenco/synergy_gllm_nexus",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_coder",
+      "to": "Shtenco/synergy_agi_nexus",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_trade_terminal",
+      "to": "Shtenco/synergy_midas_ai",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_trade_terminal",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_cashero",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_financial_system",
+      "to": "Shtenco/synergy_financial_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_financial_system",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_blockchain",
+      "to": "Shtenco/synergy_agi_olga",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_blockchain",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_usds",
+      "to": "Shtenco/synergy_ai_blockchain",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_usds",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_nexus",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_nexus",
+      "to": "Shtenco/synergy_agi_olga",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_nexus",
+      "to": "Shtenco/synergy_nexus_science_agent",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_nexus",
+      "to": "Shtenco/synergy_financial_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_nexus",
+      "to": "Shtenco/synergy_chain",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_nexus",
+      "to": "Shtenco/synergy_gllm_nexus",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/synergy_financial_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/synergy_midas_ai_trading_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/midas_lite",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/synergy_ai_trade_terminal",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/synergy_algotrading_graph_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/3D_bars_market_structure",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/computer_vision_trading_metatrader_5",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/swap_arbitrage_metatrader_5",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/global_liquidity_dataminer",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_midas_ai",
+      "to": "Shtenco/quantum-trading_metatrader5",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_nexus_science_agent",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_nexus_science_agent",
+      "to": "Shtenco/synergy_agi_nexus",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_nexus_science_agent",
+      "to": "Shtenco/synergy_cold_nuclear",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_net",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_net",
+      "to": "Shtenco/synegy_ai_compress",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_net",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_net",
+      "to": "Shtenco/synergy_turbo_linux",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_meta_os",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_meta_os",
+      "to": "Shtenco/synergy_turbo_linux",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_meta_os",
+      "to": "Shtenco/synergy_net",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_meta_os",
+      "to": "Shtenco/synergy_gllm_nexus",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_autopilot",
+      "to": "Shtenco/synergy_agi_nexus",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_autopilot",
+      "to": "Shtenco/synergy_agentic_ai_economy",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_autopilot",
+      "to": "Shtenco/synergy_ai_coder",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_autopilot",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_autopilot",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_agi_autopilot",
+      "to": "Shtenco/dlp_solver",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/sinergy_app",
+      "to": "Shtenco/synergy_apps",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/sinergy_app",
+      "to": "Shtenco/synergy_app",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/sinergy_app",
+      "to": "Shtenco/sinergy_super_app",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/sinergy_app",
+      "to": "Shtenco/synergy_messenger",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/sinergy_app",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/sinergy_app",
+      "to": "Shtenco/synergy_financial_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/sinergy_app",
+      "to": "Shtenco/synergy_pay_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_qr_compress",
+      "to": "Shtenco/synegy_ai_compress",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_motherboard_xpu_xml",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_motherboard_xpu_xml",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_project",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_project",
+      "to": "Shtenco/synergy_pay_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_project",
+      "to": "Shtenco/synergy_algotrading_graph_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_graph_print_money",
+      "to": "Shtenco/synergy_ai_blockchain",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_graph_print_money",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_app_family",
+      "to": "Shtenco/synergy_apps",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_chain_print_money",
+      "to": "Shtenco/synergy_ai_blockchain",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_company",
+      "to": "Shtenco/synergy_agi_nexus",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_company",
+      "to": "Shtenco/synergy_agentic_ai_economy",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_company",
+      "to": "Shtenco/synergy_agi_autopilot",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_company",
+      "to": "Shtenco/synergy_financial_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_company",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_ai_company",
+      "to": "Shtenco/dlp_solver",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shhts",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shhts",
+      "to": "Shtenco/synergy_shttps",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shhts",
+      "to": "Shtenco/synergy_net",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shhts",
+      "to": "Shtenco/synergy_ai_blockchain",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shhts",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shhts",
+      "to": "Shtenco/dlp_solver",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shttps",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shttps",
+      "to": "Shtenco/synergy_shhts",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shttps",
+      "to": "Shtenco/synergy_net",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shttps",
+      "to": "Shtenco/synergy_post_quantum_radio",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shttps",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_shttps",
+      "to": "Shtenco/dlp_solver",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_gguf_compress",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_gllm_nexus",
+      "to": "Shtenco/synergy_agi_nexus",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_gllm_nexus",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_apps",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_apps",
+      "to": "Shtenco/synergy_app",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_apps",
+      "to": "Shtenco/sinergy_app",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_apps",
+      "to": "Shtenco/sinergy_super_app",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_apps",
+      "to": "Shtenco/synergy_app_family",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_apps",
+      "to": "Shtenco/synergy_messenger",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_apps",
+      "to": "Shtenco/dlp_solver",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_riskguard",
+      "to": "Shtenco/synergy_midas_ai",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_riskguard",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_riskguard",
+      "to": "Shtenco/synergy_quantlab",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_riskguard",
+      "to": "Shtenco/synergy_trademux",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_riskguard",
+      "to": "Shtenco/synergy_financial_os",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_adaptive_engine",
+      "to": "Shtenco/synergy_midas_ai",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_adaptive_engine",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_adaptive_engine",
+      "to": "Shtenco/synergy_quantlab",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_adaptive_engine",
+      "to": "Shtenco/synergy_riskguard",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_adaptive_engine",
+      "to": "Shtenco/synergy_ai_investment_committee",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/epstein_network",
+      "to": "Shtenco/synergy_megaproject",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/epstein_network",
+      "to": "Shtenco/synergy_system",
+      "type": "declared-or-documented-reference"
+    },
+    {
+      "from": "Shtenco/synergy_post_quantum_radio",
+      "to": "Shtenco/synergy_meta_os",
+      "type": "declared-or-documented-reference"
+    }
+  ]
+}
