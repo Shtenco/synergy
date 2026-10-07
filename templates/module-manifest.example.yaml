@@ -1,0 +1,28 @@
+# SYNERGY module manifest template
+
+module:
+  name: "<repo-name>"
+  repository: "Shtenco/<repo-name>"
+  domain: "<agi-agentic|trading-quant|finance-economy|blockchain-protocol|compute-os|apps-interface|search-growth|research-other>"
+  type: "<service|library|app|model|protocol|research>"
+  maturity: "<experiment|prototype|alpha|beta|production>"
+  owner: "<human-or-agent>"
+
+interfaces:
+  apis: []
+  events: []
+  packages: []
+  artifacts: []
+
+dependencies:
+  repositories: []
+  external: []
+
+runtime:
+  platforms: []
+  entrypoints: []
+  healthcheck: null
+
+security:
+  classification: "private"
+  secrets_in_repo: false
