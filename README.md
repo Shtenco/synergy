@@ -19,14 +19,14 @@ Each subsystem keeps its own repository, issues, pull requests, releases and CI/
 
 ## Current scope
 
-At bootstrap time the GitHub account contains **81 repositories**.  
-**68 repositories** are automatically recognized as SYNERGY modules by the naming rule:
+M0 integration now inventories **81 / 81 repositories visible to the installed GitHub App**. Membership is determined by **content, role and cross-repository references**, not only by the word `SYNERGY` in the repository name.
 
-`synergy*`, `sinergy*`, `synegy*`, or names containing `synergy`.
+The canonical artifacts are:
 
-The canonical list is stored in:
-
-- [registry/repos.json](registry/repos.json)
+- [registry/repos.json](registry/repos.json) — full 81-repository inventory
+- [registry/master_graph.json](registry/master_graph.json) — capability/dependency graph
+- [docs/M0_MASTER_INTEGRATION.md](docs/M0_MASTER_INTEGRATION.md) — M0 audit
+- [docs/MASTER_GRAPH.md](docs/MASTER_GRAPH.md) — human-readable graph
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 - [docs/INTEGRATION.md](docs/INTEGRATION.md)
 
