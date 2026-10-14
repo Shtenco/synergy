@@ -1,11 +1,11 @@
 {
   "schema_version": "2.0.0",
-  "generated_from": "Full GitHub inventory + M0 content audit",
-  "generated_at": "2026-10-08",
+  "generated_from": "Full authenticated GitHub inventory reconciled 2026-10-14; unreviewed new repository classified conservatively",
+  "generated_at": "2026-10-14",
   "umbrella_repository": "Shtenco/synergy",
   "discovery_rule": "ALL repositories accessible under Shtenco are inventoried; SYNERGY relation is determined by content/role, not name alone.",
-  "total_account_repositories": 81,
-  "inventoried_repositories": 81,
+  "total_account_repositories": 82,
+  "inventoried_repositories": 82,
   "repositories": [
     {
       "name": "shtenco.github.io",
@@ -1737,6 +1737,23 @@
       ],
       "dependencies": [],
       "risks": []
+    },
+    {
+      "name": "synergy_ai_llm_rwkv",
+      "full_name": "Shtenco/synergy_ai_llm_rwkv",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_llm_rwkv",
+      "ecosystem_relation": "candidate",
+      "category": "intelligence-models",
+      "node_type": "research",
+      "maturity": "UNVERIFIED_SOURCE",
+      "activity_band": "NOT_AUDITED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "Source, training, inference and evaluation not audited"
+      ]
     }
   ]
 }
