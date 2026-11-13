@@ -1,3 +1,7 @@
+> **Inventory reconciliation update — 2026-11-13:** live GitHub now exposes 89 repositories. The umbrella registry and master graph have been extended from 81 to 89; three renamed repositories were reconciled. Eight new entries (synergy_ai_llm_rwkv, synergy_ai_economic, synergy.github.io, synergy_meta_api, synergy_ai_workspace, synergistic_economics, synergy_metaverse, synergy_maps) have inventory-level classifications only. The detailed M0 capability audit remains the 81-repository baseline dated 2026-10-08; the eight additions still require the same source, dependency, security and evidence review.
+
+---
+
 # M0 MASTER INTEGRATION — 81/81 audit
 
 **Audit date:** 2026-10-08  
