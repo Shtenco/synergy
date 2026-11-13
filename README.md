@@ -26,11 +26,11 @@ Each subsystem keeps its own repository, issues, pull requests, releases and CI/
 
 ## Current scope
 
-M0 integration now inventories **81 / 81 repositories visible to the installed GitHub App**. Membership is determined by **content, role and cross-repository references**, not only by the word `SYNERGY` in the repository name.
+The umbrella inventory now reconciles **89 / 89 repositories visible to the installed GitHub App**. The deep M0 capability audit covered the 81-repository baseline on 2026-10-08; eight later-discovered repositories have inventory-level classifications, with full capability audits still pending. Membership is determined by **content, role and cross-repository references**, not only by the word `SYNERGY` in the repository name.
 
 The canonical artifacts are:
 
-- [registry/repos.json](registry/repos.json) — full 81-repository inventory
+- [registry/repos.json](registry/repos.json) — full 89-repository inventory
 - [registry/master_graph.json](registry/master_graph.json) — capability/dependency graph
 - [docs/M0_MASTER_INTEGRATION.md](docs/M0_MASTER_INTEGRATION.md) — M0 audit
 - [docs/MASTER_GRAPH.md](docs/MASTER_GRAPH.md) — human-readable graph
