@@ -5721,6 +5721,545 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_gguf_compress",
+      "default_branch": "main",
+      "branch_count": 10,
+      "unique_head_count": 10,
+      "branches": [
+        {
+          "name": "feat/adaptive-residual-q4-v3",
+          "sha": "8aa76d263a4a3e4841afe38c7b08fb8350e6528b",
+          "protected": false
+        },
+        {
+          "name": "feat/distilled-gguf-system-v4",
+          "sha": "a05ad79c30279ccbdb47d0c590825370d3a954a1",
+          "protected": false
+        },
+        {
+          "name": "feat/global-budget-activation-v5",
+          "sha": "a0d291303da921eb6a55ff5a113b202668b74b26",
+          "protected": false
+        },
+        {
+          "name": "feat/huge-gguf-compression-v1",
+          "sha": "c78bc852fefc5f04eb80cc4d8e567b2f4e812a99",
+          "protected": false
+        },
+        {
+          "name": "feat/llama-native-lowrank-v2",
+          "sha": "0ae62a5079c8349069ffffd2bb3105727d71dd6b",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-omega-nanoquant-v9",
+          "sha": "860552d4e16775343aaae8f0348bbe020447256d",
+          "protected": false
+        },
+        {
+          "name": "feat/omega-mix-infinity-v6",
+          "sha": "2022c92bb1563f0b243ba21234d571096e7d72e4",
+          "protected": false
+        },
+        {
+          "name": "feat/omega-mix-v7-retention-search",
+          "sha": "3c3ec7469ffa09010d1edb09f2fcbcb6006951c6",
+          "protected": false
+        },
+        {
+          "name": "feat/omega-mix-v8-behavioral-budget",
+          "sha": "8c92ebde71126ad9bbbf3730b45b6269e74825ad",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "c1882525e12f4662c30851cf1a7995a957cba543",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "default_branch": "main",
+      "branch_count": 48,
+      "unique_head_count": 47,
+      "branches": [
+        {
+          "name": "crc-r1-foundation",
+          "sha": "cfa6de4d8b4c5e93444b2b9ff465557fdfe4bc9c",
+          "protected": false
+        },
+        {
+          "name": "crc-r2-learned-loop-russian-benchmark",
+          "sha": "35a6bf2bf5c19d7ceaced094c463ce480028320a",
+          "protected": false
+        },
+        {
+          "name": "experiment/nexus-v28-ternary-decoder",
+          "sha": "c62a9ab9014289617abcd22ee0b0ae004775cf63",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-developmental-recurrent-20261101",
+          "sha": "547651c956c566b9b986a75ce84277dedb3716db",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-v2-compositional-20261101",
+          "sha": "d89a56e6a55d38ddb7c14e98edbcaac1771cabec",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-v2-primitive-composition-20261101",
+          "sha": "098b95d32bc8b363ffebf3f4ee0064fdc6b75bb4",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-v3-population-dialogue-20261101",
+          "sha": "1471a25bb8dfadfbff539908e638c52807856fa5",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-v4-population-verified-20261101",
+          "sha": "02a7a24a35ea7895ce6a635912e315d3895147a8",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-hybrid-t9-morph-recurrent-v1-20261101",
+          "sha": "bdd3660ce1484fcc91f51c23b51d2362f8e86cd6",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-v5-triple-recurrent-million-curriculum-20261110",
+          "sha": "f9ff2981e8907b5a5377e63504467a4363db893e",
+          "protected": false
+        },
+        {
+          "name": "feature/nexus-v25-russian-morph-router",
+          "sha": "ca46f68bdcbc10842831049ce124ad4c3d7f48a3",
+          "protected": false
+        },
+        {
+          "name": "freeze/crc-r1-pre-ftx1-fded8bd",
+          "sha": "6d306bb57e1ee64ce421e6577a06d1f911191eb5",
+          "protected": false
+        },
+        {
+          "name": "ftx1-clean-eval-2026-10-01",
+          "sha": "3e6d889862034f32d3b955f97daca52b24989c31",
+          "protected": false
+        },
+        {
+          "name": "ftx1-one-shot-result-2026-10-01",
+          "sha": "04eac6c94b914951cc4fe9ec2a4cec4f2ab44b06",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "sha": "a4f2860997128877e8a2a342558982349d3ab2e8",
+          "protected": false
+        },
+        {
+          "name": "m32-1-cortex-capacity-ab-2b",
+          "sha": "502580b7db971fd5dcaee0fd7dac54677169823e",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-grounded-typed-fewshot",
+          "sha": "4f66ba99654f626d23b9fe066d83c4f744e27259",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v2-budget",
+          "sha": "dbdd4d8387c84e07d7e22410cf93ffe309ae7b2a",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v3-output-contract",
+          "sha": "91810a9dc901b9cb09c8e6816b139e6d7bcae6c2",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v3-schema",
+          "sha": "dbdd4d8387c84e07d7e22410cf93ffe309ae7b2a",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v4-grounded-fewshot",
+          "sha": "4ade0f307fab8eff7244ce3a19671337a92c66c4",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v4-grounded-ontology",
+          "sha": "87c7cc5782e657a0da1aa205620a65c9fcb81107",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v5-exact-quality",
+          "sha": "79d9b8c1f5c61503efaf3a25429f178a693fb1e8",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v5-typed-recipe-compiler",
+          "sha": "70c28e8de1d3eb6d2659f49d01ca53f490d96d52",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v6-capacity-gate",
+          "sha": "d414e43c7b46859e6c8f2c85302a81d8b2f634aa",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v6-schema-constrained-ir",
+          "sha": "33c0e2d5b782317f4e047dbdbb4ed83b03bd05a2",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v7-pinned-schema-wire",
+          "sha": "f8c928ed68d45a07f279aab9de7488fde20856f9",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-proposal-quality",
+          "sha": "38a00b1ad11dc881cc4dac9bb45648c58f08fddb",
+          "protected": false
+        },
+        {
+          "name": "m32-generalized-ingress",
+          "sha": "ea921f54565ac61cee6272a64b3914222edd4223",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "2147423799c43726378a0afabf8d25e7030d2db9",
+          "protected": false
+        },
+        {
+          "name": "nexus-cognitive-loop-reset-2026-10-03",
+          "sha": "21c0c9679b407b52d6df4a08aba5038b5c401930",
+          "protected": false
+        },
+        {
+          "name": "nexus-federation-max-train-2026-10-20",
+          "sha": "1e5e6caa5a02c208b1d78423c32032f23c2acd05",
+          "protected": false
+        },
+        {
+          "name": "nexus-final-releases-archive-2026-09-29",
+          "sha": "0b03de352cc0fe44b1bffd0b34ba92080b5c7da8",
+          "protected": false
+        },
+        {
+          "name": "nexus-ftx1-freeze-v1",
+          "sha": "0d355343015a2e50756553387d2465355f5a0ea1",
+          "protected": false
+        },
+        {
+          "name": "nexus-gllm-omega1-v1",
+          "sha": "2b6d78d9b955bb892356a6cade50634911f7b13c",
+          "protected": false
+        },
+        {
+          "name": "nexus-local-run-2026-10-09",
+          "sha": "6fcc69af8c59eba833d0c4c28069da303aa9f6f9",
+          "protected": false
+        },
+        {
+          "name": "nexus-moe-b2-hard-far-oos-recovery",
+          "sha": "ca3645eadbb5214985d1913957417c75352f67ed",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-cognitive-ru-runtime-2026-09-26",
+          "sha": "407973206e2f682844f69313bbb4c9b65d8c293e",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-compositional-authority-v3-2026-09-26",
+          "sha": "105a692d64a42d6c772de69dcaeb16ac27833b01",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-deeptrain-2026-09-26",
+          "sha": "1f1febafabfb46aeb076b308be8b4056a1ef5c8f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-exact-cognitive-ru-v2-2026-09-26",
+          "sha": "4735ca4f36d441f4fa2de6af4c704d5140a6c586",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-recovery-2026-09-26",
+          "sha": "a14e4ee8eae5aba4cb77172e5896b68a923b6d71",
+          "protected": false
+        },
+        {
+          "name": "nexus-unified-cognitive-runtime-r1",
+          "sha": "4f65ee769eadf8f55021554cae85f49391a82b0f",
+          "protected": false
+        },
+        {
+          "name": "nexus-unified-russian-cognitive-runtime-v1-2026-09-27",
+          "sha": "fb0cf598ff2de3058ebbe1fdb71f786d91eaf39c",
+          "protected": false
+        },
+        {
+          "name": "omega15r2-blind4-v1",
+          "sha": "f70a3c316775c763a94fbc55a8fae84c326ab60e",
+          "protected": false
+        },
+        {
+          "name": "unified-nexus-rebuild-v1",
+          "sha": "e7dc57c1659628f15ada373172fab3effd8e47f9",
+          "protected": false
+        },
+        {
+          "name": "unified-nexus-v2-ub2-design",
+          "sha": "2b47c17f4f928430da9abb83f51ccd02d871981d",
+          "protected": false
+        },
+        {
+          "name": "unified-v3-generalization-first",
+          "sha": "a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_messenger",
+      "default_branch": "main",
+      "branch_count": 14,
+      "unique_head_count": 6,
+      "branches": [
+        {
+          "name": "build/apk-alpha9-ci",
+          "sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9-final",
+          "sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9-real",
+          "sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9-runtime",
+          "sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9-working",
+          "sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9",
+          "sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-direct-final",
+          "sha": "aab3f83e29013eab3437020afe8cefaede3bc154",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source",
+          "sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source2",
+          "sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source-final",
+          "sha": "8f422e342d56b584d4bda0c6a59f86ac33749c14",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source-stable",
+          "sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source-stable2",
+          "sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+          "protected": false
+        },
+        {
+          "name": "import/full-source-alpha9",
+          "sha": "f1790625519a34efd258e760198ac545556c2fa7",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_apps",
+      "default_branch": "main",
+      "branch_count": 11,
+      "unique_head_count": 10,
+      "branches": [
+        {
+          "name": "analysis/all-850-app-ideas",
+          "sha": "1ae42f2f646776285d7c148cb0ad44e45a3aeba1",
+          "protected": false
+        },
+        {
+          "name": "artifacts/nutrition-2200-v13-20261024",
+          "sha": "a952c72fcad195eed1ec02a158c34735f6359dfe",
+          "protected": false
+        },
+        {
+          "name": "distill/chat-6ab6d182-500-apps",
+          "sha": "0a714a83dfaad5c96f4ae74789c27a5800ee2a91",
+          "protected": false
+        },
+        {
+          "name": "distill/chat-6ab6d182-moex-future-portfolio",
+          "sha": "fd4bcaf1b7fad60510a807eab810e32eadcaf24c",
+          "protected": false
+        },
+        {
+          "name": "feat/w0-w2-safe-pilot-20261112",
+          "sha": "6669e1cbb2e8e52d742631cf62903050cf191bc2",
+          "protected": false
+        },
+        {
+          "name": "feature/500-app-catalog",
+          "sha": "9450fe23dcbc6230de489481a8b4d3b83bc27cf9",
+          "protected": false
+        },
+        {
+          "name": "fix/w0-fail-closed-permissions-20261112",
+          "sha": "de76a6e5efde6315dbae23fa1fbafbf7bb759c42",
+          "protected": false
+        },
+        {
+          "name": "implementation/metaos-v9-three-apps",
+          "sha": "1ae42f2f646776285d7c148cb0ad44e45a3aeba1",
+          "protected": false
+        },
+        {
+          "name": "integration/synergy-apps-master-2026",
+          "sha": "60c634b01a6a5777f3712c15683ba90c0c4f17e5",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "protected": false
+        },
+        {
+          "name": "migration/drive-app-sources",
+          "sha": "0a7652b85848aa25eb0e0d3de4aa3396ee9f86a1",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_trader",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "import/seal-sovereign-trader-foundation",
+          "sha": "8575db31a9b579bd07a498ab86cc95f59ed4c766",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "8efe7942ed6c68ac4b081ee44b651ac99fd0ae7c",
+          "protected": false
+        },
+        {
+          "name": "runtime/qwen35-4b-2026-eval",
+          "sha": "eadbf502f069739f9cd492538477f6fefbd5b8a8",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_quantlab",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "27b41cb9babdc45d644f4fe95b16156f44baf955",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "57ee40a6879c0db6550b573aacadad27347fb2db",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "3727a085a4f805ee77a187e30ab7433bfb17d4c2",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_riskguard",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "b0a5ad16a7adf6368395d8b1b600900685e85b3c",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "bc3ef1810c5d77f54b8a9ecf2f1b8adc35231f2b",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "c6d20f2c37fdebace002da9af9052ae23ddb1a5a",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_market_graph",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "526ca05ee02caf84cf09b1328ccc3e83b7fcfc50",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "d6e60eae1d4c4eb1ae97b5fb224007fc89caf2b2",
+          "protected": false
+        }
+      ]
     }
   ]
 }
