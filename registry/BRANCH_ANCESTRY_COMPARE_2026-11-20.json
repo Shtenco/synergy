@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 8,
-  "pending_comparisons": 1194,
+  "completed_comparisons": 15,
+  "pending_comparisons": 1187,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -107,6 +107,97 @@
       "ahead_by": 168,
       "behind_by": 262,
       "total_commits": 168,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/autopilot-v5-ai-node-preproduction-rc4-aligned-20260824",
+      "head_sha": "16a2bb1995a459158ba4cdac6a74c7fae9732e58",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 181,
+      "behind_by": 262,
+      "total_commits": 181,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/autopilot-v5-ai-node-preproduction-rc5-full-domain-closure-20260824",
+      "head_sha": "f2b9a2a9d15af31f30349a31f4497413a03bb69b",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 186,
+      "behind_by": 262,
+      "total_commits": 186,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/autopilot-v5-ai-node-registry-v1-20260823",
+      "head_sha": "54a07f2cb5df9fe253c9b413196405f999a3dd8b",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 148,
+      "behind_by": 262,
+      "total_commits": 148,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/autopilot-v5-ai-node-registry-v2-lab-20260823",
+      "head_sha": "0b61873cc27596acd6aee086527cbe58322d4c0f",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 153,
+      "behind_by": 262,
+      "total_commits": 153,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/autopilot-v5-ai-node-registry-v3-preproduction-20260824",
+      "head_sha": "6572a15b8f65fe79c5a2669f1ec10c2747703ce2",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 173,
+      "behind_by": 262,
+      "total_commits": 173,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/capability-registry-v1-20260821",
+      "head_sha": "ab8c9361452ec01b85759edfe7c6c3d7255e3720",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 47,
+      "behind_by": 262,
+      "total_commits": 47,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/economic-os-e2e-cycle-v1-20260828",
+      "head_sha": "43760304d0f0c43e737cbe3bb717dd0f15eaa953",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 192,
+      "behind_by": 262,
+      "total_commits": 192,
       "observed_at": "2026-11-20"
     }
   ]
