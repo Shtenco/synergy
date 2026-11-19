@@ -1,7 +1,7 @@
 {
   "schema": "synergy.live-branch-audit/v1",
   "as_of": "2026-11-20",
-  "scope": "41 repositories covered by fifteen live branch audit tranches; not yet the full 91-repository owner inventory",
+  "scope": "47 repositories covered by sixteen live branch audit tranches; not yet the full 91-repository owner inventory",
   "repository_count": 47,
   "branch_record_count": 1002,
   "unique_repository_branch_pairs": 1002,
