@@ -6,7 +6,7 @@
   "scope": "Initial priority repositories; incremental full-owner census",
   "completed_repositories": 92,
   "pending_repositories": 0,
-  "branch_refs": 1187,
+  "branch_refs": 1294,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -2493,7 +2493,7 @@
       "repository": "Shtenco/synergy_ai_language",
       "observed_at": "2026-11-20",
       "source": "GitHub REST branches API",
-      "branch_count": 100,
+      "branch_count": 129,
       "branches": [
         {
           "name": "ai-language-v040-hardening",
@@ -2994,8 +2994,154 @@
           "name": "nexus-r521-modern-pilot",
           "head_sha": "a0027f20e239fee7935d1d5293a620550a558d39",
           "protected": false
+        },
+        {
+          "name": "nexus-r522-typed-binding-authority",
+          "head_sha": "4389f37a6608fdc708a7ed427d9042defbec8511",
+          "protected": false
+        },
+        {
+          "name": "nexus-r523-kl-homeostat",
+          "head_sha": "095addfe3285722977323dc189be661433439f64",
+          "protected": false
+        },
+        {
+          "name": "nexus-r523-prefix-dependence",
+          "head_sha": "e188922cfcf8d4143b3e18e6524d9746bdb05960",
+          "protected": false
+        },
+        {
+          "name": "nexus-r524-capacity-pilot",
+          "head_sha": "83361c01f5f3de3719efbb87acf60b06822d0faa",
+          "protected": false
+        },
+        {
+          "name": "nexus-r524-capacity-sweep",
+          "head_sha": "5592e7113772d50122ec85c8e1ce8911ef34c249",
+          "protected": false
+        },
+        {
+          "name": "nexus-r524-graph-grounded-answer-loop",
+          "head_sha": "0964deac374de951616377fb30538bf0726fe462",
+          "protected": false
+        },
+        {
+          "name": "nexus-r525-authority-bus",
+          "head_sha": "994ed0f9db7fa148b2759be335da73615fb3c764",
+          "protected": false
+        },
+        {
+          "name": "nexus-r525-persistent-graphrag-memory",
+          "head_sha": "87b9757642921b5c8f3ab2f0f1389a7f1fc8c287",
+          "protected": false
+        },
+        {
+          "name": "nexus-r525b-authority-stress",
+          "head_sha": "f987c94b887210b887cdb690152fc2c65422cfbe",
+          "protected": false
+        },
+        {
+          "name": "nexus-r526-11m-diverse-clean",
+          "head_sha": "3289dc012ee8d9d6daa7da56fd4ea279d26903d7",
+          "protected": false
+        },
+        {
+          "name": "nexus-r526-integrated-cognitive-loop",
+          "head_sha": "f603c2c3da42eee4fa13ff47dc103540b0c7a82e",
+          "protected": false
+        },
+        {
+          "name": "nexus-r527-sequence-stability",
+          "head_sha": "c07cf3b8452094496b4597413941a3a234bfd1b0",
+          "protected": false
+        },
+        {
+          "name": "nexus-r527-slot-safe-neural-realizer",
+          "head_sha": "91c8a29d887c913da56a82a527a7bc961b2cb330",
+          "protected": false
+        },
+        {
+          "name": "nexus-r528-capacity-extension",
+          "head_sha": "e8da65e9c21a3d65b670114466f84a3abd288c99",
+          "protected": false
+        },
+        {
+          "name": "nexus-r528-russian-semantic-compiler",
+          "head_sha": "5d400ab6d97e765c8c948922659e793f5f117a3a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r529-concept-logic-planner",
+          "head_sha": "7df3a396331e628f08a089849a0c30e0d9e9a1d5",
+          "protected": false
+        },
+        {
+          "name": "nexus-r710-blind27-run",
+          "head_sha": "9173c4189ae14cc32cc47dc1644f5775e3ff114d",
+          "protected": false
+        },
+        {
+          "name": "nexus-r712-blind28-run",
+          "head_sha": "43b03a569608117183664ffee6a40aab387a819a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r717-blind30-confirmatory",
+          "head_sha": "f06ca3b44de6442541daad4622cd56d27aedee23",
+          "protected": false
+        },
+        {
+          "name": "nexus-r718-blind31-confirmatory",
+          "head_sha": "c5b5313268ed7d95fdecf5730a7d9c71e2ff62b9",
+          "protected": false
+        },
+        {
+          "name": "nexus-r5271-slot-safe-realizer-v2",
+          "head_sha": "930e200db049c320f45eb779c70c6eeeab8bf3be",
+          "protected": false
+        },
+        {
+          "name": "qwen3-14b-r21-relay",
+          "head_sha": "f46b9aaad6dcfa70ded3e01cb9209518013b10cc",
+          "protected": false
+        },
+        {
+          "name": "qwen05b-artifact-relay",
+          "head_sha": "96f1c1f86943de95f9f5f0e1c5db3083ff891e71",
+          "protected": false
+        },
+        {
+          "name": "release/pypi-0.4.0",
+          "head_sha": "875fa4ac00f048ce15bcc475223ce56bbfd7aa29",
+          "protected": false
+        },
+        {
+          "name": "runtime-build-r1",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "runtime-build-r2",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "runtime-build-r3",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "runtime-build-r4",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "runtime-d9a7",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
         }
-      ]
+      ],
+      "pagination_review_required": false
     },
     {
       "repository": "Shtenco/synergy_ai_llm_rwkv",
@@ -3237,7 +3383,7 @@
       "repository": "Shtenco/synergy_binary_quantum_theory",
       "observed_at": "2026-11-20",
       "source": "GitHub REST branches API",
-      "branch_count": 100,
+      "branch_count": 178,
       "branches": [
         {
           "name": "archive/w5-v09-immutable-6ae145a",
@@ -3738,9 +3884,399 @@
           "name": "research/bqg-v24-finite-index-constraint-gates-20261108",
           "head_sha": "524240db085485ac31678e82778f585ffd38d199",
           "protected": false
+        },
+        {
+          "name": "research/bqg-v25-local-HDA-charge-20261108",
+          "head_sha": "b58872dcb23404fd509421e14b975a98d2214a3e",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v26-multiprecision-charge-20261109",
+          "head_sha": "e07fa944301e1bf393de6f8b19e351a7b15627f7",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-w5-production-audit-20261113",
+          "head_sha": "eead201073c0ead4cde9fdf93d7cd844036b5f99",
+          "protected": false
+        },
+        {
+          "name": "research/canonical-frontier-v2",
+          "head_sha": "73287ef611096c01c1673ac894ff44ffb1a38066",
+          "protected": false
+        },
+        {
+          "name": "research/canonical-ledger-2026-08-15",
+          "head_sha": "1f754a7060653746e13da05cc8c76261665379f9",
+          "protected": false
+        },
+        {
+          "name": "research/canonical-lorentzian-frontier",
+          "head_sha": "4c51657a7cdc2a758b67a44f0b5c641a10350d50",
+          "protected": false
+        },
+        {
+          "name": "research/canonical-prefactor-audit",
+          "head_sha": "e68a226bfa4638d82e169e4b2a7dbb4645dda349",
+          "protected": false
+        },
+        {
+          "name": "research/consolidated-bqg-audit-20261111",
+          "head_sha": "a57076e9a35af0405d29d609e75141e83ff7171f",
+          "protected": false
+        },
+        {
+          "name": "research/depth6-s4sign-proof",
+          "head_sha": "f6bfcd775b8c3cd33c6c235d48293e40657baf9d",
+          "protected": false
+        },
+        {
+          "name": "research/first-q2-scalar-effective-action",
+          "head_sha": "6c63f0d8734d7bc67d1ca6e462e1ba05956b8db5",
+          "protected": false
+        },
+        {
+          "name": "research/hl-sine-dag",
+          "head_sha": "299e3d896a7845688ca6f3e7cb6c4b379c6a73f1",
+          "protected": false
+        },
+        {
+          "name": "research/k5-covariance-hda",
+          "head_sha": "af16606ecb1358a246574ba3a1406e15f9b5c8fa",
+          "protected": false
+        },
+        {
+          "name": "research/l1-amplitude-package-20261110",
+          "head_sha": "ec6980fb53677780d6a68a41f5d97b248b4e4d0d",
+          "protected": false
+        },
+        {
+          "name": "research/lemaitre-bqg-causal-cone-20261110",
+          "head_sha": "b69b105756dd7d9be093b9bf217ce048bd4a2554",
+          "protected": false
+        },
+        {
+          "name": "research/logical-s4-sign-twirl",
+          "head_sha": "e40011f66d9779eda82bca2584229128ab3a76f2",
+          "protected": false
+        },
+        {
+          "name": "research/lorentzian-composition-fast",
+          "head_sha": "7abcaba66567fd09ec533c0c2a170b7d560e2b9a",
+          "protected": false
+        },
+        {
+          "name": "research/lorentzian-ordered-triple-fast",
+          "head_sha": "5cdf421c8f662db620b762328bec6d9228c7d7b4",
+          "protected": false
+        },
+        {
+          "name": "research/micro-hda-joint-prediction",
+          "head_sha": "c5aade6763fdd1bd41717f93037231fcba2de99c",
+          "protected": false
+        },
+        {
+          "name": "research/mirror-anisotropy-audit-v2",
+          "head_sha": "11a0775ce11fddc5cf28680bb24d1f4cc609774d",
+          "protected": false
+        },
+        {
+          "name": "research/mirror-orientation-eta",
+          "head_sha": "7710fc5f2b2b93eebfc2ff72552ff853398a88f4",
+          "protected": false
+        },
+        {
+          "name": "research/modular-complex-arithmetic-bridge",
+          "head_sha": "6dad7a4fb05ed8b80540fa610c884d05e1af5563",
+          "protected": false
+        },
+        {
+          "name": "research/operator-micro-dynamics",
+          "head_sha": "ad37059d0f478ff9bfda57a157d538399f39318a",
+          "protected": false
+        },
+        {
+          "name": "research/physical-cosmology-interference-lensing",
+          "head_sha": "185bee58de27b053497e2a28eaf45c66b1470540",
+          "protected": false
+        },
+        {
+          "name": "research/physical-history-causality-20261112",
+          "head_sha": "27e4d62c85813548f1ca7f2bd91b22a75b6b3b30",
+          "protected": false
+        },
+        {
+          "name": "research/physical-pole-universality",
+          "head_sha": "b46dbad39e4c9b3de08a45742604d0a9cb973fec",
+          "protected": false
+        },
+        {
+          "name": "research/physical-scalar-kernel-dynamics",
+          "head_sha": "ab24171a4bb327d190551bdf68957bd10a819c1d",
+          "protected": false
+        },
+        {
+          "name": "research/physicalization-l1-depth2-metric",
+          "head_sha": "f06b18f3a9af995d0e7987b323359631945a9394",
+          "protected": false
+        },
+        {
+          "name": "research/physicalization-scale-observable-prediction",
+          "head_sha": "c2a3ee8e30ab449ef23b0cd60fac3db1a0285631",
+          "protected": false
+        },
+        {
+          "name": "research/post-hda-physicalization-v2",
+          "head_sha": "6d3f23860fc134ec0f10259fa17adb2c32588739",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-24-collector",
+          "head_sha": "f7f28882d02339b9ed3703c02634ad526c2d1f1b",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-24-mitm",
+          "head_sha": "4d72abf7fd0f88c3d9113138eca0b06d264ef2c3",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-component-fast",
+          "head_sha": "4d7676a0e153145d34e35b215356528eb8629f04",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-component-mitm",
+          "head_sha": "fe117390f4b3b567241084ed945fcb7d3166751e",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-envtrace",
+          "head_sha": "7a44506a3b17a341381a720ac27eae78b81e27b0",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-envtrace-orbit",
+          "head_sha": "ed0949bee6f7e21658f3ef054b9f23d6f167c611",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-logical-projection",
+          "head_sha": "651dd9003cb15b8fd57d4b7c31f7c3a70d9bb49b",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-lowcut-scout",
+          "head_sha": "0559c1122070a8eb72885fa8214bf2ba7f1be320",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-mitm",
+          "head_sha": "2d05ca59f920d78d926a7f78020a69f6c1326e81",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-parity",
+          "head_sha": "cf968d788c2b7aac93d468516cd81695a2feff1b",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-single-mitm",
+          "head_sha": "71e807cfedcd38085ebd1801293428ba5701f098",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-single-probe",
+          "head_sha": "8d4d697d613a05334f2f346dedd68771e0460318",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-ultralow-scout",
+          "head_sha": "e0322ee01558510b0aaf922936a93520488b5360",
+          "protected": false
+        },
+        {
+          "name": "research/pw-master-32",
+          "head_sha": "87aee1e6005fa33d1aa2a1361207218088ed0d1c",
+          "protected": false
+        },
+        {
+          "name": "research/pw-spin-parity-master",
+          "head_sha": "3462cb5ee7c802b45d83577ef875877bc5964231",
+          "protected": false
+        },
+        {
+          "name": "research/q2-face-incidence-bridge",
+          "head_sha": "6a32a784dfbdc47ffa20248232713a92fd9b90ee",
+          "protected": false
+        },
+        {
+          "name": "research/q2-gravity-gyc-amplitude",
+          "head_sha": "ae748aa16c3569d0fe16351150ee33de6bb63ab4",
+          "protected": false
+        },
+        {
+          "name": "research/q2-gravity-gyc-sign-twirl",
+          "head_sha": "494fd514d2d46ee89b487e9b3d506579a9539831",
+          "protected": false
+        },
+        {
+          "name": "research/q2-history-directed-laplacian-factorization",
+          "head_sha": "69d30ce243b79e89151a48888d02342f8897f0b9",
+          "protected": false
+        },
+        {
+          "name": "research/q2-history-fourier-complex-structure",
+          "head_sha": "1a580b434391da0c884d640930ed1b67971c4613",
+          "protected": false
+        },
+        {
+          "name": "research/q2-history-gravity-orientation-current",
+          "head_sha": "5ba4bc24230c3d0a1e47bf309453a692601ee49d",
+          "protected": false
+        },
+        {
+          "name": "research/q2-history-phase-refinement-winding",
+          "head_sha": "d52496c73c76b8fec0e7b4021ef9a852503bc690",
+          "protected": false
+        },
+        {
+          "name": "research/q2-orientation-intrinsic-metric-nogo",
+          "head_sha": "115d308433254b3b32440e3497df259533930b9d",
+          "protected": false
+        },
+        {
+          "name": "research/q2-oriented-flux-history-observable",
+          "head_sha": "ce33520f0c1bdd9985661bb9be086a463de87e9f",
+          "protected": false
+        },
+        {
+          "name": "research/q2-relational-history-projector",
+          "head_sha": "fbdf2ef66d3f28be9ee9c03c0cd479af4459e5c3",
+          "protected": false
+        },
+        {
+          "name": "research/q2-relational-metric-source",
+          "head_sha": "4c5053a002d4acd380a5911413cc4a76697fa87c",
+          "protected": false
+        },
+        {
+          "name": "research/q2-unified-complex-structure",
+          "head_sha": "83f45dfc19cdef884e5290f111bf46dc0e10d1e7",
+          "protected": false
+        },
+        {
+          "name": "research/scalar-adm-physical-response",
+          "head_sha": "4833af3f878a18c2179cdb560fa9b22d9ad941c8",
+          "protected": false
+        },
+        {
+          "name": "research/sine-kkv-next",
+          "head_sha": "9066d572b456f139939d180b7e3cbc2a5a64b514",
+          "protected": false
+        },
+        {
+          "name": "research/v12-gauge-dressed-nucleation-20261015",
+          "head_sha": "d1a4648187d063c464d8fd51558b45afbfff39dc",
+          "protected": false
+        },
+        {
+          "name": "research/v13-k5-leakage-safe-master-20261015",
+          "head_sha": "2cd4813005356302d8d66f8767b264b908b99d4e",
+          "protected": false
+        },
+        {
+          "name": "research/v14-k5-first-real-columns-20261015",
+          "head_sha": "ce43cabf260d3bb937f4de0bf03d685247c83d41",
+          "protected": false
+        },
+        {
+          "name": "research/v15-k5-32input-rank-audit-20261015",
+          "head_sha": "bc172ff2b4b823d2f33af61ab11be6da37221267",
+          "protected": false
+        },
+        {
+          "name": "research/v16-full-initial-k5-and-first-shell-20261015",
+          "head_sha": "95fa4040df6ac71566f111adf89eebb3ab5b74e5",
+          "protected": false
+        },
+        {
+          "name": "research/v17-k5-parity-shell-selection-20261015",
+          "head_sha": "330236f88c9e5734d67b123330190088c4dfecdd",
+          "protected": false
+        },
+        {
+          "name": "research/v18-k5-parity-feshbach-20261015",
+          "head_sha": "2c59b1e03fd7404685db29547fd6b9da3ede575a",
+          "protected": false
+        },
+        {
+          "name": "research/v19-canonical-k5-replay-20261015",
+          "head_sha": "1a715e22d10bb27b2d7c7b6529ac53c59092a851",
+          "protected": false
+        },
+        {
+          "name": "research/v20-160-canonical-k5-20261015",
+          "head_sha": "1a715e22d10bb27b2d7c7b6529ac53c59092a851",
+          "protected": false
+        },
+        {
+          "name": "research/v20-complete-160-canonical-20261015",
+          "head_sha": "f3ce62cfd9199201dd3ff1025846600cfb75c72d",
+          "protected": false
+        },
+        {
+          "name": "research/v21-first-shell-checkpoints-20261015",
+          "head_sha": "085e7b8aa152191a2323803fceecb8565a353880",
+          "protected": false
+        },
+        {
+          "name": "research/v22-k5-kernel-ritz-cutoff-20261016",
+          "head_sha": "35056f1b7eebc89840606529164dfd083e1e5f1e",
+          "protected": false
+        },
+        {
+          "name": "research/v23-unified-proof-bridge-20261016",
+          "head_sha": "c0df55a10937d6545616a44593a6e060cb21d513",
+          "protected": false
+        },
+        {
+          "name": "research/v24-crossscale-multiplicity-obstruction-20261016",
+          "head_sha": "e3eb71e898f4b638d32cdc19b2c3e5ba2f97db52",
+          "protected": false
+        },
+        {
+          "name": "research/v25-ancilla-crossscale-k5-20261016",
+          "head_sha": "45d7ba89facf7c0ad17ddb2359c26bb00f6e6eb5",
+          "protected": false
+        },
+        {
+          "name": "research/v26-graph-sector-output-obstruction-20261016",
+          "head_sha": "456aa7c477c022b87ba1a09d1d0397c67506645c",
+          "protected": false
+        },
+        {
+          "name": "research/w5-v09-v10-repro-20261119",
+          "head_sha": "96ec89b83950de3a507eb269c4621d6bcbca09cf",
+          "protected": false
+        },
+        {
+          "name": "research/zeroaware-volume-migration",
+          "head_sha": "042baa6e87b2a0340511cf083c974042c89b848b",
+          "protected": false
+        },
+        {
+          "name": "spectral-history-closure",
+          "head_sha": "306eaccf4f6416438271eb69eeb72ff2ea6959ae",
+          "protected": false
+        },
+        {
+          "name": "work/q2-two-sided-singlet-qfi-20261118",
+          "head_sha": "eebef83bfd9b3aa15c473f5ca8c18f6443547c03",
+          "protected": false
         }
       ],
-      "pagination_review_required": true
+      "pagination_review_required": false
     },
     {
       "repository": "Shtenco/synergy_blochain_budget",
@@ -6731,5 +7267,6 @@
       ],
       "pagination_review_required": false
     }
-  ]
+  ],
+  "pagination_complete": true
 }
