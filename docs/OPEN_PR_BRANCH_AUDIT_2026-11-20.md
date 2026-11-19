@@ -17,8 +17,8 @@ The 549 count is the sum of individual repository searches. Earlier multi-reposi
 For 18 priority PRs, the canonical JSON/CSV includes title, state, draft flag, mergeability, head/base branches, head/base SHAs, commit count and change counts. For the other 531 PRs, only repository, number, title and URL are recorded; no head/base SHA, draft state, review or CI result is inferred.
 
 Priority PRs enriched:
-- `synergy_hierarchical_cognitive_memory_architecture#1`
-- `synergy_motherboard_xpu_xml#4`
+- `synergy_hierarchical_cognitive_memory_architecture#1` (84 commits; current head `2d6d787...`; CI queued)
+- `synergy_motherboard_xpu_xml#4` (118 commits; current head `77fcd377...`; CI queued)
 - `synergy_system#54`
 - `synergy_long_term_harness#1–#4`
 - `synergy_agi_autopilot#24`
