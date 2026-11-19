@@ -9800,6 +9800,6 @@
       ]
     }
   ],
-  "snapshot_note": "92 repositories / 1,294 refs. 1,077 live SHA observations from 60 repositories (including two refs in the newly discovered cognitive-memory repository); 217 SHA values remain from the dated census. Branch protection for the two new refs is unknown.",
+  "snapshot_note": "92 repositories / 1,294 refs. 1,084 live SHA observations from branch-audit and priority PR metadata; 210 SHA values remain from the dated census. Branch protection for the two new cognitive-memory refs is unknown.",
   "unique_heads_summed_within_repositories": 1208
 }
