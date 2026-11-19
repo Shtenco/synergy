@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 72,
-  "pending_repositories": 20,
-  "branch_refs": 983,
+  "completed_repositories": 80,
+  "pending_repositories": 12,
+  "branch_refs": 1078,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -5526,6 +5526,553 @@
         {
           "name": "tmp-noop-final-test5",
           "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 18,
+      "branches": [
+        {
+          "name": "codex/create-development-plan-based-on-readme",
+          "head_sha": "960601fbf8fb95512057fa02f0a00d1d380c0273",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-2pvh9x",
+          "head_sha": "9e0970de929fc696737a994096ce0967880be632",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-58tsd9",
+          "head_sha": "14915dfbafc8a552d7b6fe5902d1b6ef849add89",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-ai58yg",
+          "head_sha": "701d13c41ee99a9121bc643acd0430a57f6133ea",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-cm7dgj",
+          "head_sha": "95a7cc2b6c1337353a5dda08c13d702c9fa2d552",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-ghcyzw",
+          "head_sha": "e9f7ef760fb3e7ce69559dcd252124c0ea32c30c",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-ljw2if",
+          "head_sha": "7d71bbc5052e32b27f526155607309f50bac1231",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-oct38c",
+          "head_sha": "deac8fa3a15a58f0213403e51066274a99f35cd8",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-q0gypk",
+          "head_sha": "96bc049177d8de01f11cc78a177980fc30279257",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-r2hfhk",
+          "head_sha": "c60465727d16b0de907ca57cf76e766bcc4d8623",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-s8n6yw",
+          "head_sha": "a614673cf1d8586a295a951630e96a2239eb5d92",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-sx8bcx",
+          "head_sha": "33e1d53d8767570bd7b601e493fbba74d8e01a86",
+          "protected": false
+        },
+        {
+          "name": "codex/create-development-plan-based-on-readme-tykqnp",
+          "head_sha": "cf0b59082db5eb8610258c5faf58aed61f4a7bb7",
+          "protected": false
+        },
+        {
+          "name": "docs/visual-dossier-batch02",
+          "head_sha": "6797c9e390d0696fa3886fb0e045d351fbae90fb",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "550a57e64606e89f294daf3d0fc71a46b92e3732",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "8c704a16011b9dcdc7a6866c6f4e961d1096a55d",
+          "protected": false
+        },
+        {
+          "name": "ops/split-roboforex-drive",
+          "head_sha": "898ff272ef87e9300ed8d93dc165a21afb6c3def",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_midas_institutional",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "4b6a7b19e53d46ed3baff267fb9221656e33c007",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "75f646380cd0a1478e5093216615b1af8ded1fbf",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "00ff3fffbb3d90ac81297c55dca1b58b95aa6f2b",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_net",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 22,
+      "branches": [
+        {
+          "name": "feat/autopilot-v5-ai-node-transport-v1-20260823",
+          "head_sha": "b6edd9b1e09739ca314b4509cf17245dd42fccd1",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-transport-v2-location-v3-20260824",
+          "head_sha": "8a4cd5843cd767203d8d1bb04ae1c55cbb2079c4",
+          "protected": false
+        },
+        {
+          "name": "feat/bounded-runtime-services-v2-20260822",
+          "head_sha": "aa93e18bdeb84a8475419cde83f149c8381428cd",
+          "protected": false
+        },
+        {
+          "name": "feat/build-readiness-v1-20260821",
+          "head_sha": "44bccb2b670a181b007c3d9a01726c44c807d142",
+          "protected": false
+        },
+        {
+          "name": "feat/build-recipe-v1-20260822",
+          "head_sha": "afad8f01fd03091a91be20653872e2238f7411ab",
+          "protected": false
+        },
+        {
+          "name": "feat/build-recipe-v2-20260822",
+          "head_sha": "4c7ca52eb036454fdd93334121a6a1095c11cc70",
+          "protected": false
+        },
+        {
+          "name": "feat/deterministic-source-capsule-v1-20260821",
+          "head_sha": "4b65ce8636d9dd26c849d9553cb0d7884db96f78",
+          "protected": false
+        },
+        {
+          "name": "feat/location-availability-negative-evidence-v1-20260823",
+          "head_sha": "1ff98cd0243b61ee5e1bb83d9a122bd714662ed0",
+          "protected": false
+        },
+        {
+          "name": "feat/location-evidence-v3-git-carrier-20260824",
+          "head_sha": "b86fb1c6c3d5dec2e0684abd5d3881ad7573969f",
+          "protected": false
+        },
+        {
+          "name": "feat/persistent-content-service-v1-20260821",
+          "head_sha": "0aa548ee8f1b4dc7046cefa5694f9b496d312145",
+          "protected": false
+        },
+        {
+          "name": "feat/persistent-store-codec-v3-20260821",
+          "head_sha": "a8fde01c19420dbe63ca30e1da3b009c0c10064d",
+          "protected": false
+        },
+        {
+          "name": "feat/real-tcp-content-transport-v2-20260821",
+          "head_sha": "4043eeb4d5e396b44611443bdc2d6cebdeb39bf0",
+          "protected": false
+        },
+        {
+          "name": "feat/repro-artifact-v3-20260822",
+          "head_sha": "9f43b4bedae92892631da195ef6ce95bee6462e1",
+          "protected": false
+        },
+        {
+          "name": "feat/research-transport-build-recipe-v1-20260821",
+          "head_sha": "a187551e121350edf690d7570ca4dc76f749d17f",
+          "protected": false
+        },
+        {
+          "name": "feat/service-spec-v1-20260822",
+          "head_sha": "b0de2c70b8fd207e1d8263a994140f73ef592eca",
+          "protected": false
+        },
+        {
+          "name": "feat/service-spec-v2-20260822",
+          "head_sha": "d2f5256825f4ee3e878476556a427b3172cf5d31",
+          "protected": false
+        },
+        {
+          "name": "feat/shttps-transport-bridge-v1",
+          "head_sha": "780b9a9bbb5ec0b3f1bf571f946e27907fd3da98",
+          "protected": false
+        },
+        {
+          "name": "feat/static-peer-relay-service-v1-20260821",
+          "head_sha": "874a83b6510420ec43ce99fc4b7936e106ad2339",
+          "protected": false
+        },
+        {
+          "name": "feat/three-node-content-mesh-lab-v1-20260821",
+          "head_sha": "3df492e84794cff4a1327c0eae7200b85f5d15bc",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "e00c26a1a281f23a3f9d7622c43810b946e092a9",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "d034b709dfc664c40c4ced473cd633cb84a59999",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "84fbfb842be97e5c2195c30e7c4188e5af813001",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_nexus_science_agent",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 8,
+      "branches": [
+        {
+          "name": "feat/local-science-service-build-recipe-v1-20260821",
+          "head_sha": "2e4e86484d842f1283204fa87d86927603278e5b",
+          "protected": false
+        },
+        {
+          "name": "feat/science-service-protocol-v4-20260821",
+          "head_sha": "0607690c3036d2fdce2ac3e044094a8e4da0311b",
+          "protected": false
+        },
+        {
+          "name": "feat/search-evidence-graph-core-v1-20260821",
+          "head_sha": "90135b758799f1bf931c1e3e14e937d826ef8dae",
+          "protected": false
+        },
+        {
+          "name": "feat/source-quality-identity-v3-20260821",
+          "head_sha": "c9872e48a55d38fdfc26b209d2df1027e97fa6ad",
+          "protected": false
+        },
+        {
+          "name": "feat/web-retrieval-snapshot-v2-20260821",
+          "head_sha": "2c1a2e9e19ab0c1498f5fee759d25d20d62d429a",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "82545d735a6cb90de890fda164f1868ef1d435a6",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "5ccad4e6d2bc82f147e6955b811720df2542ea23",
+          "protected": false
+        },
+        {
+          "name": "r83-research-cortex",
+          "head_sha": "363e27e6f0649809bf01cf1ca12b6f9ab2f7fd04",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_pay_system",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 27,
+      "branches": [
+        {
+          "name": "audit/pay-system-settlement-2026-11-11",
+          "head_sha": "e3b9dd0ae7ead07bc9789cfa9acb897d47537960",
+          "protected": false
+        },
+        {
+          "name": "docs/financial-os-federation-boundary-20260817",
+          "head_sha": "cea647c3b4318d72bbca0e220c06c0a195943caa",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-authorization-handoff-v1-20260818",
+          "head_sha": "9555ca9f5d39163baa2b454e1dceac1c01803215",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-authorization-handoff-v2-20260818",
+          "head_sha": "87105278377b1ff95a7ed7de44e25ce8f14524be",
+          "protected": false
+        },
+        {
+          "name": "feat/capped-canary-external-requirements-v1-20260905",
+          "head_sha": "04dcc230bdcab040494faaa251b9896ec6ebeb1a",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-batch-utilization-v1-20260820",
+          "head_sha": "258727648efccba06ec7ff6c31c07c38328b2542",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-aware-settlement-v3-20260824",
+          "head_sha": "8bda0d9853af905cd043b94b12f0b62bac58a1d6",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-budget-settlement-v2-20260823",
+          "head_sha": "3fc7bf98c5d0cb43401724d8be0bc4aafcad6571",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-reversal-refund-v2-20260828",
+          "head_sha": "006637b1974d9236b91b83c5962c3b926876a307",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-settlement-reversal-v1-20260820",
+          "head_sha": "6bdeec524d6d17fd0991dd4070e17059d7b87c46",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-settlement-reversal-v2-fee-refund-20260828",
+          "head_sha": "a4b7b2876915e7f70089947a5b40f3cff81458d9",
+          "protected": false
+        },
+        {
+          "name": "feat/final-financial-system",
+          "head_sha": "249008bcda05b557bf5c69c0bc2481ca01853e6c",
+          "protected": false
+        },
+        {
+          "name": "feat/full-payment-router-mvp",
+          "head_sha": "291bf9844a71de6d17c69bd03882e6d29b41a31a",
+          "protected": false
+        },
+        {
+          "name": "feat/global-long-cycle-graph-v1-20260906",
+          "head_sha": "d47e0ec0244a97f9af6ca73ef1e5e727fd4f6fe0",
+          "protected": false
+        },
+        {
+          "name": "feat/hybrid-arbitrage-external-profit-gate-v1-20260905",
+          "head_sha": "4852a450950fb6716675612d6eb9720b97af86df",
+          "protected": false
+        },
+        {
+          "name": "feat/live-readiness-control-plane",
+          "head_sha": "593e7275b760f2cf404421be3caa8a90aee1efd3",
+          "protected": false
+        },
+        {
+          "name": "feat/meta-pay-global-settlement-v1",
+          "head_sha": "9ba9990a9f3127f1a7c7bc8aa7bdb84df7e8ad8b",
+          "protected": false
+        },
+        {
+          "name": "feat/metapay-v2-20260809",
+          "head_sha": "55e7c6ab6951845baa882357c146d83a6d254c4f",
+          "protected": false
+        },
+        {
+          "name": "feat/omnichain-token-dex-bridge",
+          "head_sha": "e020705e3a2faee777379ae7272fe08404fa980e",
+          "protected": false
+        },
+        {
+          "name": "feat/pq-migration-adapters-v1",
+          "head_sha": "26edb13f8e1cb87dc7e03ec84ea4ee28172f4f49",
+          "protected": false
+        },
+        {
+          "name": "feat/settlement-receipt-v2-20260818",
+          "head_sha": "1c08ea052ac9dd9aac1dcf2dae4cf58c544bd029",
+          "protected": false
+        },
+        {
+          "name": "feature/meta-exchange-hybrid-pricing",
+          "head_sha": "ed94f5fd2feb5277068b3dbe85a080095139ed15",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "8fae2d65198b4faa2489af6b713faf9b790c22cf",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "79f9b6b7ea5fde190492a1130f995387b5053e8e",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "950d6a53ade3e5bc2b92e8dce4b7d1d74b6b5f0e",
+          "protected": false
+        },
+        {
+          "name": "research/pinned-quoter-v4-20260829",
+          "head_sha": "98d8883467bdc2685a1d56b0f15260eb833537ce",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "feat/pq-radio-teleportation-v1-20260927",
+          "head_sha": "2938d6aa1e939b198fb4e98bb32b3cbfc958f6e4",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "b3084f709aaa1023289cfec6e550a1a35d884513",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_qe",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "impl/qe-engine-v1-m1",
+          "head_sha": "b5a6b5006df7b9eaa12cae35acaffbac8cd4919a",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
+          "protected": false
+        },
+        {
+          "name": "spec/qe-engine-v1",
+          "head_sha": "65d8479f47abdb26f37ddd14b2cc1bf2ad671b18",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_qr_compress",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 12,
+      "branches": [
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "856a9a4d3b9176aa0f8d7a8a24d51a7012430386",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-1",
+          "head_sha": "45edd1355352fd52087c30963003259289d42a1e",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-ar2",
+          "head_sha": "40eee80f56c1534269567cdb4ae0e97f6d7980ca",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-ar3",
+          "head_sha": "c3cc0037c1913d381cabc7275698ca1a68f810f6",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-experiment",
+          "head_sha": "781c9c33af273e788aff5ecc331cb46fb3355ef9",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-ml",
+          "head_sha": "60a3bf8ee021ae6dfd0fa4dbf75ae206c8080028",
+          "protected": false
+        },
+        {
+          "name": "fusion-v5-x2",
+          "head_sha": "1d6c7c5663493dfe2d4c65764b356ef310bd9f13",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "8e116b253cdc3cf42740d08b502eaf00e4b09176",
+          "protected": false
+        },
+        {
+          "name": "qtc2-temporal-dictionary",
+          "head_sha": "7f9e422eb889bb5b2fc4f277d8098da343c396c9",
+          "protected": false
+        },
+        {
+          "name": "qtd2-blind-history",
+          "head_sha": "d6cf3d5de420b64b774d6f0903ae41b079cd9467",
+          "protected": false
+        },
+        {
+          "name": "qtd3-walkforward",
+          "head_sha": "2e12aba314f08952ec399ba650c5f864c8f0f1e1",
+          "protected": false
+        },
+        {
+          "name": "real-repo-proof",
+          "head_sha": "ba90a8e43084793ccb8cfbcfb8ddbead52e86946",
           "protected": false
         }
       ],
