@@ -28,6 +28,10 @@ Each subsystem keeps its own repository, issues, pull requests, releases and CI/
 
 The live owner inventory now reconciles **91 / 91 repositories** visible to the installed GitHub App. The deep M0 capability audit remains the **81-repository baseline dated 2026-10-08**; ten later additions are recorded with explicit per-repository maturity and evidence limits. This owner inventory is not the same as the 75-record interface registry maintained by `synergy_system`. Membership is determined by **content, role and cross-repository references**, not only by the word `SYNERGY` in the repository name.
 
+**Security gate (2026-11-20): 3 unresolved P0 credential incidents** remain in `synergy_cashero`, `synergy_usds` and `synergy_turbo_linux`. All three are deployment-blocked; TURBO is now also federation-promotion-blocked. USDS PR #6 does not remove the tracked key; TURBO PR #13 is draft and unmerged; Cashero has no dedicated security-remediation PR. External rotation/revocation is not verified. See the [security blocker registry](https://github.com/Shtenco/synergy_system/blob/main/registry/SECURITY_BLOCKERS.json) and [security re-audit](https://github.com/Shtenco/synergy_system/blob/main/docs/SECURITY_REAUDIT_2026-11-20.md).
+
+**Branch protection:** GitHub reported 0/1,292 branch refs protected, including all 91 `main` branches. This is a repository-governance risk; the census is a 2026-11-20 snapshot.
+
 The canonical artifacts are:
 
 - [registry/repos.json](registry/repos.json) — full 91-repository inventory
@@ -92,8 +96,8 @@ SYNERGY
 │   ├── Messenger
 │   └── AI Trade Terminal
 └── Search / Growth / Research
-    ├── Search Engine
-    ├── Lead Search Engine
+    ├── HardNAV Multiplier / Triangular Economy Simulator (synergy_search_engline)
+    ├── Lead Search / Offline CRM Candidate
     └── experimental research modules
 ```
 
