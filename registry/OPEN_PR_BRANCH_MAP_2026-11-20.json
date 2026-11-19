@@ -3,7 +3,7 @@
   "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "repository_count": 92,
-  "open_pr_count": 506,
+  "open_pr_count": 511,
   "scope": "Current open PR discovery performed one repository at a time across all 92 owner repositories. Discovery records contain title/number/URL; per-PR get_pr_info and exact-head CI are separately tracked.",
   "metadata_coverage": "DISCOVERY_ONLY for all entries unless subsequently enriched; old 548-row file was a dated historical snapshot and is superseded.",
   "repositories": [
@@ -6776,13 +6776,80 @@
     },
     {
       "repository": "Shtenco/synergy_2chain_qe",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "HARDNAV V2: canonical accounting, solvent bridge, real V3 execution",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 2,
+          "title": "Stage SYNERGY Protocol Convergence P5 source-locked adapter",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 3,
+          "title": "WIP: Recover and harden Base Cycle A arbitrage executor",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/3",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_qe",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "QE Engine V1 architecture and implementation plan",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_qe/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 2,
+          "title": "M1: implement QE debt core and hard-value accounting",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_qe/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_agentic_ai_economy",
