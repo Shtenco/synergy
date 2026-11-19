@@ -4032,8 +4032,12 @@
           "name": "release/v1.0-desktop-rc",
           "sha": "5483f61106e626267c521cf64be8eaeb82448fba",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 32,
+          "main_ahead_of_branch": 2,
+          "merge_base_sha": "ea616db14feff1a8c2bb087d1f4cce7f6f74df48"
         }
       ]
     },
@@ -6401,64 +6405,100 @@
           "name": "feat/adaptive-residual-q4-v3",
           "sha": "8aa76d263a4a3e4841afe38c7b08fb8350e6528b",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 47,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "feat/distilled-gguf-system-v4",
           "sha": "a05ad79c30279ccbdb47d0c590825370d3a954a1",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 52,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "feat/global-budget-activation-v5",
           "sha": "a0d291303da921eb6a55ff5a113b202668b74b26",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 63,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "feat/huge-gguf-compression-v1",
           "sha": "c78bc852fefc5f04eb80cc4d8e567b2f4e812a99",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 15,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "feat/llama-native-lowrank-v2",
           "sha": "0ae62a5079c8349069ffffd2bb3105727d71dd6b",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 24,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "feat/nexus-omega-nanoquant-v9",
           "sha": "860552d4e16775343aaae8f0348bbe020447256d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 79,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "feat/omega-mix-infinity-v6",
           "sha": "2022c92bb1563f0b243ba21234d571096e7d72e4",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 89,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "feat/omega-mix-v7-retention-search",
           "sha": "3c3ec7469ffa09010d1edb09f2fcbcb6006951c6",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 72,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "feat/omega-mix-v8-behavioral-budget",
           "sha": "8c92ebde71126ad9bbbf3730b45b6269e74825ad",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 77,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "3d2de06724cafdf7546318a498bdf3c0176412ec"
         },
         {
           "name": "main",
