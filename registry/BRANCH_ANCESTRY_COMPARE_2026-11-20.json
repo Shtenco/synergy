@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 29,
-  "pending_comparisons": 1173,
+  "completed_comparisons": 36,
+  "pending_comparisons": 1166,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -380,6 +380,97 @@
       "ahead_by": 229,
       "behind_by": 262,
       "total_commits": 229,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/live-repo-audit-graph-v2-20260821",
+      "head_sha": "1fcf49aff0d41627e8540a57c081a2e4caf97d63",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 14,
+      "behind_by": 262,
+      "total_commits": 14,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/metapay-dex-print-machine-convergence-v1-20260905",
+      "head_sha": "10a912172b363f1f4df0739bd2d471aeb3578d3d",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 308,
+      "behind_by": 262,
+      "total_commits": 308,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/node-admission-schema-overlay-v1-20260821",
+      "head_sha": "579acafe3eea29817585e1984e9d9602a2a338d1",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 40,
+      "behind_by": 262,
+      "total_commits": 40,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/node-admission-schema-overlay-v2-20260821",
+      "head_sha": "ce160a31ff97e2e36b033cca3abb4bc679a81134",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 64,
+      "behind_by": 262,
+      "total_commits": 64,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/repository-federation-v2-final-restack-20260829",
+      "head_sha": "d8159e697ad17bd246a26b0e8333ed03aa9a87e5",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 267,
+      "behind_by": 262,
+      "total_commits": 267,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/repository-federation-v2-hardened-rc5-20260829",
+      "head_sha": "682682a01fb243184d795784363129fe86a29273",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 243,
+      "behind_by": 262,
+      "total_commits": 243,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/repository-federation-v2-portfolio-roadmap-20260829",
+      "head_sha": "f977a416fa283b05fa8ff89610d65af78ea2b365",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 241,
+      "behind_by": 262,
+      "total_commits": 241,
       "observed_at": "2026-11-20"
     }
   ]
