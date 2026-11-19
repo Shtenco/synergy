@@ -46,9 +46,9 @@ Canonical artifacts:
 Repository: [synergy_hierarchical_cognitive_memory_architecture](https://github.com/Shtenco/synergy_hierarchical_cognitive_memory_architecture)
 
 - Main SHA from current PR base metadata: `74b518c85d3a69fdc2e868737cbe9f4f2cac761c`.
-- Feature branch HEAD from current PR metadata: `37bebe6e8d75444ced7e610b821664892eabe0f8`.
-- PR #1: 80 commits, 25 files, 1,538 additions, 1 deletion; Draft; GitHub reported mergeable at metadata read.
-- Latest associated CI run for the inspected head was cancelled; the job contained no execution steps. No green CI claim is made.
+- Feature branch HEAD from current PR metadata: `2d6d7872653b9d525a74046e992a843b2a905d57`.
+- PR #1: 84 commits, 25 files, 1,542 additions, 1 deletion; Draft; GitHub reported mergeable at metadata read.
+- Latest current-head CI run 44634673642 is queued; no completed test steps or green CI claim exist.
 - No PR reviews were recorded at the time of inspection.
 
 ### Source findings
@@ -88,9 +88,9 @@ The component was added to `synergy_system/registry/REPOSITORY_INTERFACES.json` 
 - All four Python matrix jobs failed with `steps=null`; no test execution is attested.
 
 ### XPU / UV-LWC — PR #4
-- 112 commits, 25 files, 2,924 additions; Draft and mergeable at metadata read.
+- 118 commits, 25 files, 2,998 additions; Draft and mergeable at metadata read.
 - Current branch contains full-domain self-consistent Poisson–drift–diffusion v0.6 and a 20/40/80-cell convergence harness, but the numerical study has not been executed and traps remain specification-only.
-- No device measurement, fabrication, or petahertz digital processor is claimed.
+- Current exact-head CI runs 44634951360 and 44634951388 are queued. No device measurement, fabrication, or petahertz digital processor is claimed.
 
 ### SUMI — `synergy_system` PR #54
 - One documentation file, 309 lines; Draft and mergeable at metadata read.
