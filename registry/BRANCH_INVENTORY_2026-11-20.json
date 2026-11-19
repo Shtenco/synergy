@@ -530,36 +530,56 @@
           "name": "ci/bullish-cb-microcycle",
           "sha": "a99b79788a74671aef8c91f82a008bf4b7374d8f",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 106,
+          "main_ahead_of_branch": 25,
+          "merge_base_sha": "3dd3242419f1f0dbbec8a3ee6c894e8425b61bad"
         },
         {
           "name": "ci/syna-v5-2-flex-120-validate",
           "sha": "5e823c15a8bf6e5580d2c400273a9cfb3d3847da",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 2,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "a9831d26808688205be8a743da2ae527d1a0e945"
         },
         {
           "name": "ci/synergy-local-deploy",
           "sha": "6eea9a1dda60f2ebc482400cb496c47922f722b8",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 86,
+          "main_ahead_of_branch": 25,
+          "merge_base_sha": "3dd3242419f1f0dbbec8a3ee6c894e8425b61bad"
         },
         {
           "name": "ci/synergy-local-deploy-v2",
           "sha": "1a451b70b691be11484c188586bac22c5c4aead3",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 99,
+          "main_ahead_of_branch": 25,
+          "merge_base_sha": "3dd3242419f1f0dbbec8a3ee6c894e8425b61bad"
         },
         {
           "name": "ci/synergy-local-deploy-v3",
           "sha": "01ded4db87fe85c2d1094e648459492c6ecb15e3",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 104,
+          "main_ahead_of_branch": 25,
+          "merge_base_sha": "3dd3242419f1f0dbbec8a3ee6c894e8425b61bad"
         },
         {
           "name": "ci/v8-graph-recovery",
@@ -572,8 +592,12 @@
           "name": "ci/v15-5-artifacts",
           "sha": "2ed3a659ed3337a98d6d9417af601f60d563825b",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 14,
+          "main_ahead_of_branch": 25,
+          "merge_base_sha": "3dd3242419f1f0dbbec8a3ee6c894e8425b61bad"
         },
         {
           "name": "ci/v15-7-aave-50-pool",
@@ -1302,22 +1326,34 @@
           "name": "feat/p9-crosschain-dqn-economy",
           "sha": "6e011666cc692e23ccfc062779527c691e7b335c",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 49,
+          "merge_base_sha": "6e011666cc692e23ccfc062779527c691e7b335c"
         },
         {
           "name": "feat/real-block-backtest-data",
           "sha": "f6903e255fd793cfa1548c79192ba1d70a7698ea",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 8,
+          "main_ahead_of_branch": 44,
+          "merge_base_sha": "9db1d4194d286bd1ebe41490d9436ebf288ccf48"
         },
         {
           "name": "fix/hardnav-modeled-flow-accounting-2026-11-16",
           "sha": "74bbbc17eb5b3b31cc0a86c112adf9f4660ea127",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 7,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2"
         },
         {
           "name": "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
@@ -1330,8 +1366,12 @@
           "name": "main",
           "sha": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2"
         }
       ]
     },
