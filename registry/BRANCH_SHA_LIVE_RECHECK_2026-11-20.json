@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 56,
-  "pending_repositories": 36,
-  "branch_refs": 755,
+  "completed_repositories": 64,
+  "pending_repositories": 28,
+  "branch_refs": 878,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -4242,6 +4242,693 @@
         {
           "name": "research/synergy-v7-economic-graph",
           "head_sha": "9c0aed72857493bac0a99ba6247ed726c554870e",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_financial_os",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 40,
+      "branches": [
+        {
+          "name": "evm-v2-rubc-rubx-ai-cb",
+          "head_sha": "a3ad5d7ba0430d66e19d33f1123e9e0fd4ac49ca",
+          "protected": false
+        },
+        {
+          "name": "evm-v23-balancer-fixed200",
+          "head_sha": "85dec68e04a3adf7aa65cfb4a8ee3a14dfc347bb",
+          "protected": false
+        },
+        {
+          "name": "evm-v24-reflexive-single-batch",
+          "head_sha": "f9f028bb06b3f23e7d7a57d80a9ca24237daf22e",
+          "protected": false
+        },
+        {
+          "name": "feat/account-registry-v1-20260819",
+          "head_sha": "8512e1181795b5f448f51c7fb01b65c22135c607",
+          "protected": false
+        },
+        {
+          "name": "feat/accounting-close-merkle-v1-20260818",
+          "head_sha": "fdff45761b276ba6d8f65ac6bb886e6865a4b9be",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-authorization-v2-20260818",
+          "head_sha": "49a7b6d7b347095933bde025a9927692d27a248d",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-accounting-v1-20260820",
+          "head_sha": "bac372240c0ebcf2826a341b4c5637dfe8dad15a",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-available-capacity-v3-fee-aware-20260824",
+          "head_sha": "17fbac0f45b1c0835f113a2a45cda9522858e8b5",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-available-capacity-v4-refund-restored-20260828",
+          "head_sha": "d21ce6b5bd91422c45f938b2d4ec641974106944",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-budget-current-capacity-v2-20260821",
+          "head_sha": "a412acba5093e777bbde2bbad90fb664fcf62505",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-budget-fee-aware-v2-20260823",
+          "head_sha": "7034ebe6413f15a550d91e882339a178af237bf4",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-budget-state-v3-fee-refund-restoration-20260828",
+          "head_sha": "753ed935ca704626e3ebdfa79a898d34f58d3732",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-capacity-replay-v1-20260820",
+          "head_sha": "66a841535aeb43f038498b8a6533322fa3aeec33",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-capacity-reservation-v1-20260821",
+          "head_sha": "cb000beb48e148c0a5ae395476661513ab18a633",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-execution-ticket-v1-20260820",
+          "head_sha": "ec5047134be101603df3edaac05fb2f011cf5987",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-accounting-v2-20260823",
+          "head_sha": "5e361546a680f139ed04a75209a544478813d7df",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-accounting-v3-metapay-v3-20260824",
+          "head_sha": "6ad688fe6fd2fc41fe59ada97a6f560a0eed3d0b",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-budget-v3-20260823",
+          "head_sha": "493df4b4b048cc6b8d290073994b2083de4ab615",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-handoff-v3-fee-aware-capacity-20260824",
+          "head_sha": "08ad477bd8ad6551f842763e8ae8b6aa2b549bae",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-plan-authorization-v1-20260820",
+          "head_sha": "aad9b6163d22c760ca086b9fdfd49852777f76ae",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-reversal-accounting-v1-20260820",
+          "head_sha": "83a70a4ef85312be3012dec433929e9fb3f938ff",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-reversal-accounting-v2-fee-refund-20260828",
+          "head_sha": "73b2560455d765c9c143b5af8d099cad45343746",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-cycle-trace-v1-20260818",
+          "head_sha": "87183399e5b7ed8b52d4529cc859bfd314c8c61c",
+          "protected": false
+        },
+        {
+          "name": "feat/external-profit-bus-accounting-v1-20260905",
+          "head_sha": "2b2c1f5b35285c4f32d7e8cfcfa115d6810ef80e",
+          "protected": false
+        },
+        {
+          "name": "feat/external-profit-import-v1-20260905",
+          "head_sha": "bf67bf9b2a5e98d44bd02e40e9a704b44492a3a6",
+          "protected": false
+        },
+        {
+          "name": "feat/federation-governance-v2-20260818",
+          "head_sha": "f2c7b03ae59c785b81cefd707a6eeffd7ba545e5",
+          "protected": false
+        },
+        {
+          "name": "feat/ledger-event-v2-close-v2-trace-v6-20260819",
+          "head_sha": "8727b2ff44d1425d84f37c051fc67c083534f4b7",
+          "protected": false
+        },
+        {
+          "name": "feat/liquidity-replay-v1-20260820",
+          "head_sha": "f4da6f5a3491b8b92fe52749f7571ed2397fd87f",
+          "protected": false
+        },
+        {
+          "name": "feat/noncircular-trace-v5-20260818",
+          "head_sha": "600876608f2c0a0319778f07e49a7dc47b703d24",
+          "protected": false
+        },
+        {
+          "name": "feat/period-reversal-v1-20260819",
+          "head_sha": "e92feaf01042df53e2ce77f47b68bdbc1501d831",
+          "protected": false
+        },
+        {
+          "name": "feat/prior-period-entry-void-v1-20260819",
+          "head_sha": "9235bf664c237b2eb8cc17cc30feef3e103865ec",
+          "protected": false
+        },
+        {
+          "name": "feat/restated-period-view-v1-20260819",
+          "head_sha": "80f5da4a274464d913ead8ef1f3e16bd8ff3ca48",
+          "protected": false
+        },
+        {
+          "name": "feat/revenue-adjustment-v1-20260819",
+          "head_sha": "d42908d8f9d6155a8249423b86456c309c426958",
+          "protected": false
+        },
+        {
+          "name": "feat/revenue-recognition-v1-20260818",
+          "head_sha": "a09213bca4f8282dc63bc359f3b94e94773b0ddb",
+          "protected": false
+        },
+        {
+          "name": "feat/settlement-receipt-v2-consumer-20260818",
+          "head_sha": "b6cec9689899b008280d4fad6b206a5db4287e5d",
+          "protected": false
+        },
+        {
+          "name": "feat/statement-replay-v1-20260820",
+          "head_sha": "992b2c3dcb452b985fdd6847255bedd65aa8e394",
+          "protected": false
+        },
+        {
+          "name": "feat/valuation-policy-artifact-v1-20260819",
+          "head_sha": "a15f7a4497243a086c5fc4a956690b97839e0e31",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "935780514b2b3ff2c93a16bbfdfaaab0bc2f7d24",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+          "protected": false
+        },
+        {
+          "name": "test-bootstrap",
+          "head_sha": "4b7ce8c7851abe9c6914a9ed5df121e03634e451",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_gguf_compress",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 10,
+      "branches": [
+        {
+          "name": "feat/adaptive-residual-q4-v3",
+          "head_sha": "8aa76d263a4a3e4841afe38c7b08fb8350e6528b",
+          "protected": false
+        },
+        {
+          "name": "feat/distilled-gguf-system-v4",
+          "head_sha": "a05ad79c30279ccbdb47d0c590825370d3a954a1",
+          "protected": false
+        },
+        {
+          "name": "feat/global-budget-activation-v5",
+          "head_sha": "a0d291303da921eb6a55ff5a113b202668b74b26",
+          "protected": false
+        },
+        {
+          "name": "feat/huge-gguf-compression-v1",
+          "head_sha": "c78bc852fefc5f04eb80cc4d8e567b2f4e812a99",
+          "protected": false
+        },
+        {
+          "name": "feat/llama-native-lowrank-v2",
+          "head_sha": "0ae62a5079c8349069ffffd2bb3105727d71dd6b",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-omega-nanoquant-v9",
+          "head_sha": "860552d4e16775343aaae8f0348bbe020447256d",
+          "protected": false
+        },
+        {
+          "name": "feat/omega-mix-infinity-v6",
+          "head_sha": "2022c92bb1563f0b243ba21234d571096e7d72e4",
+          "protected": false
+        },
+        {
+          "name": "feat/omega-mix-v7-retention-search",
+          "head_sha": "3c3ec7469ffa09010d1edb09f2fcbcb6006951c6",
+          "protected": false
+        },
+        {
+          "name": "feat/omega-mix-v8-behavioral-budget",
+          "head_sha": "8c92ebde71126ad9bbbf3730b45b6269e74825ad",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "c1882525e12f4662c30851cf1a7995a957cba543",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 48,
+      "branches": [
+        {
+          "name": "crc-r1-foundation",
+          "head_sha": "cfa6de4d8b4c5e93444b2b9ff465557fdfe4bc9c",
+          "protected": false
+        },
+        {
+          "name": "crc-r2-learned-loop-russian-benchmark",
+          "head_sha": "35a6bf2bf5c19d7ceaced094c463ce480028320a",
+          "protected": false
+        },
+        {
+          "name": "experiment/nexus-v28-ternary-decoder",
+          "head_sha": "c62a9ab9014289617abcd22ee0b0ae004775cf63",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-developmental-recurrent-20261101",
+          "head_sha": "547651c956c566b9b986a75ce84277dedb3716db",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-v2-compositional-20261101",
+          "head_sha": "d89a56e6a55d38ddb7c14e98edbcaac1771cabec",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-v2-primitive-composition-20261101",
+          "head_sha": "098b95d32bc8b363ffebf3f4ee0064fdc6b75bb4",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-v3-population-dialogue-20261101",
+          "head_sha": "1471a25bb8dfadfbff539908e638c52807856fa5",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-garc-v4-population-verified-20261101",
+          "head_sha": "02a7a24a35ea7895ce6a635912e315d3895147a8",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-hybrid-t9-morph-recurrent-v1-20261101",
+          "head_sha": "bdd3660ce1484fcc91f51c23b51d2362f8e86cd6",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-v5-triple-recurrent-million-curriculum-20261110",
+          "head_sha": "f9ff2981e8907b5a5377e63504467a4363db893e",
+          "protected": false
+        },
+        {
+          "name": "feature/nexus-v25-russian-morph-router",
+          "head_sha": "ca46f68bdcbc10842831049ce124ad4c3d7f48a3",
+          "protected": false
+        },
+        {
+          "name": "freeze/crc-r1-pre-ftx1-fded8bd",
+          "head_sha": "6d306bb57e1ee64ce421e6577a06d1f911191eb5",
+          "protected": false
+        },
+        {
+          "name": "ftx1-clean-eval-2026-10-01",
+          "head_sha": "3e6d889862034f32d3b955f97daca52b24989c31",
+          "protected": false
+        },
+        {
+          "name": "ftx1-one-shot-result-2026-10-01",
+          "head_sha": "04eac6c94b914951cc4fe9ec2a4cec4f2ab44b06",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "a4f2860997128877e8a2a342558982349d3ab2e8",
+          "protected": false
+        },
+        {
+          "name": "m32-1-cortex-capacity-ab-2b",
+          "head_sha": "502580b7db971fd5dcaee0fd7dac54677169823e",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-grounded-typed-fewshot",
+          "head_sha": "4f66ba99654f626d23b9fe066d83c4f744e27259",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v2-budget",
+          "head_sha": "dbdd4d8387c84e07d7e22410cf93ffe309ae7b2a",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v3-output-contract",
+          "head_sha": "91810a9dc901b9cb09c8e6816b139e6d7bcae6c2",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v3-schema",
+          "head_sha": "dbdd4d8387c84e07d7e22410cf93ffe309ae7b2a",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v4-grounded-fewshot",
+          "head_sha": "4ade0f307fab8eff7244ce3a19671337a92c66c4",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v4-grounded-ontology",
+          "head_sha": "87c7cc5782e657a0da1aa205620a65c9fcb81107",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v5-exact-quality",
+          "head_sha": "79d9b8c1f5c61503efaf3a25429f178a693fb1e8",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v5-typed-recipe-compiler",
+          "head_sha": "70c28e8de1d3eb6d2659f49d01ca53f490d96d52",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v6-capacity-gate",
+          "head_sha": "d414e43c7b46859e6c8f2c85302a81d8b2f634aa",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v6-schema-constrained-ir",
+          "head_sha": "33c0e2d5b782317f4e047dbdbb4ed83b03bd05a2",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-dev-v7-pinned-schema-wire",
+          "head_sha": "f8c928ed68d45a07f279aab9de7488fde20856f9",
+          "protected": false
+        },
+        {
+          "name": "m32-1-neural-proposal-quality",
+          "head_sha": "38a00b1ad11dc881cc4dac9bb45648c58f08fddb",
+          "protected": false
+        },
+        {
+          "name": "m32-generalized-ingress",
+          "head_sha": "ea921f54565ac61cee6272a64b3914222edd4223",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "2147423799c43726378a0afabf8d25e7030d2db9",
+          "protected": false
+        },
+        {
+          "name": "nexus-cognitive-loop-reset-2026-10-03",
+          "head_sha": "21c0c9679b407b52d6df4a08aba5038b5c401930",
+          "protected": false
+        },
+        {
+          "name": "nexus-federation-max-train-2026-10-20",
+          "head_sha": "1e5e6caa5a02c208b1d78423c32032f23c2acd05",
+          "protected": false
+        },
+        {
+          "name": "nexus-final-releases-archive-2026-09-29",
+          "head_sha": "0b03de352cc0fe44b1bffd0b34ba92080b5c7da8",
+          "protected": false
+        },
+        {
+          "name": "nexus-ftx1-freeze-v1",
+          "head_sha": "0d355343015a2e50756553387d2465355f5a0ea1",
+          "protected": false
+        },
+        {
+          "name": "nexus-gllm-omega1-v1",
+          "head_sha": "2b6d78d9b955bb892356a6cade50634911f7b13c",
+          "protected": false
+        },
+        {
+          "name": "nexus-local-run-2026-10-09",
+          "head_sha": "6fcc69af8c59eba833d0c4c28069da303aa9f6f9",
+          "protected": false
+        },
+        {
+          "name": "nexus-moe-b2-hard-far-oos-recovery",
+          "head_sha": "ca3645eadbb5214985d1913957417c75352f67ed",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-cognitive-ru-runtime-2026-09-26",
+          "head_sha": "407973206e2f682844f69313bbb4c9b65d8c293e",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-compositional-authority-v3-2026-09-26",
+          "head_sha": "105a692d64a42d6c772de69dcaeb16ac27833b01",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-deeptrain-2026-09-26",
+          "head_sha": "1f1febafabfb46aeb076b308be8b4056a1ef5c8f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-exact-cognitive-ru-v2-2026-09-26",
+          "head_sha": "4735ca4f36d441f4fa2de6af4c704d5140a6c586",
+          "protected": false
+        },
+        {
+          "name": "nexus-r13x-recovery-2026-09-26",
+          "head_sha": "a14e4ee8eae5aba4cb77172e5896b68a923b6d71",
+          "protected": false
+        },
+        {
+          "name": "nexus-unified-cognitive-runtime-r1",
+          "head_sha": "4f65ee769eadf8f55021554cae85f49391a82b0f",
+          "protected": false
+        },
+        {
+          "name": "nexus-unified-russian-cognitive-runtime-v1-2026-09-27",
+          "head_sha": "fb0cf598ff2de3058ebbe1fdb71f786d91eaf39c",
+          "protected": false
+        },
+        {
+          "name": "omega15r2-blind4-v1",
+          "head_sha": "f70a3c316775c763a94fbc55a8fae84c326ab60e",
+          "protected": false
+        },
+        {
+          "name": "unified-nexus-rebuild-v1",
+          "head_sha": "e7dc57c1659628f15ada373172fab3effd8e47f9",
+          "protected": false
+        },
+        {
+          "name": "unified-nexus-v2-ub2-design",
+          "head_sha": "2b47c17f4f928430da9abb83f51ccd02d871981d",
+          "protected": false
+        },
+        {
+          "name": "unified-v3-generalization-first",
+          "head_sha": "a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 6,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "bf5733de1a1e1b31cbb0b91b91a2742536b68cad",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "103d6e5c6c21bf260ba69c12faa868e9566cc03b",
+          "protected": false
+        },
+        {
+          "name": "v7-4-triangle-mev-audit",
+          "head_sha": "fa982e3bac902ec516bf6a6c0b464c8dc4502995",
+          "protected": false
+        },
+        {
+          "name": "v7-live-validation",
+          "head_sha": "b9d0c604f318316fdd9840eeb1ef810320b0c561",
+          "protected": false
+        },
+        {
+          "name": "v8-profit-engine",
+          "head_sha": "e6f533d792217a49195a8bc380e3330fcdacb9d5",
+          "protected": false
+        },
+        {
+          "name": "v8-single-contract-flash-proof",
+          "head_sha": "537c30d7cc87de50edee8eba5dd916ad6a6ac31b",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "feat/revenue-loop-e2e-20261024",
+          "head_sha": "9a67ed99839416ae32e65c32a9e52a679ddd6a8c",
+          "protected": false
+        },
+        {
+          "name": "feat/smm-lead-os-integration-v1",
+          "head_sha": "5a20c4a0675e047134f7ee6a1c31996bb2d325c3",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_maps",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 10,
+      "branches": [
+        {
+          "name": "feature/postgis-h3-open-data-cesium-v1",
+          "head_sha": "bb64124c67e5a76ac4669e28bab13090f1238282",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "9292be3e86143491c3f216871e58149ae829b7bd",
+          "protected": false
+        },
+        {
+          "name": "work/cesium-admin-divisions-layers-20261116",
+          "head_sha": "284cc15a7a3036e10011b1008b34868cd1a5aa00",
+          "protected": false
+        },
+        {
+          "name": "work/eaeu-boundary-subset-optimization-20261116",
+          "head_sha": "d2a9a12c009cc368a326f56ab037952091b0ef72",
+          "protected": false
+        },
+        {
+          "name": "work/eaeu-country-coverage-planner-20261116",
+          "head_sha": "ebe4ba2d818df47832a14ca2551c4167d9af9d10",
+          "protected": false
+        },
+        {
+          "name": "work/eaeu-world-3d-viewer-20261116",
+          "head_sha": "ac29f72215064b4048dea21e327785877d60f34b",
+          "protected": false
+        },
+        {
+          "name": "work/overture-coverage-auditor-20261116",
+          "head_sha": "cc12d0b93e35ca1dfa4d7e74f4dfa7bcbd45a8ab",
+          "protected": false
+        },
+        {
+          "name": "work/overture-global-divisions-ingest-20261116",
+          "head_sha": "b9fa0cacf4145045473611c66b3620cd5d3e7f4d",
+          "protected": false
+        },
+        {
+          "name": "work/overture-resumable-tile-runner-20261116",
+          "head_sha": "3316f7513d79a15e01aa92eb17c544b2948b1f2b",
+          "protected": false
+        },
+        {
+          "name": "work/overture-tile-job-planner-20261116",
+          "head_sha": "6a146eeffa5f8cf71948b9d8ed26a6bd5fe113a8",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_market_graph",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "526ca05ee02caf84cf09b1328ccc3e83b7fcfc50",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "d6e60eae1d4c4eb1ae97b5fb224007fc89caf2b2",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_market_maker",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "ee36217fb2721826d21e7f0bc22de1965d95a90c",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "3edcea187c45866d55a65b74dc707b7b1009a69b",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "c764552393441b313e83524f35ee4094c8bda8ae",
           "protected": false
         }
       ],
