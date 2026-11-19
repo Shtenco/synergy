@@ -3,7 +3,7 @@
   "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "repository_count": 92,
-  "open_pr_count": 511,
+  "open_pr_count": 515,
   "scope": "Current open PR discovery performed one repository at a time across all 92 owner repositories. Discovery records contain title/number/URL; per-PR get_pr_info and exact-head CI are separately tracked.",
   "metadata_coverage": "DISCOVERY_ONLY for all entries unless subsequently enriched; old 548-row file was a dated historical snapshot and is superseded.",
   "repositories": [
@@ -6853,8 +6853,48 @@
     },
     {
       "repository": "Shtenco/synergy_agentic_ai_economy",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 5,
+          "title": "REAL-BLOCK DQN Agent Economic Backtest inputs",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/5",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 9,
+          "title": "Recursive collateral EVM v2",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/9",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 10,
+          "title": "Exclude modeled bridge and AMM fee estimates from HardNAV V4",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/10",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_megaproject",
@@ -6863,8 +6903,22 @@
     },
     {
       "repository": "Shtenco/synergy_post_quantum_radio",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "feat: R3 real hardware PQ radio + PI-PQ forensics",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_post_quantum_radio/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_complex_matrix_multiplication",
@@ -6879,26 +6933,26 @@
           "number": 1,
           "title": "[SVCU] Implement SVP Virtual Processor 0.2",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_computing_topology/pull/1",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_computing_topology/pull/1",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 3,
           "title": "SVP: portable SVPB bytecode format and verified loader",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_computing_topology/pull/3",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_computing_topology/pull/3",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         }
       ]
@@ -6916,26 +6970,26 @@
           "number": 1,
           "title": "Lead OS: CI evidence + guarded Lead → AI Sales → CRM → Payment → Capital contract",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_lead_search_engline/pull/1",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_lead_search_engline/pull/1",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 2,
           "title": "Integrate SMM audience intelligence into Lead OS",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_lead_search_engline/pull/2",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_lead_search_engline/pull/2",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         }
       ]
@@ -6948,104 +7002,104 @@
           "number": 1,
           "title": "V5 hardnav multiplier engine",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/1",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/1",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 2,
           "title": "V6 autonomous borrower market maker",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/2",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/2",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 3,
           "title": "V7 block revenue engine",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/3",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/3",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 4,
           "title": "V8 three-pool asymmetric market maker EVM benchmark",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/4",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/4",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 5,
           "title": "V9 adaptive three-pool market maker",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/5",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/5",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 6,
           "title": "V10 graph arbitrage HardNAV engine",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/6",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/6",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 7,
           "title": "V11 integrated block revenue + graph HardNAV engine",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/7",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/7",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 8,
           "title": "R&D V6: independent-oracle band for asymmetric AMM (NOT DEPLOYABLE)",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/8",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/8",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         }
       ]
