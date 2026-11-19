@@ -3,7 +3,7 @@
   "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "repository_count": 92,
-  "open_pr_count": 515,
+  "open_pr_count": 540,
   "scope": "Current open PR discovery performed one repository at a time across all 92 owner repositories. Discovery records contain title/number/URL; per-PR get_pr_info and exact-head CI are separately tracked.",
   "metadata_coverage": "DISCOVERY_ONLY for all entries unless subsequently enriched; old 548-row file was a dated historical snapshot and is superseded.",
   "repositories": [
@@ -7106,8 +7106,22 @@
     },
     {
       "repository": "Shtenco/synergy",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Registry: reconcile 82 repositories (RWKV candidate)",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_ai_llm_rwkv",
@@ -7116,33 +7130,351 @@
     },
     {
       "repository": "Shtenco/synergy_ai_economic",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "V8: четыре экономики РФ, IO-модель, закрытый OOS, эскроу 1:1 и поддержка спроса",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_economic/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 2,
+          "title": "Add read-only spatial twin integration contract",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_economic/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy.github.io",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Growth & Capital OS V4: пять продуктов в основных воронках сайта",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy.github.io/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_meta_api",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "SYNERGY META-API V0.3: MCP discovery, HTTP connectors, workflow and protocol tests",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_meta_api/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_ai_workspace",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "V1.0 Desktop RC: original SMM source import and release gates",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_workspace/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 2,
+          "title": "Add reproducible LOC auditor for all Shtenco repositories and branches",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_workspace/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergistic_economics",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 13,
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "Add Unified Economic Balance (UEB) accounting kernel",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/3",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 4,
+          "title": "[DRAFT] A2.4 SFC/SCCE audit, GOLD-2A and financial replay recovery",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/4",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 5,
+          "title": "Prototype 6: real-economy primitives, event bridge and recovery contract (P6.0–P6.3)",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/5",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 6,
+          "title": "[DRAFT] Consolidate A2.4, Prototype 6 and UEB into one economic core",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/6",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 7,
+          "title": "Add SYNERGY LEAGUES phase-one economic domain",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/7",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 8,
+          "title": "Economic Router v1: demand/offer contracts and deterministic matching core",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/8",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 9,
+          "title": "Research: add household liquidity recycling sensitivity",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/9",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 10,
+          "title": "Research: verified wage accrual and settlement ledger",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/10",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 11,
+          "title": "Research: durable verified wage operating subledger",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/11",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 12,
+          "title": "Research: authoritative durable wage deposit balances",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/12",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 13,
+          "title": "Audit: bank deposit money creation and atomic loan constraints",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/13",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 17,
+          "title": "Add durable canonical economic entity resolver with Ed25519 event proofs",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/17",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 18,
+          "title": "Add spatial economic twin boundary prototype",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergistic_economics/pull/18",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_metaverse",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 5,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Bootstrap spatial contracts and architecture v1",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_metaverse/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 5,
+          "title": "Rebase Economic Router projection onto latest spatial registry",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_metaverse/pull/5",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 7,
+          "title": "[Draft] Rebased Business Twin, RF/GNSS and cross-repository settlement integration",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_metaverse/pull/7",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 8,
+          "title": "Add metaverse architecture and 100-project research catalog",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_metaverse/pull/8",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 9,
+          "title": "Add 100 additional metaverse and XR research repositories",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_metaverse/pull/9",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_maps",
