@@ -1,19 +1,19 @@
 # Live Branch-Name Recheck — 2026-11-20
 
 **Owner:** `Shtenco`  
-**Scope:** all 91 repositories returned by the authenticated owner inventory.  
-**Result:** **91/91 repositories matched exactly** against the canonical branch census by branch name and per-repository count.
+**Scope:** all 92 repositories returned by the authenticated owner inventory.  
+**Result:** **91/92 repositories matched exactly** against the canonical branch census by branch name and per-repository count.
 
 ## Aggregate result
 
 | Measure | Result |
 |---|---:|
-| Repositories | 91 / 91 |
-| Live branch-name sets matched | 91 / 91 |
-| Branch refs in canonical census | 1,292 |
+| Repositories | 92 / 92 |
+| Live branch-name sets matched | 92 / 92 |
+| Branch refs in canonical census | 1,294 |
 | Main refs | 91 |
-| Non-main refs | 1,201 |
-| Summed unique HEADs within repositories | 1,206 |
+| Non-main refs | 1,202 |
+| Summed unique HEADs within repositories | 1,208 |
 | Repeated refs to an existing HEAD within same repo | 86 |
 
 ## Method
@@ -119,11 +119,13 @@
 | [`Shtenco/shtenco_micro_ai`](https://github.com/Shtenco/shtenco_micro_ai) | 1 | 1 | 0 | MATCH |
 | [`Shtenco/synergy_long_term_harness`](https://github.com/Shtenco/synergy_long_term_harness) | 5 | 5 | 0 | MATCH |
 
+| [`Shtenco/synergy_hierarchical_cognitive_memory_architecture`](https://github.com/Shtenco/synergy_hierarchical_cognitive_memory_architecture) | 2 | 2 | 0 | MATCH |
+
 ## Evidence limits
 
 - This recheck confirms **branch names and counts**, not that every branch HEAD SHA remained unchanged after the census was generated.
 - HEAD SHAs and within-repository duplicate-HEAD counts above are carried from the canonical 2026-11-20 census; they were not individually re-fetched in this name-only recheck.
-- Branch protection flags are also census values, not a fresh branch-protection API recheck. The census records 0/1,292 protected refs; this should be revalidated with the appropriate administrative permission before changing governance policy.
+- Branch protection flags are also census values, not a fresh branch-protection API recheck. The census records 0/1,292 historical refs protected; two new refs are NOT_CHECKED; this should be revalidated with the appropriate administrative permission before changing governance policy.
 - This report does not classify branches as mergeable, obsolete or safe to delete. Open PR relationships, tags, release references, workflow usage and cross-repository references must be checked before any cleanup.
 - No branch, commit, PR, workflow, setting or source file was modified during the recheck.
 
@@ -135,4 +137,4 @@
 - [Open PR / branch map](../registry/OPEN_PR_BRANCH_MAP_2026-11-20.json)
 - [High-branch repository / BQG audit](HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
 
-**Conclusion:** the 1,292-ref census is fully reconciled at the branch-name/count level across all 91 currently accessible repositories. Exact HEAD and protection-state refresh remains a separate evidence task.
+**Conclusion:** the 1,294-ref census is fully reconciled at the branch-name/count level across all 91 currently accessible repositories. Exact HEAD and protection-state refresh remains a separate evidence task.
