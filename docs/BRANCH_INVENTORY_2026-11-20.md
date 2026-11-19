@@ -1,25 +1,38 @@
 # Shtenco / SYNERGY — полный реестр Git-веток
 
-**Срез:** 2026-11-20  
-**Охват:** 92 репозитория, видимые установленному GitHub App.  
-**Источник:** полный 2026-11-20 census для 91 прежнего репозитория, live branch-audit tranche и current PR-head metadata.
+**Срез:** 2026-11-20 · **Охват:** 92 репозитория · **1,294 refs**.
 
 ## Контрольные числа
 
 - Репозитории: **92/92**
 - Branch refs: **1,294**
-- Сумма уникальных HEAD внутри репозиториев: **1,208**
-- Повторные refs на уже существующий HEAD внутри того же репозитория: **86**
-- Live SHA provenance: **1,084**
-- SHA из dated census, не перепроверенные в этой итерации: **210**
-- Во всех 92 репозиториях default branch — `main`.
+- Уникальные HEAD внутри репозиториев: **1,208**
+- Повторные refs на существующий HEAD внутри того же репозитория: **86**
+- Все 1,294 refs имеют SHA с live provenance из branch audit, priority PR metadata или свежего compare-to-main.
+- Ancestry compare-to-main выполнен для **210 refs**:
+  - **36 AHEAD** — ветка содержит коммиты сверх main, main не содержит дополнительных коммитов относительно неё;
+  - **22 BEHIND** — main содержит дополнительные коммиты, ветка не содержит собственных дополнительных;
+  - **120 DIVERGED** — обе стороны имеют уникальные коммиты;
+  - **32 IDENTICAL** — HEAD совпадает с main.
+- Ещё **1,084 refs** имеют live SHA, но пока не прошли ancestry comparison в этом проходе.
 - Защита: старый census указывал **0/1,292** защищённых refs; защита двух новых refs cognitive-memory repository не проверена и отмечена `null`.
 
-Уникальный HEAD считается внутри репозитория, а не глобально. Совпадение HEAD не является анализом PR или разрешением на удаление ветки.
+## Существенные ancestry-находки
+
+Особенно большие независимые веточные поколения:
+- `synergistic_economics/research/bank-deposit-credit-audit-fix-20261115`: 1,165 коммитов впереди main.
+- `synergistic_economics/research/financial-register-instance-provenance-v1`: 1,021 впереди.
+- `synergistic_economics/feature/canonical-economic-entity-register-v1-rebased-20261115`: 914 впереди.
+- `synergistic_metaverse/integration/rf-gnss-business-twin-rebased-20261116c`: 471 впереди и 4 позади.
+- `synergistic_economics/audit-russian-readme`: main опережает ветку на 450 коммитов.
+- `synergistic_economics/unified-economic-balance`: main опережает на 450, ветка имеет 13 собственных коммитов.
+- `synergy/feature/web-ecosystem-v8-federation-20261014`: main опережает ветку на 241 коммит.
+
+Это не решения об удалении. Каждая ветка требует отдельной проверки PR, tags, releases, workflows, issue links и межрепозиторных ссылок.
 
 ## Источники SHA
 
-В canonical JSON/CSV каждая ветка имеет `head_sha_source` и `head_sha_observed_at`. Значения `LIVE_BRANCH_AUDIT_2026-11-20` и `LIVE_PR_METADATA` имеют соответствующую живую provenance. Значение `HISTORICAL_CENSUS_2026-11-20` означает, что SHA взят из датированного census, а не заново запрошен в этом проходе.
+В canonical JSON/CSV каждая ветка имеет `head_sha_source`, `head_sha_observed_at`, `branch_relation_to_main`, `branch_ahead_of_main`, `main_ahead_of_branch` и `merge_base_sha` там, где сравнение выполнено.
 
 ## Новое обнаружение
 
@@ -33,4 +46,4 @@
 - [CSV](../registry/BRANCH_INVENTORY_2026-11-20.csv)
 - [Live reconciliation](LIVE_RECONCILIATION_2026-11-20.md)
 
-**Ограничение:** 210 исторических SHA не были перепроверены, две новые ветки не имеют проверенного protection state, а source/CI аудит всех 1,294 refs не завершён.
+**Ограничение:** ancestry сравнение выполнено для 210 refs, не для всех 1,294. Защита веток не перепроверена административным API; 0/1,292 — исторический census, две новые refs не проверены.
