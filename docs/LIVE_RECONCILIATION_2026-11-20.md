@@ -20,22 +20,22 @@ The 92nd repository, absent from the prior 91-repository owner registry, is `Sht
 |---|---:|
 | Branch refs | 1,294 |
 | Unique HEADs summed within repositories | 1,208 |
-| Live SHA observations | 1,079 |
-| Dated census SHA values not individually re-fetched in this pass | 215 |
+| Live SHA observations | 1,084 |
+| Dated census SHA values not individually re-fetched in this pass | 210 |
 | Repositories in live branch-audit tranche | 60 |
 | Records in live branch-audit tranche | 1,077 |
 
-The branch inventory JSON/CSV merges the existing 1,075 live branch observations, the two newly discovered memory-repository refs and 14 priority PR-head observations. The 215 remaining SHA values retain their dated census provenance. This is not a claim that every branch HEAD was freshly queried in this pass.
+The branch inventory JSON/CSV merges the existing 1,075 live branch observations, the two newly discovered memory-repository refs and 14 priority PR-head observations. The 210 remaining SHA values retain their dated census provenance. This is not a claim that every branch HEAD was freshly queried in this pass.
 
 Branch protection for the 1,292 historical refs remains sourced from the prior census. The two newly discovered refs have protection state `null / NOT_CHECKED`. No new live protection query was available in this audit pass.
 
 ## 3. Open pull requests
 
-Current repository-scoped discovery returned **206 open PRs across all 92 repositories**. The previous 548-row PR map is retained only as a historical snapshot and has been replaced in the canonical map.
+Current repository-scoped discovery returned **549 open PRs across all 92 repositories**. The previous 548-row PR map is retained only as a historical snapshot and has been replaced in the canonical map.
 
-- 206 PRs have discovery-level repository, number, title and URL.
-- 14 priority PRs have live `get_pr_info` metadata including head/base branch, SHA, draft, mergeability and change counts.
-- 192 PRs remain `DISCOVERY_ONLY_GET_PR_INFO_PENDING`; no head/base SHA, review or CI state is inferred for them.
+- 549 PRs have discovery-level repository, number, title and URL.
+- 18 priority PRs have live `get_pr_info` metadata including head/base branch, SHA, draft, mergeability and change counts.
+- 531 PRs remain `DISCOVERY_ONLY_GET_PR_INFO_PENDING`; no head/base SHA, review or CI state is inferred for them.
 
 Canonical artifacts:
 - `registry/OPEN_PR_BRANCH_MAP_2026-11-20.json`
@@ -132,8 +132,8 @@ Owner inventory and interface registry are different scopes. A repository in the
 
 ## 8. Remaining work
 
-1. Fetch exact branch HEAD SHA and protection status for the 215 branches still carrying historical census SHA values.
-2. Enrich the remaining 192 open PRs with head/base SHA, stacked dependencies, reviews and exact-head CI.
+1. Fetch exact branch HEAD SHA and protection status for the 210 branches still carrying historical census SHA values.
+2. Enrich the remaining 531 open PRs with head/base SHA, stacked dependencies, reviews and exact-head CI.
 3. Complete source audits for the remaining candidate repositories; this report does not mark the prior 53-repository backlog complete.
 4. Design and review a typed memory contract, then implement authenticated adapters and cross-repository E2E tests.
 5. Restore CI execution evidence for Autopilot, AI Coder, AI Language, Long Term Harness and cognitive memory.
