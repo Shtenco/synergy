@@ -53,7 +53,7 @@ The canonical artifacts are:
 - [Live branch audit — high-branch AI language and binary/quantum research (307 branches / 76 open PRs)](docs/LIVE_BRANCH_AUDIT_HIGH_BRANCH_RESEARCH_2026-11-20.md)
 - [Live branch audit — financial AI and blockchain core (92 branches / 58 open PRs)](docs/LIVE_BRANCH_AUDIT_FINANCIAL_AI_BLOCKCHAIN_2026-11-20.md)
 - [Live branch audit — apps, messaging and GLLM Nexus (73 branches / 28 open PRs)](docs/LIVE_BRANCH_AUDIT_APPS_MESSAGING_GLLM_2026-11-20.md)
-- [Consolidated live branch registry — JSON](registry/LIVE_BRANCH_AUDIT_2026-11-20.json) — 725 branch records / 20 repositories
+- [Consolidated live branch registry — JSON](registry/LIVE_BRANCH_AUDIT_2026-11-20.json) — 890 branch records / 26 repositories
 - [Consolidated live branch registry — CSV](registry/LIVE_BRANCH_AUDIT_2026-11-20.csv) — SHA, purpose, PR, CI evidence and disposition
 - [High-branch repository / BQG evidence audit](docs/HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
 - [Eight-repository source audit delta](docs/REPOSITORY_AUDIT_DELTA_2026-11-20.md) — trading terminal, NEXUS/OLGA, Autopilot, Investment Committee, Market Graph, Science Agent, AI Coder and AGI Trader
