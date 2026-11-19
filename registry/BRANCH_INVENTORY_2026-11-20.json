@@ -1203,22 +1203,34 @@
           "name": "feature/web-ecosystem-v8-federation-20261014",
           "sha": "26cb5ce943a3ddeafc3509b59a8c563dde97bbad",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 241,
+          "merge_base_sha": "26cb5ce943a3ddeafc3509b59a8c563dde97bbad"
         },
         {
           "name": "feature/82-repo-ecosystem-registry-20261014",
           "sha": "e91c0c8099fbcc49b6dd28e245e6603caaa5a7a9",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 241,
+          "merge_base_sha": "26cb5ce943a3ddeafc3509b59a8c563dde97bbad"
         },
         {
           "name": "main",
-          "sha": "a688134d8162cefc0cd62de1377aeaf955e14f4e",
+          "sha": "6e75e275bbe80794823303e3ceba2d94bf1ebba9",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "6e75e275bbe80794823303e3ceba2d94bf1ebba9"
         }
       ]
     },
@@ -2719,22 +2731,34 @@
           "name": "main",
           "sha": "3eda610edba084e908285b9729362dacfdd9d81c",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "3eda610edba084e908285b9729362dacfdd9d81c"
         },
         {
           "name": "research/v8-russia-four-economies-escrow",
           "sha": "6a84410ad2107945069c4f153381854948816b91",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 128,
+          "main_ahead_of_branch": 5,
+          "merge_base_sha": "d9fd9311af127a9079c577471817cac5934bb940"
         },
         {
           "name": "work/spatial-twin-integration-20261116",
           "sha": "727c04d8e3d523b321a3c5d8e3c8227b2187ffdc",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 2,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "3eda610edba084e908285b9729362dacfdd9d81c"
         }
       ]
     },
@@ -4122,29 +4146,45 @@
           "name": "feat/finance-next-android-v2-5",
           "sha": "6647b1fc0520806d85e1bc1523a6e43f7d3a59a1",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 6,
+          "merge_base_sha": "6647b1fc0520806d85e1bc1523a6e43f7d3a59a1"
         },
         {
           "name": "federation-v3-domain-expansion",
           "sha": "97ade3df5a4922db2b77eb678726ff265edd2cb2",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 17,
+          "merge_base_sha": "700da9dfbb259413af661676bc0d88f280fef4e0"
         },
         {
           "name": "main",
           "sha": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "d0f531aa402b58326db3fad361a7ae8c88ee9667"
         },
         {
           "name": "synergy-smm-v1",
           "sha": "249e7586abc60aa11c20740f0ea08004add29852",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 65,
+          "main_ahead_of_branch": 17,
+          "merge_base_sha": "700da9dfbb259413af661676bc0d88f280fef4e0"
         }
       ]
     },
