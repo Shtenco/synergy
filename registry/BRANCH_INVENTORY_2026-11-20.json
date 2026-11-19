@@ -2715,6 +2715,1125 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_pay_system",
+      "default_branch": "main",
+      "branch_count": 27,
+      "unique_head_count": 27,
+      "branches": [
+        {
+          "name": "audit/pay-system-settlement-2026-11-11",
+          "sha": "e3b9dd0ae7ead07bc9789cfa9acb897d47537960",
+          "protected": false
+        },
+        {
+          "name": "docs/financial-os-federation-boundary-20260817",
+          "sha": "cea647c3b4318d72bbca0e220c06c0a195943caa",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-authorization-handoff-v1-20260818",
+          "sha": "9555ca9f5d39163baa2b454e1dceac1c01803215",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-authorization-handoff-v2-20260818",
+          "sha": "87105278377b1ff95a7ed7de44e25ce8f14524be",
+          "protected": false
+        },
+        {
+          "name": "feat/capped-canary-external-requirements-v1-20260905",
+          "sha": "04dcc230bdcab040494faaa251b9896ec6ebeb1a",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-batch-utilization-v1-20260820",
+          "sha": "258727648efccba06ec7ff6c31c07c38328b2542",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-aware-settlement-v3-20260824",
+          "sha": "8bda0d9853af905cd043b94b12f0b62bac58a1d6",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-budget-settlement-v2-20260823",
+          "sha": "3fc7bf98c5d0cb43401724d8be0bc4aafcad6571",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-reversal-refund-v2-20260828",
+          "sha": "006637b1974d9236b91b83c5962c3b926876a307",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-settlement-reversal-v1-20260820",
+          "sha": "6bdeec524d6d17fd0991dd4070e17059d7b87c46",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-settlement-reversal-v2-fee-refund-20260828",
+          "sha": "a4b7b2876915e7f70089947a5b40f3cff81458d9",
+          "protected": false
+        },
+        {
+          "name": "feat/final-financial-system",
+          "sha": "249008bcda05b557bf5c69c0bc2481ca01853e6c",
+          "protected": false
+        },
+        {
+          "name": "feat/full-payment-router-mvp",
+          "sha": "291bf9844a71de6d17c69bd03882e6d29b41a31a",
+          "protected": false
+        },
+        {
+          "name": "feat/global-long-cycle-graph-v1-20260906",
+          "sha": "d47e0ec0244a97f9af6ca73ef1e5e727fd4f6fe0",
+          "protected": false
+        },
+        {
+          "name": "feat/hybrid-arbitrage-external-profit-gate-v1-20260905",
+          "sha": "4852a450950fb6716675612d6eb9720b97af86df",
+          "protected": false
+        },
+        {
+          "name": "feat/live-readiness-control-plane",
+          "sha": "593e7275b760f2cf404421be3caa8a90aee1efd3",
+          "protected": false
+        },
+        {
+          "name": "feat/meta-pay-global-settlement-v1",
+          "sha": "9ba9990a9f3127f1a7c7bc8aa7bdb84df7e8ad8b",
+          "protected": false
+        },
+        {
+          "name": "feat/metapay-v2-20260809",
+          "sha": "55e7c6ab6951845baa882357c146d83a6d254c4f",
+          "protected": false
+        },
+        {
+          "name": "feat/omnichain-token-dex-bridge",
+          "sha": "e020705e3a2faee777379ae7272fe08404fa980e",
+          "protected": false
+        },
+        {
+          "name": "feat/pq-migration-adapters-v1",
+          "sha": "26edb13f8e1cb87dc7e03ec84ea4ee28172f4f49",
+          "protected": false
+        },
+        {
+          "name": "feat/settlement-receipt-v2-20260818",
+          "sha": "1c08ea052ac9dd9aac1dcf2dae4cf58c544bd029",
+          "protected": false
+        },
+        {
+          "name": "feature/meta-exchange-hybrid-pricing",
+          "sha": "ed94f5fd2feb5277068b3dbe85a080095139ed15",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "8fae2d65198b4faa2489af6b713faf9b790c22cf",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "sha": "79f9b6b7ea5fde190492a1130f995387b5053e8e",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "950d6a53ade3e5bc2b92e8dce4b7d1d74b6b5f0e",
+          "protected": false
+        },
+        {
+          "name": "research/pinned-quoter-v4-20260829",
+          "sha": "98d8883467bdc2685a1d56b0f15260eb833537ce",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "default_branch": "main",
+      "branch_count": 32,
+      "unique_head_count": 32,
+      "branches": [
+        {
+          "name": "base-l3-cross-domain-v2",
+          "sha": "2770d79d7f6eb9dbb56ff9fdb05adab2af657cc0",
+          "protected": false
+        },
+        {
+          "name": "chore/portable-ci-artifacts",
+          "sha": "ee3e875f6a80fb92cc35b5a4705f7a4f7768b464",
+          "protected": false
+        },
+        {
+          "name": "chore/portable-rust-ci",
+          "sha": "9d4d1dd0d7ee17184c34ae269672edcf1a741287",
+          "protected": false
+        },
+        {
+          "name": "feat/agentic-economy-dqn-v1",
+          "sha": "9e3ea0ae64b912b7184e937036c44043c331a798",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-commitment-v1-20260823",
+          "sha": "f49ecfa0f59fddff1b77475e94e9de14c7eedd2f",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-lab-commitment-v2-20260823",
+          "sha": "1794b0c259776ded625a76543d23091be58e2212",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-preproduction-commitment-v3-20260824",
+          "sha": "94b701c77e447a0e8765a1b7a5acf5c9bd98a288",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-authorization-v2-commitments-20260818",
+          "sha": "2d081fb1bbda6fa1efa5f05ebf3eb788b0d1cac6",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-cycle-commitments-v1-20260818",
+          "sha": "2ffe1b8e5d0d48fa7b1e93b78bde3f12d487892d",
+          "protected": false
+        },
+        {
+          "name": "feat/commitment-v4-revenue-trace-20260818",
+          "sha": "5ab9ec3c099504269b1ffce4deff5ff677454f54",
+          "protected": false
+        },
+        {
+          "name": "feat/commitment-v5-accounting-close-trace-v6-20260819",
+          "sha": "6f9b2f9f3d587eae708861cb4b691089c985c09f",
+          "protected": false
+        },
+        {
+          "name": "feat/distributed-ai-foundation-v1-20260922",
+          "sha": "54de19cb34a80d58f16106bfe6fa1866d0abe9af",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-evidence-commitment-v1-20260828",
+          "sha": "b9c87e0a8b4da465e97994a97365f46ce994bd7f",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-testnet-v1-20260828",
+          "sha": "af12f7e4e09ad77d8c8c90a45611846115526147",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-testnet-local-execution-evidence-v1-20260828",
+          "sha": "dd2cd8c1521095b99745f86a58f8df5682acbe52",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-testnet-loopback-3node-evidence-v1-20260828",
+          "sha": "409b323b622500f2fb6bfe22260d23364cf7305a",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-testnet-persistent-restart-evidence-v1-20260828",
+          "sha": "72a7853fba49d20c208bd2d9776d6c107648b882",
+          "protected": false
+        },
+        {
+          "name": "feat/mvp-canonical-integration-20260924",
+          "sha": "87236f5bca1ef02ccd31243ad44c3c74c023e68e",
+          "protected": false
+        },
+        {
+          "name": "feat/p6-pq-mesh-internet",
+          "sha": "acbcd172fd3fdd2a7140dfeff60aedcd1309a685",
+          "protected": false
+        },
+        {
+          "name": "feat/p7-node-commander-agent-fabric",
+          "sha": "8f7ec8f4dfbf6be18c4160de95170d7efbbe2064",
+          "protected": false
+        },
+        {
+          "name": "feat/p8-adaptive-verification-pq-bridges",
+          "sha": "e46d7c742cf9db50d14451f513312686941ed608",
+          "protected": false
+        },
+        {
+          "name": "feat/pq-evm-nexus-v1",
+          "sha": "01dbc0fa901c8195bc37c646fa6617ada2b97a99",
+          "protected": false
+        },
+        {
+          "name": "feat/protocol-convergence-pi-pq-evm-syna-v1-20260925",
+          "sha": "ed1c62f5eff4f0a88dd7bfc58db2b9c43b03be95",
+          "protected": false
+        },
+        {
+          "name": "feat/settlement-receipt-v2-trace-v3-commitments-20260818",
+          "sha": "89e2a1492e615de180295d324e47f4272aac8e5b",
+          "protected": false
+        },
+        {
+          "name": "feat/sinergy-l1-base-qe-v1-20260904",
+          "sha": "947eb2248a4caf4e6d0852d86e7b78ce6f388236",
+          "protected": false
+        },
+        {
+          "name": "feat/trust-commitment-v2-20260818",
+          "sha": "e1f62a48fba348427c45bc362c8905df1a0a3fb0",
+          "protected": false
+        },
+        {
+          "name": "feat/trust-state-proof-layer-20260817",
+          "sha": "f7786361a3f45e19d40fa616220ee00c1403dadf",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "bb4aa108d4ceb69a7d7b33f2db1d0facfbec23b5",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "b9353bf52542ed55ec36c30d84046f330df5f1de",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "96f3c4770c00d3c2754922235b1b92234d0dbaa1",
+          "protected": false
+        },
+        {
+          "name": "mvp/local-green-20261001",
+          "sha": "a72934cf2b9fbe3a92f0563560c39f2b4a57f5ed",
+          "protected": false
+        },
+        {
+          "name": "pq-internet-phases-1-3",
+          "sha": "15e6e973472d9df2d584d632b45bd03d7ce32851",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_chain",
+      "default_branch": "main",
+      "branch_count": 29,
+      "unique_head_count": 27,
+      "branches": [
+        {
+          "name": "audit/oracle-100pct-evm-20260826",
+          "sha": "450a530c10136c6d7adac5b01470048dd7114989",
+          "protected": false
+        },
+        {
+          "name": "audit/v12-3-evm-canonical",
+          "sha": "653c2bbe6e21fb4e0a6c55728b468fa63ba4c8b2",
+          "protected": false
+        },
+        {
+          "name": "audit/v12-4-base-fork-distilled",
+          "sha": "b2beb1b8508bdf9a1f2d38b1a8340c452762768a",
+          "protected": false
+        },
+        {
+          "name": "audit/v12-causal-conservation",
+          "sha": "d3e07fd0767906e1ed319e654b6c1e12f5314cc0",
+          "protected": false
+        },
+        {
+          "name": "docs/federation-control-plane-20260817",
+          "sha": "4ed51a291343234109763202bffdc6c732d7c3a7",
+          "protected": false
+        },
+        {
+          "name": "feat/accounting-close-trace-v6-readonly-v5-20260819",
+          "sha": "8aa6e5f5445a41e6f374e22568e81512adff285b",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-economic-node-v1",
+          "sha": "2a36fa41e79d16bfeb54ff58d20352b1eca2603e",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-cycle-readonly-v1-20260818",
+          "sha": "95aed2e28f374e7dcbacc18fc857597cde703b5b",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-cycle-readonly-v2-20260818",
+          "sha": "333af7042bf02337506d43e497b444cedc55fa95",
+          "protected": false
+        },
+        {
+          "name": "feat/financial-os-v8-20260809",
+          "sha": "9691325f02a5c9a6a1b00b91b623acb8e77433a4",
+          "protected": false
+        },
+        {
+          "name": "feat/pq-evm-nexus-integration-v1",
+          "sha": "c9fb95c45c0b7613efeadccbafd3423c76596913",
+          "protected": false
+        },
+        {
+          "name": "feat/revenue-accounting-trust-readonly-v4-20260818",
+          "sha": "adefdf8385fd30f695922ac90edd512eb900aa81",
+          "protected": false
+        },
+        {
+          "name": "feat/settlement-receipt-v2-trace-v3-readonly-20260818",
+          "sha": "0d16c749138ba3394f14c41d1d023d31b36fa8fe",
+          "protected": false
+        },
+        {
+          "name": "feat/sinergy-growth-os-v5",
+          "sha": "dcdf6fcc18e728228c71e287741c9902e7aa38c6",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "773259c2e05b705e33f9afc35ad0591e03d40e49",
+          "protected": false
+        },
+        {
+          "name": "gh-pages",
+          "sha": "4408c0958fda0b101bb4ccba3a7e86c31c633aed",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "sha": "bb07b127c3b5caffac6f0155546fc1fd17e18fc2",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "0f731f56c3f067095d3a2ff89f7e73bdc7365177",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "b70716b8f0949ddea39636b7942e135c6dbfc9f8",
+          "protected": false
+        },
+        {
+          "name": "qe-v9-evm-ci2-20260825",
+          "sha": "0ee2c0b881f5d5cdb9ce685dcf52fc201a5254a3",
+          "protected": false
+        },
+        {
+          "name": "qe-v9-evm-ci3-20260825",
+          "sha": "bc7cbc673d30adf78864515e51110a03a30a2d94",
+          "protected": false
+        },
+        {
+          "name": "qe-v9-evm-ci-20260825",
+          "sha": "0ee2c0b881f5d5cdb9ce685dcf52fc201a5254a3",
+          "protected": false
+        },
+        {
+          "name": "qe-v11-evm-test",
+          "sha": "a4cf86c8d5e154dad6a6804958f91aa3d5b84d25",
+          "protected": false
+        },
+        {
+          "name": "release/sinergychain-growth-os-v7",
+          "sha": "bc463703fd7f74d67212535290d72dc54d9f5d7d",
+          "protected": false
+        },
+        {
+          "name": "release-v7",
+          "sha": "6d8bbd12f42ebb13c242a5a95004b11fb28b877c",
+          "protected": false
+        },
+        {
+          "name": "sinergy-growth-os-v5",
+          "sha": "dcdf6fcc18e728228c71e287741c9902e7aa38c6",
+          "protected": false
+        },
+        {
+          "name": "upload-v7",
+          "sha": "be5946af9dab930faa4d3bd070ed8e92e291a2ab",
+          "protected": false
+        },
+        {
+          "name": "v11-distilled-4contracts",
+          "sha": "478ed828cfd245691d6c9b0cb9c9d0df2480b6e9",
+          "protected": false
+        },
+        {
+          "name": "v11-distilled-real-base-pool-archive",
+          "sha": "cd69a512a96f17e54efaba836a75b1c227c4418a",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergychain.github.io",
+      "default_branch": "main",
+      "branch_count": 52,
+      "unique_head_count": 48,
+      "branches": [
+        {
+          "name": "audit/hybrid-max-tvl-v1-20260806",
+          "sha": "5d55e32382356843469f4726c3a7e0f0dc5910b8",
+          "protected": false
+        },
+        {
+          "name": "audit/oracle-tvl-fork-v3-20260806",
+          "sha": "e7b1873cb55c93e550e556dc81fa263b88243116",
+          "protected": false
+        },
+        {
+          "name": "audit/syna-v5-fixed-compile-20260804",
+          "sha": "60b3ccabcbcf92c905f9a302d1e01ededd6b257d",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-finance-apk",
+          "sha": "d312f454b62f5e423d78b0318f734a1a55827cb7",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-finance-v3-crypto-binary",
+          "sha": "735a02c4f7cdbe4c59f7975860579d55ce6c9888",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-finance-v3-crypto-real",
+          "sha": "d33e02ba6de9435f1b4440ca22060136afe6112c",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-finance-v31-wallet-multicurrency",
+          "sha": "30cb27722179bd813f4eeed5d55541006b1565a0",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-myfinance-v3-ci",
+          "sha": "03a754bdfd31cddb1daa39f53e982d9c1e81c3d7",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-myfinance-v3-final",
+          "sha": "62689517b78cb24cffe380e91f722429e2299a1c",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-myfinance-v3-final-clean",
+          "sha": "5d7c406559d24091841cdeadb179fdde47fd64b0",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-myfinance-v3-rebuilt",
+          "sha": "24d8192ad6d2d846d32099de682fdc9263bb5fce",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-myfinance-v3-stage2",
+          "sha": "c22bac77ad5f719a73760adef9f54506220ebaa1",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-myfinance-v3-stage3",
+          "sha": "f4980de356c96ddc540adcdb6d7c13c0b5a2dc8b",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-myfinance-v3-stage4",
+          "sha": "d33e02ba6de9435f1b4440ca22060136afe6112c",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-myfinance-v3-wallet",
+          "sha": "d33e02ba6de9435f1b4440ca22060136afe6112c",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-v4-wallet-investments-final",
+          "sha": "65f3d1af69d16e1f0c58fdb330b997747ec9313d",
+          "protected": false
+        },
+        {
+          "name": "build-sinergy-smm-v12",
+          "sha": "57e30c897662dda4d091edbf31c6b173b1bc812d",
+          "protected": false
+        },
+        {
+          "name": "build-sinergy-smm-v20-full",
+          "sha": "530f6ba1aaca5420eb57e367e25ab1686d651d8d",
+          "protected": false
+        },
+        {
+          "name": "ci/sinergy-finance-v3-crypto-build-1",
+          "sha": "0ef3357afad5e77c3ed89de7d26b87cff240fed7",
+          "protected": false
+        },
+        {
+          "name": "ci/syna-v5-public-fork-20260805",
+          "sha": "fd93fa7c117488be80fe27b0dde8d4e5ecf52987",
+          "protected": false
+        },
+        {
+          "name": "ci/v4-rpc-probe",
+          "sha": "a1d884a021d6b5d15c71191e88f02674caea32e1",
+          "protected": false
+        },
+        {
+          "name": "ci/v4-runner-smoke",
+          "sha": "bdeaf4106909aefc9e2f982a515ff8c716cc4c2d",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-across-only",
+          "sha": "2933fecf76b6e64e5ee3f8a9a9abc16ff75df8c5",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-across-sharded",
+          "sha": "64195b1f8422b8937d6a7849525eef8467d0d46c",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-aero-core",
+          "sha": "efdda513b06d99e5cca18179782fbe5eba27da4e",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-aero-recovery",
+          "sha": "fbb0ee27af11ac159a308a6de3afc55bed1ddcf3",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-aero-sharded",
+          "sha": "9a4f4d4a63531451602137e1de52fbec4a0b7250",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-external-flow",
+          "sha": "1c759ef1ae07bc74e67e0be97f409a18e88487c2",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-fast-probe",
+          "sha": "23516219be01c2617a29f55d78778993f0ec43ca",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-real-flow",
+          "sha": "4edeba573629c3d2ecacd356adcb84d64d6bd971",
+          "protected": false
+        },
+        {
+          "name": "ci/v5-topic-probe",
+          "sha": "dbc61a5a4e2a829f02432c5da46e2825a39c5144",
+          "protected": false
+        },
+        {
+          "name": "ci/v12-4-evm-runner-probe",
+          "sha": "ecef9330946da237b4834bb08d0d29beac8e21db",
+          "protected": false
+        },
+        {
+          "name": "docs/public-surface-boundary-20260817",
+          "sha": "04d9954d62130941e565fbc09965131e4f762e3e",
+          "protected": false
+        },
+        {
+          "name": "extract/sinergy-crypto-layer",
+          "sha": "5f9d29a756e48a373ae5935dab954e4ec65ec696",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "4e1374b8d268b943bd78178dbfd280509d7fc344",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "e4a6eb5d720b3e5469ffdcdfa80315253d00bcbb",
+          "protected": false
+        },
+        {
+          "name": "nexus-106m-train",
+          "sha": "e4ed2abcc96dbdd1b2208c9cd5df2676b0561baa",
+          "protected": false
+        },
+        {
+          "name": "ops/midas-exact-zlib-dll",
+          "sha": "1e53ca735bf7bdd03f1a6d89d309234c668e64a0",
+          "protected": false
+        },
+        {
+          "name": "ops/run-roboforex-splitter",
+          "sha": "37e19f449233a193632f7cdd45328fddcb83a59a",
+          "protected": false
+        },
+        {
+          "name": "portal-v17-rebuild",
+          "sha": "c30899c8dc6b729a1bf40fc0371325bea8f09b3c",
+          "protected": false
+        },
+        {
+          "name": "portal-v18-top",
+          "sha": "463d0f218d751c3e8d0906a87c76bf0aae80fda9",
+          "protected": false
+        },
+        {
+          "name": "portal-v19-polittech-v14-copy",
+          "sha": "463d0f218d751c3e8d0906a87c76bf0aae80fda9",
+          "protected": false
+        },
+        {
+          "name": "portal-v19-polittech-v14-max",
+          "sha": "f6582f384426254a324dbd4f2eab86edb9f25fae",
+          "protected": false
+        },
+        {
+          "name": "portal-v19-polittech-v14",
+          "sha": "c61290539779f4ef0892c7cfc7d8e174c63f2b98",
+          "protected": false
+        },
+        {
+          "name": "research/midas-v242-bybit-top30",
+          "sha": "72acf14938b0e1ce718102d6eafe3ff9e9a03a17",
+          "protected": false
+        },
+        {
+          "name": "sinergy-smm-v3-product-v31-copy",
+          "sha": "012ccb31d08b2054ea35cfc764ba6c43ecd52645",
+          "protected": false
+        },
+        {
+          "name": "sinergy-smm-v3-product-v31-rebuild",
+          "sha": "1efe815ef2f2ec35cc6ce84d578fbaa3e6aadc19",
+          "protected": false
+        },
+        {
+          "name": "sinergy-smm-v3-product-v31",
+          "sha": "90a07da12e2b2f956abec466700bfc9b199eddee",
+          "protected": false
+        },
+        {
+          "name": "sinergy-smm-v3-release-gates",
+          "sha": "012ccb31d08b2054ea35cfc764ba6c43ecd52645",
+          "protected": false
+        },
+        {
+          "name": "sinergy-smm-v33-finance-ux",
+          "sha": "e858e8093adeefe2f2b8c0257af217cc2585b817",
+          "protected": false
+        },
+        {
+          "name": "temp-do-not-use",
+          "sha": "55c3806272ba3239f4507b225402ca59c3b86f9b",
+          "protected": false
+        },
+        {
+          "name": "test/bybit-demo-credit-pyramid-20260804",
+          "sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_cold_nuclear",
+      "default_branch": "main",
+      "branch_count": 2,
+      "unique_head_count": 2,
+      "branches": [
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "1930fb92eee01294d1ded8ceac66086fd59a93aa",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "0218157a8197c3b9e1c300cb433b805e3a3ea3fb",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_usds",
+      "default_branch": "main",
+      "branch_count": 10,
+      "unique_head_count": 10,
+      "branches": [
+        {
+          "name": "codex/-fork-base",
+          "sha": "74fa17a66c4332bc297c70d25143dc64a29ad3c2",
+          "protected": false
+        },
+        {
+          "name": "codex/-fork-base-jv4di1",
+          "sha": "37ae93ad969c860f5af34ad03025579519b5f975",
+          "protected": false
+        },
+        {
+          "name": "codex/-fork-base-yujap9",
+          "sha": "025fd8014b28a4491aaec1410506e5b4dbf8a3af",
+          "protected": false
+        },
+        {
+          "name": "docs/financial-os-federation-20260817",
+          "sha": "668fc08a9fc446f597589a2281654022a95de6eb",
+          "protected": false
+        },
+        {
+          "name": "feat/experiment-handoff-v1-20260818",
+          "sha": "221ba2b8f85ffde140b39110f4205af2e2aa3d4a",
+          "protected": false
+        },
+        {
+          "name": "feature/perpetual-bridge-v6",
+          "sha": "178ee1d2b6111dd0f42be1c065f4722747ab36d4",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "0d6c57f2d164f928a6a296591373105906464420",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "0234edac62492ceff8af8195506aa1cef672ada1",
+          "protected": false
+        },
+        {
+          "name": "research/six-level-collateral-flywheel",
+          "sha": "8fcc31e087c4728a43901216f4c6525bc211add6",
+          "protected": false
+        },
+        {
+          "name": "security/remove-committed-deployer-key",
+          "sha": "0b63b7fc057907cd5df70089a577a5bd9557584f",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_financial_os",
+      "default_branch": "main",
+      "branch_count": 40,
+      "unique_head_count": 40,
+      "branches": [
+        {
+          "name": "evm-v2-rubc-rubx-ai-cb",
+          "sha": "a3ad5d7ba0430d66e19d33f1123e9e0fd4ac49ca",
+          "protected": false
+        },
+        {
+          "name": "evm-v23-balancer-fixed200",
+          "sha": "85dec68e04a3adf7aa65cfb4a8ee3a14dfc347bb",
+          "protected": false
+        },
+        {
+          "name": "evm-v24-reflexive-single-batch",
+          "sha": "f9f028bb06b3f23e7d7a57d80a9ca24237daf22e",
+          "protected": false
+        },
+        {
+          "name": "feat/account-registry-v1-20260819",
+          "sha": "8512e1181795b5f448f51c7fb01b65c22135c607",
+          "protected": false
+        },
+        {
+          "name": "feat/accounting-close-merkle-v1-20260818",
+          "sha": "fdff45761b276ba6d8f65ac6bb886e6865a4b9be",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-authorization-v2-20260818",
+          "sha": "49a7b6d7b347095933bde025a9927692d27a248d",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-accounting-v1-20260820",
+          "sha": "bac372240c0ebcf2826a341b4c5637dfe8dad15a",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-available-capacity-v3-fee-aware-20260824",
+          "sha": "17fbac0f45b1c0835f113a2a45cda9522858e8b5",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-available-capacity-v4-refund-restored-20260828",
+          "sha": "d21ce6b5bd91422c45f938b2d4ec641974106944",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-budget-current-capacity-v2-20260821",
+          "sha": "a412acba5093e777bbde2bbad90fb664fcf62505",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-budget-fee-aware-v2-20260823",
+          "sha": "7034ebe6413f15a550d91e882339a178af237bf4",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-budget-state-v3-fee-refund-restoration-20260828",
+          "sha": "753ed935ca704626e3ebdfa79a898d34f58d3732",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-capacity-replay-v1-20260820",
+          "sha": "66a841535aeb43f038498b8a6533322fa3aeec33",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-capacity-reservation-v1-20260821",
+          "sha": "cb000beb48e148c0a5ae395476661513ab18a633",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-execution-ticket-v1-20260820",
+          "sha": "ec5047134be101603df3edaac05fb2f011cf5987",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-accounting-v2-20260823",
+          "sha": "5e361546a680f139ed04a75209a544478813d7df",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-accounting-v3-metapay-v3-20260824",
+          "sha": "6ad688fe6fd2fc41fe59ada97a6f560a0eed3d0b",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-fee-budget-v3-20260823",
+          "sha": "493df4b4b048cc6b8d290073994b2083de4ab615",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-handoff-v3-fee-aware-capacity-20260824",
+          "sha": "08ad477bd8ad6551f842763e8ae8b6aa2b549bae",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-plan-authorization-v1-20260820",
+          "sha": "aad9b6163d22c760ca086b9fdfd49852777f76ae",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-reversal-accounting-v1-20260820",
+          "sha": "83a70a4ef85312be3012dec433929e9fb3f938ff",
+          "protected": false
+        },
+        {
+          "name": "feat/distribution-reversal-accounting-v2-fee-refund-20260828",
+          "sha": "73b2560455d765c9c143b5af8d099cad45343746",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-cycle-trace-v1-20260818",
+          "sha": "87183399e5b7ed8b52d4529cc859bfd314c8c61c",
+          "protected": false
+        },
+        {
+          "name": "feat/external-profit-bus-accounting-v1-20260905",
+          "sha": "2b2c1f5b35285c4f32d7e8cfcfa115d6810ef80e",
+          "protected": false
+        },
+        {
+          "name": "feat/external-profit-import-v1-20260905",
+          "sha": "bf67bf9b2a5e98d44bd02e40e9a704b44492a3a6",
+          "protected": false
+        },
+        {
+          "name": "feat/federation-governance-v2-20260818",
+          "sha": "f2c7b03ae59c785b81cefd707a6eeffd7ba545e5",
+          "protected": false
+        },
+        {
+          "name": "feat/ledger-event-v2-close-v2-trace-v6-20260819",
+          "sha": "8727b2ff44d1425d84f37c051fc67c083534f4b7",
+          "protected": false
+        },
+        {
+          "name": "feat/liquidity-replay-v1-20260820",
+          "sha": "f4da6f5a3491b8b92fe52749f7571ed2397fd87f",
+          "protected": false
+        },
+        {
+          "name": "feat/noncircular-trace-v5-20260818",
+          "sha": "600876608f2c0a0319778f07e49a7dc47b703d24",
+          "protected": false
+        },
+        {
+          "name": "feat/period-reversal-v1-20260819",
+          "sha": "e92feaf01042df53e2ce77f47b68bdbc1501d831",
+          "protected": false
+        },
+        {
+          "name": "feat/prior-period-entry-void-v1-20260819",
+          "sha": "9235bf664c237b2eb8cc17cc30feef3e103865ec",
+          "protected": false
+        },
+        {
+          "name": "feat/restated-period-view-v1-20260819",
+          "sha": "80f5da4a274464d913ead8ef1f3e16bd8ff3ca48",
+          "protected": false
+        },
+        {
+          "name": "feat/revenue-adjustment-v1-20260819",
+          "sha": "d42908d8f9d6155a8249423b86456c309c426958",
+          "protected": false
+        },
+        {
+          "name": "feat/revenue-recognition-v1-20260818",
+          "sha": "a09213bca4f8282dc63bc359f3b94e94773b0ddb",
+          "protected": false
+        },
+        {
+          "name": "feat/settlement-receipt-v2-consumer-20260818",
+          "sha": "b6cec9689899b008280d4fad6b206a5db4287e5d",
+          "protected": false
+        },
+        {
+          "name": "feat/statement-replay-v1-20260820",
+          "sha": "992b2c3dcb452b985fdd6847255bedd65aa8e394",
+          "protected": false
+        },
+        {
+          "name": "feat/valuation-policy-artifact-v1-20260819",
+          "sha": "a15f7a4497243a086c5fc4a956690b97839e0e31",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "935780514b2b3ff2c93a16bbfdfaaab0bc2f7d24",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+          "protected": false
+        },
+        {
+          "name": "test-bootstrap",
+          "sha": "4b7ce8c7851abe9c6914a9ed5df121e03634e451",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "default_branch": "main",
+      "branch_count": 19,
+      "unique_head_count": 19,
+      "branches": [
+        {
+          "name": "eiiom-masterplan-2045",
+          "sha": "40d4bbc49d29841f337e1a331640d70ad8a64076",
+          "protected": false
+        },
+        {
+          "name": "eiiom-v4-federation-megasystem",
+          "sha": "02119317623ed0353f2562444c02d9c42287a83d",
+          "protected": false
+        },
+        {
+          "name": "feat/eiiom-real-economy-os-20260817",
+          "sha": "f778df119dcdf8e8f5ee9d74f4aacb08bbc92527",
+          "protected": false
+        },
+        {
+          "name": "feat/sdu-accounting-core-v2",
+          "sha": "83673f48942e678dc1cc7cbdfaf046330fc53b2b",
+          "protected": false
+        },
+        {
+          "name": "feat/synergy-labor-economy-v1",
+          "sha": "7ae8df839c15847e68d1966136bebc4f81c75e1b",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "aad134a33e329320a0142ac268f63a4088d30732",
+          "protected": false
+        },
+        {
+          "name": "fix/production-hardening-2026-11-07",
+          "sha": "ae76b20a6196d547ffdd64a72cb65a2c047fc3a5",
+          "protected": false
+        },
+        {
+          "name": "fix/sues-hardening-clean-20261107",
+          "sha": "2088b3cfec918d4a6fdf834837630eac34890b21",
+          "protected": false
+        },
+        {
+          "name": "fix/v66-reserve-recovery-ci",
+          "sha": "1aa957927049079e79f0f38941bcf47270bb4b93",
+          "protected": false
+        },
+        {
+          "name": "fix/v66-reserve-recovery-federation-plan-20261116",
+          "sha": "0b1b40b678c6b8614a4233e2f19aef02e57429a8",
+          "protected": false
+        },
+        {
+          "name": "integration/federation-execution-plan-2026-11-16",
+          "sha": "1d64c88f41382a194262cc1778cef7d770f11214",
+          "protected": false
+        },
+        {
+          "name": "integration/federation-execution-plan-v2-2026-11-16",
+          "sha": "54e0678feb5d88e023f5679b057725e8ae2366a2",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "b911bb017103f122f2c75ef08b99ffebe665883d",
+          "protected": false
+        },
+        {
+          "name": "research/self-healing-economy-v6.4-v6.5.6",
+          "sha": "9c8e4cb503d33e82cc4bb9add729514db1a42587",
+          "protected": false
+        },
+        {
+          "name": "research/sues-audit-v1",
+          "sha": "2a39fd05466c4cfbb494fb4127b2035dab1e7401",
+          "protected": false
+        },
+        {
+          "name": "research/synergy-v6.4-kernel",
+          "sha": "0f2cdb506f5298649dfcbe8e00deaa2ae8e0e8bb",
+          "protected": false
+        },
+        {
+          "name": "research/synergy-v6.6-federated-economy",
+          "sha": "04ae575ab774f175bd9d36ad8503a2ca7b727018",
+          "protected": false
+        },
+        {
+          "name": "research/synergy-v6.6-foundation",
+          "sha": "f5f5ffe877820d2ba697f8eaeb026ab6890ef0f1",
+          "protected": false
+        },
+        {
+          "name": "research/synergy-v7-economic-graph",
+          "sha": "9c0aed72857493bac0a99ba6247ed726c554870e",
+          "protected": false
+        }
+      ]
     }
   ]
 }
