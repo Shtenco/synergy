@@ -4,13 +4,13 @@
 
 ## Branch ancestry and decision ledger — 2026-11-20
 
-Fresh GitHub `compare_commits(main, branch)` checks have been performed for **99 / 1,202 non-main branch refs** in the current incremental pass. The remaining 1,103 are explicitly pending; no inference is made for unchecked branches.
+Fresh GitHub `compare_commits(main, branch)` checks have been performed for **105 / 1,202 non-main branch refs** in the current incremental pass. The remaining 1,097 are explicitly pending; no inference is made for unchecked branches.
 
 | Compared status | Count | Meaning |
 |---|---:|---|
 | Ahead | 5 | Branch has unique commits, no main-only commits since merge base |
-| Behind | 6 | No unique branch commits ahead of main; candidate for archival review, not automatic deletion |
-| Diverged | 88 | Both branch and main contain unique commits; requires conflict-aware review |
+| Behind | 10 | No unique branch commits ahead of main; candidate for archival review, not automatic deletion |
+| Diverged | 90 | Both branch and main contain unique commits; requires conflict-aware review |
 | Merge-ready | **0** | No branch is promoted without exact-head CI and PR/dependency gates |
 
 Priority branch decisions and the complete evidence ledger:
