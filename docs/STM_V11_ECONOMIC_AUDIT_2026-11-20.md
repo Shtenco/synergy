@@ -100,3 +100,46 @@ PR #7: [V11 integrated block revenue + graph HardNAV engine](https://github.com/
 | Blanket 20% reserve burn | REJECT | Destroys NAV; proportional removal creates no price gap |
 | 5% every block | RESEARCH TARGET ONLY | Not supported by current evidence; cannot be promised or hard-coded |
 
+
+
+## Cross-repository overlap — first-pass ownership decision
+
+The current owner inventory contains several repositories implementing adjacent AMM, graph-arbitrage, HardNAV, flash-liquidity and market-execution functions. Do not merge repositories wholesale; consolidate by authority and versioned interfaces.
+
+| Repository | Observed mainline / role | Overlap | Decision |
+|---|---|---|---|
+| synergy_graph_print_money | V7.4 graph economy; token-closed Base surrogate; exact pinned fork still not executable | Graph arbitrage, flash funding, external HardNAV settlement | **KEEP / DEVELOP as canonical graph-arbitrage research engine**; do not duplicate its token-level closure and settlement core in STM |
+| synergy_triangle_money_system | V5 collateral core on main; V11 integrated candidate in draft PR #7 | Adaptive AMM, block allocator, graph HardNAV, borrower/flash revenue | **DEVELOP as block-level orchestrator and collateral/MM lab**; consume graph execution through an adapter after evidence gates |
+| synergy_ai_financial_system | Research implementation of integer CPMM graph, USDT settlement, anti-MEV/orderflow and flash executor | Graph policy, flash execution, LP growth, orderflow auction, treasury | **KEEP / DEVELOP as contract/security research**; select audited primitives, avoid a second competing production revenue engine |
+| synergy_agentic_ai_economy | Closed multi-market / DQN historical research; README reports strict OOS HardNAV result, with some synthetic-flow caveats | Economic simulation and NAV accounting, not identical on-chain execution | **KEEP as independent economic benchmark**; do not count internal GDP/turnover as HardNAV |
+| synergy_2chain_qe | Cross-chain QE / arbitrage research and fork-oriented branches | Arbitrage, AMM, synthetic assets, bridge solvency | **DEVELOP / BLOCKED pending current fork and solvency evidence**; preserve research lineage |
+| synergy_market_graph | Market graph and route signals | Graph path discovery and executable route planning | **DEVELOP as discovery/quote layer**; capacity and latency must be enforced in executable route valuation |
+| synergy_market_maker / synergy_adaptive_engine | Strategy and adaptive-control candidates | Market-making and policy feedback | **KEEP as strategy modules**, but no duplicate authority over pool reserves or settlement |
+| synergy_riskguard | Independent pre-trade/portfolio veto | Risk controls | **KEEP as independent risk authority** |
+| synergy_trademux | Multi-venue execution planning | Route slicing and venue execution | **KEEP as execution adapter**, paper fills are not real fills |
+| synergy_relative_value | Relative-value signal research | Signal generation | **KEEP as non-authorizing research producer** |
+
+### Recommended authority map
+
+    synergy_market_graph          -> route discovery / capacity-aware quote candidates
+    synergy_relative_value        -> research signals (no execution authority)
+    synergy_graph_print_money     -> token-closed graph-arbitrage + external settlement
+    synergy_triangle_money_system -> per-block opportunity allocator + adaptive AMM / collateral
+    synergy_riskguard             -> independent ALLOW / RESIZE / DENY / KILL
+    synergy_trademux              -> bounded execution plan and fill evidence
+    synergy_ai_financial_system   -> audited contract primitives / anti-MEV research
+    synergy_agentic_ai_economy    -> independent economic simulation benchmark
+
+### Highest-value integration gate
+
+Before merging or deploying any overlapping engine, define one versioned Opportunity / ExecutionReceipt / SettlementReceipt contract with:
+- exact source and head SHA;
+- chain ID, block number and block hash;
+- token-by-token input/output and repayment;
+- pre/post pool reserves and trader inventory;
+- independent fair-value source and quote age;
+- gas, funding premium, MEV/tip, fees and slippage;
+- realized net PnL and consolidated NAV delta;
+- unique transaction hash and replay protection.
+
+Only one module may own execution and settlement authority for a given route. Other repositories provide candidates, risk decisions or evidence—not parallel execution rights.
