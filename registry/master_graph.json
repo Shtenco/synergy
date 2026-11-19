@@ -26,10 +26,10 @@
     "maturity": {
       "PRESENTATION_CANDIDATE": 4,
       "LEGACY_RND": 9,
-      "SECURITY_REVIEW": 1,
+      "SECURITY_REVIEW": 0,
       "CANDIDATE": 32,
       "RND": 6,
-      "SECURITY_BLOCKED": 2,
+      "SECURITY_BLOCKED": 3,
       "ACTIVE_EXPERIMENTAL": 5,
       "RND_LOCAL_TESTING": 1,
       "STUB_SPEC_ONLY": 19,
@@ -404,7 +404,7 @@
       "ecosystem_relation": "core",
       "domain": "compute-os",
       "node_type": "compute-runtime",
-      "maturity": "SECURITY_REVIEW",
+      "maturity": "SECURITY_BLOCKED",
       "purpose": "Compute, OS, hardware abstraction or compression capability.",
       "capabilities": [
         "compute",
@@ -420,7 +420,7 @@
         "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
       },
       "risks": [
-        "credential-file-review-required"
+        "committed unencrypted SSH private key remains on main; PR #13 draft removes file on branch only; external rotation/revocation and history remediation unverified"
       ],
       "audit": {
         "date": "2026-10-08",
