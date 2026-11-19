@@ -5457,6 +5457,270 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "default_branch": "main",
+      "branch_count": 23,
+      "unique_head_count": 23,
+      "branches": [
+        {
+          "name": "legacy-dlp-before-reverse-exp-2026-09-28",
+          "sha": "52a6ecd338846120e0421f774159b37aeafaaa5d",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "f140d3e7f1db141d7ce5497b65663fd4d4f5b305",
+          "protected": false
+        },
+        {
+          "name": "readme-dlp-path-2026-09-29",
+          "sha": "35c4c5cbf449e35ebdf598cad27cfc3c88d367f1",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v3-unified-constraint-economics",
+          "sha": "d8009505fc3d8d33fb4b10bce4223878ea489028",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v4-power2-graph",
+          "sha": "d4b1e044a6256a62263f809390cb64a92276f75b",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v7-ec-lattice-probe",
+          "sha": "95d9417c28f9657707cf164399ab50f24f4e0ea9",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v7-lll-closure",
+          "sha": "7b28246f4f2beef8abd6c3249b67639ca69123c9",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v8-projection-economics",
+          "sha": "027159f52e5cc29e11acf57153c53362c479151a",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v9-symbolic-sha-graph",
+          "sha": "e3467d3d73a625bd88a95bc8aac1a0a17c413c4c",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v9-toy-symbolic-closure",
+          "sha": "35651c52ef914357b7785d23ff52c47ba8be8da6",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v10-real-secp-algebraic-projection",
+          "sha": "79d3e68242543d9dedbdcdc133c9240068f1c153",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v10-secp20-symbolic-projection",
+          "sha": "77d76be622eab6828b62fa2f0a24a9014d5fac05",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v11-sha-closure-map",
+          "sha": "541263631fcaed174ef3ec563f44ebec113ec887",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v12-nonlinear-separator-compression",
+          "sha": "f32a3f2a7e1d42d36a4d7acd4f3f2e1cea701b04",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v13-qiskit-graph-probe",
+          "sha": "12118ec87685b0380e8916b92be3d8821ce33470",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v14-quantum-pebbling",
+          "sha": "0bc851449dac509996f2f6dc85bd613029c1beb1",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v15-compiled-reversible-arithmetic",
+          "sha": "7293ad91a386c9ac54b2bbdf3fbe952f16b9e63a",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v16-affine-record-replay-ec",
+          "sha": "e9b271a94405023fd54f39a909b1ab0c29c1b7be",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v17-compiled-modular-inversion",
+          "sha": "fa9c4b2055f24e3fc77ce86f994256e9d85f1e54",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v18-gcd-hypothesis-audit",
+          "sha": "fbe5017314a865f93dcfc3ba11000b47f7cd9383",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v31-phase-map",
+          "sha": "c578274bcf8369ff04b353fa8b868fe2aa061ad6",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v31-sha-phase-map",
+          "sha": "e6a2a99fc36606b1593ec3e2c54ba4faf84a375d",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v32-exact-1-12",
+          "sha": "400a84ebaf5c4965376515a332384002e23fa072",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_crypto_pump",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "5232f83f3051721c491aaf739c4a20c2382be9ee",
+          "protected": false
+        },
+        {
+          "name": "v3-execution-risk-shadow",
+          "sha": "17ec77e89df4007d5a6eeba239cf0510f5ad1666",
+          "protected": false
+        },
+        {
+          "name": "v3-profitability-audit-hardening",
+          "sha": "d2f94ea16f367c6426f187bb0e4fba8b1a8132c0",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "default_branch": "main",
+      "branch_count": 6,
+      "unique_head_count": 6,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "bf5733de1a1e1b31cbb0b91b91a2742536b68cad",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "103d6e5c6c21bf260ba69c12faa868e9566cc03b",
+          "protected": false
+        },
+        {
+          "name": "v7-4-triangle-mev-audit",
+          "sha": "fa982e3bac902ec516bf6a6c0b464c8dc4502995",
+          "protected": false
+        },
+        {
+          "name": "v7-live-validation",
+          "sha": "b9d0c604f318316fdd9840eeb1ef810320b0c561",
+          "protected": false
+        },
+        {
+          "name": "v8-profit-engine",
+          "sha": "e6f533d792217a49195a8bc380e3330fcdacb9d5",
+          "protected": false
+        },
+        {
+          "name": "v8-single-contract-flash-proof",
+          "sha": "537c30d7cc87de50edee8eba5dd916ad6a6ac31b",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_app_family",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_chain_print_money",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "c1d6674a9cf92aee2989ff34d66078e70435b59e",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_company",
+      "default_branch": "main",
+      "branch_count": 2,
+      "unique_head_count": 2,
+      "branches": [
+        {
+          "name": "feat/auto-company-v2",
+          "sha": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_shhts",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_shttps",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "feat/shttps-v1-pq-compressed-protocol",
+          "sha": "7f3072d5a86b95fa4bb1da52fbad7395fee4e88f",
+          "protected": false
+        },
+        {
+          "name": "feat/stcp-shttps-remote-mcp-v2-20260925",
+          "sha": "f3eda6bb7cdfd5478f9594dad4ee5dd91381e9b8",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "f7207aa8082c78399e4130f4eaf29ff8984c5413",
+          "protected": false
+        }
+      ]
     }
   ]
 }
