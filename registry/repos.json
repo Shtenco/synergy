@@ -2168,6 +2168,6 @@
     "branch_inventory_json": "registry/BRANCH_INVENTORY_2026-11-20.json",
     "branch_inventory_csv": "registry/BRANCH_INVENTORY_2026-11-20.csv",
     "branch_inventory_report": "docs/BRANCH_INVENTORY_2026-11-20.md",
-    "note": "92 repositories; 1,079 branch SHAs carry live branch-audit or priority PR metadata provenance; 215 SHA values remain from the dated census and were not individually re-fetched in this pass."
+    "note": "92 repositories; 1,084 branch SHAs carry live branch-audit or priority PR metadata provenance; 210 SHA values remain from the dated census and were not individually re-fetched in this pass."
   }
 }
