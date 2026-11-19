@@ -3,7 +3,7 @@
   "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "repository_count": 92,
-  "open_pr_count": 502,
+  "open_pr_count": 506,
   "scope": "Current open PR discovery performed one repository at a time across all 92 owner repositories. Discovery records contain title/number/URL; per-PR get_pr_info and exact-head CI are separately tracked.",
   "metadata_coverage": "DISCOVERY_ONLY for all entries unless subsequently enriched; old 548-row file was a dated historical snapshot and is superseded.",
   "repositories": [
@@ -6652,13 +6652,67 @@
     },
     {
       "repository": "Shtenco/synergy_messenger",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Build/verify SYNERGY Messenger alpha.9 APK",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_messenger/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_apps",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "SYNERGY Apps MASTER: FINAL 500, 92 engines, 61 store apps and canonical registries",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_apps/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 2,
+          "title": "fix(w0): fail closed outside dev mode and revoke duplicate grants",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_apps/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 4,
+          "title": "feat: W0 PostgreSQL security gate and W1–W4 restricted local reference loops",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_apps/pull/4",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_agi_trader",
