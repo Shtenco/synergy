@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 43,
-  "pending_comparisons": 1159,
+  "completed_comparisons": 50,
+  "pending_comparisons": 1152,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -562,6 +562,97 @@
       "ahead_by": 94,
       "behind_by": 262,
       "total_commits": 94,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/research-node-readiness-v3-nexus-20260822",
+      "head_sha": "20720685f1cb0dca1951a202e2a9a43d1d62fd16",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 104,
+      "behind_by": 262,
+      "total_commits": 104,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/research-node-service-lock-v2-20260821",
+      "head_sha": "50f660824982d630d650e09329972aafb45bd756",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 47,
+      "behind_by": 262,
+      "total_commits": 47,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/schema-registry-authority-linter-v3-20260821",
+      "head_sha": "f1acf36d4b4657de97160298a7dd1e97cf7b39dd",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 22,
+      "behind_by": 262,
+      "total_commits": 22,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/science-node-build-lock-v2-20260821",
+      "head_sha": "c824059fda37fdac0f325e8fc0510ae193cad3f4",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 60,
+      "behind_by": 262,
+      "total_commits": 60,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/science-node-build-lock-v3-20260822",
+      "head_sha": "f2ea62a9a464a8c5ad7f413cf643a02c31bdb7ed",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 79,
+      "behind_by": 262,
+      "total_commits": 79,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/science-research-node-profile-v1-20260821",
+      "head_sha": "b608f82304c27b3f28fbb032d24cab4a7f79b8b1",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 53,
+      "behind_by": 262,
+      "total_commits": 53,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/service-build-recipe-registry-v1-20260821",
+      "head_sha": "9035de2010a997b0b4edb35d7bead16a730fe8d4",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 72,
+      "behind_by": 262,
+      "total_commits": 72,
       "observed_at": "2026-11-20"
     }
   ]
