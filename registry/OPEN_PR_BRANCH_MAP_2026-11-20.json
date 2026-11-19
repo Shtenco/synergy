@@ -450,7 +450,10 @@
               44452576244
             ],
             "steps_executed": false
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -927,7 +930,10 @@
               44451534644
             ],
             "steps_executed": false
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -2284,7 +2290,10 @@
           "ci": {
             "status": "NOT_CHECKED",
             "steps_executed": null
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -3221,7 +3230,7 @@
           "head_branch": "security/remove-committed-deployer-key",
           "head_sha": "0b63b7fc057907cd5df70089a577a5bd9557584f",
           "base_branch": "main",
-          "base_sha": "a5cf6cb65f89dd57b356a3af3af52590a5b8dbe3",
+          "base_sha": "0234edac62492ceff8af8195506aa1cef672ada1",
           "updated_at": null,
           "url": "https://github.com/Shtenco/synergy_usds/pull/6",
           "metadata_status": "LIVE_GET_PR_INFO_2026-11-20",
@@ -3233,7 +3242,10 @@
           "ci": {
             "status": "NOT_CHECKED",
             "steps_executed": null
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         },
         {
           "number": 7,
@@ -3284,7 +3296,10 @@
               44458405199
             ],
             "steps_executed": false
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -3794,7 +3809,7 @@
           "head_branch": "federation-v3-domain-expansion",
           "head_sha": "935780514b2b3ff2c93a16bbfdfaaab0bc2f7d24",
           "base_branch": "main",
-          "base_sha": "8577ac3da6515695afd7f15c14837dbe506357d6",
+          "base_sha": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
           "updated_at": null,
           "url": "https://github.com/Shtenco/synergy_financial_os/pull/39",
           "metadata_status": "LIVE_GET_PR_INFO_2026-11-20",
@@ -3809,7 +3824,10 @@
               43754510440
             ],
             "steps_executed": false
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -4929,7 +4947,7 @@
           "head_branch": "docs/sumi-phase0-audit-20261119",
           "head_sha": "1ac6b492737134d826d5f925e6574a794c72fec8",
           "base_branch": "main",
-          "base_sha": "075da5ed6fcfe741fc7c433f030075a8deeabc71",
+          "base_sha": "1c956afced5d0b2ce9886b0236558478e8352a69",
           "updated_at": null,
           "metadata_status": "LIVE_GET_PR_INFO_2026-11-20",
           "commits": 1,
@@ -4941,7 +4959,10 @@
             "status": "NO_RUN_RETURNED",
             "steps_executed": null
           },
-          "reviews": "NONE_RETURNED"
+          "reviews": "NONE_RETURNED",
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -5906,7 +5927,10 @@
               44439086235
             ],
             "steps_executed": false
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -6060,7 +6084,10 @@
               44634951388
             ],
             "steps_executed": null
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -6135,7 +6162,7 @@
           "head_branch": "audit/portfolio-89-repositories-v1",
           "head_sha": "9ffa1736783df8f4ff19163d0b9d5716fcba0ca9",
           "base_branch": "main",
-          "base_sha": "50bcaae7530b93d1f59ab3c1c30b4da325ec33e2",
+          "base_sha": "fcfaa292ab97b622ac6292b8179aaa66a4e585a4",
           "updated_at": null,
           "metadata_status": "LIVE_GET_PR_INFO_2026-11-20",
           "commits": 25,
@@ -6146,7 +6173,10 @@
           "ci": {
             "status": "NOT_CHECKED",
             "steps_executed": null
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         },
         {
           "number": 3,
@@ -7009,7 +7039,10 @@
               43864234504
             ],
             "steps_executed": false
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -7502,7 +7535,7 @@
           "head_branch": "feature/canonical-economic-entity-register-v1-rebased-20261115b",
           "head_sha": "efeb8e0a5b4cf0a96d29a8cb548c4c298133b14b",
           "base_branch": "research/bank-deposit-credit-audit-fix-20261115",
-          "base_sha": "43d6c4304e52a0c5f93146cd1187380341fd9890",
+          "base_sha": "9c891b7fbd24d3424344865bb1288e734567b5d8",
           "updated_at": null,
           "url": "https://github.com/Shtenco/synergistic_economics/pull/17",
           "metadata_status": "LIVE_GET_PR_INFO_2026-11-20",
@@ -7514,7 +7547,10 @@
           "ci": {
             "status": "NOT_CHECKED",
             "steps_executed": null
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         },
         {
           "number": 18,
@@ -7730,7 +7766,10 @@
           "ci": {
             "status": "NOT_CHECKED",
             "steps_executed": null
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -7767,7 +7806,10 @@
             ],
             "steps_executed": false
           },
-          "reviews": "NONE_RETURNED"
+          "reviews": "NONE_RETURNED",
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         },
         {
           "number": 2,
@@ -7793,7 +7835,10 @@
             ],
             "steps_executed": false
           },
-          "reviews": "NONE_RETURNED"
+          "reviews": "NONE_RETURNED",
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         },
         {
           "number": 3,
@@ -7819,7 +7864,10 @@
             ],
             "steps_executed": false
           },
-          "reviews": "NONE_RETURNED"
+          "reviews": "NONE_RETURNED",
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         },
         {
           "number": 4,
@@ -7845,7 +7893,10 @@
             ],
             "steps_executed": false
           },
-          "reviews": "NONE_RETURNED"
+          "reviews": "NONE_RETURNED",
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     },
@@ -7887,7 +7938,10 @@
               44634673642
             ],
             "steps_executed": null
-          }
+          },
+          "head_sha_source": "LIVE_BRANCH_INVENTORY",
+          "branch_relation_to_main": "NOT_COMPARED",
+          "base_sha_source": "LIVE_BRANCH_INVENTORY"
         }
       ]
     }
