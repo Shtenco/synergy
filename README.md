@@ -13,6 +13,7 @@
 | Unique HEADs (sum within repositories) | **1208** |
 | Branch SHA with live provenance | **1294** |
 | Branches with ancestry comparison to main | **210** |
+| Branches still needing ancestry comparison | **1,084** |
 | Currently open PRs discovered repository-by-repository | **549** |
 | PRs with full metadata enriched in this pass | **18** |
 | PRs still discovery-only | **531** |
