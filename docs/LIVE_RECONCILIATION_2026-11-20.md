@@ -16,18 +16,20 @@ The 92nd repository, absent from the prior 91-repository owner registry, is `Sht
 
 ## 2. Branch inventory
 
-| Metric | Value |
+| Metric | Live value |
 |---|---:|
-| Branch refs | 1,294 |
-| Unique HEADs summed within repositories | 1,208 |
-| Live SHA observations | 1,084 |
-| Dated census SHA values not individually re-fetched in this pass | 210 |
-| Repositories in live branch-audit tranche | 60 |
-| Records in live branch-audit tranche | 1,077 |
+| Branch refs | **1,294** |
+| Unique HEADs summed within repositories | **1,208** |
+| Branch refs with non-historical SHA provenance | **1,294 / 1,294** |
+| Refs with compare-to-main ancestry in this pass | **210** |
+| Refs still needing ancestry comparison | **1,084** |
+| Ancestry result: AHEAD / BEHIND / DIVERGED / IDENTICAL | **36 / 22 / 120 / 32** |
+| Repositories in prior live branch-audit tranche | **60** |
+| Records in prior live branch-audit tranche | **1,077** |
 
-The branch inventory JSON/CSV includes 1,077 live branch-audit records across 60 repositories plus seven additional priority PR-head updates, for 1,294 live SHA observations total. The 210 remaining SHA values retain their dated census provenance. This is not a claim that every branch HEAD was freshly queried in this pass.
+All branch HEADs in the canonical inventory now have non-historical SHA provenance from the same-day live branch audit, priority PR metadata or the new compare-to-main pass. The 210 compared refs have current ancestry fields; the other 1,084 have live SHA values but have not yet been ancestry-compared in this pass.
 
-Branch protection for the 1,292 historical refs remains sourced from the prior census. The two newly discovered refs have protection state `null / NOT_CHECKED`. No new live protection query was available in this audit pass.
+Branch protection remains a separate permission-dependent audit. The prior census marked 0/1,292 refs protected; the two newly discovered cognitive-memory refs have protection state `null / NOT_CHECKED`. No fresh administrative branch-protection query was completed.
 
 ## 3. Open pull requests
 
