@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 78,
-  "pending_comparisons": 1124,
+  "completed_comparisons": 85,
+  "pending_comparisons": 1117,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -1017,6 +1017,97 @@
       "ahead_by": 0,
       "behind_by": 6,
       "total_commits": 0,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "diagnostic-create-file-unavailable",
+      "head_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "behind",
+      "ahead_by": 0,
+      "behind_by": 6,
+      "total_commits": 0,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "do-not-use",
+      "head_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "behind",
+      "ahead_by": 0,
+      "behind_by": 6,
+      "total_commits": 0,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "feat/autopilot-v5-nexus-smm-ai-node-v1-20260823-checkpoint",
+      "head_sha": "91ac4ea6161013c3d9d65187e817d7d89d751127",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 2,
+      "behind_by": 6,
+      "total_commits": 2,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "feat/autopilot-v5-nexus-smm-ai-node-v1-20260823",
+      "head_sha": "c39f6f0ee0e37c08366a63ec160c580b9ae954ba",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 14,
+      "behind_by": 6,
+      "total_commits": 14,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "feat/capability-runtime-v1",
+      "head_sha": "f7c3bfccfdd3d0318f21b0284e072a082459e071",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 20,
+      "behind_by": 6,
+      "total_commits": 20,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "feat/lab-deployment-reference-v1-20260823",
+      "head_sha": "fce069a3fb85f269048406d815d16de4bd4d30c0",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 19,
+      "behind_by": 6,
+      "total_commits": 19,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "feat/preproduction-deployment-reference-v2-20260824",
+      "head_sha": "16c0deab657fe4a8be91d5b7c8228f6b69f5ac25",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 24,
+      "behind_by": 6,
+      "total_commits": 24,
       "observed_at": "2026-11-20"
     }
   ]
