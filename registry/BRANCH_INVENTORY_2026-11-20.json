@@ -9756,15 +9756,23 @@
           "name": "ci/v5-real-flow",
           "sha": "4edeba573629c3d2ecacd356adcb84d64d6bd971",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 12,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "ci/v5-topic-probe",
           "sha": "dbc61a5a4e2a829f02432c5da46e2825a39c5144",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 13,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "ci/v12-4-evm-runner-probe",
@@ -9781,57 +9789,89 @@
           "name": "docs/public-surface-boundary-20260817",
           "sha": "04d9954d62130941e565fbc09965131e4f762e3e",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "extract/sinergy-crypto-layer",
           "sha": "5f9d29a756e48a373ae5935dab954e4ec65ec696",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 81,
+          "main_ahead_of_branch": 9,
+          "merge_base_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c"
         },
         {
           "name": "main",
           "sha": "4e1374b8d268b943bd78178dbfd280509d7fc344",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "4e1374b8d268b943bd78178dbfd280509d7fc344"
         },
         {
           "name": "migration/synergy-723-2026-09",
           "sha": "e4a6eb5d720b3e5469ffdcdfa80315253d00bcbb",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "nexus-106m-train",
           "sha": "e4ed2abcc96dbdd1b2208c9cd5df2676b0561baa",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 18,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "ops/midas-exact-zlib-dll",
           "sha": "1e53ca735bf7bdd03f1a6d89d309234c668e64a0",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 4,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "ops/run-roboforex-splitter",
           "sha": "37e19f449233a193632f7cdd45328fddcb83a59a",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 2,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "portal-v17-rebuild",
           "sha": "c30899c8dc6b729a1bf40fc0371325bea8f09b3c",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 8,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "portal-v18-top",
