@@ -1,10 +1,10 @@
 {
   "schema": "synergy.live-branch-audit/v1",
   "as_of": "2026-11-20",
-  "scope": "47 repositories covered by sixteen live branch audit tranches; not yet the full 91-repository owner inventory",
-  "repository_count": 47,
-  "branch_record_count": 1002,
-  "unique_repository_branch_pairs": 1002,
+  "scope": "56 repositories covered by nineteen live branch audit tranches; not yet the full 91-repository owner inventory",
+  "repository_count": 56,
+  "branch_record_count": 1044,
+  "unique_repository_branch_pairs": 1044,
   "records": [
     {
       "repository": "Shtenco/synergy_system",
@@ -11905,6 +11905,476 @@
       "ci_evidence": "failure (vendor-and-build, 2026-11-16T11:16:56Z)",
       "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and downstream consumers. Graph edges require source provenance, confidence, entity-resolution controls and false-positive analysis; do not infer culpability from network proximity. Retain canonical; exact runtime/API and security evidence required.",
       "source_audit_document": "docs/LIVE_BRANCH_AUDIT_MARKETVISION_TRADEMUX_GRAPH_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "branch": "docs/editorial-readme-v1",
+      "head_sha": "cba6ebfff5a050e485eb8700e1742f28221e81e1",
+      "purpose": "Inferred from branch name: docs editorial readme v1",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Input sequence is not connected to the fixed quantum circuit; need causal input encoding, classical baseline and statistically powered out-of-sample test. Retain pending branch lineage review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_I_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "branch": "main",
+      "head_sha": "a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Input sequence is not connected to the fixed quantum circuit; need causal input encoding, classical baseline and statistically powered out-of-sample test. Retain canonical; research-only status.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_I_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "branch": "docs/editorial-readme-v1",
+      "head_sha": "7793889ad8b01c9ec8958ee8da39786962632212",
+      "purpose": "Inferred from branch name: docs editorial readme v1",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Need leakage-free chronological splits, locked dataset, baseline parity, artifact hashes and independent OOS replication. Retain pending branch lineage review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_I_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "branch": "main",
+      "head_sha": "0aabf5bf43052a1fb4bc98c07126811a165e911d",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Need leakage-free chronological splits, locked dataset, baseline parity, artifact hashes and independent OOS replication. Retain canonical; research-only status.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_I_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "branch": "docs/editorial-readme-v1",
+      "head_sha": "10a134bb840b678293c1586b6fec200109e82784",
+      "purpose": "Inferred from branch name: docs editorial readme v1",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Current broker swap values cannot stand in for historical swap schedules; include FX P&L, spread, commissions, financing changes and liquidation risk. Retain pending branch lineage review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_I_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "branch": "main",
+      "head_sha": "232c704f37156eac5d774f33fb652b7afa3866e0",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Current broker swap values cannot stand in for historical swap schedules; include FX P&L, spread, commissions, financing changes and liquidation risk. Retain canonical; research-only status.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_I_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "branch": "docs/editorial-readme-v1",
+      "head_sha": "e6b7f9519a53ba65eedef75759da81a15058cfa1",
+      "purpose": "Inferred from branch name: docs editorial readme v1",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Synthetic quote construction is not executable bid/ask; timestamp synchronization, route leg depth, atomicity and three-leg fill modeling are missing. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "branch": "main",
+      "head_sha": "09fb17a3e70a21ee5bb10815b70d6fc3c41105a7",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Synthetic quote construction is not executable bid/ask; timestamp synchronization, route leg depth, atomicity and three-leg fill modeling are missing. Retain canonical; research-only.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "branch": "docs/editorial-readme-v1",
+      "head_sha": "31a688e9c4c71a4465780de318514d46ec408d1a",
+      "purpose": "Inferred from branch name: docs editorial readme v1",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct source semantics, release-time lags, vintage data, leakage controls and out-of-sample calibration before use. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "branch": "main",
+      "head_sha": "728b6af3e53fc0d8beafe060d6f1ee209395b3f5",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct source semantics, release-time lags, vintage data, leakage controls and out-of-sample calibration before use. Retain canonical; research-only.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "docs/visual-dossier-batch02",
+      "head_sha": "3beb9c4ee29a24378138cebfd8475d0c0218ea6f",
+      "purpose": "Inferred from branch name: docs visual dossier batch02",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "main",
+      "head_sha": "5bcf5a95e54d454116d89fa23d1337500091accd",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain canonical; research-only.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "moex-catboost-unified-20260904",
+      "head_sha": "4e535017bfeeac04f06c6540c4161f91c8151e2f",
+      "purpose": "Inferred from branch name: moex catboost unified 20260904",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "turbo-stage1f-asset-test",
+      "head_sha": "51cb6c41ba4ddfd70d67ac99ea9537ce586843f1",
+      "purpose": "Inferred from branch name: turbo stage1f asset test",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "turbo-stage1f-integrated-v10",
+      "head_sha": "ee0245e7abd99fb1700e07d3da527a46812e0c64",
+      "purpose": "Inferred from branch name: turbo stage1f integrated v10",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "turbo-stage1f-runtime",
+      "head_sha": "f3dd90e9fc3f675c8f0d93b55a21a1b0fe186540",
+      "purpose": "Temporary TURBO Stage-1F public QEMU runner",
+      "branch_state": "#1 draft",
+      "open_pr_numbers": [
+        1
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; exact-head CI and independent review required. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain candidate; no promotion without causal and OOS validation.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "turbo-stage1g-topology-v12",
+      "head_sha": "a63e6dfcff217a0361ede2e676681996697a3fe5",
+      "purpose": "Inferred from branch name: turbo stage1g topology v12",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "turbo-stage1h-eml-v13",
+      "head_sha": "45ba82cf0f0eecf829bdbbf52c89d0b96192de38",
+      "purpose": "Inferred from branch name: turbo stage1h eml v13",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "branch": "turbo-stage1i-xpu-v14",
+      "head_sha": "e27486656bd8366820a49954e515c742a33bb92c",
+      "purpose": "Inferred from branch name: turbo stage1i xpu v14",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "success (TURBO Stage-1I XPU Device Runtime, 2026-07-31T12:52:59Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and consumers before cleanup. Correct whole-sample normalization and OHLC semantics; test against causal baselines and preserve raw input mapping. Retain pending lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "branch": "docs/visual-dossier-batch02",
+      "head_sha": "58124ed8b8411d928ca485087f407b2357ec5ebc",
+      "purpose": "Inferred from branch name: docs visual dossier batch02",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Direct order_send path, forward-label leakage risk and training/online consistency need security and quantitative review. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "branch": "main",
+      "head_sha": "262458f406678f7c9bc9cf0290b64f318d720cea",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Direct order_send path, forward-label leakage risk and training/online consistency need security and quantitative review. Retain canonical; no funded trading without a separate safety review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme",
+      "head_sha": "960601fbf8fb95512057fa02f0a00d1d380c0273",
+      "purpose": "Inferred from branch name: codex create development plan based on readme",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-2pvh9x",
+      "head_sha": "9e0970de929fc696737a994096ce0967880be632",
+      "purpose": "Inferred from branch name: codex create development plan based on readme 2pvh9x",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-58tsd9",
+      "head_sha": "14915dfbafc8a552d7b6fe5902d1b6ef849add89",
+      "purpose": "Inferred from branch name: codex create development plan based on readme 58tsd9",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-ai58yg",
+      "head_sha": "701d13c41ee99a9121bc643acd0430a57f6133ea",
+      "purpose": "Inferred from branch name: codex create development plan based on readme ai58yg",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-cm7dgj",
+      "head_sha": "95a7cc2b6c1337353a5dda08c13d702c9fa2d552",
+      "purpose": "Inferred from branch name: codex create development plan based on readme cm7dgj",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-ghcyzw",
+      "head_sha": "e9f7ef760fb3e7ce69559dcd252124c0ea32c30c",
+      "purpose": "Inferred from branch name: codex create development plan based on readme ghcyzw",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-ljw2if",
+      "head_sha": "7d71bbc5052e32b27f526155607309f50bac1231",
+      "purpose": "Inferred from branch name: codex create development plan based on readme ljw2if",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-oct38c",
+      "head_sha": "deac8fa3a15a58f0213403e51066274a99f35cd8",
+      "purpose": "Inferred from branch name: codex create development plan based on readme oct38c",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-q0gypk",
+      "head_sha": "96bc049177d8de01f11cc78a177980fc30279257",
+      "purpose": "Inferred from branch name: codex create development plan based on readme q0gypk",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-r2hfhk",
+      "head_sha": "c60465727d16b0de907ca57cf76e766bcc4d8623",
+      "purpose": "Inferred from branch name: codex create development plan based on readme r2hfhk",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-s8n6yw",
+      "head_sha": "a614673cf1d8586a295a951630e96a2239eb5d92",
+      "purpose": "Inferred from branch name: codex create development plan based on readme s8n6yw",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-sx8bcx",
+      "head_sha": "33e1d53d8767570bd7b601e493fbba74d8e01a86",
+      "purpose": "Inferred from branch name: codex create development plan based on readme sx8bcx",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "codex/create-development-plan-based-on-readme-tykqnp",
+      "head_sha": "cf0b59082db5eb8610258c5faf58aed61f4a7bb7",
+      "purpose": "Inferred from branch name: codex create development plan based on readme tykqnp",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "docs/visual-dossier-batch02",
+      "head_sha": "6797c9e390d0696fa3886fb0e045d351fbae90fb",
+      "purpose": "Inferred from branch name: docs visual dossier batch02",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "failure (CI, 2026-10-23T19:47:14Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "federation-v3-domain-expansion",
+      "head_sha": "550a57e64606e89f294daf3d0fc71a46b92e3732",
+      "purpose": "Federation V3: formalize MIDAS institutional lineage promotion rules",
+      "branch_state": "#15 ready",
+      "open_pr_numbers": [
+        15
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; exact-head CI and code review required. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain candidate; promote only after migration and exact-head CI.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "main",
+      "head_sha": "2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "failure (CI, 2026-10-23T21:55:17Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain canonical; no funded trading without a separate safety review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "migration/synergy-723-2026-09",
+      "head_sha": "8c704a16011b9dcdc7a6866c6f4e961d1096a55d",
+      "purpose": "chore: stage SYNERGY 723-file migration provenance",
+      "branch_state": "#16 draft",
+      "open_pr_numbers": [
+        16
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; exact-head CI and code review required. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain candidate; promote only after migration and exact-head CI.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "branch": "ops/split-roboforex-drive",
+      "head_sha": "898ff272ef87e9300ed8d93dc165a21afb6c3def",
+      "purpose": "Run one-shot RoboForex Drive splitter",
+      "branch_state": "#14 ready",
+      "open_pr_numbers": [
+        14
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; exact-head CI and code review required. Distinguish modern package from historical prototypes; confirm tests actually exercise production decision path and broker adapter remains simulated. Retain candidate; promote only after migration and exact-head CI.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/midas_lite",
+      "branch": "codex/replace-claude-with-custom-llm-model",
+      "head_sha": "8090a55efcc6acf88305cd76188cbb0b58677560",
+      "purpose": "Inferred from branch name: codex replace claude with custom llm model",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Keep agent experiments and EURUSD specialist separately evaluated; sealed OOS figures must be independently reproduced net of spread/commission/slippage. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/midas_lite",
+      "branch": "docs/visual-dossier-batch02",
+      "head_sha": "4af23cdad6addd90a4bca85b7fe3cd2c416d5808",
+      "purpose": "Inferred from branch name: docs visual dossier batch02",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Keep agent experiments and EURUSD specialist separately evaluated; sealed OOS figures must be independently reproduced net of spread/commission/slippage. Retain pending branch lifecycle review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/midas_lite",
+      "branch": "main",
+      "head_sha": "03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Keep agent experiments and EURUSD specialist separately evaluated; sealed OOS figures must be independently reproduced net of spread/commission/slippage. Retain canonical; no funded trading without a separate safety review.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
     }
   ]
 }
