@@ -30,7 +30,7 @@ The live owner inventory now reconciles **91 / 91 repositories (16 public, 75 pr
 
 **Security gate (2026-11-20): 3 unresolved P0 credential incidents** remain in `synergy_cashero`, `synergy_usds` and `synergy_turbo_linux`. All three are deployment-blocked; TURBO is now also federation-promotion-blocked. USDS PR #6 does not remove the tracked key; TURBO PR #13 is draft and unmerged; Cashero has no dedicated security-remediation PR. External rotation/revocation is not verified. See the [security blocker registry](https://github.com/Shtenco/synergy_system/blob/main/registry/SECURITY_BLOCKERS.json) and [security re-audit](https://github.com/Shtenco/synergy_system/blob/main/docs/SECURITY_REAUDIT_2026-11-20.md).
 
-**Branch protection:** GitHub reported 0/1,292 branch refs protected, including all 91 `main` branches. This is a repository-governance risk; the census is a 2026-11-20 snapshot.
+**Branch protection:** GitHub reported 0/1,292 branch refs protected, including all 91 `main` branches. This is a repository-governance risk; the census is a 2026-11-20 snapshot. **Live branch-name recheck (2026-11-20):** all 91 repositories were queried again with pagination; every live branch-name set and count matched the canonical snapshot exactly. HEAD SHAs remain the dated snapshot values and were not individually re-fetched in this recheck.
 
 The canonical artifacts are:
 
