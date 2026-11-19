@@ -7193,5 +7193,6 @@
         }
       ]
     }
-  ]
+  ],
+  "snapshot_note": "Branch HEADs refreshed after central README/registry merges and branch/PR audit updates."
 }
