@@ -143,3 +143,15 @@ Before merging or deploying any overlapping engine, define one versioned Opportu
 - unique transaction hash and replay protection.
 
 Only one module may own execution and settlement authority for a given route. Other repositories provide candidates, risk decisions or evidence—not parallel execution rights.
+
+
+## Pull-request dependency patterns found in adjacent financial repositories
+
+A first live metadata pass confirms that cross-repository PR topology is not flat:
+
+- In synergy_triangle_money_system, PRs #1–#8 all target main. They are parallel experiments, not a sequential PR stack. Their heads all diverge from main and are five commits behind the current base snapshot.
+- In synergy_graph_print_money, five open PRs were observed; the V7.4 validation and V8 experiments target main. V7.4 remains not fork-executable according to CURRENT_VERSION.json.
+- In synergy_ai_financial_system, several PRs are explicitly stacked: #22 is based on the #13 branch; #12 is based on the #11 branch; #16 is based on the #15 branch; #8 is based on the #7 branch; #19 is based on the #18 branch. These cannot be merged independently in arbitrary order. The latest five workflow runs observed on the newest PR branch all failed.
+- In synergy_long_term_harness, PRs #2, #3 and #4 form a chain based respectively on #1, #2 and #3. This is a non-financial example of why repository-wide PR enumeration must capture base branch dependencies, not merely count open PRs.
+
+**Decision rule:** a PR with mergeable=true is not MERGE-READY unless it is non-draft, has passing checks on its exact head SHA, satisfies dependency order, and has reviewed diff/security/economic evidence. A PR with mergeable=false is BLOCKED until conflicts are resolved and the exact resulting head is re-tested.
