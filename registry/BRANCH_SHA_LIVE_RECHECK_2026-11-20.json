@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 48,
-  "pending_repositories": 44,
-  "branch_refs": 691,
+  "completed_repositories": 56,
+  "pending_repositories": 36,
+  "branch_refs": 755,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -3850,6 +3850,398 @@
         {
           "name": "main",
           "head_sha": "4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_chain",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 29,
+      "branches": [
+        {
+          "name": "audit/oracle-100pct-evm-20260826",
+          "head_sha": "450a530c10136c6d7adac5b01470048dd7114989",
+          "protected": false
+        },
+        {
+          "name": "audit/v12-3-evm-canonical",
+          "head_sha": "653c2bbe6e21fb4e0a6c55728b468fa63ba4c8b2",
+          "protected": false
+        },
+        {
+          "name": "audit/v12-4-base-fork-distilled",
+          "head_sha": "b2beb1b8508bdf9a1f2d38b1a8340c452762768a",
+          "protected": false
+        },
+        {
+          "name": "audit/v12-causal-conservation",
+          "head_sha": "d3e07fd0767906e1ed319e654b6c1e12f5314cc0",
+          "protected": false
+        },
+        {
+          "name": "docs/federation-control-plane-20260817",
+          "head_sha": "4ed51a291343234109763202bffdc6c732d7c3a7",
+          "protected": false
+        },
+        {
+          "name": "feat/accounting-close-trace-v6-readonly-v5-20260819",
+          "head_sha": "8aa6e5f5445a41e6f374e22568e81512adff285b",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-economic-node-v1",
+          "head_sha": "2a36fa41e79d16bfeb54ff58d20352b1eca2603e",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-cycle-readonly-v1-20260818",
+          "head_sha": "95aed2e28f374e7dcbacc18fc857597cde703b5b",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-cycle-readonly-v2-20260818",
+          "head_sha": "333af7042bf02337506d43e497b444cedc55fa95",
+          "protected": false
+        },
+        {
+          "name": "feat/financial-os-v8-20260809",
+          "head_sha": "9691325f02a5c9a6a1b00b91b623acb8e77433a4",
+          "protected": false
+        },
+        {
+          "name": "feat/pq-evm-nexus-integration-v1",
+          "head_sha": "c9fb95c45c0b7613efeadccbafd3423c76596913",
+          "protected": false
+        },
+        {
+          "name": "feat/revenue-accounting-trust-readonly-v4-20260818",
+          "head_sha": "adefdf8385fd30f695922ac90edd512eb900aa81",
+          "protected": false
+        },
+        {
+          "name": "feat/settlement-receipt-v2-trace-v3-readonly-20260818",
+          "head_sha": "0d16c749138ba3394f14c41d1d023d31b36fa8fe",
+          "protected": false
+        },
+        {
+          "name": "feat/sinergy-growth-os-v5",
+          "head_sha": "dcdf6fcc18e728228c71e287741c9902e7aa38c6",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "773259c2e05b705e33f9afc35ad0591e03d40e49",
+          "protected": false
+        },
+        {
+          "name": "gh-pages",
+          "head_sha": "4408c0958fda0b101bb4ccba3a7e86c31c633aed",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "bb07b127c3b5caffac6f0155546fc1fd17e18fc2",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "0f731f56c3f067095d3a2ff89f7e73bdc7365177",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "b70716b8f0949ddea39636b7942e135c6dbfc9f8",
+          "protected": false
+        },
+        {
+          "name": "qe-v9-evm-ci2-20260825",
+          "head_sha": "0ee2c0b881f5d5cdb9ce685dcf52fc201a5254a3",
+          "protected": false
+        },
+        {
+          "name": "qe-v9-evm-ci3-20260825",
+          "head_sha": "bc7cbc673d30adf78864515e51110a03a30a2d94",
+          "protected": false
+        },
+        {
+          "name": "qe-v9-evm-ci-20260825",
+          "head_sha": "0ee2c0b881f5d5cdb9ce685dcf52fc201a5254a3",
+          "protected": false
+        },
+        {
+          "name": "qe-v11-evm-test",
+          "head_sha": "a4cf86c8d5e154dad6a6804958f91aa3d5b84d25",
+          "protected": false
+        },
+        {
+          "name": "release/sinergychain-growth-os-v7",
+          "head_sha": "bc463703fd7f74d67212535290d72dc54d9f5d7d",
+          "protected": false
+        },
+        {
+          "name": "release-v7",
+          "head_sha": "6d8bbd12f42ebb13c242a5a95004b11fb28b877c",
+          "protected": false
+        },
+        {
+          "name": "sinergy-growth-os-v5",
+          "head_sha": "dcdf6fcc18e728228c71e287741c9902e7aa38c6",
+          "protected": false
+        },
+        {
+          "name": "upload-v7",
+          "head_sha": "be5946af9dab930faa4d3bd070ed8e92e291a2ab",
+          "protected": false
+        },
+        {
+          "name": "v11-distilled-4contracts",
+          "head_sha": "478ed828cfd245691d6c9b0cb9c9d0df2480b6e9",
+          "protected": false
+        },
+        {
+          "name": "v11-distilled-real-base-pool-archive",
+          "head_sha": "cd69a512a96f17e54efaba836a75b1c227c4418a",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_chain_print_money",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "c1d6674a9cf92aee2989ff34d66078e70435b59e",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_cold_nuclear",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "1930fb92eee01294d1ded8ceac66086fd59a93aa",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "0218157a8197c3b9e1c300cb433b805e3a3ea3fb",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "077ce326b2037511c215f7d7b104be72e1b5e34d",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_computing_topology",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "feature/svcu-02-svp-virtual-processor",
+          "head_sha": "26136008f32ed88dee78a5b9647a2840915e40ec",
+          "protected": false
+        },
+        {
+          "name": "feature/svpu-bytecode-v03",
+          "head_sha": "8e48f25c23d75b97effbb141126ea95d7a6ef896",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_crypto_pump",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "5232f83f3051721c491aaf739c4a20c2382be9ee",
+          "protected": false
+        },
+        {
+          "name": "v3-execution-risk-shadow",
+          "head_sha": "17ec77e89df4007d5a6eeba239cf0510f5ad1666",
+          "protected": false
+        },
+        {
+          "name": "v3-profitability-audit-hardening",
+          "head_sha": "d2f94ea16f367c6426f187bb0e4fba8b1a8132c0",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_epstein_network",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 6,
+      "branches": [
+        {
+          "name": "build/master-graph-v1",
+          "head_sha": "6fb950e6eca96e82e98422cba516202c94025301",
+          "protected": false
+        },
+        {
+          "name": "build/v2-vendor-entity-resolution",
+          "head_sha": "feb8c37d1bd442ce8b73bb401e9e5bb8d16a5c9a",
+          "protected": false
+        },
+        {
+          "name": "data/direct-vendor-v2",
+          "head_sha": "bd6ff52e1556d39a80fcea49e2ae93e7e0532001",
+          "protected": false
+        },
+        {
+          "name": "fix/actions-bootstrap",
+          "head_sha": "e6e56fd94b4cbb03704551e06369d7d7cf176c1d",
+          "protected": false
+        },
+        {
+          "name": "fix/zero-dependency-vendoring",
+          "head_sha": "2e3a609d1dfe946ceb44aab31e043162d6c85ce4",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "48a00e43026f441a3b95a5e91bd442b8174f0c10",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 19,
+      "branches": [
+        {
+          "name": "eiiom-masterplan-2045",
+          "head_sha": "40d4bbc49d29841f337e1a331640d70ad8a64076",
+          "protected": false
+        },
+        {
+          "name": "eiiom-v4-federation-megasystem",
+          "head_sha": "02119317623ed0353f2562444c02d9c42287a83d",
+          "protected": false
+        },
+        {
+          "name": "feat/eiiom-real-economy-os-20260817",
+          "head_sha": "f778df119dcdf8e8f5ee9d74f4aacb08bbc92527",
+          "protected": false
+        },
+        {
+          "name": "feat/sdu-accounting-core-v2",
+          "head_sha": "83673f48942e678dc1cc7cbdfaf046330fc53b2b",
+          "protected": false
+        },
+        {
+          "name": "feat/synergy-labor-economy-v1",
+          "head_sha": "7ae8df839c15847e68d1966136bebc4f81c75e1b",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "aad134a33e329320a0142ac268f63a4088d30732",
+          "protected": false
+        },
+        {
+          "name": "fix/production-hardening-2026-11-07",
+          "head_sha": "ae76b20a6196d547ffdd64a72cb65a2c047fc3a5",
+          "protected": false
+        },
+        {
+          "name": "fix/sues-hardening-clean-20261107",
+          "head_sha": "2088b3cfec918d4a6fdf834837630eac34890b21",
+          "protected": false
+        },
+        {
+          "name": "fix/v66-reserve-recovery-ci",
+          "head_sha": "1aa957927049079e79f0f38941bcf47270bb4b93",
+          "protected": false
+        },
+        {
+          "name": "fix/v66-reserve-recovery-federation-plan-20261116",
+          "head_sha": "0b1b40b678c6b8614a4233e2f19aef02e57429a8",
+          "protected": false
+        },
+        {
+          "name": "integration/federation-execution-plan-2026-11-16",
+          "head_sha": "1d64c88f41382a194262cc1778cef7d770f11214",
+          "protected": false
+        },
+        {
+          "name": "integration/federation-execution-plan-v2-2026-11-16",
+          "head_sha": "54e0678feb5d88e023f5679b057725e8ae2366a2",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "b911bb017103f122f2c75ef08b99ffebe665883d",
+          "protected": false
+        },
+        {
+          "name": "research/self-healing-economy-v6.4-v6.5.6",
+          "head_sha": "9c8e4cb503d33e82cc4bb9add729514db1a42587",
+          "protected": false
+        },
+        {
+          "name": "research/sues-audit-v1",
+          "head_sha": "2a39fd05466c4cfbb494fb4127b2035dab1e7401",
+          "protected": false
+        },
+        {
+          "name": "research/synergy-v6.4-kernel",
+          "head_sha": "0f2cdb506f5298649dfcbe8e00deaa2ae8e0e8bb",
+          "protected": false
+        },
+        {
+          "name": "research/synergy-v6.6-federated-economy",
+          "head_sha": "04ae575ab774f175bd9d36ad8503a2ca7b727018",
+          "protected": false
+        },
+        {
+          "name": "research/synergy-v6.6-foundation",
+          "head_sha": "f5f5ffe877820d2ba697f8eaeb026ab6890ef0f1",
+          "protected": false
+        },
+        {
+          "name": "research/synergy-v7-economic-graph",
+          "head_sha": "9c0aed72857493bac0a99ba6247ed726c554870e",
           "protected": false
         }
       ],
