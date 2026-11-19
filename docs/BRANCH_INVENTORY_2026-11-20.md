@@ -25,7 +25,7 @@
 
 `Shtenco/synergy_hierarchical_cognitive_memory_architecture` добавлен как 92-й репозиторий:
 - `main` — `74b518c85d3a69fdc2e868737cbe9f4f2cac761c`;
-- `feat/hierarchical-cognitive-memory-v1` — `37bebe6e8d75444ced7e610b821664892eabe0f8`.
+- `feat/hierarchical-cognitive-memory-v1` — `2d6d7872653b9d525a74046e992a843b2a905d57`.
 
 ## Canonical artifacts
 
