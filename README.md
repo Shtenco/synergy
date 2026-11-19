@@ -44,6 +44,7 @@ The canonical artifacts are:
 - [Full branch inventory CSV](registry/BRANCH_INVENTORY_2026-11-20.csv) — one row per branch
 - [Branch inventory report](docs/BRANCH_INVENTORY_2026-11-20.md)
 - [High-branch repository / BQG evidence audit](docs/HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
+- [Eight-repository source audit delta](docs/REPOSITORY_AUDIT_DELTA_2026-11-20.md) — trading terminal, NEXUS/OLGA, Autopilot, Investment Committee, Market Graph, Science Agent, AI Coder and AGI Trader
 - [Open PR / branch map JSON](registry/OPEN_PR_BRANCH_MAP_2026-11-20.json) — all 548 open PRs
 - [Open PR / branch map CSV](registry/OPEN_PR_BRANCH_MAP_2026-11-20.csv) — one row per open PR
 - [Open PR audit report](docs/OPEN_PR_BRANCH_AUDIT_2026-11-20.md)
