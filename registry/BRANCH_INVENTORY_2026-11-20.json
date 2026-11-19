@@ -6504,8 +6504,12 @@
           "name": "main",
           "sha": "c1882525e12f4662c30851cf1a7995a957cba543",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "c1882525e12f4662c30851cf1a7995a957cba543"
         }
       ]
     },
@@ -7007,22 +7011,34 @@
           "name": "feature/postgis-h3-open-data-cesium-v1",
           "sha": "bb64124c67e5a76ac4669e28bab13090f1238282",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 108,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         },
         {
           "name": "main",
           "sha": "9292be3e86143491c3f216871e58149ae829b7bd",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         },
         {
           "name": "work/cesium-admin-divisions-layers-20261116",
           "sha": "284cc15a7a3036e10011b1008b34868cd1a5aa00",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 106,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         },
         {
           "name": "work/eaeu-boundary-subset-optimization-20261116",
@@ -7035,43 +7051,67 @@
           "name": "work/eaeu-country-coverage-planner-20261116",
           "sha": "ebe4ba2d818df47832a14ca2551c4167d9af9d10",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 129,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         },
         {
           "name": "work/eaeu-world-3d-viewer-20261116",
           "sha": "ac29f72215064b4048dea21e327785877d60f34b",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 68,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         },
         {
           "name": "work/overture-coverage-auditor-20261116",
           "sha": "cc12d0b93e35ca1dfa4d7e74f4dfa7bcbd45a8ab",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 134,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         },
         {
           "name": "work/overture-global-divisions-ingest-20261116",
           "sha": "b9fa0cacf4145045473611c66b3620cd5d3e7f4d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 84,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         },
         {
           "name": "work/overture-resumable-tile-runner-20261116",
           "sha": "3316f7513d79a15e01aa92eb17c544b2948b1f2b",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 79,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         },
         {
           "name": "work/overture-tile-job-planner-20261116",
           "sha": "6a146eeffa5f8cf71948b9d8ed26a6bd5fe113a8",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 73,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "9292be3e86143491c3f216871e58149ae829b7bd"
         }
       ]
     },
