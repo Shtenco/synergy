@@ -1667,13 +1667,15 @@
       "activity_band": "ACTIVE_30D",
       "capabilities": [
         "economic-model",
-        "financial-protocol",
-        "value-flow",
         "hardnav",
-        "triangular-economy"
+        "triangular-economy",
+        "canonical-dividend-simulation"
       ],
       "dependencies": [],
-      "risks": []
+      "risks": [
+        "simulation-only; independent external opportunity and live execution are not verified",
+        "no CI workflow or automated test suite found in main"
+      ]
     },
     {
       "name": "synergy_lead_search_engline",
