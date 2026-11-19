@@ -47,6 +47,7 @@ The canonical artifacts are:
 - [Live branch audit — core federation (117 branches / 95 open PRs)](docs/LIVE_BRANCH_AUDIT_CORE_FEDERATION_2026-11-20.md)
 - [Live branch audit — agent systems (125 branches / 45 open PRs)](docs/LIVE_BRANCH_AUDIT_AGENT_SYSTEMS_2026-11-20.md)
 - [Live branch audit — science, coder and trading terminal (21 branches / 13 open PRs)](docs/LIVE_BRANCH_AUDIT_EVIDENCE_CODER_TRADING_2026-11-20.md)
+- [Live branch audit — trading and investment (41 branches / 5 open PRs)](docs/LIVE_BRANCH_AUDIT_TRADING_INVESTMENT_2026-11-20.md)
 - [High-branch repository / BQG evidence audit](docs/HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
 - [Eight-repository source audit delta](docs/REPOSITORY_AUDIT_DELTA_2026-11-20.md) — trading terminal, NEXUS/OLGA, Autopilot, Investment Committee, Market Graph, Science Agent, AI Coder and AGI Trader
 - [Open PR / branch map JSON](registry/OPEN_PR_BRANCH_MAP_2026-11-20.json) — all 548 open PRs
