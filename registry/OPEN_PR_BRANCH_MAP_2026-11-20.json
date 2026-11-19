@@ -6034,22 +6034,33 @@
           "state": "open",
           "draft": true,
           "head_branch": "research/uv-lwc-duv1-model-v0.1",
-          "head_sha": "df6785a4391d2fa84492d8a7dc934caaa16c315c",
+          "head_sha": "77fcd37797dd73720d82f67f1ed67265bbeedccb",
           "base_branch": "main",
-          "base_sha": "4d2635d86391ae087b248314f20f3034911f716f",
+          "base_sha": "f9ed4f4a8677ce08e0037f205667b8f94bf54871",
           "updated_at": null,
           "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/pull/4",
           "metadata_status": "LIVE_GET_PR_INFO_2026-11-20",
-          "commits": 112,
+          "commits": 118,
           "changed_files": 25,
-          "additions": 2924,
+          "additions": 2998,
           "deletions": 0,
           "mergeable": true,
           "ci": {
             "status": "NO_CONFIRMED_EXACT_HEAD_RUN",
             "steps_executed": null
           },
-          "reviews": "NONE_RETURNED"
+          "reviews": "NONE_RETURNED",
+          "compare_status": "diverged",
+          "ahead_by": 118,
+          "behind_by": 6,
+          "ci_evidence": {
+            "status": "QUEUED",
+            "run_ids": [
+              44634951360,
+              44634951388
+            ],
+            "steps_executed": null
+          }
         }
       ]
     },
@@ -7849,14 +7860,14 @@
           "url": "https://github.com/Shtenco/synergy_hierarchical_cognitive_memory_architecture/pull/1",
           "draft": true,
           "head_branch": "feat/hierarchical-cognitive-memory-v1",
-          "head_sha": "37bebe6e8d75444ced7e610b821664892eabe0f8",
+          "head_sha": "2d6d7872653b9d525a74046e992a843b2a905d57",
           "base_branch": "main",
           "base_sha": "74b518c85d3a69fdc2e868737cbe9f4f2cac761c",
           "updated_at": null,
           "metadata_status": "LIVE_GET_PR_INFO_2026-11-20",
-          "commits": 80,
+          "commits": 84,
           "changed_files": 25,
-          "additions": 1538,
+          "additions": 1542,
           "deletions": 1,
           "mergeable": true,
           "ci": {
@@ -7866,7 +7877,17 @@
             ],
             "steps_executed": false
           },
-          "reviews": "NONE_RETURNED"
+          "reviews": "NONE_RETURNED",
+          "compare_status": "ahead",
+          "ahead_by": 84,
+          "behind_by": 0,
+          "ci_evidence": {
+            "status": "QUEUED",
+            "run_ids": [
+              44634673642
+            ],
+            "steps_executed": null
+          }
         }
       ]
     }
