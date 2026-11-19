@@ -14,9 +14,9 @@
 | Open PRs discovered repository-by-repository | 549 |
 | PRs with full metadata enrichment | 18 |
 | PRs still discovery-only | 531 |
-| Live branch SHA provenance | 1,084 |
-| Historical census SHA values not re-fetched | 210 |
-| Branch protection known from census | 1,292 / 1,294 |
+| Live branch SHA provenance | 1,294 |
+| Refs with ancestry comparison to main | 210 |
+| Refs still awaiting ancestry comparison | 1,084 |\n| Branch protection known from historical census | 1,292 / 1,294 |
 | Branches marked protected in the historical census | 0 |
 | New cognitive-memory refs with protection unchecked | 2 |
 | Priority PR CI: failure with steps=null | 10 |
@@ -24,7 +24,7 @@
 | Priority PR CI: no run / no exact-head run returned | 2 |
 | Priority PR CI: not checked | 5 |
 
-The old 548-PR snapshot's 414 Draft / 134 Ready split and 548/548 branch-head matches are historical. Current repository-scoped discovery is 549. For 531 current PRs, head/base SHA and draft state are not enriched; do not infer branch association or readiness from the discovery record.
+Ancestry results for the 210 compared refs: 36 AHEAD, 22 BEHIND, 120 DIVERGED, 32 IDENTICAL. The other 1,084 refs have live SHA provenance but no compare-to-main result yet. The old 548-PR snapshot's 414 Draft / 134 Ready split and 548/548 branch-head matches are historical. Current repository-scoped discovery is 549. For 531 current PRs, head/base SHA and draft state are not enriched; do not infer branch association or readiness from the discovery record.
 
 ## Per-repository matrix
 
