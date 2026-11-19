@@ -11102,14 +11102,14 @@
     {
       "repository": "Shtenco/synergy_motherboard_xpu_xml",
       "branch": "research/uv-lwc-duv1-model-v0.1",
-      "head_sha": "e3ae444f649cf8d3018f57dbf477b34a236dc552",
+      "head_sha": "77fcd37797dd73720d82f67f1ed67265bbeedccb",
       "purpose": "Research: SYNERGY DUV-1 UV Event Matrix model v0.6",
       "branch_state": "#4 draft",
       "open_pr_numbers": [
         4
       ],
-      "ci_evidence": "queued (XPU model and 3D export, 2026-11-19T22:14:28Z)",
-      "blocker_and_decision": "PR base=main; draft gate. Require exact-head CI and reproducible benchmark. XML/spec metadata is not a fabricated/validated motherboard or silicon implementation; require electrical/thermal/timing constraints and board-level measurements. Retain candidate; promote after code review, benchmark and reproducible artifact checks.",
+      "ci_evidence": "QUEUED_RUNS:44634951360;44634951388",
+      "blocker_and_decision": "PR base=main; draft gate. Require exact-head CI and reproducible benchmark. XML/spec metadata is not a fabricated/validated motherboard or silicon implementation; require electrical/thermal/timing constraints and board-level measurements. Retain candidate; promote after code review, benchmark and reproducible artifact checks. Current compare: 118 ahead / 6 behind; CI queued, not green.",
       "source_audit_document": "docs/LIVE_BRANCH_AUDIT_COMPUTE_COMPRESSION_XPU_2026-11-20.md"
     },
     {
@@ -12739,14 +12739,14 @@
     {
       "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
       "branch": "feat/hierarchical-cognitive-memory-v1",
-      "head_sha": "37bebe6e8d75444ced7e610b821664892eabe0f8",
+      "head_sha": "2d6d7872653b9d525a74046e992a843b2a905d57",
       "purpose": "Implement hierarchical cognitive memory core",
       "branch_state": "#1 draft",
       "open_pr_numbers": [
         1
       ],
-      "ci_evidence": "LATEST_RUN_CANCELLED_NO_STEPS",
-      "blocker_and_decision": "Retain as draft. API auth, symlink-safe ingestion, namespace-safe provenance and contract/E2E gates remain open.",
+      "ci_evidence": "QUEUED_RUNS:44634673642",
+      "blocker_and_decision": "Retain as draft. API auth, symlink-safe ingestion, namespace-safe provenance and contract/E2E gates remain open. Current compare: 84 ahead / 0 behind; CI queued, not green.",
       "source_audit_document": "docs/LIVE_RECONCILIATION_2026-11-20.md"
     }
   ]
