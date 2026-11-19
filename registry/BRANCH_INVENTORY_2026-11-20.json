@@ -6260,6 +6260,205 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_midas_institutional",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "4b6a7b19e53d46ed3baff267fb9221656e33c007",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "75f646380cd0a1478e5093216615b1af8ded1fbf",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "00ff3fffbb3d90ac81297c55dca1b58b95aa6f2b",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_relative_value",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "31f99549dd7806648ccd42f99b1af7ce4c16b282",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "0f37ef55ac989933acd63a0954b5cf521eec4449",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "6a8f955ff0b7a95deacf203e380b3502e15a4e87",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_investment_committee",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "eadb6021d3d1ea34823a25788877d8d01309a1e9",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "7dbec0202badf1afce60ada83b5402f8d8ed9f14",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "3b0396501a649d92ecfe0b3adfc2db02c515c0c9",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_market_maker",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "ee36217fb2721826d21e7f0bc22de1965d95a90c",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "3edcea187c45866d55a65b74dc707b7b1009a69b",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "c764552393441b313e83524f35ee4094c8bda8ae",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_adaptive_engine",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "78d6696dff443079218b2087209c527f0fe94240",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "c4af6194eedfbf9b9c0824822abe42306ba9f6b8",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "856252eb8400546d3e7c359068f96c0d7dda7c99",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_marketvision",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "beccaaaac02ee80bc79b31b5ab2f417c2072d85e",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "1baf9fa65c9974bb241f3a4fb2a352424bfe9bcc",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "6dbe5c5b9d846b66cabc9136deb24dfd34cec842",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_trademux",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "sha": "d1aca7234dadaa86286d08466efe51a9a88fc4f4",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "fe584afeba1410f40640672f277be4ab16e76b8c",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "sha": "5255319629b44c9651cc4424c5b9d0b3ae16fe71",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_epstein_network",
+      "default_branch": "main",
+      "branch_count": 6,
+      "unique_head_count": 6,
+      "branches": [
+        {
+          "name": "build/master-graph-v1",
+          "sha": "6fb950e6eca96e82e98422cba516202c94025301",
+          "protected": false
+        },
+        {
+          "name": "build/v2-vendor-entity-resolution",
+          "sha": "feb8c37d1bd442ce8b73bb401e9e5bb8d16a5c9a",
+          "protected": false
+        },
+        {
+          "name": "data/direct-vendor-v2",
+          "sha": "bd6ff52e1556d39a80fcea49e2ae93e7e0532001",
+          "protected": false
+        },
+        {
+          "name": "fix/actions-bootstrap",
+          "sha": "e6e56fd94b4cbb03704551e06369d7d7cf176c1d",
+          "protected": false
+        },
+        {
+          "name": "fix/zero-dependency-vendoring",
+          "sha": "2e3a609d1dfe946ceb44aab31e043162d6c85ce4",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "48a00e43026f441a3b95a5e91bd442b8174f0c10",
+          "protected": false
+        }
+      ]
     }
   ]
 }
