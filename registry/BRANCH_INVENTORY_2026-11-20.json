@@ -885,7 +885,7 @@
           "name": "feature/canonical-economic-entity-register-v1-rebased-20261115b",
           "sha": "efeb8e0a5b4cf0a96d29a8cb548c4c298133b14b",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -1317,7 +1317,7 @@
           "name": "hardening/m12-business-runtime-execution-idempotency-v1",
           "sha": "36556ad239930ff1a7b43f1bf60d0e0bbddb2ebd",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -2414,7 +2414,7 @@
           "name": "feat/recursive-context-archive-integration-20261118",
           "sha": "ef6b0911337610773d3915ed93431ed98c897e6e",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -2993,7 +2993,7 @@
           "name": "feat/semantic-memory-context-bridge-20261118",
           "sha": "f0d724f6cc2a84afa09049dc889bcd3eb753b5eb",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -6649,7 +6649,7 @@
           "name": "feat/hierarchical-cognitive-memory-v1",
           "sha": "37bebe6e8d75444ced7e610b821664892eabe0f8",
           "protected": null,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -6700,28 +6700,28 @@
           "name": "feat/company-autopilot-memory-v1",
           "sha": "bdc26413d886fb026bdc22c3a6f76dc2df873a1c",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
           "name": "feat/deepseek-longhorizon-v2",
           "sha": "03a15b04d0137c724b18013be1c501281c1c5c6a",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
           "name": "feat/free-tier-routing-and-tests-v4",
           "sha": "ec10f565fc28f5e0050e074eb17e07de1524bd56",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
           "name": "feat/openrouter-pareto-v3",
           "sha": "571ddca74d230cf8053e0a522bb219ae9ee0fa86",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -6764,7 +6764,7 @@
           "name": "work/eaeu-boundary-subset-optimization-20261116",
           "sha": "d2a9a12c009cc368a326f56ab037952091b0ef72",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -7868,9 +7868,9 @@
         },
         {
           "name": "research/uv-lwc-duv1-model-v0.1",
-          "sha": "e3ae444f649cf8d3018f57dbf477b34a236dc552",
+          "sha": "df6785a4391d2fa84492d8a7dc934caaa16c315c",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -8125,7 +8125,7 @@
           "name": "audit/pay-system-settlement-2026-11-11",
           "sha": "e3b9dd0ae7ead07bc9789cfa9acb897d47537960",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -8344,7 +8344,7 @@
           "name": "audit/portfolio-89-repositories-v1",
           "sha": "9ffa1736783df8f4ff19163d0b9d5716fcba0ca9",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -8654,7 +8654,7 @@
           "name": "docs/sumi-phase0-audit-20261119",
           "sha": "1ac6b492737134d826d5f925e6574a794c72fec8",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
