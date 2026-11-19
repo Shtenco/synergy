@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 8,
-  "pending_repositories": 84,
-  "branch_refs": 113,
+  "completed_repositories": 16,
+  "pending_repositories": 76,
+  "branch_refs": 165,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -633,6 +633,330 @@
         {
           "name": "ugh",
           "head_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 9,
+      "branches": [
+        {
+          "name": "docs/visual-dossier-batch02",
+          "head_sha": "3beb9c4ee29a24378138cebfd8475d0c0218ea6f",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "5bcf5a95e54d454116d89fa23d1337500091accd",
+          "protected": false
+        },
+        {
+          "name": "moex-catboost-unified-20260904",
+          "head_sha": "4e535017bfeeac04f06c6540c4161f91c8151e2f",
+          "protected": false
+        },
+        {
+          "name": "turbo-stage1f-asset-test",
+          "head_sha": "51cb6c41ba4ddfd70d67ac99ea9537ce586843f1",
+          "protected": false
+        },
+        {
+          "name": "turbo-stage1f-integrated-v10",
+          "head_sha": "ee0245e7abd99fb1700e07d3da527a46812e0c64",
+          "protected": false
+        },
+        {
+          "name": "turbo-stage1f-runtime",
+          "head_sha": "f3dd90e9fc3f675c8f0d93b55a21a1b0fe186540",
+          "protected": false
+        },
+        {
+          "name": "turbo-stage1g-topology-v12",
+          "head_sha": "a63e6dfcff217a0361ede2e676681996697a3fe5",
+          "protected": false
+        },
+        {
+          "name": "turbo-stage1h-eml-v13",
+          "head_sha": "45ba82cf0f0eecf829bdbbf52c89d0b96192de38",
+          "protected": false
+        },
+        {
+          "name": "turbo-stage1i-xpu-v14",
+          "head_sha": "e27486656bd8366820a49954e515c742a33bb92c",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "docs/editorial-readme-v1",
+          "head_sha": "7793889ad8b01c9ec8958ee8da39786962632212",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "0aabf5bf43052a1fb4bc98c07126811a165e911d",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "docs/editorial-readme-v1",
+          "head_sha": "e6b7f9519a53ba65eedef75759da81a15058cfa1",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "09fb17a3e70a21ee5bb10815b70d6fc3c41105a7",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 23,
+      "branches": [
+        {
+          "name": "legacy-dlp-before-reverse-exp-2026-09-28",
+          "head_sha": "52a6ecd338846120e0421f774159b37aeafaaa5d",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "f140d3e7f1db141d7ce5497b65663fd4d4f5b305",
+          "protected": false
+        },
+        {
+          "name": "readme-dlp-path-2026-09-29",
+          "head_sha": "35c4c5cbf449e35ebdf598cad27cfc3c88d367f1",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v3-unified-constraint-economics",
+          "head_sha": "d8009505fc3d8d33fb4b10bce4223878ea489028",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v4-power2-graph",
+          "head_sha": "d4b1e044a6256a62263f809390cb64a92276f75b",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v7-ec-lattice-probe",
+          "head_sha": "95d9417c28f9657707cf164399ab50f24f4e0ea9",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v7-lll-closure",
+          "head_sha": "7b28246f4f2beef8abd6c3249b67639ca69123c9",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v8-projection-economics",
+          "head_sha": "027159f52e5cc29e11acf57153c53362c479151a",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v9-symbolic-sha-graph",
+          "head_sha": "e3467d3d73a625bd88a95bc8aac1a0a17c413c4c",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v9-toy-symbolic-closure",
+          "head_sha": "35651c52ef914357b7785d23ff52c47ba8be8da6",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v10-real-secp-algebraic-projection",
+          "head_sha": "79d3e68242543d9dedbdcdc133c9240068f1c153",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v10-secp20-symbolic-projection",
+          "head_sha": "77d76be622eab6828b62fa2f0a24a9014d5fac05",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v11-sha-closure-map",
+          "head_sha": "541263631fcaed174ef3ec563f44ebec113ec887",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v12-nonlinear-separator-compression",
+          "head_sha": "f32a3f2a7e1d42d36a4d7acd4f3f2e1cea701b04",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v13-qiskit-graph-probe",
+          "head_sha": "12118ec87685b0380e8916b92be3d8821ce33470",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v14-quantum-pebbling",
+          "head_sha": "0bc851449dac509996f2f6dc85bd613029c1beb1",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v15-compiled-reversible-arithmetic",
+          "head_sha": "7293ad91a386c9ac54b2bbdf3fbe952f16b9e63a",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v16-affine-record-replay-ec",
+          "head_sha": "e9b271a94405023fd54f39a909b1ab0c29c1b7be",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v17-compiled-modular-inversion",
+          "head_sha": "fa9c4b2055f24e3fc77ce86f994256e9d85f1e54",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v18-gcd-hypothesis-audit",
+          "head_sha": "fbe5017314a865f93dcfc3ba11000b47f7cd9383",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v31-phase-map",
+          "head_sha": "c578274bcf8369ff04b353fa8b868fe2aa061ad6",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v31-sha-phase-map",
+          "head_sha": "e6a2a99fc36606b1593ec3e2c54ba4faf84a375d",
+          "protected": false
+        },
+        {
+          "name": "reverse-exp-v32-exact-1-12",
+          "head_sha": "400a84ebaf5c4965376515a332384002e23fa072",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "docs/editorial-readme-v1",
+          "head_sha": "31a688e9c4c71a4465780de318514d46ec408d1a",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "728b6af3e53fc0d8beafe060d6f1ee209395b3f5",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/midas_lite",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "codex/replace-claude-with-custom-llm-model",
+          "head_sha": "8090a55efcc6acf88305cd76188cbb0b58677560",
+          "protected": false
+        },
+        {
+          "name": "docs/visual-dossier-batch02",
+          "head_sha": "4af23cdad6addd90a4bca85b7fe3cd2c416d5808",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 9,
+      "branches": [
+        {
+          "name": "aicb-v1-exact-reset",
+          "head_sha": "edd7a1eb6b9782b0c859beb0bddc5adc14e651fa",
+          "protected": false
+        },
+        {
+          "name": "aicb-v2-mainnet-fork",
+          "head_sha": "24f15b0548b3c4b3e514b52a9c742db52db81e8c",
+          "protected": false
+        },
+        {
+          "name": "feat/hybrid-external-profit-model-v1-20260905",
+          "head_sha": "0b0fc5b8a63ac411006dbfdc6f9c899a16285672",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "2f9325814e4bb9e9b4b2e5c8d1bc9a7049d3d729",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "7dd01e7da992d2efedb957e83a48218b86d0083f",
+          "protected": false
+        },
+        {
+          "name": "print_money_synergychain",
+          "head_sha": "e7b30474bed17d1e2e7de20f1b537cf03812aa76",
+          "protected": false
+        },
+        {
+          "name": "research/omega-v3-base-fork-hardnav",
+          "head_sha": "9fc3343648297faf8a9b91230964cfec33cfef76",
+          "protected": false
+        },
+        {
+          "name": "research/omega-v4-inflation-bounded-graph",
+          "head_sha": "4ac67bee187ef2c04b8c92520c9e1f640b97230a",
+          "protected": false
+        },
+        {
+          "name": "research/omega-v5-real-flow-fork",
+          "head_sha": "dd956f05186790ff27a3443e17dd914e90c7154a",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "docs/editorial-readme-v1",
+          "head_sha": "cba6ebfff5a050e485eb8700e1742f28221e81e1",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "a0ec14a8f10c2b26668664c0626ab63bce7094eb",
           "protected": false
         }
       ]
