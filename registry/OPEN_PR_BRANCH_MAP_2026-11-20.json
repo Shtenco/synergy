@@ -1,0 +1,73 @@
+{
+  "schema": "synergy.open-pr-branch-map.v1",
+  "generated_at": "2026-11-20",
+  "owner": "Shtenco",
+  "repository_count": 91,
+  "scope": "Open pull requests only; this is a PR-to-branch association snapshot, not a full closed-PR history.",
+  "repositories": [
+    {
+      "repository": "Shtenco/shtenco.github.io",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Preserve historical personal research provenance",
+          "state": "open",
+          "draft": true,
+          "head_branch": "docs/research-provenance-20260817",
+          "head_sha": "4649a891f309996ed51edf3c99a55eb4b8263e27",
+          "base_branch": "main",
+          "updated_at": "2026-10-03T01:43:55Z",
+          "url": "https://github.com/Shtenco/shtenco.github.io/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Temporary TURBO Stage-1F public QEMU runner",
+          "state": "open",
+          "draft": true,
+          "head_branch": "turbo-stage1f-runtime",
+          "head_sha": "f3dd90e9fc3f675c8f0d93b55a21a1b0fe186540",
+          "base_branch": "main",
+          "updated_at": "2026-07-31T05:20:05Z",
+          "url": "https://github.com/Shtenco/3D_bars_market_structure/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "open_pr_count": 0,
+      "pull_requests": []
+    }
+  ]
+}
