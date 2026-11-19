@@ -1,11 +1,11 @@
 {
   "schema_version": "2.0.0",
   "generated_from": "Full GitHub inventory + M0 content audit",
-  "generated_at": "2026-11-13",
+  "generated_at": "2026-11-20",
   "umbrella_repository": "Shtenco/synergy",
   "discovery_rule": "ALL repositories accessible under Shtenco are inventoried; SYNERGY relation is determined by content/role, not name alone.",
-  "total_account_repositories": 89,
-  "inventoried_repositories": 89,
+  "total_account_repositories": 91,
+  "inventoried_repositories": 91,
   "repositories": [
     {
       "name": "shtenco.github.io",
@@ -1900,6 +1900,62 @@
       "risks": [
         "no executable implementation in current main"
       ]
+    },
+    {
+      "name": "shtenco_micro_ai",
+      "full_name": "Shtenco/shtenco_micro_ai",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/shtenco_micro_ai",
+      "ecosystem_relation": "federated-rnd",
+      "category": "compute-os",
+      "node_type": "local-ai-inference-runtime",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "local-model-inference",
+        "MNN-runtime",
+        "INT4-model-download",
+        "benchmarking"
+      ],
+      "dependencies": [],
+      "risks": [
+        "model weights are external and not stored in Git",
+        "main inference workflow failed on the inspected main SHA; log cause unavailable",
+        "no device-specific throughput or accuracy qualification established"
+      ]
+    },
+    {
+      "name": "synergy_long_term_harness",
+      "full_name": "Shtenco/synergy_long_term_harness",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_long_term_harness",
+      "ecosystem_relation": "federated-rnd",
+      "category": "agi-agentic",
+      "node_type": "long-horizon-agent-harness-design",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "long-horizon-agent-evaluation-design",
+        "memory-harness-design",
+        "provider-routing-research"
+      ],
+      "dependencies": [],
+      "risks": [
+        "main contains README only",
+        "implementation is present on non-main branches and must not be treated as main runtime",
+        "draft implementation PR CI failed; production execution not established"
+      ]
     }
-  ]
+  ],
+  "branch_inventory": {
+    "generated_at": "2026-11-20",
+    "repository_count": 91,
+    "branch_ref_count": 1292,
+    "branch_inventory_json": "registry/BRANCH_INVENTORY_2026-11-20.json",
+    "branch_inventory_csv": "registry/BRANCH_INVENTORY_2026-11-20.csv",
+    "branch_inventory_report": "docs/BRANCH_INVENTORY_2026-11-20.md",
+    "note": "HEAD and branch-name inventory only; per-branch source/CI/PR audit is tracked separately."
+  }
 }
