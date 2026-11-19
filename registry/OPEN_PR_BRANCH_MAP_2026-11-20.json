@@ -3,7 +3,7 @@
   "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "repository_count": 92,
-  "open_pr_count": 457,
+  "open_pr_count": 468,
   "scope": "Current open PR discovery performed one repository at a time across all 92 owner repositories. Discovery records contain title/number/URL; per-PR get_pr_info and exact-head CI are separately tracked.",
   "metadata_coverage": "DISCOVERY_ONLY for all entries unless subsequently enriched; old 548-row file was a dated historical snapshot and is superseded.",
   "repositories": [
@@ -5839,28 +5839,176 @@
     },
     {
       "repository": "Shtenco/synergy_app",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "SINERGY SMM v1.2 staging + APK build",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_app/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 2,
+          "title": "Federation V3: expand Personal Capital domain from origin architecture",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_app/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_qr_compress",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Federation V3: expand QR/offline compact payload role",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_qr_compress/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_metachain",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Bootstrap executable post-quantum metachain core v1",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_metachain/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 4,
+          "title": "Federation V3: expand MetaChain cross-chain verification layer",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_metachain/pull/4",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_motherboard_xpu_xml",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "XPU V2.3: eliminate central walker with static wavefront + distributed token fallback",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 3,
+          "title": "Federation V3: expand XPU as falsifiable compiled-graph compute R&D",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/pull/3",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 4,
+          "title": "Research: SYNERGY DUV-1 UV Event Matrix model v0.6",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/pull/4",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/print_money_synergychain",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Add falsifiable hybrid print-machine external-profit model v1",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/print_money_synergychain/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 2,
+          "title": "Federation V3: formalize monetary/liquidity falsification firewall",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/print_money_synergychain/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 3,
+          "title": "V1 exact-reset AICB baseline",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/print_money_synergychain/pull/3",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_project",
@@ -5870,26 +6018,26 @@
           "number": 1,
           "title": "Add V3 valuation register for 87 SYNERGY technical repositories",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_project/pull/1",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_project/pull/1",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 2,
           "title": "Draft: reconcile and assess all 89 SYNERGY repositories",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_project/pull/2",
           "draft": true,
           "head_branch": "audit/portfolio-89-repositories-v1",
           "head_sha": "9ffa1736783df8f4ff19163d0b9d5716fcba0ca9",
           "base_branch": "main",
           "base_sha": "50bcaae7530b93d1f59ab3c1c30b4da325ec33e2",
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_project/pull/2",
           "metadata_status": "LIVE_GET_PR_INFO_2026-11-20",
           "commits": 25,
           "changed_files": 5,
@@ -5901,13 +6049,13 @@
           "number": 3,
           "title": "docs: add preliminary IP-backed financing readiness report",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_project/pull/3",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_project/pull/3",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         }
       ]
@@ -5920,13 +6068,13 @@
           "number": 12,
           "title": "REVERSE-EXP V13-QISKIT: Quantum Graph Probe",
           "state": "open",
+          "url": "https://github.com/Shtenco/dlp_solver/pull/12",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/dlp_solver/pull/12",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         }
       ]
@@ -5939,13 +6087,13 @@
           "number": 1,
           "title": "V3: 95% architecture — historical Solana data, first-passage ML, execution, risk and shadow/canary gates",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_crypto_pump/pull/1",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_crypto_pump/pull/1",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         }
       ]
