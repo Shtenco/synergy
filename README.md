@@ -2,6 +2,24 @@
 
 **Каноническая точка входа в экосистему Shtenco / SYNERGY.** Этот репозиторий хранит owner inventory, карту доменов, ссылки на архитектурные и экономические досье, а также сводные реестры веток, PR и интеграционных доказательств. Исходники и история каждого продукта остаются в самостоятельных репозиториях.
 
+## Branch ancestry and decision ledger — 2026-11-20
+
+Fresh GitHub `compare_commits(main, branch)` checks have been performed for **99 / 1,202 non-main branch refs** in the current incremental pass. The remaining 1,103 are explicitly pending; no inference is made for unchecked branches.
+
+| Compared status | Count | Meaning |
+|---|---:|---|
+| Ahead | 5 | Branch has unique commits, no main-only commits since merge base |
+| Behind | 6 | No unique branch commits ahead of main; candidate for archival review, not automatic deletion |
+| Diverged | 88 | Both branch and main contain unique commits; requires conflict-aware review |
+| Merge-ready | **0** | No branch is promoted without exact-head CI and PR/dependency gates |
+
+Priority branch decisions and the complete evidence ledger:
+- [Branch ancestry comparison ledger](registry/BRANCH_ANCESTRY_COMPARE_2026-11-20.json)
+- [Evidence-based branch decisions](registry/BRANCH_DECISIONS_2026-11-20.json)
+- [Duplicate branch HEAD groups](registry/BRANCH_DUPLICATE_HEADS_2026-11-20.json)
+- [Priority PR dependency and CI audit](registry/PR_BRANCH_DEPENDENCY_AUDIT_2026-11-20.json)
+
+Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` applies to ahead/diverged work; `ARCHIVE-CANDIDATE` is review-only for behind-only refs and requires checking PRs, tags, releases, deployments and external references; `MERGE-READY` requires a non-draft PR, no conflicts, successful exact-HEAD CI with visible test/build steps, resolved stack dependencies and review approval. No destructive branch operation was performed.
 ## Live governance snapshot — 2026-11-20
 
 **Snapshot source:** authenticated GitHub owner inventory and live GitHub REST branch endpoints. This is a point-in-time evidence set, not a claim that all code is production-ready.
