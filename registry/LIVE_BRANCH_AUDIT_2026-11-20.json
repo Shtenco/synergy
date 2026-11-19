@@ -1,10 +1,10 @@
 {
   "schema": "synergy.live-branch-audit/v1",
   "as_of": "2026-11-20",
-  "scope": "35 repositories covered by twelve live branch audit tranches; not yet the full 91-repository owner inventory",
-  "repository_count": 35,
-  "branch_record_count": 954,
-  "unique_repository_branch_pairs": 954,
+  "scope": "38 repositories covered by thirteen live branch audit tranches; not yet the full 91-repository owner inventory",
+  "repository_count": 38,
+  "branch_record_count": 972,
+  "unique_repository_branch_pairs": 972,
   "records": [
     {
       "repository": "Shtenco/synergy_system",
@@ -11359,6 +11359,222 @@
       "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
       "blocker_and_decision": "PR base=main; draft gate. Require exact-head tests and accounting/legal review. Current maturity is spec-only; do not treat policy equations or simulations as executable monetary authority. Retain research candidate; require model validation and independent review.",
       "source_audit_document": "docs/LIVE_BRANCH_AUDIT_QE_ALTERNATIVE_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_crypto_pump",
+      "branch": "main",
+      "head_sha": "5232f83f3051721c491aaf739c4a20c2382be9ee",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "failure (CI, 2026-11-08T23:47:37Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Need manipulation-resistant data, exchange rules, fees, risk limits and independent out-of-sample evidence. Retain canonical; no live execution until controls pass.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_crypto_pump",
+      "branch": "v3-execution-risk-shadow",
+      "head_sha": "17ec77e89df4007d5a6eeba239cf0510f5ad1666",
+      "purpose": "V3: 95% architecture — historical Solana data, first-passage ML, execution, risk and shadow/canary gates",
+      "branch_state": "#1 draft",
+      "open_pr_numbers": [
+        1
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; draft gate. Require strategy and security review. Need manipulation-resistant data, exchange rules, fees, risk limits and independent out-of-sample evidence. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_crypto_pump",
+      "branch": "v3-profitability-audit-hardening",
+      "head_sha": "d2f94ea16f367c6426f187bb0e4fba8b1a8132c0",
+      "purpose": "Inferred from branch name: v3 profitability audit hardening",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "failure (HISTORICAL LATOKEN 90D CHUNKED RECOVERY, 2026-10-05T22:10:17Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Need manipulation-resistant data, exchange rules, fees, risk limits and independent out-of-sample evidence. Retain pending lineage audit; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "branch": "main",
+      "head_sha": "bf5733de1a1e1b31cbb0b91b91a2742536b68cad",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "failure (V7 live Base snapshot, 2026-11-08T23:47:40Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Modelled issuance/flow is not external capital; require liability accounting, authorization, redemption and settlement proofs. Retain canonical; no live execution until controls pass.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "branch": "migration/synergy-723-2026-09",
+      "head_sha": "103d6e5c6c21bf260ba69c12faa868e9566cc03b",
+      "purpose": "chore: stage SYNERGY 723-file migration provenance",
+      "branch_state": "#4 draft",
+      "open_pr_numbers": [
+        4
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; draft gate. Require strategy and security review. Modelled issuance/flow is not external capital; require liability accounting, authorization, redemption and settlement proofs. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "branch": "v7-4-triangle-mev-audit",
+      "head_sha": "fa982e3bac902ec516bf6a6c0b464c8dc4502995",
+      "purpose": "V7.4: reconcile fork packet and add triangle/MEV accounting gates",
+      "branch_state": "#5 draft",
+      "open_pr_numbers": [
+        5
+      ],
+      "ci_evidence": "failure (V7 live Base snapshot, 2026-10-11T21:03:23Z)",
+      "blocker_and_decision": "PR base=main; draft gate. Require strategy and security review. Modelled issuance/flow is not external capital; require liability accounting, authorization, redemption and settlement proofs. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "branch": "v7-live-validation",
+      "head_sha": "b9d0c604f318316fdd9840eeb1ef810320b0c561",
+      "purpose": "V7 live Base validation run",
+      "branch_state": "#1 ready",
+      "open_pr_numbers": [
+        1
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require strategy and security review. Modelled issuance/flow is not external capital; require liability accounting, authorization, redemption and settlement proofs. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "branch": "v8-profit-engine",
+      "head_sha": "e6f533d792217a49195a8bc380e3330fcdacb9d5",
+      "purpose": "V8 profit engine",
+      "branch_state": "#3 ready",
+      "open_pr_numbers": [
+        3
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require strategy and security review. Modelled issuance/flow is not external capital; require liability accounting, authorization, redemption and settlement proofs. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "branch": "v8-single-contract-flash-proof",
+      "head_sha": "537c30d7cc87de50edee8eba5dd916ad6a6ac31b",
+      "purpose": "V8 single contract flash proof",
+      "branch_state": "#2 ready",
+      "open_pr_numbers": [
+        2
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require strategy and security review. Modelled issuance/flow is not external capital; require liability accounting, authorization, redemption and settlement proofs. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "aicb-v1-exact-reset",
+      "head_sha": "edd7a1eb6b9782b0c859beb0bddc5adc14e651fa",
+      "purpose": "V1 exact-reset AICB baseline",
+      "branch_state": "#3 draft",
+      "open_pr_numbers": [
+        3
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; draft gate. Require strategy and security review. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "aicb-v2-mainnet-fork",
+      "head_sha": "24f15b0548b3c4b3e514b52a9c742db52db81e8c",
+      "purpose": "Inferred from branch name: aicb v2 mainnet fork",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "success (AICB EVM Tests, 2026-09-07T22:01:31Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain pending lineage audit; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "feat/hybrid-external-profit-model-v1-20260905",
+      "head_sha": "0b0fc5b8a63ac411006dbfdc6f9c899a16285672",
+      "purpose": "Add falsifiable hybrid print-machine external-profit model v1",
+      "branch_state": "#1 draft",
+      "open_pr_numbers": [
+        1
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; draft gate. Require strategy and security review. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "federation-v3-domain-expansion",
+      "head_sha": "2f9325814e4bb9e9b4b2e5c8d1bc9a7049d3d729",
+      "purpose": "Federation V3: formalize monetary/liquidity falsification firewall",
+      "branch_state": "#2 ready",
+      "open_pr_numbers": [
+        2
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require strategy and security review. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain candidate; test in isolated environment before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "main",
+      "head_sha": "7dd01e7da992d2efedb957e83a48218b86d0083f",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain canonical; no live execution until controls pass.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "print_money_synergychain",
+      "head_sha": "e7b30474bed17d1e2e7de20f1b537cf03812aa76",
+      "purpose": "Inferred from branch name: print money synergychain",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain pending lineage audit; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "research/omega-v3-base-fork-hardnav",
+      "head_sha": "9fc3343648297faf8a9b91230964cfec33cfef76",
+      "purpose": "Inferred from branch name: research omega v3 base fork hardnav",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain pending lineage audit; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "research/omega-v4-inflation-bounded-graph",
+      "head_sha": "4ac67bee187ef2c04b8c92520c9e1f640b97230a",
+      "purpose": "Inferred from branch name: research omega v4 inflation bounded graph",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain pending lineage audit; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "branch": "research/omega-v5-real-flow-fork",
+      "head_sha": "dd956f05186790ff27a3443e17dd914e90c7154a",
+      "purpose": "Inferred from branch name: research omega v5 real flow fork",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; verify ancestry and downstream references. Issuance must be policy-bounded, collateral/liability reconciled, and controlled by separated keys and governance. Retain pending lineage audit; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md"
     }
   ]
 }
