@@ -25,7 +25,7 @@ The 92nd repository, absent from the prior 91-repository owner registry, is `Sht
 | Repositories in live branch-audit tranche | 60 |
 | Records in live branch-audit tranche | 1,077 |
 
-The branch inventory JSON/CSV merges the existing 1,075 live branch observations, the two newly discovered memory-repository refs and 14 priority PR-head observations. The 210 remaining SHA values retain their dated census provenance. This is not a claim that every branch HEAD was freshly queried in this pass.
+The branch inventory JSON/CSV includes 1,077 live branch-audit records across 60 repositories plus seven additional priority PR-head updates, for 1,084 live SHA observations total. The 210 remaining SHA values retain their dated census provenance. This is not a claim that every branch HEAD was freshly queried in this pass.
 
 Branch protection for the 1,292 historical refs remains sourced from the prior census. The two newly discovered refs have protection state `null / NOT_CHECKED`. No new live protection query was available in this audit pass.
 
@@ -140,3 +140,16 @@ Owner inventory and interface registry are different scopes. A repository in the
 6. Reconcile stale PR #2 in `synergy_project` and refresh its repository count/scope.
 
 **No merge, branch deletion, force-push, secret rotation or deployment was performed in this pass.**
+
+
+## 9. Additional financial and execution audit deltas
+
+- `synergy_agi_autopilot#24`: source contains conditional single-winner task claim, idempotency, uncertain-state fencing and approval-gated external effects. Exact-head Actions jobs failed with `steps=null`; no test execution is attested.
+- `synergy_ai_coder#7`: bounded content-addressed archive and immutable SQLite records are implemented on the feature branch; namespace filtering is not authorization. Exact-head CI has no executed steps.
+- `synergy_ai_language#35`: deterministic semantic-memory records and secret redaction exist on the feature branch; no cross-repo E2E with the new memory repository is proven.
+- `synergy_financial_os#39`: transactional accounting outbox is present; the inspected outbox validates a caller-supplied hash but does not itself authenticate signer identity. CI has no executed steps.
+- `synergy_pay_system#24`: the audit records critical settlement-lifecycle findings; PR #24 changes only an audit document, not the runtime fixes. Settlement evidence, finality, actual fill amounts, reconciliation and ledger posting are not one proven E2E path.
+- `synergy_agentic_ai_economy#10`: modeled bridge/AMM fee estimates are separated from HardNAV and a verified-receipt journal is added, but the corrected 13,000-block replay remains pending; old fee-inclusive metrics are superseded.
+- `synergy_usds#9`: six-level CPMM flywheel is a bounded research simulation, not a live yield mechanism. P0 deployer-key issue remains open through security PR #6; external key migration/rotation is manual and unverified.
+
+The central integration-gap registry now records three observed contract/lifecycle risks in addition to the one uncontracted cognitive-memory component. The federation still has 39 contract families, 44 adapter edges and zero E2E-tested edges.
