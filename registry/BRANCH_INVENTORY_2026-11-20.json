@@ -1211,7 +1211,7 @@
           "name": "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
           "sha": "0effe839d160af295d511eaea6a3d3830e024557",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -6148,7 +6148,7 @@
           "name": "federation-v3-domain-expansion",
           "sha": "935780514b2b3ff2c93a16bbfdfaaab0bc2f7d24",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -9386,14 +9386,14 @@
           "name": "research/six-level-collateral-flywheel",
           "sha": "8fcc31e087c4728a43901216f4c6525bc211add6",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
         {
           "name": "security/remove-committed-deployer-key",
           "sha": "0b63b7fc057907cd5df70089a577a5bd9557584f",
           "protected": false,
-          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         }
       ]
