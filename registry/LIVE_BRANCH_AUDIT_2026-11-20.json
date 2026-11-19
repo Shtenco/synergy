@@ -1,10 +1,10 @@
 {
   "schema": "synergy.live-branch-audit/v1",
   "as_of": "2026-11-20",
-  "scope": "26 repositories covered by nine live branch audit tranches; not yet the full 91-repository owner inventory",
-  "repository_count": 26,
-  "branch_record_count": 890,
-  "unique_repository_branch_pairs": 890,
+  "scope": "29 repositories covered by ten live branch audit tranches; not yet the full 91-repository owner inventory",
+  "repository_count": 29,
+  "branch_record_count": 912,
+  "unique_repository_branch_pairs": 912,
   "records": [
     {
       "repository": "Shtenco/synergy_system",
@@ -10579,6 +10579,272 @@
       "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
       "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers before cleanup. Model/agent orchestration needs model artifact provenance, resource isolation, tool authorization and measured end-to-end behavior. Retain pending branch lineage audit.",
       "source_audit_document": "docs/LIVE_BRANCH_AUDIT_APPS_MESSAGING_GLLM_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "eiiom-masterplan-2045",
+      "head_sha": "40d4bbc49d29841f337e1a331640d70ad8a64076",
+      "purpose": "Inferred from branch name: eiiom masterplan 2045",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain pending lifecycle review; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "eiiom-v4-federation-megasystem",
+      "head_sha": "02119317623ed0353f2562444c02d9c42287a83d",
+      "purpose": "Inferred from branch name: eiiom v4 federation megasystem",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain pending lifecycle review; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "feat/eiiom-real-economy-os-20260817",
+      "head_sha": "f778df119dcdf8e8f5ee9d74f4aacb08bbc92527",
+      "purpose": "Bootstrap EIIOM real-economy and productive-project domain layer",
+      "branch_state": "#1 draft",
+      "open_pr_numbers": [
+        1
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; draft gate. Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "feat/sdu-accounting-core-v2",
+      "head_sha": "83673f48942e678dc1cc7cbdfaf046330fc53b2b",
+      "purpose": "SDU Accounting Core V2 — isolated research ledger",
+      "branch_state": "#18 draft",
+      "open_pr_numbers": [
+        18
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; draft gate. Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "feat/synergy-labor-economy-v1",
+      "head_sha": "7ae8df839c15847e68d1966136bebc4f81c75e1b",
+      "purpose": "Add evidence-based SYNERGY Labor Economy V1 foundation",
+      "branch_state": "#17 draft",
+      "open_pr_numbers": [
+        17
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; draft gate. Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "federation-v3-domain-expansion",
+      "head_sha": "aad134a33e329320a0142ac268f63a4088d30732",
+      "purpose": "Federation V3: productive economy + AICB V5 ProductiveGrowthAttestation",
+      "branch_state": "#2 ready",
+      "open_pr_numbers": [
+        2
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "fix/production-hardening-2026-11-07",
+      "head_sha": "ae76b20a6196d547ffdd64a72cb65a2c047fc3a5",
+      "purpose": "Harden SUES production, accounting and federation invariants",
+      "branch_state": "#13 ready",
+      "open_pr_numbers": [
+        13
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=research/sues-audit-v1; Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "fix/sues-hardening-clean-20261107",
+      "head_sha": "2088b3cfec918d4a6fdf834837630eac34890b21",
+      "purpose": "Harden SUES accounting, inventory and production invariants",
+      "branch_state": "#14 draft",
+      "open_pr_numbers": [
+        14
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=research/sues-audit-v1; draft gate. Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "fix/v66-reserve-recovery-ci",
+      "head_sha": "1aa957927049079e79f0f38941bcf47270bb4b93",
+      "purpose": "Restore complete SYNERGY V6.6 reserve recovery module chain",
+      "branch_state": "#19 draft",
+      "open_pr_numbers": [
+        19
+      ],
+      "ci_evidence": "success (EIIOM CI, 2026-11-16T05:04:51Z)",
+      "blocker_and_decision": "PR base=main; draft gate. Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "fix/v66-reserve-recovery-federation-plan-20261116",
+      "head_sha": "0b1b40b678c6b8614a4233e2f19aef02e57429a8",
+      "purpose": "Inferred from branch name: fix v66 reserve recovery federation plan 20261116",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "success (EIIOM CI, 2026-11-16T04:18:10Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain pending lifecycle review; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "integration/federation-execution-plan-2026-11-16",
+      "head_sha": "1d64c88f41382a194262cc1778cef7d770f11214",
+      "purpose": "Inferred from branch name: integration federation execution plan 2026 11 16",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain pending lifecycle review; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "integration/federation-execution-plan-v2-2026-11-16",
+      "head_sha": "54e0678feb5d88e023f5679b057725e8ae2366a2",
+      "purpose": "Inferred from branch name: integration federation execution plan v2 2026 11 16",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "success (EIIOM CI, 2026-11-16T04:16:27Z)",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain pending lifecycle review; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "main",
+      "head_sha": "b911bb017103f122f2c75ef08b99ffebe665883d",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain canonical; claims remain evidence-gated.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "research/self-healing-economy-v6.4-v6.5.6",
+      "head_sha": "9c8e4cb503d33e82cc4bb9add729514db1a42587",
+      "purpose": "Import complete network-economics research line V6.4–V6.5.6",
+      "branch_state": "#9 ready",
+      "open_pr_numbers": [
+        9
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "research/sues-audit-v1",
+      "head_sha": "2a39fd05466c4cfbb494fb4127b2035dab1e7401",
+      "purpose": "research: add SUES unified economic system audit v1",
+      "branch_state": "#11 draft",
+      "open_pr_numbers": [
+        11
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; draft gate. Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "research/synergy-v6.4-kernel",
+      "head_sha": "0f2cdb506f5298649dfcbe8e00deaa2ae8e0e8bb",
+      "purpose": "Inferred from branch name: research synergy v6.4 kernel",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain pending lifecycle review; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "research/synergy-v6.6-federated-economy",
+      "head_sha": "04ae575ab774f175bd9d36ad8503a2ca7b727018",
+      "purpose": "Inferred from branch name: research synergy v6.6 federated economy",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain pending lifecycle review; do not delete automatically.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "research/synergy-v6.6-foundation",
+      "head_sha": "f5f5ffe877820d2ba697f8eaeb026ab6890ef0f1",
+      "purpose": "Add SYNERGY V6.6 federated economy foundation",
+      "branch_state": "#16 ready",
+      "open_pr_numbers": [
+        16
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_eurasian",
+      "branch": "research/synergy-v7-economic-graph",
+      "head_sha": "9c0aed72857493bac0a99ba6247ed726c554870e",
+      "purpose": "Build SYNERGY V7 event-sourced productive economy graph kernel",
+      "branch_state": "#10 ready",
+      "open_pr_numbers": [
+        10
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require exact-head CI and evidence review. Regional economic models require source-backed trade data, legal/settlement constraints and counterparties; simulation is not a live corridor. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_megaproject",
+      "branch": "main",
+      "head_sha": "6dad892d62f2d42bb4323f857e0ffaea09ed6f8e",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Knowledge graph edges are conceptual unless linked to validated source, build artifact, measured experiment or verified integration. Retain canonical; claims remain evidence-gated.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_cold_nuclear",
+      "branch": "federation-v3-domain-expansion",
+      "head_sha": "1930fb92eee01294d1ded8ceac66086fd59a93aa",
+      "purpose": "Federation V3: bind LENR/transmutation work to reproducible falsification workflow",
+      "branch_state": "#1 ready",
+      "open_pr_numbers": [
+        1
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "PR base=main; Require exact-head CI and evidence review. Extraordinary physical claims require original measurement data, calibrated instruments, uncertainty budget, controls and independent replication; simulation/hypothesis must remain labeled. Retain candidate; require independent review before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_cold_nuclear",
+      "branch": "main",
+      "head_sha": "0218157a8197c3b9e1c300cb433b805e3a3ea3fb",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry, tags and consumers. Extraordinary physical claims require original measurement data, calibrated instruments, uncertainty budget, controls and independent replication; simulation/hypothesis must remain labeled. Retain canonical; claims remain evidence-gated.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md"
     }
   ]
 }
