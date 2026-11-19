@@ -123,7 +123,7 @@
 ## Evidence limits
 
 - This recheck confirms **branch names and counts**, not that every branch HEAD SHA remained unchanged after the census was generated.
-- HEAD SHAs and within-repository duplicate-HEAD counts above are carried from the canonical 2026-11-20 census; they were not individually re-fetched in this name-only recheck.
+- All 1,294 branch refs now have non-historical SHA provenance. A separate live compare-to-main ancestry result exists for 210 refs; 1,084 still need ancestry comparison.
 - Branch protection flags are also census values, not a fresh branch-protection API recheck. The census records 0/1,292 historical refs protected; two new refs are NOT_CHECKED; this should be revalidated with the appropriate administrative permission before changing governance policy.
 - This report does not classify branches as mergeable, obsolete or safe to delete. Open PR relationships, tags, release references, workflow usage and cross-repository references must be checked before any cleanup.
 - No branch, commit, PR, workflow, setting or source file was modified during the recheck.
@@ -136,4 +136,4 @@
 - [Open PR / branch map](../registry/OPEN_PR_BRANCH_MAP_2026-11-20.json)
 - [High-branch repository / BQG audit](HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
 
-**Conclusion:** the 1,294-ref census is fully reconciled at the branch-name/count level across all 92 currently accessible repositories. Exact HEAD and protection-state refresh remains a separate evidence task.
+**Conclusion:** the 1,294-ref census is fully reconciled at the branch-name/count level across all 92 currently accessible repositories. SHA provenance refresh is complete for all 1,294 refs; ancestry comparison remains open for 1,084 refs. Protection-state refresh remains separate.
