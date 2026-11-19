@@ -4,43 +4,49 @@
 
 ## Live governance snapshot — 2026-11-20
 
-| Показатель | Текущее значение |
-|---|---:|
-| Доступные owner repositories | **92** |
-| Public / Private / Archived | **16 / 76 / 0** |
-| Default branch `main` | **92/92** |
-| Branch refs | **1294** |
-| Unique HEADs (sum within repositories) | **1208** |
-| Branch SHA with live provenance | **1294** |
-| Branches with ancestry comparison to main | **210** |
-| Branches still needing ancestry comparison | **1,084** |
-| Currently open PRs discovered repository-by-repository | **549** |
-| PRs with full metadata enriched in this pass | **18** |
-| PRs still discovery-only | **531** |
-| Security blockers | **4 P0 + 1 P1** |
-| E2E-tested federation edges | **0** |
+**Snapshot source:** authenticated GitHub owner inventory and live GitHub REST branch endpoints. This is a point-in-time evidence set, not a claim that all code is production-ready.
 
-**Interpretation:** 92 repositories are an inventory of assets, not 92 production systems. A branch name or PR title is not proof of implementation. Adapter presence is not E2E execution. CI is green only when the exact HEAD has completed test steps and retained evidence.
+| Indicator | Verified value |
+|---|---:|
+| Accessible owner repositories | **92 / 92** |
+| Public / Private / Archived | **16 / 76 / 0** |
+| Default branch main | **92 / 92** |
+| Live branch refs | **1,294** |
+| Main refs / non-main refs | **92 / 1,202** |
+| Unique branch HEADs summed within repositories | **1,208** |
+| Repeated refs to an existing HEAD in the same repository | **86** |
+| Branch SHA values re-fetched from GitHub | **1,294 / 1,294** |
+| Branches reported protected by GitHub API | **0 / 1,294** |
+| Fresh ancestry comparisons against current main in this pass | **15** |
+| Non-main ancestry comparisons pending in this ledger | **1187** |
+| Current global open-PR search results returned | **100 (search cap; not exhaustive)** |
+| Priority PR metadata inspected individually | **6** |
+
+**Important:** all 1,294 branch refs have a live SHA and protection value in the new registry. Two large repositories required page 2 because their first page contained 100 refs: synergy_ai_language (129 total) and synergy_binary_quantum_theory (178 total). The prior census count of 1,294 is now independently reproduced by this full paginated pass.
 
 ## Canonical registries and audit reports
 
 - [Owner repository inventory JSON](registry/repos.json)
-- [Branch inventory JSON](registry/BRANCH_INVENTORY_2026-11-20.json)
-- [Branch inventory CSV](registry/BRANCH_INVENTORY_2026-11-20.csv)
-- [Live branch audit JSON — 60 repositories / 1,077 records](registry/LIVE_BRANCH_AUDIT_2026-11-20.json)
-- [Open PR map JSON — 549 current discoveries](registry/OPEN_PR_BRANCH_MAP_2026-11-20.json)
-- [Open PR map CSV](registry/OPEN_PR_BRANCH_MAP_2026-11-20.csv)
+- [Canonical branch inventory JSON — refreshed from all 1,294 live refs](registry/BRANCH_INVENTORY_2026-11-20.json)
+- [Canonical branch inventory CSV](registry/BRANCH_INVENTORY_2026-11-20.csv)
+- [Live branch SHA registry — all 92 repositories](registry/BRANCH_SHA_LIVE_RECHECK_2026-11-20.json)
+- [Branch ancestry comparisons — incremental live ledger](registry/BRANCH_ANCESTRY_COMPARE_2026-11-20.json)
+- [Branch inventory report](docs/BRANCH_INVENTORY_2026-11-20.md)
+- [Live SHA recheck report](docs/BRANCH_SHA_LIVE_RECHECK_2026-11-20.md)
+- [Open PR branch map](registry/OPEN_PR_BRANCH_MAP_2026-11-20.json)
 - [Live reconciliation report](docs/LIVE_RECONCILIATION_2026-11-20.md)
 - [Security blockers](https://github.com/Shtenco/synergy_system/blob/main/registry/SECURITY_BLOCKERS.json)
-- [Repository/interface registry — 76 components](https://github.com/Shtenco/synergy_system/blob/main/registry/REPOSITORY_INTERFACES.json)
-- [Integration gaps — 39 contract families plus 1 uncontracted component](https://github.com/Shtenco/synergy_system/blob/main/registry/INTEGRATION_GAPS.json)
+- [Repository/interface registry](https://github.com/Shtenco/synergy_system/blob/main/registry/REPOSITORY_INTERFACES.json)
+- [Integration gaps](https://github.com/Shtenco/synergy_system/blob/main/registry/INTEGRATION_GAPS.json)
 
-### Provenance limitations
+### Evidence and coverage boundaries
 
-- 1,077 branch SHA values have live audit/PR metadata provenance. The remaining 211 SHA values are retained from the dated census and were not individually re-fetched in this pass.
-- Protection state for the two new cognitive-memory refs is unknown; old protection values remain from the prior census.
-- The 549 PR discovery records contain full head/base metadata for 8 priority PRs; the other 198 remain explicitly marked `DISCOVERY_ONLY_GET_PR_INFO_PENDING`.
-- The old 91-repository and 548-PR reports remain historical artifacts; they are not current totals.
+- The live SHA registry is complete for branch names, HEAD SHA and GitHub-reported protection state across all 92 repositories.
+- The ancestry ledger currently contains 15 freshly compared non-main refs. Remaining refs are not silently classified; they stay pending until compare_commits(main, branch) completes.
+- The canonical branch inventory preserves prior ancestry metadata only where branch HEADs are unchanged. Changed HEADs are marked NOT_COMPARED until rechecked.
+- The global PR search endpoint returned 100 records in this pass and is capped; that is not an exhaustive owner-wide PR count. Full per-repository PR enumeration and metadata enrichment remain open work.
+- CI is green only when the exact HEAD has a completed workflow with successful test/build steps and inspectable evidence. A queued run, a failed pre-step job, or an empty step list is not a passing test.
+- Branch protection is currently reported false for every ref by the live branch endpoint. This does not replace a full repository ruleset / branch-protection policy audit.
 
 ## Architecture ownership
 
