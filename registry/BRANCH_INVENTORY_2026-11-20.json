@@ -2709,15 +2709,23 @@
           "name": "feat/auto-company-v2",
           "sha": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 16,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "7eea20b7f113f745801d3f2bc3cb8e993eb5d9eb"
         },
         {
           "name": "main",
           "sha": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7"
         }
       ]
     },
@@ -3937,15 +3945,23 @@
           "name": "feature/rwkv7-original-weights",
           "sha": "dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 9,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "4af69aa957fc91daea979789e71eef79816788b3"
         },
         {
           "name": "main",
           "sha": "5f5d2a44610e9d2dfd5413bed6726954e4d0e568",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "5f5d2a44610e9d2dfd5413bed6726954e4d0e568"
         }
       ]
     },
@@ -7498,8 +7514,12 @@
           "name": "integration/meta-api-mcp-v0.1",
           "sha": "74cf1e9ada1b9d7dd6b16bb64fa62da58f5f2c5a",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 7,
+          "main_ahead_of_branch": 3,
+          "merge_base_sha": "c79ed24195072eb0d10724c71cca297e12aba898"
         },
         {
           "name": "main",
@@ -9184,15 +9204,23 @@
           "name": "feat/stcp-shttps-remote-mcp-v2-20260925",
           "sha": "f3eda6bb7cdfd5478f9594dad4ee5dd91381e9b8",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 60,
+          "main_ahead_of_branch": 6,
+          "merge_base_sha": "a56718d75995fa6e88aa74d88188c0a6f297ec4b"
         },
         {
           "name": "main",
           "sha": "f7207aa8082c78399e4130f4eaf29ff8984c5413",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "f7207aa8082c78399e4130f4eaf29ff8984c5413"
         }
       ]
     },
@@ -9960,22 +9988,34 @@
           "name": "feat/growth-capital-funnels-v4-20261024",
           "sha": "77a717b10eeb72f3f478f8a6b08aca238b5c61bc",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 24,
+          "main_ahead_of_branch": 3,
+          "merge_base_sha": "bbd5320d7f21120fdb92b6a4662680700fd39326"
         },
         {
           "name": "feat/unified-v15-integration-2026-10-27",
           "sha": "bd0814ef7f058dd950f3714448dcf11b257c62da",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 3,
+          "merge_base_sha": "bbd5320d7f21120fdb92b6a4662680700fd39326"
         },
         {
           "name": "main",
           "sha": "4d1b67fd00c4a1584c8428ef71d17c8b707c1703",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "4d1b67fd00c4a1584c8428ef71d17c8b707c1703"
         }
       ]
     },
