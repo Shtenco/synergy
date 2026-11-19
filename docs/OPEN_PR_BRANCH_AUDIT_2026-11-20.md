@@ -1,20 +1,20 @@
 # SYNERGY — Open PR / Branch Association Audit
 
 **Snapshot:** 2026-11-20  
-**Scope:** repository-scoped open PR discovery across all 92 owner repositories.
+**Scope:** one repository-scoped `is:open` search for each of the 92 owner repositories.
 
 ## Current discovery
 
-- Repositories queried: **92/92**
-- Currently open PRs discovered: **206**
-- PRs with live `get_pr_info` enrichment in the priority pass: **14**
-- PRs still marked `DISCOVERY_ONLY_GET_PR_INFO_PENDING`: **192**
+- Repositories queried individually: **92/92**
+- Currently open PRs discovered: **549**
+- PRs with live `get_pr_info` enrichment in the priority pass: **18**
+- PRs still marked `DISCOVERY_ONLY_GET_PR_INFO_PENDING`: **531**
 
-The previous 548-row PR map was a dated snapshot and is superseded as a current total. It must not be used as the present open-PR count.
+The 549 count is the sum of individual repository searches. Earlier multi-repository search batches returned incomplete results and are not used as the final count. The older 548-row map was a previous snapshot; one current PR is now present in the 92nd repository.
 
 ## Metadata coverage
 
-For 14 priority PRs, the canonical JSON/CSV includes current title, state, draft flag, mergeability, head/base branches, head/base SHAs, commit count and changed-file/addition/deletion counts. For the remaining 192 PRs only repository, number, title and URL are recorded; no head/base SHA, draft state, review or CI result is inferred.
+For 18 priority PRs, the canonical JSON/CSV includes title, state, draft flag, mergeability, head/base branches, head/base SHAs, commit count and change counts. For the other 531 PRs, only repository, number, title and URL are recorded; no head/base SHA, draft state, review or CI result is inferred.
 
 Priority PRs enriched:
 - `synergy_hierarchical_cognitive_memory_architecture#1`
@@ -28,6 +28,9 @@ Priority PRs enriched:
 - `synergy_maps#9`
 - `synergy_project#2`
 - `synergy_pay_system#24`
+- `synergy_financial_os#39`
+- `synergy_usds#6, #9`
+- `synergy_agentic_ai_economy#10`
 
 ## Known stacked PR chains and blockers
 
@@ -37,16 +40,11 @@ Priority PRs enriched:
 - `synergy_agi_autopilot#24`: based on `hardening/m12-independent-verification-v1`; conditional dispatch and uncertain-state fencing are implemented in source, but hosted CI has no executed steps.
 - `synergy_maps#9` and `synergistic_economics#17`: target feature branches rather than `main`; base ancestry and CI must be reviewed before promotion.
 - `synergy_project#2`: still describes an 89-repository assessment, is Draft and reports `mergeable=false`; reconcile against 92 current repositories.
+- `synergy_usds#6`: open non-Draft security PR; removal of committed deployer key and external key migration/rotation are still manual blockers.
 
 ## CI and review policy
 
-A PR is not merge-ready because GitHub reports `mergeable=true`. Require:
-1. exact head SHA;
-2. current base SHA and merge-base/ancestry;
-3. reviews and unresolved review threads;
-4. completed exact-head CI with executed steps and retained logs/artifacts;
-5. security and authority-boundary review;
-6. explicit disposition for stacked dependencies.
+A PR is not merge-ready because GitHub reports `mergeable=true`. Require exact head/base SHA, reviews, unresolved threads, completed exact-head CI with executed steps, security review and explicit disposition for stacked dependencies.
 
 A workflow job with `steps=null` is classified as **execution evidence unavailable**, not as a test assertion failure. A cancelled or queued run is not a pass.
 
