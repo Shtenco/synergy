@@ -9877,71 +9877,111 @@
           "name": "portal-v18-top",
           "sha": "463d0f218d751c3e8d0906a87c76bf0aae80fda9",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 98,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "portal-v19-polittech-v14-copy",
           "sha": "463d0f218d751c3e8d0906a87c76bf0aae80fda9",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 98,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "portal-v19-polittech-v14-max",
           "sha": "f6582f384426254a324dbd4f2eab86edb9f25fae",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 119,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "portal-v19-polittech-v14",
           "sha": "c61290539779f4ef0892c7cfc7d8e174c63f2b98",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 116,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "research/midas-v242-bybit-top30",
           "sha": "72acf14938b0e1ce718102d6eafe3ff9e9a03a17",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 8,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "sinergy-smm-v3-product-v31-copy",
           "sha": "012ccb31d08b2054ea35cfc764ba6c43ecd52645",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 74,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "sinergy-smm-v3-product-v31-rebuild",
           "sha": "1efe815ef2f2ec35cc6ce84d578fbaa3e6aadc19",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 101,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "sinergy-smm-v3-product-v31",
           "sha": "90a07da12e2b2f956abec466700bfc9b199eddee",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 80,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "sinergy-smm-v3-release-gates",
           "sha": "012ccb31d08b2054ea35cfc764ba6c43ecd52645",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 74,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "sinergy-smm-v33-finance-ux",
           "sha": "e858e8093adeefe2f2b8c0257af217cc2585b817",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 111,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "temp-do-not-use",
