@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 92,
-  "pending_comparisons": 1110,
+  "completed_comparisons": 99,
+  "pending_comparisons": 1103,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -1199,6 +1199,97 @@
       "ahead_by": 535,
       "behind_by": 6,
       "total_commits": 535,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/m12-workforce-lease-fencing",
+      "head_sha": "337ca67415f2856da4d31ffa03517e6f40cfdab2",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 498,
+      "behind_by": 6,
+      "total_commits": 498,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/m12-workforce-lease-fencing-rebased-20261116",
+      "head_sha": "afa27227fa6316384d18517eb580f8a59dd37b4c",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 533,
+      "behind_by": 6,
+      "total_commits": 533,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/m12-workforce-lease-fencing-v2",
+      "head_sha": "afa27227fa6316384d18517eb580f8a59dd37b4c",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 533,
+      "behind_by": 6,
+      "total_commits": 533,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/mission-queue-lease-fencing",
+      "head_sha": "8076ce76f444044e2075fe0ea409f5f25893dd2e",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 550,
+      "behind_by": 6,
+      "total_commits": 550,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "integration/deepseek-headless-stdin-v1",
+      "head_sha": "37e175d35deb4a4f8ededf8f7114b9a988fd9720",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 553,
+      "behind_by": 6,
+      "total_commits": 553,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "integration/longhorizon-deepseek-bridge-v1",
+      "head_sha": "83937772ee71602242c530edb2be8e6b4ac29813",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 575,
+      "behind_by": 6,
+      "total_commits": 575,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "integration/longhorizon-deepseek-bridge-v2",
+      "head_sha": "d82a3dd59d61c9faf22ea1fabd4bb63bdac82f8f",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 549,
+      "behind_by": 6,
+      "total_commits": 549,
       "observed_at": "2026-11-20"
     }
   ]
