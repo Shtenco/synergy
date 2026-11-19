@@ -9437,57 +9437,89 @@
           "name": "audit/hybrid-max-tvl-v1-20260806",
           "sha": "5d55e32382356843469f4726c3a7e0f0dc5910b8",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "audit/oracle-tvl-fork-v3-20260806",
           "sha": "e7b1873cb55c93e550e556dc81fa263b88243116",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 3,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "audit/syna-v5-fixed-compile-20260804",
           "sha": "60b3ccabcbcf92c905f9a302d1e01ededd6b257d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 9,
+          "main_ahead_of_branch": 9,
+          "merge_base_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c"
         },
         {
           "name": "build/sinergy-finance-apk",
           "sha": "d312f454b62f5e423d78b0318f734a1a55827cb7",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 87,
+          "main_ahead_of_branch": 9,
+          "merge_base_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c"
         },
         {
           "name": "build/sinergy-finance-v3-crypto-binary",
           "sha": "735a02c4f7cdbe4c59f7975860579d55ce6c9888",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 81,
+          "main_ahead_of_branch": 9,
+          "merge_base_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c"
         },
         {
           "name": "build/sinergy-finance-v3-crypto-real",
           "sha": "d33e02ba6de9435f1b4440ca22060136afe6112c",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 9,
+          "merge_base_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c"
         },
         {
           "name": "build/sinergy-finance-v31-wallet-multicurrency",
           "sha": "30cb27722179bd813f4eeed5d55541006b1565a0",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 155,
+          "main_ahead_of_branch": 9,
+          "merge_base_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c"
         },
         {
           "name": "build/sinergy-myfinance-v3-ci",
           "sha": "03a754bdfd31cddb1daa39f53e982d9c1e81c3d7",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 80,
+          "main_ahead_of_branch": 9,
+          "merge_base_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c"
         },
         {
           "name": "build/sinergy-myfinance-v3-final",
@@ -9549,15 +9581,23 @@
           "name": "build-sinergy-smm-v12",
           "sha": "57e30c897662dda4d091edbf31c6b173b1bc812d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 2,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "build-sinergy-smm-v20-full",
           "sha": "530f6ba1aaca5420eb57e367e25ab1686d651d8d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 25,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         },
         {
           "name": "ci/sinergy-finance-v3-crypto-build-1",
