@@ -1,0 +1,22 @@
+{
+  "schema": "synergy.github-pr-aggregate.v1",
+  "owner": "Shtenco",
+  "observed_at": "2026-11-20",
+  "source": "GitHub Search Issues API with is:pr qualifiers; total_count",
+  "totals": {
+    "open": 549,
+    "closed": 230,
+    "all": 779
+  },
+  "repository_scope": {
+    "repositories": 92,
+    "default_branch": "main"
+  },
+  "note": "Aggregate counts are exhaustive search totals for the query snapshot. This file does not claim all 779 PRs have individually enriched metadata, branch dependency graphs, reviews, or CI evidence.",
+  "priority_repository": {
+    "repository": "Shtenco/synergy_triangle_money_system",
+    "open_prs": 8,
+    "closed_prs": 0,
+    "all_open_prs_individually_inspected": true
+  }
+}
