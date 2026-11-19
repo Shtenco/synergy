@@ -5679,6 +5679,75 @@
           "url": "https://github.com/Shtenco/synergy_messenger/pull/2"
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_apps",
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 4,
+          "title": "feat: W0 PostgreSQL security gate and W1–W4 restricted local reference loops",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feat/w0-w2-safe-pilot-20261112",
+          "head_sha": "6669e1cbb2e8e52d742631cf62903050cf191bc2",
+          "base_branch": "fix/w0-fail-closed-permissions-20261112",
+          "updated_at": "2026-11-15T16:37:06Z",
+          "url": "https://github.com/Shtenco/synergy_apps/pull/4"
+        },
+        {
+          "number": 2,
+          "title": "fix(w0): fail closed outside dev mode and revoke duplicate grants",
+          "state": "open",
+          "draft": true,
+          "head_branch": "fix/w0-fail-closed-permissions-20261112",
+          "head_sha": "de76a6e5efde6315dbae23fa1fbafbf7bb759c42",
+          "base_branch": "analysis/all-850-app-ideas",
+          "updated_at": "2026-11-12T10:21:33Z",
+          "url": "https://github.com/Shtenco/synergy_apps/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "SYNERGY Apps MASTER: FINAL 500, 92 engines, 61 store apps and canonical registries",
+          "state": "open",
+          "draft": false,
+          "head_branch": "integration/synergy-apps-master-2026",
+          "head_sha": "60c634b01a6a5777f3712c15683ba90c0c4f17e5",
+          "base_branch": "main",
+          "updated_at": "2026-09-17T05:56:40Z",
+          "url": "https://github.com/Shtenco/synergy_apps/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_trader",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_quantlab",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_riskguard",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_market_graph",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_midas_institutional",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_relative_value",
+      "open_pr_count": 0,
+      "pull_requests": []
     }
   ]
 }
