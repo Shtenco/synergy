@@ -1,47 +1,49 @@
 {
   "schema_version": "0.2.0",
-  "generated_at": "2026-10-08",
+  "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "umbrella_repository": "Shtenco/synergy",
   "project_target": "https://github.com/users/Shtenco/projects/3",
   "inventory": {
-    "repositories_total": 81,
-    "scope": "all repositories accessible to the installed GitHub App",
+    "repositories_total": 91,
+    "scope": "91 repositories currently visible to the installed GitHub App; 81-repository deep M0 baseline plus 10 later inventory additions, with maturity and audit status explicitly distinguished.",
     "domains": {
-      "presentation": 2,
+      "presentation": 3,
       "trading-quant": 23,
-      "compute-os": 9,
-      "agi-agentic": 10,
-      "finance-economy": 14,
-      "apps-interface": 6,
+      "compute-os": 11,
+      "agi-agentic": 11,
+      "finance-economy": 16,
+      "apps-interface": 9,
       "science-research": 2,
       "blockchain-protocol": 4,
       "research-other": 1,
       "architecture-governance": 3,
-      "protocol-transport": 4,
+      "protocol-transport": 5,
       "graph-research": 1,
       "research-strategy": 1,
       "search-growth": 1
     },
     "maturity": {
-      "PRESENTATION_CANDIDATE": 3,
+      "PRESENTATION_CANDIDATE": 4,
       "LEGACY_RND": 9,
       "SECURITY_REVIEW": 1,
       "CANDIDATE": 32,
-      "RND": 4,
+      "RND": 5,
       "SECURITY_BLOCKED": 2,
       "ACTIVE_EXPERIMENTAL": 5,
       "RND_LOCAL_TESTING": 1,
-      "STUB_SPEC_ONLY": 14,
+      "STUB_SPEC_ONLY": 20,
       "RND_SCIENCE": 1,
       "RND_FEDERATION": 1,
       "MODEL_SPEC_READY": 1,
       "ARCHITECTURAL_MASTER": 3,
       "HARDENED_ALPHA": 1,
-      "RND_CANDIDATE": 1,
-      "RND_SIMULATION": 1,
+      "RND_CANDIDATE": 2,
+      "RND_SIMULATION": 2,
       "ACTIVE_RESEARCH": 1
-    }
+    },
+    "branch_refs": 1292,
+    "branch_inventory": "registry/BRANCH_INVENTORY_2026-11-20.json"
   },
   "graph_model": [
     "repo",
@@ -291,9 +293,9 @@
       }
     },
     {
-      "id": "multi_threaded_trading_robot_with_machine_learning_python",
-      "repository": "Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
-      "url": "https://github.com/Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+      "id": "shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "url": "https://github.com/Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
       "visibility": "public",
       "archived": false,
       "size_kb": 45,
@@ -671,9 +673,9 @@
       }
     },
     {
-      "id": "binary_quantum_theory",
-      "repository": "Shtenco/binary_quantum_theory",
-      "url": "https://github.com/Shtenco/binary_quantum_theory",
+      "id": "synergy_binary_quantum_theory",
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "url": "https://github.com/Shtenco/synergy_binary_quantum_theory",
       "visibility": "public",
       "archived": false,
       "size_kb": 6125,
@@ -1186,7 +1188,7 @@
         "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
         "Shtenco/swap_arbitrage_metatrader_5",
         "Shtenco/global_liquidity_dataminer",
-        "Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+        "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
         "Shtenco/quantum-trading_metatrader5"
       ],
       "activity": {
@@ -2511,9 +2513,9 @@
       }
     },
     {
-      "id": "epstein_network",
-      "repository": "Shtenco/epstein_network",
-      "url": "https://github.com/Shtenco/epstein_network",
+      "id": "synergy_epstein_network",
+      "repository": "Shtenco/synergy_epstein_network",
+      "url": "https://github.com/Shtenco/synergy_epstein_network",
       "visibility": "private",
       "archived": false,
       "size_kb": 1185,
@@ -2921,6 +2923,368 @@
           "latest commit"
         ]
       }
+    },
+    {
+      "id": "synergy_ai_llm_rwkv",
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "url": "https://github.com/Shtenco/synergy_ai_llm_rwkv",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 40,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "compute-os",
+      "node_type": "model-compression-research",
+      "maturity": "RND",
+      "purpose": "RWKV-7 checkpoint provenance and experimental low-bit quantization research; current main is primarily workflow/documentation, with implementation on a feature branch.",
+      "capabilities": [
+        "model-weights",
+        "checkpoint-provenance",
+        "quantization-research"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "UNVERIFIED",
+        "basis": "added from live GitHub inventory on 2026-11-13; commit activity not independently classified in this update"
+      },
+      "risks": [
+        "mainline does not establish full inference or quality-preserving compression"
+      ],
+      "audit": {
+        "date": "2026-11-13",
+        "evidence": [
+          "live repository metadata",
+          "default-branch tree",
+          "README"
+        ],
+        "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "synergy_ai_economic",
+      "repository": "Shtenco/synergy_ai_economic",
+      "url": "https://github.com/Shtenco/synergy_ai_economic",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 438,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "finance-economy",
+      "node_type": "economic-model-documentation",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Economic architecture and scenario visualization; current main contains documentation and visual assets, not an executable economic engine.",
+      "capabilities": [
+        "economic-model-documentation",
+        "scenario-visualization"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "UNVERIFIED",
+        "basis": "added from live GitHub inventory on 2026-11-13; commit activity not independently classified in this update"
+      },
+      "risks": [
+        "no executable model in current main"
+      ],
+      "audit": {
+        "date": "2026-11-13",
+        "evidence": [
+          "live repository metadata",
+          "default-branch tree",
+          "README"
+        ],
+        "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "synergy.github.io",
+      "repository": "Shtenco/synergy.github.io",
+      "url": "https://github.com/Shtenco/synergy.github.io",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 1517,
+      "default_branch": "main",
+      "ecosystem_relation": "presentation",
+      "domain": "presentation",
+      "node_type": "web-portal",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "purpose": "Public SYNERGY web portal and frontend integration surface across product pages.",
+      "capabilities": [
+        "public-web-portal",
+        "product-navigation",
+        "static-ui"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "UNVERIFIED",
+        "basis": "added from live GitHub inventory on 2026-11-13; commit activity not independently classified in this update"
+      },
+      "risks": [
+        "frontend source does not prove backend services or production business workflows"
+      ],
+      "audit": {
+        "date": "2026-11-13",
+        "evidence": [
+          "live repository metadata",
+          "default-branch tree",
+          "README"
+        ],
+        "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "synergy_meta_api",
+      "repository": "Shtenco/synergy_meta_api",
+      "url": "https://github.com/Shtenco/synergy_meta_api",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 50,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "protocol-transport",
+      "node_type": "api-gateway-research",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Universal API/MCP gateway design; current main is README-only while a local prototype exists on an integration branch.",
+      "capabilities": [
+        "api-catalogue-design",
+        "mcp-gateway-research",
+        "policy-bound-tool-execution"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "UNVERIFIED",
+        "basis": "added from live GitHub inventory on 2026-11-13; commit activity not independently classified in this update"
+      },
+      "risks": [
+        "branch-only prototype; no production multi-tenant authorization or deployed gateway proven"
+      ],
+      "audit": {
+        "date": "2026-11-13",
+        "evidence": [
+          "live repository metadata",
+          "default-branch tree",
+          "README"
+        ],
+        "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "synergy_ai_workspace",
+      "repository": "Shtenco/synergy_ai_workspace",
+      "url": "https://github.com/Shtenco/synergy_ai_workspace",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 2201,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "apps-interface",
+      "node_type": "desktop-workspace-research",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Local AI workspace concept; README documents Python/Tauri implementation on non-main branches.",
+      "capabilities": [
+        "local-workspace-design",
+        "task-lead-finance-ui"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "UNVERIFIED",
+        "basis": "added from live GitHub inventory on 2026-11-13; commit activity not independently classified in this update"
+      },
+      "risks": [
+        "current main contains README only; desktop release and GUI E2E not confirmed"
+      ],
+      "audit": {
+        "date": "2026-11-13",
+        "evidence": [
+          "live repository metadata",
+          "default-branch tree",
+          "README"
+        ],
+        "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "synergistic_economics",
+      "repository": "Shtenco/synergistic_economics",
+      "url": "https://github.com/Shtenco/synergistic_economics",
+      "visibility": "public",
+      "archived": false,
+      "size_kb": 2031,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "finance-economy",
+      "node_type": "economic-simulation",
+      "maturity": "RND_SIMULATION",
+      "purpose": "Stock-flow consistent, cellular coordination and physical-financial balance economy prototypes with tests and research evidence.",
+      "capabilities": [
+        "stock-flow-consistent-model",
+        "cellular-coordination",
+        "physical-financial-balance",
+        "economic-simulation"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "UNVERIFIED",
+        "basis": "added from live GitHub inventory on 2026-11-13; commit activity not independently classified in this update"
+      },
+      "risks": [
+        "preliminary simulation results require independent replication and calibration"
+      ],
+      "audit": {
+        "date": "2026-11-13",
+        "evidence": [
+          "live repository metadata",
+          "default-branch tree",
+          "README"
+        ],
+        "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "synergy_metaverse",
+      "repository": "Shtenco/synergy_metaverse",
+      "url": "https://github.com/Shtenco/synergy_metaverse",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 399,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "apps-interface",
+      "node_type": "metaverse-concept",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Metaverse concept repository; current main contains README only.",
+      "capabilities": [
+        "metaverse-concept"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "UNVERIFIED",
+        "basis": "added from live GitHub inventory on 2026-11-13; commit activity not independently classified in this update"
+      },
+      "risks": [
+        "no executable implementation in current main"
+      ],
+      "audit": {
+        "date": "2026-11-13",
+        "evidence": [
+          "live repository metadata",
+          "default-branch tree",
+          "README"
+        ],
+        "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "synergy_maps",
+      "repository": "Shtenco/synergy_maps",
+      "url": "https://github.com/Shtenco/synergy_maps",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 0,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "apps-interface",
+      "node_type": "maps-concept",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Maps concept repository; current main contains README only.",
+      "capabilities": [
+        "maps-concept"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "UNVERIFIED",
+        "basis": "added from live GitHub inventory on 2026-11-13; commit activity not independently classified in this update"
+      },
+      "risks": [
+        "no executable implementation in current main"
+      ],
+      "audit": {
+        "date": "2026-11-13",
+        "evidence": [
+          "live repository metadata",
+          "default-branch tree",
+          "README"
+        ],
+        "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "shtenco_micro_ai",
+      "repository": "Shtenco/shtenco_micro_ai",
+      "url": "https://github.com/Shtenco/shtenco_micro_ai",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 32,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "compute-os",
+      "node_type": "local-ai-inference-runtime",
+      "maturity": "RND_CANDIDATE",
+      "purpose": "Small local instruction-model runtime using the MNN-Pocket-0.3B INT4 checkpoint and Alibaba MNN; current main contains downloader/build/query/benchmark tooling, with model weights downloaded externally.",
+      "capabilities": [
+        "local-model-inference",
+        "MNN-runtime",
+        "INT4-model-download",
+        "benchmarking"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "main repository inspected 2026-11-20; branch inventory contains one branch"
+      },
+      "risks": [
+        "model weights are external and not stored in Git",
+        "main inference workflow failed on inspected main SHA; log cause unavailable",
+        "no device-specific throughput or accuracy qualification established"
+      ],
+      "audit": {
+        "date": "2026-11-20",
+        "evidence": [
+          "live repository metadata",
+          "main branch tree",
+          "README",
+          "branch inventory"
+        ],
+        "scope": "main-source and inventory pass; hardware qualification pending"
+      }
+    },
+    {
+      "id": "synergy_long_term_harness",
+      "repository": "Shtenco/synergy_long_term_harness",
+      "url": "https://github.com/Shtenco/synergy_long_term_harness",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 225,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "agi-agentic",
+      "node_type": "long-horizon-agent-harness-design",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Long-horizon agent memory and provider-routing harness; current main contains README only while implementation work is held on non-main branches.",
+      "capabilities": [
+        "long-horizon-agent-evaluation-design",
+        "memory-harness-design",
+        "provider-routing-research"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "repository created 2026-11-18; non-main implementation branches present"
+      },
+      "risks": [
+        "main contains README only",
+        "implementation is branch-only and must not be treated as main runtime",
+        "draft implementation PR CI failed; production execution not established"
+      ],
+      "audit": {
+        "date": "2026-11-20",
+        "evidence": [
+          "live repository metadata",
+          "main branch tree",
+          "README",
+          "branch inventory"
+        ],
+        "scope": "main-source and inventory pass; branch promotion and runtime validation pending"
+      }
     }
   ],
   "edges": [
@@ -3086,7 +3450,7 @@
     },
     {
       "from": "Shtenco/synergy_midas_ai",
-      "to": "Shtenco/multi_threaded_trading_robot_with_machine_learning_python",
+      "to": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
       "type": "declared-or-documented-reference"
     },
     {
@@ -3455,12 +3819,12 @@
       "type": "declared-or-documented-reference"
     },
     {
-      "from": "Shtenco/epstein_network",
+      "from": "Shtenco/synergy_epstein_network",
       "to": "Shtenco/synergy_megaproject",
       "type": "declared-or-documented-reference"
     },
     {
-      "from": "Shtenco/epstein_network",
+      "from": "Shtenco/synergy_epstein_network",
       "to": "Shtenco/synergy_system",
       "type": "declared-or-documented-reference"
     },
