@@ -63,7 +63,8 @@ The canonical artifacts are:
 - [Live branch audit — legacy MT5 quantum, vision and swap research (6 branches)](docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_I_2026-11-20.md)
 - [Live branch audit — legacy FX arbitrage, liquidity and 3D market research (13 branches / 1 open PR)](docs/LIVE_BRANCH_AUDIT_LEGACY_MT5_RESEARCH_II_2026-11-20.md)
 - [Live branch audit — legacy robot, MIDAS migration and MIDAS Lite (23 branches / 3 open PRs)](docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md)
-- [Consolidated live branch registry — JSON](registry/LIVE_BRANCH_AUDIT_2026-11-20.json) — 1,002 branch records / 47 repositories
+- [Live branch audit — research, economic master and trader (31 branches / 4 open PRs)](docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md)
+- [Consolidated live branch registry — JSON](registry/LIVE_BRANCH_AUDIT_2026-11-20.json) — 1075 branch records / 59 repositories
 - [Consolidated live branch registry — CSV](registry/LIVE_BRANCH_AUDIT_2026-11-20.csv) — SHA, purpose, PR, CI evidence and disposition
 - [High-branch repository / BQG evidence audit](docs/HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
 - [Eight-repository source audit delta](docs/REPOSITORY_AUDIT_DELTA_2026-11-20.md) — trading terminal, NEXUS/OLGA, Autopilot, Investment Committee, Market Graph, Science Agent, AI Coder and AGI Trader
