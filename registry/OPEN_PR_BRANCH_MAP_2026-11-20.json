@@ -3,8 +3,8 @@
   "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "repository_count": 92,
-  "open_pr_count": 206,
-  "scope": "Current open PR discovery across all 92 owner repositories. Search discovery is complete by repository group; head/base SHA, draft state, reviews and CI are not inferred. Enrich each PR with get_pr_info and exact-head checks before merge decisions.",
+  "open_pr_count": 207,
+  "scope": "Current open PR discovery performed one repository at a time across all 92 owner repositories. Discovery records contain title/number/URL; per-PR get_pr_info and exact-head CI are separately tracked.",
   "metadata_coverage": "DISCOVERY_ONLY for all entries unless subsequently enriched; old 548-row file was a dated historical snapshot and is superseded.",
   "repositories": [
     {
@@ -15,13 +15,13 @@
           "number": 1,
           "title": "Preserve historical personal research provenance",
           "state": "open",
+          "url": "https://github.com/Shtenco/shtenco.github.io/pull/1",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/shtenco.github.io/pull/1",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         }
       ]
@@ -53,8 +53,22 @@
     },
     {
       "repository": "Shtenco/3D_bars_market_structure",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Temporary TURBO Stage-1F public QEMU runner",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/3D_bars_market_structure/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
