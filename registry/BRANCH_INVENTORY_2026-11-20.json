@@ -6647,9 +6647,9 @@
       "branches": [
         {
           "name": "feat/hierarchical-cognitive-memory-v1",
-          "sha": "37bebe6e8d75444ced7e610b821664892eabe0f8",
+          "sha": "2d6d7872653b9d525a74046e992a843b2a905d57",
           "protected": null,
-          "head_sha_source": "LIVE_PR_METADATA",
+          "head_sha_source": "LIVE_PR_METADATA_2026-11-20",
           "head_sha_observed_at": "2026-11-20"
         },
         {
@@ -7868,9 +7868,9 @@
         },
         {
           "name": "research/uv-lwc-duv1-model-v0.1",
-          "sha": "df6785a4391d2fa84492d8a7dc934caaa16c315c",
+          "sha": "77fcd37797dd73720d82f67f1ed67265bbeedccb",
           "protected": false,
-          "head_sha_source": "LIVE_PR_METADATA",
+          "head_sha_source": "LIVE_PR_METADATA_2026-11-20",
           "head_sha_observed_at": "2026-11-20"
         },
         {
