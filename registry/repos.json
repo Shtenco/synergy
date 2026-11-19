@@ -2168,6 +2168,6 @@
     "branch_inventory_json": "registry/BRANCH_INVENTORY_2026-11-20.json",
     "branch_inventory_csv": "registry/BRANCH_INVENTORY_2026-11-20.csv",
     "branch_inventory_report": "docs/BRANCH_INVENTORY_2026-11-20.md",
-    "note": "92 repositories; 1,084 branch SHAs carry live branch-audit or priority PR metadata provenance; 210 SHA values remain from the dated census and were not individually re-fetched in this pass."
+    "note": "92 repositories; all 1,294 branch refs now have non-historical SHA provenance. 210 refs have current compare-to-main ancestry (36 AHEAD, 22 BEHIND, 120 DIVERGED, 32 IDENTICAL); 1,084 refs still need ancestry comparison. Protection remains historical for 1,292 refs; two new refs are NOT_CHECKED."
   }
 }
