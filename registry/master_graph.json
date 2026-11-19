@@ -1,17 +1,17 @@
 {
   "schema_version": "0.2.0",
-  "generated_at": "2026-11-13",
+  "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "umbrella_repository": "Shtenco/synergy",
   "project_target": "https://github.com/users/Shtenco/projects/3",
   "inventory": {
-    "repositories_total": 89,
-    "scope": "89 repositories currently visible to the installed GitHub App; 81-entry baseline plus 8 subsequently discovered repositories, with three repository renames reconciled on 2026-11-13.",
+    "repositories_total": 91,
+    "scope": "91 repositories currently visible to the installed GitHub App; 81-repository deep M0 baseline plus 10 later inventory additions, with maturity and audit status explicitly distinguished.",
     "domains": {
       "presentation": 3,
       "trading-quant": 23,
-      "compute-os": 10,
-      "agi-agentic": 10,
+      "compute-os": 11,
+      "agi-agentic": 11,
       "finance-economy": 16,
       "apps-interface": 9,
       "science-research": 2,
@@ -32,16 +32,18 @@
       "SECURITY_BLOCKED": 2,
       "ACTIVE_EXPERIMENTAL": 5,
       "RND_LOCAL_TESTING": 1,
-      "STUB_SPEC_ONLY": 19,
+      "STUB_SPEC_ONLY": 20,
       "RND_SCIENCE": 1,
       "RND_FEDERATION": 1,
       "MODEL_SPEC_READY": 1,
       "ARCHITECTURAL_MASTER": 3,
       "HARDENED_ALPHA": 1,
-      "RND_CANDIDATE": 1,
+      "RND_CANDIDATE": 2,
       "RND_SIMULATION": 2,
       "ACTIVE_RESEARCH": 1
-    }
+    },
+    "branch_refs": 1292,
+    "branch_inventory": "registry/BRANCH_INVENTORY_2026-11-20.json"
   },
   "graph_model": [
     "repo",
@@ -3203,6 +3205,85 @@
           "README"
         ],
         "scope": "inventory-level classification; full capability audit pending"
+      }
+    },
+    {
+      "id": "shtenco_micro_ai",
+      "repository": "Shtenco/shtenco_micro_ai",
+      "url": "https://github.com/Shtenco/shtenco_micro_ai",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 32,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "compute-os",
+      "node_type": "local-ai-inference-runtime",
+      "maturity": "RND_CANDIDATE",
+      "purpose": "Small local instruction-model runtime using the MNN-Pocket-0.3B INT4 checkpoint and Alibaba MNN; current main contains downloader/build/query/benchmark tooling, with model weights downloaded externally.",
+      "capabilities": [
+        "local-model-inference",
+        "MNN-runtime",
+        "INT4-model-download",
+        "benchmarking"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "main repository inspected 2026-11-20; branch inventory contains one branch"
+      },
+      "risks": [
+        "model weights are external and not stored in Git",
+        "main inference workflow failed on inspected main SHA; log cause unavailable",
+        "no device-specific throughput or accuracy qualification established"
+      ],
+      "audit": {
+        "date": "2026-11-20",
+        "evidence": [
+          "live repository metadata",
+          "main branch tree",
+          "README",
+          "branch inventory"
+        ],
+        "scope": "main-source and inventory pass; hardware qualification pending"
+      }
+    },
+    {
+      "id": "synergy_long_term_harness",
+      "repository": "Shtenco/synergy_long_term_harness",
+      "url": "https://github.com/Shtenco/synergy_long_term_harness",
+      "visibility": "private",
+      "archived": false,
+      "size_kb": 225,
+      "default_branch": "main",
+      "ecosystem_relation": "federated-rnd",
+      "domain": "agi-agentic",
+      "node_type": "long-horizon-agent-harness-design",
+      "maturity": "STUB_SPEC_ONLY",
+      "purpose": "Long-horizon agent memory and provider-routing harness; current main contains README only while implementation work is held on non-main branches.",
+      "capabilities": [
+        "long-horizon-agent-evaluation-design",
+        "memory-harness-design",
+        "provider-routing-research"
+      ],
+      "dependencies": [],
+      "activity": {
+        "band": "ACTIVE_30D",
+        "basis": "repository created 2026-11-18; non-main implementation branches present"
+      },
+      "risks": [
+        "main contains README only",
+        "implementation is branch-only and must not be treated as main runtime",
+        "draft implementation PR CI failed; production execution not established"
+      ],
+      "audit": {
+        "date": "2026-11-20",
+        "evidence": [
+          "live repository metadata",
+          "main branch tree",
+          "README",
+          "branch inventory"
+        ],
+        "scope": "main-source and inventory pass; branch promotion and runtime validation pending"
       }
     }
   ],
