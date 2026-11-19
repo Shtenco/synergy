@@ -13,7 +13,7 @@
 | Unique HEADs (sum within repositories) | **1208** |
 | Branch SHA from live audit / PR metadata | **1083** |
 | SHA values retained from dated census | **211** |
-| Currently open PRs discovered repository-by-repository | **206** |
+| Currently open PRs discovered repository-by-repository | **549** |
 | PRs with full metadata enriched in this pass | **8** |
 | PRs still discovery-only | **198** |
 | Security blockers | **4 P0 + 1 P1** |
@@ -27,7 +27,7 @@
 - [Branch inventory JSON](registry/BRANCH_INVENTORY_2026-11-20.json)
 - [Branch inventory CSV](registry/BRANCH_INVENTORY_2026-11-20.csv)
 - [Live branch audit JSON — 60 repositories / 1,077 records](registry/LIVE_BRANCH_AUDIT_2026-11-20.json)
-- [Open PR map JSON — 206 current discoveries](registry/OPEN_PR_BRANCH_MAP_2026-11-20.json)
+- [Open PR map JSON — 549 current discoveries](registry/OPEN_PR_BRANCH_MAP_2026-11-20.json)
 - [Open PR map CSV](registry/OPEN_PR_BRANCH_MAP_2026-11-20.csv)
 - [Live reconciliation report](docs/LIVE_RECONCILIATION_2026-11-20.md)
 - [Security blockers](https://github.com/Shtenco/synergy_system/blob/main/registry/SECURITY_BLOCKERS.json)
@@ -38,7 +38,7 @@
 
 - 1,077 branch SHA values have live audit/PR metadata provenance. The remaining 211 SHA values are retained from the dated census and were not individually re-fetched in this pass.
 - Protection state for the two new cognitive-memory refs is unknown; old protection values remain from the prior census.
-- The 206 PR discovery records contain full head/base metadata for 8 priority PRs; the other 198 remain explicitly marked `DISCOVERY_ONLY_GET_PR_INFO_PENDING`.
+- The 549 PR discovery records contain full head/base metadata for 8 priority PRs; the other 198 remain explicitly marked `DISCOVERY_ONLY_GET_PR_INFO_PENDING`.
 - The old 91-repository and 548-PR reports remain historical artifacts; they are not current totals.
 
 ## Architecture ownership
