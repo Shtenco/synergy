@@ -16,7 +16,8 @@
 | PRs still discovery-only | 531 |
 | Live branch SHA provenance | 1,294 |
 | Refs with ancestry comparison to main | 210 |
-| Refs still awaiting ancestry comparison | 1,084 |\n| Branch protection known from historical census | 1,292 / 1,294 |
+| Refs still awaiting ancestry comparison | 1,084 | 
+| Branch protection known from historical census | 1,292 / 1,294 |
 | Branches marked protected in the historical census | 0 |
 | New cognitive-memory refs with protection unchecked | 2 |
 | Priority PR CI: failure with steps=null | 10 |
