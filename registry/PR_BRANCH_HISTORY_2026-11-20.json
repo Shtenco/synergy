@@ -1,0 +1,282 @@
+{
+  "schema": "synergy.pr-branch-history.v1",
+  "generated_at": "2026-11-20",
+  "owner": "Shtenco",
+  "repository_count": 91,
+  "scope": "All pull requests returned by GitHub state=all API; repositories marked truncated require pagination.",
+  "repositories": [
+    {
+      "repository": "Shtenco/shtenco.github.io",
+      "pull_request_count_page1": 5,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 5,
+          "title": "docs: editorial README and vector architecture identity",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "docs/editorial-readme-v1",
+          "head_sha": "403eb313c2b72a5fe7d07bd90788c04b7048a325",
+          "base_branch": "main",
+          "created_at": "2026-10-23T19:32:49Z",
+          "updated_at": "2026-10-23T19:45:29Z",
+          "closed_at": "2026-10-23T19:45:29Z",
+          "merged_at": "2026-10-23T19:45:29Z",
+          "url": "https://github.com/Shtenco/shtenco.github.io/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "Rebuild main portfolio for HR clarity with all 77 repositories",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "hr-portfolio-rewrite",
+          "head_sha": "8dac4b978280ee8ea59808a616d74170634924be",
+          "base_branch": "main",
+          "created_at": "2026-10-02T21:45:29Z",
+          "updated_at": "2026-10-03T00:38:13Z",
+          "closed_at": "2026-10-03T00:38:13Z",
+          "merged_at": "2026-10-03T00:38:13Z",
+          "url": "https://github.com/Shtenco/shtenco.github.io/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "fix: restore previous portfolio and expand products",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "fix/restore-previous-portfolio-products",
+          "head_sha": "87698ecb4bddaa3cd9bb743779b6d86291f1e0eb",
+          "base_branch": "main",
+          "created_at": "2026-09-18T19:31:26Z",
+          "updated_at": "2026-09-18T19:31:41Z",
+          "closed_at": "2026-09-18T19:31:41Z",
+          "merged_at": "2026-09-18T19:31:41Z",
+          "url": "https://github.com/Shtenco/shtenco.github.io/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "feat: rebuild creator portfolio as SYNERGY system map",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "feat/portfolio-system-2026",
+          "head_sha": "2d6895515e13c6155511b9403487d285104f70ff",
+          "base_branch": "main",
+          "created_at": "2026-09-18T19:11:33Z",
+          "updated_at": "2026-09-18T19:17:56Z",
+          "closed_at": "2026-09-18T19:17:56Z",
+          "merged_at": "2026-09-18T19:17:56Z",
+          "url": "https://github.com/Shtenco/shtenco.github.io/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Preserve historical personal research provenance",
+          "state": "open",
+          "draft": true,
+          "head_branch": "docs/research-provenance-20260817",
+          "head_sha": "4649a891f309996ed51edf3c99a55eb4b8263e27",
+          "base_branch": "main",
+          "created_at": "2026-08-17T09:39:10Z",
+          "updated_at": "2026-10-03T01:43:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/shtenco.github.io/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "pull_request_count_page1": 1,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "docs: editorial README and vector architecture identity",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "docs/editorial-readme-v1",
+          "head_sha": "cba6ebfff5a050e485eb8700e1742f28221e81e1",
+          "base_branch": "main",
+          "created_at": "2026-10-23T19:32:52Z",
+          "updated_at": "2026-10-23T19:45:33Z",
+          "closed_at": "2026-10-23T19:45:33Z",
+          "merged_at": "2026-10-23T19:45:33Z",
+          "url": "https://github.com/Shtenco/quantum-trading_metatrader5/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "pull_request_count_page1": 1,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "docs: editorial README and vector architecture identity",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "docs/editorial-readme-v1",
+          "head_sha": "7793889ad8b01c9ec8958ee8da39786962632212",
+          "base_branch": "main",
+          "created_at": "2026-10-23T19:32:55Z",
+          "updated_at": "2026-10-23T19:45:37Z",
+          "closed_at": "2026-10-23T19:45:37Z",
+          "merged_at": "2026-10-23T19:45:37Z",
+          "url": "https://github.com/Shtenco/computer_vision_trading_metatrader_5/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "pull_request_count_page1": 1,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "docs: editorial README and vector architecture identity",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "docs/editorial-readme-v1",
+          "head_sha": "10a134bb840b678293c1586b6fec200109e82784",
+          "base_branch": "main",
+          "created_at": "2026-10-23T19:32:58Z",
+          "updated_at": "2026-10-23T19:45:41Z",
+          "closed_at": "2026-10-23T19:45:41Z",
+          "merged_at": "2026-10-23T19:45:41Z",
+          "url": "https://github.com/Shtenco/swap_arbitrage_metatrader_5/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "pull_request_count_page1": 1,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "docs: editorial README and vector architecture identity",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "docs/editorial-readme-v1",
+          "head_sha": "e6b7f9519a53ba65eedef75759da81a15058cfa1",
+          "base_branch": "main",
+          "created_at": "2026-10-23T19:33:00Z",
+          "updated_at": "2026-10-23T19:45:45Z",
+          "closed_at": "2026-10-23T19:45:45Z",
+          "merged_at": "2026-10-23T19:45:45Z",
+          "url": "https://github.com/Shtenco/cross_forex_arbitrage_trading_metatrader_5/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "pull_request_count_page1": 1,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "docs: editorial README and vector architecture identity",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "docs/editorial-readme-v1",
+          "head_sha": "31a688e9c4c71a4465780de318514d46ec408d1a",
+          "base_branch": "main",
+          "created_at": "2026-10-23T19:33:03Z",
+          "updated_at": "2026-10-23T19:45:49Z",
+          "closed_at": "2026-10-23T19:45:49Z",
+          "merged_at": "2026-10-23T19:45:49Z",
+          "url": "https://github.com/Shtenco/global_liquidity_dataminer/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/3D_bars_market_structure",
+      "pull_request_count_page1": 6,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 6,
+          "title": "docs: illustrated technical dossier and architecture",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "docs/visual-dossier-batch02",
+          "head_sha": "3beb9c4ee29a24378138cebfd8475d0c0218ea6f",
+          "base_branch": "main",
+          "created_at": "2026-10-23T19:46:51Z",
+          "updated_at": "2026-10-23T19:48:24Z",
+          "closed_at": "2026-10-23T19:48:24Z",
+          "merged_at": "2026-10-23T19:48:24Z",
+          "url": "https://github.com/Shtenco/3D_bars_market_structure/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "Temporary TURBO Stage-1I real XPU device QEMU validation",
+          "state": "closed",
+          "draft": true,
+          "head_branch": "turbo-stage1i-xpu-v14",
+          "head_sha": "e27486656bd8366820a49954e515c742a33bb92c",
+          "base_branch": "main",
+          "created_at": "2026-07-31T12:37:05Z",
+          "updated_at": "2026-07-31T13:08:58Z",
+          "closed_at": "2026-07-31T13:08:57Z",
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/3D_bars_market_structure/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "Temporary TURBO Stage-1H EML dataflow QEMU validation",
+          "state": "closed",
+          "draft": true,
+          "head_branch": "turbo-stage1h-eml-v13",
+          "head_sha": "45ba82cf0f0eecf829bdbbf52c89d0b96192de38",
+          "base_branch": "main",
+          "created_at": "2026-07-31T10:46:28Z",
+          "updated_at": "2026-07-31T11:01:01Z",
+          "closed_at": "2026-07-31T11:01:01Z",
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/3D_bars_market_structure/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "Temporary TURBO Stage-1G topology-native QEMU validation",
+          "state": "closed",
+          "draft": true,
+          "head_branch": "turbo-stage1g-topology-v12",
+          "head_sha": "a63e6dfcff217a0361ede2e676681996697a3fe5",
+          "base_branch": "main",
+          "created_at": "2026-07-31T09:59:31Z",
+          "updated_at": "2026-07-31T10:07:18Z",
+          "closed_at": "2026-07-31T10:07:17Z",
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/3D_bars_market_structure/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Temporary TURBO Stage-1F integrated QEMU validation",
+          "state": "closed",
+          "draft": true,
+          "head_branch": "turbo-stage1f-integrated-v10",
+          "head_sha": "ee0245e7abd99fb1700e07d3da527a46812e0c64",
+          "base_branch": "main",
+          "created_at": "2026-07-31T07:35:49Z",
+          "updated_at": "2026-07-31T09:13:08Z",
+          "closed_at": "2026-07-31T09:13:07Z",
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/3D_bars_market_structure/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Temporary TURBO Stage-1F public QEMU runner",
+          "state": "open",
+          "draft": true,
+          "head_branch": "turbo-stage1f-runtime",
+          "head_sha": "f3dd90e9fc3f675c8f0d93b55a21a1b0fe186540",
+          "base_branch": "main",
+          "created_at": "2026-07-31T04:50:35Z",
+          "updated_at": "2026-07-31T05:20:05Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/3D_bars_market_structure/pull/1"
+        }
+      ]
+    }
+  ]
+}
