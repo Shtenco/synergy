@@ -5254,6 +5254,431 @@
       "repository": "Shtenco/synergy_app_family",
       "open_pr_count": 0,
       "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_chain_print_money",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_ai_company",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "feat: Auto-Company 2.0 revenue-first Synergy control plane",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/auto-company-v2",
+          "head_sha": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
+          "base_branch": "main",
+          "updated_at": "2026-09-13T18:56:44Z",
+          "url": "https://github.com/Shtenco/synergy_ai_company/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_shhts",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_shttps",
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Transport Convergence T1: STCP + SHTTPS v2 + SYNERGY Remote MCP",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/stcp-shttps-remote-mcp-v2-20260925",
+          "head_sha": "f3eda6bb7cdfd5478f9594dad4ee5dd91381e9b8",
+          "base_branch": "main",
+          "updated_at": "2026-09-25T07:15:01Z",
+          "url": "https://github.com/Shtenco/synergy_shttps/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "feat: SHTTPS v1 post-quantum compressed federation protocol",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/shttps-v1-pq-compressed-protocol",
+          "head_sha": "7f3072d5a86b95fa4bb1da52fbad7395fee4e88f",
+          "base_branch": "main",
+          "updated_at": "2026-09-13T18:55:59Z",
+          "url": "https://github.com/Shtenco/synergy_shttps/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_gguf_compress",
+      "open_pr_count": 7,
+      "pull_requests": [
+        {
+          "number": 7,
+          "title": "V8: adaptive behavioral budget optimizer",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/omega-mix-v8-behavioral-budget",
+          "head_sha": "8c92ebde71126ad9bbbf3730b45b6269e74825ad",
+          "base_branch": "feat/omega-mix-v7-retention-search",
+          "updated_at": "2026-09-20T13:57:42Z",
+          "url": "https://github.com/Shtenco/synergy_gguf_compress/pull/7"
+        },
+        {
+          "number": 6,
+          "title": "V7: Omega-MIX behavioral retention search",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/omega-mix-v7-retention-search",
+          "head_sha": "3c3ec7469ffa09010d1edb09f2fcbcb6006951c6",
+          "base_branch": "feat/omega-mix-infinity-v6",
+          "updated_at": "2026-09-20T03:27:21Z",
+          "url": "https://github.com/Shtenco/synergy_gguf_compress/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "V5: global budget optimizer, activation calibration and Pareto frontier",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/global-budget-activation-v5",
+          "head_sha": "a0d291303da921eb6a55ff5a113b202668b74b26",
+          "base_branch": "feat/distilled-gguf-system-v4",
+          "updated_at": "2026-09-18T21:43:53Z",
+          "url": "https://github.com/Shtenco/synergy_gguf_compress/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "V4: distilled GGUF compression system with canonical pipeline and quality gates",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/distilled-gguf-system-v4",
+          "head_sha": "a05ad79c30279ccbdb47d0c590825370d3a954a1",
+          "base_branch": "feat/adaptive-residual-q4-v3",
+          "updated_at": "2026-09-18T21:31:23Z",
+          "url": "https://github.com/Shtenco/synergy_gguf_compress/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "V3: adaptive rank, sparse residuals, packed Q4 kernel and real llama-bench",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/adaptive-residual-q4-v3",
+          "head_sha": "8aa76d263a4a3e4841afe38c7b08fb8350e6528b",
+          "base_branch": "feat/llama-native-lowrank-v2",
+          "updated_at": "2026-09-13T23:08:23Z",
+          "url": "https://github.com/Shtenco/synergy_gguf_compress/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Native llama.cpp/GGML low-rank v2: execute A/B factors without dense reconstruction",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/llama-native-lowrank-v2",
+          "head_sha": "0ae62a5079c8349069ffffd2bb3105727d71dd6b",
+          "base_branch": "feat/huge-gguf-compression-v1",
+          "updated_at": "2026-09-13T21:56:10Z",
+          "url": "https://github.com/Shtenco/synergy_gguf_compress/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Huge GGUF compression v1: low-rank + seed projection + benchmarks",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/huge-gguf-compression-v1",
+          "head_sha": "c78bc852fefc5f04eb80cc4d8e567b2f4e812a99",
+          "base_branch": "main",
+          "updated_at": "2026-09-13T21:02:37Z",
+          "url": "https://github.com/Shtenco/synergy_gguf_compress/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "open_pr_count": 24,
+      "pull_requests": [
+        {
+          "number": 25,
+          "title": "M32.1 DEV: grounded shallow typed demonstrations",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-grounded-typed-fewshot",
+          "head_sha": "4f66ba99654f626d23b9fe066d83c4f744e27259",
+          "base_branch": "m32-1-neural-dev-v7-pinned-schema-wire",
+          "updated_at": "2026-10-03T10:59:07Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/25"
+        },
+        {
+          "number": 24,
+          "title": "CRC reset: restore multi-step proof DAG benchmark line",
+          "state": "open",
+          "draft": true,
+          "head_branch": "nexus-cognitive-loop-reset-2026-10-03",
+          "head_sha": "21c0c9679b407b52d6df4a08aba5038b5c401930",
+          "base_branch": "crc-r1-foundation",
+          "updated_at": "2026-10-04T17:35:59Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/24"
+        },
+        {
+          "number": 23,
+          "title": "NEXUS Unified Cognitive Runtime R1: V7.2 cortex + learned loop + Russian dialogue",
+          "state": "open",
+          "draft": false,
+          "head_branch": "nexus-unified-cognitive-runtime-r1",
+          "head_sha": "4f65ee769eadf8f55021554cae85f49391a82b0f",
+          "base_branch": "crc-r1-foundation",
+          "updated_at": "2026-10-03T00:39:22Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/23"
+        },
+        {
+          "number": 22,
+          "title": "M32.1 cortex capacity A/B: Qwen3.5-2B",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-cortex-capacity-ab-2b",
+          "head_sha": "502580b7db971fd5dcaee0fd7dac54677169823e",
+          "base_branch": "m32-1-neural-dev-v7-pinned-schema-wire",
+          "updated_at": "2026-10-02T19:56:09Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/22"
+        },
+        {
+          "number": 21,
+          "title": "M32.1 DEV-v7: exact pinned llama.cpp schema wire",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v7-pinned-schema-wire",
+          "head_sha": "f8c928ed68d45a07f279aab9de7488fde20856f9",
+          "base_branch": "m32-1-neural-dev-v6-schema-constrained-ir",
+          "updated_at": "2026-10-02T19:42:21Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/21"
+        },
+        {
+          "number": 20,
+          "title": "M32.1 DEV-v6: schema-constrained neural IR",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v6-schema-constrained-ir",
+          "head_sha": "33c0e2d5b782317f4e047dbdbb4ed83b03bd05a2",
+          "base_branch": "m32-1-neural-dev-v5-typed-recipe-compiler",
+          "updated_at": "2026-10-02T19:30:33Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/20"
+        },
+        {
+          "number": 19,
+          "title": "M32.1 DEV-v5: typed neural IR compiler",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v5-typed-recipe-compiler",
+          "head_sha": "70c28e8de1d3eb6d2659f49d01ca53f490d96d52",
+          "base_branch": "m32-1-neural-dev-v4-grounded-ontology",
+          "updated_at": "2026-10-02T18:47:21Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/19"
+        },
+        {
+          "number": 18,
+          "title": "M32.1 DEV-v4: grounded ontology prompt",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v4-grounded-ontology",
+          "head_sha": "87c7cc5782e657a0da1aa205620a65c9fcb81107",
+          "base_branch": "m32-1-neural-dev-v3-output-contract",
+          "updated_at": "2026-10-02T14:27:11Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/18"
+        },
+        {
+          "number": 17,
+          "title": "M32.1 DEV-v6: final prompt-only capacity gate",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v6-capacity-gate",
+          "head_sha": "d414e43c7b46859e6c8f2c85302a81d8b2f634aa",
+          "base_branch": "m32-1-neural-dev-v5-exact-quality",
+          "updated_at": "2026-10-02T09:23:54Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/17"
+        },
+        {
+          "number": 16,
+          "title": "M32.1 DEV-v5: exact proposal scoring + targeted neural contract hardening",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v5-exact-quality",
+          "head_sha": "79d9b8c1f5c61503efaf3a25429f178a693fb1e8",
+          "base_branch": "m32-1-neural-dev-v4-grounded-fewshot",
+          "updated_at": "2026-10-02T09:09:13Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/16"
+        },
+        {
+          "number": 15,
+          "title": "M32.1 DEV-v4: grounded few-shot + fail-closed empty neural proposals",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v4-grounded-fewshot",
+          "head_sha": "4ade0f307fab8eff7244ce3a19671337a92c66c4",
+          "base_branch": "m32-1-neural-dev-v3-output-contract",
+          "updated_at": "2026-10-02T09:05:40Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/15"
+        },
+        {
+          "number": 14,
+          "title": "M32.1 DEV-v3: exact neural output contract + 320-token budget",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v3-output-contract",
+          "head_sha": "91810a9dc901b9cb09c8e6816b139e6d7bcae6c2",
+          "base_branch": "m32-1-neural-dev-v2-budget",
+          "updated_at": "2026-10-02T08:45:10Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/14"
+        },
+        {
+          "number": 13,
+          "title": "M32.1 DEV-v2: bounded generation + deterministic failure memoization",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-dev-v2-budget",
+          "head_sha": "dbdd4d8387c84e07d7e22410cf93ffe309ae7b2a",
+          "base_branch": "m32-1-neural-proposal-quality",
+          "updated_at": "2026-10-01T23:30:46Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/13"
+        },
+        {
+          "number": 12,
+          "title": "M32.1: pinned neural proposal quality",
+          "state": "open",
+          "draft": true,
+          "head_branch": "m32-1-neural-proposal-quality",
+          "head_sha": "38a00b1ad11dc881cc4dac9bb45648c58f08fddb",
+          "base_branch": "m32-generalized-ingress",
+          "updated_at": "2026-10-01T22:58:32Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/12"
+        },
+        {
+          "number": 10,
+          "title": "FTX1: freeze first one-shot result (0/2400)",
+          "state": "open",
+          "draft": true,
+          "head_branch": "ftx1-one-shot-result-2026-10-01",
+          "head_sha": "04eac6c94b914951cc4fe9ec2a4cec4f2ab44b06",
+          "base_branch": "crc-r1-foundation",
+          "updated_at": "2026-10-01T17:59:06Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/10"
+        },
+        {
+          "number": 9,
+          "title": "CRC-R1: recursive cognition foundation, higher-order execution and sealed validation",
+          "state": "open",
+          "draft": true,
+          "head_branch": "crc-r1-foundation",
+          "head_sha": "cfa6de4d8b4c5e93444b2b9ff465557fdfe4bc9c",
+          "base_branch": "unified-v3-generalization-first",
+          "updated_at": "2026-10-01T20:48:47Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/9"
+        },
+        {
+          "number": 8,
+          "title": "NEXUS Unified Russian Cognitive Runtime V1",
+          "state": "open",
+          "draft": true,
+          "head_branch": "nexus-unified-russian-cognitive-runtime-v1-2026-09-27",
+          "head_sha": "fb0cf598ff2de3058ebbe1fdb71f786d91eaf39c",
+          "base_branch": "main",
+          "updated_at": "2026-09-28T16:33:42Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/8"
+        },
+        {
+          "number": 7,
+          "title": "NEXUS R1.3-X V3: compositional authority governor",
+          "state": "open",
+          "draft": true,
+          "head_branch": "nexus-r13x-compositional-authority-v3-2026-09-26",
+          "head_sha": "105a692d64a42d6c772de69dcaeb16ac27833b01",
+          "base_branch": "nexus-r13x-exact-cognitive-ru-v2-2026-09-26",
+          "updated_at": "2026-09-26T13:21:24Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/7"
+        },
+        {
+          "number": 6,
+          "title": "NEXUS R1.3-X V2: exact cognitive Russian runtime",
+          "state": "open",
+          "draft": true,
+          "head_branch": "nexus-r13x-exact-cognitive-ru-v2-2026-09-26",
+          "head_sha": "4735ca4f36d441f4fa2de6af4c704d5140a6c586",
+          "base_branch": "nexus-r13x-cognitive-ru-runtime-2026-09-26",
+          "updated_at": "2026-09-26T12:06:55Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "Stage SYNERGY Protocol Convergence P5 source-locked adapter",
+          "state": "open",
+          "draft": true,
+          "head_branch": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "a4f2860997128877e8a2a342558982349d3ab2e8",
+          "base_branch": "main",
+          "updated_at": "2026-09-25T08:11:10Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "NEXUS-MOE B2: recover R7.44.3 deployed runtime and gate HARD-FAR-OOS",
+          "state": "open",
+          "draft": true,
+          "head_branch": "nexus-moe-b2-hard-far-oos-recovery",
+          "head_sha": "ca3645eadbb5214985d1913957417c75352f67ed",
+          "base_branch": "unified-v3-generalization-first",
+          "updated_at": "2026-09-25T20:36:28Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "Omega 1.5R2: Blind-4 frozen role-binding experiment",
+          "state": "open",
+          "draft": true,
+          "head_branch": "omega15r2-blind4-v1",
+          "head_sha": "f70a3c316775c763a94fbc55a8fae84c326ab60e",
+          "base_branch": "unified-nexus-rebuild-v1",
+          "updated_at": "2026-09-16T15:20:44Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Unified NEXUS Rebuild v1: reproducible retraining and freeze",
+          "state": "open",
+          "draft": true,
+          "head_branch": "unified-nexus-rebuild-v1",
+          "head_sha": "e7dc57c1659628f15ada373172fab3effd8e47f9",
+          "base_branch": "nexus-gllm-omega1-v1",
+          "updated_at": "2026-09-16T13:20:12Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "NEXUS GLLM Ω-1.6 — Sovereign Research Cortex + cross-generation audit",
+          "state": "open",
+          "draft": true,
+          "head_branch": "nexus-gllm-omega1-v1",
+          "head_sha": "2b6d78d9b955bb892356a6cade50634911f7b13c",
+          "base_branch": "main",
+          "updated_at": "2026-09-15T22:06:54Z",
+          "url": "https://github.com/Shtenco/synergy_gllm_nexus/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_messenger",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Build/verify SYNERGY Messenger alpha.9 APK",
+          "state": "open",
+          "draft": true,
+          "head_branch": "import/alpha9-direct-final",
+          "head_sha": "aab3f83e29013eab3437020afe8cefaede3bc154",
+          "base_branch": "main",
+          "updated_at": "2026-09-16T16:43:52Z",
+          "url": "https://github.com/Shtenco/synergy_messenger/pull/2"
+        }
+      ]
     }
   ]
 }
