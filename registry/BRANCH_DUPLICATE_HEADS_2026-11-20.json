@@ -1,0 +1,696 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_date": "2026-11-20",
+  "source": "BRANCH_SHA_LIVE_RECHECK_2026-11-20.json",
+  "duplicate_head_groups": 30,
+  "repeated_branch_refs": 86,
+  "groups": [
+    {
+      "repository": "Shtenco/synergy_system",
+      "head_sha": "57d60f9932b5fbe2669d41a7bb23095a900ce06d",
+      "branches": [
+        "feat/research-node-build-lock-v1-20260821",
+        "tmp/noop-build-lock-pr"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "ARCHIVE-CANDIDATE",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [
+        "tmp/noop-build-lock-pr"
+      ],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "head_sha": "7a0e81348d7273e3de115a0ef33de64a6abd7d8a",
+      "branches": [
+        "tmp/check-pr5-2",
+        "tmp/check-pr5"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "ARCHIVE-CANDIDATE",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [
+        "tmp/check-pr5-2",
+        "tmp/check-pr5"
+      ],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "head_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "branches": [
+        "debug-branch",
+        "diagnostic-create-file-unavailable",
+        "do-not-use",
+        "last-oops",
+        "oops",
+        "stop",
+        "ugh"
+      ],
+      "duplicate_ref_count": 6,
+      "decision": "ARCHIVE-CANDIDATE",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [
+        "debug-branch",
+        "diagnostic-create-file-unavailable",
+        "do-not-use",
+        "last-oops",
+        "oops",
+        "stop"
+      ],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "head_sha": "91ac4ea6161013c3d9d65187e817d7d89d751127",
+      "branches": [
+        "feat/autopilot-v5-nexus-smm-ai-node-v1-20260823-checkpoint",
+        "tmp-ignore"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "ARCHIVE-CANDIDATE",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [
+        "tmp-ignore"
+      ],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "head_sha": "337ca67415f2856da4d31ffa03517e6f40cfdab2",
+      "branches": [
+        "hardening/m12-workforce-lease-fencing",
+        "integration/synergy-ai-autopilot-v1"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "head_sha": "afa27227fa6316384d18517eb580f8a59dd37b4c",
+      "branches": [
+        "hardening/m12-workforce-lease-fencing-rebased-20261116",
+        "hardening/m12-workforce-lease-fencing-v2"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synegy_ai_compress",
+      "head_sha": "410c6b43910b424c8b9431649e19d62c2725c8ea",
+      "branches": [
+        "feat/omnia-rex-v3",
+        "feat/omnia-rex-v4"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_nexus",
+      "head_sha": "3f734afffb357936c97477ff779cbfd1c79060e5",
+      "branches": [
+        "feat/nexus-inventory-benchmark-core-v1-20260821",
+        "tmp/noop"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "ARCHIVE-CANDIDATE",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [
+        "tmp/noop"
+      ],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_olga",
+      "head_sha": "23470f82d4b23336a8c10d232376ed34c0f90826",
+      "branches": [
+        "nexus-r2-qwen05b-cortex",
+        "nexus-r2.1-qwen3-14b"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_financial_system",
+      "head_sha": "fa04f72fba802137844ea0d60286c89c140f7c45",
+      "branches": [
+        "audit/stateful-supercycle-v8",
+        "feat/v16-gradient-opportunity-market"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_language",
+      "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+      "branches": [
+        "cyber-ai-smm-portable-runtime-build",
+        "cyber-ai-smm-runtime-20260817",
+        "cyber-ai-smm-runtime-build-exec",
+        "cyber-ai-smm-runtime-build-final2",
+        "cyber-ai-smm-runtime-build-one",
+        "cyber-ai-smm-runtime-build-runner",
+        "cyber-ai-smm-runtime-final",
+        "cyber-ai-smm-runtime-win",
+        "cyber-ai-smm-runtime-win2",
+        "cyber-ai-smm-runtime-win-final",
+        "cyber-ai-smm-sinergy-build-20260817-2",
+        "cyber-ai-smm-sinergy-build-final",
+        "cyber-ai-smm-sinergy-final-installer-20260817",
+        "cyber-ai-smm-sinergy-installer-20260817",
+        "cyber-ai-smm-sinergy-installer-build-20260817",
+        "cyber-ai-smm-sinergy-installer-payload-20260817",
+        "cyber-ai-smm-sinergy-win-build-20260817",
+        "cyber-ai-smm-sinergy-windows-build-2",
+        "cyber-ai-smm-sinergy-windows-final",
+        "runtime-build-r1",
+        "runtime-build-r2",
+        "runtime-build-r3",
+        "runtime-build-r4",
+        "runtime-d9a7"
+      ],
+      "duplicate_ref_count": 23,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_language",
+      "head_sha": "f46b9aaad6dcfa70ded3e01cb9209518013b10cc",
+      "branches": [
+        "nexus-r22-intelligence-ab",
+        "qwen3-14b-r21-relay"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_workspace",
+      "head_sha": "dd5795416cde8ad8ec3cb76deae989e25e78c65e",
+      "branches": [
+        "presentation-ecosystem-v5-working",
+        "presentation-v9-center-logos-20261030"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_workspace",
+      "head_sha": "8759275af50392b546ccbd38961600288250988f",
+      "branches": [
+        "presentation-v4-chromium-pdf-20261027",
+        "presentation-v4-pdf-delivery"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_apps",
+      "head_sha": "1ae42f2f646776285d7c148cb0ad44e45a3aeba1",
+      "branches": [
+        "analysis/all-850-app-ideas",
+        "implementation/metaos-v9-three-apps"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "head_sha": "326b53733b688c079ae983f7f4936102f82b112b",
+      "branches": [
+        "exp/iq1s70b-vs-qwen3-14b-20260923",
+        "exp/nexus-70b-runtime"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+      "branches": [
+        "research/bqg-2t-algebra",
+        "research/bqg-2t-algebra2",
+        "research/bqg-2t-gate",
+        "research/bqg-2t-gate-final",
+        "research/bqg-2t-gate-final2",
+        "research/bqg-2t-gate-v2",
+        "research/bqg-2t-gate-v3",
+        "research/bqg-2t-gate-v4",
+        "research/bqg-2t-gate-v5",
+        "research/bqg-2t-gate-work"
+      ],
+      "duplicate_ref_count": 9,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "head_sha": "1a715e22d10bb27b2d7c7b6529ac53c59092a851",
+      "branches": [
+        "research/v19-canonical-k5-replay-20261015",
+        "research/v20-160-canonical-k5-20261015"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_chain",
+      "head_sha": "dcdf6fcc18e728228c71e287741c9902e7aa38c6",
+      "branches": [
+        "feat/sinergy-growth-os-v5",
+        "sinergy-growth-os-v5"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_chain",
+      "head_sha": "0ee2c0b881f5d5cdb9ce685dcf52fc201a5254a3",
+      "branches": [
+        "qe-v9-evm-ci2-20260825",
+        "qe-v9-evm-ci-20260825"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "head_sha": "dbdd4d8387c84e07d7e22410cf93ffe309ae7b2a",
+      "branches": [
+        "m32-1-neural-dev-v2-budget",
+        "m32-1-neural-dev-v3-schema"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_messenger",
+      "head_sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+      "branches": [
+        "build/apk-alpha9-ci",
+        "build/apk-alpha9-final",
+        "build/apk-alpha9-real",
+        "build/apk-alpha9-runtime",
+        "build/apk-alpha9-working",
+        "build/apk-alpha9"
+      ],
+      "duplicate_ref_count": 5,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_messenger",
+      "head_sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+      "branches": [
+        "import/alpha9-source",
+        "import/alpha9-source2",
+        "import/alpha9-source-stable",
+        "import/alpha9-source-stable2"
+      ],
+      "duplicate_ref_count": 3,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_meta_os",
+      "head_sha": "b5cdf31ad81e27997e18564d8211cb38a6cac893",
+      "branches": [
+        "feat/research-node-build-plan-consumer-v1-20260822",
+        "feat/research-node-readiness-consumer-v1-20260822"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_metachain",
+      "head_sha": "a2affb3cc3486079cc329b857e70e30768295fdc",
+      "branches": [
+        "sinergy-messenger-v0.2-native",
+        "sinergy-messenger-v0.2-native-check"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_metaverse",
+      "head_sha": "5e62521ba8abd2ce2c213eac1b9b0f10fe4a5d24",
+      "branches": [
+        "bootstrap/metaverse-architecture-v1",
+        "feature/league-spatial-projection-v1"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai",
+      "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+      "branches": [
+        "release/shtenco-v13-30-v13-41-test",
+        "release/shtenco-v13-30-v13-41-test2",
+        "tmp-create-tree-test",
+        "tmp-create-tree-test3",
+        "tmp-create-tree-test4",
+        "tmp-create-tree-test5",
+        "tmp-create-tree-test6",
+        "tmp-create-tree-test7",
+        "tmp-create-tree-test8",
+        "tmp-create-tree-test9",
+        "tmp-ignore",
+        "tmp-noop-final-test",
+        "tmp-noop-final-test2",
+        "tmp-noop-final-test3",
+        "tmp-noop-final-test4",
+        "tmp-noop-final-test5"
+      ],
+      "duplicate_ref_count": 15,
+      "decision": "ARCHIVE-CANDIDATE",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [
+        "tmp-create-tree-test",
+        "tmp-create-tree-test3",
+        "tmp-create-tree-test4",
+        "tmp-create-tree-test5",
+        "tmp-create-tree-test6",
+        "tmp-create-tree-test7",
+        "tmp-create-tree-test8",
+        "tmp-create-tree-test9",
+        "tmp-ignore",
+        "tmp-noop-final-test",
+        "tmp-noop-final-test2",
+        "tmp-noop-final-test3",
+        "tmp-noop-final-test4",
+        "tmp-noop-final-test5"
+      ],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergychain.github.io",
+      "head_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c",
+      "branches": [
+        "build/sinergy-finance-v3-crypto-real",
+        "build/sinergy-myfinance-v3-stage4",
+        "build/sinergy-myfinance-v3-wallet"
+      ],
+      "duplicate_ref_count": 2,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergychain.github.io",
+      "head_sha": "463d0f218d751c3e8d0906a87c76bf0aae80fda9",
+      "branches": [
+        "portal-v18-top",
+        "portal-v19-polittech-v14-copy"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    },
+    {
+      "repository": "Shtenco/synergychain.github.io",
+      "head_sha": "012ccb31d08b2054ea35cfc764ba6c43ecd52645",
+      "branches": [
+        "sinergy-smm-v3-product-v31-copy",
+        "sinergy-smm-v3-release-gates"
+      ],
+      "duplicate_ref_count": 1,
+      "decision": "KEEP",
+      "decision_scope": "review-only; no branch deletion authorized",
+      "candidate_branches": [],
+      "required_checks": [
+        "open and closed PR references",
+        "issues and review threads",
+        "tags/releases/deploy references",
+        "workflow/artifact references",
+        "cross-repository links",
+        "unique commits and unmerged content"
+      ]
+    }
+  ]
+}
