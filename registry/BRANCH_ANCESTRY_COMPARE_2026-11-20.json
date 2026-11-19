@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 71,
-  "pending_comparisons": 1131,
+  "completed_comparisons": 78,
+  "pending_comparisons": 1124,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -926,6 +926,97 @@
       "ahead_by": 122,
       "behind_by": 6,
       "total_commits": 122,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "branch": "xpu-v1-deep-model",
+      "head_sha": "1f4edc718ec6a8acf5ac31d35474bfe90ce42b1e",
+      "base": "main",
+      "base_sha": "f9ed4f4a8677ce08e0037f205667b8f94bf54871",
+      "merge_base_sha": "e5e9dc8fe1507446ba884aa42be772b3d5155633",
+      "status": "diverged",
+      "ahead_by": 12,
+      "behind_by": 17,
+      "total_commits": 12,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "branch": "xpu-v2-dse-rtl",
+      "head_sha": "173174797caf73527c1733c0be5d162c423dd91d",
+      "base": "main",
+      "base_sha": "f9ed4f4a8677ce08e0037f205667b8f94bf54871",
+      "merge_base_sha": "b01060dd337fa350411d9b0c438e3327db71ecc7",
+      "status": "diverged",
+      "ahead_by": 77,
+      "behind_by": 16,
+      "total_commits": 77,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_long_term_harness",
+      "branch": "feat/company-autopilot-memory-v1",
+      "head_sha": "bdc26413d886fb026bdc22c3a6f76dc2df873a1c",
+      "base": "main",
+      "base_sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "merge_base_sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "status": "ahead",
+      "ahead_by": 7,
+      "behind_by": 0,
+      "total_commits": 7,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_long_term_harness",
+      "branch": "feat/deepseek-longhorizon-v2",
+      "head_sha": "03a15b04d0137c724b18013be1c501281c1c5c6a",
+      "base": "main",
+      "base_sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "merge_base_sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "status": "ahead",
+      "ahead_by": 19,
+      "behind_by": 0,
+      "total_commits": 19,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_long_term_harness",
+      "branch": "feat/free-tier-routing-and-tests-v4",
+      "head_sha": "ec10f565fc28f5e0050e074eb17e07de1524bd56",
+      "base": "main",
+      "base_sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "merge_base_sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "status": "ahead",
+      "ahead_by": 57,
+      "behind_by": 0,
+      "total_commits": 57,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_long_term_harness",
+      "branch": "feat/openrouter-pareto-v3",
+      "head_sha": "571ddca74d230cf8053e0a522bb219ae9ee0fa86",
+      "base": "main",
+      "base_sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "merge_base_sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "status": "ahead",
+      "ahead_by": 45,
+      "behind_by": 0,
+      "total_commits": 45,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "debug-branch",
+      "head_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "behind",
+      "ahead_by": 0,
+      "behind_by": 6,
+      "total_commits": 0,
       "observed_at": "2026-11-20"
     }
   ]
