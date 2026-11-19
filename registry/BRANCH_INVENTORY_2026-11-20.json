@@ -443,8 +443,12 @@
           "name": "main",
           "sha": "5c9f0b341f59b1567c2d5109fbfeee17f357d196",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "5c9f0b341f59b1567c2d5109fbfeee17f357d196"
         }
       ]
     },
@@ -716,8 +720,12 @@
           "name": "main",
           "sha": "2e8af43e14875442f89b6dca13d96306defaf1bd",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "2e8af43e14875442f89b6dca13d96306defaf1bd"
         }
       ]
     },
@@ -4147,8 +4155,12 @@
           "name": "main",
           "sha": "5fb87036fe833a6e7939654469766c86f92533ee",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "5fb87036fe833a6e7939654469766c86f92533ee"
         }
       ]
     },
@@ -4214,8 +4226,12 @@
           "name": "main",
           "sha": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136"
         }
       ]
     },
@@ -5928,8 +5944,12 @@
           "name": "main",
           "sha": "c1d6674a9cf92aee2989ff34d66078e70435b59e",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "c1d6674a9cf92aee2989ff34d66078e70435b59e"
         }
       ]
     },
@@ -7525,8 +7545,12 @@
           "name": "main",
           "sha": "1f208b6b581d1b830c7c1d3ec37c21250793806e",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "1f208b6b581d1b830c7c1d3ec37c21250793806e"
         }
       ]
     },
@@ -8842,15 +8866,23 @@
           "name": "feat/pq-radio-teleportation-v1-20260927",
           "sha": "2938d6aa1e939b198fb4e98bb32b3cbfc958f6e4",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 40,
+          "main_ahead_of_branch": 7,
+          "merge_base_sha": "a45bd87fc9972726750dc0f5c5f50f9dacea51b6"
         },
         {
           "name": "main",
           "sha": "b3084f709aaa1023289cfec6e550a1a35d884513",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "b3084f709aaa1023289cfec6e550a1a35d884513"
         }
       ]
     },
@@ -9163,8 +9195,12 @@
           "name": "main",
           "sha": "8e3c6cd42c476cb900490c759774097f2c90dca2",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "8e3c6cd42c476cb900490c759774097f2c90dca2"
         }
       ]
     },
@@ -9178,8 +9214,12 @@
           "name": "main",
           "sha": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51"
         }
       ]
     },
