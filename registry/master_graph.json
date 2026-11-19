@@ -2796,26 +2796,29 @@
       "domain": "finance-economy",
       "node_type": "financial-economic-module",
       "maturity": "RND",
-      "purpose": "HARDNAV multiplier / triangular non-inflationary economy research despite legacy repository name.",
+      "purpose": "HardNAV multiplier and triangular non-inflationary economy simulation; not a search/retrieval engine. Main contains a Solidity lab and Python simulators; reported multipliers are simulated, not live external profit.",
       "capabilities": [
         "economic-model",
-        "financial-protocol",
-        "value-flow",
         "hardnav",
-        "triangular-economy"
+        "triangular-economy",
+        "canonical-dividend-simulation"
       ],
       "dependencies": [],
       "activity": {
         "band": "ACTIVE_30D",
         "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
       },
-      "risks": [],
+      "risks": [
+        "simulation-only; independent external opportunity and live execution are not verified",
+        "no CI workflow or automated test suite found in main"
+      ],
       "audit": {
-        "date": "2026-10-08",
+        "date": "2026-11-20",
         "evidence": [
-          "repository root",
-          "README when present",
-          "latest commit"
+          "main README and recursive tree inspected",
+          "docs/09_TEST_RESULTS.md labels results simulated/modelled",
+          "docs/10_ASSUMPTIONS_AND_LIMITS.md lists missing competition, latency, capacity decay and risk factors",
+          "no main CI workflow or test files found"
         ]
       }
     },
