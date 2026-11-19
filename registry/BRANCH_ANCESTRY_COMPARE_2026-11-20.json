@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 22,
-  "pending_comparisons": 1180,
+  "completed_comparisons": 29,
+  "pending_comparisons": 1173,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -289,6 +289,97 @@
       "ahead_by": 281,
       "behind_by": 262,
       "total_commits": 281,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/federation-engineering-security-baseline-v1-ci-restack-20260904",
+      "head_sha": "7598d6a0f1ac85b285bfcbf395f81df174783c78",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 287,
+      "behind_by": 262,
+      "total_commits": 287,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/federation-engineering-security-baseline-v1-final-20260904",
+      "head_sha": "834b360940e1bc0edd16e5c4992375e57bb03548",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 277,
+      "behind_by": 262,
+      "total_commits": 277,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/federation-trust-registry-v1-copycheck",
+      "head_sha": "6c2872c2ee4d2194666a4f90c7626d2f0dbab056",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "6c2872c2ee4d2194666a4f90c7626d2f0dbab056",
+      "status": "behind",
+      "ahead_by": 0,
+      "behind_by": 254,
+      "total_commits": 0,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/federation-trust-registry-v1",
+      "head_sha": "7af62f97df620be2e2d3d6c8450080863fbb7d37",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "6c2872c2ee4d2194666a4f90c7626d2f0dbab056",
+      "status": "diverged",
+      "ahead_by": 71,
+      "behind_by": 254,
+      "total_commits": 71,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/federation-validator-v1-20260821",
+      "head_sha": "3c37e025fd9a2cb551fdab8bda73bdb500343f2e",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 8,
+      "behind_by": 262,
+      "total_commits": 8,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/global-bank-fx-arbitrage-registry-v1-20260906",
+      "head_sha": "0bc03afbd9d4ed7c42a9f669692796f0c8d74ae2",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 319,
+      "behind_by": 262,
+      "total_commits": 319,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/live-economic-cycle-capture-v1-20260828",
+      "head_sha": "fbc00f93d66e1ea1229932f6496f94d3453566f5",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 229,
+      "behind_by": 262,
+      "total_commits": 229,
       "observed_at": "2026-11-20"
     }
   ]
