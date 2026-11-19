@@ -6927,6 +6927,271 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergistic_economics",
+      "default_branch": "main",
+      "branch_count": 19,
+      "unique_head_count": 19,
+      "branches": [
+        {
+          "name": "audit/sfc-scce-a2-4-continuation-20261111",
+          "sha": "6262f1dcb47ca0ef5c09f1f854f8cd1e37699c39",
+          "protected": false
+        },
+        {
+          "name": "audit-russian-readme",
+          "sha": "62a22473f3d025739789e7fdcc5019624e7bfd98",
+          "protected": false
+        },
+        {
+          "name": "feature/canonical-economic-entity-register-v1-rebased-20261115b",
+          "sha": "efeb8e0a5b4cf0a96d29a8cb548c4c298133b14b",
+          "protected": false
+        },
+        {
+          "name": "feature/canonical-economic-entity-register-v1-rebased-20261115",
+          "sha": "85d38bcd4805b3fa2982ecfe066a8d387199f0b2",
+          "protected": false
+        },
+        {
+          "name": "feature/canonical-economic-entity-register-v1",
+          "sha": "c0abf74b7be6cf2420b953ce95d87561fa6f159e",
+          "protected": false
+        },
+        {
+          "name": "feature/economic-router-core-v1",
+          "sha": "83c47524785ae87a9315ea80c9d15c285ad994c2",
+          "protected": false
+        },
+        {
+          "name": "feature/synergy-leagues-phase-1",
+          "sha": "760cf58c29166a7bcf9b9b8745a46cb96bab1583",
+          "protected": false
+        },
+        {
+          "name": "integration/economic-core-consolidation-2026-11-13",
+          "sha": "8ba881bf30ea8a6d27b32e8f8731589272c76708",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+          "protected": false
+        },
+        {
+          "name": "prototype-2-input-output",
+          "sha": "95c8a31978bfb2bfe8f104702a07e9d0df8751aa",
+          "protected": false
+        },
+        {
+          "name": "research/authoritative-wage-deposits-v1",
+          "sha": "c6b225a1738528d593a2b9b7bfc6e6c1577a9072",
+          "protected": false
+        },
+        {
+          "name": "research/bank-deposit-credit-audit-fix-20261115",
+          "sha": "9c891b7fbd24d3424344865bb1288e734567b5d8",
+          "protected": false
+        },
+        {
+          "name": "research/financial-register-instance-provenance-v1",
+          "sha": "c2a238aa869b1724ae9cec8ff885f3dcca58b312",
+          "protected": false
+        },
+        {
+          "name": "research/household-liquidity-recycling-v1",
+          "sha": "11b3edc668b0e5440e30f94ef7cc18c77321ec31",
+          "protected": false
+        },
+        {
+          "name": "research/operating-wage-coordinator-v1",
+          "sha": "e1cf9ac847a41dc23553a5ebb5d664c3387b8c8d",
+          "protected": false
+        },
+        {
+          "name": "research/sec-sper-integration-audit-2026-11-11",
+          "sha": "7116e4e3d83a61c9c9eeccdf6bd26f0c09998d46",
+          "protected": false
+        },
+        {
+          "name": "research/verified-wage-settlement-v1",
+          "sha": "8f490ea5e1b70491eb6115ff8c2f91a9e68408d2",
+          "protected": false
+        },
+        {
+          "name": "unified-economic-balance",
+          "sha": "65fe7b5458c3c2fc9739554b65fa16c647e8a695",
+          "protected": false
+        },
+        {
+          "name": "work/spatial-economic-bridge-20261116",
+          "sha": "283b647b2d0755279b660aae99e552de03c1e7ed",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_metaverse",
+      "default_branch": "main",
+      "branch_count": 10,
+      "unique_head_count": 9,
+      "branches": [
+        {
+          "name": "bootstrap/metaverse-architecture-v1",
+          "sha": "5e62521ba8abd2ce2c213eac1b9b0f10fe4a5d24",
+          "protected": false
+        },
+        {
+          "name": "feature/economic-router-spatial-v1",
+          "sha": "e5574f5e6a1e388e5390149db1b2abe877bf274d",
+          "protected": false
+        },
+        {
+          "name": "feature/league-spatial-projection-v1",
+          "sha": "5e62521ba8abd2ce2c213eac1b9b0f10fe4a5d24",
+          "protected": false
+        },
+        {
+          "name": "feature/rf-gnss-business-twin-v1",
+          "sha": "8e1ea211d8f22c39f852dbc6e7fa658325e15c5e",
+          "protected": false
+        },
+        {
+          "name": "integration/economic-router-spatial-v1-rebased-20261116",
+          "sha": "42600243bcca4fbd151f06ce7465663f66efe07d",
+          "protected": false
+        },
+        {
+          "name": "integration/rf-gnss-business-twin-rebased-20261116c",
+          "sha": "6513df6c6738f0531dbb9105a148bed37dbfe589",
+          "protected": false
+        },
+        {
+          "name": "integration/rf-gnss-business-twin-rebased-20261116",
+          "sha": "4b2734ecab6ddd89c45c7cbc2c35f27644b73fe0",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "a27d820bac901200975c2a94f3e7606798989356",
+          "protected": false
+        },
+        {
+          "name": "work/additional-metaverse-research-100-20261116",
+          "sha": "ff04397d490fad5de325f5cd0592e59473b52923",
+          "protected": false
+        },
+        {
+          "name": "work/global-world-platform-foundation-20261116",
+          "sha": "6c25eaf5feb77d9f0a399e4c4b6b95783c277bff",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_maps",
+      "default_branch": "main",
+      "branch_count": 10,
+      "unique_head_count": 10,
+      "branches": [
+        {
+          "name": "feature/postgis-h3-open-data-cesium-v1",
+          "sha": "bb64124c67e5a76ac4669e28bab13090f1238282",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "9292be3e86143491c3f216871e58149ae829b7bd",
+          "protected": false
+        },
+        {
+          "name": "work/cesium-admin-divisions-layers-20261116",
+          "sha": "284cc15a7a3036e10011b1008b34868cd1a5aa00",
+          "protected": false
+        },
+        {
+          "name": "work/eaeu-boundary-subset-optimization-20261116",
+          "sha": "d2a9a12c009cc368a326f56ab037952091b0ef72",
+          "protected": false
+        },
+        {
+          "name": "work/eaeu-country-coverage-planner-20261116",
+          "sha": "ebe4ba2d818df47832a14ca2551c4167d9af9d10",
+          "protected": false
+        },
+        {
+          "name": "work/eaeu-world-3d-viewer-20261116",
+          "sha": "ac29f72215064b4048dea21e327785877d60f34b",
+          "protected": false
+        },
+        {
+          "name": "work/overture-coverage-auditor-20261116",
+          "sha": "cc12d0b93e35ca1dfa4d7e74f4dfa7bcbd45a8ab",
+          "protected": false
+        },
+        {
+          "name": "work/overture-global-divisions-ingest-20261116",
+          "sha": "b9fa0cacf4145045473611c66b3620cd5d3e7f4d",
+          "protected": false
+        },
+        {
+          "name": "work/overture-resumable-tile-runner-20261116",
+          "sha": "3316f7513d79a15e01aa92eb17c544b2948b1f2b",
+          "protected": false
+        },
+        {
+          "name": "work/overture-tile-job-planner-20261116",
+          "sha": "6a146eeffa5f8cf71948b9d8ed26a6bd5fe113a8",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/shtenco_micro_ai",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "5c9f0b341f59b1567c2d5109fbfeee17f357d196",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_long_term_harness",
+      "default_branch": "main",
+      "branch_count": 5,
+      "unique_head_count": 5,
+      "branches": [
+        {
+          "name": "feat/company-autopilot-memory-v1",
+          "sha": "bdc26413d886fb026bdc22c3a6f76dc2df873a1c",
+          "protected": false
+        },
+        {
+          "name": "feat/deepseek-longhorizon-v2",
+          "sha": "03a15b04d0137c724b18013be1c501281c1c5c6a",
+          "protected": false
+        },
+        {
+          "name": "feat/free-tier-routing-and-tests-v4",
+          "sha": "ec10f565fc28f5e0050e074eb17e07de1524bd56",
+          "protected": false
+        },
+        {
+          "name": "feat/openrouter-pareto-v3",
+          "sha": "571ddca74d230cf8053e0a522bb219ae9ee0fa86",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+          "protected": false
+        }
+      ]
     }
   ]
 }
