@@ -6649,6 +6649,28 @@
           "name": "feat/hierarchical-cognitive-memory-v1",
           "sha": "37bebe6e8d75444ced7e610b821664892eabe0f8",
           "protected": null,
+          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_observed_at": "2026-11-20"
+        },
+        {
+          "name": "main",
+          "sha": "74b518c85d3a69fdc2e868737cbe9f4f2cac761c",
+          "protected": null,
+          "head_sha_source": "LIVE_BRANCH_AUDIT_2026-11-20",
+          "head_sha_observed_at": "2026-11-20"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "default_branch": "main",
+      "branch_count": 2,
+      "unique_head_count": 2,
+      "branches": [
+        {
+          "name": "feat/hierarchical-cognitive-memory-v1",
+          "sha": "37bebe6e8d75444ced7e610b821664892eabe0f8",
+          "protected": null,
           "head_sha_source": "LIVE_PR_METADATA",
           "head_sha_observed_at": "2026-11-20"
         },
@@ -9800,6 +9822,6 @@
       ]
     }
   ],
-  "snapshot_note": "Merged the 1,075 live branch-audit SHA observations for 59 repositories with the 2026-11-20 census; added the newly discovered 92nd repository using current PR head/base SHAs. The remaining 217 branch SHAs are dated census values, not individually re-fetched in this pass.",
-  "unique_heads_summed_within_repositories": 1208
+  "snapshot_note": "92 repositories / 1,294 refs. 1,075 live SHA observations from the 59-repository live branch tranche plus two live refs in the newly discovered cognitive-memory repository; 217 SHA values remain from the dated census. Branch protection for the two new refs is unknown.",
+  "unique_heads_summed_within_repositories": 1210
 }
