@@ -1,9 +1,9 @@
 {
   "schema": "synergy.live-branch-audit/v1",
   "as_of": "2026-11-20",
-  "scope": "56 repositories covered by nineteen live branch audit tranches; not yet the full 91-repository owner inventory",
-  "repository_count": 56,
-  "branch_record_count": 1044,
+  "scope": "59 repositories covered by live branch audit tranches; not yet the full 91-repository owner inventory",
+  "repository_count": 59,
+  "branch_record_count": 1075,
   "unique_repository_branch_pairs": 1044,
   "records": [
     {
@@ -12375,6 +12375,355 @@
       "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
       "blocker_and_decision": "No open PR; purpose inferred; inspect ancestry and consumers. Keep agent experiments and EURUSD specialist separately evaluated; sealed OOS figures must be independently reproduced net of spread/commission/slippage. Retain canonical; no funded trading without a separate safety review.",
       "source_audit_document": "docs/LIVE_BRANCH_AUDIT_LEGACY_ROBOT_MIDAS_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_project",
+      "branch": "audit/portfolio-89-repositories-v1",
+      "head_sha": "9ffa1736783df8f4ff19163d0b9d5716fcba0ca9",
+      "purpose": "Audit owner repository portfolio and reconcile 89 assets",
+      "branch_state": "#2 draft",
+      "open_pr_numbers": [
+        2
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain; treat PRs as draft research until valuation methodology, asset evidence and financing assumptions are independently reconciled.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_project",
+      "branch": "grant-dossier-ip-valuation-v1",
+      "head_sha": "4c6e1c3b4c735c78bab947b7f114d6b59b84231e",
+      "purpose": "IP valuation and grant-financing dossier",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain; treat PRs as draft research until valuation methodology, asset evidence and financing assumptions are independently reconciled.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_project",
+      "branch": "main",
+      "head_sha": "fcfaa292ab97b622ac6292b8179aaa66a4e585a4",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain; treat PRs as draft research until valuation methodology, asset evidence and financing assumptions are independently reconciled.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_project",
+      "branch": "research/ip-financing-readiness-2026-11-14",
+      "head_sha": "40cd4901df5aae9b63cb51e4f2aa8df25c9c9103",
+      "purpose": "IP-backed financing readiness research",
+      "branch_state": "#3 draft",
+      "open_pr_numbers": [
+        3
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain; treat PRs as draft research until valuation methodology, asset evidence and financing assumptions are independently reconciled.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_project",
+      "branch": "valuation-v3-87-assets-20261114",
+      "head_sha": "66b5fed8332a65865962cafb22cb41c3701b38f5",
+      "purpose": "V3 valuation register for 87 technical assets",
+      "branch_state": "#1 draft",
+      "open_pr_numbers": [
+        1
+      ],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain; treat PRs as draft research until valuation methodology, asset evidence and financing assumptions are independently reconciled.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "legacy-dlp-before-reverse-exp-2026-09-28",
+      "head_sha": "52a6ecd338846120e0421f774159b37aeafaaa5d",
+      "purpose": "Preserved pre-REVERSE-EXP DLP research lineage",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "main",
+      "head_sha": "f140d3e7f1db141d7ce5497b65663fd4d4f5b305",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain research baseline; computational crossover is explicitly NOT FOUND. Keep cryptographic security claims out of scope.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "readme-dlp-path-2026-09-29",
+      "head_sha": "35c4c5cbf449e35ebdf598cad27cfc3c88d367f1",
+      "purpose": "Documentation and research-path update",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v3-unified-constraint-economics",
+      "head_sha": "d8009505fc3d8d33fb4b10bce4223878ea489028",
+      "purpose": "REVERSE-EXP experiment: v3 unified constraint economics",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v4-power2-graph",
+      "head_sha": "d4b1e044a6256a62263f809390cb64a92276f75b",
+      "purpose": "REVERSE-EXP experiment: v4 power2 graph",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v7-ec-lattice-probe",
+      "head_sha": "95d9417c28f9657707cf164399ab50f24f4e0ea9",
+      "purpose": "REVERSE-EXP experiment: v7 ec lattice probe",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v7-lll-closure",
+      "head_sha": "7b28246f4f2beef8abd6c3249b67639ca69123c9",
+      "purpose": "REVERSE-EXP experiment: v7 lll closure",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v8-projection-economics",
+      "head_sha": "027159f52e5cc29e11acf57153c53362c479151a",
+      "purpose": "REVERSE-EXP experiment: v8 projection economics",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v9-symbolic-sha-graph",
+      "head_sha": "e3467d3d73a625bd88a95bc8aac1a0a17c413c4c",
+      "purpose": "REVERSE-EXP experiment: v9 symbolic sha graph",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v9-toy-symbolic-closure",
+      "head_sha": "35651c52ef914357b7785d23ff52c47ba8be8da6",
+      "purpose": "REVERSE-EXP experiment: v9 toy symbolic closure",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v10-real-secp-algebraic-projection",
+      "head_sha": "79d3e68242543d9dedbdcdc133c9240068f1c153",
+      "purpose": "REVERSE-EXP experiment: v10 real secp algebraic projection",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v10-secp20-symbolic-projection",
+      "head_sha": "77d76be622eab6828b62fa2f0a24a9014d5fac05",
+      "purpose": "REVERSE-EXP experiment: v10 secp20 symbolic projection",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v11-sha-closure-map",
+      "head_sha": "541263631fcaed174ef3ec563f44ebec113ec887",
+      "purpose": "REVERSE-EXP experiment: v11 sha closure map",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v12-nonlinear-separator-compression",
+      "head_sha": "f32a3f2a7e1d42d36a4d7acd4f3f2e1cea701b04",
+      "purpose": "REVERSE-EXP experiment: v12 nonlinear separator compression",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v13-qiskit-graph-probe",
+      "head_sha": "12118ec87685b0380e8916b92be3d8821ce33470",
+      "purpose": "REVERSE-EXP experiment: v13 qiskit graph probe",
+      "branch_state": "#12 draft",
+      "open_pr_numbers": [
+        12
+      ],
+      "ci_evidence": "FAILURE on exact branch HEAD (run 36622254861)",
+      "blocker_and_decision": "Retain as failed experiment; inspect job logs and repair Qiskit environment before any promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v14-quantum-pebbling",
+      "head_sha": "0bc851449dac509996f2f6dc85bd613029c1beb1",
+      "purpose": "REVERSE-EXP experiment: v14 quantum pebbling",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v15-compiled-reversible-arithmetic",
+      "head_sha": "7293ad91a386c9ac54b2bbdf3fbe952f16b9e63a",
+      "purpose": "REVERSE-EXP experiment: v15 compiled reversible arithmetic",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v16-affine-record-replay-ec",
+      "head_sha": "e9b271a94405023fd54f39a909b1ab0c29c1b7be",
+      "purpose": "REVERSE-EXP experiment: v16 affine record replay ec",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v17-compiled-modular-inversion",
+      "head_sha": "fa9c4b2055f24e3fc77ce86f994256e9d85f1e54",
+      "purpose": "REVERSE-EXP experiment: v17 compiled modular inversion",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v18-gcd-hypothesis-audit",
+      "head_sha": "fbe5017314a865f93dcfc3ba11000b47f7cd9383",
+      "purpose": "REVERSE-EXP experiment: v18 gcd hypothesis audit",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v31-phase-map",
+      "head_sha": "c578274bcf8369ff04b353fa8b868fe2aa061ad6",
+      "purpose": "REVERSE-EXP experiment: v31 phase map",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v31-sha-phase-map",
+      "head_sha": "e6a2a99fc36606b1593ec3e2c54ba4faf84a375d",
+      "purpose": "REVERSE-EXP experiment: v31 sha phase map",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "branch": "reverse-exp-v32-exact-1-12",
+      "head_sha": "400a84ebaf5c4965376515a332384002e23fa072",
+      "purpose": "REVERSE-EXP experiment: v32 exact 1 12",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as research lineage; compare against main and require reproducible computational-cost evidence before promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_trader",
+      "branch": "import/seal-sovereign-trader-foundation",
+      "head_sha": "8575db31a9b579bd07a498ab86cc95f59ed4c766",
+      "purpose": "Sovereign Trader foundation import and provenance",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "Older failures observed on different SHAs; current branch HEAD not verified",
+      "blocker_and_decision": "Retain for controlled evaluation; no PR, no exact-head passing CI and no production promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_trader",
+      "branch": "main",
+      "head_sha": "8efe7942ed6c68ac4b081ee44b651ac99fd0ae7c",
+      "purpose": "Canonical default branch",
+      "branch_state": "MAIN",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_OBSERVED in latest-10 workflow window",
+      "blocker_and_decision": "Retain as experimental research; no live trading or production claim.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_trader",
+      "branch": "runtime/qwen35-4b-2026-eval",
+      "head_sha": "eadbf502f069739f9cd492538477f6fefbd5b8a8",
+      "purpose": "Qwen 3.5 local runtime evaluation probe",
+      "branch_state": "NO_OPEN_PR",
+      "open_pr_numbers": [],
+      "ci_evidence": "FAILURE on exact branch HEAD (run 35353005404)",
+      "blocker_and_decision": "Retain for controlled evaluation; no PR, no exact-head passing CI and no production promotion.",
+      "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
     }
   ]
 }
