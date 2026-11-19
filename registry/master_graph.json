@@ -28,11 +28,11 @@
       "LEGACY_RND": 9,
       "SECURITY_REVIEW": 1,
       "CANDIDATE": 32,
-      "RND": 5,
+      "RND": 6,
       "SECURITY_BLOCKED": 2,
       "ACTIVE_EXPERIMENTAL": 5,
       "RND_LOCAL_TESTING": 1,
-      "STUB_SPEC_ONLY": 20,
+      "STUB_SPEC_ONLY": 19,
       "RND_SCIENCE": 1,
       "RND_FEDERATION": 1,
       "MODEL_SPEC_READY": 1,
@@ -2825,13 +2825,13 @@
       "url": "https://github.com/Shtenco/synergy_lead_search_engline",
       "visibility": "private",
       "archived": false,
-      "size_kb": 0,
+      "size_kb": 461,
       "default_branch": "main",
       "ecosystem_relation": "core",
       "domain": "search-growth",
-      "node_type": "specification",
-      "maturity": "STUB_SPEC_ONLY",
-      "purpose": "Lead-search engine repository; currently initial/stub state.",
+      "node_type": "lead-discovery-module",
+      "maturity": "RND",
+      "purpose": "Offline lead discovery and approval-gated CRM hand-off; executable main-branch FastAPI/SQLite/FTS5 candidate with exact-main CI passing, not deployed.",
       "capabilities": [
         "search",
         "lead-discovery",
@@ -2844,14 +2844,15 @@
         "basis": "latest commit inspected during M0 audit; all 81 repos had Sep/Oct 2026 activity"
       },
       "risks": [
-        "no-executable-runtime-confirmed"
+        "offline candidate only; no external crawling, production CRM dispatch or deployed service verified"
       ],
       "audit": {
-        "date": "2026-10-08",
+        "date": "2026-11-20",
         "evidence": [
-          "repository root",
-          "README when present",
-          "latest commit"
+          "main tree and README inspected",
+          "14 tests passed on exact main SHA 5654e37fdc348ace7398a7104d54f52e6dbd6800",
+          "compileall succeeded in workflow run 40054962494",
+          "open PR #2 ready-for-review; PR #1 draft"
         ]
       }
     },
