@@ -1224,7 +1224,7 @@ repository,branch,head_sha,protected,is_default,branch_count,unique_head_count
 "Shtenco/synergy","audit/reconcile-live-89-inventory-v1","8f4d35a9d0346f3933867173829a64bed2168e87",false,false,4,4
 "Shtenco/synergy","feature/web-ecosystem-v8-federation-20261014","26cb5ce943a3ddeafc3509b59a8c563dde97bbad",false,false,4,4
 "Shtenco/synergy","feature/82-repo-ecosystem-registry-20261014","e91c0c8099fbcc49b6dd28e245e6603caaa5a7a9",false,false,4,4
-"Shtenco/synergy","main","d8ee3cf8302ecd5fd43fc320cee2e793e157bcaf",false,true,4,4
+"Shtenco/synergy","main","a688134d8162cefc0cd62de1377aeaf955e14f4e",false,true,4,4
 "Shtenco/synergy_ai_llm_rwkv","feature/rwkv7-original-weights","dfc163f018e5659e914bc727ab9ea6a5dfb335c6",false,false,2,2
 "Shtenco/synergy_ai_llm_rwkv","main","5f5d2a44610e9d2dfd5413bed6726954e4d0e568",false,true,2,2
 "Shtenco/synergy_ai_economic","main","3eda610edba084e908285b9729362dacfdd9d81c",false,true,3,3
