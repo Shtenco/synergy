@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 40,
-  "pending_repositories": 52,
-  "branch_refs": 544,
+  "completed_repositories": 48,
+  "pending_repositories": 44,
+  "branch_refs": 691,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -3047,6 +3047,813 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_workspace",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 11,
+      "branches": [
+        {
+          "name": "deck-visual-qa-v3",
+          "head_sha": "03d35bc5a256b7a291d66509d6268dd16bc17154",
+          "protected": false
+        },
+        {
+          "name": "design/investor-deck-v2-clean-layout-20261026",
+          "head_sha": "15ca7b54eb792181942de5d5151f644f855b90dd",
+          "protected": false
+        },
+        {
+          "name": "feat/hybrid-google-oracle-v1",
+          "head_sha": "c932d3ea1dee7bfa937072358f222ab4f2534215",
+          "protected": false
+        },
+        {
+          "name": "feature/org-loc-auditor-20261114",
+          "head_sha": "58df8de3930bd5a90c6a02306a8c9f2edfcde4f8",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "7540ad8f565ab74b31f972843c847c06888e7943",
+          "protected": false
+        },
+        {
+          "name": "presentation-ai-company-v4",
+          "head_sha": "14a2ece8349459a5af51af64591057b1da5d62a3",
+          "protected": false
+        },
+        {
+          "name": "presentation-ecosystem-v5-working",
+          "head_sha": "dd5795416cde8ad8ec3cb76deae989e25e78c65e",
+          "protected": false
+        },
+        {
+          "name": "presentation-v4-chromium-pdf-20261027",
+          "head_sha": "8759275af50392b546ccbd38961600288250988f",
+          "protected": false
+        },
+        {
+          "name": "presentation-v4-pdf-delivery",
+          "head_sha": "8759275af50392b546ccbd38961600288250988f",
+          "protected": false
+        },
+        {
+          "name": "presentation-v9-center-logos-20261030",
+          "head_sha": "dd5795416cde8ad8ec3cb76deae989e25e78c65e",
+          "protected": false
+        },
+        {
+          "name": "release/v1.0-desktop-rc",
+          "head_sha": "5483f61106e626267c521cf64be8eaeb82448fba",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "5fb87036fe833a6e7939654469766c86f92533ee",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_app",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 4,
+      "branches": [
+        {
+          "name": "feat/finance-next-android-v2-5",
+          "head_sha": "6647b1fc0520806d85e1bc1523a6e43f7d3a59a1",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "97ade3df5a4922db2b77eb678726ff265edd2cb2",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
+          "protected": false
+        },
+        {
+          "name": "synergy-smm-v1",
+          "head_sha": "249e7586abc60aa11c20740f0ea08004add29852",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_app_family",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_apps",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 11,
+      "branches": [
+        {
+          "name": "analysis/all-850-app-ideas",
+          "head_sha": "1ae42f2f646776285d7c148cb0ad44e45a3aeba1",
+          "protected": false
+        },
+        {
+          "name": "artifacts/nutrition-2200-v13-20261024",
+          "head_sha": "a952c72fcad195eed1ec02a158c34735f6359dfe",
+          "protected": false
+        },
+        {
+          "name": "distill/chat-6ab6d182-500-apps",
+          "head_sha": "0a714a83dfaad5c96f4ae74789c27a5800ee2a91",
+          "protected": false
+        },
+        {
+          "name": "distill/chat-6ab6d182-moex-future-portfolio",
+          "head_sha": "fd4bcaf1b7fad60510a807eab810e32eadcaf24c",
+          "protected": false
+        },
+        {
+          "name": "feat/w0-w2-safe-pilot-20261112",
+          "head_sha": "6669e1cbb2e8e52d742631cf62903050cf191bc2",
+          "protected": false
+        },
+        {
+          "name": "feature/500-app-catalog",
+          "head_sha": "9450fe23dcbc6230de489481a8b4d3b83bc27cf9",
+          "protected": false
+        },
+        {
+          "name": "fix/w0-fail-closed-permissions-20261112",
+          "head_sha": "de76a6e5efde6315dbae23fa1fbafbf7bb759c42",
+          "protected": false
+        },
+        {
+          "name": "implementation/metaos-v9-three-apps",
+          "head_sha": "1ae42f2f646776285d7c148cb0ad44e45a3aeba1",
+          "protected": false
+        },
+        {
+          "name": "integration/synergy-apps-master-2026",
+          "head_sha": "60c634b01a6a5777f3712c15683ba90c0c4f17e5",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "protected": false
+        },
+        {
+          "name": "migration/drive-app-sources",
+          "head_sha": "0a7652b85848aa25eb0e0d3de4aa3396ee9f86a1",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 100,
+      "branches": [
+        {
+          "name": "archive/w5-v09-immutable-6ae145a",
+          "head_sha": "6ae145ae61a19ed5dfb5a7dae5abf8d79d79eff9",
+          "protected": false
+        },
+        {
+          "name": "audit/active-habitat-master-v1",
+          "head_sha": "43f8d00ea237e2123ec07d88c1aa2d3d91f683e2",
+          "protected": false
+        },
+        {
+          "name": "audit/active-habitat-master-v2-preregistered",
+          "head_sha": "9ae7c06d4660061a62bfde4fd5136010dcff9fd5",
+          "protected": false
+        },
+        {
+          "name": "audit/active-habitat-master-v2",
+          "head_sha": "4f3c9ccc67c14e892744b30a9f2736f2fc4576aa",
+          "protected": false
+        },
+        {
+          "name": "audit/bell-chsh-gate",
+          "head_sha": "de0b56710f3892f566ece0e6ea31030a50c2dfaf",
+          "protected": false
+        },
+        {
+          "name": "audit/bqg-evidence-map-2026-11-07",
+          "head_sha": "56830f687ae8b45353025e71b2b128ae9f153a2b",
+          "protected": false
+        },
+        {
+          "name": "audit/bqg-independent-proof-20261108",
+          "head_sha": "fddd49427c636e92dfe79b96034862aeba629927",
+          "protected": false
+        },
+        {
+          "name": "audit/current-status-2026-10-10",
+          "head_sha": "ac1a07a27c2acc9231d2d42ffcbbed9799afb426",
+          "protected": false
+        },
+        {
+          "name": "audit/depth6-stageb-ledger-reconcile-20261110",
+          "head_sha": "56fa40e4efae47fd600487200f11cf0b0bb80555",
+          "protected": false
+        },
+        {
+          "name": "audit/habr-emergent-graph-independent-control-20261111",
+          "head_sha": "553c2936a2c53352dfd12e4645255124422584a5",
+          "protected": false
+        },
+        {
+          "name": "audit/k5-s5-carrier-symmetry",
+          "head_sha": "5a4685d2f73453790f554cf3f5cd75275c6458bb",
+          "protected": false
+        },
+        {
+          "name": "audit/k5-s5-hamiltonian-covariance-v1",
+          "head_sha": "f683df8f9d80c6654dab8e99c3c8946c586c7401",
+          "protected": false
+        },
+        {
+          "name": "audit/l1-amplitude-package-20261110",
+          "head_sha": "c20b5b6e8c616c79d5c66fa846730b9276bde41e",
+          "protected": false
+        },
+        {
+          "name": "audit/loc-2026-09-15",
+          "head_sha": "4fc5634ebed3b5e29318bef90f23e5006a50bb31",
+          "protected": false
+        },
+        {
+          "name": "audit/peter-weyl-sixth-cutoff-20261110",
+          "head_sha": "8f710d7c641565f2fbf5c0497190872cff3d1757",
+          "protected": false
+        },
+        {
+          "name": "audit/physicalization-truth-v3",
+          "head_sha": "e5ae681bbaed3bdb53d82a7f9d6b51cf3707da9b",
+          "protected": false
+        },
+        {
+          "name": "audit/pl48-spectral-complete-20261110",
+          "head_sha": "9a2880518b091b578f4e1004fd036e2b4eb6db34",
+          "protected": false
+        },
+        {
+          "name": "audit/pl48-volume-failclosed-20261110",
+          "head_sha": "b26ae55f64e3f9646c91735f005a35b30b4bb34b",
+          "protected": false
+        },
+        {
+          "name": "audit/q4-k5-local-carrier-bridge",
+          "head_sha": "d9683ce796b3e05dc9c1c83d16790db7ec6f946c",
+          "protected": false
+        },
+        {
+          "name": "audit/q4-s4-background-obstruction",
+          "head_sha": "14d9088c5674d320801979f24af72e45375c5851",
+          "protected": false
+        },
+        {
+          "name": "audit/rg-refinement-strict-20261110",
+          "head_sha": "f03fb73391d0ac06aa5652db4bc31684dce121a8",
+          "protected": false
+        },
+        {
+          "name": "audit/spectral-history-closure-2026-09-06",
+          "head_sha": "c19de5df420e84ae7125b67cea4bef5a9dc37536",
+          "protected": false
+        },
+        {
+          "name": "audit/v26-strict-leakage-20261110",
+          "head_sha": "0bdb95e149b2acca9d583e9cdefe63da8ce942f8",
+          "protected": false
+        },
+        {
+          "name": "bqg/depth6-32-canonical-recovery",
+          "head_sha": "36b652fa493a1ea623ff8f9b3e80671a3b7c5428",
+          "protected": false
+        },
+        {
+          "name": "bqg/depth6-32-resumable-keymeta",
+          "head_sha": "1ddda1e7a42af6792a2e7270a8e4da3b615ab0b3",
+          "protected": false
+        },
+        {
+          "name": "ci-sinergy-messenger-v02-native-build",
+          "head_sha": "4a6bdf75b1403333b27600d4af9bc510b7bbadd0",
+          "protected": false
+        },
+        {
+          "name": "ci-sinergy-messenger-v030",
+          "head_sha": "6c4fd254530fea3b70d2c7fec15711ccb1caedc3",
+          "protected": false
+        },
+        {
+          "name": "ci-sinergy-messenger-v033-diagnostic",
+          "head_sha": "931faff5906ea13ce2b2ada9b269f2c10ca18a94",
+          "protected": false
+        },
+        {
+          "name": "ci-sinergy-messenger-v033-functional-final",
+          "head_sha": "412517dc6a6fecf2b58ba6203972df2c62d5f007",
+          "protected": false
+        },
+        {
+          "name": "cleanup/gr-qm-bit-continuum",
+          "head_sha": "91f4dbf7cd61d851426198db4d38afc743db4c98",
+          "protected": false
+        },
+        {
+          "name": "codex",
+          "head_sha": "486036ab8fdaa0901c5461ec8bda8418df34ab09",
+          "protected": false
+        },
+        {
+          "name": "codex-3g4lb0",
+          "head_sha": "344659a4976b77c9cd85d84e8fa1f10f03769cfc",
+          "protected": false
+        },
+        {
+          "name": "codex-4bua2u",
+          "head_sha": "11012b7abe75ba881125a793885327f03a1e9b59",
+          "protected": false
+        },
+        {
+          "name": "codex-4ni6ut",
+          "head_sha": "ba7e6cedc3bd7b356e3f353227fef5795c336027",
+          "protected": false
+        },
+        {
+          "name": "codex-5uocfq",
+          "head_sha": "de7d0be18ebc49349738b8191e8976b05809edc3",
+          "protected": false
+        },
+        {
+          "name": "codex-89btph",
+          "head_sha": "fd4f13017d698b5ac92517c6c08b9f5726cfe34e",
+          "protected": false
+        },
+        {
+          "name": "codex-bwhfkc",
+          "head_sha": "2b861a419623dd46c91b06b4a58eb104c4fd5366",
+          "protected": false
+        },
+        {
+          "name": "codex-e0ee6e",
+          "head_sha": "6c0badce8a9d407d9f3244351866913ec5486dfc",
+          "protected": false
+        },
+        {
+          "name": "codex-hobdxi",
+          "head_sha": "be5d5fba10868e4e1b613813494e19943354059c",
+          "protected": false
+        },
+        {
+          "name": "codex-kpnzg2",
+          "head_sha": "770d156d5985a1c5d355ae62708fb231c24318a0",
+          "protected": false
+        },
+        {
+          "name": "codex-lppw5h",
+          "head_sha": "b46883f229c5870135720a485c161bf30ae87e9c",
+          "protected": false
+        },
+        {
+          "name": "codex-qgjhgi",
+          "head_sha": "a0b2b9b7b9a961a92abeea9e90868ef13737fa30",
+          "protected": false
+        },
+        {
+          "name": "codex-ro2602",
+          "head_sha": "f6155c3abe030a2564e0402306baad1f5b9f253a",
+          "protected": false
+        },
+        {
+          "name": "codex-sjothi",
+          "head_sha": "a29288ede4363534124c9ef1630b5b06648c912d",
+          "protected": false
+        },
+        {
+          "name": "codex-va54l6",
+          "head_sha": "616d4e7f240b8cc184041ac7497852f03ae4c683",
+          "protected": false
+        },
+        {
+          "name": "codex-vbnn2h",
+          "head_sha": "2bece049421c96e5e4e1aefef6a45b57ea5a190d",
+          "protected": false
+        },
+        {
+          "name": "codex-yn178z",
+          "head_sha": "1c0138c6309531c31984beab5e3565fdb2ef60fe",
+          "protected": false
+        },
+        {
+          "name": "docs/bqg-comprehensive-readme-20261109",
+          "head_sha": "49629275314883213b71cc3a799defe7a03ace7d",
+          "protected": false
+        },
+        {
+          "name": "docs/bqg-holography-from-bit-20261109",
+          "head_sha": "9cf8369b453c2642a47efd6b0c18d87c324cf7d6",
+          "protected": false
+        },
+        {
+          "name": "docs/bqg-scientific-fairytale-20261109",
+          "head_sha": "f4d27c390b2f6a436b8c1108ef837414a340cb31",
+          "protected": false
+        },
+        {
+          "name": "exp/iq1s70b-vs-qwen3-14b-20260923",
+          "head_sha": "326b53733b688c079ae983f7f4936102f82b112b",
+          "protected": false
+        },
+        {
+          "name": "exp/nexus-70b-runtime",
+          "head_sha": "326b53733b688c079ae983f7f4936102f82b112b",
+          "protected": false
+        },
+        {
+          "name": "exp/nexus-dwe-real-12b",
+          "head_sha": "32e28947dc586c44652bec0d68f98605a62a6a52",
+          "protected": false
+        },
+        {
+          "name": "exp/plain-llama-portable",
+          "head_sha": "120f596f652fb5a70e28a10605f0884af59134f2",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen15-local-courier",
+          "head_sha": "42c71612967fdaf3409ac5ddfd390ec7b0189589",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen15b-q8-courier",
+          "head_sha": "ecd0b20ca7affc5e424e7f113a5b273ba73c6c3a",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen-activation-calibration",
+          "head_sha": "213c7a6e6443625f57cb8c727500aaaeddbdd4a5",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen-chunks",
+          "head_sha": "952b6524633773d6c4dfd674036c044f3d0f2d8b",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen-f16-courier",
+          "head_sha": "ae1025b29150293d0b98ce9d970346883bfede52",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen-local-courier",
+          "head_sha": "b59f4bb4031338f9f6d7d5c97c5123deb77da984",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "101be6105e1bee9c3e6d662b451d72af2350e827",
+          "protected": false
+        },
+        {
+          "name": "final-squash-base",
+          "head_sha": "c40b091513cd3c73b14bbcaaa80bc12d861da7f3",
+          "protected": false
+        },
+        {
+          "name": "fix/v21-c1-fail-closed-20261108",
+          "head_sha": "00a26b849aab60e39844879af06001a82fd6383c",
+          "protected": false
+        },
+        {
+          "name": "hodge-spectral-dimension-notation-fix",
+          "head_sha": "7f01e41120f001b51a933d4d6aae27010e908e05",
+          "protected": false
+        },
+        {
+          "name": "integration/bqg-proof-index-mirror-spectral-20261119",
+          "head_sha": "131d9d180c90f9e578d0a8c713e5e74f62b1c7d4",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "401b006d368caf4bfd7578c0d312795cf2f2323a",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "63ee28fb16dc303344928b5a75fcae2a068055be",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-phi-fix-run",
+          "head_sha": "cfe01691b8541b3963fe220cea254fef5cae4a32",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-public-run-20260818",
+          "head_sha": "9e660e61d55d316d09508f900adce0807936b34c",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-qwen-instruct-run",
+          "head_sha": "39585d2b152790579e6e8b9a608939c9e3acc8dc",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-structured-five-run",
+          "head_sha": "52ec9e5161024119f276f79c96162012f796ba8d",
+          "protected": false
+        },
+        {
+          "name": "physical-tt-kernel-leading-ir",
+          "head_sha": "e3118e1a710b83d23622af57d9c41ed66d7da2c4",
+          "protected": false
+        },
+        {
+          "name": "recovery/bqg-physical-spectral-history-2026-09-06",
+          "head_sha": "4cb8ae20b72768d556973361820edb1e3137ae05",
+          "protected": false
+        },
+        {
+          "name": "release/canonical-theory-package-v1",
+          "head_sha": "934ead3ebdcdc93b4adbc11bca08ca46f6325570",
+          "protected": false
+        },
+        {
+          "name": "research/bcqg-core-candidate-v1",
+          "head_sha": "2b2c9f623544f5d38f7ffd7f37617f91f4dae306",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-algebra",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-algebra2",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-final",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-final2",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-v2",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-v3",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-v4",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-v5",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-work",
+          "head_sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-bell-volume-20261012",
+          "head_sha": "80d519240f9f4e68df77a7a28742e1a943b37f15",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-causal-cone-audit-hardening-20261113",
+          "head_sha": "56b37d63a8b6790b6fb2594627df825639694b89",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-hda-minimal-no-go-20261012",
+          "head_sha": "ae74e72035fd97c01b1f3399365bfd865ce95617",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-intrinsic-clock-lorentzian-bridge-20261116",
+          "head_sha": "785363b612719972f90569dc27413dd4a165226e",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-micro-carry-rank-20261031",
+          "head_sha": "fa8c487226465cd9beb2cf8997e8226f2142f3f6",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-node1-lorentzian-columns-20261031",
+          "head_sha": "a4d41b343e7ce04895abb655e16a500da290ee23",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-q2-correspondence-audit-hardening-20261119",
+          "head_sha": "e7ac35b4c3ece5e4db0abc05df2502aefbf08f44",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-qfi-q2-emergent-graph-audit-20261118",
+          "head_sha": "43506dbae891cb9037f1987befc3e31c90c4a311",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v04-actual-constraint-kernel-20261106",
+          "head_sha": "ec8d9bdc3594f6304787f592ed6c4adedc878f40",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v16-first-leg-20261107",
+          "head_sha": "e0431080b283e3a920d9715a63e7318021bd4eb8",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v20-local-c1-gates-20261107",
+          "head_sha": "8d8d3ae533a9a47704263463c76c3a2288635173",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v21-c1-checkpoint-repair-20261107",
+          "head_sha": "2c28123720db59306890daa0dfba1ad21c2e7eb1",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v22-local-c1-e2e-20261107",
+          "head_sha": "f65b8ea83eba8d4cd136bdebc8fe1d65de582776",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v23-exact-finite-certificates-20261108",
+          "head_sha": "d712a74e8e09408815e0f78483e9c249e139d317",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v24-finite-index-constraint-gates-20261108",
+          "head_sha": "524240db085485ac31678e82778f585ffd38d199",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": true
+    },
+    {
+      "repository": "Shtenco/synergy_blochain_budget",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 8,
+      "branches": [
+        {
+          "name": "feature/sinergy-budget-v0.1",
+          "head_sha": "5e9612a6baa24f4ce24db1ae47c3e5a6f794fe84",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.2",
+          "head_sha": "6a43727ba294455d080377b3f9da4f5414b435fa",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.3",
+          "head_sha": "27e45a4294470b1b4980b48134a2d9fc039094a6",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.4",
+          "head_sha": "54abe68c55442170bfe269584ca3f693b3b94c6b",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.5-mock",
+          "head_sha": "0e1fced9ae3b2867de755bf7a8ba809061f2b333",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.6-state-roi",
+          "head_sha": "ef803233521aa90722c940bb273970ba74ef1cc9",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "6896c3783f181c203f865ae01f81b527017f5ebc",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "bc31841d024b02c1b803e28d0a360e5893bb2c4b",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_cashero",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 11,
+      "branches": [
+        {
+          "name": "codex",
+          "head_sha": "7fa54bf2a3f2de2572f79903278c309c9856539c",
+          "protected": false
+        },
+        {
+          "name": "codex-2ktrg0",
+          "head_sha": "7a5c289ef99b55615df829c5efea193d52f152ea",
+          "protected": false
+        },
+        {
+          "name": "codex-7heoeh",
+          "head_sha": "ff169ddc2bf02ce1607550de1537fa76551b114e",
+          "protected": false
+        },
+        {
+          "name": "codex-je9e0a",
+          "head_sha": "87e81838e18c6c3027ad85ff014b2e7f6347d910",
+          "protected": false
+        },
+        {
+          "name": "codex-rzv10r",
+          "head_sha": "fdfa1db83ea2774788050ccb6777cb99eaab5ada",
+          "protected": false
+        },
+        {
+          "name": "codex-ss2ohf",
+          "head_sha": "b323c735b35acefab445f2fa09d03c49f0cd3d51",
+          "protected": false
+        },
+        {
+          "name": "codex-sz4jj8",
+          "head_sha": "614e66bdf42e0d14c25937f292e3f27076d2b4c9",
+          "protected": false
+        },
+        {
+          "name": "docs/editorial-batch03",
+          "head_sha": "cd48aa7425bd566b0db473b140ebe10193611c39",
+          "protected": false
+        },
+        {
+          "name": "docs/sinergy-legacy-provenance-20260817",
+          "head_sha": "2515c8f8b9c30978537a262fc0a4125f0ff27d01",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "fd1d862094f868a7ceb0b6bf64007c551d6d55a0",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
     }
   ]
 }
