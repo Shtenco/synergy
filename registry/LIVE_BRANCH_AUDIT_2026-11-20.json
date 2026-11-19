@@ -1,10 +1,10 @@
 {
   "schema": "synergy.live-branch-audit/v1",
   "as_of": "2026-11-20",
-  "scope": "59 repositories covered by live branch audit tranches; not yet the full 91-repository owner inventory",
-  "repository_count": 59,
-  "branch_record_count": 1075,
-  "unique_repository_branch_pairs": 1044,
+  "scope": "Live branch audit tranche: 59 prior repositories plus the newly discovered cognitive-memory repository. Not a source-level audit of every branch in all 92 repositories.",
+  "repository_count": 60,
+  "branch_record_count": 1077,
+  "unique_repository_branch_pairs": 1077,
   "records": [
     {
       "repository": "Shtenco/synergy_system",
@@ -12724,6 +12724,30 @@
       "ci_evidence": "FAILURE on exact branch HEAD (run 35353005404)",
       "blocker_and_decision": "Retain for controlled evaluation; no PR, no exact-head passing CI and no production promotion.",
       "source_audit_document": "docs/LIVE_BRANCH_AUDIT_RESEARCH_ECONOMIC_TRADER_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "branch": "main",
+      "head_sha": "74b518c85d3a69fdc2e868737cbe9f4f2cac761c",
+      "purpose": "Default branch; current source baseline",
+      "branch_state": "main",
+      "open_pr_numbers": [],
+      "ci_evidence": "NOT_CHECKED",
+      "blocker_and_decision": "Newly discovered repository. Main SHA taken from current PR base metadata; source audit required before integration.",
+      "source_audit_document": "docs/LIVE_RECONCILIATION_2026-11-20.md"
+    },
+    {
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "branch": "feat/hierarchical-cognitive-memory-v1",
+      "head_sha": "37bebe6e8d75444ced7e610b821664892eabe0f8",
+      "purpose": "Implement hierarchical cognitive memory core",
+      "branch_state": "#1 draft",
+      "open_pr_numbers": [
+        1
+      ],
+      "ci_evidence": "LATEST_RUN_CANCELLED_NO_STEPS",
+      "blocker_and_decision": "Retain as draft. API auth, symlink-safe ingestion, namespace-safe provenance and contract/E2E gates remain open.",
+      "source_audit_document": "docs/LIVE_RECONCILIATION_2026-11-20.md"
     }
   ]
 }
