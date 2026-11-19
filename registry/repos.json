@@ -2168,6 +2168,6 @@
     "branch_inventory_json": "registry/BRANCH_INVENTORY_2026-11-20.json",
     "branch_inventory_csv": "registry/BRANCH_INVENTORY_2026-11-20.csv",
     "branch_inventory_report": "docs/BRANCH_INVENTORY_2026-11-20.md",
-    "note": "92 repositories; 1,077 branch SHAs sourced from live branch audit/PR metadata; remaining 217 SHAs retained from the dated census. Branch-name coverage includes all 92 repositories."
+    "note": "92 repositories; 1,077 branch SHAs sourced from live branch audit/PR metadata; remaining 217 SHA values are retained from the dated census and were not individually re-fetched in this pass."
   }
 }
