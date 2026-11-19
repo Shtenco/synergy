@@ -966,71 +966,111 @@
           "name": "prototype-2-input-output",
           "sha": "95c8a31978bfb2bfe8f104702a07e9d0df8751aa",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 449,
+          "merge_base_sha": "95c8a31978bfb2bfe8f104702a07e9d0df8751aa"
         },
         {
           "name": "research/authoritative-wage-deposits-v1",
           "sha": "c6b225a1738528d593a2b9b7bfc6e6c1577a9072",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 779,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "research/bank-deposit-credit-audit-fix-20261115",
           "sha": "9c891b7fbd24d3424344865bb1288e734567b5d8",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 1165,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "research/financial-register-instance-provenance-v1",
           "sha": "c2a238aa869b1724ae9cec8ff885f3dcca58b312",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 1021,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "research/household-liquidity-recycling-v1",
           "sha": "11b3edc668b0e5440e30f94ef7cc18c77321ec31",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 717,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "research/operating-wage-coordinator-v1",
           "sha": "e1cf9ac847a41dc23553a5ebb5d664c3387b8c8d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 765,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "research/sec-sper-integration-audit-2026-11-11",
           "sha": "7116e4e3d83a61c9c9eeccdf6bd26f0c09998d46",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 43,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "research/verified-wage-settlement-v1",
           "sha": "8f490ea5e1b70491eb6115ff8c2f91a9e68408d2",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 721,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "unified-economic-balance",
           "sha": "65fe7b5458c3c2fc9739554b65fa16c647e8a695",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 13,
+          "main_ahead_of_branch": 450,
+          "merge_base_sha": "62a22473f3d025739789e7fdcc5019624e7bfd98"
         },
         {
           "name": "work/spatial-economic-bridge-20261116",
           "sha": "283b647b2d0755279b660aae99e552de03c1e7ed",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 5,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         }
       ]
     },
