@@ -43,6 +43,7 @@ The canonical artifacts are:
 - [Full branch inventory JSON](registry/BRANCH_INVENTORY_2026-11-20.json) — 1,292 branch refs / 91 repositories
 - [Full branch inventory CSV](registry/BRANCH_INVENTORY_2026-11-20.csv) — one row per branch
 - [Branch inventory report](docs/BRANCH_INVENTORY_2026-11-20.md)
+- [High-branch repository / BQG evidence audit](docs/HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
 - [Open PR / branch map JSON](registry/OPEN_PR_BRANCH_MAP_2026-11-20.json) — all 548 open PRs
 - [Open PR / branch map CSV](registry/OPEN_PR_BRANCH_MAP_2026-11-20.csv) — one row per open PR
 - [Open PR audit report](docs/OPEN_PR_BRANCH_AUDIT_2026-11-20.md)
