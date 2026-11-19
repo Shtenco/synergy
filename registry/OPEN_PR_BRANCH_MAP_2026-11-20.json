@@ -5944,6 +5944,212 @@
       "repository": "Shtenco/synergy_search_engline",
       "open_pr_count": 0,
       "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Integrate SMM audience intelligence into Lead OS",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/smm-lead-os-integration-v1",
+          "head_sha": "5a20c4a0675e047134f7ee6a1c31996bb2d325c3",
+          "base_branch": "main",
+          "updated_at": "2026-11-13T20:35:41Z",
+          "url": "https://github.com/Shtenco/synergy_lead_search_engline/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Lead OS: CI evidence + guarded Lead → AI Sales → CRM → Payment → Capital contract",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feat/revenue-loop-e2e-20261024",
+          "head_sha": "9a67ed99839416ae32e65c32a9e52a679ddd6a8c",
+          "base_branch": "main",
+          "updated_at": "2026-10-24T09:40:13Z",
+          "url": "https://github.com/Shtenco/synergy_lead_search_engline/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_triangle_money_system",
+      "open_pr_count": 8,
+      "pull_requests": [
+        {
+          "number": 8,
+          "title": "R&D V6: independent-oracle band for asymmetric AMM (NOT DEPLOYABLE)",
+          "state": "open",
+          "draft": true,
+          "head_branch": "research/recursive-amm-v6-oracle-band",
+          "head_sha": "e44639b31ffd6bdecd3f229272e00ae8d642c03c",
+          "base_branch": "main",
+          "updated_at": "2026-10-15T13:31:26Z",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/8"
+        },
+        {
+          "number": 7,
+          "title": "V11 integrated block revenue + graph HardNAV engine",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/integrated-revenue-engine-v11",
+          "head_sha": "d7886b85b839f75d379d41ccb01b7e2b31b02d9e",
+          "base_branch": "main",
+          "updated_at": "2026-10-08T07:58:17Z",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/7"
+        },
+        {
+          "number": 6,
+          "title": "V10 graph arbitrage HardNAV engine",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/graph-arb-hardnav-v10",
+          "head_sha": "a8a49f65d9e5fd3987122aad7feaab799162c1a4",
+          "base_branch": "main",
+          "updated_at": "2026-10-08T06:21:50Z",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "V9 adaptive three-pool market maker",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/adaptive-market-maker-v9",
+          "head_sha": "26ecd61706adc840a681d75ccffcd7fc86222ec3",
+          "base_branch": "main",
+          "updated_at": "2026-10-07T22:43:49Z",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "V8 three-pool asymmetric market maker EVM benchmark",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/three-pool-market-maker-v8",
+          "head_sha": "a33e8b4b83cc8a751e20e082efad95b572b0de57",
+          "base_branch": "main",
+          "updated_at": "2026-10-07T22:21:26Z",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "V7 block revenue engine",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/block-revenue-engine-v7",
+          "head_sha": "d23ac725dded6dfdcb506df3e753d27305c39f93",
+          "base_branch": "main",
+          "updated_at": "2026-10-07T21:39:15Z",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "V6 autonomous borrower market maker",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/autonomous-borrower-hunter-v6",
+          "head_sha": "a10c25bb1fef4ac2876c632b29b6f2e5a82c3b2d",
+          "base_branch": "main",
+          "updated_at": "2026-10-07T21:25:06Z",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "V5 hardnav multiplier engine",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/hardnav-multiplier-v5",
+          "head_sha": "74dae12833137bedd7bedb5bbb211f777425c2a2",
+          "base_branch": "main",
+          "updated_at": "2026-10-07T21:09:43Z",
+          "url": "https://github.com/Shtenco/synergy_triangle_money_system/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Registry: reconcile 82 repositories (RWKV candidate)",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feature/82-repo-ecosystem-registry-20261014",
+          "head_sha": "e91c0c8099fbcc49b6dd28e245e6603caaa5a7a9",
+          "base_branch": "main",
+          "updated_at": "2026-10-14T03:02:49Z",
+          "url": "https://github.com/Shtenco/synergy/pull/2"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_ai_economic",
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "Add read-only spatial twin integration contract",
+          "state": "open",
+          "draft": true,
+          "head_branch": "work/spatial-twin-integration-20261116",
+          "head_sha": "727c04d8e3d523b321a3c5d8e3c8227b2187ffdc",
+          "base_branch": "main",
+          "updated_at": "2026-11-16T16:54:15Z",
+          "url": "https://github.com/Shtenco/synergy_ai_economic/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "V8: четыре экономики РФ, IO-модель, закрытый OOS, эскроу 1:1 и поддержка спроса",
+          "state": "open",
+          "draft": true,
+          "head_branch": "research/v8-russia-four-economies-escrow",
+          "head_sha": "6a84410ad2107945069c4f153381854948816b91",
+          "base_branch": "main",
+          "updated_at": "2026-10-15T22:37:19Z",
+          "url": "https://github.com/Shtenco/synergy_ai_economic/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy.github.io",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Growth & Capital OS V4: пять продуктов в основных воронках сайта",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feat/growth-capital-funnels-v4-20261024",
+          "head_sha": "77a717b10eeb72f3f478f8a6b08aca238b5c61bc",
+          "base_branch": "main",
+          "updated_at": "2026-10-24T08:40:12Z",
+          "url": "https://github.com/Shtenco/synergy.github.io/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_meta_api",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "SYNERGY META-API V0.3: MCP discovery, HTTP connectors, workflow and protocol tests",
+          "state": "open",
+          "draft": true,
+          "head_branch": "integration/meta-api-mcp-v0.1",
+          "head_sha": "74cf1e9ada1b9d7dd6b16bb64fa62da58f5f2c5a",
+          "base_branch": "main",
+          "updated_at": "2026-10-21T23:21:32Z",
+          "url": "https://github.com/Shtenco/synergy_meta_api/pull/1"
+        }
+      ]
     }
   ]
 }
