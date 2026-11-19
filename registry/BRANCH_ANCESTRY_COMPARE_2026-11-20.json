@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_date": "2026-11-20",
+  "method": "GitHub compare_commits base=main head=branch",
+  "completed_comparisons": 8,
+  "pending_comparisons": 1194,
+  "records": [
+    {
+      "repository": "Shtenco/synergy",
+      "branch": "audit/reconcile-live-89-inventory-v1",
+      "head_sha": "cb4862803521c5ebba1041c5496177bf3e06e69e",
+      "base": "main",
+      "base_sha": "aa894a8591ff7e50bcd27f41ba8e54685958e887",
+      "merge_base_sha": "d8ee3cf8302ecd5fd43fc320cee2e793e157bcaf",
+      "status": "diverged",
+      "ahead_by": 25,
+      "behind_by": 273,
+      "total_commits": 25,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy",
+      "branch": "feature/web-ecosystem-v8-federation-20261014",
+      "head_sha": "26cb5ce943a3ddeafc3509b59a8c563dde97bbad",
+      "base": "main",
+      "base_sha": "aa894a8591ff7e50bcd27f41ba8e54685958e887",
+      "merge_base_sha": "26cb5ce943a3ddeafc3509b59a8c563dde97bbad",
+      "status": "behind",
+      "ahead_by": 0,
+      "behind_by": 277,
+      "total_commits": 0,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy",
+      "branch": "feature/82-repo-ecosystem-registry-20261014",
+      "head_sha": "e91c0c8099fbcc49b6dd28e245e6603caaa5a7a9",
+      "base": "main",
+      "base_sha": "aa894a8591ff7e50bcd27f41ba8e54685958e887",
+      "merge_base_sha": "26cb5ce943a3ddeafc3509b59a8c563dde97bbad",
+      "status": "diverged",
+      "ahead_by": 1,
+      "behind_by": 277,
+      "total_commits": 1,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "docs/sumi-phase0-audit-20261119",
+      "head_sha": "1ac6b492737134d826d5f925e6574a794c72fec8",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "075da5ed6fcfe741fc7c433f030075a8deeabc71",
+      "status": "diverged",
+      "ahead_by": 1,
+      "behind_by": 56,
+      "total_commits": 1,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/artifact-evidence-envelope-v1-20260829",
+      "head_sha": "72381e5a671fec407f4f8d0c3fe9c95cacf2c6bf",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 285,
+      "behind_by": 262,
+      "total_commits": 285,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/autopilot-v5-ai-node-preproduction-rc1-20260823",
+      "head_sha": "3b0efaf4b46720df588ce8a907a88d404598dca3",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 158,
+      "behind_by": 262,
+      "total_commits": 158,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/autopilot-v5-ai-node-preproduction-rc2-location-20260823",
+      "head_sha": "2e4e16ac45d1211589e39567d25c41a2e002c26a",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 163,
+      "behind_by": 262,
+      "total_commits": 163,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/autopilot-v5-ai-node-preproduction-rc3-resolved-20260824",
+      "head_sha": "76b0d92ed609e391b04aae18ea2a5fdb922df339",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 168,
+      "behind_by": 262,
+      "total_commits": 168,
+      "observed_at": "2026-11-20"
+    }
+  ]
+}
