@@ -6459,6 +6459,225 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_2chain_qe",
+      "default_branch": "main",
+      "branch_count": 5,
+      "unique_head_count": 5,
+      "branches": [
+        {
+          "name": "hardnav-v2-economic-core",
+          "sha": "3062b0a847bf3dbc27fb9e37ba80b69e6901565e",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "sha": "0099d40f55ef4a94812d58c8126a88f2611352ff",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "79c105dac4c65e125b1ce395e8a493822de6356f",
+          "protected": false
+        },
+        {
+          "name": "pool-bridge",
+          "sha": "665677f58b6ef391d0c7a31d62b8aa8894a58eae",
+          "protected": false
+        },
+        {
+          "name": "recovery/base-synergy-l3-arbitrage-20261117",
+          "sha": "e7477ede9c65700824502fd48f40f90085e5a166",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_qe",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "impl/qe-engine-v1-m1",
+          "sha": "b5a6b5006df7b9eaa12cae35acaffbac8cd4919a",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
+          "protected": false
+        },
+        {
+          "name": "spec/qe-engine-v1",
+          "sha": "65d8479f47abdb26f37ddd14b2cc1bf2ad671b18",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "default_branch": "main",
+      "branch_count": 15,
+      "unique_head_count": 15,
+      "branches": [
+        {
+          "name": "archive/full-chat-2026-09-25",
+          "sha": "5305a7dca83a3098fad2207de94a2ac2570c2821",
+          "protected": false
+        },
+        {
+          "name": "chore/extract-v81-reference",
+          "sha": "fc248a6124fb98bef4b73b32609d7fd516a0b721",
+          "protected": false
+        },
+        {
+          "name": "chore/real-block-input-workflow",
+          "sha": "7bf171a0cf2185dc773760fd06efec6bdab727e8",
+          "protected": false
+        },
+        {
+          "name": "chore/real-block-pr-trigger",
+          "sha": "7cc7113c9d69cd13a01794c5e91d08d285720de2",
+          "protected": false
+        },
+        {
+          "name": "experiment/recursive-collateral-evm-v1",
+          "sha": "d2f260a75e2fe5a3fb421064ce48fe3a537bed80",
+          "protected": false
+        },
+        {
+          "name": "feat/closed-agent-economy-mainline",
+          "sha": "2ebf244df2d8a258b27800e42968a45401b3d231",
+          "protected": false
+        },
+        {
+          "name": "feat/closed-multimarket-hardnav-v3",
+          "sha": "7e6861b2912f308edfa8546014c16eb4b4d08e91",
+          "protected": false
+        },
+        {
+          "name": "feat/dqn-agent-economic-mainline",
+          "sha": "ba7743f95c3ca8829f79725861e7635d002bd3b3",
+          "protected": false
+        },
+        {
+          "name": "feat/historical-block-v4-exact-gas",
+          "sha": "5e99bd684831297821d9954b834ba89a40428870",
+          "protected": false
+        },
+        {
+          "name": "feat/historical-external-flow-v5",
+          "sha": "c5e353d22dd7275ffe0e70bbce4ddc87ec68d427",
+          "protected": false
+        },
+        {
+          "name": "feat/p9-crosschain-dqn-economy",
+          "sha": "6e011666cc692e23ccfc062779527c691e7b335c",
+          "protected": false
+        },
+        {
+          "name": "feat/real-block-backtest-data",
+          "sha": "f6903e255fd793cfa1548c79192ba1d70a7698ea",
+          "protected": false
+        },
+        {
+          "name": "fix/hardnav-modeled-flow-accounting-2026-11-16",
+          "sha": "74bbbc17eb5b3b31cc0a86c112adf9f4660ea127",
+          "protected": false
+        },
+        {
+          "name": "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
+          "sha": "0effe839d160af295d511eaea6a3d3830e024557",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_megaproject",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "c8f6a740cb32a03b2327d85c91279d312f921603",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "default_branch": "main",
+      "branch_count": 2,
+      "unique_head_count": 2,
+      "branches": [
+        {
+          "name": "feat/pq-radio-teleportation-v1-20260927",
+          "sha": "2938d6aa1e939b198fb4e98bb32b3cbfc958f6e4",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "b3084f709aaa1023289cfec6e550a1a35d884513",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "077ce326b2037511c215f7d7b104be72e1b5e34d",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_computing_topology",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "feature/svcu-02-svp-virtual-processor",
+          "sha": "26136008f32ed88dee78a5b9647a2840915e40ec",
+          "protected": false
+        },
+        {
+          "name": "feature/svpu-bytecode-v03",
+          "sha": "8e48f25c23d75b97effbb141126ea95d7a6ef896",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_search_engline",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+          "protected": false
+        }
+      ]
     }
   ]
 }
