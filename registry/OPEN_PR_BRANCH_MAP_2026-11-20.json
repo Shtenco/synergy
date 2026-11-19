@@ -5037,6 +5037,223 @@
           "url": "https://github.com/Shtenco/synergy_metachain/pull/1"
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 4,
+          "title": "Research: SYNERGY DUV-1 UV Event Matrix model v0.6",
+          "state": "open",
+          "draft": true,
+          "head_branch": "research/uv-lwc-duv1-model-v0.1",
+          "head_sha": "24095307917334b6046831c11e05897fcde84203",
+          "base_branch": "main",
+          "updated_at": "2026-11-19T19:04:25Z",
+          "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "Federation V3: expand XPU as falsifiable compiled-graph compute R&D",
+          "state": "open",
+          "draft": false,
+          "head_branch": "federation-v3-domain-expansion",
+          "head_sha": "ed00d6948bbc75cf60a8eb1157b62733d0aaee6b",
+          "base_branch": "main",
+          "updated_at": "2026-09-06T09:25:44Z",
+          "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "XPU V2.3: eliminate central walker with static wavefront + distributed token fallback",
+          "state": "open",
+          "draft": false,
+          "head_branch": "xpu-v2-dse-rtl",
+          "head_sha": "173174797caf73527c1733c0be5d162c423dd91d",
+          "base_branch": "main",
+          "updated_at": "2026-08-31T14:10:49Z",
+          "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/pull/2"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "V1 exact-reset AICB baseline",
+          "state": "open",
+          "draft": true,
+          "head_branch": "aicb-v1-exact-reset",
+          "head_sha": "edd7a1eb6b9782b0c859beb0bddc5adc14e651fa",
+          "base_branch": "main",
+          "updated_at": "2026-09-07T20:48:51Z",
+          "url": "https://github.com/Shtenco/print_money_synergychain/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Federation V3: formalize monetary/liquidity falsification firewall",
+          "state": "open",
+          "draft": false,
+          "head_branch": "federation-v3-domain-expansion",
+          "head_sha": "2f9325814e4bb9e9b4b2e5c8d1bc9a7049d3d729",
+          "base_branch": "main",
+          "updated_at": "2026-09-06T09:26:16Z",
+          "url": "https://github.com/Shtenco/print_money_synergychain/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Add falsifiable hybrid print-machine external-profit model v1",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feat/hybrid-external-profit-model-v1-20260905",
+          "head_sha": "0b0fc5b8a63ac411006dbfdc6f9c899a16285672",
+          "base_branch": "main",
+          "updated_at": "2026-09-05T19:22:39Z",
+          "url": "https://github.com/Shtenco/print_money_synergychain/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_project",
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "docs: add preliminary IP-backed financing readiness report",
+          "state": "open",
+          "draft": true,
+          "head_branch": "research/ip-financing-readiness-2026-11-14",
+          "head_sha": "40cd4901df5aae9b63cb51e4f2aa8df25c9c9103",
+          "base_branch": "main",
+          "updated_at": "2026-11-14T09:01:53Z",
+          "url": "https://github.com/Shtenco/synergy_project/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Draft: reconcile and assess all 89 SYNERGY repositories",
+          "state": "open",
+          "draft": true,
+          "head_branch": "audit/portfolio-89-repositories-v1",
+          "head_sha": "9ffa1736783df8f4ff19163d0b9d5716fcba0ca9",
+          "base_branch": "main",
+          "updated_at": "2026-11-15T06:49:20Z",
+          "url": "https://github.com/Shtenco/synergy_project/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Add V3 valuation register for 87 SYNERGY technical repositories",
+          "state": "open",
+          "draft": true,
+          "head_branch": "valuation-v3-87-assets-20261114",
+          "head_sha": "66b5fed8332a65865962cafb22cb41c3701b38f5",
+          "base_branch": "main",
+          "updated_at": "2026-11-13T19:53:04Z",
+          "url": "https://github.com/Shtenco/synergy_project/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/dlp_solver",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 12,
+          "title": "REVERSE-EXP V13-QISKIT: Quantum Graph Probe",
+          "state": "open",
+          "draft": true,
+          "head_branch": "reverse-exp-v13-qiskit-graph-probe",
+          "head_sha": "12118ec87685b0380e8916b92be3d8821ce33470",
+          "base_branch": "main",
+          "updated_at": "2026-09-29T19:54:52Z",
+          "url": "https://github.com/Shtenco/dlp_solver/pull/12"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_crypto_pump",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "V3: 95% architecture — historical Solana data, first-passage ML, execution, risk and shadow/canary gates",
+          "state": "open",
+          "draft": true,
+          "head_branch": "v3-execution-risk-shadow",
+          "head_sha": "17ec77e89df4007d5a6eeba239cf0510f5ad1666",
+          "base_branch": "main",
+          "updated_at": "2026-09-13T22:40:13Z",
+          "url": "https://github.com/Shtenco/synergy_crypto_pump/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_graph_print_money",
+      "open_pr_count": 5,
+      "pull_requests": [
+        {
+          "number": 5,
+          "title": "V7.4: reconcile fork packet and add triangle/MEV accounting gates",
+          "state": "open",
+          "draft": true,
+          "head_branch": "v7-4-triangle-mev-audit",
+          "head_sha": "fa982e3bac902ec516bf6a6c0b464c8dc4502995",
+          "base_branch": "main",
+          "updated_at": "2026-10-11T21:03:20Z",
+          "url": "https://github.com/Shtenco/synergy_graph_print_money/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "chore: stage SYNERGY 723-file migration provenance",
+          "state": "open",
+          "draft": true,
+          "head_branch": "migration/synergy-723-2026-09",
+          "head_sha": "103d6e5c6c21bf260ba69c12faa868e9566cc03b",
+          "base_branch": "main",
+          "updated_at": "2026-09-15T10:14:37Z",
+          "url": "https://github.com/Shtenco/synergy_graph_print_money/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "V8 profit engine",
+          "state": "open",
+          "draft": false,
+          "head_branch": "v8-profit-engine",
+          "head_sha": "e6f533d792217a49195a8bc380e3330fcdacb9d5",
+          "base_branch": "main",
+          "updated_at": "2026-09-14T05:41:23Z",
+          "url": "https://github.com/Shtenco/synergy_graph_print_money/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "V8 single contract flash proof",
+          "state": "open",
+          "draft": false,
+          "head_branch": "v8-single-contract-flash-proof",
+          "head_sha": "537c30d7cc87de50edee8eba5dd916ad6a6ac31b",
+          "base_branch": "main",
+          "updated_at": "2026-09-13T22:39:00Z",
+          "url": "https://github.com/Shtenco/synergy_graph_print_money/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "V7 live Base validation run",
+          "state": "open",
+          "draft": false,
+          "head_branch": "v7-live-validation",
+          "head_sha": "b9d0c604f318316fdd9840eeb1ef810320b0c561",
+          "base_branch": "main",
+          "updated_at": "2026-09-10T23:42:45Z",
+          "url": "https://github.com/Shtenco/synergy_graph_print_money/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_app_family",
+      "open_pr_count": 0,
+      "pull_requests": []
     }
   ]
 }
