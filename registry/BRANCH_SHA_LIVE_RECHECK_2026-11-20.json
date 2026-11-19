@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 80,
-  "pending_repositories": 12,
-  "branch_refs": 1078,
+  "completed_repositories": 88,
+  "pending_repositories": 4,
+  "branch_refs": 1104,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -6073,6 +6073,208 @@
         {
           "name": "real-repo-proof",
           "head_sha": "ba90a8e43084793ccb8cfbcfb8ddbead52e86946",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_quantlab",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "27b41cb9babdc45d644f4fe95b16156f44baf955",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "57ee40a6879c0db6550b573aacadad27347fb2db",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "3727a085a4f805ee77a187e30ab7433bfb17d4c2",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_relative_value",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "31f99549dd7806648ccd42f99b1af7ce4c16b282",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "0f37ef55ac989933acd63a0954b5cf521eec4449",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "6a8f955ff0b7a95deacf203e380b3502e15a4e87",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_riskguard",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "b0a5ad16a7adf6368395d8b1b600900685e85b3c",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "bc3ef1810c5d77f54b8a9ecf2f1b8adc35231f2b",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "c6d20f2c37fdebace002da9af9052ae23ddb1a5a",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_search_engline",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_shhts",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_shttps",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "feat/shttps-v1-pq-compressed-protocol",
+          "head_sha": "7f3072d5a86b95fa4bb1da52fbad7395fee4e88f",
+          "protected": false
+        },
+        {
+          "name": "feat/stcp-shttps-remote-mcp-v2-20260925",
+          "head_sha": "f3eda6bb7cdfd5478f9594dad4ee5dd91381e9b8",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "f7207aa8082c78399e4130f4eaf29ff8984c5413",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_trademux",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "d1aca7234dadaa86286d08466efe51a9a88fc4f4",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "fe584afeba1410f40640672f277be4ab16e76b8c",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "5255319629b44c9651cc4424c5b9d0b3ae16fe71",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_triangle_money_system",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 9,
+      "branches": [
+        {
+          "name": "experiment/adaptive-market-maker-v9",
+          "head_sha": "26ecd61706adc840a681d75ccffcd7fc86222ec3",
+          "protected": false
+        },
+        {
+          "name": "experiment/autonomous-borrower-hunter-v6",
+          "head_sha": "a10c25bb1fef4ac2876c632b29b6f2e5a82c3b2d",
+          "protected": false
+        },
+        {
+          "name": "experiment/block-revenue-engine-v7",
+          "head_sha": "d23ac725dded6dfdcb506df3e753d27305c39f93",
+          "protected": false
+        },
+        {
+          "name": "experiment/graph-arb-hardnav-v10",
+          "head_sha": "a8a49f65d9e5fd3987122aad7feaab799162c1a4",
+          "protected": false
+        },
+        {
+          "name": "experiment/hardnav-multiplier-v5",
+          "head_sha": "74dae12833137bedd7bedb5bbb211f777425c2a2",
+          "protected": false
+        },
+        {
+          "name": "experiment/integrated-revenue-engine-v11",
+          "head_sha": "d7886b85b839f75d379d41ccb01b7e2b31b02d9e",
+          "protected": false
+        },
+        {
+          "name": "experiment/three-pool-market-maker-v8",
+          "head_sha": "a33e8b4b83cc8a751e20e082efad95b572b0de57",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "8fb8a604a225a1ceaa9ee9272bf502d4603f9c39",
+          "protected": false
+        },
+        {
+          "name": "research/recursive-amm-v6-oracle-band",
+          "head_sha": "e44639b31ffd6bdecd3f229272e00ae8d642c03c",
           "protected": false
         }
       ],
