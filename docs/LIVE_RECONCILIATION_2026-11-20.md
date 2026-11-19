@@ -25,7 +25,7 @@ The 92nd repository, absent from the prior 91-repository owner registry, is `Sht
 | Repositories in live branch-audit tranche | 60 |
 | Records in live branch-audit tranche | 1,077 |
 
-The branch inventory JSON/CSV includes 1,077 live branch-audit records across 60 repositories plus seven additional priority PR-head updates, for 1,084 live SHA observations total. The 210 remaining SHA values retain their dated census provenance. This is not a claim that every branch HEAD was freshly queried in this pass.
+The branch inventory JSON/CSV includes 1,077 live branch-audit records across 60 repositories plus seven additional priority PR-head updates, for 1,294 live SHA observations total. The 210 remaining SHA values retain their dated census provenance. This is not a claim that every branch HEAD was freshly queried in this pass.
 
 Branch protection for the 1,292 historical refs remains sourced from the prior census. The two newly discovered refs have protection state `null / NOT_CHECKED`. No new live protection query was available in this audit pass.
 
@@ -153,3 +153,8 @@ Owner inventory and interface registry are different scopes. A repository in the
 - `synergy_usds#9`: six-level CPMM flywheel is a bounded research simulation, not a live yield mechanism. P0 deployer-key issue remains open through security PR #6; external key migration/rotation is manual and unverified.
 
 The central integration-gap registry now records three observed contract/lifecycle risks in addition to the one uncontracted cognitive-memory component. The federation still has 39 contract families, 44 adapter edges and zero E2E-tested edges.
+
+
+## 10. Complete SHA provenance and partial ancestry pass
+
+All **1,294/1,294** branch refs now have non-historical SHA provenance in the canonical JSON/CSV. A fresh compare-to-main ancestry pass covered 210 refs: 36 AHEAD, 22 BEHIND, 120 DIVERGED and 32 IDENTICAL. The remaining 1,084 refs have SHA observations from the earlier same-day live branch audit or priority PR metadata but still need a compare-to-main ancestry result. No branch protection state was refreshed; the 1,292 historical refs retain the old 0-protected census and two new refs remain unchecked.
