@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 16,
-  "pending_repositories": 76,
-  "branch_refs": 165,
+  "completed_repositories": 24,
+  "pending_repositories": 68,
+  "branch_refs": 217,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -957,6 +957,330 @@
         {
           "name": "main",
           "head_sha": "a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/shtenco_micro_ai",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "5c9f0b341f59b1567c2d5109fbfeee17f357d196",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "docs/visual-dossier-batch02",
+          "head_sha": "58124ed8b8411d928ca485087f407b2357ec5ebc",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "262458f406678f7c9bc9cf0290b64f318d720cea",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/shtenco.github.io",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 6,
+      "branches": [
+        {
+          "name": "docs/editorial-readme-v1",
+          "head_sha": "403eb313c2b72a5fe7d07bd90788c04b7048a325",
+          "protected": false
+        },
+        {
+          "name": "docs/research-provenance-20260817",
+          "head_sha": "4649a891f309996ed51edf3c99a55eb4b8263e27",
+          "protected": false
+        },
+        {
+          "name": "feat/portfolio-system-2026",
+          "head_sha": "2d6895515e13c6155511b9403487d285104f70ff",
+          "protected": false
+        },
+        {
+          "name": "fix/restore-previous-portfolio-products",
+          "head_sha": "87698ecb4bddaa3cd9bb743779b6d86291f1e0eb",
+          "protected": false
+        },
+        {
+          "name": "hr-portfolio-rewrite",
+          "head_sha": "8dac4b978280ee8ea59808a616d74170634924be",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "a1041cd4852e21afd2a2982d1b470a385dd21512",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/shtencoauantai.github.io",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 14,
+      "branches": [
+        {
+          "name": "ci/bullish-cb-microcycle",
+          "head_sha": "a99b79788a74671aef8c91f82a008bf4b7374d8f",
+          "protected": false
+        },
+        {
+          "name": "ci/syna-v5-2-flex-120-validate",
+          "head_sha": "5e823c15a8bf6e5580d2c400273a9cfb3d3847da",
+          "protected": false
+        },
+        {
+          "name": "ci/synergy-local-deploy",
+          "head_sha": "6eea9a1dda60f2ebc482400cb496c47922f722b8",
+          "protected": false
+        },
+        {
+          "name": "ci/synergy-local-deploy-v2",
+          "head_sha": "1a451b70b691be11484c188586bac22c5c4aead3",
+          "protected": false
+        },
+        {
+          "name": "ci/synergy-local-deploy-v3",
+          "head_sha": "01ded4db87fe85c2d1094e648459492c6ecb15e3",
+          "protected": false
+        },
+        {
+          "name": "ci/v8-graph-recovery",
+          "head_sha": "ff5135cc237475b0cbe52f9e167789c8cdc85042",
+          "protected": false
+        },
+        {
+          "name": "ci/v15-5-artifacts",
+          "head_sha": "2ed3a659ed3337a98d6d9417af601f60d563825b",
+          "protected": false
+        },
+        {
+          "name": "ci/v15-7-aave-50-pool",
+          "head_sha": "f1694f292bfda5259b123b40cc7ca44df30f00b2",
+          "protected": false
+        },
+        {
+          "name": "ci/v15-8-natural-aave-50-pool",
+          "head_sha": "a904573a026935c090283825ab1b21af240af5b5",
+          "protected": false
+        },
+        {
+          "name": "ci/v16-gradient-opportunity-market",
+          "head_sha": "ee0176c92463a23bcfcdcc3cc626981e43307aa8",
+          "protected": false
+        },
+        {
+          "name": "docs/editorial-batch03",
+          "head_sha": "12a649a6ee41e9e3ab6ea945436993dbb52c4b34",
+          "protected": false
+        },
+        {
+          "name": "docs/public-provenance-20260817",
+          "head_sha": "6181246a46a6adc6fd37ea8556f971efe907f812",
+          "protected": false
+        },
+        {
+          "name": "feat/financial-os-showcase-20260809",
+          "head_sha": "5e486de52abf07b8dc66491d9d90cee441c71abe",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "0c9556adbf4c72c4075cd2b64e39c055d3da208d",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/sinergy_app",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/sinergy_super_app",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 7,
+      "branches": [
+        {
+          "name": "build/sinergy-finance-v3-wallet",
+          "head_sha": "0c50c082a77d3a2765c96ec30fabce0ab04843e4",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-v65-real",
+          "head_sha": "402efdd7acc8f8210d115eeb73af2404b5edd63d",
+          "protected": false
+        },
+        {
+          "name": "docs/editorial-batch03",
+          "head_sha": "873755ebcb122ed073cf19d78f82bab2607096e3",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-finance-v1",
+          "head_sha": "dd5abc8a2608bd4b20ee964cd0dc84a76505c08d",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "63d65b7d00016fe1b6dd8159b3adc5647a6aee86",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "3494f2cdebd0b9510ac65a470b32a085e4920537",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "2a5e042853a63c180cfea4fa6234623ce0dbafcf",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "docs/editorial-readme-v1",
+          "head_sha": "10a134bb840b678293c1586b6fec200109e82784",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "232c704f37156eac5d774f33fb652b7afa3866e0",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synegy_ai_compress",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 19,
+      "branches": [
+        {
+          "name": "docs/sinergy-memory-archive-boundary-20260817",
+          "head_sha": "ac8bc32ef65dc5e9f9a4715bc7af84ee1f315b47",
+          "protected": false
+        },
+        {
+          "name": "feat/archive-manifest-v1-20260818",
+          "head_sha": "bdfc0382e07bf44b547a79090e58ba3cb4a8e464",
+          "protected": false
+        },
+        {
+          "name": "feat/blockchain-storage-codec-market-v1",
+          "head_sha": "2ea86788a29429f21de25eb381c83b9f86ebaa45",
+          "protected": false
+        },
+        {
+          "name": "feat/omnia-rex-v1",
+          "head_sha": "20279459ca65844261b470e1bb2456c29810c359",
+          "protected": false
+        },
+        {
+          "name": "feat/omnia-rex-v2",
+          "head_sha": "5f3dfe494d1ab137e1cd781a803777290240fcbd",
+          "protected": false
+        },
+        {
+          "name": "feat/omnia-rex-v3",
+          "head_sha": "410c6b43910b424c8b9431649e19d62c2725c8ea",
+          "protected": false
+        },
+        {
+          "name": "feat/omnia-rex-v4",
+          "head_sha": "410c6b43910b424c8b9431649e19d62c2725c8ea",
+          "protected": false
+        },
+        {
+          "name": "feat/sgh1-bounded-decompression-20261119",
+          "head_sha": "97978abfeee630374c1f6e2326ae2296a72897f7",
+          "protected": false
+        },
+        {
+          "name": "feature/gabriel-corpus-benchmark",
+          "head_sha": "1d40a2454b617d94d3953087393ea305e5c2a975",
+          "protected": false
+        },
+        {
+          "name": "feature/gabriel-horn-codec",
+          "head_sha": "85afcf09bcbab0147ae6815d616569886abdcc29",
+          "protected": false
+        },
+        {
+          "name": "feature/math-portfolio-v3",
+          "head_sha": "ff4db0f97bacf32ccffce80bb9f81ba90072c741",
+          "protected": false
+        },
+        {
+          "name": "feature/unified-tier1-v2-benchmark",
+          "head_sha": "08367d512b84e80d89fabd274ccf2ffeace45869",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "b57b1607b5da01cae0f20209036ff9ccebc919ff",
+          "protected": false
+        },
+        {
+          "name": "fix/variable-archive-benchmark",
+          "head_sha": "a19f6603e50f6c0d6f9877df15ccc4f043065d10",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-experiment",
+          "head_sha": "ff87d6ad256c51e892098427a47e9d1ea468bf5e",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "86cd0c8332ce061057827d73b59d29efe772ca6a",
+          "protected": false
+        },
+        {
+          "name": "research/full-compression-benchmark-ip-20261020",
+          "head_sha": "e385ba783f0c1874415fe92d86220a1ba116c128",
+          "protected": false
+        },
+        {
+          "name": "results/gabriel-umc-exact-20260730",
+          "head_sha": "ade057d09a3b32ae28b868807efac756017eff19",
           "protected": false
         }
       ]
