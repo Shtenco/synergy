@@ -3834,6 +3834,1215 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_matrix_sota",
+      "default_branch": "main",
+      "branch_count": 3,
+      "unique_head_count": 3,
+      "branches": [
+        {
+          "name": "feat/canonical-household-capital-os-20260817",
+          "sha": "120d662a54bb13334fd98ca5312c52b4cde38682",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "ce442be4549200ffc97e82bb34d24f42b603d7ff",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "1d84bddfec16998c9300c984ca50980c1f946d56",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_nexus",
+      "default_branch": "main",
+      "branch_count": 58,
+      "unique_head_count": 57,
+      "branches": [
+        {
+          "name": "arc3-official-public-probe-20260824",
+          "sha": "d2d0920a0d8bd405661f37f6481d2b4ab232b6ab",
+          "protected": false
+        },
+        {
+          "name": "feat/build-readiness-v1-20260821",
+          "sha": "0b6837e37da58446641d2a03a3dcd8c7b69bb40e",
+          "protected": false
+        },
+        {
+          "name": "feat/build-recipe-v1-20260822",
+          "sha": "7e13976fb6989e0f67fa308c579fc8c8d3890d3d",
+          "protected": false
+        },
+        {
+          "name": "feat/build-recipe-v2-proof-core-20260822",
+          "sha": "ec8c57f6e692a5fab126b40b0cc178df69d2f2e1",
+          "protected": false
+        },
+        {
+          "name": "feat/deterministic-source-capsule-v1-20260821",
+          "sha": "286d56dc4799a9dbaadb54665ffd6ca0b57c3f35",
+          "protected": false
+        },
+        {
+          "name": "feat/http-sidecar-memory-v1",
+          "sha": "181c30f6c2a718738bb3691a38d23fc7f6c989c3",
+          "protected": false
+        },
+        {
+          "name": "feat/minimal-nexus-core-v2-20260822",
+          "sha": "4915872c60117bbac0001a0f792f2a8f3a12899a",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-inventory-benchmark-core-v1-20260821",
+          "sha": "3f734afffb357936c97477ff779cbfd1c79060e5",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-source-freeze-promotion-v2-20260821",
+          "sha": "7d5ed0bdb9949f34c2e455be5e2f1fb9f285e3d4",
+          "protected": false
+        },
+        {
+          "name": "feat/repro-artifact-v3-20260822",
+          "sha": "f966a0eca6d8bd753aba5db4c09a70edd7454d88",
+          "protected": false
+        },
+        {
+          "name": "feat/service-spec-v1-20260822",
+          "sha": "18ca9c8acfa73e6c538d5966e1e63c7c6d271fbf",
+          "protected": false
+        },
+        {
+          "name": "feat/service-spec-v2-proof-core-20260822",
+          "sha": "0cf581fe6ac6e79bcf39c9ed4833e2d5719ddd6f",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-exact-build-recipe-v2-20260822",
+          "sha": "d8ef528f1633262d6d5f0b008b1338dd89fcc58b",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-exact-stdlib-v2-20260822",
+          "sha": "2ee8f2a29ad2497afca6c7386375a296cd0bdbcf",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-kernel-migration-v1-20260821",
+          "sha": "cbc06e83f7f9e242719667e446a090894e11eef1",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-service-build-recipe-v1-20260821",
+          "sha": "9cf0fc6fb0e6a88f65e0b867682b0afaa3e373d7",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-service-protocol-v1-20260821",
+          "sha": "ef1a6e3675e53fda4bf91566aec61f1b62fa9336",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-stdlib-parity-v2-20260821",
+          "sha": "725c9f150a6308ee5f8d8025a5aba5374f0942ec",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "103e0869f8fdd53669e7723320e835030ec36f38",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "70693dfe631ca8cd06465da076cfc0b215c0200c",
+          "protected": false
+        },
+        {
+          "name": "nexus-unified-final-design-20260915",
+          "sha": "48c52bdc66c59d644c111a410d2e19610c897bb2",
+          "protected": false
+        },
+        {
+          "name": "r82-russian-cognitive-dialogue-graph",
+          "sha": "e2b32571535c6adba7a3b7b5af6acb427f4100a6",
+          "protected": false
+        },
+        {
+          "name": "r719-program-induction-20260823",
+          "sha": "64bf998131326111b6a559837c32af9428678c52",
+          "protected": false
+        },
+        {
+          "name": "r720-blind33-pr-run",
+          "sha": "fd4cddf7b70d4528de9307ab4190b32a38de8134",
+          "protected": false
+        },
+        {
+          "name": "r720-blind33-preinference",
+          "sha": "c92c1ef6c564af17f6bc73d6c555f1d7bb057325",
+          "protected": false
+        },
+        {
+          "name": "r721-blind34-postinference",
+          "sha": "4acbcd910baa084070a6e760dcab5202af91b1d9",
+          "protected": false
+        },
+        {
+          "name": "r721-blind34-preinference",
+          "sha": "7e4cd47fd724f56f868c7cd3c94d18c2206203c7",
+          "protected": false
+        },
+        {
+          "name": "r721-freeze-record",
+          "sha": "e75d3c3eb4c89cfc432389c0fab335bb61c41424",
+          "protected": false
+        },
+        {
+          "name": "r722-blind35-postinference",
+          "sha": "31e52c0896eb828b8a751b5932e227ffb3377fd7",
+          "protected": false
+        },
+        {
+          "name": "r722-blind35-preinference",
+          "sha": "7d810db959613c99313be56ef61f7f3798ee3d37",
+          "protected": false
+        },
+        {
+          "name": "r722-freeze-record",
+          "sha": "9bba5b688eea3e556f57924b8ee2000102e80d47",
+          "protected": false
+        },
+        {
+          "name": "r723-blind36-postinference",
+          "sha": "4255874e177e6059242ac0c43163d4dc4f4b940b",
+          "protected": false
+        },
+        {
+          "name": "r723-blind36-preinference",
+          "sha": "7864d63abd4200f50071fc7a30a42efbea084dce",
+          "protected": false
+        },
+        {
+          "name": "r723-freeze-record",
+          "sha": "2f7f74bba8ccce9680a3ec449f286aba1ac9774a",
+          "protected": false
+        },
+        {
+          "name": "r724-blind37-postinference",
+          "sha": "e8a73aaa5f2dad7ece0e6e0f6cf57178fd9f889b",
+          "protected": false
+        },
+        {
+          "name": "r724-blind37-preinference",
+          "sha": "fa52c14c850c0fb341fcaf6dd7762a4dfead7dee",
+          "protected": false
+        },
+        {
+          "name": "r724-freeze-record",
+          "sha": "c480703c716d61cc61b6fd52036cd68fa4fbb1f2",
+          "protected": false
+        },
+        {
+          "name": "r725-blind38-postinference",
+          "sha": "db65f9ae0fd4a93c8235b8885be408053539e6a6",
+          "protected": false
+        },
+        {
+          "name": "r725-blind38-preinference",
+          "sha": "e548ed08b3f4e5ee26ccc78294326952920f1e86",
+          "protected": false
+        },
+        {
+          "name": "r725-freeze-record",
+          "sha": "e38838c5d3a06fa1df1ea20bcf528611025a43f8",
+          "protected": false
+        },
+        {
+          "name": "r726-blind39-postinference",
+          "sha": "358a1f59f4d743d0e96d6b30652ba0d84cc12d85",
+          "protected": false
+        },
+        {
+          "name": "r726-blind39-preinference",
+          "sha": "9eedb0e921c113183e2b3e97a4b8f28dec39c400",
+          "protected": false
+        },
+        {
+          "name": "r726-freeze-record",
+          "sha": "6015925d960351e988b0ac33f7fae3f0a2971bcb",
+          "protected": false
+        },
+        {
+          "name": "r728-blind42-postinference",
+          "sha": "da8a16b9dba510b7dc717dc14fd3d2ce2fee8979",
+          "protected": false
+        },
+        {
+          "name": "r728-blind42-preinference",
+          "sha": "1d3625b1bbbbfe54431a4c3c36277639730a8a35",
+          "protected": false
+        },
+        {
+          "name": "r728-freeze-record",
+          "sha": "99b58ae1b00dd915467f34e89580fae63482731a",
+          "protected": false
+        },
+        {
+          "name": "r729-ru-blind44-postinference",
+          "sha": "4558a62d0ae00bb5e636c2a5f97ea9ca0113f472",
+          "protected": false
+        },
+        {
+          "name": "r729-ru-blind44-preinference",
+          "sha": "ac83b06a9ed2994f26d9977e5881f722bc544300",
+          "protected": false
+        },
+        {
+          "name": "r730-freeze-record",
+          "sha": "7db0804f70b68ffd0a2aa8e4717278ccf77c79e1",
+          "protected": false
+        },
+        {
+          "name": "r730-ru-blind45-postinference",
+          "sha": "6c5254a03a3cb0ddccf7f8bf1f4a21992675b093",
+          "protected": false
+        },
+        {
+          "name": "r730-ru-blind45-preinference",
+          "sha": "5308fe52ba6816ca0c7934e59331a304b7765df2",
+          "protected": false
+        },
+        {
+          "name": "r731-freeze-record",
+          "sha": "25dd2da2616af26386eecc51afc71dcb8bf13815",
+          "protected": false
+        },
+        {
+          "name": "r731-ru-blind46-postinference",
+          "sha": "41d2166e82ae273396d1701b42175324378c3d7c",
+          "protected": false
+        },
+        {
+          "name": "r731-ru-blind46-preinference",
+          "sha": "8938089e45900ab63aa096817cf57e34494f0a64",
+          "protected": false
+        },
+        {
+          "name": "r732-blind47-postinference",
+          "sha": "c692e3c39fc26668ceeccb01959038f38d3c17ef",
+          "protected": false
+        },
+        {
+          "name": "r732-blind47-preinference",
+          "sha": "ebfea2910ff8c0b4d09b8a775a40588f53e4389c",
+          "protected": false
+        },
+        {
+          "name": "r732-supra-freeze",
+          "sha": "f32e17cbea24805d9cb59d13ec38102951e4feca",
+          "protected": false
+        },
+        {
+          "name": "tmp/noop",
+          "sha": "3f734afffb357936c97477ff779cbfd1c79060e5",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai",
+      "default_branch": "main",
+      "branch_count": 35,
+      "unique_head_count": 20,
+      "branches": [
+        {
+          "name": "archive/cyber-v8-v10-2026-08-22",
+          "sha": "55e9cbd4b5d777e8e916493dc8c2188d2f38daf6",
+          "protected": false
+        },
+        {
+          "name": "archive/master-lineage-2026-08-31",
+          "sha": "42cfd285314764bad0c5ed9edaf3fdc8f93109da",
+          "protected": false
+        },
+        {
+          "name": "feat/historical-strategy-evidence-registry-v1-20260821",
+          "sha": "352a6029eb129c22a30d8d33a96bbc81d1c419cf",
+          "protected": false
+        },
+        {
+          "name": "feat/independent-risk-decision-v1-20260821",
+          "sha": "7b23cfbac00ef6ea85797c8b38131bb482f1db1e",
+          "protected": false
+        },
+        {
+          "name": "feat/inference-bundle-trading-decision-v1-20260821",
+          "sha": "84461b56df70847b0f40b6968b4de056c0a01df2",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "105c3be4b1815ed2d3a24a35cf64581d8ee1f1af",
+          "protected": false
+        },
+        {
+          "name": "import/cybernetic-bip39-v10-cyber20-20260821",
+          "sha": "a114832c46c26370cd629de89ed175248740303b",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+          "protected": false
+        },
+        {
+          "name": "release/shtenco-v13-30-v13-41-test",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "release/shtenco-v13-30-v13-41-test2",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "release/shtenco-v13-30-v13-41",
+          "sha": "3f7f15d6814519fadf9f3bc0802e024ded86e808",
+          "protected": false
+        },
+        {
+          "name": "research/v11-bip39-20-cycles-2026-08-22",
+          "sha": "6aa8011903c5db49415e9da355067f145e42fc44",
+          "protected": false
+        },
+        {
+          "name": "research/v12-hedge-risk-20-cycles-2026-08-22",
+          "sha": "fa7b7a62840cc1af19d88e052a151923f216981f",
+          "protected": false
+        },
+        {
+          "name": "research/v13-tension-grid-martingale-20-cycles",
+          "sha": "1871f917c83c20a49a432655652813fcb25333ba",
+          "protected": false
+        },
+        {
+          "name": "research/v14-independent-mr-sleeve-20-cycles",
+          "sha": "f698c8edf970d5499a1cd56d7226416e4618ca0a",
+          "protected": false
+        },
+        {
+          "name": "research/v15-graph-lot-allocation-10-cycles",
+          "sha": "3f1f4c482ef79bcf08b954bd0b678ea2d5311bdd",
+          "protected": false
+        },
+        {
+          "name": "research/v16-anti-overfit-month-split-20-cycles",
+          "sha": "d2462fb8abd6b32eaa1179d5dc76d2238b3c3bbe",
+          "protected": false
+        },
+        {
+          "name": "research/v17-deep-bip39-full-history",
+          "sha": "dc53d91fec54fcc99497b1b0e0648d225d4f8228",
+          "protected": false
+        },
+        {
+          "name": "research/v18-trivol-lotmeta",
+          "sha": "4b5930962788f59cfb2b6751bc08daf5925e9b1e",
+          "protected": false
+        },
+        {
+          "name": "research/v19-scientific-integrity-robust-survival",
+          "sha": "4fbdf46f274e0aebc908431cca543b4e390e6eda",
+          "protected": false
+        },
+        {
+          "name": "research/v20-unified-causal-portfolio-2026-08-26",
+          "sha": "a3e44aa13e0212f5aa4fbaf7dd70f236f7456a21",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test3",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test4",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test5",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test6",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test7",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test8",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test9",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-ignore",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test2",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test3",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test4",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test5",
+          "sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "default_branch": "main",
+      "branch_count": 62,
+      "unique_head_count": 60,
+      "branches": [
+        {
+          "name": "docs/sumi-phase0-audit-20261119",
+          "sha": "1ac6b492737134d826d5f925e6574a794c72fec8",
+          "protected": false
+        },
+        {
+          "name": "feat/artifact-evidence-envelope-v1-20260829",
+          "sha": "72381e5a671fec407f4f8d0c3fe9c95cacf2c6bf",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-preproduction-rc1-20260823",
+          "sha": "3b0efaf4b46720df588ce8a907a88d404598dca3",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-preproduction-rc2-location-20260823",
+          "sha": "2e4e16ac45d1211589e39567d25c41a2e002c26a",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-preproduction-rc3-resolved-20260824",
+          "sha": "76b0d92ed609e391b04aae18ea2a5fdb922df339",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-preproduction-rc4-aligned-20260824",
+          "sha": "16a2bb1995a459158ba4cdac6a74c7fae9732e58",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-preproduction-rc5-full-domain-closure-20260824",
+          "sha": "f2b9a2a9d15af31f30349a31f4497413a03bb69b",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-registry-v1-20260823",
+          "sha": "54a07f2cb5df9fe253c9b413196405f999a3dd8b",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-registry-v2-lab-20260823",
+          "sha": "0b61873cc27596acd6aee086527cbe58322d4c0f",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-registry-v3-preproduction-20260824",
+          "sha": "6572a15b8f65fe79c5a2669f1ec10c2747703ce2",
+          "protected": false
+        },
+        {
+          "name": "feat/capability-registry-v1-20260821",
+          "sha": "ab8c9361452ec01b85759edfe7c6c3d7255e3720",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-e2e-cycle-v1-20260828",
+          "sha": "43760304d0f0c43e737cbe3bb717dd0f15eaa953",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-rc1-testnet-ready-20260828",
+          "sha": "d6a950e9d10a6be34295395d7d337af71b4436f6",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-rc2-local-testnet-execution-20260828",
+          "sha": "f56181fca10c2225dcca1e94da5ce14a40fed188",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-rc3-local-3node-tcp-20260828",
+          "sha": "18acc9f279f168103bd2bb9fedc3e5e0d79ba796",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-rc4-local-persistence-restart-20260828",
+          "sha": "b0a8bfc595b16644b5f86e080319b8a29e52010c",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-rc5-canonical-capture-ready-20260828",
+          "sha": "2e18722c43a1a1c4d6899a101a3b2c3fe5ca59ae",
+          "protected": false
+        },
+        {
+          "name": "feat/external-resources-gate-v1-20260905",
+          "sha": "501adbac07148699808ab77652d55c3e47f1e4b1",
+          "protected": false
+        },
+        {
+          "name": "feat/federation-engineering-security-baseline-v1-20260904",
+          "sha": "2ff76be036749c9a068d1f2fbdc65179f7e54c7b",
+          "protected": false
+        },
+        {
+          "name": "feat/federation-engineering-security-baseline-v1-ci-restack-20260904",
+          "sha": "7598d6a0f1ac85b285bfcbf395f81df174783c78",
+          "protected": false
+        },
+        {
+          "name": "feat/federation-engineering-security-baseline-v1-final-20260904",
+          "sha": "834b360940e1bc0edd16e5c4992375e57bb03548",
+          "protected": false
+        },
+        {
+          "name": "feat/federation-trust-registry-v1-copycheck",
+          "sha": "6c2872c2ee4d2194666a4f90c7626d2f0dbab056",
+          "protected": false
+        },
+        {
+          "name": "feat/federation-trust-registry-v1",
+          "sha": "7af62f97df620be2e2d3d6c8450080863fbb7d37",
+          "protected": false
+        },
+        {
+          "name": "feat/federation-validator-v1-20260821",
+          "sha": "3c37e025fd9a2cb551fdab8bda73bdb500343f2e",
+          "protected": false
+        },
+        {
+          "name": "feat/global-bank-fx-arbitrage-registry-v1-20260906",
+          "sha": "0bc03afbd9d4ed7c42a9f669692796f0c8d74ae2",
+          "protected": false
+        },
+        {
+          "name": "feat/live-economic-cycle-capture-v1-20260828",
+          "sha": "fbc00f93d66e1ea1229932f6496f94d3453566f5",
+          "protected": false
+        },
+        {
+          "name": "feat/live-repo-audit-graph-v2-20260821",
+          "sha": "1fcf49aff0d41627e8540a57c081a2e4caf97d63",
+          "protected": false
+        },
+        {
+          "name": "feat/metapay-dex-print-machine-convergence-v1-20260905",
+          "sha": "10a912172b363f1f4df0739bd2d471aeb3578d3d",
+          "protected": false
+        },
+        {
+          "name": "feat/node-admission-schema-overlay-v1-20260821",
+          "sha": "579acafe3eea29817585e1984e9d9602a2a338d1",
+          "protected": false
+        },
+        {
+          "name": "feat/node-admission-schema-overlay-v2-20260821",
+          "sha": "ce160a31ff97e2e36b033cca3abb4bc679a81134",
+          "protected": false
+        },
+        {
+          "name": "feat/repository-federation-v2-final-restack-20260829",
+          "sha": "d8159e697ad17bd246a26b0e8333ed03aa9a87e5",
+          "protected": false
+        },
+        {
+          "name": "feat/repository-federation-v2-hardened-rc5-20260829",
+          "sha": "682682a01fb243184d795784363129fe86a29273",
+          "protected": false
+        },
+        {
+          "name": "feat/repository-federation-v2-portfolio-roadmap-20260829",
+          "sha": "f977a416fa283b05fa8ff89610d65af78ea2b365",
+          "protected": false
+        },
+        {
+          "name": "feat/repository-federation-v3-candidate-20260905",
+          "sha": "a66b520dd3d59c848d017c25501d78ad7695808b",
+          "protected": false
+        },
+        {
+          "name": "feat/repro-build-supply-chain-v1-20260822",
+          "sha": "349c8d506be14043b120be868851117990855d26",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-build-lock-v1-20260821",
+          "sha": "57d60f9932b5fbe2669d41a7bb23095a900ce06d",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-build-plan-v1-20260822",
+          "sha": "6fc06b73cf65eccc7a543b0f5635c4fa159633b1",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-profile-v1-20260821",
+          "sha": "95003ccf1a58688ce3e1475f58821758e95a9c8c",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-readiness-v1-20260822",
+          "sha": "44eeafc6c7c09fd55d158e15df60802cac1d5a8e",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-readiness-v2-20260822",
+          "sha": "18596d76a57c404dc9916a49b3fa9a0192e62712",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-readiness-v3-nexus-20260822",
+          "sha": "20720685f1cb0dca1951a202e2a9a43d1d62fd16",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-service-lock-v2-20260821",
+          "sha": "50f660824982d630d650e09329972aafb45bd756",
+          "protected": false
+        },
+        {
+          "name": "feat/schema-registry-authority-linter-v3-20260821",
+          "sha": "f1acf36d4b4657de97160298a7dd1e97cf7b39dd",
+          "protected": false
+        },
+        {
+          "name": "feat/science-node-build-lock-v2-20260821",
+          "sha": "c824059fda37fdac0f325e8fc0510ae193cad3f4",
+          "protected": false
+        },
+        {
+          "name": "feat/science-node-build-lock-v3-20260822",
+          "sha": "f2ea62a9a464a8c5ad7f413cf643a02c31bdb7ed",
+          "protected": false
+        },
+        {
+          "name": "feat/science-research-node-profile-v1-20260821",
+          "sha": "b608f82304c27b3f28fbb032d24cab4a7f79b8b1",
+          "protected": false
+        },
+        {
+          "name": "feat/service-build-recipe-registry-v1-20260821",
+          "sha": "9035de2010a997b0b4edb35d7bead16a730fe8d4",
+          "protected": false
+        },
+        {
+          "name": "feat/service-build-recipe-registry-v2-20260822",
+          "sha": "1b5444b988139e8c3c8e2503b4bac4054d288da0",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-contracts",
+          "sha": "b4458c882f12534d9b46ef04103dd1dd062bbc80",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-data-fabric",
+          "sha": "906efb9bf7d36b05f8e5b7a10f329025d0523597",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-secure-event-fabric",
+          "sha": "8409899f2c88b20fc6b4a0c88fbc3e0689177498",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "sha": "4b38cb68a2d5bcdf625e12155c109c274d2c5eda",
+          "protected": false
+        },
+        {
+          "name": "m5-observed-execution",
+          "sha": "7015144b26ee51f0efa553e13cc25bba83ac6b7e",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "075da5ed6fcfe741fc7c433f030075a8deeabc71",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "ebbde7a0cb0ab5d81e00a98ca2a36459dd3f8ccc",
+          "protected": false
+        },
+        {
+          "name": "qe-v9-evm-test-20260825",
+          "sha": "aa4c949b31600b5aa52ced816ff136b225dc7573",
+          "protected": false
+        },
+        {
+          "name": "registry-refresh-89-repos-20261114",
+          "sha": "7c5ac8189a36e4d048d6fc158193a47edd547809",
+          "protected": false
+        },
+        {
+          "name": "synergy-federation-v3-origin-integration",
+          "sha": "8d6ff2903da1158eb3c0fbae926f6b1ba8f6eeeb",
+          "protected": false
+        },
+        {
+          "name": "tmp/check-pr5-2",
+          "sha": "7a0e81348d7273e3de115a0ef33de64a6abd7d8a",
+          "protected": false
+        },
+        {
+          "name": "tmp/check-pr5",
+          "sha": "7a0e81348d7273e3de115a0ef33de64a6abd7d8a",
+          "protected": false
+        },
+        {
+          "name": "tmp/noop-build-lock-pr",
+          "sha": "57d60f9932b5fbe2669d41a7bb23095a900ce06d",
+          "protected": false
+        },
+        {
+          "name": "tmp-check-pr5-final",
+          "sha": "4a9f26058f5ea7791e571d43f367cdd9e977cfe7",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_nexus_science_agent",
+      "default_branch": "main",
+      "branch_count": 8,
+      "unique_head_count": 8,
+      "branches": [
+        {
+          "name": "feat/local-science-service-build-recipe-v1-20260821",
+          "sha": "2e4e86484d842f1283204fa87d86927603278e5b",
+          "protected": false
+        },
+        {
+          "name": "feat/science-service-protocol-v4-20260821",
+          "sha": "0607690c3036d2fdce2ac3e044094a8e4da0311b",
+          "protected": false
+        },
+        {
+          "name": "feat/search-evidence-graph-core-v1-20260821",
+          "sha": "90135b758799f1bf931c1e3e14e937d826ef8dae",
+          "protected": false
+        },
+        {
+          "name": "feat/source-quality-identity-v3-20260821",
+          "sha": "c9872e48a55d38fdfc26b209d2df1027e97fa6ad",
+          "protected": false
+        },
+        {
+          "name": "feat/web-retrieval-snapshot-v2-20260821",
+          "sha": "2c1a2e9e19ab0c1498f5fee759d25d20d62d429a",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "82545d735a6cb90de890fda164f1868ef1d435a6",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "5ccad4e6d2bc82f147e6955b811720df2542ea23",
+          "protected": false
+        },
+        {
+          "name": "r83-research-cortex",
+          "sha": "363e27e6f0649809bf01cf1ca12b6f9ab2f7fd04",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_net",
+      "default_branch": "main",
+      "branch_count": 22,
+      "unique_head_count": 22,
+      "branches": [
+        {
+          "name": "feat/autopilot-v5-ai-node-transport-v1-20260823",
+          "sha": "b6edd9b1e09739ca314b4509cf17245dd42fccd1",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-transport-v2-location-v3-20260824",
+          "sha": "8a4cd5843cd767203d8d1bb04ae1c55cbb2079c4",
+          "protected": false
+        },
+        {
+          "name": "feat/bounded-runtime-services-v2-20260822",
+          "sha": "aa93e18bdeb84a8475419cde83f149c8381428cd",
+          "protected": false
+        },
+        {
+          "name": "feat/build-readiness-v1-20260821",
+          "sha": "44bccb2b670a181b007c3d9a01726c44c807d142",
+          "protected": false
+        },
+        {
+          "name": "feat/build-recipe-v1-20260822",
+          "sha": "afad8f01fd03091a91be20653872e2238f7411ab",
+          "protected": false
+        },
+        {
+          "name": "feat/build-recipe-v2-20260822",
+          "sha": "4c7ca52eb036454fdd93334121a6a1095c11cc70",
+          "protected": false
+        },
+        {
+          "name": "feat/deterministic-source-capsule-v1-20260821",
+          "sha": "4b65ce8636d9dd26c849d9553cb0d7884db96f78",
+          "protected": false
+        },
+        {
+          "name": "feat/location-availability-negative-evidence-v1-20260823",
+          "sha": "1ff98cd0243b61ee5e1bb83d9a122bd714662ed0",
+          "protected": false
+        },
+        {
+          "name": "feat/location-evidence-v3-git-carrier-20260824",
+          "sha": "b86fb1c6c3d5dec2e0684abd5d3881ad7573969f",
+          "protected": false
+        },
+        {
+          "name": "feat/persistent-content-service-v1-20260821",
+          "sha": "0aa548ee8f1b4dc7046cefa5694f9b496d312145",
+          "protected": false
+        },
+        {
+          "name": "feat/persistent-store-codec-v3-20260821",
+          "sha": "a8fde01c19420dbe63ca30e1da3b009c0c10064d",
+          "protected": false
+        },
+        {
+          "name": "feat/real-tcp-content-transport-v2-20260821",
+          "sha": "4043eeb4d5e396b44611443bdc2d6cebdeb39bf0",
+          "protected": false
+        },
+        {
+          "name": "feat/repro-artifact-v3-20260822",
+          "sha": "9f43b4bedae92892631da195ef6ce95bee6462e1",
+          "protected": false
+        },
+        {
+          "name": "feat/research-transport-build-recipe-v1-20260821",
+          "sha": "a187551e121350edf690d7570ca4dc76f749d17f",
+          "protected": false
+        },
+        {
+          "name": "feat/service-spec-v1-20260822",
+          "sha": "b0de2c70b8fd207e1d8263a994140f73ef592eca",
+          "protected": false
+        },
+        {
+          "name": "feat/service-spec-v2-20260822",
+          "sha": "d2f5256825f4ee3e878476556a427b3172cf5d31",
+          "protected": false
+        },
+        {
+          "name": "feat/shttps-transport-bridge-v1",
+          "sha": "780b9a9bbb5ec0b3f1bf571f946e27907fd3da98",
+          "protected": false
+        },
+        {
+          "name": "feat/static-peer-relay-service-v1-20260821",
+          "sha": "874a83b6510420ec43ce99fc4b7936e106ad2339",
+          "protected": false
+        },
+        {
+          "name": "feat/three-node-content-mesh-lab-v1-20260821",
+          "sha": "3df492e84794cff4a1327c0eae7200b85f5d15bc",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "e00c26a1a281f23a3f9d7622c43810b946e092a9",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "sha": "d034b709dfc664c40c4ced473cd633cb84a59999",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "84fbfb842be97e5c2195c30e7c4188e5af813001",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_meta_os",
+      "default_branch": "main",
+      "branch_count": 33,
+      "unique_head_count": 32,
+      "branches": [
+        {
+          "name": "codex/meta-os-v31-signed-durable-supervisor",
+          "sha": "d1870b26e032cc2297f70b3492f651aafe951474",
+          "protected": false
+        },
+        {
+          "name": "feat/artifact-store-lifecycle-v2-20260821",
+          "sha": "88fc5d89829d26eedd209915e6c2f22dfaef85de",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-admission-v1-20260823",
+          "sha": "d11bb29c408455b014bdeb847153a4a83902c5ed",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-admission-v3-preproduction-20260824",
+          "sha": "3e54b516a4b766532bf18e80021863036678c668",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-lab-deployment-v3-20260823",
+          "sha": "fa4b6798f7c35c9ce734e05166f5328ccd5dbea0",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v1-20260823",
+          "sha": "752a1bb4488271123e257207a6cb555f5ba5af0b",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v2-20260823",
+          "sha": "9387d988d45d6c371c177c280eb4f6282ab204aa",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v3-20260824",
+          "sha": "41930530ebbf6bc6336543aeb23053868d1ac1dc",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v4-rc4-20260824",
+          "sha": "c7c8f72b6877cb63fed2c63511499e188bc9d498",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v5-rc5-20260824",
+          "sha": "546695157570ff7f59c5868b6e0c021ca2d74789",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-gate-v1-20260823",
+          "sha": "b0cb2fca41b227332aeb87314691dfa1b8ea5937",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-transport-admission-v2-20260823",
+          "sha": "b8460ba7d84964b1bb89b84c8cd1ee2f1adda6db",
+          "protected": false
+        },
+        {
+          "name": "feat/capability-registry-manifest-v2-20260821",
+          "sha": "a2d89522c6da2723f1a42698cc34a19d2c61481c",
+          "protected": false
+        },
+        {
+          "name": "feat/durable-supervisor-state-v3-20260821",
+          "sha": "04c2015e99fe91626835ecdfe344333dfd17d48f",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-testnet-external-deployment-gate-v1-20260828",
+          "sha": "430c2bcf229fdca3cc11538699f875eb2f8ddfb3",
+          "protected": false
+        },
+        {
+          "name": "feat/external-three-host-requirements-v1-20260905",
+          "sha": "733de6664244cf07db0f59a6a84e3ee1b7cfeb2c",
+          "protected": false
+        },
+        {
+          "name": "feat/node-admission-decision-v1-20260821",
+          "sha": "096f0715f0e9e14636198ad130cee7ae8a332b26",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-admission-v1-20260822",
+          "sha": "980ed85d575d57320b6f7e2cde5475c88e771ae7",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-build-lock-consumer-v1-20260821",
+          "sha": "0d0a9e8602a02e96f2276bfed98275eb0deda58f",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-build-lock-consumer-v1-20260822",
+          "sha": "d5a20031be8b1d0293d55f0e1c8a03d9edb4c413",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-build-plan-consumer-v1-20260822",
+          "sha": "b5cdf31ad81e27997e18564d8211cb38a6cac893",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-profile-consumer-v1-20260821",
+          "sha": "7eda95a0bbb93c29440b3e15443abe4e20cc3be2",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-readiness-consumer-v1-20260822",
+          "sha": "b5cdf31ad81e27997e18564d8211cb38a6cac893",
+          "protected": false
+        },
+        {
+          "name": "feat/science-node-admission-decision-v2-20260821",
+          "sha": "46fe309096e571c9f70e0615069a51297c31ac46",
+          "protected": false
+        },
+        {
+          "name": "feat/science-node-admission-v2-20260821",
+          "sha": "d14dac241e650346a7ba214ccd4452f72afd5741",
+          "protected": false
+        },
+        {
+          "name": "feat/science-node-build-lock-consumer-v2-20260821",
+          "sha": "00309a8c42e956c7e0b6314eda345b1991b24edb",
+          "protected": false
+        },
+        {
+          "name": "feat/science-research-node-consumer-v1-20260821",
+          "sha": "efe0ed3fed5cecff2de957e4a400f67ee2969d11",
+          "protected": false
+        },
+        {
+          "name": "feat/service-build-recipe-consumer-admission-v3-20260821",
+          "sha": "e1c73e2ec91d738c2dda981bc2196c3a8609ce54",
+          "protected": false
+        },
+        {
+          "name": "feat/signed-node-manifest-supervisor-v1-20260821",
+          "sha": "be48f6fbe7baa4a6f8be5169c7e343a20e19ab2b",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "a24fc175aa00b38159b409e553321fdfa6ee7840",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "a69e3bb6b5f65a93b97d79de74c4086d970a70c9",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "f6ee7c7360357c422f2f12f83bade85e24cd9868",
+          "protected": false
+        },
+        {
+          "name": "synergy-meta-os-v30-unified-node-rc",
+          "sha": "90b13e7a3abac1f571b4ad9102fc1ab13837fafc",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_blochain_budget",
+      "default_branch": "main",
+      "branch_count": 8,
+      "unique_head_count": 8,
+      "branches": [
+        {
+          "name": "feature/sinergy-budget-v0.1",
+          "sha": "5e9612a6baa24f4ce24db1ae47c3e5a6f794fe84",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.2",
+          "sha": "6a43727ba294455d080377b3f9da4f5414b435fa",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.3",
+          "sha": "27e45a4294470b1b4980b48134a2d9fc039094a6",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.4",
+          "sha": "54abe68c55442170bfe269584ca3f693b3b94c6b",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.5-mock",
+          "sha": "0e1fced9ae3b2867de755bf7a8ba809061f2b333",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-budget-v0.6-state-roi",
+          "sha": "ef803233521aa90722c940bb273970ba74ef1cc9",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "6896c3783f181c203f865ae01f81b527017f5ebc",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "bc31841d024b02c1b803e28d0a360e5893bb2c4b",
+          "protected": false
+        }
+      ]
     }
   ]
 }
