@@ -20,6 +20,7 @@ M0 originally inventoried **81 / 81 repositories** and treated membership as a g
 - Branch refs: **1,292** across the 91 repositories.
 - Sum of unique branch HEADs within repositories: **1,206**.
 - Repeated refs pointing to an already represented HEAD within the same repository: **86**.
+- Protected branch refs reported by GitHub API: **0/1,292**, including all 91 default branches.
 - Every repository has a `main` branch in this snapshot.
 - The branch census records names, HEAD SHAs, protection flags and default-branch identity. It does not by itself establish branch content quality, PR disposition, CI status, deployment or safety of deletion.
 
