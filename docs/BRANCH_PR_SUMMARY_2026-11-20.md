@@ -16,9 +16,13 @@
 | PRs still discovery-only | 531 |
 | Live branch SHA provenance | 1,084 |
 | Historical census SHA values not re-fetched | 210 |
-| Branch protection known | 1,292 / 1,294 |
+| Branch protection known from census | 1,292 / 1,294 |
 | Branches marked protected in the historical census | 0 |
 | New cognitive-memory refs with protection unchecked | 2 |
+| Priority PR CI: failure with steps=null | 10 |
+| Priority PR CI: cancelled | 1 |
+| Priority PR CI: no run / no exact-head run returned | 2 |
+| Priority PR CI: not checked | 5 |
 
 The old 548-PR snapshot's 414 Draft / 134 Ready split and 548/548 branch-head matches are historical. Current repository-scoped discovery is 549. For 531 current PRs, head/base SHA and draft state are not enriched; do not infer branch association or readiness from the discovery record.
 
