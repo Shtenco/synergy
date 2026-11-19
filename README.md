@@ -54,6 +54,7 @@ The canonical artifacts are:
 - [Live branch audit — financial AI and blockchain core (92 branches / 58 open PRs)](docs/LIVE_BRANCH_AUDIT_FINANCIAL_AI_BLOCKCHAIN_2026-11-20.md)
 - [Live branch audit — apps, messaging and GLLM Nexus (73 branches / 28 open PRs)](docs/LIVE_BRANCH_AUDIT_APPS_MESSAGING_GLLM_2026-11-20.md)
 - [Live branch audit — Eurasian, Megaproject and Cold Nuclear (22 branches / 12 open PRs)](docs/LIVE_BRANCH_AUDIT_EURASIA_MEGAPROJECT_COLD_NUCLEAR_2026-11-20.md)
+- [Live branch audit — compute, compression and XPU hardware (25 branches / 13 open PRs)](docs/LIVE_BRANCH_AUDIT_COMPUTE_COMPRESSION_XPU_2026-11-20.md)
 - [Consolidated live branch registry — JSON](registry/LIVE_BRANCH_AUDIT_2026-11-20.json) — 890 branch records / 26 repositories
 - [Consolidated live branch registry — CSV](registry/LIVE_BRANCH_AUDIT_2026-11-20.csv) — SHA, purpose, PR, CI evidence and disposition
 - [High-branch repository / BQG evidence audit](docs/HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
