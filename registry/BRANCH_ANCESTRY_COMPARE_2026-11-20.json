@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 15,
-  "pending_comparisons": 1187,
+  "completed_comparisons": 22,
+  "pending_comparisons": 1180,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -198,6 +198,97 @@
       "ahead_by": 192,
       "behind_by": 262,
       "total_commits": 192,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/economic-os-rc1-testnet-ready-20260828",
+      "head_sha": "d6a950e9d10a6be34295395d7d337af71b4436f6",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 201,
+      "behind_by": 262,
+      "total_commits": 201,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/economic-os-rc2-local-testnet-execution-20260828",
+      "head_sha": "f56181fca10c2225dcca1e94da5ce14a40fed188",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 206,
+      "behind_by": 262,
+      "total_commits": 206,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/economic-os-rc3-local-3node-tcp-20260828",
+      "head_sha": "18acc9f279f168103bd2bb9fedc3e5e0d79ba796",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 211,
+      "behind_by": 262,
+      "total_commits": 211,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/economic-os-rc4-local-persistence-restart-20260828",
+      "head_sha": "b0a8bfc595b16644b5f86e080319b8a29e52010c",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 219,
+      "behind_by": 262,
+      "total_commits": 219,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/economic-os-rc5-canonical-capture-ready-20260828",
+      "head_sha": "2e18722c43a1a1c4d6899a101a3b2c3fe5ca59ae",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 243,
+      "behind_by": 262,
+      "total_commits": 243,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/external-resources-gate-v1-20260905",
+      "head_sha": "501adbac07148699808ab77652d55c3e47f1e4b1",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 289,
+      "behind_by": 262,
+      "total_commits": 289,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/federation-engineering-security-baseline-v1-20260904",
+      "head_sha": "2ff76be036749c9a068d1f2fbdc65179f7e54c7b",
+      "base": "main",
+      "base_sha": "ecef6699847120838d053b4d692be75d2f1c0415",
+      "merge_base_sha": "7d1f3392e9b414bfe9bbf87eca26105f161f9975",
+      "status": "diverged",
+      "ahead_by": 281,
+      "behind_by": 262,
+      "total_commits": 281,
       "observed_at": "2026-11-20"
     }
   ]
