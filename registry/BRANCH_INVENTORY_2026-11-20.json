@@ -5964,22 +5964,34 @@
           "name": "feature/svcu-02-svp-virtual-processor",
           "sha": "26136008f32ed88dee78a5b9647a2840915e40ec",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 38,
+          "main_ahead_of_branch": 3,
+          "merge_base_sha": "eeef0e410686523cfd5101e42bd8dcd903a4ea27"
         },
         {
           "name": "feature/svpu-bytecode-v03",
           "sha": "8e48f25c23d75b97effbb141126ea95d7a6ef896",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 51,
+          "main_ahead_of_branch": 3,
+          "merge_base_sha": "eeef0e410686523cfd5101e42bd8dcd903a4ea27"
         },
         {
           "name": "main",
           "sha": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff"
         }
       ]
     },
@@ -7035,22 +7047,34 @@
           "name": "feat/revenue-loop-e2e-20261024",
           "sha": "9a67ed99839416ae32e65c32a9e52a679ddd6a8c",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 6,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "5654e37fdc348ace7398a7104d54f52e6dbd6800"
         },
         {
           "name": "feat/smm-lead-os-integration-v1",
           "sha": "5a20c4a0675e047134f7ee6a1c31996bb2d325c3",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 400,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "5654e37fdc348ace7398a7104d54f52e6dbd6800"
         },
         {
           "name": "main",
           "sha": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "5654e37fdc348ace7398a7104d54f52e6dbd6800"
         }
       ]
     },
@@ -7312,22 +7336,34 @@
           "name": "feat/canonical-household-capital-os-20260817",
           "sha": "120d662a54bb13334fd98ca5312c52b4cde38682",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 22,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "efc2e33fd18854c2a54a7a2e82ed5bdedf4d3ff3"
         },
         {
           "name": "federation-v3-domain-expansion",
           "sha": "ce442be4549200ffc97e82bb34d24f42b603d7ff",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "efc2e33fd18854c2a54a7a2e82ed5bdedf4d3ff3"
         },
         {
           "name": "main",
           "sha": "1d84bddfec16998c9300c984ca50980c1f946d56",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "1d84bddfec16998c9300c984ca50980c1f946d56"
         }
       ]
     },
@@ -9137,8 +9173,12 @@
           "name": "feat/shttps-v1-pq-compressed-protocol",
           "sha": "7f3072d5a86b95fa4bb1da52fbad7395fee4e88f",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 33,
+          "main_ahead_of_branch": 6,
+          "merge_base_sha": "a56718d75995fa6e88aa74d88188c0a6f297ec4b"
         },
         {
           "name": "feat/stcp-shttps-remote-mcp-v2-20260925",
