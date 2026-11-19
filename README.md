@@ -44,6 +44,8 @@ The canonical artifacts are:
 - [Open PR audit report](docs/OPEN_PR_BRANCH_AUDIT_2026-11-20.md)
 - [Branch / PR coverage matrix CSV](registry/BRANCH_PR_SUMMARY_2026-11-20.csv)
 - [Branch / PR coverage report](docs/BRANCH_PR_SUMMARY_2026-11-20.md)
+- [Branch hygiene candidates CSV](registry/BRANCH_CLEANUP_CANDIDATES_2026-11-20.csv)
+- [Branch hygiene review report](docs/BRANCH_CLEANUP_CANDIDATES_2026-11-20.md)
 
 ## System map
 
@@ -226,7 +228,7 @@ The table below includes every current owner repository, including legacy, R&D, 
 | [`synergy_trademux`](https://github.com/Shtenco/synergy_trademux) | trading-quant | CANDIDATE | 3 |
 
 **Branch inventory totals:** 1,292 branch refs (91 main + 1,201 non-main); 1,206 summed unique HEADs within repositories; 86 repeated refs pointing to an existing HEAD in the same repository. GitHub API marks **0/1,292 refs protected**, including all 91 main branches.  
-**Open PR census:** **548 open PRs** across 91 repositories (414 draft, 134 ready; 268 target main). They reference 544 distinct branches; all 548 PR head branches exist and all head SHAs match the branch census at snapshot time. **657 non-main branches have no open PR**; they are not automatically stale or deletable. This is not a merge-readiness or CI pass.  
+**Open PR census:** **548 open PRs** across 91 repositories (414 draft, 134 ready; 268 target main). They reference 544 distinct branches; all 548 PR head branches exist and all head SHAs match the branch census at snapshot time. **657 non-main branches have no open PR**. Of these, 29 have temporary/test/debug-like names and are flagged for manual hygiene review only; no branch was deleted. This is not a merge-readiness or CI pass.  
 This is a branch-governance risk; identical HEADs are not proof that branches are safe to delete.
 
 ## Canonical integration principle
