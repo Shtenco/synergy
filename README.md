@@ -57,6 +57,9 @@ The canonical artifacts are:
 - [Live branch audit — compute, compression and XPU hardware (25 branches / 13 open PRs)](docs/LIVE_BRANCH_AUDIT_COMPUTE_COMPRESSION_XPU_2026-11-20.md)
 - [Live branch audit — QE and alternative money systems (17 branches / 13 open PRs)](docs/LIVE_BRANCH_AUDIT_QE_ALTERNATIVE_MONEY_2026-11-20.md)
 - [Live branch audit — crypto, graph money and Print Money Chain (18 branches / 9 open PRs)](docs/LIVE_BRANCH_AUDIT_CRYPTO_GRAPH_MONEY_2026-11-20.md)
+- [Live branch audit — QuantLab, RiskGuard and institutional MIDAS (9 branches)](docs/LIVE_BRANCH_AUDIT_QUANTLAB_RISKGUARD_MIDAS_INSTITUTIONAL_2026-11-20.md)
+- [Live branch audit — Relative Value, Market Maker and Adaptive Engine (9 branches)](docs/LIVE_BRANCH_AUDIT_RELATIVE_VALUE_MARKET_MAKER_ADAPTIVE_2026-11-20.md)
+- [Live branch audit — MarketVision, TradeMux and graph research (12 branches)](docs/LIVE_BRANCH_AUDIT_MARKETVISION_TRADEMUX_GRAPH_2026-11-20.md)
 - [Consolidated live branch registry — JSON](registry/LIVE_BRANCH_AUDIT_2026-11-20.json) — 890 branch records / 26 repositories
 - [Consolidated live branch registry — CSV](registry/LIVE_BRANCH_AUDIT_2026-11-20.csv) — SHA, purpose, PR, CI evidence and disposition
 - [High-branch repository / BQG evidence audit](docs/HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
