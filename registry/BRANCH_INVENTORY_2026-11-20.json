@@ -7666,71 +7666,111 @@
           "name": "bootstrap/metaverse-architecture-v1",
           "sha": "5e62521ba8abd2ce2c213eac1b9b0f10fe4a5d24",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 256,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "6b0cb900d95b202642ae99b5682fa8f9102c0c50"
         },
         {
           "name": "feature/economic-router-spatial-v1",
           "sha": "e5574f5e6a1e388e5390149db1b2abe877bf274d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 301,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "6b0cb900d95b202642ae99b5682fa8f9102c0c50"
         },
         {
           "name": "feature/league-spatial-projection-v1",
           "sha": "5e62521ba8abd2ce2c213eac1b9b0f10fe4a5d24",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 256,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "6b0cb900d95b202642ae99b5682fa8f9102c0c50"
         },
         {
           "name": "feature/rf-gnss-business-twin-v1",
           "sha": "8e1ea211d8f22c39f852dbc6e7fa658325e15c5e",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 452,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "6b0cb900d95b202642ae99b5682fa8f9102c0c50"
         },
         {
           "name": "integration/economic-router-spatial-v1-rebased-20261116",
           "sha": "42600243bcca4fbd151f06ce7465663f66efe07d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 343,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "6b0cb900d95b202642ae99b5682fa8f9102c0c50"
         },
         {
           "name": "integration/rf-gnss-business-twin-rebased-20261116c",
           "sha": "6513df6c6738f0531dbb9105a148bed37dbfe589",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 471,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "6b0cb900d95b202642ae99b5682fa8f9102c0c50"
         },
         {
           "name": "integration/rf-gnss-business-twin-rebased-20261116",
           "sha": "4b2734ecab6ddd89c45c7cbc2c35f27644b73fe0",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 364,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "6b0cb900d95b202642ae99b5682fa8f9102c0c50"
         },
         {
           "name": "main",
           "sha": "a27d820bac901200975c2a94f3e7606798989356",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "a27d820bac901200975c2a94f3e7606798989356"
         },
         {
           "name": "work/additional-metaverse-research-100-20261116",
           "sha": "ff04397d490fad5de325f5cd0592e59473b52923",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 18,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "a27d820bac901200975c2a94f3e7606798989356"
         },
         {
           "name": "work/global-world-platform-foundation-20261116",
           "sha": "6c25eaf5feb77d9f0a399e4c4b6b95783c277bff",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 16,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "a27d820bac901200975c2a94f3e7606798989356"
         }
       ]
     },
