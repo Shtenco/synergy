@@ -210,7 +210,7 @@
       "ecosystem_relation": "core",
       "category": "compute-os",
       "node_type": "compute-runtime",
-      "maturity": "SECURITY_REVIEW",
+      "maturity": "SECURITY_BLOCKED",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
         "compute",
@@ -222,7 +222,7 @@
         "Shtenco/synergy_system"
       ],
       "risks": [
-        "credential-file-review-required"
+        "committed unencrypted SSH private key remains on main; PR #13 draft removes file on branch only; external rotation/revocation and history remediation unverified"
       ]
     },
     {
