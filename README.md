@@ -220,7 +220,7 @@ The table below includes every current owner repository, including legacy, R&D, 
 | [`synergy_riskguard`](https://github.com/Shtenco/synergy_riskguard) | trading-quant | CANDIDATE | 3 |
 | [`synergy_trademux`](https://github.com/Shtenco/synergy_trademux) | trading-quant | CANDIDATE | 3 |
 
-**Branch inventory totals:** 1,292 branch refs; 1,206 summed unique HEADs within repositories; 86 repeated refs pointing to an existing HEAD in the same repository. Identical HEADs are not proof that branches are safe to delete.
+**Branch inventory totals:** 1,292 branch refs (91 main + 1,201 non-main); 1,206 summed unique HEADs within repositories; 86 repeated refs pointing to an existing HEAD in the same repository. GitHub API marks **0/1,292 refs protected**, including all 91 main branches. This is a branch-governance risk; identical HEADs are not proof that branches are safe to delete.
 
 ## Canonical integration principle
 
