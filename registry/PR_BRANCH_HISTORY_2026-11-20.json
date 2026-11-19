@@ -10321,6 +10321,305 @@
           "url": "https://github.com/Shtenco/synergy_epstein_network/pull/1"
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_2chain_qe",
+      "pull_request_count_page1": 3,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "WIP: Recover and harden Base Cycle A arbitrage executor",
+          "state": "open",
+          "draft": true,
+          "head_branch": "recovery/base-synergy-l3-arbitrage-20261117",
+          "head_sha": "e7477ede9c65700824502fd48f40f90085e5a166",
+          "base_branch": "main",
+          "created_at": "2026-11-17T12:08:34Z",
+          "updated_at": "2026-11-19T07:33:54Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Stage SYNERGY Protocol Convergence P5 source-locked adapter",
+          "state": "open",
+          "draft": true,
+          "head_branch": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "0099d40f55ef4a94812d58c8126a88f2611352ff",
+          "base_branch": "main",
+          "created_at": "2026-09-25T07:22:32Z",
+          "updated_at": "2026-09-25T08:11:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "HARDNAV V2: canonical accounting, solvent bridge, real V3 execution",
+          "state": "open",
+          "draft": false,
+          "head_branch": "hardnav-v2-economic-core",
+          "head_sha": "3062b0a847bf3dbc27fb9e37ba80b69e6901565e",
+          "base_branch": "main",
+          "created_at": "2026-09-20T20:41:00Z",
+          "updated_at": "2026-09-21T10:51:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_qe",
+      "pull_request_count_page1": 2,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "M1: implement QE debt core and hard-value accounting",
+          "state": "open",
+          "draft": true,
+          "head_branch": "impl/qe-engine-v1-m1",
+          "head_sha": "b5a6b5006df7b9eaa12cae35acaffbac8cd4919a",
+          "base_branch": "spec/qe-engine-v1",
+          "created_at": "2026-09-21T23:21:41Z",
+          "updated_at": "2026-09-21T23:21:41Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_qe/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "QE Engine V1 architecture and implementation plan",
+          "state": "open",
+          "draft": true,
+          "head_branch": "spec/qe-engine-v1",
+          "head_sha": "65d8479f47abdb26f37ddd14b2cc1bf2ad671b18",
+          "base_branch": "main",
+          "created_at": "2026-09-21T20:01:39Z",
+          "updated_at": "2026-09-21T20:01:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_qe/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "pull_request_count_page1": 10,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 10,
+          "title": "Exclude modeled bridge and AMM fee estimates from HardNAV V4",
+          "state": "open",
+          "draft": true,
+          "head_branch": "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
+          "head_sha": "0effe839d160af295d511eaea6a3d3830e024557",
+          "base_branch": "main",
+          "created_at": "2026-11-16T04:11:30Z",
+          "updated_at": "2026-11-16T14:21:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/10"
+        },
+        {
+          "number": 9,
+          "title": "Recursive collateral EVM v2",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/recursive-collateral-evm-v1",
+          "head_sha": "d2f260a75e2fe5a3fb421064ce48fe3a537bed80",
+          "base_branch": "main",
+          "created_at": "2026-10-07T20:21:37Z",
+          "updated_at": "2026-10-07T20:21:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/9"
+        },
+        {
+          "number": 8,
+          "title": "V4 real-market historical replay with exact Ethereum gas",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "feat/historical-block-v4-exact-gas",
+          "head_sha": "c2d34d6f709c7d7adcdb45a0307b3dc956a40a4f",
+          "base_branch": "main",
+          "created_at": "2026-09-27T10:36:04Z",
+          "updated_at": "2026-09-27T12:24:21Z",
+          "closed_at": "2026-09-27T11:52:08Z",
+          "merged_at": "2026-09-27T11:52:08Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/8"
+        },
+        {
+          "number": 7,
+          "title": "Closed Multi-Market HardNAV V3: restore pools, bridge inventory and smooth external NAV growth",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "feat/closed-multimarket-hardnav-v3",
+          "head_sha": "7e6861b2912f308edfa8546014c16eb4b4d08e91",
+          "base_branch": "main",
+          "created_at": "2026-09-27T09:19:14Z",
+          "updated_at": "2026-09-27T09:19:29Z",
+          "closed_at": "2026-09-27T09:19:29Z",
+          "merged_at": "2026-09-27T09:19:29Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/7"
+        },
+        {
+          "number": 6,
+          "title": "Closed DQN Agent Economy: endogenous demand, zero fake external inflow, canonical 10k/3k",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "feat/closed-agent-economy-mainline",
+          "head_sha": "2ebf244df2d8a258b27800e42968a45401b3d231",
+          "base_branch": "main",
+          "created_at": "2026-09-27T08:17:02Z",
+          "updated_at": "2026-09-27T08:17:13Z",
+          "closed_at": "2026-09-27T08:17:13Z",
+          "merged_at": "2026-09-27T08:17:13Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "REAL-BLOCK DQN Agent Economic Backtest inputs",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feat/real-block-backtest-data",
+          "head_sha": "f6903e255fd793cfa1548c79192ba1d70a7698ea",
+          "base_branch": "main",
+          "created_at": "2026-09-26T22:12:47Z",
+          "updated_at": "2026-09-27T06:27:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "CI: expose real-block workflow on pull requests",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "chore/real-block-pr-trigger",
+          "head_sha": "7cc7113c9d69cd13a01794c5e91d08d285720de2",
+          "base_branch": "main",
+          "created_at": "2026-09-26T22:12:26Z",
+          "updated_at": "2026-09-26T22:12:37Z",
+          "closed_at": "2026-09-26T22:12:37Z",
+          "merged_at": "2026-09-26T22:12:37Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "CI: trust real-block input workflow",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "chore/real-block-input-workflow",
+          "head_sha": "7bf171a0cf2185dc773760fd06efec6bdab727e8",
+          "base_branch": "main",
+          "created_at": "2026-09-26T22:11:31Z",
+          "updated_at": "2026-09-26T22:11:40Z",
+          "closed_at": "2026-09-26T22:11:40Z",
+          "merged_at": "2026-09-26T22:11:40Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Promote DQN Agent Economic Mainline",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "feat/dqn-agent-economic-mainline",
+          "head_sha": "ba7743f95c3ca8829f79725861e7635d002bd3b3",
+          "base_branch": "main",
+          "created_at": "2026-09-26T21:41:55Z",
+          "updated_at": "2026-09-26T21:42:06Z",
+          "closed_at": "2026-09-26T21:42:06Z",
+          "merged_at": "2026-09-26T21:42:06Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "P9 Cross-Chain DQN Economy: BTC/ETH/WETH ↔ SYNA/SYNR + DQN CB",
+          "state": "closed",
+          "draft": false,
+          "head_branch": "feat/p9-crosschain-dqn-economy",
+          "head_sha": "6e011666cc692e23ccfc062779527c691e7b335c",
+          "base_branch": "main",
+          "created_at": "2026-09-26T19:33:51Z",
+          "updated_at": "2026-09-26T19:34:16Z",
+          "closed_at": "2026-09-26T19:34:16Z",
+          "merged_at": "2026-09-26T19:34:15Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_megaproject",
+      "pull_request_count_page1": 0,
+      "truncated": false,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "pull_request_count_page1": 1,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "feat: R3 real hardware PQ radio + PI-PQ forensics",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/pq-radio-teleportation-v1-20260927",
+          "head_sha": "2938d6aa1e939b198fb4e98bb32b3cbfc958f6e4",
+          "base_branch": "main",
+          "created_at": "2026-09-27T18:49:34Z",
+          "updated_at": "2026-09-27T20:08:00Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_post_quantum_radio/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "pull_request_count_page1": 0,
+      "truncated": false,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_computing_topology",
+      "pull_request_count_page1": 2,
+      "truncated": false,
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "SVP: portable SVPB bytecode format and verified loader",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feature/svpu-bytecode-v03",
+          "head_sha": "8e48f25c23d75b97effbb141126ea95d7a6ef896",
+          "base_branch": "feature/svcu-02-svp-virtual-processor",
+          "created_at": "2026-11-16T20:12:15Z",
+          "updated_at": "2026-11-16T20:14:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_computing_topology/pull/3"
+        },
+        {
+          "number": 1,
+          "title": "[SVCU] Implement SVP Virtual Processor 0.2",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feature/svcu-02-svp-virtual-processor",
+          "head_sha": "26136008f32ed88dee78a5b9647a2840915e40ec",
+          "base_branch": "main",
+          "created_at": "2026-11-16T19:24:49Z",
+          "updated_at": "2026-11-16T20:08:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "url": "https://github.com/Shtenco/synergy_computing_topology/pull/1"
+        }
+      ]
     }
   ]
 }
