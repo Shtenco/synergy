@@ -5817,6 +5817,133 @@
           "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/1"
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_qe",
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 2,
+          "title": "M1: implement QE debt core and hard-value accounting",
+          "state": "open",
+          "draft": true,
+          "head_branch": "impl/qe-engine-v1-m1",
+          "head_sha": "b5a6b5006df7b9eaa12cae35acaffbac8cd4919a",
+          "base_branch": "spec/qe-engine-v1",
+          "updated_at": "2026-09-21T23:21:41Z",
+          "url": "https://github.com/Shtenco/synergy_qe/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "QE Engine V1 architecture and implementation plan",
+          "state": "open",
+          "draft": true,
+          "head_branch": "spec/qe-engine-v1",
+          "head_sha": "65d8479f47abdb26f37ddd14b2cc1bf2ad671b18",
+          "base_branch": "main",
+          "updated_at": "2026-09-21T20:01:39Z",
+          "url": "https://github.com/Shtenco/synergy_qe/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 10,
+          "title": "Exclude modeled bridge and AMM fee estimates from HardNAV V4",
+          "state": "open",
+          "draft": true,
+          "head_branch": "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
+          "head_sha": "0effe839d160af295d511eaea6a3d3830e024557",
+          "base_branch": "main",
+          "updated_at": "2026-11-16T14:21:56Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/10"
+        },
+        {
+          "number": 9,
+          "title": "Recursive collateral EVM v2",
+          "state": "open",
+          "draft": true,
+          "head_branch": "experiment/recursive-collateral-evm-v1",
+          "head_sha": "d2f260a75e2fe5a3fb421064ce48fe3a537bed80",
+          "base_branch": "main",
+          "updated_at": "2026-10-07T20:21:37Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/9"
+        },
+        {
+          "number": 5,
+          "title": "REAL-BLOCK DQN Agent Economic Backtest inputs",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feat/real-block-backtest-data",
+          "head_sha": "f6903e255fd793cfa1548c79192ba1d70a7698ea",
+          "base_branch": "main",
+          "updated_at": "2026-09-27T06:27:14Z",
+          "url": "https://github.com/Shtenco/synergy_agentic_ai_economy/pull/5"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_megaproject",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "open_pr_count": 1,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "feat: R3 real hardware PQ radio + PI-PQ forensics",
+          "state": "open",
+          "draft": false,
+          "head_branch": "feat/pq-radio-teleportation-v1-20260927",
+          "head_sha": "2938d6aa1e939b198fb4e98bb32b3cbfc958f6e4",
+          "base_branch": "main",
+          "updated_at": "2026-09-27T20:08:00Z",
+          "url": "https://github.com/Shtenco/synergy_post_quantum_radio/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_computing_topology",
+      "open_pr_count": 2,
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "SVP: portable SVPB bytecode format and verified loader",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feature/svpu-bytecode-v03",
+          "head_sha": "8e48f25c23d75b97effbb141126ea95d7a6ef896",
+          "base_branch": "feature/svcu-02-svp-virtual-processor",
+          "updated_at": "2026-11-16T20:14:14Z",
+          "url": "https://github.com/Shtenco/synergy_computing_topology/pull/3"
+        },
+        {
+          "number": 1,
+          "title": "[SVCU] Implement SVP Virtual Processor 0.2",
+          "state": "open",
+          "draft": true,
+          "head_branch": "feature/svcu-02-svp-virtual-processor",
+          "head_sha": "26136008f32ed88dee78a5b9647a2840915e40ec",
+          "base_branch": "main",
+          "updated_at": "2026-11-16T20:08:21Z",
+          "url": "https://github.com/Shtenco/synergy_computing_topology/pull/1"
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_search_engline",
+      "open_pr_count": 0,
+      "pull_requests": []
     }
   ]
 }
