@@ -443,7 +443,14 @@
           "changed_files": 19,
           "additions": 3323,
           "deletions": 51,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              44452576244
+            ],
+            "steps_executed": false
+          }
         }
       ]
     },
@@ -913,7 +920,14 @@
           "changed_files": 20,
           "additions": 1674,
           "deletions": 138,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              44451534644
+            ],
+            "steps_executed": false
+          }
         }
       ]
     },
@@ -2266,7 +2280,11 @@
           "changed_files": 1,
           "additions": 1130,
           "deletions": 0,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "NOT_CHECKED",
+            "steps_executed": null
+          }
         }
       ]
     },
@@ -3211,7 +3229,11 @@
           "changed_files": 2,
           "additions": 42,
           "deletions": 0,
-          "mergeable": false
+          "mergeable": false,
+          "ci": {
+            "status": "NOT_CHECKED",
+            "steps_executed": null
+          }
         },
         {
           "number": 7,
@@ -3255,7 +3277,14 @@
           "changed_files": 4,
           "additions": 613,
           "deletions": 0,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              44458405199
+            ],
+            "steps_executed": false
+          }
         }
       ]
     },
@@ -3773,7 +3802,14 @@
           "changed_files": 8,
           "additions": 1219,
           "deletions": 0,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              43754510440
+            ],
+            "steps_executed": false
+          }
         }
       ]
     },
@@ -4900,7 +4936,12 @@
           "changed_files": 1,
           "additions": 309,
           "deletions": 0,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "NO_RUN_RETURNED",
+            "steps_executed": null
+          },
+          "reviews": "NONE_RETURNED"
         }
       ]
     },
@@ -5858,7 +5899,14 @@
           "changed_files": 13,
           "additions": 1835,
           "deletions": 181,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              44439086235
+            ],
+            "steps_executed": false
+          }
         }
       ]
     },
@@ -5996,7 +6044,12 @@
           "changed_files": 25,
           "additions": 2924,
           "deletions": 0,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "NO_CONFIRMED_EXACT_HEAD_RUN",
+            "steps_executed": null
+          },
+          "reviews": "NONE_RETURNED"
         }
       ]
     },
@@ -6078,7 +6131,11 @@
           "changed_files": 5,
           "additions": 854,
           "deletions": 0,
-          "mergeable": false
+          "mergeable": false,
+          "ci": {
+            "status": "NOT_CHECKED",
+            "steps_executed": null
+          }
         },
         {
           "number": 3,
@@ -6932,7 +6989,16 @@
           "changed_files": 8,
           "additions": 1068,
           "deletions": 43,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              43864234518,
+              43864234530,
+              43864234504
+            ],
+            "steps_executed": false
+          }
         }
       ]
     },
@@ -7433,7 +7499,11 @@
           "changed_files": 14,
           "additions": 2626,
           "deletions": 7,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "NOT_CHECKED",
+            "steps_executed": null
+          }
         },
         {
           "number": 18,
@@ -7645,7 +7715,11 @@
           "changed_files": 45,
           "additions": 4998,
           "deletions": 73,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "NOT_CHECKED",
+            "steps_executed": null
+          }
         }
       ]
     },
@@ -7674,7 +7748,15 @@
           "changed_files": 14,
           "additions": 1021,
           "deletions": 1,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              44395090855
+            ],
+            "steps_executed": false
+          },
+          "reviews": "NONE_RETURNED"
         },
         {
           "number": 2,
@@ -7692,7 +7774,15 @@
           "changed_files": 9,
           "additions": 937,
           "deletions": 1,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              44410739531
+            ],
+            "steps_executed": false
+          },
+          "reviews": "NONE_RETURNED"
         },
         {
           "number": 3,
@@ -7710,7 +7800,15 @@
           "changed_files": 13,
           "additions": 1005,
           "deletions": 279,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              44447495607
+            ],
+            "steps_executed": false
+          },
+          "reviews": "NONE_RETURNED"
         },
         {
           "number": 4,
@@ -7728,7 +7826,15 @@
           "changed_files": 8,
           "additions": 710,
           "deletions": 22,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "FAILURE_NO_STEPS",
+            "run_ids": [
+              44494725891
+            ],
+            "steps_executed": false
+          },
+          "reviews": "NONE_RETURNED"
         }
       ]
     },
@@ -7752,7 +7858,15 @@
           "changed_files": 25,
           "additions": 1538,
           "deletions": 1,
-          "mergeable": true
+          "mergeable": true,
+          "ci": {
+            "status": "CANCELLED",
+            "run_ids": [
+              44634501880
+            ],
+            "steps_executed": false
+          },
+          "reviews": "NONE_RETURNED"
         }
       ]
     }
