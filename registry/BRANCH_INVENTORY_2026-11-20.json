@@ -3922,71 +3922,111 @@
           "name": "deck-visual-qa-v3",
           "sha": "03d35bc5a256b7a291d66509d6268dd16bc17154",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 2,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "design/investor-deck-v2-clean-layout-20261026",
           "sha": "15ca7b54eb792181942de5d5151f644f855b90dd",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "feat/hybrid-google-oracle-v1",
           "sha": "c932d3ea1dee7bfa937072358f222ab4f2534215",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 33,
+          "main_ahead_of_branch": 2,
+          "merge_base_sha": "ea616db14feff1a8c2bb087d1f4cce7f6f74df48"
         },
         {
           "name": "feature/org-loc-auditor-20261114",
           "sha": "58df8de3930bd5a90c6a02306a8c9f2edfcde4f8",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 24,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "main",
           "sha": "7540ad8f565ab74b31f972843c847c06888e7943",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "presentation-ai-company-v4",
           "sha": "14a2ece8349459a5af51af64591057b1da5d62a3",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 3,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "presentation-ecosystem-v5-working",
           "sha": "dd5795416cde8ad8ec3cb76deae989e25e78c65e",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 5,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "presentation-v4-chromium-pdf-20261027",
           "sha": "8759275af50392b546ccbd38961600288250988f",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 4,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "presentation-v4-pdf-delivery",
           "sha": "8759275af50392b546ccbd38961600288250988f",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 4,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "presentation-v9-center-logos-20261030",
           "sha": "dd5795416cde8ad8ec3cb76deae989e25e78c65e",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 5,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7540ad8f565ab74b31f972843c847c06888e7943"
         },
         {
           "name": "release/v1.0-desktop-rc",
