@@ -60,7 +60,7 @@ The canonical artifacts are:
 - [Live branch audit — QuantLab, RiskGuard and institutional MIDAS (9 branches)](docs/LIVE_BRANCH_AUDIT_QUANTLAB_RISKGUARD_MIDAS_INSTITUTIONAL_2026-11-20.md)
 - [Live branch audit — Relative Value, Market Maker and Adaptive Engine (9 branches)](docs/LIVE_BRANCH_AUDIT_RELATIVE_VALUE_MARKET_MAKER_ADAPTIVE_2026-11-20.md)
 - [Live branch audit — MarketVision, TradeMux and graph research (12 branches)](docs/LIVE_BRANCH_AUDIT_MARKETVISION_TRADEMUX_GRAPH_2026-11-20.md)
-- [Consolidated live branch registry — JSON](registry/LIVE_BRANCH_AUDIT_2026-11-20.json) — 890 branch records / 26 repositories
+- [Consolidated live branch registry — JSON](registry/LIVE_BRANCH_AUDIT_2026-11-20.json) — 1,002 branch records / 47 repositories
 - [Consolidated live branch registry — CSV](registry/LIVE_BRANCH_AUDIT_2026-11-20.csv) — SHA, purpose, PR, CI evidence and disposition
 - [High-branch repository / BQG evidence audit](docs/HIGH_BRANCH_REPOSITORY_AUDIT_2026-11-20.md)
 - [Eight-repository source audit delta](docs/REPOSITORY_AUDIT_DELTA_2026-11-20.md) — trading terminal, NEXUS/OLGA, Autopilot, Investment Committee, Market Graph, Science Agent, AI Coder and AGI Trader
