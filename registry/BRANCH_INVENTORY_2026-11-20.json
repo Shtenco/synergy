@@ -5043,6 +5043,420 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "default_branch": "main",
+      "branch_count": 29,
+      "unique_head_count": 20,
+      "branches": [
+        {
+          "name": "debug-branch",
+          "sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+          "protected": false
+        },
+        {
+          "name": "diagnostic-create-file-unavailable",
+          "sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+          "protected": false
+        },
+        {
+          "name": "do-not-use",
+          "sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-nexus-smm-ai-node-v1-20260823-checkpoint",
+          "sha": "91ac4ea6161013c3d9d65187e817d7d89d751127",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-nexus-smm-ai-node-v1-20260823",
+          "sha": "c39f6f0ee0e37c08366a63ec160c580b9ae954ba",
+          "protected": false
+        },
+        {
+          "name": "feat/capability-runtime-v1",
+          "sha": "f7c3bfccfdd3d0318f21b0284e072a082459e071",
+          "protected": false
+        },
+        {
+          "name": "feat/lab-deployment-reference-v1-20260823",
+          "sha": "fce069a3fb85f269048406d815d16de4bd4d30c0",
+          "protected": false
+        },
+        {
+          "name": "feat/preproduction-deployment-reference-v2-20260824",
+          "sha": "16c0deab657fe4a8be91d5b7c8228f6b69f5ac25",
+          "protected": false
+        },
+        {
+          "name": "feature/open-autopilot-v0.1",
+          "sha": "3a6241df17b8e401bb840fc252460d904bdc2b66",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "e092b9176c38d23425c2da823268cd0761885f33",
+          "protected": false
+        },
+        {
+          "name": "hardening/fail-closed-empty-verification",
+          "sha": "186761e699dfc8e91a869ac9f2957ef73f175c2e",
+          "protected": false
+        },
+        {
+          "name": "hardening/m12-budget-idempotency",
+          "sha": "1f496286f477fa9f602a10b8ab1b7e34076bc038",
+          "protected": false
+        },
+        {
+          "name": "hardening/m12-business-runtime-execution-idempotency-v1",
+          "sha": "36556ad239930ff1a7b43f1bf60d0e0bbddb2ebd",
+          "protected": false
+        },
+        {
+          "name": "hardening/m12-independent-verification-rebased-20261116",
+          "sha": "47b0e3fdb34ec648239394704ff2650c40109de9",
+          "protected": false
+        },
+        {
+          "name": "hardening/m12-independent-verification-v1",
+          "sha": "57173997b474444f3c015be5c9f3c462864857bf",
+          "protected": false
+        },
+        {
+          "name": "hardening/m12-workforce-lease-fencing",
+          "sha": "337ca67415f2856da4d31ffa03517e6f40cfdab2",
+          "protected": false
+        },
+        {
+          "name": "hardening/m12-workforce-lease-fencing-rebased-20261116",
+          "sha": "afa27227fa6316384d18517eb580f8a59dd37b4c",
+          "protected": false
+        },
+        {
+          "name": "hardening/m12-workforce-lease-fencing-v2",
+          "sha": "afa27227fa6316384d18517eb580f8a59dd37b4c",
+          "protected": false
+        },
+        {
+          "name": "hardening/mission-queue-lease-fencing",
+          "sha": "8076ce76f444044e2075fe0ea409f5f25893dd2e",
+          "protected": false
+        },
+        {
+          "name": "integration/deepseek-headless-stdin-v1",
+          "sha": "37e175d35deb4a4f8ededf8f7114b9a988fd9720",
+          "protected": false
+        },
+        {
+          "name": "integration/longhorizon-deepseek-bridge-v1",
+          "sha": "83937772ee71602242c530edb2be8e6b4ac29813",
+          "protected": false
+        },
+        {
+          "name": "integration/longhorizon-deepseek-bridge-v2",
+          "sha": "d82a3dd59d61c9faf22ea1fabd4bb63bdac82f8f",
+          "protected": false
+        },
+        {
+          "name": "integration/synergy-ai-autopilot-v1",
+          "sha": "337ca67415f2856da4d31ffa03517e6f40cfdab2",
+          "protected": false
+        },
+        {
+          "name": "last-oops",
+          "sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+          "protected": false
+        },
+        {
+          "name": "oops",
+          "sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+          "protected": false
+        },
+        {
+          "name": "stop",
+          "sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+          "protected": false
+        },
+        {
+          "name": "tmp-ignore",
+          "sha": "91ac4ea6161013c3d9d65187e817d7d89d751127",
+          "protected": false
+        },
+        {
+          "name": "ugh",
+          "sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/sinergy_app",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_app",
+      "default_branch": "main",
+      "branch_count": 4,
+      "unique_head_count": 4,
+      "branches": [
+        {
+          "name": "feat/finance-next-android-v2-5",
+          "sha": "6647b1fc0520806d85e1bc1523a6e43f7d3a59a1",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "97ade3df5a4922db2b77eb678726ff265edd2cb2",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
+          "protected": false
+        },
+        {
+          "name": "synergy-smm-v1",
+          "sha": "249e7586abc60aa11c20740f0ea08004add29852",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_qr_compress",
+      "default_branch": "main",
+      "branch_count": 12,
+      "unique_head_count": 12,
+      "branches": [
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "856a9a4d3b9176aa0f8d7a8a24d51a7012430386",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-1",
+          "sha": "45edd1355352fd52087c30963003259289d42a1e",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-ar2",
+          "sha": "40eee80f56c1534269567cdb4ae0e97f6d7980ca",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-ar3",
+          "sha": "c3cc0037c1913d381cabc7275698ca1a68f810f6",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-experiment",
+          "sha": "781c9c33af273e788aff5ecc331cb46fb3355ef9",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-ml",
+          "sha": "60a3bf8ee021ae6dfd0fa4dbf75ae206c8080028",
+          "protected": false
+        },
+        {
+          "name": "fusion-v5-x2",
+          "sha": "1d6c7c5663493dfe2d4c65764b356ef310bd9f13",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "8e116b253cdc3cf42740d08b502eaf00e4b09176",
+          "protected": false
+        },
+        {
+          "name": "qtc2-temporal-dictionary",
+          "sha": "7f9e422eb889bb5b2fc4f277d8098da343c396c9",
+          "protected": false
+        },
+        {
+          "name": "qtd2-blind-history",
+          "sha": "d6cf3d5de420b64b774d6f0903ae41b079cd9467",
+          "protected": false
+        },
+        {
+          "name": "qtd3-walkforward",
+          "sha": "2e12aba314f08952ec399ba650c5f864c8f0f1e1",
+          "protected": false
+        },
+        {
+          "name": "real-repo-proof",
+          "sha": "ba90a8e43084793ccb8cfbcfb8ddbead52e86946",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_metachain",
+      "default_branch": "main",
+      "branch_count": 5,
+      "unique_head_count": 4,
+      "branches": [
+        {
+          "name": "feat/pq-metachain-bootstrap-v1-20260831",
+          "sha": "57d90ad7bfe75e532da7d92280d521b3cc571e41",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "e7262641885f0e50046468ae40bf74cfbc0d010d",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "a568a5afaea5bf2ca8f68202d2c64856367316ad",
+          "protected": false
+        },
+        {
+          "name": "sinergy-messenger-v0.2-native",
+          "sha": "a2affb3cc3486079cc329b857e70e30768295fdc",
+          "protected": false
+        },
+        {
+          "name": "sinergy-messenger-v0.2-native-check",
+          "sha": "a2affb3cc3486079cc329b857e70e30768295fdc",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "default_branch": "main",
+      "branch_count": 5,
+      "unique_head_count": 5,
+      "branches": [
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "ed00d6948bbc75cf60a8eb1157b62733d0aaee6b",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "f9ed4f4a8677ce08e0037f205667b8f94bf54871",
+          "protected": false
+        },
+        {
+          "name": "research/uv-lwc-duv1-model-v0.1",
+          "sha": "24095307917334b6046831c11e05897fcde84203",
+          "protected": false
+        },
+        {
+          "name": "xpu-v1-deep-model",
+          "sha": "1f4edc718ec6a8acf5ac31d35474bfe90ce42b1e",
+          "protected": false
+        },
+        {
+          "name": "xpu-v2-dse-rtl",
+          "sha": "173174797caf73527c1733c0be5d162c423dd91d",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/print_money_synergychain",
+      "default_branch": "main",
+      "branch_count": 9,
+      "unique_head_count": 9,
+      "branches": [
+        {
+          "name": "aicb-v1-exact-reset",
+          "sha": "edd7a1eb6b9782b0c859beb0bddc5adc14e651fa",
+          "protected": false
+        },
+        {
+          "name": "aicb-v2-mainnet-fork",
+          "sha": "24f15b0548b3c4b3e514b52a9c742db52db81e8c",
+          "protected": false
+        },
+        {
+          "name": "feat/hybrid-external-profit-model-v1-20260905",
+          "sha": "0b0fc5b8a63ac411006dbfdc6f9c899a16285672",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "2f9325814e4bb9e9b4b2e5c8d1bc9a7049d3d729",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "7dd01e7da992d2efedb957e83a48218b86d0083f",
+          "protected": false
+        },
+        {
+          "name": "print_money_synergychain",
+          "sha": "e7b30474bed17d1e2e7de20f1b537cf03812aa76",
+          "protected": false
+        },
+        {
+          "name": "research/omega-v3-base-fork-hardnav",
+          "sha": "9fc3343648297faf8a9b91230964cfec33cfef76",
+          "protected": false
+        },
+        {
+          "name": "research/omega-v4-inflation-bounded-graph",
+          "sha": "4ac67bee187ef2c04b8c92520c9e1f640b97230a",
+          "protected": false
+        },
+        {
+          "name": "research/omega-v5-real-flow-fork",
+          "sha": "dd956f05186790ff27a3443e17dd914e90c7154a",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_project",
+      "default_branch": "main",
+      "branch_count": 5,
+      "unique_head_count": 5,
+      "branches": [
+        {
+          "name": "audit/portfolio-89-repositories-v1",
+          "sha": "9ffa1736783df8f4ff19163d0b9d5716fcba0ca9",
+          "protected": false
+        },
+        {
+          "name": "grant-dossier-ip-valuation-v1",
+          "sha": "4c6e1c3b4c735c78bab947b7f114d6b59b84231e",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "0bc0b626f87dccfe973acb8cfe8a13206403ce2c",
+          "protected": false
+        },
+        {
+          "name": "research/ip-financing-readiness-2026-11-14",
+          "sha": "40cd4901df5aae9b63cb51e4f2aa8df25c9c9103",
+          "protected": false
+        },
+        {
+          "name": "valuation-v3-87-assets-20261114",
+          "sha": "66b5fed8332a65865962cafb22cb41c3701b38f5",
+          "protected": false
+        }
+      ]
     }
   ]
 }
