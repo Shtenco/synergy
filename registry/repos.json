@@ -1683,8 +1683,8 @@
       "url": "https://github.com/Shtenco/synergy_lead_search_engline",
       "ecosystem_relation": "core",
       "category": "search-growth",
-      "node_type": "specification",
-      "maturity": "STUB_SPEC_ONLY",
+      "node_type": "lead-discovery-module",
+      "maturity": "RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
         "search",
@@ -1694,7 +1694,7 @@
       ],
       "dependencies": [],
       "risks": [
-        "no-executable-runtime-confirmed"
+        "offline candidate only; no external crawling, production CRM dispatch or deployed service verified"
       ]
     },
     {
