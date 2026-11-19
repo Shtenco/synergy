@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-11-20",
   "method": "GitHub compare_commits base=main head=branch",
-  "completed_comparisons": 85,
-  "pending_comparisons": 1117,
+  "completed_comparisons": 92,
+  "pending_comparisons": 1110,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -1108,6 +1108,97 @@
       "ahead_by": 24,
       "behind_by": 6,
       "total_commits": 24,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "feature/open-autopilot-v0.1",
+      "head_sha": "3a6241df17b8e401bb840fc252460d904bdc2b66",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 121,
+      "behind_by": 6,
+      "total_commits": 121,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "federation-v3-domain-expansion",
+      "head_sha": "e092b9176c38d23425c2da823268cd0761885f33",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 6,
+      "behind_by": 6,
+      "total_commits": 6,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/fail-closed-empty-verification",
+      "head_sha": "186761e699dfc8e91a869ac9f2957ef73f175c2e",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 500,
+      "behind_by": 6,
+      "total_commits": 500,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/m12-budget-idempotency",
+      "head_sha": "1f496286f477fa9f602a10b8ab1b7e34076bc038",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 530,
+      "behind_by": 6,
+      "total_commits": 530,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/m12-business-runtime-execution-idempotency-v1",
+      "head_sha": "36556ad239930ff1a7b43f1bf60d0e0bbddb2ebd",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 630,
+      "behind_by": 6,
+      "total_commits": 630,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/m12-independent-verification-rebased-20261116",
+      "head_sha": "47b0e3fdb34ec648239394704ff2650c40109de9",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 534,
+      "behind_by": 6,
+      "total_commits": 534,
+      "observed_at": "2026-11-20"
+    },
+    {
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "branch": "hardening/m12-independent-verification-v1",
+      "head_sha": "57173997b474444f3c015be5c9f3c462864857bf",
+      "base": "main",
+      "base_sha": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "merge_base_sha": "a31a9487a9f7eccb9dbbc28d6f94b62b29b8a531",
+      "status": "diverged",
+      "ahead_by": 535,
+      "behind_by": 6,
+      "total_commits": 535,
       "observed_at": "2026-11-20"
     }
   ]
