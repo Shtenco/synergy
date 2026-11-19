@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 64,
-  "pending_repositories": 28,
-  "branch_refs": 878,
+  "completed_repositories": 72,
+  "pending_repositories": 20,
+  "branch_refs": 983,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -4929,6 +4929,603 @@
         {
           "name": "production/v3.0.0",
           "head_sha": "c764552393441b313e83524f35ee4094c8bda8ae",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_marketvision",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "beccaaaac02ee80bc79b31b5ab2f417c2072d85e",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "1baf9fa65c9974bb241f3a4fb2a352424bfe9bcc",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "6dbe5c5b9d846b66cabc9136deb24dfd34cec842",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_matrix_sota",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "feat/canonical-household-capital-os-20260817",
+          "head_sha": "120d662a54bb13334fd98ca5312c52b4cde38682",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "ce442be4549200ffc97e82bb34d24f42b603d7ff",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "1d84bddfec16998c9300c984ca50980c1f946d56",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_messenger",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 14,
+      "branches": [
+        {
+          "name": "build/apk-alpha9-ci",
+          "head_sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9-final",
+          "head_sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9-real",
+          "head_sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9-runtime",
+          "head_sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9-working",
+          "head_sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "build/apk-alpha9",
+          "head_sha": "0b14071c082dfc98beb5a144c9621a413d1c9b89",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-direct-final",
+          "head_sha": "aab3f83e29013eab3437020afe8cefaede3bc154",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source",
+          "head_sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source2",
+          "head_sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source-final",
+          "head_sha": "8f422e342d56b584d4bda0c6a59f86ac33749c14",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source-stable",
+          "head_sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+          "protected": false
+        },
+        {
+          "name": "import/alpha9-source-stable2",
+          "head_sha": "528836a943bfb67efb8d01d8d95e0f5034a62c40",
+          "protected": false
+        },
+        {
+          "name": "import/full-source-alpha9",
+          "head_sha": "f1790625519a34efd258e760198ac545556c2fa7",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_meta_api",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "integration/meta-api-mcp-v0.1",
+          "head_sha": "74cf1e9ada1b9d7dd6b16bb64fa62da58f5f2c5a",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "1f208b6b581d1b830c7c1d3ec37c21250793806e",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_meta_os",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 33,
+      "branches": [
+        {
+          "name": "codex/meta-os-v31-signed-durable-supervisor",
+          "head_sha": "d1870b26e032cc2297f70b3492f651aafe951474",
+          "protected": false
+        },
+        {
+          "name": "feat/artifact-store-lifecycle-v2-20260821",
+          "head_sha": "88fc5d89829d26eedd209915e6c2f22dfaef85de",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-admission-v1-20260823",
+          "head_sha": "d11bb29c408455b014bdeb847153a4a83902c5ed",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-admission-v3-preproduction-20260824",
+          "head_sha": "3e54b516a4b766532bf18e80021863036678c668",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-lab-deployment-v3-20260823",
+          "head_sha": "fa4b6798f7c35c9ce734e05166f5328ccd5dbea0",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v1-20260823",
+          "head_sha": "752a1bb4488271123e257207a6cb555f5ba5af0b",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v2-20260823",
+          "head_sha": "9387d988d45d6c371c177c280eb4f6282ab204aa",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v3-20260824",
+          "head_sha": "41930530ebbf6bc6336543aeb23053868d1ac1dc",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v4-rc4-20260824",
+          "head_sha": "c7c8f72b6877cb63fed2c63511499e188bc9d498",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-bootstrap-v5-rc5-20260824",
+          "head_sha": "546695157570ff7f59c5868b6e0c021ca2d74789",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-production-gate-v1-20260823",
+          "head_sha": "b0cb2fca41b227332aeb87314691dfa1b8ea5937",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-transport-admission-v2-20260823",
+          "head_sha": "b8460ba7d84964b1bb89b84c8cd1ee2f1adda6db",
+          "protected": false
+        },
+        {
+          "name": "feat/capability-registry-manifest-v2-20260821",
+          "head_sha": "a2d89522c6da2723f1a42698cc34a19d2c61481c",
+          "protected": false
+        },
+        {
+          "name": "feat/durable-supervisor-state-v3-20260821",
+          "head_sha": "04c2015e99fe91626835ecdfe344333dfd17d48f",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-testnet-external-deployment-gate-v1-20260828",
+          "head_sha": "430c2bcf229fdca3cc11538699f875eb2f8ddfb3",
+          "protected": false
+        },
+        {
+          "name": "feat/external-three-host-requirements-v1-20260905",
+          "head_sha": "733de6664244cf07db0f59a6a84e3ee1b7cfeb2c",
+          "protected": false
+        },
+        {
+          "name": "feat/node-admission-decision-v1-20260821",
+          "head_sha": "096f0715f0e9e14636198ad130cee7ae8a332b26",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-admission-v1-20260822",
+          "head_sha": "980ed85d575d57320b6f7e2cde5475c88e771ae7",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-build-lock-consumer-v1-20260821",
+          "head_sha": "0d0a9e8602a02e96f2276bfed98275eb0deda58f",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-build-lock-consumer-v1-20260822",
+          "head_sha": "d5a20031be8b1d0293d55f0e1c8a03d9edb4c413",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-build-plan-consumer-v1-20260822",
+          "head_sha": "b5cdf31ad81e27997e18564d8211cb38a6cac893",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-profile-consumer-v1-20260821",
+          "head_sha": "7eda95a0bbb93c29440b3e15443abe4e20cc3be2",
+          "protected": false
+        },
+        {
+          "name": "feat/research-node-readiness-consumer-v1-20260822",
+          "head_sha": "b5cdf31ad81e27997e18564d8211cb38a6cac893",
+          "protected": false
+        },
+        {
+          "name": "feat/science-node-admission-decision-v2-20260821",
+          "head_sha": "46fe309096e571c9f70e0615069a51297c31ac46",
+          "protected": false
+        },
+        {
+          "name": "feat/science-node-admission-v2-20260821",
+          "head_sha": "d14dac241e650346a7ba214ccd4452f72afd5741",
+          "protected": false
+        },
+        {
+          "name": "feat/science-node-build-lock-consumer-v2-20260821",
+          "head_sha": "00309a8c42e956c7e0b6314eda345b1991b24edb",
+          "protected": false
+        },
+        {
+          "name": "feat/science-research-node-consumer-v1-20260821",
+          "head_sha": "efe0ed3fed5cecff2de957e4a400f67ee2969d11",
+          "protected": false
+        },
+        {
+          "name": "feat/service-build-recipe-consumer-admission-v3-20260821",
+          "head_sha": "e1c73e2ec91d738c2dda981bc2196c3a8609ce54",
+          "protected": false
+        },
+        {
+          "name": "feat/signed-node-manifest-supervisor-v1-20260821",
+          "head_sha": "be48f6fbe7baa4a6f8be5169c7e343a20e19ab2b",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "a24fc175aa00b38159b409e553321fdfa6ee7840",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "a69e3bb6b5f65a93b97d79de74c4086d970a70c9",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "f6ee7c7360357c422f2f12f83bade85e24cd9868",
+          "protected": false
+        },
+        {
+          "name": "synergy-meta-os-v30-unified-node-rc",
+          "head_sha": "90b13e7a3abac1f571b4ad9102fc1ab13837fafc",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_metachain",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 5,
+      "branches": [
+        {
+          "name": "feat/pq-metachain-bootstrap-v1-20260831",
+          "head_sha": "57d90ad7bfe75e532da7d92280d521b3cc571e41",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "e7262641885f0e50046468ae40bf74cfbc0d010d",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "a568a5afaea5bf2ca8f68202d2c64856367316ad",
+          "protected": false
+        },
+        {
+          "name": "sinergy-messenger-v0.2-native",
+          "head_sha": "a2affb3cc3486079cc329b857e70e30768295fdc",
+          "protected": false
+        },
+        {
+          "name": "sinergy-messenger-v0.2-native-check",
+          "head_sha": "a2affb3cc3486079cc329b857e70e30768295fdc",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_metaverse",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 10,
+      "branches": [
+        {
+          "name": "bootstrap/metaverse-architecture-v1",
+          "head_sha": "5e62521ba8abd2ce2c213eac1b9b0f10fe4a5d24",
+          "protected": false
+        },
+        {
+          "name": "feature/economic-router-spatial-v1",
+          "head_sha": "e5574f5e6a1e388e5390149db1b2abe877bf274d",
+          "protected": false
+        },
+        {
+          "name": "feature/league-spatial-projection-v1",
+          "head_sha": "5e62521ba8abd2ce2c213eac1b9b0f10fe4a5d24",
+          "protected": false
+        },
+        {
+          "name": "feature/rf-gnss-business-twin-v1",
+          "head_sha": "8e1ea211d8f22c39f852dbc6e7fa658325e15c5e",
+          "protected": false
+        },
+        {
+          "name": "integration/economic-router-spatial-v1-rebased-20261116",
+          "head_sha": "42600243bcca4fbd151f06ce7465663f66efe07d",
+          "protected": false
+        },
+        {
+          "name": "integration/rf-gnss-business-twin-rebased-20261116c",
+          "head_sha": "6513df6c6738f0531dbb9105a148bed37dbfe589",
+          "protected": false
+        },
+        {
+          "name": "integration/rf-gnss-business-twin-rebased-20261116",
+          "head_sha": "4b2734ecab6ddd89c45c7cbc2c35f27644b73fe0",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "a27d820bac901200975c2a94f3e7606798989356",
+          "protected": false
+        },
+        {
+          "name": "work/additional-metaverse-research-100-20261116",
+          "head_sha": "ff04397d490fad5de325f5cd0592e59473b52923",
+          "protected": false
+        },
+        {
+          "name": "work/global-world-platform-foundation-20261116",
+          "head_sha": "6c25eaf5feb77d9f0a399e4c4b6b95783c277bff",
+          "protected": false
+        }
+      ],
+      "pagination_review_required": false
+    },
+    {
+      "repository": "Shtenco/synergy_midas_ai",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 35,
+      "branches": [
+        {
+          "name": "archive/cyber-v8-v10-2026-08-22",
+          "head_sha": "55e9cbd4b5d777e8e916493dc8c2188d2f38daf6",
+          "protected": false
+        },
+        {
+          "name": "archive/master-lineage-2026-08-31",
+          "head_sha": "42cfd285314764bad0c5ed9edaf3fdc8f93109da",
+          "protected": false
+        },
+        {
+          "name": "feat/historical-strategy-evidence-registry-v1-20260821",
+          "head_sha": "352a6029eb129c22a30d8d33a96bbc81d1c419cf",
+          "protected": false
+        },
+        {
+          "name": "feat/independent-risk-decision-v1-20260821",
+          "head_sha": "7b23cfbac00ef6ea85797c8b38131bb482f1db1e",
+          "protected": false
+        },
+        {
+          "name": "feat/inference-bundle-trading-decision-v1-20260821",
+          "head_sha": "84461b56df70847b0f40b6968b4de056c0a01df2",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "105c3be4b1815ed2d3a24a35cf64581d8ee1f1af",
+          "protected": false
+        },
+        {
+          "name": "import/cybernetic-bip39-v10-cyber20-20260821",
+          "head_sha": "a114832c46c26370cd629de89ed175248740303b",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+          "protected": false
+        },
+        {
+          "name": "release/shtenco-v13-30-v13-41-test",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "release/shtenco-v13-30-v13-41-test2",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "release/shtenco-v13-30-v13-41",
+          "head_sha": "3f7f15d6814519fadf9f3bc0802e024ded86e808",
+          "protected": false
+        },
+        {
+          "name": "research/v11-bip39-20-cycles-2026-08-22",
+          "head_sha": "6aa8011903c5db49415e9da355067f145e42fc44",
+          "protected": false
+        },
+        {
+          "name": "research/v12-hedge-risk-20-cycles-2026-08-22",
+          "head_sha": "fa7b7a62840cc1af19d88e052a151923f216981f",
+          "protected": false
+        },
+        {
+          "name": "research/v13-tension-grid-martingale-20-cycles",
+          "head_sha": "1871f917c83c20a49a432655652813fcb25333ba",
+          "protected": false
+        },
+        {
+          "name": "research/v14-independent-mr-sleeve-20-cycles",
+          "head_sha": "f698c8edf970d5499a1cd56d7226416e4618ca0a",
+          "protected": false
+        },
+        {
+          "name": "research/v15-graph-lot-allocation-10-cycles",
+          "head_sha": "3f1f4c482ef79bcf08b954bd0b678ea2d5311bdd",
+          "protected": false
+        },
+        {
+          "name": "research/v16-anti-overfit-month-split-20-cycles",
+          "head_sha": "d2462fb8abd6b32eaa1179d5dc76d2238b3c3bbe",
+          "protected": false
+        },
+        {
+          "name": "research/v17-deep-bip39-full-history",
+          "head_sha": "dc53d91fec54fcc99497b1b0e0648d225d4f8228",
+          "protected": false
+        },
+        {
+          "name": "research/v18-trivol-lotmeta",
+          "head_sha": "4b5930962788f59cfb2b6751bc08daf5925e9b1e",
+          "protected": false
+        },
+        {
+          "name": "research/v19-scientific-integrity-robust-survival",
+          "head_sha": "4fbdf46f274e0aebc908431cca543b4e390e6eda",
+          "protected": false
+        },
+        {
+          "name": "research/v20-unified-causal-portfolio-2026-08-26",
+          "head_sha": "a3e44aa13e0212f5aa4fbaf7dd70f236f7456a21",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test3",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test4",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test5",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test6",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test7",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test8",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-create-tree-test9",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-ignore",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test2",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test3",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test4",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
+          "protected": false
+        },
+        {
+          "name": "tmp-noop-final-test5",
+          "head_sha": "d568685cff70bae572a295aa78890a240efe45af",
           "protected": false
         }
       ],
