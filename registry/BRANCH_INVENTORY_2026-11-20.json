@@ -871,15 +871,23 @@
           "name": "audit/sfc-scce-a2-4-continuation-20261111",
           "sha": "6262f1dcb47ca0ef5c09f1f854f8cd1e37699c39",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 528,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "audit-russian-readme",
           "sha": "62a22473f3d025739789e7fdcc5019624e7bfd98",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 450,
+          "merge_base_sha": "62a22473f3d025739789e7fdcc5019624e7bfd98"
         },
         {
           "name": "feature/canonical-economic-entity-register-v1-rebased-20261115b",
@@ -892,43 +900,67 @@
           "name": "feature/canonical-economic-entity-register-v1-rebased-20261115",
           "sha": "85d38bcd4805b3fa2982ecfe066a8d387199f0b2",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 914,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "feature/canonical-economic-entity-register-v1",
           "sha": "c0abf74b7be6cf2420b953ce95d87561fa6f159e",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 882,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "feature/economic-router-core-v1",
           "sha": "83c47524785ae87a9315ea80c9d15c285ad994c2",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 706,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "feature/synergy-leagues-phase-1",
           "sha": "760cf58c29166a7bcf9b9b8745a46cb96bab1583",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 17,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "integration/economic-core-consolidation-2026-11-13",
           "sha": "8ba881bf30ea8a6d27b32e8f8731589272c76708",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "behind",
+          "branch_ahead_of_main": 668,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "main",
           "sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9"
         },
         {
           "name": "prototype-2-input-output",
@@ -9987,15 +10019,23 @@
           "name": "temp-do-not-use",
           "sha": "55c3806272ba3239f4507b225402ca59c3b86f9b",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 88,
+          "main_ahead_of_branch": 9,
+          "merge_base_sha": "d33e02ba6de9435f1b4440ca22060136afe6112c"
         },
         {
           "name": "test/bybit-demo-credit-pyramid-20260804",
           "sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 8,
+          "merge_base_sha": "6319fe8b9053d66777dba6e5625e48ae56ff17d5"
         }
       ]
     }
