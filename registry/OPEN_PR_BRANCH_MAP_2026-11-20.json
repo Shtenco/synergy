@@ -5748,6 +5748,75 @@
       "repository": "Shtenco/synergy_relative_value",
       "open_pr_count": 0,
       "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_ai_investment_committee",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_market_maker",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_adaptive_engine",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_marketvision",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_trademux",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_epstein_network",
+      "open_pr_count": 0,
+      "pull_requests": []
+    },
+    {
+      "repository": "Shtenco/synergy_2chain_qe",
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 3,
+          "title": "WIP: Recover and harden Base Cycle A arbitrage executor",
+          "state": "open",
+          "draft": true,
+          "head_branch": "recovery/base-synergy-l3-arbitrage-20261117",
+          "head_sha": "e7477ede9c65700824502fd48f40f90085e5a166",
+          "base_branch": "main",
+          "updated_at": "2026-11-19T07:33:54Z",
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Stage SYNERGY Protocol Convergence P5 source-locked adapter",
+          "state": "open",
+          "draft": true,
+          "head_branch": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "0099d40f55ef4a94812d58c8126a88f2611352ff",
+          "base_branch": "main",
+          "updated_at": "2026-09-25T08:11:34Z",
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "HARDNAV V2: canonical accounting, solvent bridge, real V3 execution",
+          "state": "open",
+          "draft": false,
+          "head_branch": "hardnav-v2-economic-core",
+          "head_sha": "3062b0a847bf3dbc27fb9e37ba80b69e6901565e",
+          "base_branch": "main",
+          "updated_at": "2026-09-21T10:51:32Z",
+          "url": "https://github.com/Shtenco/synergy_2chain_qe/pull/1"
+        }
+      ]
     }
   ]
 }
