@@ -842,6 +842,1879 @@
           "protected": false
         }
       ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_language",
+      "default_branch": "main",
+      "branch_count": 129,
+      "unique_head_count": 105,
+      "branches": [
+        {
+          "name": "ai-language-v040-hardening",
+          "sha": "2c0ab2b78796b38cf99d99d4b7a2d12f89facba5",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository",
+          "sha": "c9cad12d33131607abe6480ceb05dd9b74c125f2",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-0li4bv",
+          "sha": "e6f41f66aba9b812a46d76f66d60f36c9b0b92fc",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-7vwora",
+          "sha": "61ac1d84946a399b162a9336a07328569420e601",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-kf6ymv",
+          "sha": "adb7277bd2ed86ec3e821b90275c5f5784239b08",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-kypvy9",
+          "sha": "90fedc0ebb44369a9462b53efc84b3c95ee2a400",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-lmjx7u",
+          "sha": "9b7b0dfcb7f324442403d46452d3a80fb1107cfe",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-portable-runtime-build",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-20260817",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-actual",
+          "sha": "fefe1cfcf9120d11156402d328b7a26d0ecde334",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-exec",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-final2",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-one",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-runner",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-final",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-ubuntu",
+          "sha": "6f7c9406b08f11748478b6c96c85d8c74e263038",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-win",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-win2",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-win-final",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-build-20260817-2",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-build-final",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-final-installer-20260817",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-installer-20260817",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-installer-build-20260817",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-installer-payload-20260817",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-win-build-20260817",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-windows-build-2",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-windows-final",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "docs/editorial-batch03",
+          "sha": "31e0e2b0c7b7a00e9e9461f9b6faa25a0fdffc84",
+          "protected": false
+        },
+        {
+          "name": "docs/sinergy-semantic-governance-20260817",
+          "sha": "01dfffb74a61e58d9c15711a0d5fae71bab48855",
+          "protected": false
+        },
+        {
+          "name": "feat/accounting-close-requirements-v3-20260819",
+          "sha": "de859f3f46c4bec721faef47db24646f1764f20c",
+          "protected": false
+        },
+        {
+          "name": "feat/causal-accounting-requirements-v2-20260818",
+          "sha": "954c3b4b32efb2856f596faa0d854b92901e38ba",
+          "protected": false
+        },
+        {
+          "name": "feat/requirement-binding-v1-20260818",
+          "sha": "70c0b5b5476b43b4b193eb5f854857502a85f307",
+          "protected": false
+        },
+        {
+          "name": "feat/semantic-memory-context-bridge-20261118",
+          "sha": "f0d724f6cc2a84afa09049dc889bcd3eb753b5eb",
+          "protected": false
+        },
+        {
+          "name": "feature/pypi-cli-coding-agent",
+          "sha": "6f756715609ee75903f071f2abe55f303faa342b",
+          "protected": false
+        },
+        {
+          "name": "feature/repository-impact-graph",
+          "sha": "bbdf4c73c2b26c459256afebee5e19c5666f6221",
+          "protected": false
+        },
+        {
+          "name": "feature/semantic-agent-trace",
+          "sha": "8db48224987c932955b4f03a45d8bd93b5b6c366",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "02a83b7834d168582fe5542fe4b83e9765bcce22",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
+          "protected": false
+        },
+        {
+          "name": "nexus-phase4-natural-corpus-20260812",
+          "sha": "0c8f546b6b3d53a15ebfb2ce7f08bdbf18500c40",
+          "protected": false
+        },
+        {
+          "name": "nexus-r5-real-lm-1m",
+          "sha": "09793ac9fc260a0b94979cc01e74882fae56007a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r22-intelligence-ab",
+          "sha": "f46b9aaad6dcfa70ded3e01cb9209518013b10cc",
+          "protected": false
+        },
+        {
+          "name": "nexus-r22-intelligence-ab-v2",
+          "sha": "f0bd7f55861e74235c56fc063ef8de38cae02579",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-external",
+          "sha": "92ab48fbf125d968cf9e792b227b0c545a559048",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-power-matched",
+          "sha": "2a0c8d03ee61c37919ca3fd72052f801c3c61434",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-real-power",
+          "sha": "bd16e2ef03f3b36930c8d004efdde882ac4d1acc",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-swebench-pilot",
+          "sha": "f2866a99f7480e5196d7d285d685de41dac8573f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r24-adaptive-consensus",
+          "sha": "81efe51aac97117dd7653b5931296849fc2c94a1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r24-swebench-canonical-edits",
+          "sha": "d300acf8fe422037b652c6ea65147cc69dd39e76",
+          "protected": false
+        },
+        {
+          "name": "nexus-r51-dict2048-real-lm",
+          "sha": "384b0c3b203d65417ecbe6d3ab720445f53984e5",
+          "protected": false
+        },
+        {
+          "name": "nexus-r52-tokenizer-deathmatch",
+          "sha": "b27265856ebcbbafb657a76f8f12a0741095d3a0",
+          "protected": false
+        },
+        {
+          "name": "nexus-r53-tokenizer-lm-finalists",
+          "sha": "caee256459dec322acc40acf545e8183282a62a9",
+          "protected": false
+        },
+        {
+          "name": "nexus-r54-results-docs",
+          "sha": "9c425d2e161891e7dfd192dcece5f3350b07e335",
+          "protected": false
+        },
+        {
+          "name": "nexus-r54-unigram-confirm",
+          "sha": "9dc41b00ccede1ed6040edfced1ed276f3257061",
+          "protected": false
+        },
+        {
+          "name": "nexus-r55-results-docs",
+          "sha": "9883ea984811f2cd5688de47dd9cc382b35196ed",
+          "protected": false
+        },
+        {
+          "name": "nexus-r55-unigram-vocab-sweep",
+          "sha": "66268b5046f1a4adf9f5f1a6c9a740ddaad42160",
+          "protected": false
+        },
+        {
+          "name": "nexus-r56-3m-russian-adequacy",
+          "sha": "66c96a4533a802936612aa0d04a02a1eb912f93f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r56-results-docs",
+          "sha": "c7bacaf1d76675bb842927b5d36e1c7a6ab862a0",
+          "protected": false
+        },
+        {
+          "name": "nexus-r56b-cortex-vocab-generation",
+          "sha": "0e89f1b2b36bef96216c6153ffdd375080235643",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-concept-graph-language",
+          "sha": "185e04614831ce706eb92e3e8651cd6e2b473ea9",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-fast-falsify",
+          "sha": "32c3996cee6e7c9edc26a05091317352cc65ff61",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-micro",
+          "sha": "767e9b36982a00e0de6eff168cca1d7fd8861cdd",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-nano",
+          "sha": "a0e8671693454781dce56e79ad0c2f58a4218fa1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-pilot",
+          "sha": "645fa9dc0f621b4a620408823069f7c9fb8ea436",
+          "protected": false
+        },
+        {
+          "name": "nexus-r58-latent-state",
+          "sha": "27ec62da83f835126092663b536242ed882cd67e",
+          "protected": false
+        },
+        {
+          "name": "nexus-r59-learned-semantic-graph",
+          "sha": "7a8709ea40d1378f7f6b0874543fbe7b347457bd",
+          "protected": false
+        },
+        {
+          "name": "nexus-r59-pilot",
+          "sha": "f23648044ba0eb48aa2da2f00c691b8afdf1c46f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-blind22-run",
+          "sha": "c97b38909ccb8d1f569b8ca691341ca619933d2b",
+          "protected": false
+        },
+        {
+          "name": "nexus-r77-blind24-run",
+          "sha": "a430003f0dc36eed284e40967111d5016bfcecef",
+          "protected": false
+        },
+        {
+          "name": "nexus-r78-blind25-run",
+          "sha": "6e1c3a7ddd8b3fb489eea53c0f94b984e3be303b",
+          "protected": false
+        },
+        {
+          "name": "nexus-r79-blind26-run",
+          "sha": "d8eb86265d6baa88617475da99471e21d2483b62",
+          "protected": false
+        },
+        {
+          "name": "nexus-r510-recovery-micro",
+          "sha": "053f938a81a4babb0384ca10f2dd01d29d79fc19",
+          "protected": false
+        },
+        {
+          "name": "nexus-r510-recovery-pilot",
+          "sha": "c8126c6737264d3f11f7d8dca72f9c6e9894cdd4",
+          "protected": false
+        },
+        {
+          "name": "nexus-r510-rollout-recovery",
+          "sha": "49fde1cb903843de6e583686bef0535bb321f032",
+          "protected": false
+        },
+        {
+          "name": "nexus-r511-pointer-recovery",
+          "sha": "7953f4846f3c680527fd58490896dbc6837b13c5",
+          "protected": false
+        },
+        {
+          "name": "nexus-r512-8k-pilot",
+          "sha": "7d9d5fe7d2478c649e2304b431f4b1d6c5a61f4b",
+          "protected": false
+        },
+        {
+          "name": "nexus-r512-deep-language",
+          "sha": "68faad4dbfc39ed8091fe662259062824d54b55c",
+          "protected": false
+        },
+        {
+          "name": "nexus-r513-masked-iterative",
+          "sha": "840bd8184109fe0d28b28d8679b1db9459bd877e",
+          "protected": false
+        },
+        {
+          "name": "nexus-r513-pilot",
+          "sha": "e5c0ea540b1137d47187cad1af0c05b65504fb80",
+          "protected": false
+        },
+        {
+          "name": "nexus-r514-deep-diverse",
+          "sha": "1a4227870f50da5f32213cb6758f9fda2034d03a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r514-hierarchical-planner",
+          "sha": "3d9ffff89f64959c5a0683cc57fb9b24c1b9e8b8",
+          "protected": false
+        },
+        {
+          "name": "nexus-r514-micro",
+          "sha": "e065a11ff6e874ae74edcc564db109d01c02b17f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r514b-content-plan",
+          "sha": "e88639f0f791a23755f13b59811793e44cb57af4",
+          "protected": false
+        },
+        {
+          "name": "nexus-r515-deep-diverse",
+          "sha": "c8d73d9b595715342d51aef51aee15a39d4e74e7",
+          "protected": false
+        },
+        {
+          "name": "nexus-r515-semantic-encoder-decoder",
+          "sha": "ad88e845fa82c9776b111b92c1ad48a4f4cce1e7",
+          "protected": false
+        },
+        {
+          "name": "nexus-r516-masked-deep-diverse",
+          "sha": "c303b9a05375c3d2738d27f2afa502f958e455ac",
+          "protected": false
+        },
+        {
+          "name": "nexus-r516-ordered-plan",
+          "sha": "54123024d3659dc14ae4bf9eaf47c1f17a4805b1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r517-pad-clean",
+          "sha": "26dc1bd8c7de901b576d2a392f04bb43254fb805",
+          "protected": false
+        },
+        {
+          "name": "nexus-r517-sentence-curriculum",
+          "sha": "623ecdd4fc15fedda369a236bb3d40a685ce7f3b",
+          "protected": false
+        },
+        {
+          "name": "nexus-r518-discrete-sentence-plan",
+          "sha": "fa4ec5e4c5af2ba842271cfb1bc1836e2cbe2e16",
+          "protected": false
+        },
+        {
+          "name": "nexus-r518-pilot",
+          "sha": "039e273265152db6823ab201c3d64726cdb0e881",
+          "protected": false
+        },
+        {
+          "name": "nexus-r518-variable-context",
+          "sha": "2509e4cdfe1b977262aca81d78872e560eb8d774",
+          "protected": false
+        },
+        {
+          "name": "nexus-r519-direct-modern-sentence",
+          "sha": "c0316c19ce3ef307bbc927ebad3546d58725cc6f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r519-pilot",
+          "sha": "1c103936aa392cff61a123e25360c6d48c48f236",
+          "protected": false
+        },
+        {
+          "name": "nexus-r519-sequence-critic",
+          "sha": "08c01b066d9bd16d7ab075fe21a870bb62267d1a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r520-prefix-rescue",
+          "sha": "0d688bf248bd79dcf53a0c6b18c970b3b68e92d2",
+          "protected": false
+        },
+        {
+          "name": "nexus-r520-zero-init-semantic",
+          "sha": "519df909c49ac5cce4f4fc783b120ee8cf80dee3",
+          "protected": false
+        },
+        {
+          "name": "nexus-r521-context-target-critic",
+          "sha": "ea1c05b6e89f083895efb3544939d17ead08c060",
+          "protected": false
+        },
+        {
+          "name": "nexus-r521-modern-continuation",
+          "sha": "dc8fc2966571e50351586ace3445344e7d12fac1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r521-modern-pilot",
+          "sha": "a0027f20e239fee7935d1d5293a620550a558d39",
+          "protected": false
+        },
+        {
+          "name": "nexus-r522-typed-binding-authority",
+          "sha": "4389f37a6608fdc708a7ed427d9042defbec8511",
+          "protected": false
+        },
+        {
+          "name": "nexus-r523-kl-homeostat",
+          "sha": "095addfe3285722977323dc189be661433439f64",
+          "protected": false
+        },
+        {
+          "name": "nexus-r523-prefix-dependence",
+          "sha": "e188922cfcf8d4143b3e18e6524d9746bdb05960",
+          "protected": false
+        },
+        {
+          "name": "nexus-r524-capacity-pilot",
+          "sha": "83361c01f5f3de3719efbb87acf60b06822d0faa",
+          "protected": false
+        },
+        {
+          "name": "nexus-r524-capacity-sweep",
+          "sha": "5592e7113772d50122ec85c8e1ce8911ef34c249",
+          "protected": false
+        },
+        {
+          "name": "nexus-r524-graph-grounded-answer-loop",
+          "sha": "0964deac374de951616377fb30538bf0726fe462",
+          "protected": false
+        },
+        {
+          "name": "nexus-r525-authority-bus",
+          "sha": "994ed0f9db7fa148b2759be335da73615fb3c764",
+          "protected": false
+        },
+        {
+          "name": "nexus-r525-persistent-graphrag-memory",
+          "sha": "87b9757642921b5c8f3ab2f0f1389a7f1fc8c287",
+          "protected": false
+        },
+        {
+          "name": "nexus-r525b-authority-stress",
+          "sha": "f987c94b887210b887cdb690152fc2c65422cfbe",
+          "protected": false
+        },
+        {
+          "name": "nexus-r526-11m-diverse-clean",
+          "sha": "3289dc012ee8d9d6daa7da56fd4ea279d26903d7",
+          "protected": false
+        },
+        {
+          "name": "nexus-r526-integrated-cognitive-loop",
+          "sha": "f603c2c3da42eee4fa13ff47dc103540b0c7a82e",
+          "protected": false
+        },
+        {
+          "name": "nexus-r527-sequence-stability",
+          "sha": "c07cf3b8452094496b4597413941a3a234bfd1b0",
+          "protected": false
+        },
+        {
+          "name": "nexus-r527-slot-safe-neural-realizer",
+          "sha": "91c8a29d887c913da56a82a527a7bc961b2cb330",
+          "protected": false
+        },
+        {
+          "name": "nexus-r528-capacity-extension",
+          "sha": "e8da65e9c21a3d65b670114466f84a3abd288c99",
+          "protected": false
+        },
+        {
+          "name": "nexus-r528-russian-semantic-compiler",
+          "sha": "5d400ab6d97e765c8c948922659e793f5f117a3a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r529-concept-logic-planner",
+          "sha": "7df3a396331e628f08a089849a0c30e0d9e9a1d5",
+          "protected": false
+        },
+        {
+          "name": "nexus-r710-blind27-run",
+          "sha": "9173c4189ae14cc32cc47dc1644f5775e3ff114d",
+          "protected": false
+        },
+        {
+          "name": "nexus-r712-blind28-run",
+          "sha": "43b03a569608117183664ffee6a40aab387a819a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r717-blind30-confirmatory",
+          "sha": "f06ca3b44de6442541daad4622cd56d27aedee23",
+          "protected": false
+        },
+        {
+          "name": "nexus-r718-blind31-confirmatory",
+          "sha": "c5b5313268ed7d95fdecf5730a7d9c71e2ff62b9",
+          "protected": false
+        },
+        {
+          "name": "nexus-r5271-slot-safe-realizer-v2",
+          "sha": "930e200db049c320f45eb779c70c6eeeab8bf3be",
+          "protected": false
+        },
+        {
+          "name": "qwen3-14b-r21-relay",
+          "sha": "f46b9aaad6dcfa70ded3e01cb9209518013b10cc",
+          "protected": false
+        },
+        {
+          "name": "qwen05b-artifact-relay",
+          "sha": "96f1c1f86943de95f9f5f0e1c5db3083ff891e71",
+          "protected": false
+        },
+        {
+          "name": "release/pypi-0.4.0",
+          "sha": "875fa4ac00f048ce15bcc475223ce56bbfd7aa29",
+          "protected": false
+        },
+        {
+          "name": "runtime-build-r1",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "runtime-build-r2",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "runtime-build-r3",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "runtime-build-r4",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "runtime-d9a7",
+          "sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/sinergy_super_app",
+      "default_branch": "main",
+      "branch_count": 7,
+      "unique_head_count": 7,
+      "branches": [
+        {
+          "name": "build/sinergy-finance-v3-wallet",
+          "sha": "0c50c082a77d3a2765c96ec30fabce0ab04843e4",
+          "protected": false
+        },
+        {
+          "name": "build/sinergy-v65-real",
+          "sha": "402efdd7acc8f8210d115eeb73af2404b5edd63d",
+          "protected": false
+        },
+        {
+          "name": "docs/editorial-batch03",
+          "sha": "873755ebcb122ed073cf19d78f82bab2607096e3",
+          "protected": false
+        },
+        {
+          "name": "feature/sinergy-finance-v1",
+          "sha": "dd5abc8a2608bd4b20ee964cd0dc84a76505c08d",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "63d65b7d00016fe1b6dd8159b3adc5647a6aee86",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "3494f2cdebd0b9510ac65a470b32a085e4920537",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "2a5e042853a63c180cfea4fa6234623ce0dbafcf",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "default_branch": "main",
+      "branch_count": 178,
+      "unique_head_count": 167,
+      "branches": [
+        {
+          "name": "archive/w5-v09-immutable-6ae145a",
+          "sha": "6ae145ae61a19ed5dfb5a7dae5abf8d79d79eff9",
+          "protected": false
+        },
+        {
+          "name": "audit/active-habitat-master-v1",
+          "sha": "43f8d00ea237e2123ec07d88c1aa2d3d91f683e2",
+          "protected": false
+        },
+        {
+          "name": "audit/active-habitat-master-v2-preregistered",
+          "sha": "9ae7c06d4660061a62bfde4fd5136010dcff9fd5",
+          "protected": false
+        },
+        {
+          "name": "audit/active-habitat-master-v2",
+          "sha": "4f3c9ccc67c14e892744b30a9f2736f2fc4576aa",
+          "protected": false
+        },
+        {
+          "name": "audit/bell-chsh-gate",
+          "sha": "de0b56710f3892f566ece0e6ea31030a50c2dfaf",
+          "protected": false
+        },
+        {
+          "name": "audit/bqg-evidence-map-2026-11-07",
+          "sha": "56830f687ae8b45353025e71b2b128ae9f153a2b",
+          "protected": false
+        },
+        {
+          "name": "audit/bqg-independent-proof-20261108",
+          "sha": "fddd49427c636e92dfe79b96034862aeba629927",
+          "protected": false
+        },
+        {
+          "name": "audit/current-status-2026-10-10",
+          "sha": "ac1a07a27c2acc9231d2d42ffcbbed9799afb426",
+          "protected": false
+        },
+        {
+          "name": "audit/depth6-stageb-ledger-reconcile-20261110",
+          "sha": "56fa40e4efae47fd600487200f11cf0b0bb80555",
+          "protected": false
+        },
+        {
+          "name": "audit/habr-emergent-graph-independent-control-20261111",
+          "sha": "553c2936a2c53352dfd12e4645255124422584a5",
+          "protected": false
+        },
+        {
+          "name": "audit/k5-s5-carrier-symmetry",
+          "sha": "5a4685d2f73453790f554cf3f5cd75275c6458bb",
+          "protected": false
+        },
+        {
+          "name": "audit/k5-s5-hamiltonian-covariance-v1",
+          "sha": "f683df8f9d80c6654dab8e99c3c8946c586c7401",
+          "protected": false
+        },
+        {
+          "name": "audit/l1-amplitude-package-20261110",
+          "sha": "c20b5b6e8c616c79d5c66fa846730b9276bde41e",
+          "protected": false
+        },
+        {
+          "name": "audit/loc-2026-09-15",
+          "sha": "4fc5634ebed3b5e29318bef90f23e5006a50bb31",
+          "protected": false
+        },
+        {
+          "name": "audit/peter-weyl-sixth-cutoff-20261110",
+          "sha": "8f710d7c641565f2fbf5c0497190872cff3d1757",
+          "protected": false
+        },
+        {
+          "name": "audit/physicalization-truth-v3",
+          "sha": "e5ae681bbaed3bdb53d82a7f9d6b51cf3707da9b",
+          "protected": false
+        },
+        {
+          "name": "audit/pl48-spectral-complete-20261110",
+          "sha": "9a2880518b091b578f4e1004fd036e2b4eb6db34",
+          "protected": false
+        },
+        {
+          "name": "audit/pl48-volume-failclosed-20261110",
+          "sha": "b26ae55f64e3f9646c91735f005a35b30b4bb34b",
+          "protected": false
+        },
+        {
+          "name": "audit/q4-k5-local-carrier-bridge",
+          "sha": "d9683ce796b3e05dc9c1c83d16790db7ec6f946c",
+          "protected": false
+        },
+        {
+          "name": "audit/q4-s4-background-obstruction",
+          "sha": "14d9088c5674d320801979f24af72e45375c5851",
+          "protected": false
+        },
+        {
+          "name": "audit/rg-refinement-strict-20261110",
+          "sha": "f03fb73391d0ac06aa5652db4bc31684dce121a8",
+          "protected": false
+        },
+        {
+          "name": "audit/spectral-history-closure-2026-09-06",
+          "sha": "c19de5df420e84ae7125b67cea4bef5a9dc37536",
+          "protected": false
+        },
+        {
+          "name": "audit/v26-strict-leakage-20261110",
+          "sha": "0bdb95e149b2acca9d583e9cdefe63da8ce942f8",
+          "protected": false
+        },
+        {
+          "name": "bqg/depth6-32-canonical-recovery",
+          "sha": "36b652fa493a1ea623ff8f9b3e80671a3b7c5428",
+          "protected": false
+        },
+        {
+          "name": "bqg/depth6-32-resumable-keymeta",
+          "sha": "1ddda1e7a42af6792a2e7270a8e4da3b615ab0b3",
+          "protected": false
+        },
+        {
+          "name": "ci-sinergy-messenger-v02-native-build",
+          "sha": "4a6bdf75b1403333b27600d4af9bc510b7bbadd0",
+          "protected": false
+        },
+        {
+          "name": "ci-sinergy-messenger-v030",
+          "sha": "6c4fd254530fea3b70d2c7fec15711ccb1caedc3",
+          "protected": false
+        },
+        {
+          "name": "ci-sinergy-messenger-v033-diagnostic",
+          "sha": "931faff5906ea13ce2b2ada9b269f2c10ca18a94",
+          "protected": false
+        },
+        {
+          "name": "ci-sinergy-messenger-v033-functional-final",
+          "sha": "412517dc6a6fecf2b58ba6203972df2c62d5f007",
+          "protected": false
+        },
+        {
+          "name": "cleanup/gr-qm-bit-continuum",
+          "sha": "91f4dbf7cd61d851426198db4d38afc743db4c98",
+          "protected": false
+        },
+        {
+          "name": "codex",
+          "sha": "486036ab8fdaa0901c5461ec8bda8418df34ab09",
+          "protected": false
+        },
+        {
+          "name": "codex-3g4lb0",
+          "sha": "344659a4976b77c9cd85d84e8fa1f10f03769cfc",
+          "protected": false
+        },
+        {
+          "name": "codex-4bua2u",
+          "sha": "11012b7abe75ba881125a793885327f03a1e9b59",
+          "protected": false
+        },
+        {
+          "name": "codex-4ni6ut",
+          "sha": "ba7e6cedc3bd7b356e3f353227fef5795c336027",
+          "protected": false
+        },
+        {
+          "name": "codex-5uocfq",
+          "sha": "de7d0be18ebc49349738b8191e8976b05809edc3",
+          "protected": false
+        },
+        {
+          "name": "codex-89btph",
+          "sha": "fd4f13017d698b5ac92517c6c08b9f5726cfe34e",
+          "protected": false
+        },
+        {
+          "name": "codex-bwhfkc",
+          "sha": "2b861a419623dd46c91b06b4a58eb104c4fd5366",
+          "protected": false
+        },
+        {
+          "name": "codex-e0ee6e",
+          "sha": "6c0badce8a9d407d9f3244351866913ec5486dfc",
+          "protected": false
+        },
+        {
+          "name": "codex-hobdxi",
+          "sha": "be5d5fba10868e4e1b613813494e19943354059c",
+          "protected": false
+        },
+        {
+          "name": "codex-kpnzg2",
+          "sha": "770d156d5985a1c5d355ae62708fb231c24318a0",
+          "protected": false
+        },
+        {
+          "name": "codex-lppw5h",
+          "sha": "b46883f229c5870135720a485c161bf30ae87e9c",
+          "protected": false
+        },
+        {
+          "name": "codex-qgjhgi",
+          "sha": "a0b2b9b7b9a961a92abeea9e90868ef13737fa30",
+          "protected": false
+        },
+        {
+          "name": "codex-ro2602",
+          "sha": "f6155c3abe030a2564e0402306baad1f5b9f253a",
+          "protected": false
+        },
+        {
+          "name": "codex-sjothi",
+          "sha": "a29288ede4363534124c9ef1630b5b06648c912d",
+          "protected": false
+        },
+        {
+          "name": "codex-va54l6",
+          "sha": "616d4e7f240b8cc184041ac7497852f03ae4c683",
+          "protected": false
+        },
+        {
+          "name": "codex-vbnn2h",
+          "sha": "2bece049421c96e5e4e1aefef6a45b57ea5a190d",
+          "protected": false
+        },
+        {
+          "name": "codex-yn178z",
+          "sha": "1c0138c6309531c31984beab5e3565fdb2ef60fe",
+          "protected": false
+        },
+        {
+          "name": "docs/bqg-comprehensive-readme-20261109",
+          "sha": "49629275314883213b71cc3a799defe7a03ace7d",
+          "protected": false
+        },
+        {
+          "name": "docs/bqg-holography-from-bit-20261109",
+          "sha": "9cf8369b453c2642a47efd6b0c18d87c324cf7d6",
+          "protected": false
+        },
+        {
+          "name": "docs/bqg-scientific-fairytale-20261109",
+          "sha": "f4d27c390b2f6a436b8c1108ef837414a340cb31",
+          "protected": false
+        },
+        {
+          "name": "exp/iq1s70b-vs-qwen3-14b-20260923",
+          "sha": "326b53733b688c079ae983f7f4936102f82b112b",
+          "protected": false
+        },
+        {
+          "name": "exp/nexus-70b-runtime",
+          "sha": "326b53733b688c079ae983f7f4936102f82b112b",
+          "protected": false
+        },
+        {
+          "name": "exp/nexus-dwe-real-12b",
+          "sha": "32e28947dc586c44652bec0d68f98605a62a6a52",
+          "protected": false
+        },
+        {
+          "name": "exp/plain-llama-portable",
+          "sha": "120f596f652fb5a70e28a10605f0884af59134f2",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen15-local-courier",
+          "sha": "42c71612967fdaf3409ac5ddfd390ec7b0189589",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen15b-q8-courier",
+          "sha": "ecd0b20ca7affc5e424e7f113a5b273ba73c6c3a",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen-activation-calibration",
+          "sha": "213c7a6e6443625f57cb8c727500aaaeddbdd4a5",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen-chunks",
+          "sha": "952b6524633773d6c4dfd674036c044f3d0f2d8b",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen-f16-courier",
+          "sha": "ae1025b29150293d0b98ce9d970346883bfede52",
+          "protected": false
+        },
+        {
+          "name": "exp/qwen-local-courier",
+          "sha": "b59f4bb4031338f9f6d7d5c97c5123deb77da984",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "101be6105e1bee9c3e6d662b451d72af2350e827",
+          "protected": false
+        },
+        {
+          "name": "final-squash-base",
+          "sha": "c40b091513cd3c73b14bbcaaa80bc12d861da7f3",
+          "protected": false
+        },
+        {
+          "name": "fix/v21-c1-fail-closed-20261108",
+          "sha": "00a26b849aab60e39844879af06001a82fd6383c",
+          "protected": false
+        },
+        {
+          "name": "hodge-spectral-dimension-notation-fix",
+          "sha": "7f01e41120f001b51a933d4d6aae27010e908e05",
+          "protected": false
+        },
+        {
+          "name": "integration/bqg-proof-index-mirror-spectral-20261119",
+          "sha": "131d9d180c90f9e578d0a8c713e5e74f62b1c7d4",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "401b006d368caf4bfd7578c0d312795cf2f2323a",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "63ee28fb16dc303344928b5a75fcae2a068055be",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-phi-fix-run",
+          "sha": "cfe01691b8541b3963fe220cea254fef5cae4a32",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-public-run-20260818",
+          "sha": "9e660e61d55d316d09508f900adce0807936b34c",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-qwen-instruct-run",
+          "sha": "39585d2b152790579e6e8b9a608939c9e3acc8dc",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-structured-five-run",
+          "sha": "52ec9e5161024119f276f79c96162012f796ba8d",
+          "protected": false
+        },
+        {
+          "name": "physical-tt-kernel-leading-ir",
+          "sha": "e3118e1a710b83d23622af57d9c41ed66d7da2c4",
+          "protected": false
+        },
+        {
+          "name": "recovery/bqg-physical-spectral-history-2026-09-06",
+          "sha": "4cb8ae20b72768d556973361820edb1e3137ae05",
+          "protected": false
+        },
+        {
+          "name": "release/canonical-theory-package-v1",
+          "sha": "934ead3ebdcdc93b4adbc11bca08ca46f6325570",
+          "protected": false
+        },
+        {
+          "name": "research/bcqg-core-candidate-v1",
+          "sha": "2b2c9f623544f5d38f7ffd7f37617f91f4dae306",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-algebra",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-algebra2",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-final",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-final2",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-v2",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-v3",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-v4",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-v5",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-2t-gate-work",
+          "sha": "b03bf253a43a92e0adda6c18ee3def5fe534b7da",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-bell-volume-20261012",
+          "sha": "80d519240f9f4e68df77a7a28742e1a943b37f15",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-causal-cone-audit-hardening-20261113",
+          "sha": "56b37d63a8b6790b6fb2594627df825639694b89",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-hda-minimal-no-go-20261012",
+          "sha": "ae74e72035fd97c01b1f3399365bfd865ce95617",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-intrinsic-clock-lorentzian-bridge-20261116",
+          "sha": "785363b612719972f90569dc27413dd4a165226e",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-micro-carry-rank-20261031",
+          "sha": "fa8c487226465cd9beb2cf8997e8226f2142f3f6",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-node1-lorentzian-columns-20261031",
+          "sha": "a4d41b343e7ce04895abb655e16a500da290ee23",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-q2-correspondence-audit-hardening-20261119",
+          "sha": "e7ac35b4c3ece5e4db0abc05df2502aefbf08f44",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-qfi-q2-emergent-graph-audit-20261118",
+          "sha": "43506dbae891cb9037f1987befc3e31c90c4a311",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v04-actual-constraint-kernel-20261106",
+          "sha": "ec8d9bdc3594f6304787f592ed6c4adedc878f40",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v16-first-leg-20261107",
+          "sha": "e0431080b283e3a920d9715a63e7318021bd4eb8",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v20-local-c1-gates-20261107",
+          "sha": "8d8d3ae533a9a47704263463c76c3a2288635173",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v21-c1-checkpoint-repair-20261107",
+          "sha": "2c28123720db59306890daa0dfba1ad21c2e7eb1",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v22-local-c1-e2e-20261107",
+          "sha": "f65b8ea83eba8d4cd136bdebc8fe1d65de582776",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v23-exact-finite-certificates-20261108",
+          "sha": "d712a74e8e09408815e0f78483e9c249e139d317",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v24-finite-index-constraint-gates-20261108",
+          "sha": "524240db085485ac31678e82778f585ffd38d199",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v25-local-HDA-charge-20261108",
+          "sha": "b58872dcb23404fd509421e14b975a98d2214a3e",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-v26-multiprecision-charge-20261109",
+          "sha": "e07fa944301e1bf393de6f8b19e351a7b15627f7",
+          "protected": false
+        },
+        {
+          "name": "research/bqg-w5-production-audit-20261113",
+          "sha": "eead201073c0ead4cde9fdf93d7cd844036b5f99",
+          "protected": false
+        },
+        {
+          "name": "research/canonical-frontier-v2",
+          "sha": "73287ef611096c01c1673ac894ff44ffb1a38066",
+          "protected": false
+        },
+        {
+          "name": "research/canonical-ledger-2026-08-15",
+          "sha": "1f754a7060653746e13da05cc8c76261665379f9",
+          "protected": false
+        },
+        {
+          "name": "research/canonical-lorentzian-frontier",
+          "sha": "4c51657a7cdc2a758b67a44f0b5c641a10350d50",
+          "protected": false
+        },
+        {
+          "name": "research/canonical-prefactor-audit",
+          "sha": "e68a226bfa4638d82e169e4b2a7dbb4645dda349",
+          "protected": false
+        },
+        {
+          "name": "research/consolidated-bqg-audit-20261111",
+          "sha": "a57076e9a35af0405d29d609e75141e83ff7171f",
+          "protected": false
+        },
+        {
+          "name": "research/depth6-s4sign-proof",
+          "sha": "f6bfcd775b8c3cd33c6c235d48293e40657baf9d",
+          "protected": false
+        },
+        {
+          "name": "research/first-q2-scalar-effective-action",
+          "sha": "6c63f0d8734d7bc67d1ca6e462e1ba05956b8db5",
+          "protected": false
+        },
+        {
+          "name": "research/hl-sine-dag",
+          "sha": "299e3d896a7845688ca6f3e7cb6c4b379c6a73f1",
+          "protected": false
+        },
+        {
+          "name": "research/k5-covariance-hda",
+          "sha": "af16606ecb1358a246574ba3a1406e15f9b5c8fa",
+          "protected": false
+        },
+        {
+          "name": "research/l1-amplitude-package-20261110",
+          "sha": "ec6980fb53677780d6a68a41f5d97b248b4e4d0d",
+          "protected": false
+        },
+        {
+          "name": "research/lemaitre-bqg-causal-cone-20261110",
+          "sha": "b69b105756dd7d9be093b9bf217ce048bd4a2554",
+          "protected": false
+        },
+        {
+          "name": "research/logical-s4-sign-twirl",
+          "sha": "e40011f66d9779eda82bca2584229128ab3a76f2",
+          "protected": false
+        },
+        {
+          "name": "research/lorentzian-composition-fast",
+          "sha": "7abcaba66567fd09ec533c0c2a170b7d560e2b9a",
+          "protected": false
+        },
+        {
+          "name": "research/lorentzian-ordered-triple-fast",
+          "sha": "5cdf421c8f662db620b762328bec6d9228c7d7b4",
+          "protected": false
+        },
+        {
+          "name": "research/micro-hda-joint-prediction",
+          "sha": "c5aade6763fdd1bd41717f93037231fcba2de99c",
+          "protected": false
+        },
+        {
+          "name": "research/mirror-anisotropy-audit-v2",
+          "sha": "11a0775ce11fddc5cf28680bb24d1f4cc609774d",
+          "protected": false
+        },
+        {
+          "name": "research/mirror-orientation-eta",
+          "sha": "7710fc5f2b2b93eebfc2ff72552ff853398a88f4",
+          "protected": false
+        },
+        {
+          "name": "research/modular-complex-arithmetic-bridge",
+          "sha": "6dad7a4fb05ed8b80540fa610c884d05e1af5563",
+          "protected": false
+        },
+        {
+          "name": "research/operator-micro-dynamics",
+          "sha": "ad37059d0f478ff9bfda57a157d538399f39318a",
+          "protected": false
+        },
+        {
+          "name": "research/physical-cosmology-interference-lensing",
+          "sha": "185bee58de27b053497e2a28eaf45c66b1470540",
+          "protected": false
+        },
+        {
+          "name": "research/physical-history-causality-20261112",
+          "sha": "27e4d62c85813548f1ca7f2bd91b22a75b6b3b30",
+          "protected": false
+        },
+        {
+          "name": "research/physical-pole-universality",
+          "sha": "b46dbad39e4c9b3de08a45742604d0a9cb973fec",
+          "protected": false
+        },
+        {
+          "name": "research/physical-scalar-kernel-dynamics",
+          "sha": "ab24171a4bb327d190551bdf68957bd10a819c1d",
+          "protected": false
+        },
+        {
+          "name": "research/physicalization-l1-depth2-metric",
+          "sha": "f06b18f3a9af995d0e7987b323359631945a9394",
+          "protected": false
+        },
+        {
+          "name": "research/physicalization-scale-observable-prediction",
+          "sha": "c2a3ee8e30ab449ef23b0cd60fac3db1a0285631",
+          "protected": false
+        },
+        {
+          "name": "research/post-hda-physicalization-v2",
+          "sha": "6d3f23860fc134ec0f10259fa17adb2c32588739",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-24-collector",
+          "sha": "f7f28882d02339b9ed3703c02634ad526c2d1f1b",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-24-mitm",
+          "sha": "4d72abf7fd0f88c3d9113138eca0b06d264ef2c3",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-component-fast",
+          "sha": "4d7676a0e153145d34e35b215356528eb8629f04",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-component-mitm",
+          "sha": "fe117390f4b3b567241084ed945fcb7d3166751e",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-envtrace",
+          "sha": "7a44506a3b17a341381a720ac27eae78b81e27b0",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-envtrace-orbit",
+          "sha": "ed0949bee6f7e21658f3ef054b9f23d6f167c611",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-logical-projection",
+          "sha": "651dd9003cb15b8fd57d4b7c31f7c3a70d9bb49b",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-lowcut-scout",
+          "sha": "0559c1122070a8eb72885fa8214bf2ba7f1be320",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-mitm",
+          "sha": "2d05ca59f920d78d926a7f78020a69f6c1326e81",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-parity",
+          "sha": "cf968d788c2b7aac93d468516cd81695a2feff1b",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-single-mitm",
+          "sha": "71e807cfedcd38085ebd1801293428ba5701f098",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-single-probe",
+          "sha": "8d4d697d613a05334f2f346dedd68771e0460318",
+          "protected": false
+        },
+        {
+          "name": "research/pw-lorentzian-ultralow-scout",
+          "sha": "e0322ee01558510b0aaf922936a93520488b5360",
+          "protected": false
+        },
+        {
+          "name": "research/pw-master-32",
+          "sha": "87aee1e6005fa33d1aa2a1361207218088ed0d1c",
+          "protected": false
+        },
+        {
+          "name": "research/pw-spin-parity-master",
+          "sha": "3462cb5ee7c802b45d83577ef875877bc5964231",
+          "protected": false
+        },
+        {
+          "name": "research/q2-face-incidence-bridge",
+          "sha": "6a32a784dfbdc47ffa20248232713a92fd9b90ee",
+          "protected": false
+        },
+        {
+          "name": "research/q2-gravity-gyc-amplitude",
+          "sha": "ae748aa16c3569d0fe16351150ee33de6bb63ab4",
+          "protected": false
+        },
+        {
+          "name": "research/q2-gravity-gyc-sign-twirl",
+          "sha": "494fd514d2d46ee89b487e9b3d506579a9539831",
+          "protected": false
+        },
+        {
+          "name": "research/q2-history-directed-laplacian-factorization",
+          "sha": "69d30ce243b79e89151a48888d02342f8897f0b9",
+          "protected": false
+        },
+        {
+          "name": "research/q2-history-fourier-complex-structure",
+          "sha": "1a580b434391da0c884d640930ed1b67971c4613",
+          "protected": false
+        },
+        {
+          "name": "research/q2-history-gravity-orientation-current",
+          "sha": "5ba4bc24230c3d0a1e47bf309453a692601ee49d",
+          "protected": false
+        },
+        {
+          "name": "research/q2-history-phase-refinement-winding",
+          "sha": "d52496c73c76b8fec0e7b4021ef9a852503bc690",
+          "protected": false
+        },
+        {
+          "name": "research/q2-orientation-intrinsic-metric-nogo",
+          "sha": "115d308433254b3b32440e3497df259533930b9d",
+          "protected": false
+        },
+        {
+          "name": "research/q2-oriented-flux-history-observable",
+          "sha": "ce33520f0c1bdd9985661bb9be086a463de87e9f",
+          "protected": false
+        },
+        {
+          "name": "research/q2-relational-history-projector",
+          "sha": "fbdf2ef66d3f28be9ee9c03c0cd479af4459e5c3",
+          "protected": false
+        },
+        {
+          "name": "research/q2-relational-metric-source",
+          "sha": "4c5053a002d4acd380a5911413cc4a76697fa87c",
+          "protected": false
+        },
+        {
+          "name": "research/q2-unified-complex-structure",
+          "sha": "83f45dfc19cdef884e5290f111bf46dc0e10d1e7",
+          "protected": false
+        },
+        {
+          "name": "research/scalar-adm-physical-response",
+          "sha": "4833af3f878a18c2179cdb560fa9b22d9ad941c8",
+          "protected": false
+        },
+        {
+          "name": "research/sine-kkv-next",
+          "sha": "9066d572b456f139939d180b7e3cbc2a5a64b514",
+          "protected": false
+        },
+        {
+          "name": "research/v12-gauge-dressed-nucleation-20261015",
+          "sha": "d1a4648187d063c464d8fd51558b45afbfff39dc",
+          "protected": false
+        },
+        {
+          "name": "research/v13-k5-leakage-safe-master-20261015",
+          "sha": "2cd4813005356302d8d66f8767b264b908b99d4e",
+          "protected": false
+        },
+        {
+          "name": "research/v14-k5-first-real-columns-20261015",
+          "sha": "ce43cabf260d3bb937f4de0bf03d685247c83d41",
+          "protected": false
+        },
+        {
+          "name": "research/v15-k5-32input-rank-audit-20261015",
+          "sha": "bc172ff2b4b823d2f33af61ab11be6da37221267",
+          "protected": false
+        },
+        {
+          "name": "research/v16-full-initial-k5-and-first-shell-20261015",
+          "sha": "95fa4040df6ac71566f111adf89eebb3ab5b74e5",
+          "protected": false
+        },
+        {
+          "name": "research/v17-k5-parity-shell-selection-20261015",
+          "sha": "330236f88c9e5734d67b123330190088c4dfecdd",
+          "protected": false
+        },
+        {
+          "name": "research/v18-k5-parity-feshbach-20261015",
+          "sha": "2c59b1e03fd7404685db29547fd6b9da3ede575a",
+          "protected": false
+        },
+        {
+          "name": "research/v19-canonical-k5-replay-20261015",
+          "sha": "1a715e22d10bb27b2d7c7b6529ac53c59092a851",
+          "protected": false
+        },
+        {
+          "name": "research/v20-160-canonical-k5-20261015",
+          "sha": "1a715e22d10bb27b2d7c7b6529ac53c59092a851",
+          "protected": false
+        },
+        {
+          "name": "research/v20-complete-160-canonical-20261015",
+          "sha": "f3ce62cfd9199201dd3ff1025846600cfb75c72d",
+          "protected": false
+        },
+        {
+          "name": "research/v21-first-shell-checkpoints-20261015",
+          "sha": "085e7b8aa152191a2323803fceecb8565a353880",
+          "protected": false
+        },
+        {
+          "name": "research/v22-k5-kernel-ritz-cutoff-20261016",
+          "sha": "35056f1b7eebc89840606529164dfd083e1e5f1e",
+          "protected": false
+        },
+        {
+          "name": "research/v23-unified-proof-bridge-20261016",
+          "sha": "c0df55a10937d6545616a44593a6e060cb21d513",
+          "protected": false
+        },
+        {
+          "name": "research/v24-crossscale-multiplicity-obstruction-20261016",
+          "sha": "e3eb71e898f4b638d32cdc19b2c3e5ba2f97db52",
+          "protected": false
+        },
+        {
+          "name": "research/v25-ancilla-crossscale-k5-20261016",
+          "sha": "45d7ba89facf7c0ad17ddb2359c26bb00f6e6eb5",
+          "protected": false
+        },
+        {
+          "name": "research/v26-graph-sector-output-obstruction-20261016",
+          "sha": "456aa7c477c022b87ba1a09d1d0397c67506645c",
+          "protected": false
+        },
+        {
+          "name": "research/w5-v09-v10-repro-20261119",
+          "sha": "96ec89b83950de3a507eb269c4621d6bcbca09cf",
+          "protected": false
+        },
+        {
+          "name": "research/zeroaware-volume-migration",
+          "sha": "042baa6e87b2a0340511cf083c974042c89b848b",
+          "protected": false
+        },
+        {
+          "name": "spectral-history-closure",
+          "sha": "306eaccf4f6416438271eb69eeb72ff2ea6959ae",
+          "protected": false
+        },
+        {
+          "name": "work/q2-two-sided-singlet-qfi-20261118",
+          "sha": "eebef83bfd9b3aa15c473f5ca8c18f6443547c03",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_financial_system",
+      "default_branch": "main",
+      "branch_count": 31,
+      "unique_head_count": 30,
+      "branches": [
+        {
+          "name": "audit/oracle-tvl-fork-v3-20260806",
+          "sha": "f9844858d8c566afb1cdca25b4d50f8ae41c5055",
+          "protected": false
+        },
+        {
+          "name": "audit/stateful-supercycle-v8",
+          "sha": "fa04f72fba802137844ea0d60286c89c140f7c45",
+          "protected": false
+        },
+        {
+          "name": "audit/synergy-qe-polygon-fork",
+          "sha": "dada5e2e339b91aeb1b77ad78d51318e4f747855",
+          "protected": false
+        },
+        {
+          "name": "audit/synergy-v6-self-sustain",
+          "sha": "b48f5c339d54791c6852a26e6a4e49a9a994b2f2",
+          "protected": false
+        },
+        {
+          "name": "ci/syna-v5-fork-20260805",
+          "sha": "b0d759bb0dbdf5700decae353a5ae65b7ea24eb7",
+          "protected": false
+        },
+        {
+          "name": "codex",
+          "sha": "618d733542b7c8255d274948962b581b4832d90b",
+          "protected": false
+        },
+        {
+          "name": "codex-j82xi2",
+          "sha": "011a8bd171b19cb7ad3d95a21842ec6f10121615",
+          "protected": false
+        },
+        {
+          "name": "codex-lb8rq4",
+          "sha": "424d787545f6dfd08e6594f8a5dacaa1fdbec817",
+          "protected": false
+        },
+        {
+          "name": "codex-mhdgcj",
+          "sha": "6dca6a63309f07aa357918668242cc34da07ca30",
+          "protected": false
+        },
+        {
+          "name": "codex-r93tuz",
+          "sha": "f00c44baf3e1e90d6e670f9851ad3f1700640337",
+          "protected": false
+        },
+        {
+          "name": "codex-rbxgi8",
+          "sha": "a3a814f7a0f60a3a7d779bbab24772983f3f3762",
+          "protected": false
+        },
+        {
+          "name": "docs/sinergy-federation-boundary-20260817",
+          "sha": "0b420280f5837c62cb77d0c206af3cbee949d9fb",
+          "protected": false
+        },
+        {
+          "name": "feat/bullish-cb-microcycle-fork-mainnet",
+          "sha": "5b9795df2c10691d970bd0ffb5a8f2c85b4259da",
+          "protected": false
+        },
+        {
+          "name": "feat/bullish-cb-v2-refill-safe-deploy",
+          "sha": "378ad0b24c6a99be021f6ee4422c782b7afd920f",
+          "protected": false
+        },
+        {
+          "name": "feat/financial-os-v4-20260809",
+          "sha": "3f05295ada1cb894c31100afa40c2c387a4cbbcd",
+          "protected": false
+        },
+        {
+          "name": "feat/market-experiment-handoff-v1-20260818",
+          "sha": "85262e4818012b8f47a49dc0d01b8fb142f64684",
+          "protected": false
+        },
+        {
+          "name": "feat/metapay-external-profit-evidence-v1-20260905",
+          "sha": "549e6796ca44a50438d8590d3821e77a9e85b31c",
+          "protected": false
+        },
+        {
+          "name": "feat/real-asset-emission-escrow-v1",
+          "sha": "c8d3cba5ff87c8051654c6189e8a1025ce575e78",
+          "protected": false
+        },
+        {
+          "name": "feat/synergy-rl-secure-runtime",
+          "sha": "35762fc7bdaea0067afe17eaa486c43970f81dda",
+          "protected": false
+        },
+        {
+          "name": "feat/v16-gradient-opportunity-market",
+          "sha": "fa04f72fba802137844ea0d60286c89c140f7c45",
+          "protected": false
+        },
+        {
+          "name": "feature/qe-mev-revenue-v2",
+          "sha": "24111430a81fb719f40570ab66f26a0f2b764ec2",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "47b4b8779472797566af7a84b59837ef33efbe22",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "sha": "ceadcac6bd5bb00f2caed64badec40a3c0564fea",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "c7e9ea9dde51500f88ed701423164309e4ae6242",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "f3ec3f541528d63732f39d442b3f02af5ea1b81c",
+          "protected": false
+        },
+        {
+          "name": "synthl1-recursive-qe-mev-v5",
+          "sha": "385eaa2e6c811f1f29c504984484d9223b42b1b7",
+          "protected": false
+        },
+        {
+          "name": "test/bybit-demo-credit-pyramid-20260804",
+          "sha": "a1cf883ce088245d38a3b07ddbd6499092780eab",
+          "protected": false
+        },
+        {
+          "name": "test/v11-atomic-qe-qt-polygon-fork",
+          "sha": "79a0dbce6c29e25c0b60b39dbd5f462556bc36b9",
+          "protected": false
+        },
+        {
+          "name": "v15-math-over-v13-1",
+          "sha": "0d45b7e20022e33fd5b5ee96452ab5ff2029a680",
+          "protected": false
+        },
+        {
+          "name": "work/dividend-self-support-v6",
+          "sha": "dbd82c65f31f04c3769bf45a05e7392da1acd9a7",
+          "protected": false
+        },
+        {
+          "name": "work/synergy-v5-compounding",
+          "sha": "2aaac9b4719fe3781ae1d76fa58fe44b12a0c14c",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "default_branch": "main",
+      "branch_count": 1,
+      "unique_head_count": 1,
+      "branches": [
+        {
+          "name": "main",
+          "sha": "5fb87036fe833a6e7939654469766c86f92533ee",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synegy_ai_compress",
+      "default_branch": "main",
+      "branch_count": 19,
+      "unique_head_count": 18,
+      "branches": [
+        {
+          "name": "docs/sinergy-memory-archive-boundary-20260817",
+          "sha": "ac8bc32ef65dc5e9f9a4715bc7af84ee1f315b47",
+          "protected": false
+        },
+        {
+          "name": "feat/archive-manifest-v1-20260818",
+          "sha": "bdfc0382e07bf44b547a79090e58ba3cb4a8e464",
+          "protected": false
+        },
+        {
+          "name": "feat/blockchain-storage-codec-market-v1",
+          "sha": "2ea86788a29429f21de25eb381c83b9f86ebaa45",
+          "protected": false
+        },
+        {
+          "name": "feat/omnia-rex-v1",
+          "sha": "20279459ca65844261b470e1bb2456c29810c359",
+          "protected": false
+        },
+        {
+          "name": "feat/omnia-rex-v2",
+          "sha": "5f3dfe494d1ab137e1cd781a803777290240fcbd",
+          "protected": false
+        },
+        {
+          "name": "feat/omnia-rex-v3",
+          "sha": "410c6b43910b424c8b9431649e19d62c2725c8ea",
+          "protected": false
+        },
+        {
+          "name": "feat/omnia-rex-v4",
+          "sha": "410c6b43910b424c8b9431649e19d62c2725c8ea",
+          "protected": false
+        },
+        {
+          "name": "feat/sgh1-bounded-decompression-20261119",
+          "sha": "97978abfeee630374c1f6e2326ae2296a72897f7",
+          "protected": false
+        },
+        {
+          "name": "feature/gabriel-corpus-benchmark",
+          "sha": "1d40a2454b617d94d3953087393ea305e5c2a975",
+          "protected": false
+        },
+        {
+          "name": "feature/gabriel-horn-codec",
+          "sha": "85afcf09bcbab0147ae6815d616569886abdcc29",
+          "protected": false
+        },
+        {
+          "name": "feature/math-portfolio-v3",
+          "sha": "ff4db0f97bacf32ccffce80bb9f81ba90072c741",
+          "protected": false
+        },
+        {
+          "name": "feature/unified-tier1-v2-benchmark",
+          "sha": "08367d512b84e80d89fabd274ccf2ffeace45869",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "sha": "b57b1607b5da01cae0f20209036ff9ccebc919ff",
+          "protected": false
+        },
+        {
+          "name": "fix/variable-archive-benchmark",
+          "sha": "a19f6603e50f6c0d6f9877df15ccc4f043065d10",
+          "protected": false
+        },
+        {
+          "name": "fusion-v4-experiment",
+          "sha": "ff87d6ad256c51e892098427a47e9d1ea468bf5e",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "sha": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "sha": "86cd0c8332ce061057827d73b59d29efe772ca6a",
+          "protected": false
+        },
+        {
+          "name": "research/full-compression-benchmark-ip-20261020",
+          "sha": "e385ba783f0c1874415fe92d86220a1ba116c128",
+          "protected": false
+        },
+        {
+          "name": "results/gabriel-umc-exact-20260730",
+          "sha": "ade057d09a3b32ae28b868807efac756017eff19",
+          "protected": false
+        }
+      ]
     }
   ]
 }
