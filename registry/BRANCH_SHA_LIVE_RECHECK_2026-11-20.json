@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 32,
-  "pending_repositories": 60,
-  "branch_refs": 390,
+  "completed_repositories": 40,
+  "pending_repositories": 52,
+  "branch_refs": 544,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -2210,6 +2210,840 @@
         {
           "name": "pq-internet-phases-1-3",
           "head_sha": "15e6e973472d9df2d584d632b45bd03d7ce32851",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_coder",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 8,
+      "branches": [
+        {
+          "name": "docs/editorial-batch03",
+          "head_sha": "8d3c42e0561bb0632fc9307889173e62b6540ec2",
+          "protected": false
+        },
+        {
+          "name": "feat/autonomous-engineering-foundation-20261114",
+          "head_sha": "3fb7d85c86c15f8d181cec872866696a2fd7fb9b",
+          "protected": false
+        },
+        {
+          "name": "feat/change-set-review-protocol-20260818",
+          "head_sha": "337941f2b2da327da9c9addf6f616836ccc86168",
+          "protected": false
+        },
+        {
+          "name": "feat/recursive-context-archive-integration-20261118",
+          "head_sha": "ef6b0911337610773d3915ed93431ed98c897e6e",
+          "protected": false
+        },
+        {
+          "name": "feat/sinergy-engineering-orchestration-20260817",
+          "head_sha": "af59705399ee55c048997f831a2dffeb7fb66aeb",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "93653d59882a27cc2253a97da0f089b4c432cc67",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "d14a10936557b85f92fbec50aa4a558d2ac2ab7c",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_company",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "feat/auto-company-v2",
+          "head_sha": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_economic",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "main",
+          "head_sha": "3eda610edba084e908285b9729362dacfdd9d81c",
+          "protected": false
+        },
+        {
+          "name": "research/v8-russia-four-economies-escrow",
+          "head_sha": "6a84410ad2107945069c4f153381854948816b91",
+          "protected": false
+        },
+        {
+          "name": "work/spatial-twin-integration-20261116",
+          "head_sha": "727c04d8e3d523b321a3c5d8e3c8227b2187ffdc",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_financial_system",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 31,
+      "branches": [
+        {
+          "name": "audit/oracle-tvl-fork-v3-20260806",
+          "head_sha": "f9844858d8c566afb1cdca25b4d50f8ae41c5055",
+          "protected": false
+        },
+        {
+          "name": "audit/stateful-supercycle-v8",
+          "head_sha": "fa04f72fba802137844ea0d60286c89c140f7c45",
+          "protected": false
+        },
+        {
+          "name": "audit/synergy-qe-polygon-fork",
+          "head_sha": "dada5e2e339b91aeb1b77ad78d51318e4f747855",
+          "protected": false
+        },
+        {
+          "name": "audit/synergy-v6-self-sustain",
+          "head_sha": "b48f5c339d54791c6852a26e6a4e49a9a994b2f2",
+          "protected": false
+        },
+        {
+          "name": "ci/syna-v5-fork-20260805",
+          "head_sha": "b0d759bb0dbdf5700decae353a5ae65b7ea24eb7",
+          "protected": false
+        },
+        {
+          "name": "codex",
+          "head_sha": "618d733542b7c8255d274948962b581b4832d90b",
+          "protected": false
+        },
+        {
+          "name": "codex-j82xi2",
+          "head_sha": "011a8bd171b19cb7ad3d95a21842ec6f10121615",
+          "protected": false
+        },
+        {
+          "name": "codex-lb8rq4",
+          "head_sha": "424d787545f6dfd08e6594f8a5dacaa1fdbec817",
+          "protected": false
+        },
+        {
+          "name": "codex-mhdgcj",
+          "head_sha": "6dca6a63309f07aa357918668242cc34da07ca30",
+          "protected": false
+        },
+        {
+          "name": "codex-r93tuz",
+          "head_sha": "f00c44baf3e1e90d6e670f9851ad3f1700640337",
+          "protected": false
+        },
+        {
+          "name": "codex-rbxgi8",
+          "head_sha": "a3a814f7a0f60a3a7d779bbab24772983f3f3762",
+          "protected": false
+        },
+        {
+          "name": "docs/sinergy-federation-boundary-20260817",
+          "head_sha": "0b420280f5837c62cb77d0c206af3cbee949d9fb",
+          "protected": false
+        },
+        {
+          "name": "feat/bullish-cb-microcycle-fork-mainnet",
+          "head_sha": "5b9795df2c10691d970bd0ffb5a8f2c85b4259da",
+          "protected": false
+        },
+        {
+          "name": "feat/bullish-cb-v2-refill-safe-deploy",
+          "head_sha": "378ad0b24c6a99be021f6ee4422c782b7afd920f",
+          "protected": false
+        },
+        {
+          "name": "feat/financial-os-v4-20260809",
+          "head_sha": "3f05295ada1cb894c31100afa40c2c387a4cbbcd",
+          "protected": false
+        },
+        {
+          "name": "feat/market-experiment-handoff-v1-20260818",
+          "head_sha": "85262e4818012b8f47a49dc0d01b8fb142f64684",
+          "protected": false
+        },
+        {
+          "name": "feat/metapay-external-profit-evidence-v1-20260905",
+          "head_sha": "549e6796ca44a50438d8590d3821e77a9e85b31c",
+          "protected": false
+        },
+        {
+          "name": "feat/real-asset-emission-escrow-v1",
+          "head_sha": "c8d3cba5ff87c8051654c6189e8a1025ce575e78",
+          "protected": false
+        },
+        {
+          "name": "feat/synergy-rl-secure-runtime",
+          "head_sha": "35762fc7bdaea0067afe17eaa486c43970f81dda",
+          "protected": false
+        },
+        {
+          "name": "feat/v16-gradient-opportunity-market",
+          "head_sha": "fa04f72fba802137844ea0d60286c89c140f7c45",
+          "protected": false
+        },
+        {
+          "name": "feature/qe-mev-revenue-v2",
+          "head_sha": "24111430a81fb719f40570ab66f26a0f2b764ec2",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "47b4b8779472797566af7a84b59837ef33efbe22",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "ceadcac6bd5bb00f2caed64badec40a3c0564fea",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "c7e9ea9dde51500f88ed701423164309e4ae6242",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "f3ec3f541528d63732f39d442b3f02af5ea1b81c",
+          "protected": false
+        },
+        {
+          "name": "synthl1-recursive-qe-mev-v5",
+          "head_sha": "385eaa2e6c811f1f29c504984484d9223b42b1b7",
+          "protected": false
+        },
+        {
+          "name": "test/bybit-demo-credit-pyramid-20260804",
+          "head_sha": "a1cf883ce088245d38a3b07ddbd6499092780eab",
+          "protected": false
+        },
+        {
+          "name": "test/v11-atomic-qe-qt-polygon-fork",
+          "head_sha": "79a0dbce6c29e25c0b60b39dbd5f462556bc36b9",
+          "protected": false
+        },
+        {
+          "name": "v15-math-over-v13-1",
+          "head_sha": "0d45b7e20022e33fd5b5ee96452ab5ff2029a680",
+          "protected": false
+        },
+        {
+          "name": "work/dividend-self-support-v6",
+          "head_sha": "dbd82c65f31f04c3769bf45a05e7392da1acd9a7",
+          "protected": false
+        },
+        {
+          "name": "work/synergy-v5-compounding",
+          "head_sha": "2aaac9b4719fe3781ae1d76fa58fe44b12a0c14c",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_investment_committee",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "eadb6021d3d1ea34823a25788877d8d01309a1e9",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "7dbec0202badf1afce60ada83b5402f8d8ed9f14",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "3b0396501a649d92ecfe0b3adfc2db02c515c0c9",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_language",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 100,
+      "branches": [
+        {
+          "name": "ai-language-v040-hardening",
+          "head_sha": "2c0ab2b78796b38cf99d99d4b7a2d12f89facba5",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository",
+          "head_sha": "c9cad12d33131607abe6480ceb05dd9b74c125f2",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-0li4bv",
+          "head_sha": "e6f41f66aba9b812a46d76f66d60f36c9b0b92fc",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-7vwora",
+          "head_sha": "61ac1d84946a399b162a9336a07328569420e601",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-kf6ymv",
+          "head_sha": "adb7277bd2ed86ec3e821b90275c5f5784239b08",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-kypvy9",
+          "head_sha": "90fedc0ebb44369a9462b53efc84b3c95ee2a400",
+          "protected": false
+        },
+        {
+          "name": "codex/create-professional-pypl-project-repository-lmjx7u",
+          "head_sha": "9b7b0dfcb7f324442403d46452d3a80fb1107cfe",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-portable-runtime-build",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-20260817",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-actual",
+          "head_sha": "fefe1cfcf9120d11156402d328b7a26d0ecde334",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-exec",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-final2",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-one",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-build-runner",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-final",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-ubuntu",
+          "head_sha": "6f7c9406b08f11748478b6c96c85d8c74e263038",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-win",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-win2",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-runtime-win-final",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-build-20260817-2",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-build-final",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-final-installer-20260817",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-installer-20260817",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-installer-build-20260817",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-installer-payload-20260817",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-win-build-20260817",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-windows-build-2",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "cyber-ai-smm-sinergy-windows-final",
+          "head_sha": "180746a0268cfcc0cfd1d7c1668897f3dae29902",
+          "protected": false
+        },
+        {
+          "name": "docs/editorial-batch03",
+          "head_sha": "31e0e2b0c7b7a00e9e9461f9b6faa25a0fdffc84",
+          "protected": false
+        },
+        {
+          "name": "docs/sinergy-semantic-governance-20260817",
+          "head_sha": "01dfffb74a61e58d9c15711a0d5fae71bab48855",
+          "protected": false
+        },
+        {
+          "name": "feat/accounting-close-requirements-v3-20260819",
+          "head_sha": "de859f3f46c4bec721faef47db24646f1764f20c",
+          "protected": false
+        },
+        {
+          "name": "feat/causal-accounting-requirements-v2-20260818",
+          "head_sha": "954c3b4b32efb2856f596faa0d854b92901e38ba",
+          "protected": false
+        },
+        {
+          "name": "feat/requirement-binding-v1-20260818",
+          "head_sha": "70c0b5b5476b43b4b193eb5f854857502a85f307",
+          "protected": false
+        },
+        {
+          "name": "feat/semantic-memory-context-bridge-20261118",
+          "head_sha": "f0d724f6cc2a84afa09049dc889bcd3eb753b5eb",
+          "protected": false
+        },
+        {
+          "name": "feature/pypi-cli-coding-agent",
+          "head_sha": "6f756715609ee75903f071f2abe55f303faa342b",
+          "protected": false
+        },
+        {
+          "name": "feature/repository-impact-graph",
+          "head_sha": "bbdf4c73c2b26c459256afebee5e19c5666f6221",
+          "protected": false
+        },
+        {
+          "name": "feature/semantic-agent-trace",
+          "head_sha": "8db48224987c932955b4f03a45d8bd93b5b6c366",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "02a83b7834d168582fe5542fe4b83e9765bcce22",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
+          "protected": false
+        },
+        {
+          "name": "nexus-phase4-natural-corpus-20260812",
+          "head_sha": "0c8f546b6b3d53a15ebfb2ce7f08bdbf18500c40",
+          "protected": false
+        },
+        {
+          "name": "nexus-r5-real-lm-1m",
+          "head_sha": "09793ac9fc260a0b94979cc01e74882fae56007a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r22-intelligence-ab",
+          "head_sha": "f46b9aaad6dcfa70ded3e01cb9209518013b10cc",
+          "protected": false
+        },
+        {
+          "name": "nexus-r22-intelligence-ab-v2",
+          "head_sha": "f0bd7f55861e74235c56fc063ef8de38cae02579",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-external",
+          "head_sha": "92ab48fbf125d968cf9e792b227b0c545a559048",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-power-matched",
+          "head_sha": "2a0c8d03ee61c37919ca3fd72052f801c3c61434",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-real-power",
+          "head_sha": "bd16e2ef03f3b36930c8d004efdde882ac4d1acc",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-swebench-pilot",
+          "head_sha": "f2866a99f7480e5196d7d285d685de41dac8573f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r24-adaptive-consensus",
+          "head_sha": "81efe51aac97117dd7653b5931296849fc2c94a1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r24-swebench-canonical-edits",
+          "head_sha": "d300acf8fe422037b652c6ea65147cc69dd39e76",
+          "protected": false
+        },
+        {
+          "name": "nexus-r51-dict2048-real-lm",
+          "head_sha": "384b0c3b203d65417ecbe6d3ab720445f53984e5",
+          "protected": false
+        },
+        {
+          "name": "nexus-r52-tokenizer-deathmatch",
+          "head_sha": "b27265856ebcbbafb657a76f8f12a0741095d3a0",
+          "protected": false
+        },
+        {
+          "name": "nexus-r53-tokenizer-lm-finalists",
+          "head_sha": "caee256459dec322acc40acf545e8183282a62a9",
+          "protected": false
+        },
+        {
+          "name": "nexus-r54-results-docs",
+          "head_sha": "9c425d2e161891e7dfd192dcece5f3350b07e335",
+          "protected": false
+        },
+        {
+          "name": "nexus-r54-unigram-confirm",
+          "head_sha": "9dc41b00ccede1ed6040edfced1ed276f3257061",
+          "protected": false
+        },
+        {
+          "name": "nexus-r55-results-docs",
+          "head_sha": "9883ea984811f2cd5688de47dd9cc382b35196ed",
+          "protected": false
+        },
+        {
+          "name": "nexus-r55-unigram-vocab-sweep",
+          "head_sha": "66268b5046f1a4adf9f5f1a6c9a740ddaad42160",
+          "protected": false
+        },
+        {
+          "name": "nexus-r56-3m-russian-adequacy",
+          "head_sha": "66c96a4533a802936612aa0d04a02a1eb912f93f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r56-results-docs",
+          "head_sha": "c7bacaf1d76675bb842927b5d36e1c7a6ab862a0",
+          "protected": false
+        },
+        {
+          "name": "nexus-r56b-cortex-vocab-generation",
+          "head_sha": "0e89f1b2b36bef96216c6153ffdd375080235643",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-concept-graph-language",
+          "head_sha": "185e04614831ce706eb92e3e8651cd6e2b473ea9",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-fast-falsify",
+          "head_sha": "32c3996cee6e7c9edc26a05091317352cc65ff61",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-micro",
+          "head_sha": "767e9b36982a00e0de6eff168cca1d7fd8861cdd",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-nano",
+          "head_sha": "a0e8671693454781dce56e79ad0c2f58a4218fa1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r57-pilot",
+          "head_sha": "645fa9dc0f621b4a620408823069f7c9fb8ea436",
+          "protected": false
+        },
+        {
+          "name": "nexus-r58-latent-state",
+          "head_sha": "27ec62da83f835126092663b536242ed882cd67e",
+          "protected": false
+        },
+        {
+          "name": "nexus-r59-learned-semantic-graph",
+          "head_sha": "7a8709ea40d1378f7f6b0874543fbe7b347457bd",
+          "protected": false
+        },
+        {
+          "name": "nexus-r59-pilot",
+          "head_sha": "f23648044ba0eb48aa2da2f00c691b8afdf1c46f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-blind22-run",
+          "head_sha": "c97b38909ccb8d1f569b8ca691341ca619933d2b",
+          "protected": false
+        },
+        {
+          "name": "nexus-r77-blind24-run",
+          "head_sha": "a430003f0dc36eed284e40967111d5016bfcecef",
+          "protected": false
+        },
+        {
+          "name": "nexus-r78-blind25-run",
+          "head_sha": "6e1c3a7ddd8b3fb489eea53c0f94b984e3be303b",
+          "protected": false
+        },
+        {
+          "name": "nexus-r79-blind26-run",
+          "head_sha": "d8eb86265d6baa88617475da99471e21d2483b62",
+          "protected": false
+        },
+        {
+          "name": "nexus-r510-recovery-micro",
+          "head_sha": "053f938a81a4babb0384ca10f2dd01d29d79fc19",
+          "protected": false
+        },
+        {
+          "name": "nexus-r510-recovery-pilot",
+          "head_sha": "c8126c6737264d3f11f7d8dca72f9c6e9894cdd4",
+          "protected": false
+        },
+        {
+          "name": "nexus-r510-rollout-recovery",
+          "head_sha": "49fde1cb903843de6e583686bef0535bb321f032",
+          "protected": false
+        },
+        {
+          "name": "nexus-r511-pointer-recovery",
+          "head_sha": "7953f4846f3c680527fd58490896dbc6837b13c5",
+          "protected": false
+        },
+        {
+          "name": "nexus-r512-8k-pilot",
+          "head_sha": "7d9d5fe7d2478c649e2304b431f4b1d6c5a61f4b",
+          "protected": false
+        },
+        {
+          "name": "nexus-r512-deep-language",
+          "head_sha": "68faad4dbfc39ed8091fe662259062824d54b55c",
+          "protected": false
+        },
+        {
+          "name": "nexus-r513-masked-iterative",
+          "head_sha": "840bd8184109fe0d28b28d8679b1db9459bd877e",
+          "protected": false
+        },
+        {
+          "name": "nexus-r513-pilot",
+          "head_sha": "e5c0ea540b1137d47187cad1af0c05b65504fb80",
+          "protected": false
+        },
+        {
+          "name": "nexus-r514-deep-diverse",
+          "head_sha": "1a4227870f50da5f32213cb6758f9fda2034d03a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r514-hierarchical-planner",
+          "head_sha": "3d9ffff89f64959c5a0683cc57fb9b24c1b9e8b8",
+          "protected": false
+        },
+        {
+          "name": "nexus-r514-micro",
+          "head_sha": "e065a11ff6e874ae74edcc564db109d01c02b17f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r514b-content-plan",
+          "head_sha": "e88639f0f791a23755f13b59811793e44cb57af4",
+          "protected": false
+        },
+        {
+          "name": "nexus-r515-deep-diverse",
+          "head_sha": "c8d73d9b595715342d51aef51aee15a39d4e74e7",
+          "protected": false
+        },
+        {
+          "name": "nexus-r515-semantic-encoder-decoder",
+          "head_sha": "ad88e845fa82c9776b111b92c1ad48a4f4cce1e7",
+          "protected": false
+        },
+        {
+          "name": "nexus-r516-masked-deep-diverse",
+          "head_sha": "c303b9a05375c3d2738d27f2afa502f958e455ac",
+          "protected": false
+        },
+        {
+          "name": "nexus-r516-ordered-plan",
+          "head_sha": "54123024d3659dc14ae4bf9eaf47c1f17a4805b1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r517-pad-clean",
+          "head_sha": "26dc1bd8c7de901b576d2a392f04bb43254fb805",
+          "protected": false
+        },
+        {
+          "name": "nexus-r517-sentence-curriculum",
+          "head_sha": "623ecdd4fc15fedda369a236bb3d40a685ce7f3b",
+          "protected": false
+        },
+        {
+          "name": "nexus-r518-discrete-sentence-plan",
+          "head_sha": "fa4ec5e4c5af2ba842271cfb1bc1836e2cbe2e16",
+          "protected": false
+        },
+        {
+          "name": "nexus-r518-pilot",
+          "head_sha": "039e273265152db6823ab201c3d64726cdb0e881",
+          "protected": false
+        },
+        {
+          "name": "nexus-r518-variable-context",
+          "head_sha": "2509e4cdfe1b977262aca81d78872e560eb8d774",
+          "protected": false
+        },
+        {
+          "name": "nexus-r519-direct-modern-sentence",
+          "head_sha": "c0316c19ce3ef307bbc927ebad3546d58725cc6f",
+          "protected": false
+        },
+        {
+          "name": "nexus-r519-pilot",
+          "head_sha": "1c103936aa392cff61a123e25360c6d48c48f236",
+          "protected": false
+        },
+        {
+          "name": "nexus-r519-sequence-critic",
+          "head_sha": "08c01b066d9bd16d7ab075fe21a870bb62267d1a",
+          "protected": false
+        },
+        {
+          "name": "nexus-r520-prefix-rescue",
+          "head_sha": "0d688bf248bd79dcf53a0c6b18c970b3b68e92d2",
+          "protected": false
+        },
+        {
+          "name": "nexus-r520-zero-init-semantic",
+          "head_sha": "519df909c49ac5cce4f4fc783b120ee8cf80dee3",
+          "protected": false
+        },
+        {
+          "name": "nexus-r521-context-target-critic",
+          "head_sha": "ea1c05b6e89f083895efb3544939d17ead08c060",
+          "protected": false
+        },
+        {
+          "name": "nexus-r521-modern-continuation",
+          "head_sha": "dc8fc2966571e50351586ace3445344e7d12fac1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r521-modern-pilot",
+          "head_sha": "a0027f20e239fee7935d1d5293a620550a558d39",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 2,
+      "branches": [
+        {
+          "name": "feature/rwkv7-original-weights",
+          "head_sha": "dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "5f5d2a44610e9d2dfd5413bed6726954e4d0e568",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_trade_terminal",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 5,
+      "branches": [
+        {
+          "name": "codex/fix-price-discrepancy-in-dashboard",
+          "head_sha": "e2f0eb52041862f2a6e2e49271f549e66e52f098",
+          "protected": false
+        },
+        {
+          "name": "codex/revise-cassandra-architecture-for-python",
+          "head_sha": "8ee6b215eed8c39c0248cdc9b1dadcdddf86e4b9",
+          "protected": false
+        },
+        {
+          "name": "codex/revise-cassandra-architecture-for-python-tvznjv",
+          "head_sha": "6c9a141f2ea2211154f7278918cf49cd2e649fd2",
+          "protected": false
+        },
+        {
+          "name": "docs/editorial-batch03",
+          "head_sha": "fd9a05f425ee836a3534b77f67b8763d87501904",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "e53064ec6741dce47ee10a5f30b798c0cf4daa2a",
           "protected": false
         }
       ]
