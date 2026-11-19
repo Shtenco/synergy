@@ -39,6 +39,9 @@ The canonical artifacts are:
 - [Full branch inventory JSON](registry/BRANCH_INVENTORY_2026-11-20.json) — 1,292 branch refs / 91 repositories
 - [Full branch inventory CSV](registry/BRANCH_INVENTORY_2026-11-20.csv) — one row per branch
 - [Branch inventory report](docs/BRANCH_INVENTORY_2026-11-20.md)
+- [Open PR / branch map JSON](registry/OPEN_PR_BRANCH_MAP_2026-11-20.json) — all 548 open PRs
+- [Open PR / branch map CSV](registry/OPEN_PR_BRANCH_MAP_2026-11-20.csv) — one row per open PR
+- [Open PR audit report](docs/OPEN_PR_BRANCH_AUDIT_2026-11-20.md)
 
 ## System map
 
@@ -220,7 +223,9 @@ The table below includes every current owner repository, including legacy, R&D, 
 | [`synergy_riskguard`](https://github.com/Shtenco/synergy_riskguard) | trading-quant | CANDIDATE | 3 |
 | [`synergy_trademux`](https://github.com/Shtenco/synergy_trademux) | trading-quant | CANDIDATE | 3 |
 
-**Branch inventory totals:** 1,292 branch refs (91 main + 1,201 non-main); 1,206 summed unique HEADs within repositories; 86 repeated refs pointing to an existing HEAD in the same repository. GitHub API marks **0/1,292 refs protected**, including all 91 main branches. This is a branch-governance risk; identical HEADs are not proof that branches are safe to delete.
+**Branch inventory totals:** 1,292 branch refs (91 main + 1,201 non-main); 1,206 summed unique HEADs within repositories; 86 repeated refs pointing to an existing HEAD in the same repository. GitHub API marks **0/1,292 refs protected**, including all 91 main branches.  
+**Open PR census:** **548 open PRs** across 91 repositories (414 draft, 134 ready; 268 target main). All 548 PR head branches and SHAs match the branch census at snapshot time. This is not a merge-readiness or CI pass.  
+This is a branch-governance risk; identical HEADs are not proof that branches are safe to delete.
 
 ## Canonical integration principle
 
