@@ -4,9 +4,9 @@
   "owner": "Shtenco",
   "snapshot_date": "2026-11-20",
   "scope": "Initial priority repositories; incremental full-owner census",
-  "completed_repositories": 24,
-  "pending_repositories": 68,
-  "branch_refs": 217,
+  "completed_repositories": 32,
+  "pending_repositories": 60,
+  "branch_refs": 390,
   "records": [
     {
       "repository": "Shtenco/synergy",
@@ -1281,6 +1281,935 @@
         {
           "name": "results/gabriel-umc-exact-20260730",
           "head_sha": "ade057d09a3b32ae28b868807efac756017eff19",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergistic_economics",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 19,
+      "branches": [
+        {
+          "name": "audit/sfc-scce-a2-4-continuation-20261111",
+          "head_sha": "6262f1dcb47ca0ef5c09f1f854f8cd1e37699c39",
+          "protected": false
+        },
+        {
+          "name": "audit-russian-readme",
+          "head_sha": "62a22473f3d025739789e7fdcc5019624e7bfd98",
+          "protected": false
+        },
+        {
+          "name": "feature/canonical-economic-entity-register-v1-rebased-20261115b",
+          "head_sha": "efeb8e0a5b4cf0a96d29a8cb548c4c298133b14b",
+          "protected": false
+        },
+        {
+          "name": "feature/canonical-economic-entity-register-v1-rebased-20261115",
+          "head_sha": "85d38bcd4805b3fa2982ecfe066a8d387199f0b2",
+          "protected": false
+        },
+        {
+          "name": "feature/canonical-economic-entity-register-v1",
+          "head_sha": "c0abf74b7be6cf2420b953ce95d87561fa6f159e",
+          "protected": false
+        },
+        {
+          "name": "feature/economic-router-core-v1",
+          "head_sha": "83c47524785ae87a9315ea80c9d15c285ad994c2",
+          "protected": false
+        },
+        {
+          "name": "feature/synergy-leagues-phase-1",
+          "head_sha": "760cf58c29166a7bcf9b9b8745a46cb96bab1583",
+          "protected": false
+        },
+        {
+          "name": "integration/economic-core-consolidation-2026-11-13",
+          "head_sha": "8ba881bf30ea8a6d27b32e8f8731589272c76708",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+          "protected": false
+        },
+        {
+          "name": "prototype-2-input-output",
+          "head_sha": "95c8a31978bfb2bfe8f104702a07e9d0df8751aa",
+          "protected": false
+        },
+        {
+          "name": "research/authoritative-wage-deposits-v1",
+          "head_sha": "c6b225a1738528d593a2b9b7bfc6e6c1577a9072",
+          "protected": false
+        },
+        {
+          "name": "research/bank-deposit-credit-audit-fix-20261115",
+          "head_sha": "9c891b7fbd24d3424344865bb1288e734567b5d8",
+          "protected": false
+        },
+        {
+          "name": "research/financial-register-instance-provenance-v1",
+          "head_sha": "c2a238aa869b1724ae9cec8ff885f3dcca58b312",
+          "protected": false
+        },
+        {
+          "name": "research/household-liquidity-recycling-v1",
+          "head_sha": "11b3edc668b0e5440e30f94ef7cc18c77321ec31",
+          "protected": false
+        },
+        {
+          "name": "research/operating-wage-coordinator-v1",
+          "head_sha": "e1cf9ac847a41dc23553a5ebb5d664c3387b8c8d",
+          "protected": false
+        },
+        {
+          "name": "research/sec-sper-integration-audit-2026-11-11",
+          "head_sha": "7116e4e3d83a61c9c9eeccdf6bd26f0c09998d46",
+          "protected": false
+        },
+        {
+          "name": "research/verified-wage-settlement-v1",
+          "head_sha": "8f490ea5e1b70491eb6115ff8c2f91a9e68408d2",
+          "protected": false
+        },
+        {
+          "name": "unified-economic-balance",
+          "head_sha": "65fe7b5458c3c2fc9739554b65fa16c647e8a695",
+          "protected": false
+        },
+        {
+          "name": "work/spatial-economic-bridge-20261116",
+          "head_sha": "283b647b2d0755279b660aae99e552de03c1e7ed",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_2chain_qe",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 5,
+      "branches": [
+        {
+          "name": "hardnav-v2-economic-core",
+          "head_sha": "3062b0a847bf3dbc27fb9e37ba80b69e6901565e",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "0099d40f55ef4a94812d58c8126a88f2611352ff",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "79c105dac4c65e125b1ce395e8a493822de6356f",
+          "protected": false
+        },
+        {
+          "name": "pool-bridge",
+          "head_sha": "665677f58b6ef391d0c7a31d62b8aa8894a58eae",
+          "protected": false
+        },
+        {
+          "name": "recovery/base-synergy-l3-arbitrage-20261117",
+          "head_sha": "e7477ede9c65700824502fd48f40f90085e5a166",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_adaptive_engine",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "enterprise/v2.0.0",
+          "head_sha": "78d6696dff443079218b2087209c527f0fe94240",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "c4af6194eedfbf9b9c0824822abe42306ba9f6b8",
+          "protected": false
+        },
+        {
+          "name": "production/v3.0.0",
+          "head_sha": "856252eb8400546d3e7c359068f96c0d7dda7c99",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 15,
+      "branches": [
+        {
+          "name": "archive/full-chat-2026-09-25",
+          "head_sha": "5305a7dca83a3098fad2207de94a2ac2570c2821",
+          "protected": false
+        },
+        {
+          "name": "chore/extract-v81-reference",
+          "head_sha": "fc248a6124fb98bef4b73b32609d7fd516a0b721",
+          "protected": false
+        },
+        {
+          "name": "chore/real-block-input-workflow",
+          "head_sha": "7bf171a0cf2185dc773760fd06efec6bdab727e8",
+          "protected": false
+        },
+        {
+          "name": "chore/real-block-pr-trigger",
+          "head_sha": "7cc7113c9d69cd13a01794c5e91d08d285720de2",
+          "protected": false
+        },
+        {
+          "name": "experiment/recursive-collateral-evm-v1",
+          "head_sha": "d2f260a75e2fe5a3fb421064ce48fe3a537bed80",
+          "protected": false
+        },
+        {
+          "name": "feat/closed-agent-economy-mainline",
+          "head_sha": "2ebf244df2d8a258b27800e42968a45401b3d231",
+          "protected": false
+        },
+        {
+          "name": "feat/closed-multimarket-hardnav-v3",
+          "head_sha": "7e6861b2912f308edfa8546014c16eb4b4d08e91",
+          "protected": false
+        },
+        {
+          "name": "feat/dqn-agent-economic-mainline",
+          "head_sha": "ba7743f95c3ca8829f79725861e7635d002bd3b3",
+          "protected": false
+        },
+        {
+          "name": "feat/historical-block-v4-exact-gas",
+          "head_sha": "5e99bd684831297821d9954b834ba89a40428870",
+          "protected": false
+        },
+        {
+          "name": "feat/historical-external-flow-v5",
+          "head_sha": "c5e353d22dd7275ffe0e70bbce4ddc87ec68d427",
+          "protected": false
+        },
+        {
+          "name": "feat/p9-crosschain-dqn-economy",
+          "head_sha": "6e011666cc692e23ccfc062779527c691e7b335c",
+          "protected": false
+        },
+        {
+          "name": "feat/real-block-backtest-data",
+          "head_sha": "f6903e255fd793cfa1548c79192ba1d70a7698ea",
+          "protected": false
+        },
+        {
+          "name": "fix/hardnav-modeled-flow-accounting-2026-11-16",
+          "head_sha": "74bbbc17eb5b3b31cc0a86c112adf9f4660ea127",
+          "protected": false
+        },
+        {
+          "name": "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
+          "head_sha": "0effe839d160af295d511eaea6a3d3830e024557",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_nexus",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 58,
+      "branches": [
+        {
+          "name": "arc3-official-public-probe-20260824",
+          "head_sha": "d2d0920a0d8bd405661f37f6481d2b4ab232b6ab",
+          "protected": false
+        },
+        {
+          "name": "feat/build-readiness-v1-20260821",
+          "head_sha": "0b6837e37da58446641d2a03a3dcd8c7b69bb40e",
+          "protected": false
+        },
+        {
+          "name": "feat/build-recipe-v1-20260822",
+          "head_sha": "7e13976fb6989e0f67fa308c579fc8c8d3890d3d",
+          "protected": false
+        },
+        {
+          "name": "feat/build-recipe-v2-proof-core-20260822",
+          "head_sha": "ec8c57f6e692a5fab126b40b0cc178df69d2f2e1",
+          "protected": false
+        },
+        {
+          "name": "feat/deterministic-source-capsule-v1-20260821",
+          "head_sha": "286d56dc4799a9dbaadb54665ffd6ca0b57c3f35",
+          "protected": false
+        },
+        {
+          "name": "feat/http-sidecar-memory-v1",
+          "head_sha": "181c30f6c2a718738bb3691a38d23fc7f6c989c3",
+          "protected": false
+        },
+        {
+          "name": "feat/minimal-nexus-core-v2-20260822",
+          "head_sha": "4915872c60117bbac0001a0f792f2a8f3a12899a",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-inventory-benchmark-core-v1-20260821",
+          "head_sha": "3f734afffb357936c97477ff779cbfd1c79060e5",
+          "protected": false
+        },
+        {
+          "name": "feat/nexus-source-freeze-promotion-v2-20260821",
+          "head_sha": "7d5ed0bdb9949f34c2e455be5e2f1fb9f285e3d4",
+          "protected": false
+        },
+        {
+          "name": "feat/repro-artifact-v3-20260822",
+          "head_sha": "f966a0eca6d8bd753aba5db4c09a70edd7454d88",
+          "protected": false
+        },
+        {
+          "name": "feat/service-spec-v1-20260822",
+          "head_sha": "18ca9c8acfa73e6c538d5966e1e63c7c6d271fbf",
+          "protected": false
+        },
+        {
+          "name": "feat/service-spec-v2-proof-core-20260822",
+          "head_sha": "0cf581fe6ac6e79bcf39c9ed4833e2d5719ddd6f",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-exact-build-recipe-v2-20260822",
+          "head_sha": "d8ef528f1633262d6d5f0b008b1338dd89fcc58b",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-exact-stdlib-v2-20260822",
+          "head_sha": "2ee8f2a29ad2497afca6c7386375a296cd0bdbcf",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-kernel-migration-v1-20260821",
+          "head_sha": "cbc06e83f7f9e242719667e446a090894e11eef1",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-service-build-recipe-v1-20260821",
+          "head_sha": "9cf0fc6fb0e6a88f65e0b867682b0afaa3e373d7",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-service-protocol-v1-20260821",
+          "head_sha": "ef1a6e3675e53fda4bf91566aec61f1b62fa9336",
+          "protected": false
+        },
+        {
+          "name": "feat/smallworld-stdlib-parity-v2-20260821",
+          "head_sha": "725c9f150a6308ee5f8d8025a5aba5374f0942ec",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "103e0869f8fdd53669e7723320e835030ec36f38",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "70693dfe631ca8cd06465da076cfc0b215c0200c",
+          "protected": false
+        },
+        {
+          "name": "nexus-unified-final-design-20260915",
+          "head_sha": "48c52bdc66c59d644c111a410d2e19610c897bb2",
+          "protected": false
+        },
+        {
+          "name": "r82-russian-cognitive-dialogue-graph",
+          "head_sha": "e2b32571535c6adba7a3b7b5af6acb427f4100a6",
+          "protected": false
+        },
+        {
+          "name": "r719-program-induction-20260823",
+          "head_sha": "64bf998131326111b6a559837c32af9428678c52",
+          "protected": false
+        },
+        {
+          "name": "r720-blind33-pr-run",
+          "head_sha": "fd4cddf7b70d4528de9307ab4190b32a38de8134",
+          "protected": false
+        },
+        {
+          "name": "r720-blind33-preinference",
+          "head_sha": "c92c1ef6c564af17f6bc73d6c555f1d7bb057325",
+          "protected": false
+        },
+        {
+          "name": "r721-blind34-postinference",
+          "head_sha": "4acbcd910baa084070a6e760dcab5202af91b1d9",
+          "protected": false
+        },
+        {
+          "name": "r721-blind34-preinference",
+          "head_sha": "7e4cd47fd724f56f868c7cd3c94d18c2206203c7",
+          "protected": false
+        },
+        {
+          "name": "r721-freeze-record",
+          "head_sha": "e75d3c3eb4c89cfc432389c0fab335bb61c41424",
+          "protected": false
+        },
+        {
+          "name": "r722-blind35-postinference",
+          "head_sha": "31e52c0896eb828b8a751b5932e227ffb3377fd7",
+          "protected": false
+        },
+        {
+          "name": "r722-blind35-preinference",
+          "head_sha": "7d810db959613c99313be56ef61f7f3798ee3d37",
+          "protected": false
+        },
+        {
+          "name": "r722-freeze-record",
+          "head_sha": "9bba5b688eea3e556f57924b8ee2000102e80d47",
+          "protected": false
+        },
+        {
+          "name": "r723-blind36-postinference",
+          "head_sha": "4255874e177e6059242ac0c43163d4dc4f4b940b",
+          "protected": false
+        },
+        {
+          "name": "r723-blind36-preinference",
+          "head_sha": "7864d63abd4200f50071fc7a30a42efbea084dce",
+          "protected": false
+        },
+        {
+          "name": "r723-freeze-record",
+          "head_sha": "2f7f74bba8ccce9680a3ec449f286aba1ac9774a",
+          "protected": false
+        },
+        {
+          "name": "r724-blind37-postinference",
+          "head_sha": "e8a73aaa5f2dad7ece0e6e0f6cf57178fd9f889b",
+          "protected": false
+        },
+        {
+          "name": "r724-blind37-preinference",
+          "head_sha": "fa52c14c850c0fb341fcaf6dd7762a4dfead7dee",
+          "protected": false
+        },
+        {
+          "name": "r724-freeze-record",
+          "head_sha": "c480703c716d61cc61b6fd52036cd68fa4fbb1f2",
+          "protected": false
+        },
+        {
+          "name": "r725-blind38-postinference",
+          "head_sha": "db65f9ae0fd4a93c8235b8885be408053539e6a6",
+          "protected": false
+        },
+        {
+          "name": "r725-blind38-preinference",
+          "head_sha": "e548ed08b3f4e5ee26ccc78294326952920f1e86",
+          "protected": false
+        },
+        {
+          "name": "r725-freeze-record",
+          "head_sha": "e38838c5d3a06fa1df1ea20bcf528611025a43f8",
+          "protected": false
+        },
+        {
+          "name": "r726-blind39-postinference",
+          "head_sha": "358a1f59f4d743d0e96d6b30652ba0d84cc12d85",
+          "protected": false
+        },
+        {
+          "name": "r726-blind39-preinference",
+          "head_sha": "9eedb0e921c113183e2b3e97a4b8f28dec39c400",
+          "protected": false
+        },
+        {
+          "name": "r726-freeze-record",
+          "head_sha": "6015925d960351e988b0ac33f7fae3f0a2971bcb",
+          "protected": false
+        },
+        {
+          "name": "r728-blind42-postinference",
+          "head_sha": "da8a16b9dba510b7dc717dc14fd3d2ce2fee8979",
+          "protected": false
+        },
+        {
+          "name": "r728-blind42-preinference",
+          "head_sha": "1d3625b1bbbbfe54431a4c3c36277639730a8a35",
+          "protected": false
+        },
+        {
+          "name": "r728-freeze-record",
+          "head_sha": "99b58ae1b00dd915467f34e89580fae63482731a",
+          "protected": false
+        },
+        {
+          "name": "r729-ru-blind44-postinference",
+          "head_sha": "4558a62d0ae00bb5e636c2a5f97ea9ca0113f472",
+          "protected": false
+        },
+        {
+          "name": "r729-ru-blind44-preinference",
+          "head_sha": "ac83b06a9ed2994f26d9977e5881f722bc544300",
+          "protected": false
+        },
+        {
+          "name": "r730-freeze-record",
+          "head_sha": "7db0804f70b68ffd0a2aa8e4717278ccf77c79e1",
+          "protected": false
+        },
+        {
+          "name": "r730-ru-blind45-postinference",
+          "head_sha": "6c5254a03a3cb0ddccf7f8bf1f4a21992675b093",
+          "protected": false
+        },
+        {
+          "name": "r730-ru-blind45-preinference",
+          "head_sha": "5308fe52ba6816ca0c7934e59331a304b7765df2",
+          "protected": false
+        },
+        {
+          "name": "r731-freeze-record",
+          "head_sha": "25dd2da2616af26386eecc51afc71dcb8bf13815",
+          "protected": false
+        },
+        {
+          "name": "r731-ru-blind46-postinference",
+          "head_sha": "41d2166e82ae273396d1701b42175324378c3d7c",
+          "protected": false
+        },
+        {
+          "name": "r731-ru-blind46-preinference",
+          "head_sha": "8938089e45900ab63aa096817cf57e34494f0a64",
+          "protected": false
+        },
+        {
+          "name": "r732-blind47-postinference",
+          "head_sha": "c692e3c39fc26668ceeccb01959038f38d3c17ef",
+          "protected": false
+        },
+        {
+          "name": "r732-blind47-preinference",
+          "head_sha": "ebfea2910ff8c0b4d09b8a775a40588f53e4389c",
+          "protected": false
+        },
+        {
+          "name": "r732-supra-freeze",
+          "head_sha": "f32e17cbea24805d9cb59d13ec38102951e4feca",
+          "protected": false
+        },
+        {
+          "name": "tmp/noop",
+          "head_sha": "3f734afffb357936c97477ff779cbfd1c79060e5",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_olga",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 38,
+      "branches": [
+        {
+          "name": "audit/all-nexus-intelligence-20260805",
+          "head_sha": "caf6a24526d3a52ef2eb25ac0c47e2b4f396c826",
+          "protected": false
+        },
+        {
+          "name": "benchmark/gabriel-umc-exact",
+          "head_sha": "43ec0bb6766d3446930259931268abed5245fea6",
+          "protected": false
+        },
+        {
+          "name": "benchmark/81-baseline",
+          "head_sha": "3f2388d5ec1431452988b4e569c6e8ca8001e0e1",
+          "protected": false
+        },
+        {
+          "name": "benchmark/81-unified-timing-v1",
+          "head_sha": "dad4af4cc8def2d99571f7b28282694931c49186",
+          "protected": false
+        },
+        {
+          "name": "benchmark-all-compression-systems-exact",
+          "head_sha": "6a9967c243f9116e57c910700209aa00be01e03d",
+          "protected": false
+        },
+        {
+          "name": "benchmark-all-systems-fast-validation",
+          "head_sha": "4c62ed35b96ae8000f570e57cbd8a858322e0e49",
+          "protected": false
+        },
+        {
+          "name": "compression-lab-v4-35",
+          "head_sha": "89151c3028c1f1123e224e4051d53f077dddd603",
+          "protected": false
+        },
+        {
+          "name": "docs/sinergy-financial-os-ai-boundary-20260817",
+          "head_sha": "ae449e64b4bd8395250e28b3bd8a3d152370abc2",
+          "protected": false
+        },
+        {
+          "name": "docs/visual-dossier-batch02",
+          "head_sha": "d2a912c0c5cd592e951edc716536197827362cbd",
+          "protected": false
+        },
+        {
+          "name": "feat/ogas2-pq-ai-blockchain-20260809",
+          "head_sha": "7cb2f05945344cab6f47ff34fe7f75f9cafb0f51",
+          "protected": false
+        },
+        {
+          "name": "feat/pq-evm-consensus-export-v1",
+          "head_sha": "a12a739656328d9cb45e759ae77c2917c02898ed",
+          "protected": false
+        },
+        {
+          "name": "feat/r7-5-multinode-scaling-r74",
+          "head_sha": "b732daa60f5e1079ba849dc8e1072a35f52f84ed",
+          "protected": false
+        },
+        {
+          "name": "feat/r7-5-multinode-scaling-v1",
+          "head_sha": "a914ef3a6f6bd905e0818fa05743cc4f9c373fca",
+          "protected": false
+        },
+        {
+          "name": "feat/real-accelerator-v10-gpu",
+          "head_sha": "ca400839d99904d224e582db130a194d0dff76a6",
+          "protected": false
+        },
+        {
+          "name": "integrate-nexus-600k",
+          "head_sha": "cf07ecf0ba2c0cb8fd840f6c77c000b234c67bc5",
+          "protected": false
+        },
+        {
+          "name": "integration/protocol-convergence-v1-20260925",
+          "head_sha": "2145cb1d4699460a9dae07e9c1e643fa44665e46",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "503982f3df83fdcc9f5070bddf3e485dfba742bd",
+          "protected": false
+        },
+        {
+          "name": "nexus-100m-mobile",
+          "head_sha": "7ef3fdcd0f0f0daa70cf525686651d388dbee360",
+          "protected": false
+        },
+        {
+          "name": "nexus-106m-mobile",
+          "head_sha": "29672fd54bbfc65166ae9c865870cee6b982bfc1",
+          "protected": false
+        },
+        {
+          "name": "nexus-r2-qwen05b-cortex",
+          "head_sha": "23470f82d4b23336a8c10d232376ed34c0f90826",
+          "protected": false
+        },
+        {
+          "name": "nexus-r2.1-qwen3-14b",
+          "head_sha": "23470f82d4b23336a8c10d232376ed34c0f90826",
+          "protected": false
+        },
+        {
+          "name": "nexus-r23-real-power-benchmark",
+          "head_sha": "3c5d5d9b4dadd3ce44195f0cbda5fcdaf94e9fef",
+          "protected": false
+        },
+        {
+          "name": "nexus-r74-teacher-lab-run",
+          "head_sha": "08bbead85db62c8409e16d48dfc731b1efa99de9",
+          "protected": false
+        },
+        {
+          "name": "nexus-v12-smallworld-audit",
+          "head_sha": "93ec2985fc485ecbbc3bd11892fb0f34a7b625dd",
+          "protected": false
+        },
+        {
+          "name": "nexus-v13-world-ru-logic",
+          "head_sha": "1711f4488a705c1d6516c344b01b41364875fe1f",
+          "protected": false
+        },
+        {
+          "name": "nexus-v14-collective-inference",
+          "head_sha": "893ee1fb0c874a6d7fc73b06075e80a84309ed08",
+          "protected": false
+        },
+        {
+          "name": "nexus-v15-collective-ab",
+          "head_sha": "2960d6d7653c72e98cd13722f5a79c5845f64641",
+          "protected": false
+        },
+        {
+          "name": "nexus-v16-distributed-weight-fusion",
+          "head_sha": "70258c102c5d6f04a9635ad73d7c989fb89476cb",
+          "protected": false
+        },
+        {
+          "name": "nexus-v17-four-way-unified",
+          "head_sha": "52185f6560f3f73a906edaa4f9f23dd79262114d",
+          "protected": false
+        },
+        {
+          "name": "nexus-v18-unified-internal-smallworld",
+          "head_sha": "f1465fbb7674018e207be55e0f055da9a0388806",
+          "protected": false
+        },
+        {
+          "name": "nexus-v20-smallworld-1m-release",
+          "head_sha": "85291b0798be2ef03eb6fea8225794756c1896a7",
+          "protected": false
+        },
+        {
+          "name": "nexus-v20-world-agi-bip39",
+          "head_sha": "3b8b19d0486bcf4364bf9b2a593834012e20ba88",
+          "protected": false
+        },
+        {
+          "name": "nexus-v21-collective-inference",
+          "head_sha": "1f8cd8ad323333d4368736f0e3fe22b9d5cad3e9",
+          "protected": false
+        },
+        {
+          "name": "shtenco-archiver-v4-benchmark-run",
+          "head_sha": "1549f10082f9943b043051b2584c310786c4205f",
+          "protected": false
+        },
+        {
+          "name": "shtenco-archiver-v4-math-max",
+          "head_sha": "7b125b449768cef29abec2a0b0a314053398f01a",
+          "protected": false
+        },
+        {
+          "name": "shtenco-graph-ai-v5-all-proprietary",
+          "head_sha": "ce5615eacb76e839d749dbf826d02c1497c71f9f",
+          "protected": false
+        },
+        {
+          "name": "smallworld-agi-v11",
+          "head_sha": "c6639c5801b4fc74c93ed45c24aa944f63f377df",
+          "protected": false
+        },
+        {
+          "name": "tier1-compression-top5-run",
+          "head_sha": "ac8fe5497426ad168b5a93891206f9d1b6f581de",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_agi_trader",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 3,
+      "branches": [
+        {
+          "name": "import/seal-sovereign-trader-foundation",
+          "head_sha": "8575db31a9b579bd07a498ab86cc95f59ed4c766",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "8efe7942ed6c68ac4b081ee44b651ac99fd0ae7c",
+          "protected": false
+        },
+        {
+          "name": "runtime/qwen35-4b-2026-eval",
+          "head_sha": "eadbf502f069739f9cd492538477f6fefbd5b8a8",
+          "protected": false
+        }
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "observed_at": "2026-11-20",
+      "source": "GitHub REST branches API",
+      "branch_count": 32,
+      "branches": [
+        {
+          "name": "base-l3-cross-domain-v2",
+          "head_sha": "2770d79d7f6eb9dbb56ff9fdb05adab2af657cc0",
+          "protected": false
+        },
+        {
+          "name": "chore/portable-ci-artifacts",
+          "head_sha": "ee3e875f6a80fb92cc35b5a4705f7a4f7768b464",
+          "protected": false
+        },
+        {
+          "name": "chore/portable-rust-ci",
+          "head_sha": "9d4d1dd0d7ee17184c34ae269672edcf1a741287",
+          "protected": false
+        },
+        {
+          "name": "feat/agentic-economy-dqn-v1",
+          "head_sha": "9e3ea0ae64b912b7184e937036c44043c331a798",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-commitment-v1-20260823",
+          "head_sha": "f49ecfa0f59fddff1b77475e94e9de14c7eedd2f",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-lab-commitment-v2-20260823",
+          "head_sha": "1794b0c259776ded625a76543d23091be58e2212",
+          "protected": false
+        },
+        {
+          "name": "feat/autopilot-v5-ai-node-preproduction-commitment-v3-20260824",
+          "head_sha": "94b701c77e447a0e8765a1b7a5acf5c9bd98a288",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-authorization-v2-commitments-20260818",
+          "head_sha": "2d081fb1bbda6fa1efa5f05ebf3eb788b0d1cac6",
+          "protected": false
+        },
+        {
+          "name": "feat/capital-cycle-commitments-v1-20260818",
+          "head_sha": "2ffe1b8e5d0d48fa7b1e93b78bde3f12d487892d",
+          "protected": false
+        },
+        {
+          "name": "feat/commitment-v4-revenue-trace-20260818",
+          "head_sha": "5ab9ec3c099504269b1ffce4deff5ff677454f54",
+          "protected": false
+        },
+        {
+          "name": "feat/commitment-v5-accounting-close-trace-v6-20260819",
+          "head_sha": "6f9b2f9f3d587eae708861cb4b691089c985c09f",
+          "protected": false
+        },
+        {
+          "name": "feat/distributed-ai-foundation-v1-20260922",
+          "head_sha": "54de19cb34a80d58f16106bfe6fa1866d0abe9af",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-evidence-commitment-v1-20260828",
+          "head_sha": "b9c87e0a8b4da465e97994a97365f46ce994bd7f",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-os-testnet-v1-20260828",
+          "head_sha": "af12f7e4e09ad77d8c8c90a45611846115526147",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-testnet-local-execution-evidence-v1-20260828",
+          "head_sha": "dd2cd8c1521095b99745f86a58f8df5682acbe52",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-testnet-loopback-3node-evidence-v1-20260828",
+          "head_sha": "409b323b622500f2fb6bfe22260d23364cf7305a",
+          "protected": false
+        },
+        {
+          "name": "feat/economic-testnet-persistent-restart-evidence-v1-20260828",
+          "head_sha": "72a7853fba49d20c208bd2d9776d6c107648b882",
+          "protected": false
+        },
+        {
+          "name": "feat/mvp-canonical-integration-20260924",
+          "head_sha": "87236f5bca1ef02ccd31243ad44c3c74c023e68e",
+          "protected": false
+        },
+        {
+          "name": "feat/p6-pq-mesh-internet",
+          "head_sha": "acbcd172fd3fdd2a7140dfeff60aedcd1309a685",
+          "protected": false
+        },
+        {
+          "name": "feat/p7-node-commander-agent-fabric",
+          "head_sha": "8f7ec8f4dfbf6be18c4160de95170d7efbbe2064",
+          "protected": false
+        },
+        {
+          "name": "feat/p8-adaptive-verification-pq-bridges",
+          "head_sha": "e46d7c742cf9db50d14451f513312686941ed608",
+          "protected": false
+        },
+        {
+          "name": "feat/pq-evm-nexus-v1",
+          "head_sha": "01dbc0fa901c8195bc37c646fa6617ada2b97a99",
+          "protected": false
+        },
+        {
+          "name": "feat/protocol-convergence-pi-pq-evm-syna-v1-20260925",
+          "head_sha": "ed1c62f5eff4f0a88dd7bfc58db2b9c43b03be95",
+          "protected": false
+        },
+        {
+          "name": "feat/settlement-receipt-v2-trace-v3-commitments-20260818",
+          "head_sha": "89e2a1492e615de180295d324e47f4272aac8e5b",
+          "protected": false
+        },
+        {
+          "name": "feat/sinergy-l1-base-qe-v1-20260904",
+          "head_sha": "947eb2248a4caf4e6d0852d86e7b78ce6f388236",
+          "protected": false
+        },
+        {
+          "name": "feat/trust-commitment-v2-20260818",
+          "head_sha": "e1f62a48fba348427c45bc362c8905df1a0a3fb0",
+          "protected": false
+        },
+        {
+          "name": "feat/trust-state-proof-layer-20260817",
+          "head_sha": "f7786361a3f45e19d40fa616220ee00c1403dadf",
+          "protected": false
+        },
+        {
+          "name": "federation-v3-domain-expansion",
+          "head_sha": "bb4aa108d4ceb69a7d7b33f2db1d0facfbec23b5",
+          "protected": false
+        },
+        {
+          "name": "main",
+          "head_sha": "b9353bf52542ed55ec36c30d84046f330df5f1de",
+          "protected": false
+        },
+        {
+          "name": "migration/synergy-723-2026-09",
+          "head_sha": "96f3c4770c00d3c2754922235b1b92234d0dbaa1",
+          "protected": false
+        },
+        {
+          "name": "mvp/local-green-20261001",
+          "head_sha": "a72934cf2b9fbe3a92f0563560c39f2b4a57f5ed",
+          "protected": false
+        },
+        {
+          "name": "pq-internet-phases-1-3",
+          "head_sha": "15e6e973472d9df2d584d632b45bd03d7ce32851",
           "protected": false
         }
       ]
