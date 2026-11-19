@@ -17,10 +17,11 @@
 | Repeated refs to an existing HEAD in the same repository | **86** |
 | Branch SHA values re-fetched from GitHub | **1,294 / 1,294** |
 | Branches reported protected by GitHub API | **0 / 1,294** |
-| Fresh ancestry comparisons against current main in this pass | **15** |
-| Non-main ancestry comparisons pending in this ledger | **1187** |
-| Current global open-PR search results returned | **100 (search cap; not exhaustive)** |
-| Priority PR metadata inspected individually | **6** |
+| Fresh ancestry comparisons against current main in this pass | **23** |
+| Non-main ancestry comparisons pending in this ledger | **1179** |
+| Global open PR count (GitHub search total_count) | **549** |
+| Global closed PR count (GitHub search total_count) | **230** |
+| PRs with full metadata and branch comparison inspected in `synergy_triangle_money_system` | **8 / 8** |
 
 **Important:** all 1,294 branch refs have a live SHA and protection value in the new registry. Two large repositories required page 2 because their first page contained 100 refs: synergy_ai_language (129 total) and synergy_binary_quantum_theory (178 total). The prior census count of 1,294 is now independently reproduced by this full paginated pass.
 
@@ -42,11 +43,18 @@
 ### Evidence and coverage boundaries
 
 - The live SHA registry is complete for branch names, HEAD SHA and GitHub-reported protection state across all 92 repositories.
-- The ancestry ledger currently contains 15 freshly compared non-main refs. Remaining refs are not silently classified; they stay pending until compare_commits(main, branch) completes.
+- The ancestry ledger currently contains 23 freshly compared non-main refs, including all eight V5–V11/R&D branches in `synergy_triangle_money_system`. Remaining 1,179 refs stay pending until compare_commits(main, branch) completes.
 - The canonical branch inventory preserves prior ancestry metadata only where branch HEADs are unchanged. Changed HEADs are marked NOT_COMPARED until rechecked.
-- The global PR search endpoint returned 100 records in this pass and is capped; that is not an exhaustive owner-wide PR count. Full per-repository PR enumeration and metadata enrichment remain open work.
+- GitHub's owner-wide PR search reports 549 open and 230 closed PRs. These are exact aggregate counts from search `total_count`; individual metadata, branch dependencies, reviews and CI still require per-PR enrichment. The eight PRs in `synergy_triangle_money_system` were individually enriched and compared.
 - CI is green only when the exact HEAD has a completed workflow with successful test/build steps and inspectable evidence. A queued run, a failed pre-step job, or an empty step list is not a passing test.
 - Branch protection is currently reported false for every ref by the live branch endpoint. This does not replace a full repository ruleset / branch-protection policy audit.
+
+## Economic engine audit — 2026-11-20
+
+- [STM V11 source, accounting and CI audit](docs/STM_V11_ECONOMIC_AUDIT_2026-11-20.md)
+- [Owner-wide PR aggregate snapshot](registry/ORG_PR_COUNTS_2026-11-20.json)
+
+The V11 experiment is a promising per-block opportunity allocator, but remains draft and CI-red. Gross TVL multipliers are not realized NAV yield. Proportional 20% pool withdrawal does not create price dislocation; burning withdrawn hard assets reduces consolidated NAV. Internal closed-loop arbitrage is NAV-neutral unless a genuine external settlement edge produces net profit after the fair value of assets transferred and all costs.
 
 ## Architecture ownership
 
