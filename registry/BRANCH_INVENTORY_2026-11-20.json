@@ -480,22 +480,34 @@
           "name": "docs/editorial-readme-v1",
           "sha": "403eb313c2b72a5fe7d07bd90788c04b7048a325",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 3,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "2476eb45fefe4badc29c23b2913eee2edc2afe28"
         },
         {
           "name": "docs/research-provenance-20260817",
           "sha": "4649a891f309996ed51edf3c99a55eb4b8263e27",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 55,
+          "merge_base_sha": "d6460192801c8ee11bd87e898ad58276a2b21dc0"
         },
         {
           "name": "feat/portfolio-system-2026",
           "sha": "2d6895515e13c6155511b9403487d285104f70ff",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 33,
+          "merge_base_sha": "2d6895515e13c6155511b9403487d285104f70ff"
         },
         {
           "name": "fix/restore-previous-portfolio-products",
@@ -707,50 +719,78 @@
           "name": "build/sinergy-finance-v3-wallet",
           "sha": "0c50c082a77d3a2765c96ec30fabce0ab04843e4",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 5,
+          "main_ahead_of_branch": 12,
+          "merge_base_sha": "402efdd7acc8f8210d115eeb73af2404b5edd63d"
         },
         {
           "name": "build/sinergy-v65-real",
           "sha": "402efdd7acc8f8210d115eeb73af2404b5edd63d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "ahead",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 12,
+          "merge_base_sha": "402efdd7acc8f8210d115eeb73af2404b5edd63d"
         },
         {
           "name": "docs/editorial-batch03",
           "sha": "873755ebcb122ed073cf19d78f82bab2607096e3",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 2,
+          "main_ahead_of_branch": 4,
+          "merge_base_sha": "336cc9779a8ced1c5965e3aae0197d3e5d0eb750"
         },
         {
           "name": "feature/sinergy-finance-v1",
           "sha": "dd5abc8a2608bd4b20ee964cd0dc84a76505c08d",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 5,
+          "main_ahead_of_branch": 12,
+          "merge_base_sha": "402efdd7acc8f8210d115eeb73af2404b5edd63d"
         },
         {
           "name": "federation-v3-domain-expansion",
           "sha": "63d65b7d00016fe1b6dd8159b3adc5647a6aee86",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 12,
+          "merge_base_sha": "402efdd7acc8f8210d115eeb73af2404b5edd63d"
         },
         {
           "name": "main",
           "sha": "3494f2cdebd0b9510ac65a470b32a085e4920537",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "identical",
+          "branch_ahead_of_main": 0,
+          "main_ahead_of_branch": 0,
+          "merge_base_sha": "3494f2cdebd0b9510ac65a470b32a085e4920537"
         },
         {
           "name": "migration/synergy-723-2026-09",
           "sha": "2a5e042853a63c180cfea4fa6234623ce0dbafcf",
           "protected": false,
-          "head_sha_source": "HISTORICAL_CENSUS_2026-11-20",
-          "head_sha_observed_at": "2026-11-20"
+          "head_sha_source": "LIVE_COMPARE_2026-11-20",
+          "head_sha_observed_at": "2026-11-20",
+          "compare_status_to_main": "diverged",
+          "branch_ahead_of_main": 1,
+          "main_ahead_of_branch": 10,
+          "merge_base_sha": "716e9abdb6c5290dd52c20105694c28dabdedf46"
         }
       ]
     },
