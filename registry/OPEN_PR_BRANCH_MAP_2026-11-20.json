@@ -3,7 +3,7 @@
   "generated_at": "2026-11-20",
   "owner": "Shtenco",
   "repository_count": 92,
-  "open_pr_count": 207,
+  "open_pr_count": 240,
   "scope": "Current open PR discovery performed one repository at a time across all 92 owner repositories. Discovery records contain title/number/URL; per-PR get_pr_info and exact-head CI are separately tracked.",
   "metadata_coverage": "DISCOVERY_ONLY for all entries unless subsequently enriched; old 548-row file was a dated historical snapshot and is superseded.",
   "repositories": [
@@ -77,8 +77,48 @@
     },
     {
       "repository": "Shtenco/synergy_midas_ai_trading_system",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 3,
+      "pull_requests": [
+        {
+          "number": 14,
+          "title": "Run one-shot RoboForex Drive splitter",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_midas_ai_trading_system/pull/14",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 15,
+          "title": "Federation V3: formalize MIDAS institutional lineage promotion rules",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_midas_ai_trading_system/pull/15",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 16,
+          "title": "chore: stage SYNERGY 723-file migration provenance",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_midas_ai_trading_system/pull/16",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/midas_lite",
@@ -87,18 +127,320 @@
     },
     {
       "repository": "Shtenco/synergy_turbo_linux",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 6,
+      "pull_requests": [
+        {
+          "number": 5,
+          "title": "Auto-enable WSL features and improve reboot/elevation diagnostics",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_turbo_linux/pull/5",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 9,
+          "title": "Stage-1F: close real QEMU runtime",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_turbo_linux/pull/9",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 10,
+          "title": "ci: TURBO v37 QEMU + Intel VMX + AMD SVM runtime qualification",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_turbo_linux/pull/10",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 11,
+          "title": "Meta-OS v38 Wave2: pager path, MetaFS v3 and shared CAS",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_turbo_linux/pull/11",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 13,
+          "title": "SECURITY: remove committed unencrypted SSH private key and require rotation",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_turbo_linux/pull/13",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 14,
+          "title": "Federation V3: expand TURBO as host/industrial compute substrate",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_turbo_linux/pull/14",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_agi_olga",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 11,
+      "pull_requests": [
+        {
+          "number": 16,
+          "title": "NEXUS V20: rebuild and calibrate the 1M internal small-world model",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/16",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 19,
+          "title": "Unified 81-system ratio/time/score benchmark — runner probe",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/19",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 20,
+          "title": "NEXUS R2: integrate official Qwen2.5-0.5B cortex",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/20",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 22,
+          "title": "Audit all NEXUS intelligence capabilities with one reproducible harness",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/22",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 23,
+          "title": "Define OLGA/NEXUS bounded authority contract for SINERGY Financial OS",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/23",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 24,
+          "title": "Train full-parameter NEXUS ~106M mobile model",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/24",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 25,
+          "title": "Run NEXUS R7.4 multi-teacher benchmark",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/25",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 26,
+          "title": "NEXUS V18: deterministic export path for SYNERGY PQ-EVM",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/26",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 27,
+          "title": "NEXUS R7.5: falsifiable multinode scaling on R7.4 teacher lab",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/27",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 28,
+          "title": "Stage SYNERGY Protocol Convergence P5 source-locked adapter",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/28",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 29,
+          "title": "REAL Accelerator V10: measured CUDA GPU benchmark",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_agi_olga/pull/29",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_ai_coder",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 6,
+      "pull_requests": [
+        {
+          "number": 1,
+          "title": "Bootstrap SINERGY autonomous engineering orchestration layer",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_coder/pull/1",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 2,
+          "title": "Add deterministic engineering change-set review protocol without autonomous merge authority",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_coder/pull/2",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 3,
+          "title": "Federation V3: expand AI Coder into evidence-backed change orchestration",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_coder/pull/3",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 4,
+          "title": "chore: stage SYNERGY 723-file migration artifacts",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_coder/pull/4",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 6,
+          "title": "Add autonomous engineering foundation: context archive and DAG planner",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_coder/pull/6",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 7,
+          "title": "feat: integrate recursive context archive codecs",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/synergy_ai_coder/pull/7",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_ai_trade_terminal",
@@ -107,8 +449,100 @@
     },
     {
       "repository": "Shtenco/shtencoauantai.github.io",
-      "open_pr_count": 0,
-      "pull_requests": []
+      "open_pr_count": 7,
+      "pull_requests": [
+        {
+          "number": 5,
+          "title": "CI only: V16 Gradient Opportunity Market structural fork proof",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/shtencoauantai.github.io/pull/5",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 6,
+          "title": "CI only: SYNERGY bullish CB 1+1+1 USDT fork gate",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/shtencoauantai.github.io/pull/6",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 7,
+          "title": "Build isolated local SYNA deployment bundle",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/shtencoauantai.github.io/pull/7",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 8,
+          "title": "Run isolated SYNA local deploy bundle v2",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/shtencoauantai.github.io/pull/8",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 9,
+          "title": "Run isolated live SYNA deployment bundle",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/shtencoauantai.github.io/pull/9",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 10,
+          "title": "Financial OS V2: standalone public architecture showcase",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/shtencoauantai.github.io/pull/10",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        },
+        {
+          "number": 11,
+          "title": "Document historical public-surface provenance without changing site",
+          "state": "open",
+          "draft": null,
+          "head_branch": null,
+          "head_sha": null,
+          "base_branch": null,
+          "base_sha": null,
+          "updated_at": null,
+          "url": "https://github.com/Shtenco/shtencoauantai.github.io/pull/11",
+          "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
+        }
+      ]
     },
     {
       "repository": "Shtenco/synergy_cashero",
@@ -118,26 +552,26 @@
           "number": 6,
           "title": "Add cyclic robot models, deterministic simulators, optimizer and live Polygon robot",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_cashero/pull/6",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_cashero/pull/6",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         },
         {
           "number": 8,
           "title": "Preserve Cashero as documented SINERGY legacy lineage",
           "state": "open",
+          "url": "https://github.com/Shtenco/synergy_cashero/pull/8",
           "draft": null,
           "head_branch": null,
           "head_sha": null,
           "base_branch": null,
           "base_sha": null,
           "updated_at": null,
-          "url": "https://github.com/Shtenco/synergy_cashero/pull/8",
           "metadata_status": "DISCOVERY_ONLY_GET_PR_INFO_PENDING"
         }
       ]
