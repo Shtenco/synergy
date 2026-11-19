@@ -11,11 +11,11 @@
 | Default branch `main` | **92/92** |
 | Branch refs | **1294** |
 | Unique HEADs (sum within repositories) | **1208** |
-| Branch SHA from live audit / PR metadata | **1083** |
-| SHA values retained from dated census | **211** |
+| Branch SHA from live audit / PR metadata | **1084** |
+| SHA values retained from dated census | **210** |
 | Currently open PRs discovered repository-by-repository | **549** |
-| PRs with full metadata enriched in this pass | **8** |
-| PRs still discovery-only | **198** |
+| PRs with full metadata enriched in this pass | **18** |
+| PRs still discovery-only | **531** |
 | Security blockers | **4 P0 + 1 P1** |
 | E2E-tested federation edges | **0** |
 
