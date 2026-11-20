@@ -1095,7 +1095,7 @@ repository,branch,head_sha,protected,head_sha_source,head_sha_observed_at,branch
 "Shtenco/synergy_pay_system","feat/pq-migration-adapters-v1","26edb13f8e1cb87dc7e03ec84ea4ee28172f4f49","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","DIVERGED","3","20","8045612ec721f318182a0067faa0b528d099c73b"
 "Shtenco/synergy_pay_system","feat/settlement-receipt-v2-20260818","1c08ea052ac9dd9aac1dcf2dae4cf58c544bd029","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
 "Shtenco/synergy_pay_system","feature/meta-exchange-hybrid-pricing","ed94f5fd2feb5277068b3dbe85a080095139ed15","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","DIVERGED","20","1","a95e1cd938aee8297f26d4ce11b6a722f01cc9c8"
-"Shtenco/synergy_pay_system","federation-v3-domain-expansion","d99f10d622e1ae0cbc2e51ced1ab53037278a3f1","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","DIVERGED","10","20","8045612ec721f318182a0067faa0b528d099c73b"
+"Shtenco/synergy_pay_system","federation-v3-domain-expansion","297a91fa58351e7535a6ecb279d8ec25af84aa3d","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","DIVERGED","11","20","8045612ec721f318182a0067faa0b528d099c73b"
 "Shtenco/synergy_pay_system","integration/protocol-convergence-v1-20260925","79f9b6b7ea5fde190492a1130f995387b5053e8e","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
 "Shtenco/synergy_pay_system","main","d9a05854d3ca38f838c835c56fa5189b536da5a0","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","IDENTICAL","0","0","d9a05854d3ca38f838c835c56fa5189b536da5a0"
 "Shtenco/synergy_pay_system","migration/synergy-723-2026-09","950d6a53ade3e5bc2b92e8dce4b7d1d74b6b5f0e","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
