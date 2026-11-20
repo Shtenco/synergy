@@ -2491,7 +2491,7 @@
     },
     {
       "repository": "Shtenco/synergy_ai_language",
-      "observed_at": "2026-11-20",
+      "observed_at": "2026-11-20T04:14:15Z",
       "source": "GitHub REST branches API",
       "branch_count": 129,
       "branches": [
@@ -2682,7 +2682,7 @@
         },
         {
           "name": "federation-v3-domain-expansion",
-          "head_sha": "02a83b7834d168582fe5542fe4b83e9765bcce22",
+          "head_sha": "2283602887c835656603f3b79f77cb5733b8b8e2",
           "protected": false
         },
         {
