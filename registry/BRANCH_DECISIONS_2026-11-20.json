@@ -2550,17 +2550,17 @@
     {
       "repository": "Shtenco/synergy_financial_os",
       "branch": "feat/external-profit-bus-accounting-v1-20260905",
-      "head_sha": "2b2c1f5b35285c4f32d7e8cfcfa115d6810ef80e",
+      "head_sha": "3cf59025c86943a8f96957dd8a5352358ecede50",
       "base": "main",
       "base_sha": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
       "merge_base_sha": "8577ac3da6515695afd7f15c14837dbe506357d6",
       "status": "diverged",
-      "ahead_by": 449,
+      "ahead_by": 450,
       "behind_by": 24,
-      "total_commits": 449,
-      "observed_at": "2026-11-20",
+      "total_commits": 450,
+      "observed_at": "2026-11-20T04:22:49Z",
       "decision": "DEVELOP",
-      "rationale": "Financial OS ledger, accounting, reversal or federation governance branch has unique implementation/evidence against shared merge base; maintain stack awareness and require exact-head tests before merge.",
+      "rationale": "External Profit Bus child branch received shared setuptools package-discovery fix after an observed canonical-core editable-install failure. Exact-head CI is queued; parent-first stack and full test pass remain required.",
       "merge_ready": false
     },
     {
