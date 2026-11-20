@@ -21,6 +21,9 @@ Priority branch decisions and the complete evidence ledger:
 - [AI Language + BQT complete PR inventory (122 PRs)](registry/PR_INVENTORY_AI_LANGUAGE_BQT_2026-11-20.json)
 - [AI Language + BQT PR dependency / CI audit](docs/AI_LANGUAGE_BQT_PR_CI_AUDIT_2026-11-20.md)
 - [Machine-readable AI Language + BQT CI audit](registry/AI_LANGUAGE_BQT_PR_CI_AUDIT_2026-11-20.json)
+- [Financial OS + SYNERGY System PR inventory (93 PRs)](registry/PR_INVENTORY_FINANCIAL_OS_SYNERGY_SYSTEM_2026-11-20.json)
+- [Financial OS + federation PR/CI audit](docs/FINANCIAL_OS_FEDERATION_PR_CI_AUDIT_2026-11-20.md)
+- [Machine-readable Financial OS + federation audit](registry/FINANCIAL_OS_FEDERATION_PR_CI_AUDIT_2026-11-20.json)
 
 Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` applies to ahead/diverged work; `ARCHIVE-CANDIDATE` is review-only for behind-only refs and requires checking PRs, tags, releases, deployments and external references; `MERGE-READY` requires a non-draft PR, no conflicts, successful exact-HEAD CI with visible test/build steps, resolved stack dependencies and review approval. No destructive branch operation was performed.
 ## Live governance snapshot — 2026-11-20
