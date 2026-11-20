@@ -7239,7 +7239,7 @@
         },
         {
           "name": "feat/external-profit-import-v1-20260905",
-          "sha": "bf67bf9b2a5e98d44bd02e40e9a704b44492a3a6",
+          "sha": "5338ded06c76e574d8061c13a7e42b9b470f23fc",
           "protected": false,
           "head_sha_source": "LIVE_REST_BRANCHES_API_2026-11-20",
           "head_sha_observed_at": "2026-11-20",
