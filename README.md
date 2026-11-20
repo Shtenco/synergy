@@ -35,12 +35,19 @@ Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` appli
 | Repeated refs to an existing HEAD in the same repository | **86** |
 | Branch SHA values re-fetched from GitHub | **1,294 / 1,294** |
 | Branches reported protected by GitHub API | **0 / 1,294** |
-| Fresh ancestry comparisons against current main in this pass | **15** |
-| Non-main ancestry comparisons pending in this ledger | **1187** |
+| Fresh ancestry comparisons against current main in this pass | **105** |
+| Non-main ancestry comparisons pending in this ledger | **1,097** |
 | Current global open-PR search results returned | **100 (search cap; not exhaustive)** |
-| Priority PR metadata inspected individually | **6** |
+| Priority PR metadata inspected individually | **14** |
 
 **Important:** all 1,294 branch refs have a live SHA and protection value in the new registry. Two large repositories required page 2 because their first page contained 100 refs: synergy_ai_language (129 total) and synergy_binary_quantum_theory (178 total). The prior census count of 1,294 is now independently reproduced by this full paginated pass.
+
+## Cross-repository functional duplication — 2026-11-20
+
+A focused live Git-tree/blob comparison found a repeated enterprise/runtime scaffold across seven trading products. Their domain cores and typed contracts remain distinct; all seven stay separate (`KEEP`), while extraction of the shared foundation is `DEVELOP`. Two inspected PR CI runs failed before any test/lint step and remain `BLOCKED`.
+
+- [Exact cross-repository duplicate audit](https://github.com/Shtenco/synergy_system/blob/main/docs/CROSS_REPOSITORY_DUPLICATE_AUDIT_2026-11-20.md)
+- [Machine-readable duplicate and CI evidence registry](https://github.com/Shtenco/synergy_system/blob/main/registry/FUNCTIONAL_DUPLICATE_AUDIT_2026-11-20.json)
 
 ## Canonical registries and audit reports
 
