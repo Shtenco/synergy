@@ -49,6 +49,10 @@ A focused live Git-tree/blob comparison found a repeated enterprise/runtime scaf
 - [Exact cross-repository duplicate audit](https://github.com/Shtenco/synergy_system/blob/main/docs/CROSS_REPOSITORY_DUPLICATE_AUDIT_2026-11-20.md)
 - [Machine-readable duplicate and CI evidence registry](https://github.com/Shtenco/synergy_system/blob/main/registry/FUNCTIONAL_DUPLICATE_AUDIT_2026-11-20.json)
 
+## Memory, archive and mission boundaries
+
+Three complementary implementations were source-reviewed: AI Coder's engineering context archive, Long Term Harness's content-addressed memory plus mission ledger, and Hierarchical Cognitive Memory's graph/trust/RAG store. They overlap in durable provenance-backed memory but have different authorities; no monolithic memory repo or mandatory shared runtime is proposed. [Boundary audit](https://github.com/Shtenco/synergy_system/blob/main/docs/MEMORY_ARCHIVE_MISSION_BOUNDARY_AUDIT_2026-11-20.md) · [JSON registry](https://github.com/Shtenco/synergy_system/blob/main/registry/MEMORY_ARCHIVE_MISSION_BOUNDARY_AUDIT_2026-11-20.json).
+
 ## Canonical registries and audit reports
 
 - [Owner repository inventory JSON](registry/repos.json)
