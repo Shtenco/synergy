@@ -40,7 +40,9 @@ Twenty-four direct dependency edges were detected where a PR's `base.ref` exactl
 **PR #33 — federation V3 semantic requirements**
 - Exact head: `02a83b7834d168582fe5542fe4b83e9765bcce22`.
 - CI reached a real runner. Dependency installation succeeded; Ruff lint failed and the test step was skipped.
-- The log reports **195 lint errors**, prominently E701/E702 (multiple statements on one line), E401 (multiple imports on one line), and E722 (bare except). Errors are concentrated in older benchmark/teacher runner scripts such as `nexus_r710_blind27/run_teacher.py`; the failure is not a pytest regression because pytest did not run.
+- The log reports **195 lint errors**, all confined to seven frozen benchmark/teacher artifacts: `nexus_r74_blind22/run_teacher.py`, `nexus_r77_blind24/run_teacher.py`, `nexus_r78_blind25/run_teacher.py`, `nexus_r78_arbitration/native_authority.py`, `nexus_r79_blind26/run_teacher.py`, `nexus_r710_blind27/run_teacher.py` and `nexus_r712_blind28/run_teacher.py`. The errors are E701/E702, E401 and E722; the failure is not a pytest regression because pytest did not run.
+- A narrow Ruff exclusion for exactly those seven frozen files was committed to the PR branch as `2283602887c835656603f3b79f77cb5733b8b8e2`. Runtime package and tests remain under the configured Ruff rules.
+- Exact-head CI rerun `44673053300` was queued at the last status check; lint and tests are not yet verified after the fix.
 - Recommendation: decide and encode the intended lint boundary (production package vs frozen benchmark/reproducibility scripts). Do not suppress lint globally; if frozen scripts are intentionally immutable, use a documented, narrow per-path exclusion and lint all maintained runtime code.
 
 **PR #17 — AI Language v0.4 hardening**
@@ -71,7 +73,7 @@ Twenty-four direct dependency edges were detected where a PR's `base.ref` exactl
 
 ## Branch ancestry evidence
 
-The central ancestry ledger now contains **187 / 1,202** non-main comparisons, with **1,015 pending**. Current statuses in the ledger: 8 ahead, 17 behind, 162 diverged. The 14 new AI Language/BQT comparisons show:
+The central ancestry ledger now contains **187 / 1,202** non-main comparisons, with **1,015 pending**. AI Language PR #33's branch SHA was refreshed after the Ruff-scope fix; its current ancestry remains 2 ahead / 9 behind. Current statuses in the ledger: 8 ahead, 17 behind, 162 diverged. The 14 new AI Language/BQT comparisons show:
 - AI Language semantic-memory bridge: 152 ahead / 63 behind; large, diverged integration, not a quick merge.
 - AI Language federation V3 branch: 1 ahead / 9 behind.
 - AI Language v0.4 hardening: 4 ahead / 66 behind.
