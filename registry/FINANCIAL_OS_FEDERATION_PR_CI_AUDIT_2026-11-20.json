@@ -60,6 +60,13 @@
         "ahead": 23,
         "behind": 24,
         "head_sha": "935780514b2b3ff2c93a16bbfdfaaab0bc2f7d24"
+      },
+      {
+        "pr": 37,
+        "branch": "feat/external-profit-bus-accounting-v1-20260905",
+        "ahead": 450,
+        "behind": 24,
+        "head_sha": "3cf59025c86943a8f96957dd8a5352358ecede50"
       }
     ],
     "external_profit_import_review": {
@@ -170,6 +177,16 @@
         "status": "failure",
         "runner_id": 0,
         "steps": 0
+      },
+      {
+        "pr": 37,
+        "sha": "3cf59025c86943a8f96957dd8a5352358ecede50",
+        "runs": [
+          44674005509,
+          44674005492
+        ],
+        "status": "queued",
+        "fix_commit": "3cf59025c86943a8f96957dd8a5352358ecede50"
       }
     ]
   },
