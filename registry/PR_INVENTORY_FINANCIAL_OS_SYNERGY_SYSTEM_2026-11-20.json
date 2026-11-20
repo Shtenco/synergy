@@ -593,11 +593,11 @@
       "state": "open",
       "draft": true,
       "head_ref": "feat/external-profit-import-v1-20260905",
-      "head_sha": "5338ded06c76e574d8061c13a7e42b9b470f23fc",
+      "head_sha": "37fdb3b2ae8c2a70815d36020e910a283567d84f",
       "base_ref": "feat/distribution-available-capacity-v4-refund-restored-20260828",
       "base_sha": "d21ce6b5bd91422c45f938b2d4ec641974106944",
       "merged_at": null,
-      "updated_at": "2026-11-20T04:00:18Z",
+      "updated_at": "2026-11-20T04:17:33Z",
       "url": "https://github.com/Shtenco/synergy_financial_os/pull/38"
     },
     {
@@ -663,11 +663,11 @@
       "state": "open",
       "draft": true,
       "head_ref": "feat/distribution-available-capacity-v4-refund-restored-20260828",
-      "head_sha": "d21ce6b5bd91422c45f938b2d4ec641974106944",
+      "head_sha": "11e692e71a01bc50ea8e68cd04f8083844a0070d",
       "base_ref": "main",
       "base_sha": "8577ac3da6515695afd7f15c14837dbe506357d6",
       "merged_at": null,
-      "updated_at": "2026-08-28T11:38:31Z",
+      "updated_at": "2026-11-20T04:19:09Z",
       "url": "https://github.com/Shtenco/synergy_financial_os/pull/33"
     },
     {
@@ -677,11 +677,11 @@
       "state": "open",
       "draft": true,
       "head_ref": "feat/distribution-available-capacity-v4-refund-restored-20260828",
-      "head_sha": "d21ce6b5bd91422c45f938b2d4ec641974106944",
+      "head_sha": "11e692e71a01bc50ea8e68cd04f8083844a0070d",
       "base_ref": "feat/distribution-budget-state-v3-fee-refund-restoration-20260828",
       "base_sha": "753ed935ca704626e3ebdfa79a898d34f58d3732",
       "merged_at": null,
-      "updated_at": "2026-08-28T09:11:59Z",
+      "updated_at": "2026-11-20T04:19:09Z",
       "url": "https://github.com/Shtenco/synergy_financial_os/pull/32"
     },
     {
