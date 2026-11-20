@@ -1,0 +1,263 @@
+{
+  "generated_at": "2026-11-20",
+  "scope": {
+    "repositories": [
+      "Shtenco/synergy_financial_os",
+      "Shtenco/synergy_system"
+    ],
+    "pr_inventory": "registry/PR_INVENTORY_FINANCIAL_OS_SYNERGY_SYSTEM_2026-11-20.json",
+    "total_prs": 93,
+    "open": 86,
+    "closed": 7,
+    "drafts": 84,
+    "merged": 2,
+    "dependency_edges": 78
+  },
+  "duplicate_head_refs": [
+    {
+      "repository": "Shtenco/synergy_financial_os",
+      "branch": "feat/distribution-available-capacity-v4-refund-restored-20260828",
+      "prs": [
+        32,
+        33
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/economic-os-rc5-canonical-capture-ready-20260828",
+      "prs": [
+        34,
+        35
+      ]
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "branch": "feat/economic-os-rc4-local-persistence-restart-20260828",
+      "prs": [
+        31,
+        32
+      ]
+    }
+  ],
+  "financial_os": {
+    "ancestry": [
+      {
+        "pr": 38,
+        "branch": "feat/external-profit-import-v1-20260905",
+        "ahead": 452,
+        "behind": 24,
+        "head_sha": "37fdb3b2ae8c2a70815d36020e910a283567d84f"
+      },
+      {
+        "parent_branch": "feat/distribution-available-capacity-v4-refund-restored-20260828",
+        "ahead": 444,
+        "behind": 24,
+        "head_sha": "11e692e71a01bc50ea8e68cd04f8083844a0070d"
+      },
+      {
+        "pr": 39,
+        "branch": "federation-v3-domain-expansion",
+        "ahead": 23,
+        "behind": 24,
+        "head_sha": "935780514b2b3ff2c93a16bbfdfaaab0bc2f7d24"
+      }
+    ],
+    "external_profit_import_review": {
+      "safeguards": [
+        "fixed schema id",
+        "finite Decimal amounts",
+        "evidence and route hex64 digests",
+        "provider references and source repository required",
+        "only REALIZED_EXTERNAL_PNL may post",
+        "external cash delta must cover canonical P&L",
+        "same settlement/reporting currency required",
+        "USD/USDT are not conflated",
+        "external asset and external revenue accounts required",
+        "double-entry and duplicate-reference guard"
+      ],
+      "bug": "caller metadata could override authoritative ledger evidence metadata",
+      "fix_commits": [
+        "1accffbadaf3593bd8dbb08b85893636a5fc70db",
+        "37fdb3b2ae8c2a70815d36020e910a283567d84f"
+      ],
+      "reserved_keys": [
+        "economic_class",
+        "source",
+        "source_repository",
+        "settlement_asset",
+        "route_digest",
+        "provider_references"
+      ],
+      "tests_added": 6
+    },
+    "package_discovery_fix": {
+      "branch": "feat/distribution-available-capacity-v4-refund-restored-20260828",
+      "commit": "11e692e71a01bc50ea8e68cd04f8083844a0070d",
+      "include": [
+        "sinergy_financial_os*"
+      ],
+      "exclude": [
+        "tests*"
+      ],
+      "reason": "setuptools had auto-discovered config, schemas, fixtures and package root as multiple top-level packages"
+    },
+    "ci": [
+      {
+        "pr": 38,
+        "sha": "37fdb3b2ae8c2a70815d36020e910a283567d84f",
+        "runs": [
+          44673424885,
+          44673424697
+        ],
+        "status": "queued"
+      },
+      {
+        "parent_branch_sha": "11e692e71a01bc50ea8e68cd04f8083844a0070d",
+        "runs": [
+          44673594162,
+          44673594230
+        ],
+        "status": "queued"
+      },
+      {
+        "pr": 37,
+        "run": 33986972856,
+        "status": "failure",
+        "runner_id": 1000013689,
+        "steps": 9,
+        "failure": "setuptools flat-layout multiple top-level packages discovered"
+      },
+      {
+        "pr": 39,
+        "runs": [
+          43754510440,
+          43754505581
+        ],
+        "status": "failure",
+        "runner_id": 0,
+        "steps": 0
+      },
+      {
+        "pr38_old_sha": "5338ded06c76e574d8061c13a7e42b9b470f23fc",
+        "runs": [
+          44671468005,
+          44671467993
+        ],
+        "status": "failure",
+        "runner_id": 0,
+        "steps": 0
+      }
+    ]
+  },
+  "synergy_system": {
+    "ancestry": [
+      {
+        "pr": 54,
+        "branch": "docs/sumi-phase0-audit-20261119",
+        "ahead": 1,
+        "behind": 139,
+        "mergeable": false,
+        "ci": "no exact-head run"
+      },
+      {
+        "pr": 46,
+        "branch": "synergy-federation-v3-origin-integration",
+        "ahead": 44,
+        "behind": 345,
+        "ci": "success",
+        "runs": [
+          34024853507,
+          34024851280
+        ]
+      },
+      {
+        "pr": 47,
+        "branch": "federation-v3-contracts",
+        "ahead": 28,
+        "behind": 345,
+        "ci": "success",
+        "runs": [
+          34027306933,
+          34027305471
+        ]
+      },
+      {
+        "pr": 48,
+        "branch": "federation-v3-secure-event-fabric",
+        "ahead": 44,
+        "behind": 345,
+        "ci": "success",
+        "runs": [
+          34029029582,
+          34029029416,
+          34029027878
+        ]
+      },
+      {
+        "pr": 49,
+        "branch": "feat/federation-trust-registry-v1",
+        "ahead": 71,
+        "behind": 337,
+        "mergeable": true,
+        "ci": "runner startup failure",
+        "runs": [
+          35351822855,
+          35351818432
+        ]
+      }
+    ],
+    "pr_details": [
+      {
+        "pr": 46,
+        "draft": false,
+        "mergeable": true,
+        "commits": 5,
+        "files": 5,
+        "additions": 818
+      },
+      {
+        "pr": 47,
+        "draft": false,
+        "mergeable": true,
+        "commits": 23,
+        "files": 18,
+        "additions": 1348
+      },
+      {
+        "pr": 48,
+        "draft": false,
+        "mergeable": true,
+        "commits": 16,
+        "files": 13,
+        "additions": 1617
+      },
+      {
+        "pr": 49,
+        "draft": false,
+        "mergeable": true,
+        "commits": 71,
+        "files": 48,
+        "additions": 8957
+      },
+      {
+        "pr": 54,
+        "draft": true,
+        "mergeable": false,
+        "commits": 1,
+        "files": 1,
+        "additions": 309
+      }
+    ]
+  },
+  "decisions": {
+    "merge_ready": 0,
+    "merge_operations": 0,
+    "close_operations": 0,
+    "branch_deletions": 0
+  },
+  "limitations": [
+    "CI status on queued runs can change after the observation timestamp; no post-fix green result claimed.",
+    "Mergeable metadata is a point-in-time GitHub value and does not replace fresh exact-head CI, review approval and parent-first dependency closure.",
+    "78 dependency edges include branch-name matches; duplicate PR heads make some parent relations ambiguous."
+  ]
+}
