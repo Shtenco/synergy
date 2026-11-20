@@ -4785,7 +4785,7 @@
     },
     {
       "repository": "Shtenco/synergy_financial_os",
-      "observed_at": "2026-11-20T04:19:09Z",
+      "observed_at": "2026-11-20T04:22:49Z",
       "source": "GitHub REST branches API",
       "branch_count": 40,
       "branches": [
@@ -4906,7 +4906,7 @@
         },
         {
           "name": "feat/external-profit-bus-accounting-v1-20260905",
-          "head_sha": "2b2c1f5b35285c4f32d7e8cfcfa115d6810ef80e",
+          "head_sha": "3cf59025c86943a8f96957dd8a5352358ecede50",
           "protected": false
         },
         {
