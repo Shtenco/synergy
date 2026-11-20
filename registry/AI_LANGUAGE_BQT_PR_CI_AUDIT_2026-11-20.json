@@ -42,7 +42,11 @@
           "E722"
         ],
         "dependencies_installed": true,
-        "tests_skipped": true
+        "tests_skipped": true,
+        "fix_commit": "2283602887c835656603f3b79f77cb5733b8b8e2",
+        "rerun_id": 44673053300,
+        "rerun_status": "queued",
+        "remediation": "Narrowly exclude seven frozen NEXUS benchmark artifacts from Ruff; runtime package and tests remain subject to full configured lint rules."
       },
       {
         "pr": 17,
