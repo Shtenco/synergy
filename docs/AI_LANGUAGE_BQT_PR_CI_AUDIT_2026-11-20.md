@@ -42,7 +42,7 @@ Twenty-four direct dependency edges were detected where a PR's `base.ref` exactl
 - CI reached a real runner. Dependency installation succeeded; Ruff lint failed and the test step was skipped.
 - The log reports **195 lint errors**, all confined to seven frozen benchmark/teacher artifacts: `nexus_r74_blind22/run_teacher.py`, `nexus_r77_blind24/run_teacher.py`, `nexus_r78_blind25/run_teacher.py`, `nexus_r78_arbitration/native_authority.py`, `nexus_r79_blind26/run_teacher.py`, `nexus_r710_blind27/run_teacher.py` and `nexus_r712_blind28/run_teacher.py`. The errors are E701/E702, E401 and E722; the failure is not a pytest regression because pytest did not run.
 - A narrow Ruff exclusion for exactly those seven frozen files was committed to the PR branch as `2283602887c835656603f3b79f77cb5733b8b8e2`. Runtime package and tests remain under the configured Ruff rules.
-- Exact-head CI rerun `44673053300` was queued at the last status check; lint and tests are not yet verified after the fix.
+- Exact-head CI rerun `44673053300` subsequently failed before runner allocation (`runner_id=0`, no steps). The Ruff exclusion fix is committed, but lint and tests are not verified after the fix.
 - Recommendation: decide and encode the intended lint boundary (production package vs frozen benchmark/reproducibility scripts). Do not suppress lint globally; if frozen scripts are intentionally immutable, use a documented, narrow per-path exclusion and lint all maintained runtime code.
 
 **PR #17 — AI Language v0.4 hardening**
