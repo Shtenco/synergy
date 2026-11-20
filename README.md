@@ -4,13 +4,13 @@
 
 ## Branch ancestry and decision ledger — 2026-11-20
 
-Fresh GitHub `compare_commits(main, branch)` checks have been performed for **137 / 1,202 non-main branch refs** in the current incremental pass. The remaining 1,065 are explicitly pending; no inference is made for unchecked branches.
+Fresh GitHub `compare_commits(main, branch)` checks have been performed for **187 / 1,202 non-main branch refs** in the current incremental pass. The remaining 1,015 are explicitly pending; no inference is made for unchecked branches.
 
 | Compared status | Count | Meaning |
 |---|---:|---|
-| Ahead | 7 | Branch has unique commits, no main-only commits since merge base |
+| Ahead | 8 | Branch has unique commits, no main-only commits since merge base |
 | Behind | 17 | No unique branch commits ahead of main; candidate for archival review, not automatic deletion |
-| Diverged | 113 | Both branch and main contain unique commits; requires conflict-aware review |
+| Diverged | 162 | Both branch and main contain unique commits; requires conflict-aware review |
 | Merge-ready | **0** | No branch is promoted without exact-head CI and PR/dependency gates |
 
 Priority branch decisions and the complete evidence ledger:
@@ -18,6 +18,9 @@ Priority branch decisions and the complete evidence ledger:
 - [Evidence-based branch decisions](registry/BRANCH_DECISIONS_2026-11-20.json)
 - [Duplicate branch HEAD groups](registry/BRANCH_DUPLICATE_HEADS_2026-11-20.json)
 - [Priority PR dependency and CI audit](registry/PR_BRANCH_DEPENDENCY_AUDIT_2026-11-20.json)
+- [AI Language + BQT complete PR inventory (122 PRs)](registry/PR_INVENTORY_AI_LANGUAGE_BQT_2026-11-20.json)
+- [AI Language + BQT PR dependency / CI audit](docs/AI_LANGUAGE_BQT_PR_CI_AUDIT_2026-11-20.md)
+- [Machine-readable AI Language + BQT CI audit](registry/AI_LANGUAGE_BQT_PR_CI_AUDIT_2026-11-20.json)
 
 Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` applies to ahead/diverged work; `ARCHIVE-CANDIDATE` is review-only for behind-only refs and requires checking PRs, tags, releases, deployments and external references; `MERGE-READY` requires a non-draft PR, no conflicts, successful exact-HEAD CI with visible test/build steps, resolved stack dependencies and review approval. No destructive branch operation was performed.
 ## Live governance snapshot — 2026-11-20
@@ -35,16 +38,17 @@ Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` appli
 | Repeated refs to an existing HEAD in the same repository | **86** |
 | Branch SHA values re-fetched from GitHub | **1,294 / 1,294** |
 | Branches reported protected by GitHub API | **0 / 1,294** |
-| Fresh ancestry comparisons against current main in this pass | **137** |
-| Non-main ancestry comparisons pending in this ledger | **1,065** |
+| Fresh ancestry comparisons against current main in this pass | **187** |
+| Non-main ancestry comparisons pending in this ledger | **1,015** |
 | Current global open-PR search results returned | **100 (search cap; not exhaustive)** |
 | Priority PR metadata inspected individually | **14** |
+| Complete PR inventory in AI Language + BQT | **122 / 122** |
 
 **Important:** all 1,294 branch refs have a live SHA and protection value in the new registry. Two large repositories required page 2 because their first page contained 100 refs: synergy_ai_language (129 total) and synergy_binary_quantum_theory (178 total). The prior census count of 1,294 is now independently reproduced by this full paginated pass.
 
 ## Cross-repository functional duplication — 2026-11-20
 
-A focused live Git-tree/blob comparison found a repeated enterprise/runtime scaffold across nine trading products (29 files identical across all nine), while product cores/contracts remain distinct (`KEEP`). Per the product-line V3 master specification, no mandatory shared runtime is to be introduced; develop a versioned production-contract specification and per-repository conformance tests (`DEVELOP`). Two memory projects and the Autopilot/Long-Term Harness mission stores also have overlapping but complementary roles; keep the repositories separate and develop explicit memory and mission lifecycle contracts. CI is currently blocked. Six original trading main runs reached pytest and exposed concrete route-test, release-metadata and TradeMux decimal-serialization defects; fixes are committed in the product repositories. Post-fix Actions runs and retries now fail or remain queued before any runner step (`runner_id=0` / empty steps), so no post-fix test pass is proven. Multiple feature-branch PR checks also never reached tests. Central federation maturity and typed-contract validators likewise failed before steps; no schema assertions are proven to have run. Financial OS PR #38's canonical CI exposed setuptools flat-layout package discovery; a targeted pyproject fix is committed on the PR branch, but its exact-head reruns also failed before runner steps. No merge-ready status is justified.
+A focused live Git-tree/blob comparison found a repeated enterprise/runtime scaffold across nine trading products (29 files identical across all nine), while product cores/contracts remain distinct (`KEEP`). Per the product-line V3 master specification, no mandatory shared runtime is to be introduced; develop a versioned production-contract specification and per-repository conformance tests (`DEVELOP`). Two memory projects and the Autopilot/Long-Term Harness mission stores also have overlapping but complementary roles; keep the repositories separate and develop explicit memory and mission lifecycle contracts. CI is currently blocked. Six original trading main runs reached pytest and exposed concrete route-test, release-metadata and TradeMux decimal-serialization defects; fixes are committed in the product repositories. Post-fix Actions runs and retries now fail before any runner step (`runner_id=0` / empty steps), so no post-fix test pass is proven. Separate AI Language/BQT audit covers 122 PRs and 24 stack dependencies; see the new PR/CI dossier. Multiple feature-branch PR checks also never reached tests. Central federation maturity and typed-contract validators likewise failed before steps; no schema assertions are proven to have run. Financial OS PR #38's canonical CI exposed setuptools flat-layout package discovery; a targeted pyproject fix is committed on the PR branch, but its exact-head reruns also failed before runner steps. No merge-ready status is justified.
 
 - [Exact cross-repository duplicate audit](https://github.com/Shtenco/synergy_system/blob/main/docs/CROSS_REPOSITORY_DUPLICATE_AUDIT_2026-11-20.md)
 - [Machine-readable duplicate and CI evidence registry](https://github.com/Shtenco/synergy_system/blob/main/registry/FUNCTIONAL_DUPLICATE_AUDIT_2026-11-20.json)
