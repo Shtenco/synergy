@@ -4,13 +4,13 @@
 
 ## Branch ancestry and decision ledger — 2026-11-20
 
-Fresh GitHub `compare_commits(main, branch)` checks have been performed for **187 / 1,202 non-main branch refs** in the current incremental pass. The remaining 1,015 are explicitly pending; no inference is made for unchecked branches.
+Fresh GitHub `compare_commits(main, branch)` checks have been performed for **207 / 1,202 non-main branch refs** in the current incremental pass. The remaining 995 are explicitly pending; no inference is made for unchecked branches.
 
 | Compared status | Count | Meaning |
 |---|---:|---|
-| Ahead | 8 | Branch has unique commits, no main-only commits since merge base |
+| Ahead | 9 | Branch has unique commits, no main-only commits since merge base |
 | Behind | 17 | No unique branch commits ahead of main; candidate for archival review, not automatic deletion |
-| Diverged | 162 | Both branch and main contain unique commits; requires conflict-aware review |
+| Diverged | 181 | Both branch and main contain unique commits; requires conflict-aware review |
 | Merge-ready | **0** | No branch is promoted without exact-head CI and PR/dependency gates |
 
 Priority branch decisions and the complete evidence ledger:
@@ -44,8 +44,8 @@ Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` appli
 | Repeated refs to an existing HEAD in the same repository | **86** |
 | Branch SHA values re-fetched from GitHub | **1,294 / 1,294** |
 | Branches reported protected by GitHub API | **0 / 1,294** |
-| Fresh ancestry comparisons against current main in this pass | **187** |
-| Non-main ancestry comparisons pending in this ledger | **1,015** |
+| Fresh ancestry comparisons against current main in this pass | **207** |
+| Non-main ancestry comparisons pending in this ledger | **995** |
 | Current global open-PR search results returned | **100 (search cap; not exhaustive)** |
 | Priority PR metadata inspected individually | **14** |
 | Complete PR inventory in AI Language + BQT | **122 / 122** |
