@@ -215,11 +215,11 @@
       "state": "open",
       "draft": false,
       "head_ref": "federation-v3-domain-expansion",
-      "head_sha": "d99f10d622e1ae0cbc2e51ced1ab53037278a3f1",
+      "head_sha": "297a91fa58351e7535a6ecb279d8ec25af84aa3d",
       "base_ref": "main",
       "base_sha": "8045612ec721f318182a0067faa0b528d099c73b",
       "merged_at": null,
-      "updated_at": "2026-11-20T04:26:53Z",
+      "updated_at": "2026-11-20T04:27:40Z",
       "url": "https://github.com/Shtenco/synergy_pay_system/pull/20"
     },
     {
