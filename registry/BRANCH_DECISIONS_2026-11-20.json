@@ -3046,17 +3046,17 @@
     {
       "repository": "Shtenco/synergy_pay_system",
       "branch": "federation-v3-domain-expansion",
-      "head_sha": "d99f10d622e1ae0cbc2e51ced1ab53037278a3f1",
+      "head_sha": "297a91fa58351e7535a6ecb279d8ec25af84aa3d",
       "base": "main",
       "base_sha": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
       "merge_base_sha": "8045612ec721f318182a0067faa0b528d099c73b",
       "status": "diverged",
-      "ahead_by": 10,
+      "ahead_by": 11,
       "behind_by": 20,
-      "total_commits": 10,
-      "observed_at": "2026-11-20T04:26:53Z",
+      "total_commits": 11,
+      "observed_at": "2026-11-20T04:27:40Z",
       "decision": "DEVELOP",
-      "rationale": "Three fixable Ruff findings from the federation outbox change were corrected in source/tests. Exact-head CI is queued; branch remains 10 ahead / 20 behind main and needs a rebase plus green CI.",
+      "rationale": "Three fixable Ruff findings were corrected in federation outbox source/tests; a follow-up import-order correction was added. Exact-head CI is queued; branch remains 11 ahead / 20 behind main and requires rebase plus green CI.",
       "merge_ready": false
     },
     {
