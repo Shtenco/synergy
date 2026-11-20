@@ -6360,7 +6360,7 @@
     },
     {
       "repository": "Shtenco/synergy_pay_system",
-      "observed_at": "2026-11-20",
+      "observed_at": "2026-11-20T04:26:53Z",
       "source": "GitHub REST branches API",
       "branch_count": 27,
       "branches": [
@@ -6476,7 +6476,7 @@
         },
         {
           "name": "federation-v3-domain-expansion",
-          "head_sha": "8fae2d65198b4faa2489af6b713faf9b790c22cf",
+          "head_sha": "d99f10d622e1ae0cbc2e51ced1ab53037278a3f1",
           "protected": false
         },
         {
