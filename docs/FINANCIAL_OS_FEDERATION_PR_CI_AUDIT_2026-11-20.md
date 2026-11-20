@@ -59,7 +59,7 @@ New exact-head workflows for PR #38 and the shared parent were queued at the las
 - Shared parent canonical-core CI: run [44673594162](https://github.com/Shtenco/synergy_financial_os/actions/runs/44673594162).
 - Shared parent DistributionAvailableCapacity v4: run [44673594230](https://github.com/Shtenco/synergy_financial_os/actions/runs/44673594230).
 
-No post-fix green result is claimed yet. The earlier PR #38 attempts at SHA `5338ded...` failed before runner steps (`runner_id=0`); the earlier PR #37 packaging failure was a real runner-side setuptools error.
+No post-fix green result is claimed yet. After the source/test commits, PR #38's External Profit Import workflow (run `44673424697`) failed before runner allocation (`runner_id=0`, zero steps); its canonical-core run `44673424885` remained queued. The shared parent canonical-core run `44673594162` also failed before runner allocation, while the DistributionAvailableCapacity v4 run `44673594230` remained queued. The earlier PR #38 attempts at SHA `5338ded...` failed before runner steps; the earlier PR #37 packaging failure was a real runner-side setuptools error. Thus the package and metadata fixes remain unverified by CI.
 
 ### PR #39
 
