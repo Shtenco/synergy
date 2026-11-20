@@ -1,0 +1,324 @@
+{
+  "generated_at": "2026-11-20",
+  "scope": {
+    "repositories": [
+      "Shtenco/synergy_pay_system",
+      "Shtenco/synergy_ai_financial_system"
+    ],
+    "pr_inventory": "registry/PR_INVENTORY_PAY_SYSTEM_AI_FINANCIAL_2026-11-20.json",
+    "total_prs": 48,
+    "open": 37,
+    "closed": 11,
+    "drafts": 31,
+    "merged": 9,
+    "dependency_edges": 18
+  },
+  "ancestry": {
+    "compared_branches": 20,
+    "results": [
+      {
+        "repo": "synergy_pay_system",
+        "pr": 24,
+        "ahead": 32,
+        "behind": 0,
+        "status": "ahead"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 23,
+        "ahead": 20,
+        "behind": 1,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 20,
+        "ahead": 10,
+        "behind": 20,
+        "status": "diverged",
+        "head_sha": "d99f10d622e1ae0cbc2e51ced1ab53037278a3f1"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 19,
+        "ahead": 97,
+        "behind": 20,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 18,
+        "ahead": 87,
+        "behind": 20,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 17,
+        "ahead": 72,
+        "behind": 20,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 16,
+        "ahead": 70,
+        "behind": 20,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 8,
+        "ahead": 20,
+        "behind": 20,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 7,
+        "ahead": 3,
+        "behind": 20,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_pay_system",
+        "pr": 1,
+        "ahead": 1,
+        "behind": 79,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 22,
+        "ahead": 123,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 21,
+        "ahead": 1,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 20,
+        "ahead": 4,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 17,
+        "ahead": 65,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 16,
+        "ahead": 224,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 15,
+        "ahead": 109,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 13,
+        "ahead": 94,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 11,
+        "ahead": 18,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 9,
+        "ahead": 125,
+        "behind": 15,
+        "status": "diverged"
+      },
+      {
+        "repo": "synergy_ai_financial_system",
+        "pr": 7,
+        "ahead": 135,
+        "behind": 15,
+        "status": "diverged"
+      }
+    ]
+  },
+  "ci": {
+    "pay_system": [
+      {
+        "pr": 24,
+        "runs": [
+          43100177803,
+          43100177790,
+          43100166452
+        ],
+        "status": "runner/startup failure",
+        "runner_id": 0,
+        "steps": 0
+      },
+      {
+        "pr": 23,
+        "runs": [
+          42523616651,
+          42523616717,
+          42523614957
+        ],
+        "status": "runner startup failure",
+        "runner_id": 0,
+        "steps": 0
+      },
+      {
+        "pr": 20,
+        "old_run": 34029184639,
+        "old_generic_ci": "failure",
+        "lint_errors": 3,
+        "lint_codes": [
+          "UP035",
+          "UP017",
+          "I001"
+        ],
+        "specialized_solidity": "success",
+        "fix_commits": [
+          "fde5d746b775a594caef943124916970d476ba4c",
+          "a53485da54fc2a3d50d43295deec737062dcaf3b",
+          "d99f10d622e1ae0cbc2e51ced1ab53037278a3f1"
+        ],
+        "new_runs": [
+          44674460415,
+          44674460417
+        ],
+        "new_status": "queued"
+      },
+      {
+        "pr": 19,
+        "run": 33996008370,
+        "lint_errors": 405,
+        "specialized_graph": "success",
+        "specialized_solidity": "success"
+      },
+      {
+        "pr": 18,
+        "run": 33987602132,
+        "lint_errors": 402,
+        "specialized_external_profit": "success",
+        "specialized_solidity": "success"
+      },
+      {
+        "pr": 17,
+        "runs": [
+          33981115848,
+          33981115828
+        ],
+        "generic_ci": "failure",
+        "solidity": "success"
+      },
+      {
+        "pr": 8,
+        "runs": [
+          32192289219,
+          32192289306,
+          32192286619
+        ],
+        "status": "runner startup failure",
+        "runner_id": 0,
+        "steps": 0
+      },
+      {
+        "pr": 7,
+        "runs": [
+          32181394136,
+          32181394401,
+          32181346766
+        ],
+        "status": "runner startup failure",
+        "runner_id": 0,
+        "steps": 0
+      }
+    ],
+    "ai_financial_system": [
+      {
+        "pr": 22,
+        "runs": [
+          43754654439,
+          43754654424,
+          43754654484,
+          43754647225
+        ],
+        "status": "runner startup failure",
+        "runner_id": 0,
+        "steps": 0
+      },
+      {
+        "pr": 21,
+        "exact_head_runs": 0,
+        "status": "no run visible"
+      },
+      {
+        "pr": 20,
+        "run": 33986241236,
+        "status": "success"
+      },
+      {
+        "pr": 17,
+        "runs": [
+          31279384988,
+          31279383199
+        ],
+        "status": "runner startup failure",
+        "runner_id": 0,
+        "steps": 0
+      },
+      {
+        "pr": 15,
+        "runs": [
+          31266181706,
+          31266179624
+        ],
+        "status": "runner startup failure",
+        "runner_id": 0,
+        "steps": 0
+      },
+      {
+        "pr": 13,
+        "run": 30742450044,
+        "status": "runner startup failure",
+        "runner_id": 0,
+        "steps": 0
+      },
+      {
+        "pr": 7,
+        "success_workflows": 12,
+        "failed_workflows": 1,
+        "failed_job": "hardhat-atomic-v9",
+        "failed_step": "Materialize V9 test bundle",
+        "logs_status": 410
+      }
+    ]
+  },
+  "decisions": {
+    "merge_ready": 0,
+    "merges": 0,
+    "deletions": 0
+  },
+  "notes": [
+    "Pay System PR #20 lint changes are committed; exact-head CI is queued.",
+    "Pay System PR #18 and #19 lint errors affect maintained source and tests; do not globally suppress Ruff.",
+    "AI Financial PR #7 failure logs have expired; cause remains unknown."
+  ]
+}
