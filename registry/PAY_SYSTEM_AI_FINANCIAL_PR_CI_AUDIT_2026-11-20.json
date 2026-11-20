@@ -197,13 +197,15 @@
         "fix_commits": [
           "fde5d746b775a594caef943124916970d476ba4c",
           "a53485da54fc2a3d50d43295deec737062dcaf3b",
-          "d99f10d622e1ae0cbc2e51ced1ab53037278a3f1"
+          "d99f10d622e1ae0cbc2e51ced1ab53037278a3f1",
+          "297a91fa58351e7535a6ecb279d8ec25af84aa3d"
         ],
         "new_runs": [
-          44674460415,
-          44674460417
+          44674769343,
+          44674769350
         ],
-        "new_status": "queued"
+        "new_status": "queued",
+        "head_sha": "297a91fa58351e7535a6ecb279d8ec25af84aa3d"
       },
       {
         "pr": 19,
