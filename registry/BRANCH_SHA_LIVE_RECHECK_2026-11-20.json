@@ -4785,7 +4785,7 @@
     },
     {
       "repository": "Shtenco/synergy_financial_os",
-      "observed_at": "2026-11-20",
+      "observed_at": "2026-11-20T04:19:09Z",
       "source": "GitHub REST branches API",
       "branch_count": 40,
       "branches": [
@@ -4831,7 +4831,7 @@
         },
         {
           "name": "feat/distribution-available-capacity-v4-refund-restored-20260828",
-          "head_sha": "d21ce6b5bd91422c45f938b2d4ec641974106944",
+          "head_sha": "11e692e71a01bc50ea8e68cd04f8083844a0070d",
           "protected": false
         },
         {
@@ -4911,7 +4911,7 @@
         },
         {
           "name": "feat/external-profit-import-v1-20260905",
-          "head_sha": "5338ded06c76e574d8061c13a7e42b9b470f23fc",
+          "head_sha": "37fdb3b2ae8c2a70815d36020e910a283567d84f",
           "protected": false
         },
         {
