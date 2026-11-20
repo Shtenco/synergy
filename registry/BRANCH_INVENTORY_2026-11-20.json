@@ -7114,11 +7114,14 @@
         },
         {
           "name": "feat/distribution-available-capacity-v4-refund-restored-20260828",
-          "sha": "d21ce6b5bd91422c45f938b2d4ec641974106944",
+          "sha": "11e692e71a01bc50ea8e68cd04f8083844a0070d",
           "protected": false,
           "head_sha_source": "LIVE_REST_BRANCHES_API_2026-11-20",
-          "head_sha_observed_at": "2026-11-20",
-          "branch_relation_to_main": "NOT_COMPARED"
+          "head_sha_observed_at": "2026-11-20T04:19:09Z",
+          "branch_relation_to_main": "DIVERGED",
+          "branch_ahead_of_main": 444,
+          "main_ahead_of_branch": 24,
+          "merge_base_sha": "8577ac3da6515695afd7f15c14837dbe506357d6"
         },
         {
           "name": "feat/distribution-budget-current-capacity-v2-20260821",
@@ -7242,11 +7245,14 @@
         },
         {
           "name": "feat/external-profit-import-v1-20260905",
-          "sha": "5338ded06c76e574d8061c13a7e42b9b470f23fc",
+          "sha": "37fdb3b2ae8c2a70815d36020e910a283567d84f",
           "protected": false,
           "head_sha_source": "LIVE_REST_BRANCHES_API_2026-11-20",
-          "head_sha_observed_at": "2026-11-20",
-          "branch_relation_to_main": "NOT_COMPARED"
+          "head_sha_observed_at": "2026-11-20T04:19:09Z",
+          "branch_relation_to_main": "DIVERGED",
+          "branch_ahead_of_main": 452,
+          "main_ahead_of_branch": 24,
+          "merge_base_sha": "8577ac3da6515695afd7f15c14837dbe506357d6"
         },
         {
           "name": "feat/federation-governance-v2-20260818",
