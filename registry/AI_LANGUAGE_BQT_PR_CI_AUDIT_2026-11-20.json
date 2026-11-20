@@ -45,8 +45,11 @@
         "tests_skipped": true,
         "fix_commit": "2283602887c835656603f3b79f77cb5733b8b8e2",
         "rerun_id": 44673053300,
-        "rerun_status": "queued",
-        "remediation": "Narrowly exclude seven frozen NEXUS benchmark artifacts from Ruff; runtime package and tests remain subject to full configured lint rules."
+        "rerun_status": "failure_before_runner",
+        "remediation": "Narrowly exclude seven frozen NEXUS benchmark artifacts from Ruff; runtime package and tests remain subject to full configured lint rules.",
+        "rerun_runner_id": 0,
+        "rerun_steps": 0,
+        "note": "Ruff exclusion fix is committed but exact-head CI did not execute; no lint result."
       },
       {
         "pr": 17,
