@@ -54,8 +54,8 @@ PR #24's 32-ahead-only audit branch is a good review candidate but remains Draft
   - UP035: import `Iterator` from `collections.abc` in `src/synergy_pay/federation_outbox.py`.
   - UP017: use `datetime.UTC` in `tests/test_federation_contracts.py`.
   - I001: sort imports in `tests/test_federation_outbox.py`.
-- All three were fixed in three small commits: `fde5d746b775a594caef943124916970d476ba4c`, `a53485da54fc2a3d50d43295deec737062dcaf3b`, `d99f10d622e1ae0cbc2e51ced1ab53037278a3f1`.
-- The new exact-head CI and Solidity workflows are queued: [CI 44674460415](https://github.com/Shtenco/synergy_pay_system/actions/runs/44674460415), [Solidity 44674460417](https://github.com/Shtenco/synergy_pay_system/actions/runs/44674460417). No green rerun is claimed.
+- All three were fixed in three small commits: `fde5d746b775a594caef943124916970d476ba4c`, `a53485da54fc2a3d50d43295deec737062dcaf3b`, `d99f10d622e1ae0cbc2e51ced1ab53037278a3f1` and follow-up import-order commit `297a91fa58351e7535a6ecb279d8ec25af84aa3d`.
+- The new exact-head CI and Solidity workflows are queued: [CI 44674769343](https://github.com/Shtenco/synergy_pay_system/actions/runs/44674769343), [Solidity 44674769350](https://github.com/Shtenco/synergy_pay_system/actions/runs/44674769350). No green rerun is claimed.
 
 **PR #19 — Global Long-Cycle Graph**
 - Specialized graph validation and Solidity checks succeeded.
