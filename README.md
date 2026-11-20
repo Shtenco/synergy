@@ -44,7 +44,7 @@ Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` appli
 
 ## Cross-repository functional duplication — 2026-11-20
 
-A focused live Git-tree/blob comparison found a repeated enterprise/runtime scaffold across seven trading products. Their domain cores and typed contracts remain distinct; all seven stay separate (`KEEP`), while extraction of the shared foundation is `DEVELOP`. Two inspected PR CI runs failed before any test/lint step and remain `BLOCKED`.
+A focused live Git-tree/blob comparison found a repeated enterprise/runtime scaffold across seven trading products (29 files identical across all seven), while product cores/contracts remain distinct (`KEEP`; shared foundation `DEVELOP`). Two memory projects and the Autopilot/Long-Term Harness mission stores also have overlapping but complementary roles; keep the repositories separate and develop explicit memory and mission lifecycle contracts. CI is currently blocked: six trading main branches reached pytest and failed, three app/trading jobs failed before runner steps, multiple stacked PR checks never reached tests, and central federation gates remain queued. No merge-ready status is justified.
 
 - [Exact cross-repository duplicate audit](https://github.com/Shtenco/synergy_system/blob/main/docs/CROSS_REPOSITORY_DUPLICATE_AUDIT_2026-11-20.md)
 - [Machine-readable duplicate and CI evidence registry](https://github.com/Shtenco/synergy_system/blob/main/registry/FUNCTIONAL_DUPLICATE_AUDIT_2026-11-20.json)
