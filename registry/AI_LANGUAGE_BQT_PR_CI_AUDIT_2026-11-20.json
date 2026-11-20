@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-11-20",
+  "scope": {
+    "repositories": [
+      "Shtenco/synergy_ai_language",
+      "Shtenco/synergy_binary_quantum_theory"
+    ],
+    "pr_inventory_file": "registry/PR_INVENTORY_AI_LANGUAGE_BQT_2026-11-20.json",
+    "pr_count": 122,
+    "open": 76,
+    "closed": 46,
+    "draft": 43,
+    "merged": 40,
+    "dependency_edges": 24
+  },
+  "ci": {
+    "ai_language": [
+      {
+        "pr": 35,
+        "head_sha": "f0d724f6cc2a84afa09049dc889bcd3eb753b5eb",
+        "runs": [
+          44451534644,
+          44451529630
+        ],
+        "result": "runner_startup_failure",
+        "jobs": 4,
+        "runner_id": 0,
+        "steps": 0,
+        "pytest_executed": false
+      },
+      {
+        "pr": 33,
+        "head_sha": "02a83b7834d168582fe5542fe4b83e9765bcce22",
+        "run": 34024628126,
+        "job": 101463292142,
+        "result": "lint_failure",
+        "lint_errors": 195,
+        "codes": [
+          "E701",
+          "E702",
+          "E401",
+          "E722"
+        ],
+        "dependencies_installed": true,
+        "tests_skipped": true
+      },
+      {
+        "pr": 17,
+        "head_sha": "2c0ab2b78796b38cf99d99d4b7a2d12f89facba5",
+        "runs": [
+          31266370717,
+          31266368437
+        ],
+        "result": "success",
+        "ahead_by": 4,
+        "behind_by": 66,
+        "merge_ready": false
+      },
+      {
+        "pr": 24,
+        "head_sha": "de859f3f46c4bec721faef47db24646f1764f20c",
+        "specialized_workflows": {
+          "accounting_close_requirements_v3": "success",
+          "requirement_binding_v1": "success"
+        },
+        "generic_ci": "failure",
+        "merge_ready": false
+      }
+    ],
+    "binary_quantum_theory": [
+      {
+        "pr": 87,
+        "head_sha": "131d9d180c90f9e578d0a8c713e5e74f62b1c7d4",
+        "run": 44550535302,
+        "jobs": 60,
+        "success": 59,
+        "failure": 1,
+        "failed_job": "canonical-core",
+        "failed_step": "Registered canonical integration status",
+        "command": "python bcqg_bit_to_gravity_final.py --strict",
+        "exit_code": 2,
+        "interpretation": "Intentional fail-closed: physicalization incomplete and required gates open_physical; do not bypass.",
+        "merge_ready": false
+      },
+      {
+        "pr": 84,
+        "head_sha": "785363b612719972f90569dc27413dd4a165226e",
+        "run": 44443956138,
+        "jobs": 42,
+        "success": 1,
+        "failure": 41,
+        "matrix_jobs": 40,
+        "matrix_commutator": "cancelled_or_incomplete",
+        "aggregate": {
+          "status": "INCOMPLETE_PRODUCTION_SHADOW_EQUIVALENCE",
+          "comparison_performed": false,
+          "input_columns_compared": 0
+        },
+        "interpretation": "No equality or inequality conclusion; evidence incomplete."
+      },
+      {
+        "pr": 86,
+        "head_sha": "96ec89b83950de3a507eb269c4621d6bcbca09cf",
+        "runs": [
+          44505102932,
+          44505091178
+        ],
+        "status": "queued",
+        "queued_runs_in_last_100": 10,
+        "distinct_head_shas": 5,
+        "push_pr_pairs": 5,
+        "matrix_jobs_per_run": 30,
+        "max_parallel": 1,
+        "cancel_in_progress": false,
+        "queue_amplification_upper_bound": 300,
+        "merge_ready": false
+      }
+    ]
+  },
+  "ancestry": {
+    "compared": 187,
+    "total_non_main": 1202,
+    "pending": 1015,
+    "counts": {
+      "ahead": 8,
+      "behind": 17,
+      "diverged": 162
+    },
+    "new_comparisons": 14
+  },
+  "decisions": {
+    "merge_ready": 0,
+    "archive_operations": 0,
+    "merge_operations": 0,
+    "branch_deletions": 0
+  },
+  "notes": [
+    "PR inventory is metadata-complete for the two repositories because each REST response had fewer than 100 items.",
+    "The 24 dependency edges are direct base_ref/head_ref matches only.",
+    "A green specialized workflow is not equivalent to a green full required-check set.",
+    "Fail-closed scientific gates must not be weakened to make CI green."
+  ]
+}
