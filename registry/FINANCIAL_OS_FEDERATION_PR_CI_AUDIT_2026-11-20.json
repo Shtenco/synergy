@@ -109,7 +109,19 @@
           44673424885,
           44673424697
         ],
-        "status": "queued"
+        "status": "external_profit_workflow_failed_before_runner; canonical_core_queued",
+        "runner_evidence": {
+          "external_profit_run": {
+            "id": 44673424697,
+            "runner_id": 0,
+            "steps": 0,
+            "conclusion": "failure"
+          },
+          "canonical_core_run": {
+            "id": 44673424885,
+            "status": "queued"
+          }
+        }
       },
       {
         "parent_branch_sha": "11e692e71a01bc50ea8e68cd04f8083844a0070d",
@@ -117,7 +129,19 @@
           44673594162,
           44673594230
         ],
-        "status": "queued"
+        "status": "canonical_core_failed_before_runner; distribution_workflow_queued",
+        "runner_evidence": {
+          "canonical_core_run": {
+            "id": 44673594162,
+            "runner_id": 0,
+            "steps": 0,
+            "conclusion": "failure"
+          },
+          "distribution_v4_run": {
+            "id": 44673594230,
+            "status": "queued"
+          }
+        }
       },
       {
         "pr": 37,
