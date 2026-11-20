@@ -46,6 +46,8 @@ Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` appli
 | Current global open-PR search results returned | **100 (search cap; not exhaustive)** |
 | Priority PR metadata inspected individually | **14** |
 | Complete PR inventory in AI Language + BQT | **122 / 122** |
+| Complete PR inventories across AI Language, BQT, Financial OS and System | **215 PRs / 215** |
+| Direct PR dependency edges across those four repositories | **102** |
 
 **Important:** all 1,294 branch refs have a live SHA and protection value in the new registry. Two large repositories required page 2 because their first page contained 100 refs: synergy_ai_language (129 total) and synergy_binary_quantum_theory (178 total). The prior census count of 1,294 is now independently reproduced by this full paginated pass.
 
