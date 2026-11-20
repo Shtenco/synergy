@@ -805,7 +805,7 @@ repository,branch,head_sha,protected,head_sha_source,head_sha_observed_at,branch
 "Shtenco/synergy_financial_os","feat/distribution-reversal-accounting-v2-fee-refund-20260828","73b2560455d765c9c143b5af8d099cad45343746","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
 "Shtenco/synergy_financial_os","feat/economic-cycle-trace-v1-20260818","87183399e5b7ed8b52d4529cc859bfd314c8c61c","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
 "Shtenco/synergy_financial_os","feat/external-profit-bus-accounting-v1-20260905","2b2c1f5b35285c4f32d7e8cfcfa115d6810ef80e","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
-"Shtenco/synergy_financial_os","feat/external-profit-import-v1-20260905","bf67bf9b2a5e98d44bd02e40e9a704b44492a3a6","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
+"Shtenco/synergy_financial_os","feat/external-profit-import-v1-20260905","5338ded06c76e574d8061c13a7e42b9b470f23fc","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
 "Shtenco/synergy_financial_os","feat/federation-governance-v2-20260818","f2c7b03ae59c785b81cefd707a6eeffd7ba545e5","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
 "Shtenco/synergy_financial_os","feat/ledger-event-v2-close-v2-trace-v6-20260819","8727b2ff44d1425d84f37c051fc67c083534f4b7","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
 "Shtenco/synergy_financial_os","feat/liquidity-replay-v1-20260820","f4da6f5a3491b8b92fe52749f7571ed2397fd87f","false","LIVE_REST_BRANCHES_API_2026-11-20","2026-11-20","NOT_COMPARED","","",""
