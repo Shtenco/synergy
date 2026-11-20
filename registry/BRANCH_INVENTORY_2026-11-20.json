@@ -9997,12 +9997,12 @@
         },
         {
           "name": "federation-v3-domain-expansion",
-          "sha": "d99f10d622e1ae0cbc2e51ced1ab53037278a3f1",
+          "sha": "297a91fa58351e7535a6ecb279d8ec25af84aa3d",
           "protected": false,
           "head_sha_source": "LIVE_REST_BRANCHES_API_2026-11-20",
-          "head_sha_observed_at": "2026-11-20T04:26:53Z",
+          "head_sha_observed_at": "2026-11-20T04:27:40Z",
           "branch_relation_to_main": "DIVERGED",
-          "branch_ahead_of_main": 10,
+          "branch_ahead_of_main": 11,
           "main_ahead_of_branch": 20,
           "merge_base_sha": "8045612ec721f318182a0067faa0b528d099c73b"
         },
