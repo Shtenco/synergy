@@ -24,6 +24,9 @@ Priority branch decisions and the complete evidence ledger:
 - [Financial OS + SYNERGY System PR inventory (93 PRs)](registry/PR_INVENTORY_FINANCIAL_OS_SYNERGY_SYSTEM_2026-11-20.json)
 - [Financial OS + federation PR/CI audit](docs/FINANCIAL_OS_FEDERATION_PR_CI_AUDIT_2026-11-20.md)
 - [Machine-readable Financial OS + federation audit](registry/FINANCIAL_OS_FEDERATION_PR_CI_AUDIT_2026-11-20.json)
+- [Pay System + AI Financial System PR inventory (48 PRs)](registry/PR_INVENTORY_PAY_SYSTEM_AI_FINANCIAL_2026-11-20.json)
+- [Pay System + AI Financial PR/CI audit](docs/PAY_SYSTEM_AI_FINANCIAL_PR_CI_AUDIT_2026-11-20.md)
+- [Machine-readable Pay System + AI Financial audit](registry/PAY_SYSTEM_AI_FINANCIAL_PR_CI_AUDIT_2026-11-20.json)
 
 Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` applies to ahead/diverged work; `ARCHIVE-CANDIDATE` is review-only for behind-only refs and requires checking PRs, tags, releases, deployments and external references; `MERGE-READY` requires a non-draft PR, no conflicts, successful exact-HEAD CI with visible test/build steps, resolved stack dependencies and review approval. No destructive branch operation was performed.
 ## Live governance snapshot — 2026-11-20
@@ -46,8 +49,8 @@ Decision semantics: `KEEP` protects canonical or identical refs; `DEVELOP` appli
 | Current global open-PR search results returned | **100 (search cap; not exhaustive)** |
 | Priority PR metadata inspected individually | **14** |
 | Complete PR inventory in AI Language + BQT | **122 / 122** |
-| Complete PR inventories across AI Language, BQT, Financial OS and System | **215 PRs / 215** |
-| Direct PR dependency edges across those four repositories | **102** |
+| Complete PR inventories across six audited repositories | **263 PRs / 263** |
+| Direct PR dependency edges across six audited repositories | **120** |
 
 **Important:** all 1,294 branch refs have a live SHA and protection value in the new registry. Two large repositories required page 2 because their first page contained 100 refs: synergy_ai_language (129 total) and synergy_binary_quantum_theory (178 total). The prior census count of 1,294 is now independently reproduced by this full paginated pass.
 
