@@ -387,7 +387,7 @@
     {
       "name": "synergy",
       "full_name": "Shtenco/synergy",
-      "visibility": "private",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy",
       "ecosystem_relation": "umbrella",
@@ -1999,7 +1999,7 @@
     {
       "name": "synergy_system",
       "full_name": "Shtenco/synergy_system",
-      "visibility": "private",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_system",
       "ecosystem_relation": "core",
@@ -2163,7 +2163,7 @@
     {
       "name": "synergy_agent_long_term_memory",
       "full_name": "Shtenco/synergy_agent_long_term_memory",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_agent_long_term_memory",
       "ecosystem_relation": "federated-rnd",
@@ -2184,7 +2184,7 @@
     {
       "name": "synergy_ai_browser-",
       "full_name": "Shtenco/synergy_ai_browser-",
-      "visibility": "unknown",
+      "visibility": "private",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_ai_browser-",
       "ecosystem_relation": "federated-rnd",
@@ -2207,7 +2207,7 @@
     {
       "name": "tiimeweb_synergy_exactly_once_delivery",
       "full_name": "Shtenco/tiimeweb_synergy_exactly_once_delivery",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/tiimeweb_synergy_exactly_once_delivery",
       "ecosystem_relation": "federated-rnd",
@@ -2230,7 +2230,7 @@
     {
       "name": "timeweb_synergy_agent_long_term_memory",
       "full_name": "Shtenco/timeweb_synergy_agent_long_term_memory",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_agent_long_term_memory",
       "ecosystem_relation": "federated-rnd",
@@ -2253,7 +2253,7 @@
     {
       "name": "timeweb_synergy_ai_infrastructure_agent",
       "full_name": "Shtenco/timeweb_synergy_ai_infrastructure_agent",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_ai_infrastructure_agent",
       "ecosystem_relation": "federated-rnd",
@@ -2276,7 +2276,7 @@
     {
       "name": "timeweb_synergy_backtest_oos_lab",
       "full_name": "Shtenco/timeweb_synergy_backtest_oos_lab",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_backtest_oos_lab",
       "ecosystem_relation": "federated-rnd",
@@ -2299,7 +2299,7 @@
     {
       "name": "timeweb_synergy_benchmark_statistics",
       "full_name": "Shtenco/timeweb_synergy_benchmark_statistics",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_benchmark_statistics",
       "ecosystem_relation": "federated-rnd",
@@ -2322,7 +2322,7 @@
     {
       "name": "timeweb_synergy_binary_neural_networks",
       "full_name": "Shtenco/timeweb_synergy_binary_neural_networks",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_binary_neural_networks",
       "ecosystem_relation": "federated-rnd",
@@ -2345,7 +2345,7 @@
     {
       "name": "timeweb_synergy_codebase_intelligence",
       "full_name": "Shtenco/timeweb_synergy_codebase_intelligence",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_codebase_intelligence",
       "ecosystem_relation": "federated-rnd",
@@ -2368,7 +2368,7 @@
     {
       "name": "timeweb_synergy_cpu_gpu_cost_benchmark",
       "full_name": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
       "ecosystem_relation": "federated-rnd",
@@ -2392,7 +2392,7 @@
     {
       "name": "timeweb_synergy_cpu_language_model",
       "full_name": "Shtenco/timeweb_synergy_cpu_language_model",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_cpu_language_model",
       "ecosystem_relation": "federated-rnd",
@@ -2415,7 +2415,7 @@
     {
       "name": "timeweb_synergy_fault_injection_lab",
       "full_name": "Shtenco/timeweb_synergy_fault_injection_lab",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_fault_injection_lab",
       "ecosystem_relation": "federated-rnd",
@@ -2438,7 +2438,7 @@
     {
       "name": "timeweb_synergy_llm_memory_lab",
       "full_name": "Shtenco/timeweb_synergy_llm_memory_lab",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_llm_memory_lab",
       "ecosystem_relation": "federated-rnd",
@@ -2462,7 +2462,7 @@
     {
       "name": "timeweb_synergy_ml_validation_lab",
       "full_name": "Shtenco/timeweb_synergy_ml_validation_lab",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_ml_validation_lab",
       "ecosystem_relation": "federated-rnd",
@@ -2485,7 +2485,7 @@
     {
       "name": "timeweb_synergy_multiagent_benchmark",
       "full_name": "Shtenco/timeweb_synergy_multiagent_benchmark",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_multiagent_benchmark",
       "ecosystem_relation": "federated-rnd",
@@ -2508,7 +2508,7 @@
     {
       "name": "timeweb_synergy_python_cpp_performance",
       "full_name": "Shtenco/timeweb_synergy_python_cpp_performance",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_python_cpp_performance",
       "ecosystem_relation": "federated-rnd",
@@ -2533,7 +2533,7 @@
     {
       "name": "timeweb_synergy_rag_quality_cost",
       "full_name": "Shtenco/timeweb_synergy_rag_quality_cost",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_rag_quality_cost",
       "ecosystem_relation": "federated-rnd",
@@ -2556,7 +2556,7 @@
     {
       "name": "timeweb_synergy_retry_storm_lab",
       "full_name": "Shtenco/timeweb_synergy_retry_storm_lab",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_retry_storm_lab",
       "ecosystem_relation": "federated-rnd",
@@ -2580,7 +2580,7 @@
     {
       "name": "timeweb_synergy_rnn_transformer_benchmark",
       "full_name": "Shtenco/timeweb_synergy_rnn_transformer_benchmark",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_rnn_transformer_benchmark",
       "ecosystem_relation": "federated-rnd",
@@ -2603,7 +2603,7 @@
     {
       "name": "timeweb_synergy_service_recovery",
       "full_name": "Shtenco/timeweb_synergy_service_recovery",
-      "visibility": "unknown",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/timeweb_synergy_service_recovery",
       "ecosystem_relation": "federated-rnd",
