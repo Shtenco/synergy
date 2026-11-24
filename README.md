@@ -67,6 +67,9 @@ Three complementary implementations were source-reviewed: AI Coder's engineering
 
 ## Canonical registries and audit reports
 
+- [Information & Knowledge Economy — architecture and lifecycle](docs/INFORMATION_KNOWLEDGE_ECONOMY.md)
+- [Information & Knowledge Economy — machine-readable hypergraph schema](registry/INFORMATION_KNOWLEDGE_ECONOMY.json)
+
 - [Owner repository inventory JSON](registry/repos.json)
 - [Canonical branch inventory JSON — refreshed from all 1,294 live refs](registry/BRANCH_INVENTORY_2026-11-20.json)
 - [Canonical branch inventory CSV](registry/BRANCH_INVENTORY_2026-11-20.csv)
