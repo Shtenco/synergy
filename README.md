@@ -2,6 +2,16 @@
 
 **Каноническая точка входа в экосистему Shtenco / SYNERGY.** Этот репозиторий хранит owner inventory, карту доменов, ссылки на архитектурные и экономические досье, а также сводные реестры веток, PR и интеграционных доказательств. Исходники и история каждого продукта остаются в самостоятельных репозиториях.
 
+## Live owner inventory — 2026-11-24
+
+**Current owner inventory: 112 repositories** (37 public / 75 private / 0 archived), refreshed from both pages of the installed GitHub repository search on 2026-11-24. The previous 2026-11-20 inventory contained 92 repositories; all 92 remain present and 20 repositories were added to the owner inventory. The 20 new entries have provisional README-level classifications.
+
+- [Canonical machine-readable owner inventory](registry/repos.json)
+- [112-repository associative expansion map](https://github.com/Shtenco/synergy_system/blob/main/registry/SYNERGY_112_ASSOCIATIVE_MAP_2026-11-24.json)
+- [Associative expansion strategy](https://github.com/Shtenco/synergy_system/blob/main/docs/SYNERGY_112_ASSOCIATIVE_EXPANSION_2026-11-24.md)
+
+**Scope boundary:** the 112 owner repositories are not 112 interfaces, contracts, authorities or runtime-integrated services. The branch census, PR inventory, interface registry, contract registry, CI evidence and security audits remain separate scopes. This update refreshes repository membership and live visibility/default-branch metadata; it does not claim a fresh branch/PR/CI/security census for all 112 repositories.
+
 ## Branch ancestry and decision ledger — 2026-11-20
 
 Fresh GitHub `compare_commits(main, branch)` checks have been performed for **207 / 1,202 non-main branch refs** in the current incremental pass. The remaining 995 are explicitly pending; no inference is made for unchecked branches.

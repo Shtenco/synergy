@@ -1,11 +1,11 @@
 {
   "schema_version": "2.0.0",
   "generated_from": "Full GitHub inventory + M0 content audit",
-  "generated_at": "2026-11-20",
+  "generated_at": "2026-11-24",
   "umbrella_repository": "Shtenco/synergy",
   "discovery_rule": "ALL repositories accessible under Shtenco are inventoried; SYNERGY relation is determined by content/role, not name alone.",
-  "total_account_repositories": 92,
-  "inventoried_repositories": 92,
+  "total_account_repositories": 112,
+  "inventoried_repositories": 112,
   "repositories": [
     {
       "name": "3D_bars_market_structure",
@@ -387,7 +387,7 @@
     {
       "name": "synergy",
       "full_name": "Shtenco/synergy",
-      "visibility": "private",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy",
       "ecosystem_relation": "umbrella",
@@ -1999,7 +1999,7 @@
     {
       "name": "synergy_system",
       "full_name": "Shtenco/synergy_system",
-      "visibility": "private",
+      "visibility": "public",
       "archived": false,
       "url": "https://github.com/Shtenco/synergy_system",
       "ecosystem_relation": "core",
@@ -2159,6 +2159,469 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-20"
+    },
+    {
+      "name": "synergy_agent_long_term_memory",
+      "full_name": "Shtenco/synergy_agent_long_term_memory",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_agent_long_term_memory",
+      "ecosystem_relation": "federated-rnd",
+      "category": "intelligence-memory",
+      "node_type": "placeholder-memory-repository",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "agent-memory"
+      ],
+      "dependencies": [],
+      "risks": [
+        "README is placeholder-only; no executable runtime or tests established"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "synergy_ai_browser-",
+      "full_name": "Shtenco/synergy_ai_browser-",
+      "visibility": "private",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_browser-",
+      "ecosystem_relation": "federated-rnd",
+      "category": "agentic-ai",
+      "node_type": "evidence-browser-automation",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "browser-automation",
+        "playwright",
+        "source-evidence"
+      ],
+      "dependencies": [],
+      "risks": [
+        "bounded automation only; no CAPTCHA bypass or guaranteed site access"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "tiimeweb_synergy_exactly_once_delivery",
+      "full_name": "Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "ecosystem_relation": "federated-rnd",
+      "category": "reliability-research",
+      "node_type": "delivery-semantics-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "exactly-once-delivery",
+        "idempotency",
+        "reproducibility"
+      ],
+      "dependencies": [],
+      "risks": [
+        "research package is not a production delivery guarantee"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_agent_long_term_memory",
+      "full_name": "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_agent_long_term_memory",
+      "ecosystem_relation": "federated-rnd",
+      "category": "intelligence-memory",
+      "node_type": "agent-memory-experiment",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "sqlite-memory",
+        "session-persistence",
+        "retrieval"
+      ],
+      "dependencies": [],
+      "risks": [
+        "limited prototype; not production memory or peer-reviewed result"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_ai_infrastructure_agent",
+      "full_name": "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "ecosystem_relation": "federated-rnd",
+      "category": "infra-research",
+      "node_type": "safe-infrastructure-operator",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "infrastructure-automation",
+        "allowlist",
+        "safety"
+      ],
+      "dependencies": [],
+      "risks": [
+        "bounded prototype; no production operator claim"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_backtest_oos_lab",
+      "full_name": "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_backtest_oos_lab",
+      "ecosystem_relation": "federated-rnd",
+      "category": "trading-quant",
+      "node_type": "backtest-validation",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "backtest",
+        "out-of-sample",
+        "leakage-tests"
+      ],
+      "dependencies": [],
+      "risks": [
+        "experimental validation package; benchmark scope must be checked"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_benchmark_statistics",
+      "full_name": "Shtenco/timeweb_synergy_benchmark_statistics",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_benchmark_statistics",
+      "ecosystem_relation": "federated-rnd",
+      "category": "science-research",
+      "node_type": "benchmark-statistics",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "benchmark-statistics",
+        "uncertainty",
+        "reproducibility"
+      ],
+      "dependencies": [],
+      "risks": [
+        "local measurement scope only"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_binary_neural_networks",
+      "full_name": "Shtenco/timeweb_synergy_binary_neural_networks",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_binary_neural_networks",
+      "ecosystem_relation": "federated-rnd",
+      "category": "science-research",
+      "node_type": "binary-neural-network-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "binary-neural-networks",
+        "weight-packing",
+        "ml"
+      ],
+      "dependencies": [],
+      "risks": [
+        "local experiment; no general hardware advantage established"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_codebase_intelligence",
+      "full_name": "Shtenco/timeweb_synergy_codebase_intelligence",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_codebase_intelligence",
+      "ecosystem_relation": "federated-rnd",
+      "category": "developer-tools",
+      "node_type": "codebase-intelligence-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "code-search",
+        "repository-navigation",
+        "developer-tools"
+      ],
+      "dependencies": [],
+      "risks": [
+        "limited prototype/simulation; enterprise scale not established"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_cpu_gpu_cost_benchmark",
+      "full_name": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "ecosystem_relation": "federated-rnd",
+      "category": "compute-os",
+      "node_type": "compute-cost-benchmark",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "cpu",
+        "gpu",
+        "cost-model",
+        "benchmark"
+      ],
+      "dependencies": [],
+      "risks": [
+        "measurements require target-hardware reproduction"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_cpu_language_model",
+      "full_name": "Shtenco/timeweb_synergy_cpu_language_model",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_cpu_language_model",
+      "ecosystem_relation": "federated-rnd",
+      "category": "ai-inference",
+      "node_type": "cpu-language-model-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "cpu-inference",
+        "transformer",
+        "local-model"
+      ],
+      "dependencies": [],
+      "risks": [
+        "small research model; not general-purpose production LLM"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_fault_injection_lab",
+      "full_name": "Shtenco/timeweb_synergy_fault_injection_lab",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_fault_injection_lab",
+      "ecosystem_relation": "federated-rnd",
+      "category": "infra-research",
+      "node_type": "fault-injection-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "fault-injection",
+        "http-failover",
+        "resilience"
+      ],
+      "dependencies": [],
+      "risks": [
+        "local prototype; external SLA not established"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_llm_memory_lab",
+      "full_name": "Shtenco/timeweb_synergy_llm_memory_lab",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_llm_memory_lab",
+      "ecosystem_relation": "federated-rnd",
+      "category": "intelligence-memory",
+      "node_type": "llm-external-memory-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "bm25",
+        "lsa",
+        "graph-retrieval",
+        "memory"
+      ],
+      "dependencies": [],
+      "risks": [
+        "synthetic retrieval experiments; no production quality claim"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_ml_validation_lab",
+      "full_name": "Shtenco/timeweb_synergy_ml_validation_lab",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_ml_validation_lab",
+      "ecosystem_relation": "federated-rnd",
+      "category": "science-research",
+      "node_type": "ml-validation-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "overfitting",
+        "data-leakage",
+        "group-split"
+      ],
+      "dependencies": [],
+      "risks": [
+        "dataset-specific experiment; generalization requires replication"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_multiagent_benchmark",
+      "full_name": "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_multiagent_benchmark",
+      "ecosystem_relation": "federated-rnd",
+      "category": "agi-agentic",
+      "node_type": "multiagent-cost-benchmark",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "multiagent",
+        "coordination-cost",
+        "benchmark"
+      ],
+      "dependencies": [],
+      "risks": [
+        "limited benchmark; results depend on task/model/hardware"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_python_cpp_performance",
+      "full_name": "Shtenco/timeweb_synergy_python_cpp_performance",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_python_cpp_performance",
+      "ecosystem_relation": "federated-rnd",
+      "category": "compute-os",
+      "node_type": "language-runtime-benchmark",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "python",
+        "numpy",
+        "numba",
+        "cpp",
+        "performance"
+      ],
+      "dependencies": [],
+      "risks": [
+        "hardware- and workload-specific measurements"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_rag_quality_cost",
+      "full_name": "Shtenco/timeweb_synergy_rag_quality_cost",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_rag_quality_cost",
+      "ecosystem_relation": "federated-rnd",
+      "category": "intelligence-memory",
+      "node_type": "rag-cost-quality-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "rag",
+        "retrieval-quality",
+        "cost"
+      ],
+      "dependencies": [],
+      "risks": [
+        "synthetic or bounded evaluation; production retrieval quality unproven"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_retry_storm_lab",
+      "full_name": "Shtenco/timeweb_synergy_retry_storm_lab",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_retry_storm_lab",
+      "ecosystem_relation": "federated-rnd",
+      "category": "infra-research",
+      "node_type": "http-retry-resilience-lab",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "retry-budget",
+        "circuit-breaker",
+        "bulkhead",
+        "http"
+      ],
+      "dependencies": [],
+      "risks": [
+        "local experimental results; not universal reliability guidance"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_rnn_transformer_benchmark",
+      "full_name": "Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "ecosystem_relation": "federated-rnd",
+      "category": "science-research",
+      "node_type": "sequence-model-benchmark",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "gru",
+        "transformer",
+        "equal-compute-benchmark"
+      ],
+      "dependencies": [],
+      "risks": [
+        "dataset and budget dependent; not universal model ranking"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
+    },
+    {
+      "name": "timeweb_synergy_service_recovery",
+      "full_name": "Shtenco/timeweb_synergy_service_recovery",
+      "visibility": "public",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_service_recovery",
+      "ecosystem_relation": "federated-rnd",
+      "category": "infra-research",
+      "node_type": "service-recovery-research",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "http-recovery",
+        "sqlite",
+        "restart-tests"
+      ],
+      "dependencies": [],
+      "risks": [
+        "local recovery simulation; no production SLO established"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-24"
     }
   ],
   "branch_inventory": {
@@ -2169,5 +2632,11 @@
     "branch_inventory_csv": "registry/BRANCH_INVENTORY_2026-11-20.csv",
     "branch_inventory_report": "docs/BRANCH_INVENTORY_2026-11-20.md",
     "note": "92 repositories; all 1,294 branch refs have non-historical SHA provenance. 210 refs have live compare-to-main ancestry (36 AHEAD, 22 BEHIND, 120 DIVERGED, 32 IDENTICAL); 1,084 still need ancestry comparison. Protection remains historical for 1,292 refs; two new refs are NOT_CHECKED."
+  },
+  "note": "Live GitHub installed-repository search refreshed 2026-11-24: 112 owner repositories. The previous 2026-11-20 snapshot contained 92; all 92 remain present and 20 newly discovered repositories have been added with provisional README-level classifications. Branch census and interface/contract registries remain separate scopes and have not been refreshed by this owner inventory update.",
+  "previous_snapshot": {
+    "date": "2026-11-20",
+    "repository_count": 92,
+    "preserved": true
   }
 }
