@@ -5,7 +5,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Ninety-nine README reviews and eighty-three limited source reviews, each pinned to the exact inspected commit and file blob SHA (76 main-branch reviews and 7 branch-only prototype reviews).
+- Ninety-five unique repository README reviews (99 commit-pinned audit records) and eighty-three limited source reviews, each pinned to the exact inspected commit and file blob SHA (76 main-branch reviews and 7 branch-only prototype reviews).
 - 39 proposed shared cores and domain routers are kept separate from actual repositories; 27 have first-pass overlap assessments and 12 remain unaudited.
 - Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
@@ -19,7 +19,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 - `gaps.json`: unresolved source audit, security, evidence, contract and overlap gaps.
 - `proposals.json`: 39 proposed components, not actual repositories.
 - `evidence/registry-snapshot.json`: provenance for the original 92-record registry snapshot.
-- `evidence/repository-audits.json`: 99 commit-pinned repository reviews with selected source/test blob references.
+- `evidence/repository-audits.json`: 99 commit-pinned audit records across 95 unique repositories; older main-branch snapshots are retained when a newer branch-only prototype is reviewed with selected source/test blob references.
 - `contracts/`: requirements for versioned OpenAPI, JSON Schema, AsyncAPI and contract tests.
 - `security/RESPONSE_PLAYBOOK.md`: credential rotation and live-execution containment without secret material.
 - `schemas/`: JSON Schema contracts for repository nodes and n-ary hyperedges.
@@ -103,14 +103,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 99/112 (88.39%).
+- README reviewed: 95/112 (84.82%).
 - Source reviewed (limited scope): 83/112 (74.11%): 76 main-branch reviews and 7 branch-only prototype reviews.
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
 ## Next audit sequence
 1. Close the browser subresource network-policy finding.
-2. Audit the remaining 29 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+2. Audit the remaining 29 repositories for source, and 17 for a first README review: manifests, imports, API routes, event schemas, tests and workflows.
 3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
 5. Run capability-overlap analysis before proposing any new repository.
