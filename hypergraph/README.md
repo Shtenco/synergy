@@ -19,7 +19,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 - `gaps.json`: unresolved source audit, security, evidence, contract and overlap gaps.
 - `proposals.json`: 39 proposed components, not actual repositories.
 - `evidence/registry-snapshot.json`: provenance for the original 92-record registry snapshot.
-- `evidence/repository-audits.json`: 124 commit-pinned audit records across 112 unique repositories across 95 unique repositories; older main-branch snapshots are retained when a newer branch-only prototype is reviewed with selected source/test blob references.
+- `evidence/repository-audits.json`: 125 commit-pinned audit records across 112 unique repositories across 95 unique repositories; older main-branch snapshots are retained when a newer branch-only prototype is reviewed with selected source/test blob references.
 - `contracts/`: requirements for versioned OpenAPI, JSON Schema, AsyncAPI and contract tests.
 - `security/RESPONSE_PLAYBOOK.md`: credential rotation and live-execution containment without secret material.
 - `schemas/`: JSON Schema contracts for repository nodes and n-ary hyperedges.
