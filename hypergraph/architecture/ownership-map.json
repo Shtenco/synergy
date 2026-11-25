@@ -122,6 +122,26 @@
       "domain": "application_registry_and_read_models",
       "owner": "Shtenco/synergy_apps",
       "role": "Application master registry and read-only accounting/trust projections, not a unified runtime."
+    },
+    {
+      "domain": "chain_application_and_evm_research",
+      "owner": "Shtenco/synergy_chain",
+      "role": "Packaged Growth OS, static Pages subset and QE V10 testbed; not a production blockchain or payment authority."
+    },
+    {
+      "domain": "cross_chain_trust_consumer",
+      "owner": "Shtenco/synergy_metachain",
+      "role": "Local finalized-commitment and replay gate; in-memory only and no light client."
+    },
+    {
+      "domain": "usds_monetary_research",
+      "owner": "Shtenco/synergy_usds",
+      "role": "Base fork mint/sell/PP experiment; blocked from federation/deployment pending deployer credential rotation."
+    },
+    {
+      "domain": "two_token_collateral_experiment",
+      "owner": "Shtenco/synergy_cashero",
+      "role": "CASRS/CASRG collateral and CPMM experiments; tracked env files require secret rotation review."
     }
   ],
   "integration_contract": {
