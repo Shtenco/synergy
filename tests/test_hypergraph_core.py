@@ -253,6 +253,17 @@ class HypergraphCoreTests(unittest.TestCase):
         })
         self.assertEqual(m5["matched_status_counts"], {"ADAPTER_IMPLEMENTED": 44})
 
+    def test_coverage_records_current_proposal_and_governance_scope_counts(self):
+        audit = self.coverage["audit"]
+        self.assertEqual(audit["registry_records_present"], 112)
+        self.assertEqual(audit["proposal_overlap_assessments"], 39)
+        self.assertEqual(audit["proposal_overlap_evidence_references"], 91)
+        self.assertEqual(audit["governance_scope_recommendations"], 35)
+        self.assertEqual(audit["governance_scope_owner_decisions_pending"], 35)
+        self.assertEqual(len(audit["stub_only_repository_names"]), 5)
+        self.assertEqual(len(audit["branch_only_prototype_names"]), 15)
+        self.assertEqual(len(audit["benchmark_dossier_repository_names"]), 1)
+
     def test_proposals_are_not_counted_as_repositories(self):
         actual_ids = {node["node_id"] for node in self.nodes_doc["nodes"]}
         proposal_ids = {proposal["proposal_id"] for proposal in self.proposals["proposals"]}
