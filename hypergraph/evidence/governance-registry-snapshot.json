@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "source": {
+    "repository": "Shtenco/synergy_system",
+    "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+    "commit_url": "https://github.com/Shtenco/synergy_system/commit/f1183d54121c3bbc558e4a171ddbba20973f8520",
+    "files": [
+      {
+        "path": "registry/AUTHORITY_REGISTRY.json",
+        "blob_sha": "b239cb4334d26441922c01f06979b869d870dafa"
+      },
+      {
+        "path": "registry/CONTRACT_REGISTRY.json",
+        "blob_sha": "e844fc6bf8ffdae80165568708d8ebd8c40f5633"
+      },
+      {
+        "path": "registry/DEPENDENCY_GRAPH.json",
+        "blob_sha": "fe391ee1811d57f2e449307a760013cf38129600"
+      },
+      {
+        "path": "registry/REPOSITORY_INTERFACES.json",
+        "blob_sha": "8ddaafbe2232b38644cf02b9cb84b94be83ad796"
+      },
+      {
+        "path": "registry/INTEGRATION_GAPS.json",
+        "blob_sha": "d9f9bad575ebd68ea4dde59c29ee39700800def4"
+      },
+      {
+        "path": "integration/m5_observed_execution/evidence_manifest_v1.json",
+        "blob_sha": "0ffaf9c7f265794f1677bb9329fcb04ad1ade769"
+      }
+    ]
+  },
+  "counts": {
+    "authority_registry_entries": 42,
+    "contract_registry_entries": 39,
+    "contract_lifecycle_status_counts": {
+      "ADAPTER_IMPLEMENTED": 39
+    },
+    "dependency_graph_nodes": 75,
+    "dependency_graph_edges": 136,
+    "dependency_graph_edge_type_counts": {
+      "ARCHITECTURAL_PARENT": 70,
+      "CONTRACT_FLOW": 22,
+      "RUNTIME_DEPENDENCY": 22,
+      "RUNTIME_CONTRACT": 22
+    },
+    "dependency_graph_edge_status_counts": {
+      "DOCUMENTED": 70,
+      "ADAPTER_IMPLEMENTED": 66
+    },
+    "dependency_graph_summary": {
+      "repositories": 75,
+      "typed_contracts": 17,
+      "adapter_implemented_runtime_edges": 22,
+      "e2e_tested_runtime_edges": 0,
+      "deployed_runtime_edges": 0
+    },
+    "repository_interface_records": 77,
+    "repository_interface_status_counts": {
+      "EXTERNAL_RUNTIME_PENDING": 11,
+      "ADAPTER_INTEGRATED": 41,
+      "DOCUMENTATION_ONLY": 14,
+      "NON_RUNTIME_SURFACE": 3,
+      "SECURITY_BLOCKED": 3,
+      "NEEDS_HARDENING": 2,
+      "ARCHITECTURAL_ONLY": 2,
+      "GOVERNANCE_ROOT": 1
+    },
+    "integration_gap_registry_totals": {
+      "contracts": 39,
+      "no_missing_endpoints": 39,
+      "contracts_with_gaps": 0,
+      "runtime_adapter_edges": 44,
+      "e2e_tested_edges": 0,
+      "uncontracted_components": 2,
+      "observed_contract_risks": 3
+    },
+    "uncontracted_components": 2,
+    "observed_contract_risks": 3,
+    "m5_required_runtime_edges": 44,
+    "m5_suite_count": 6,
+    "m5_observed_execution": {
+      "status": "BLOCKED_BY_RUNNER",
+      "successful_suites": 0,
+      "verified_runtime_edges": 0,
+      "github_actions_attempts": [
+        {
+          "run_id": 36495367465,
+          "workflow": "SYNERGY Federation Security Gate",
+          "attempt": 1,
+          "result": "failure-before-first-step",
+          "steps": 0
+        },
+        {
+          "run_id": 36495367465,
+          "workflow": "SYNERGY Federation Security Gate",
+          "attempt": 2,
+          "result": "failure-before-first-step",
+          "steps": 0
+        }
+      ],
+      "note": "Do not promote any edge until real suite evidence exists and passes all verifiers."
+    }
+  },
+  "reconciliation": {
+    "hypergraph_inventory_repositories": 112,
+    "dependency_graph_repositories": 75,
+    "interface_registry_repositories": 77,
+    "dependency_graph_names_missing_from_hypergraph": [],
+    "interface_names_missing_from_hypergraph": [],
+    "hypergraph_names_missing_from_dependency_graph": [
+      "Shtenco/synergy",
+      "Shtenco/synergy_maps",
+      "Shtenco/timeweb_synergy_retry_storm_lab",
+      "Shtenco/timeweb_synergy_llm_memory_lab",
+      "Shtenco/timeweb_synergy_ml_validation_lab",
+      "Shtenco/synergy_ai_browser-",
+      "Shtenco/timeweb_synergy_python_cpp_performance",
+      "Shtenco/timeweb_synergy_benchmark_statistics",
+      "Shtenco/synergy_computing_topology",
+      "Shtenco/synergy_meta_api",
+      "Shtenco/synergy_ai_economic",
+      "Shtenco/synergy_agent_long_term_memory",
+      "Shtenco/synergy_ai_workspace",
+      "Shtenco/timeweb_synergy_binary_neural_networks",
+      "Shtenco/synergy.github.io",
+      "Shtenco/synergy_metaverse",
+      "Shtenco/shtenco_micro_ai",
+      "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "Shtenco/timeweb_synergy_fault_injection_lab",
+      "Shtenco/synergy_complex_matrix_multiplication",
+      "Shtenco/synergy_long_term_harness",
+      "Shtenco/timeweb_synergy_codebase_intelligence",
+      "Shtenco/timeweb_synergy_service_recovery",
+      "Shtenco/synergy_ai_llm_rwkv",
+      "Shtenco/timeweb_synergy_rag_quality_cost",
+      "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "Shtenco/synergy_triangle_money_system",
+      "Shtenco/synergy_lead_search_engline",
+      "Shtenco/synergistic_economics",
+      "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "Shtenco/timeweb_synergy_cpu_language_model",
+      "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "Shtenco/synergy_search_engline",
+      "Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "Shtenco/tiimeweb_synergy_exactly_once_delivery"
+    ],
+    "hypergraph_names_missing_from_interface_registry": [
+      "Shtenco/synergy",
+      "Shtenco/synergy_maps",
+      "Shtenco/timeweb_synergy_retry_storm_lab",
+      "Shtenco/timeweb_synergy_llm_memory_lab",
+      "Shtenco/timeweb_synergy_ml_validation_lab",
+      "Shtenco/synergy_ai_browser-",
+      "Shtenco/timeweb_synergy_python_cpp_performance",
+      "Shtenco/timeweb_synergy_benchmark_statistics",
+      "Shtenco/synergy_computing_topology",
+      "Shtenco/synergy_meta_api",
+      "Shtenco/synergy_ai_economic",
+      "Shtenco/synergy_agent_long_term_memory",
+      "Shtenco/synergy_ai_workspace",
+      "Shtenco/timeweb_synergy_binary_neural_networks",
+      "Shtenco/synergy.github.io",
+      "Shtenco/synergy_metaverse",
+      "Shtenco/shtenco_micro_ai",
+      "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "Shtenco/timeweb_synergy_fault_injection_lab",
+      "Shtenco/synergy_complex_matrix_multiplication",
+      "Shtenco/timeweb_synergy_codebase_intelligence",
+      "Shtenco/timeweb_synergy_service_recovery",
+      "Shtenco/synergy_ai_llm_rwkv",
+      "Shtenco/timeweb_synergy_rag_quality_cost",
+      "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "Shtenco/synergy_triangle_money_system",
+      "Shtenco/synergy_lead_search_engline",
+      "Shtenco/synergistic_economics",
+      "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "Shtenco/timeweb_synergy_cpu_language_model",
+      "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "Shtenco/synergy_search_engline",
+      "Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "Shtenco/tiimeweb_synergy_exactly_once_delivery"
+    ],
+    "interface_only_names_not_in_dependency_graph": [
+      "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "Shtenco/synergy_long_term_harness"
+    ],
+    "dependency_graph_names_not_in_interface_registry": []
+  },
+  "interpretation": [
+    "The governance registry is a 75-repository subset of the 112-repository owner-scoped inventory; it is not a complete inventory mirror.",
+    "The 77 interface records contain the 75 dependency-graph repositories plus two interface-only repositories.",
+    "39 contract registry entries marked ADAPTER_IMPLEMENTED are contract lifecycle records, not proof of E2E or deployed integration.",
+    "The dependency graph has 22 RUNTIME_DEPENDENCY, 22 RUNTIME_CONTRACT and 22 CONTRACT_FLOW edges; all 66 carry ADAPTER_IMPLEMENTED status, while its integration summary counts 22 adapter-implemented runtime dependency edges.",
+    "The M5 manifest defines 44 required runtime edges across six suites, but observed execution is BLOCKED_BY_RUNNER with zero successful suites and zero verified runtime edges.",
+    "Do not collapse registry-declared adapter status, required M5 scope, E2E-tested edges and deployed runtime edges into one metric."
+  ]
+}
