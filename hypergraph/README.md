@@ -5,7 +5,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Sixty-eight README reviews and fifty-seven limited source reviews, each pinned to the exact main commit and file blob SHA.
+- Seventy-two README reviews and sixty limited source reviews, each pinned to the exact main commit and file blob SHA.
 - 39 proposed shared cores and domain routers are kept separate from actual repositories; 27 have first-pass overlap assessments and 12 remain unaudited.
 - Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
@@ -69,6 +69,10 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 32. `synergy_eurasian` is an economic allocation simulator with scenario coefficients, not a live macroeconomic data authority.
 33. `synergy_binary_quantum_theory` keeps mathematical proof status separate from unresolved physical validation gates.
 
+34. PQ-EVM's standards-based provider is optional behind a Cargo feature; the default build does not enable it, and the project remains unaudited research/integration code.
+35. `synergy_blochain_budget` provides source-bound public budget/EIS traceability and Merkle proofs, not legal/accounting authority.
+36. `synergy_triangle_money_system` distinguishes HardNAV from liquidity multiplier but lacks repayment lifecycle and independent oracle controls.
+
 ## Evidence rules
 1. Repository names are not identities; GitHub repository IDs are.
 2. A registry dependency is a candidate edge, not proof of an import or runtime call.
@@ -80,14 +84,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 68/112 (60.71%).
-- Source reviewed (limited scope): 57/112 (50.89%).
+- README reviewed: 72/112 (64.29%).
+- Source reviewed (limited scope): 60/112 (53.57%).
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
 ## Next audit sequence
 1. Close the browser subresource network-policy finding.
-2. Audit the remaining 55 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+2. Audit the remaining 52 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
 3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
 5. Run capability-overlap analysis before proposing any new repository.
