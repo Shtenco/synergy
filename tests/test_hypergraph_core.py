@@ -26,6 +26,7 @@ class HypergraphCoreTests(unittest.TestCase):
         cls.overlap = load_json(HYPERGRAPH / "architecture" / "overlap-matrix.json")
         cls.audit = load_json(HYPERGRAPH / "evidence" / "repository-audits.json")
         cls.governance = load_json(HYPERGRAPH / "evidence" / "governance-registry-snapshot.json")
+        cls.scope_manifest = load_json(HYPERGRAPH / "evidence" / "governance-scope-manifest.json")
         cls.registry = load_json(ROOT / "registry" / "repos.json")
 
     def test_inventory_has_112_unique_provider_ids(self):
@@ -148,6 +149,28 @@ class HypergraphCoreTests(unittest.TestCase):
         self.assertEqual(counts["dependency_graph_summary"]["deployed_runtime_edges"], 0)
         self.assertTrue(set(reconcile["interface_registry_repository_names"]).issubset(inventory))
         self.assertTrue(set(reconcile["dependency_graph_repository_names"]).issubset(inventory))
+
+    def test_governance_scope_manifest_partitions_all_112_repositories(self):
+        manifest = self.scope_manifest
+        records = manifest["repositories"]
+        nodes = {node["full_name"]: node for node in self.nodes_doc["nodes"]}
+        self.assertEqual(len(records), 112)
+        self.assertEqual({item["repository"] for item in records}, set(nodes))
+        self.assertEqual(manifest["counts"], {
+            "inventory_repositories": 112,
+            "dependency_graph_and_interface": 75,
+            "interface_only": 2,
+            "absent_from_both": 35,
+            "requiring_owner_scope_decision": 35,
+        })
+        for item in records:
+            self.assertEqual(item["node_id"], nodes[item["repository"]]["node_id"])
+            self.assertEqual(
+                item["scope_review"],
+                "present_in_canonical_registry"
+                if item["in_dependency_graph"] or item["in_interface_registry"]
+                else "needs_owner_scope_decision",
+            )
 
     def test_m5_scope_aliases_and_contract_counts_reconcile(self):
         snapshot = self.governance
