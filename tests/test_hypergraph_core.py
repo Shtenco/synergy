@@ -26,7 +26,9 @@ class HypergraphCoreTests(unittest.TestCase):
         cls.overlap = load_json(HYPERGRAPH / "architecture" / "overlap-matrix.json")
         cls.audit = load_json(HYPERGRAPH / "evidence" / "repository-audits.json")
         cls.governance = load_json(HYPERGRAPH / "evidence" / "governance-registry-snapshot.json")
+        cls.governance_projection = load_json(HYPERGRAPH / "governance-edges.json")
         cls.scope_manifest = load_json(HYPERGRAPH / "evidence" / "governance-scope-manifest.json")
+        cls.governance_projection_schema = load_json(HYPERGRAPH / "schemas" / "governance-graph-projection.schema.json")
         cls.registry = load_json(ROOT / "registry" / "repos.json")
 
     def test_inventory_has_112_unique_provider_ids(self):
@@ -149,6 +151,43 @@ class HypergraphCoreTests(unittest.TestCase):
         self.assertEqual(counts["dependency_graph_summary"]["deployed_runtime_edges"], 0)
         self.assertTrue(set(reconcile["interface_registry_repository_names"]).issubset(inventory))
         self.assertTrue(set(reconcile["dependency_graph_repository_names"]).issubset(inventory))
+
+    def test_governance_graph_projection_preserves_canonical_edges(self):
+        projection = self.governance_projection
+        counts = projection["counts"]
+        nodes = {node["node_id"] for node in self.nodes_doc["nodes"]}
+        projected_nodes = {node["node_id"] for node in projection["nodes"]}
+        self.assertEqual(counts["nodes"], 75)
+        self.assertEqual(counts["edges"], 136)
+        self.assertEqual(len(projected_nodes), 75)
+        self.assertTrue(projected_nodes.issubset(nodes))
+        self.assertEqual(counts["unique_contract_ids"], 38)
+        self.assertEqual(counts["m5_required_edges"], 44)
+        self.assertEqual(counts["e2e_tested_edges"], 0)
+        self.assertEqual(counts["deployed_runtime_edges"], 0)
+        self.assertEqual(counts["edge_type_counts"], {
+            "ARCHITECTURAL_PARENT": 70,
+            "CONTRACT_FLOW": 22,
+            "RUNTIME_DEPENDENCY": 22,
+            "RUNTIME_CONTRACT": 22,
+        })
+        self.assertEqual(counts["edge_status_counts"], {
+            "DOCUMENTED": 70, "ADAPTER_IMPLEMENTED": 66
+        })
+        self.assertEqual(counts["m5_edge_type_counts"], {
+            "RUNTIME_DEPENDENCY": 22, "RUNTIME_CONTRACT": 22
+        })
+        self.assertEqual(sum(edge["in_m5_required_scope"] for edge in projection["edges"]), 44)
+        for edge in projection["edges"]:
+            self.assertIn(edge["source_node_id"], projected_nodes)
+            self.assertIn(edge["target_node_id"], projected_nodes)
+            self.assertIn(edge["source_node_id"], nodes)
+            self.assertIn(edge["target_node_id"], nodes)
+        self.assertEqual(projection["source"]["commit"], "f1183d54121c3bbc558e4a171ddbba20973f8520")
+        self.assertEqual(
+            self.governance_projection_schema["properties"]["projection_type"]["const"],
+            "read_only_governance_graph_projection",
+        )
 
     def test_governance_scope_manifest_partitions_all_112_repositories(self):
         manifest = self.scope_manifest
