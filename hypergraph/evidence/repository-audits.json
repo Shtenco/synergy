@@ -4533,7 +4533,157 @@
           "blob_sha": "4633381984a7478ca432e51c558c4895c44618d1"
         }
       ]
+    },
+    {
+      "name": "synergy_chain_print_money",
+      "repository": "Shtenco/synergy_chain_print_money",
+      "commit": "c1d6674a9cf92aee2989ff34d66078e70435b59e",
+      "commit_url": "https://github.com/Shtenco/synergy_chain_print_money/commit/c1d6674a9cf92aee2989ff34d66078e70435b59e",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README, complete main tree and scientific dossier; no executable runtime or tests found.",
+      "findings": [
+        "Main contains README, LICENSE, SVG assets and documentation dossiers only; no source/runtime, test suite, dependency manifest, CI or release artifact.",
+        "README explicitly marks the project STUB/specification-only and defines future reserve, mint/burn and settlement evidence requirements; these are target design, not implemented behavior."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7db2b2ff0e1906913f9795f254fbd3209db39cdf"
+        },
+        {
+          "path": "docs/SCIENTIFIC_DOSSIER_V3_2026.md",
+          "blob_sha": "d14e9b5ac452420a362ed7d9c6a0e48169bbacd6"
+        },
+        {
+          "path": "docs/sdu/SDU_ASYMMETRIC_AMM_30DAY_V1_2026-11-09.md",
+          "blob_sha": "7e2c09a17e250d93bbcab11e47d6a51c931b4f9d"
+        }
+      ]
+    },
+    {
+      "name": "synergy_app_family",
+      "repository": "Shtenco/synergy_app_family",
+      "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+      "commit_url": "https://github.com/Shtenco/synergy_app_family/commit/b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README, complete main tree and scientific dossier; no executable runtime or tests found.",
+      "findings": [
+        "Main contains README, LICENSE, SVG assets and one scientific dossier; no family application source, tests, build manifest, CI or release artifact.",
+        "The documented consent, member-isolation and financial read-model boundaries are requirements only; there is no executable evidence for their enforcement."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "c57e17c05c4f24daef8d1a04da8a7b5330fd81a1"
+        },
+        {
+          "path": "docs/SCIENTIFIC_DOSSIER_V3_2026.md",
+          "blob_sha": "9f737534d2dc528b5d1dc9d08b1f1d9400e9a72c"
+        }
+      ]
+    },
+    {
+      "name": "synegy_ai_compress",
+      "repository": "Shtenco/synegy_ai_compress",
+      "commit": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+      "commit_url": "https://github.com/Shtenco/synegy_ai_compress/commit/189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+      "audited_at": "2026-11-25",
+      "status": "benchmark_dossier",
+      "scope": "README, complete main tree, benchmark result artifacts, environment metadata and source_snapshot gitlink; no engine source inspected.",
+      "findings": [
+        "The main tree contains benchmark CSVs, input corpus files, SVGs and a source_snapshot gitlink, but no directly inspectable engine implementation or test harness.",
+        "README explicitly separates frozen historical profiles from fresh-world measurements and warns that different protocols must not be mixed as a single competition.",
+        "The fresh-world benchmark records 38 profiles over 11 datasets of 32,768 bytes each with exact round-trip PASS; this is a bounded archived benchmark, not independent evidence of broad enterprise performance.",
+        "The environment.json artifact is valid JSON and parses as JSON; the earlier GAP-089 claim that it contains CSV rows was incorrect and is replaced by a corpus-generalization limitation.",
+        "The source_snapshot gitlink has no .gitmodules URL in the main tree, and the source cannot be independently retrieved from this repository snapshot."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d12b09678ac1b88c5c02c294abe28cba6569f8a0"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/environment.json",
+          "blob_sha": "4f646c93655a9f22871d45bc264bb1044e9ffb11"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/fresh_world_38_summary.csv",
+          "blob_sha": "fbbd6ca07f9fda81f1f4b939b65466f2176da576"
+        },
+        {
+          "path": "source_snapshot",
+          "gitlink_commit": "c681ec94fe5194156b71fc304035f7aaff4d2327"
+        }
+      ]
+    },
+    {
+      "name": "synergy_shhts",
+      "repository": "Shtenco/synergy_shhts",
+      "commit": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+      "commit_url": "https://github.com/Shtenco/synergy_shhts/commit/8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README, complete main tree and scientific dossier; no executable transport implementation or tests found.",
+      "findings": [
+        "Main contains README, LICENSE, SVG assets and one scientific dossier; no byte-level transport format, runtime, tests, build manifest or CI is present.",
+        "README marks the project STUB and explicitly requires test vectors, replay/nonce tests and TLS 1.3 comparisons before maturity promotion."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ea4b354ca82c208d834e762d5963a9b02586fd73"
+        },
+        {
+          "path": "docs/SCIENTIFIC_DOSSIER_V3_2026.md",
+          "blob_sha": "725bfd4e47e836ae87d185270d953173c9cd42cc"
+        }
+      ]
+    },
+    {
+      "name": "synergy_algotrading_graph_system",
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "commit": "5fb87036fe833a6e7939654469766c86f92533ee",
+      "commit_url": "https://github.com/Shtenco/synergy_algotrading_graph_system/commit/5fb87036fe833a6e7939654469766c86f92533ee",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README and complete main tree; no executable graph router or tests found.",
+      "findings": [
+        "Main contains README, LICENSE and a single architecture SVG; there is no executable router, venue adapter, test suite, dependency manifest or CI.",
+        "README defines amount-dependent AlphaGraph and settlement-aware RebalancingGraph as research specification and explicitly says a positive scalar cycle is not proof of executable arbitrage."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d28bb161a00b7988d3967c6b5c3e19eb7f219442"
+        }
+      ]
+    },
+    {
+      "name": "sinergy_app",
+      "repository": "Shtenco/sinergy_app",
+      "commit": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+      "commit_url": "https://github.com/Shtenco/sinergy_app/commit/2e8af43e14875442f89b6dca13d96306defaf1bd",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README, complete main tree and scientific dossier; no executable application runtime or tests found.",
+      "findings": [
+        "Main contains README, LICENSE, SVG assets and a scientific dossier; no UI source, package/build manifest, tests, CI, API client or release artifact is present.",
+        "The thin-client and authoritative-financial-read-model rules are target requirements; no runtime integration or client security enforcement is demonstrated."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a301fe07f3b3e129c7482f3240d3fda5e2c00890"
+        },
+        {
+          "path": "docs/SCIENTIFIC_DOSSIER_V2_2026.md",
+          "blob_sha": "c7c0fcb299609004eb688a323ceeb1140b2c5fee"
+        }
+      ]
     }
   ],
-  "audit_record_count": 125
+  "audit_record_count": 131,
+  "content_reviewed_repository_count": 112
 }
