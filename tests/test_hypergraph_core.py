@@ -228,6 +228,27 @@ class HypergraphCoreTests(unittest.TestCase):
         for node in self.nodes_doc["nodes"]:
             self.assertIn(node["audit_status"], allowed)
 
+    def test_canonical_financial_integration_risks_are_explicit(self):
+        by_id = {gap["id"]: gap for gap in self.gaps["gaps"]}
+        self.assertEqual(
+            by_id["GAP-093"]["severity"], "critical"
+        )
+        self.assertEqual(
+            by_id["GAP-094"]["evidence"][0]["ref"],
+            "federation-v3-domain-expansion",
+        )
+        self.assertIn("open/draft/unmerged", by_id["GAP-094"]["validation"])
+        self.assertEqual(
+            by_id["GAP-095"]["evidence"][1]["ref"],
+            "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
+        )
+        self.assertIn("13,000-block corrected replay remains pending", by_id["GAP-095"]["description"])
+        self.assertIn(
+            "GAP-095",
+            {risk["hypergraph_gap"] for risk in self.governance["counts"].get("observed_contract_risk_details", [])}
+            | {risk["hypergraph_gap"] for risk in self.governance.get("observed_contract_risk_details", [])},
+        )
+
     def test_critical_security_gaps_are_recorded_without_secret_values(self):
         critical = [gap for gap in self.gaps["gaps"] if gap["severity"] == "critical"]
         self.assertGreaterEqual(len(critical), 5)
