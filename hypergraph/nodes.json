@@ -673,12 +673,18 @@
       "category": "compute-os",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "decimal-safe-household-maturity-book",
+        "tranche-liquidity-classes",
+        "borrower-self-funding-exclusion",
+        "maturity-snapshot-v1",
+        "canonical-household-capital-contract"
+      ],
       "declared_dependencies": [],
       "risks": [
         "Do not count as a debt/credit runtime or financial OS component until executable implementation and property tests exist."
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -688,14 +694,16 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "1d84bddfec16998c9300c984ca50980c1f946d56",
+        "status": "branch_only_prototype",
+        "commit": "120d662a54bb13334fd98ca5312c52b4cde38682",
         "audited_at": "2026-11-25",
-        "scope": "README plus selected source on main; no tests executed in this audit."
+        "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only."
       },
       "audit_findings": [
-        "Main is documentation-first and contains README plus owner-manifest documentation only; no runtime, schemas, tests, CI or executable maturity ladder are present.",
-        "README defines strong accounting invariants and explicitly states that no runtime test command exists; it must not be treated as a working credit/loan engine."
+        "Main is documentation-only; executable MaturityBook and snapshot library plus four test modules exist on open PR #1 branch feat/canonical-household-capital-os-20260817.",
+        "Core rejects NaN/Infinity Decimal values, enforces positive principal and 1..100 week duration, separates callable from term/locked liquidity and excludes borrower-owned tranches by default.",
+        "Snapshot requires timezone-aware as_of, safe-integer week index and bounded horizon, and hashes canonical finite JSON; it exports a maturity schedule but does not calculate LCR or provide lending/credit authority.",
+        "This is a reference accounting/maturity library, not a persisted household capital engine or production credit system."
       ]
     },
     {
@@ -3177,14 +3185,21 @@
       "category": "compute-os",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "adaptive-rank-low-rank-compression",
+        "sparse-residual-codec",
+        "packed-q4-native-cpu-kernel",
+        "gguf-v2-v3-io",
+        "global-quality-budget-search",
+        "llama-cpp-patcher"
+      ],
       "declared_dependencies": [
         "Shtenco/synergy_meta_os"
       ],
       "risks": [
         "Do not treat the repository as an implemented GGUF compressor."
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3194,11 +3209,16 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "c1882525e12f4662c30851cf1a7995a957cba543",
+        "status": "branch_only_prototype",
+        "commit": "8c92ebde71126ad9bbbf3730b45b6269e74825ad",
         "audited_at": "2026-11-25",
-        "scope": "README and complete main-branch tree"
-      }
+        "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only."
+      },
+      "audit_findings": [
+        "Main is a stub; substantial V2-V8 implementation, C++ packed-Q4 kernel and 13 test modules exist on open PR #7 branch feat/omega-mix-v8-behavioral-budget.",
+        "README reports local unit/native-kernel and patcher tests, but complete patched llama.cpp link/build and real Llama/Qwen end-to-end model runs are not complete; prior Actions jobs had runner_id=0/no steps.",
+        "Compression is lossy and quality must be validated with real perplexity/logit/task metrics; static PASS is not promoted to end-to-end model-quality PASS when llama.cpp did not execute."
+      ]
     },
     {
       "node_id": "github-repo:1168765679",
@@ -3672,7 +3692,14 @@
       "category": "agi-agentic",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "rust-goal-to-result-control-plane",
+        "plugin-fabric-and-registry",
+        "capability-policy-engine",
+        "business-runtime-sidecar",
+        "verification-pipeline",
+        "mission-workforce-and-recovery"
+      ],
       "declared_dependencies": [
         "Shtenco/synergy_agi_nexus",
         "Shtenco/synergy_agentic_ai_economy",
@@ -3684,7 +3711,7 @@
       "risks": [
         "No DAG planner, agent runtime, execution engine or integration is implemented on main."
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3694,11 +3721,17 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "65433bca107e823ebe1223646601541bb86b5d0d",
+        "status": "branch_only_prototype",
+        "commit": "337ca67415f2856da4d31ffa03517e6f40cfdab2",
         "audited_at": "2026-11-25",
-        "scope": "README and complete main-branch tree"
-      }
+        "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only."
+      },
+      "audit_findings": [
+        "Main is documentation/specification-only; the large Rust control plane and Python business runtime are on open integration PR #7 branch integration/synergy-ai-autopilot-v1, with additional M12 hardening PRs still open.",
+        "Plugin policy defaults to Allow for capabilities without a matching deny/approval rule. PluginManifest permits capabilities with no mapped_core_capabilities, and registry loading does not cryptographically sign or attest manifests.",
+        "PluginRuntime trusts a caller-supplied PluginCall.approved boolean when no persistent control-plane DB is configured; persistent approval lookup is conditional on that DB being present. A plugin manifest can also declare requires_approval=false and a low risk class.",
+        "Business sidecar defaults to paper mode and external effects disabled, hard-denies payment/accounting/blockchain/host-shell capabilities and has tests for approval gates; these controls do not remove the default-allow and caller-asserted approval weaknesses in the shared plugin runtime."
+      ]
     },
     {
       "node_id": "github-repo:1344027509",
@@ -3799,12 +3832,17 @@
       "category": "finance-economy",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "revenue-vault",
+        "principal-and-refund-liability-separation",
+        "external-cash-flow-accounting",
+        "base-usdc-fork-smoke-test"
+      ],
       "declared_dependencies": [],
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3814,14 +3852,16 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "7dd01e7da992d2efedb957e83a48218b86d0083f",
+        "status": "branch_only_prototype",
+        "commit": "dd956f05186790ff27a3443e17dd914e90c7154a",
         "audited_at": "2026-11-25",
-        "scope": "README plus main source/tests or complete main tree; no tests or backtests executed during this audit."
+        "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only."
       },
       "audit_findings": [
-        "Main contains README, LICENSE, assets and docs only; README explicitly states runtime, simulator, contracts, tests, CI, datasets and evidence artifacts are absent.",
-        "The repository is a research specification, not a deployed monetary protocol or production system."
+        "Main is an R&D specification with no runtime; research/omega-v5-real-flow-fork contains a Solidity RevenueVault and Foundry tests.",
+        "RevenueVault separates seeded principal, recognized external revenue, expenses, refundable liabilities and owner distributions; reserve checks prevent expenses/distributions from consuming principal or refund obligations.",
+        "Only-owner control is a single immutable EOA with no multisig, timelock or pause; tests use MockUSDC and a Base USDC fork smoke, not real profitable swaps or audited production settlement.",
+        "Branch README explicitly says actual Base RPC and Foundry were unavailable in the authoring environment and future Curve/Uniswap swaps, trade P&L and stress-redemption tests remain open."
       ]
     },
     {
@@ -4217,12 +4257,20 @@
       "category": "finance-economy",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "temporary-qe-token-issuance",
+        "cycle-escrow-and-principal-burn",
+        "facilitator-registry",
+        "hard-nav-risk-capacity",
+        "hard-treasury",
+        "bridge-claim-accounting",
+        "foundry-invariant-tests"
+      ],
       "declared_dependencies": [],
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -4232,14 +4280,16 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
+        "status": "branch_only_prototype",
+        "commit": "b5a6b5006df7b9eaa12cae35acaffbac8cd4919a",
         "audited_at": "2026-11-25",
-        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+        "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only."
       },
       "audit_findings": [
-        "Checked main contains README.md, LICENSE and documentation/assets only; no executable QE runtime or tests are present.",
-        "README explicitly identifies main as STUB / specification-only."
+        "Main is a specification-only QE design; the M1 Solidity contracts and Foundry unit/invariant tests are on open PR #2 branch impl/qe-engine-v1-m1.",
+        "RiskEngine computes capacity as the minimum of independent hard-NAV, executable-depth, bridge, loss-budget, oracle and global caps; contraction/global-settlement modes and unhealthy oracle return zero.",
+        "BridgeAccounting accepts source/destination hard values and state transitions from a BRIDGE_ROLE caller; it does not independently verify source-chain proofs, destination inclusion or finality. This is a trusted bridge-attestor model, not a trustless bridge.",
+        "QEController and HardTreasury use role-gated mint/burn, settlement and asset registration; no external audit or deployed integration is evidenced."
       ]
     },
     {
