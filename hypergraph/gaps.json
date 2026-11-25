@@ -652,6 +652,22 @@
       "repository": "Shtenco/synergy.github.io",
       "description": "README states tests/test_capital_montecarlo.cjs is absent, but the file exists in the inspected main tree; current documentation no longer matches repository evidence.",
       "next_action": "Refresh README audit note and publish the latest workflow run/commit that actually executes the test."
+    },
+    {
+      "id": "GAP-083",
+      "severity": "critical",
+      "area": "shttps_remote_mcp_command_execution",
+      "repository": "Shtenco/synergy_shttps",
+      "description": "RemoteMCPGateway.run is not a safe command allowlist: allowed python/cargo/rustc/git executables accept arbitrary arguments, including arbitrary Python code, and basename-only matching can execute a different path with an allowed basename. No OS-level sandbox or syscall/network confinement is enforced in this gateway.",
+      "next_action": "Treat the endpoint as privileged remote code execution until redesigned: remove generic interpreters/compilers from allowlist, use typed fixed operations, resolve executable paths to trusted absolute binaries, run in an isolated ephemeral sandbox with no ambient credentials/network by default, enforce per-principal capabilities and audit every action."
+    },
+    {
+      "id": "GAP-084",
+      "severity": "critical",
+      "area": "pq_radio_hardware_attestation_verification",
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "description": "Hardware teleportation receipt accepts any nonzero driver-supplied attestation root; the claim-strengthening method checks only Hardware mode and root presence. A fake driver with a constant [7;32] root passes the test, so the root is not independently authenticated.",
+      "next_action": "Verify a signed hardware attestation chain against pinned device/vendor roots, bind device identity/calibration/experiment transcript and measurements, reject unknown keys and test forged/expired/replayed attestations; keep all simulation receipts non-authoritative."
     }
   ]
 }
