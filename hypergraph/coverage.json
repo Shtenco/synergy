@@ -377,5 +377,18 @@
     "m5_required_edges": 44,
     "e2e_tested_edges": 0,
     "deployed_runtime_edges": 0
+  },
+  "related_governance_branch_pr56": {
+    "pull_request": 56,
+    "state": "open",
+    "draft": true,
+    "head_commit": "77a410a2166bd41795ecda776aabbb720c807c64",
+    "ci_all_four_workflows_success": true,
+    "portfolio_repositories": 112,
+    "portfolio_source_review_complete": false,
+    "interface_records": 77,
+    "dependency_graph_nodes": 75,
+    "backlog_repositories": 77,
+    "backlog_non_integrated": 36
   }
 }
