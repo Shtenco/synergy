@@ -1,0 +1,3170 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "edge_count": 109,
+  "verified_edge_count": 0,
+  "edges": [
+    {
+      "edge_id": "dep:1091968186:github-repo:1341272872",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1091968186",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=computer_vision_trading_metatrader_5]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1091968186:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1091968186",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=computer_vision_trading_metatrader_5]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1344027509:github-repo:1371974932",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1344027509",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=sinergy_app]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1344027509:github-repo:1344028054",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1344027509",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1344028054",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=sinergy_app]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1344027509:github-repo:1227851612",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1344027509",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1227851612",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=sinergy_app]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1344027509:github-repo:1371942189",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1344027509",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1371942189",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=sinergy_app]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1344027509:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1344027509",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=sinergy_app]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1344027509:github-repo:1336910945",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1344027509",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1336910945",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=sinergy_app]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1344027509:github-repo:1317622231",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1344027509",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317622231",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=sinergy_app]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376377980:github-repo:1341272872",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377980",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_adaptive_engine]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376377980:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377980",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_adaptive_engine]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376377980:github-repo:1376376805",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377980",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1376376805",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_adaptive_engine]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376377980:github-repo:1376376981",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377980",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1376376981",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_adaptive_engine]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376377980:github-repo:1376377703",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377980",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1376377703",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_adaptive_engine]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1343965302:github-repo:1341271800",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1343965302",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_autopilot]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1343965302:github-repo:1387121392",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1343965302",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1387121392",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_autopilot]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1343965302:github-repo:1168739656",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1343965302",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1168739656",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_autopilot]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1343965302:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1343965302",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_autopilot]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1343965302:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1343965302",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_autopilot]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1343965302:github-repo:1362541171",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1343965302",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1362541171",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_autopilot]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341271800:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_nexus]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341271800:github-repo:1167196077",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1167196077",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_nexus]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341271800:github-repo:1341273613",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273613",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_nexus]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341271800:github-repo:1336910945",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1336910945",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_nexus]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341271800:github-repo:1317824815",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317824815",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_nexus]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341271800:github-repo:1370636640",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1370636640",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_nexus]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1167196077:github-repo:1370636640",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1167196077",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1370636640",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_agi_olga]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1317641638:github-repo:1167196077",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1317641638",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1167196077",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_blockchain]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1317641638:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1317641638",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_blockchain]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1168739656:github-repo:1341271800",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1168739656",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_coder]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368484353:github-repo:1341271800",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368484353",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_company]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368484353:github-repo:1387121392",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368484353",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1387121392",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_company]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368484353:github-repo:1343965302",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368484353",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1343965302",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_company]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368484353:github-repo:1336910945",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368484353",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1336910945",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_company]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368484353:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368484353",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_company]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368484353:github-repo:1362541171",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368484353",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1362541171",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_company]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1310793915:github-repo:1336910945",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1310793915",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1336910945",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_financial_system]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1310793915:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1310793915",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_financial_system]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1168765679:github-repo:1341272872",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1168765679",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_trade_terminal]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1168765679:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1168765679",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_ai_trade_terminal]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1371974932:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_apps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1371974932:github-repo:1344028054",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1344028054",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_apps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1371974932:github-repo:1344027509",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1344027509",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_apps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1371974932:github-repo:1227851612",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1227851612",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_apps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1371974932:github-repo:1365353815",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1365353815",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_apps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1371974932:github-repo:1371942189",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1371942189",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_apps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1371974932:github-repo:1362541171",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1362541171",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_apps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1365353815:github-repo:1371974932",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1365353815",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1371974932",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_app_family]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1180497488:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1180497488",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_cashero]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1366684382:github-repo:1317641638",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1366684382",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317641638",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_chain_print_money]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1377447162:github-repo:1390438988",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1377447162",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1390438988",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_epstein_network]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1377447162:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1377447162",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_epstein_network]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368875919:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368875919",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_gguf_compress]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1370636640:github-repo:1341271800",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1370636640",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_gllm_nexus]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1370636640:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1370636640",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_gllm_nexus]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1364848219:github-repo:1317641638",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1364848219",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317641638",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_graph_print_money]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1364848219:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1364848219",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_graph_print_money]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341275176:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_meta_os]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341275176:github-repo:1165635662",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1165635662",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_meta_os]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341275176:github-repo:1341273955",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_meta_os]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341275176:github-repo:1370636640",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1370636640",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_meta_os]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1336910945",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1336910945",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1151919657",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1151919657",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1165602026",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1165602026",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1168765679",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1168765679",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1316045651",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1316045651",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1091998611",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1091998611",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1091968186",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1091968186",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1091983056",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1091983056",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1091973987",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1091973987",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1091992955",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1091992955",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:1098247138",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1098247138",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341272872:github-repo:937796740",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:937796740",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_midas_ai]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1351698135:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1351698135",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_motherboard_xpu_xml]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1351698135:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1351698135",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_motherboard_xpu_xml]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341273955:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_net]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341273955:github-repo:1317273998",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317273998",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_net]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341273955:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_net]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341273955:github-repo:1165635662",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1165635662",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_net]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341273613:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273613",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_nexus_science_agent]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341273613:github-repo:1341271800",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273613",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_nexus_science_agent]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1341273613:github-repo:1327916781",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273613",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1327916781",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_nexus_science_agent]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1391275828:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1391275828",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_post_quantum_radio]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1359110009:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1359110009",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_project]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1359110009:github-repo:1317622231",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1359110009",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317622231",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_project]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1359110009:github-repo:1316045651",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1359110009",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1316045651",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_project]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1350374084:github-repo:1317273998",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1350374084",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317273998",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_qr_compress]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376376981:github-repo:1341272872",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376981",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_riskguard]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376376981:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376981",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_riskguard]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376376981:github-repo:1376376805",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376981",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1376376805",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_riskguard]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376376981:github-repo:1376378295",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376981",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1376378295",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_riskguard]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1376376981:github-repo:1336910945",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376981",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1336910945",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_riskguard]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368537298:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368537298",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shhts]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368537298:github-repo:1368539352",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368537298",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1368539352",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shhts]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368537298:github-repo:1341273955",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368537298",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shhts]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368537298:github-repo:1317641638",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368537298",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317641638",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shhts]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368537298:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368537298",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shhts]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368537298:github-repo:1362541171",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368537298",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1362541171",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shhts]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368539352:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368539352",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shttps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368539352:github-repo:1368537298",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368539352",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1368537298",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shttps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368539352:github-repo:1341273955",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368539352",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shttps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368539352:github-repo:1391275828",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368539352",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1391275828",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shttps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368539352:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368539352",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shttps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1368539352:github-repo:1362541171",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1368539352",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1362541171",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_shttps]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1165635662:github-repo:1341275176",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1165635662",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_turbo_linux]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1165635662:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1165635662",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_turbo_linux]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1331946228:github-repo:1317641638",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1331946228",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1317641638",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_usds]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    },
+    {
+      "edge_id": "dep:1331946228:github-repo:1341273343",
+      "relation": "DEPENDS_ON",
+      "participants": [
+        {
+          "node_id": "github-repo:1331946228",
+          "role": "dependent"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "dependency"
+        }
+      ],
+      "status": "candidate",
+      "provenance": [
+        {
+          "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+          "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+          "evidence_ref": "/repositories[name=synergy_usds]/dependencies",
+          "evidence_digest": {
+            "algorithm": "git-blob-sha1",
+            "value": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+          },
+          "evidence_type": "registry-declared-dependency"
+        }
+      ],
+      "observed_at": "2026-11-25",
+      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+    }
+  ],
+  "unresolved": []
+}
