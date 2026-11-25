@@ -3,7 +3,7 @@
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
   "audited_repository_count": 112,
-  "source_code_reviewed_count": 98,
+  "source_code_reviewed_count": 101,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -4111,7 +4111,144 @@
           "blob_sha": "9c4a0f8f65e3b7806082d823d8e8e76137a034e7"
         }
       ]
+    },
+    {
+      "name": "synergy_shttps",
+      "repository": "Shtenco/synergy_shttps",
+      "commit": "f3eda6bb7cdfd5478f9594dad4ee5dd91381e9b8",
+      "commit_url": "https://github.com/Shtenco/synergy_shttps/commit/f3eda6bb7cdfd5478f9594dad4ee5dd91381e9b8",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on open PR branch; main remains documentation-only.",
+      "capabilities": [
+        "hybrid-pq-handshake",
+        "liboqs-provider-adapter",
+        "aead-record-framing",
+        "replay-protection",
+        "stcp-remote-mcp-gateway",
+        "federation-and-key-rotation"
+      ],
+      "findings": [
+        "Main remains specification-only; substantial SHTTPS v2/STCP/Remote MCP implementation and 14 test modules exist on open PR #2 branch feat/stcp-shttps-remote-mcp-v2-20260925.",
+        "PQ production provider is an optional liboqs adapter; handshake tests use FakePQProvider, so those tests do not validate the real ML-KEM/ML-DSA/SLH-DSA provider or interoperability.",
+        "RemoteMCPGateway.run accepts allowlisted executable basenames including python/cargo/rustc/git, but permits arbitrary arguments such as python -c and does not sandbox the subprocess; basename matching also allows a different executable path ending in an allowed name. It is privileged remote code execution, not a safe command sandbox."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "59e7246b14241fd19ec093ef6fb639180f7f43cf"
+        },
+        {
+          "path": "shttps/handshake.py",
+          "blob_sha": "2e57b5731ed1cd370fac024627cad3fd3198453e"
+        },
+        {
+          "path": "shttps/crypto/oqs_provider.py",
+          "blob_sha": "12f04c191787ff6dccba4c4fb7812908eb6252c2"
+        },
+        {
+          "path": "shttps/remote_mcp.py",
+          "blob_sha": "f6746cb1e7d7f3b6362152912f7ae8cdfc0582fd"
+        },
+        {
+          "path": "tests/test_handshake.py",
+          "blob_sha": "bb23b7fed8968e826bf7ea1560aec0b3b8f82fd2"
+        },
+        {
+          "path": "tests/test_stcp_remote_mcp.py",
+          "blob_sha": "f8cf59c3d90bab0e978f73ecd795b7fd94849a31"
+        }
+      ]
+    },
+    {
+      "name": "synergy_agent_long_term_memory",
+      "repository": "Shtenco/synergy_agent_long_term_memory",
+      "commit": "04e666038ac7cd0652ea77ce4de2c2f1ec706dcf",
+      "commit_url": "https://github.com/Shtenco/synergy_agent_long_term_memory/commit/04e666038ac7cd0652ea77ce4de2c2f1ec706dcf",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on open PR branch; main remains documentation-only.",
+      "capabilities": [
+        "sqlite-append-only-mission-journal",
+        "idempotency-key-events",
+        "optimistic-versioning",
+        "namespace-isolation",
+        "checkpoint-hashes",
+        "bounded-thread-safe-ring-buffer",
+        "strict-engineering-state-contract"
+      ],
+      "findings": [
+        "Main is README-only; the open PR #2 branch feat/persistent-mission-runtime-v1 contains a SQLite WAL/FULL mission journal, checkpoints, idempotency fingerprints, namespace-scoped queries and a bounded ring buffer.",
+        "Canonical JSON rejects NaN and custom objects; writes use SQLite BEGIN IMMEDIATE and idempotency key conflicts reject payload changes.",
+        "The runtime explicitly delegates principal authentication and namespace authorization to callers; no LLM provider, task DAG scheduler, cross-repository transaction coordinator or production tenant identity service is included."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "c3a2043609b821ae273e56875290bea1f0ddb773"
+        },
+        {
+          "path": "synergy_agent_long_term_memory/runtime.py",
+          "blob_sha": "36571e99ef4c18b0fb992f4ee2eea0e80e9fa7a7"
+        },
+        {
+          "path": "synergy_agent_long_term_memory/ring_buffer.py",
+          "blob_sha": "4df64d241fcfd75f72eff31a24285068260a0679"
+        },
+        {
+          "path": "synergy_agent_long_term_memory/contracts.py",
+          "blob_sha": "5616dc9f41e069ab2ee234134f846f0ed737c43e"
+        },
+        {
+          "path": "tests/test_runtime.py",
+          "blob_sha": "2baa455098d7eb477ef7d83d82af6a9754230182"
+        }
+      ]
+    },
+    {
+      "name": "synergy_post_quantum_radio",
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "commit": "2938d6aa1e939b198fb4e98bb32b3cbfc958f6e4",
+      "commit_url": "https://github.com/Shtenco/synergy_post_quantum_radio/commit/2938d6aa1e939b198fb4e98bb32b3cbfc958f6e4",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on open PR branch; main remains documentation-only.",
+      "capabilities": [
+        "ml-kem-1024",
+        "ml-dsa-87-and-slh-dsa-signatures",
+        "authenticated-radio-handshake",
+        "pi-pq-evidence-lane",
+        "simulation-vs-hardware-teleportation-boundary"
+      ],
+      "findings": [
+        "Main is documentation-only; open PR #1 branch contains Rust ML-KEM-1024, ML-DSA-87, SLH-DSA-SHAKE-256s, authenticated handshake, replay protections and simulation/hardware backend interfaces.",
+        "README explicitly labels the project PROTOTYPE / RESEARCH, states no independent cryptographic audit and rejects the legacy Hash16D 2^4096 security claim.",
+        "AttestedHardwareTeleportationBackend accepts a driver-supplied nonzero hardware_attestation_root; may_strengthen_physical_security_claim checks only Hardware mode plus presence. The test's FakeHardware returns [7;32] and is accepted, so no cryptographic signature/attestation-chain verification is implemented at this boundary.",
+        "All teleportation correctness tests use a simulator or fake hardware driver; no real QPU/radio hardware experiment is evidenced."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0da88fe6854fd91da9e12fe1e74789bbcbfcc951"
+        },
+        {
+          "path": "src/crypto.rs",
+          "blob_sha": "5f299d92537b0ab700dfb5278e90bd43e1885fc4"
+        },
+        {
+          "path": "src/quantum.rs",
+          "blob_sha": "0d58e026365d04f1ca22db957ade14b3ce9052e4"
+        },
+        {
+          "path": "src/protocol.rs",
+          "blob_sha": "5d7683d1028ee511c1051aaa0b07270f5ccb411a"
+        },
+        {
+          "path": "tests/quantum_teleportation.rs",
+          "blob_sha": "1c8482dd492be338593f417988a7b14b3f912b7d"
+        }
+      ]
     }
   ],
-  "audit_record_count": 116
+  "audit_record_count": 119
 }
