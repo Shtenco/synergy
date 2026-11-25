@@ -376,8 +376,9 @@
       "maturity": "ARCHITECTURAL_MASTER",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "client-ui",
-        "control-plane"
+        "application-master-registry",
+        "read-only-accounting-projection",
+        "read-only-trust-projection"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_system",
@@ -388,8 +389,11 @@
         "Shtenco/synergy_messenger",
         "Shtenco/dlp_solver"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Projection helpers do not authenticate source evidence, validate accounting signatures or grant authority; they rely on upstream domain payloads.",
+        "Not a marketplace backend or shared app execution runtime."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -397,6 +401,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1371974932",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+        "audited_at": "2026-11-25",
+        "scope": "README, read-only accounting/trust projections and tests"
       }
     },
     {
@@ -611,12 +621,16 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "client-ui",
-        "control-plane"
+        "responsive-pwa-shell",
+        "android-capacitor-wrapper",
+        "source-surface-hash-contract"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "UI description names wallet, AGI, DAO, L1, MetaPay and mesh modules, but the inspected source-surface contract does not prove these backend integrations exist.",
+        "Workflow definition is not proof of a successful APK build or published app."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -624,6 +638,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1227851612",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3494f2cdebd0b9510ac65a470b32a085e4920537",
+        "audited_at": "2026-11-25",
+        "scope": "README, mobile PWA shell, source-surface integrity contract and Android build workflow"
       }
     },
     {
@@ -894,12 +914,16 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "client-ui",
-        "control-plane"
+        "android-ios-web-finance-client-source",
+        "source-integrity-contract",
+        "restricted-android-permissions"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Source verification does not prove a built, signed or store-published artifact; README explicitly separates these states.",
+        "Main branch includes binary finance-next source parts whose full provenance/build integration needs separate audit."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -907,6 +931,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1344028054",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
+        "audited_at": "2026-11-25",
+        "scope": "README, mobile release contract and Android manifest"
       }
     },
     {
@@ -3061,10 +3091,7 @@
       "category": "apps-interface",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "client-ui",
-        "control-plane"
-      ],
+      "capabilities": [],
       "declared_dependencies": [
         "Shtenco/synergy_apps",
         "Shtenco/synergy_app",
@@ -3075,9 +3102,9 @@
         "Shtenco/synergy_pay_system"
       ],
       "risks": [
-        "no-executable-runtime-confirmed"
+        "No UI source, package/build manifest, tests, CI, release pipeline or API client exists in main."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3085,6 +3112,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1344027509",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
       }
     },
     {
