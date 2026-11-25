@@ -72,6 +72,26 @@
       "domain": "geospatial_viewer_and_boundary_assets",
       "owner": "Shtenco/synergy_maps",
       "role": "Cesium global globe and EAEU boundary subset; not authoritative cadastral or global city-scale map data."
+    },
+    {
+      "domain": "engineering_change_evidence",
+      "owner": "Shtenco/synergy_ai_coder",
+      "role": "Requirement-to-change trace and approval-gated evidence contract; not an autonomous coder."
+    },
+    {
+      "domain": "local_operator_workspace",
+      "owner": "Shtenco/synergy_ai_workspace",
+      "role": "Branch-only local control plane prototype; default main remains README-only."
+    },
+    {
+      "domain": "messaging",
+      "owner": "Shtenco/synergy_messenger",
+      "role": "Main branch currently documentation/manifest only; alpha runtime claims require branch/release evidence."
+    },
+    {
+      "domain": "autonomous_workflow_orchestration",
+      "owner": "Shtenco/synergy_agi_autopilot",
+      "role": "Main branch architecture stub; no runtime ownership established."
     }
   ],
   "integration_contract": {
