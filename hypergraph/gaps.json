@@ -100,6 +100,30 @@
       "repository": "Shtenco/synergy_market_graph",
       "description": "Fair-value graph does not apply capacity/latency constraints; fee/slippage values are not bounded in Edge, and negative executable paths are silently filtered.",
       "next_action": "Add fee/slippage validation, capacity/latency-aware path evaluation and tests before using outputs for execution decisions."
+    },
+    {
+      "id": "GAP-014",
+      "severity": "high",
+      "area": "accounting_recognition",
+      "repository": "Shtenco/synergy_financial_os",
+      "description": "Main-branch accounting recognition helper accepts settlement_payload=None, bypassing its reconciled-settlement precondition; an empty double-entry list also balances and is accepted.",
+      "next_action": "Require reconciled settlement evidence for every recognition path (or explicit non-recognition classification), reject empty/zero journals and add bypass tests."
+    },
+    {
+      "id": "GAP-015",
+      "severity": "high",
+      "area": "durable_settlement",
+      "repository": "Shtenco/synergy_pay_system",
+      "description": "Inspected settlement engine keeps settlement records and idempotency keys in process memory; this does not survive restart and does not prove exactly-once external side effects.",
+      "next_action": "Persist settlement state, idempotency keys and outbox atomically; add crash-after-provider-call recovery and reconciliation tests."
+    },
+    {
+      "id": "GAP-016",
+      "severity": "high",
+      "area": "risk_fail_closed",
+      "repository": "Shtenco/synergy_riskguard",
+      "description": "VaR/CVaR return 0 when fewer than five returns are available, so the risk core can understate uncertainty and continue to approve orders without sufficient history.",
+      "next_action": "Make insufficient history an explicit blocker or use a conservative fallback; validate positive notional and side at the core boundary."
     }
   ]
 }
