@@ -30,13 +30,13 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 8,
-    "source_code_audited_total": 71,
+    "source_code_reviewed_in_this_pass": 3,
+    "source_code_audited_total": 74,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 10,
+    "readme_reviewed_in_this_pass": 5,
     "source_code_reviewed_repository_names": [
       "midas_lite",
       "quantum-trading_metatrader5",
@@ -61,6 +61,7 @@
       "synergy_blochain_budget",
       "synergy_cashero",
       "synergy_chain",
+      "synergy_complex_matrix_multiplication",
       "synergy_computing_topology",
       "synergy_crypto_pump",
       "synergy_eurasian",
@@ -83,12 +84,14 @@
       "synergy_net",
       "synergy_nexus_science_agent",
       "synergy_pay_system",
+      "synergy_project",
       "synergy_qr_compress",
       "synergy_quantlab",
       "synergy_relative_value",
       "synergy_riskguard",
       "synergy_search_engline",
       "synergy_system",
+      "synergy_trademux",
       "synergy_triangle_money_system",
       "synergy_turbo_linux",
       "synergy_usds",
@@ -157,20 +160,20 @@
       "synegy_ai_compress"
     ],
     "completion_percentages": {
-      "repository_source_audit": 63.39,
-      "readme_review": 75
+      "repository_source_audit": 66.07,
+      "readme_review": 79.46
     },
-    "main_branch_source_reviewed": 67,
+    "main_branch_source_reviewed": 70,
     "non_main_branch_source_reviewed": 4,
-    "readme_reviewed_total": 84,
-    "source_code_reviewed_total": 71
+    "readme_reviewed_total": 89,
+    "source_code_reviewed_total": 74
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 63.39,
+    "repository_source_audit": 66.07,
     "edge_verification": 0,
     "contract_verification": 0,
-    "readme_review": 75
+    "readme_review": 79.46
   },
   "interpretation": "The search result set contains 112 unique GitHub repository IDs. This reconciles the 100-record owner-affiliation listing plus 12 additional repositories. Inventory is complete for this search result set; source-level audit and relationship verification are not complete."
 }
