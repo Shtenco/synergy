@@ -30,16 +30,33 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 0,
-    "source_code_audited_total": 0,
+    "source_code_reviewed_in_this_pass": 11,
+    "source_code_audited_total": 11,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
-    "repositories_added_since_original_main_snapshot": 20
+    "repositories_added_since_original_main_snapshot": 20,
+    "readme_reviewed_in_this_pass": 12,
+    "source_code_reviewed_repository_names": [
+      "synergy_ai_browser-",
+      "tiimeweb_synergy_exactly_once_delivery",
+      "timeweb_synergy_agent_long_term_memory",
+      "timeweb_synergy_ai_infrastructure_agent",
+      "timeweb_synergy_backtest_oos_lab",
+      "timeweb_synergy_benchmark_statistics",
+      "timeweb_synergy_cpu_gpu_cost_benchmark",
+      "timeweb_synergy_fault_injection_lab",
+      "timeweb_synergy_rag_quality_cost",
+      "timeweb_synergy_retry_storm_lab",
+      "timeweb_synergy_service_recovery"
+    ],
+    "stub_only_repository_names": [
+      "synergy_agent_long_term_memory"
+    ]
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 0,
+    "repository_source_audit": 9.82,
     "edge_verification": 0,
     "contract_verification": 0
   },
