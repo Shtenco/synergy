@@ -182,6 +182,26 @@
       "domain": "market_feature_representation",
       "owner": "Shtenco/synergy_marketvision",
       "role": "OHLCV feature cube and compressed summary contract; not a predictive signal or execution authority."
+    },
+    {
+      "domain": "modular_midas_research_runtime",
+      "owner": "Shtenco/synergy_midas_ai_trading_system",
+      "role": "Strategy/fusion/policy/optimizer/risk/archive/API research package; risk-veto, WebSocket auth and archive chain issues block safe use."
+    },
+    {
+      "domain": "eurusd_h1_specialist_and_legacy_agent",
+      "owner": "Shtenco/midas_lite",
+      "role": "Sealed EURUSD H1 research plus legacy agent with direct MT5 order_send path; isolate and default-deny execution."
+    },
+    {
+      "domain": "cassandra_trading_terminal",
+      "owner": "Shtenco/synergy_ai_trade_terminal",
+      "role": "Legacy terminal/data/orderbook application with embedded credentials; not safe for public deployment until rotation and hardening."
+    },
+    {
+      "domain": "quantum_market_experiment",
+      "owner": "Shtenco/quantum-trading_metatrader5",
+      "role": "Fixed Qiskit/Aer circuit research; not a validated market prediction or execution system."
     }
   ],
   "integration_contract": {
