@@ -436,6 +436,46 @@
       "repository": "Shtenco/timeweb_synergy_multiagent_benchmark",
       "description": "The main scenario is an analytical scheduling simulation with no LLM calls, yet repository naming can be mistaken for an empirical multi-agent benchmark if its scope is not repeated in summaries.",
       "next_action": "Keep simulation labels in every result card and distinguish scheduling arithmetic from measured agent quality, token cost, latency and failure rates."
+    },
+    {
+      "id": "GAP-056",
+      "severity": "medium",
+      "area": "economic_ml_split_safety",
+      "repository": "Shtenco/synergy_crypto_pump",
+      "description": "The purged walk-forward helper defaults purge_bars=0 and embargo_bars=0; leakage safety depends on every caller explicitly passing a purge at least as long as the maximum target horizon.",
+      "next_action": "Require a declared maximum label horizon in the split contract, derive purge from it, reject negative/insufficient purge and add tests that unsafe defaults cannot be used."
+    },
+    {
+      "id": "GAP-057",
+      "severity": "high",
+      "area": "eurasian_main_branch_release_integrity",
+      "repository": "Shtenco/synergy_eurasian",
+      "description": "The main README reports pytest stops during collection because main-branch tests import V6.6 modules that are absent from main; the feature implementation is present only on research PR branches.",
+      "next_action": "Either merge the complete dependency set with green CI or remove/mark branch-only tests and modules so main is a coherent, reproducible release."
+    },
+    {
+      "id": "GAP-058",
+      "severity": "high",
+      "area": "budget_ledger_durability",
+      "repository": "Shtenco/synergy_blochain_budget",
+      "description": "The JSONL append-only chain reads then appends without process locking, atomic commit or fsync; concurrent writers can race on height/previous hash and crashes can leave partial trailing records.",
+      "next_action": "Use SQLite transactional append or locked temp-write/fsync/replace, add recovery for partial lines, concurrency tests and externally anchored checkpoints."
+    },
+    {
+      "id": "GAP-059",
+      "severity": "medium",
+      "area": "external_arbitrage_execution_gap",
+      "repository": "Shtenco/synergy_2chain_qe",
+      "description": "ArbitrageExecutor's Cycle A documents the external DEX purchase as simulated and requiring a production router; the checked code does not establish a real external buy/sell leg.",
+      "next_action": "Keep the strategy classified as simulation until an allowlisted DEX adapter, atomic settlement path and fork tests against pinned external liquidity are present."
+    },
+    {
+      "id": "GAP-060",
+      "severity": "medium",
+      "area": "economic_kernel_durability",
+      "repository": "Shtenco/synergistic_economics",
+      "description": "The balanced ledger and idempotent event store are in-memory only; they are not a durable accounting or settlement service.",
+      "next_action": "Treat as a deterministic research kernel and only promote after transactional persistence, crash recovery, concurrency control and external settlement boundaries are tested."
     }
   ]
 }
