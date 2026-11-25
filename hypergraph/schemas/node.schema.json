@@ -75,11 +75,38 @@
     "audit_status": {
       "enum": [
         "registry_snapshot_present",
-        "inventory_only_unreviewed"
+        "inventory_only_unreviewed",
+        "source_reviewed_limited",
+        "stub_confirmed"
       ]
     },
     "inventory_source": {
       "type": "object"
+    },
+    "source_audit": {
+      "type": "object",
+      "required": [
+        "status",
+        "commit",
+        "audited_at",
+        "scope"
+      ],
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "audited_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "scope": {
+          "type": "string"
+        }
+      }
     }
   },
   "additionalProperties": true
