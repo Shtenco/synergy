@@ -636,6 +636,22 @@
       "repository": "Shtenco/3D_bars_market_structure",
       "description": "Source header simultaneously states CC BY-NC-ND and MIT, which impose materially different commercial/modification permissions.",
       "next_action": "Select one authoritative license, update source headers and repository LICENSE consistently, and verify third-party dependency licenses."
+    },
+    {
+      "id": "GAP-081",
+      "severity": "medium",
+      "area": "external_archive_integrity_pin",
+      "repository": "Shtenco/synergychain.github.io",
+      "description": "Google Drive archive workflow checks byte size and ZIP integrity, then calculates a SHA-256 after download; it does not compare the downloaded file to a pre-pinned expected digest before splitting.",
+      "next_action": "Pin expected source SHA-256 in a reviewed manifest or signed release, verify before unzip/split, and add a corrupted/same-size substitution negative test."
+    },
+    {
+      "id": "GAP-082",
+      "severity": "low",
+      "area": "static_portal_evidence_documentation_drift",
+      "repository": "Shtenco/synergy.github.io",
+      "description": "README states tests/test_capital_montecarlo.cjs is absent, but the file exists in the inspected main tree; current documentation no longer matches repository evidence.",
+      "next_action": "Refresh README audit note and publish the latest workflow run/commit that actually executes the test."
     }
   ]
 }
