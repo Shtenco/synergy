@@ -102,7 +102,10 @@
         }
       ],
       "note": "Do not promote any edge until real suite evidence exists and passes all verifiers."
-    }
+    },
+    "unique_contract_ids_in_dependency_graph": 38,
+    "intra_repository_contracts_not_in_dependency_graph": 1,
+    "dependency_graph_summary_typed_contracts_field": 17
   },
   "reconciliation": {
     "hypergraph_inventory_repositories": 112,
@@ -355,5 +358,71 @@
     "The dependency graph has 22 RUNTIME_DEPENDENCY, 22 RUNTIME_CONTRACT and 22 CONTRACT_FLOW edges; all 66 carry ADAPTER_IMPLEMENTED status, while its integration summary counts 22 adapter-implemented runtime dependency edges.",
     "The M5 manifest defines 44 required runtime edges across six suites, but observed execution is BLOCKED_BY_RUNNER with zero successful suites and zero verified runtime edges.",
     "Do not collapse registry-declared adapter status, required M5 scope, E2E-tested edges and deployed runtime edges into one metric."
-  ]
+  ],
+  "contract_reconciliation": {
+    "registry_contract_count": 39,
+    "unique_cross_repository_contract_ids_in_graph": 38,
+    "intra_repository_contracts_not_in_graph": [
+      "synergy.trading.execution-plan/v1"
+    ],
+    "stale_summary_value": {
+      "field": "dependency_graph.integration_summary.typed_contracts",
+      "reported": 17,
+      "observed_unique_cross_repository_contract_ids": 38
+    }
+  },
+  "m5_scope_reconciliation": {
+    "source_files": [
+      {
+        "path": "integration/m3_federation/m3_edge_scope_v1.json",
+        "blob_sha": "9c1ba06af370412e45a24d4b06ccabf710e1ed24"
+      },
+      {
+        "path": "integration/m4_market_advisory/edge_scope_v1.json",
+        "blob_sha": "e8c5b5c1a89dbccae48c36bcae78aba2622c4609"
+      },
+      {
+        "path": "integration/m4_wave2/edge_scope_v1.json",
+        "blob_sha": "368d835935a0ae335030b2ab8018f3978bc0b5c7"
+      },
+      {
+        "path": "integration/m4_wave3/edge_scope_v1.json",
+        "blob_sha": "f159498906344362dbf76f359e086ebf93129b73"
+      },
+      {
+        "path": "integration/m4_wave4/edge_scope_v1.json",
+        "blob_sha": "53062c142c5fecb3530f9494aeff04cbef0c533e"
+      },
+      {
+        "path": "integration/m4_wave5/edge_scope_v1.json",
+        "blob_sha": "006dc9985a5dcb3c850b0683cdea0b1cf50edfd1"
+      }
+    ],
+    "required_edges": 44,
+    "unique_scope_edges": 44,
+    "exact_name_matches_to_dependency_graph": 42,
+    "legacy_alias_matches": 2,
+    "normalized_matches_to_dependency_graph": 44,
+    "unmatched_after_alias_normalization": 0,
+    "matched_edge_type_counts": {
+      "RUNTIME_DEPENDENCY": 22,
+      "RUNTIME_CONTRACT": 22
+    },
+    "matched_status_counts": {
+      "ADAPTER_IMPLEMENTED": 44
+    },
+    "aliases": [
+      {
+        "scope_from": "Shtenco/binary_quantum_theory",
+        "canonical_from": "Shtenco/synergy_binary_quantum_theory",
+        "contract_id": "synergy.science.quantum-reference-control/v1"
+      },
+      {
+        "scope_from": "Shtenco/epstein_network",
+        "canonical_from": "Shtenco/synergy_epstein_network",
+        "contract_id": "synergy.science.provenance-graph/v1"
+      }
+    ],
+    "interpretation": "The frozen M5 scope resolves to all 44 graph edges after applying the two explicit legacy repository-name aliases. The two aliases are name/provenance drift, not missing implementations. The M5 execution remains BLOCKED_BY_RUNNER; scope matching is not E2E verification."
+  }
 }
