@@ -124,6 +124,30 @@
       "repository": "Shtenco/synergy_riskguard",
       "description": "VaR/CVaR return 0 when fewer than five returns are available, so the risk core can understate uncertainty and continue to approve orders without sufficient history.",
       "next_action": "Make insufficient history an explicit blocker or use a conservative fallback; validate positive notional and side at the core boundary."
+    },
+    {
+      "id": "GAP-017",
+      "severity": "medium",
+      "area": "domain_ownership",
+      "repository": "Shtenco/synergy_search_engline",
+      "description": "The repository named search_engline is a HardNAV multiplier simulation, not a general search engine; it cannot be treated as the search backend for classifieds, banks or real estate.",
+      "next_action": "Map each actual search implementation to its domain and rename/clarify the repository role in the federation registry."
+    },
+    {
+      "id": "GAP-018",
+      "severity": "high",
+      "area": "tenant_privacy",
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "description": "Lead OS schema has no tenant_id isolation and the API uses a single operator bearer token; it is not a safe multi-tenant CRM lead service as-is.",
+      "next_action": "Add tenant-scoped document/review/outbox ownership, per-tenant auth and authorization, retention/deletion workflows and cross-tenant negative tests before multi-client hosting."
+    },
+    {
+      "id": "GAP-019",
+      "severity": "medium",
+      "area": "spatial_integration",
+      "repository": "Shtenco/synergy_maps",
+      "description": "Current Maps implementation is a global globe plus EAEU boundary subset; higher-detail layers and live logistics/real-estate data integration are not established.",
+      "next_action": "Define versioned geospatial contracts and source licensing/authority before routing commercial services through Maps."
     }
   ]
 }
