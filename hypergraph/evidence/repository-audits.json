@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 100,
-  "source_code_reviewed_count": 87,
+  "audited_repository_count": 105,
+  "source_code_reviewed_count": 92,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -3726,7 +3726,154 @@
           "blob_sha": "5c101900996234c802a4b859d6160ea0713661fd"
         }
       ]
+    },
+    {
+      "name": "cross_forex_arbitrage_trading_metatrader_5",
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "commit": "09fb17a3e70a21ee5bb10815b70d6fc3c41105a7",
+      "commit_url": "https://github.com/Shtenco/cross_forex_arbitrage_trading_metatrader_5/commit/09fb17a3e70a21ee5bb10815b70d6fc3c41105a7",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus main source file review; no backtest or live execution performed.",
+      "capabilities": [
+        "mt5-m1-cross-rate-ingestion",
+        "synthetic-currency-price-analysis",
+        "daily-arbitrage-simulation"
+      ],
+      "findings": [
+        "Source creates synthetic prices from same-day M1 bars and derives direction from the mean spread across the entire day before simulating a trade from the day's data; this introduces look-ahead in the daily backtest.",
+        "TP/SL pip conversion uses a fixed 0.00001 price multiplier; JPY and broker-specific digits/tick sizes are not handled.",
+        "Historical bid/ask are fabricated from close with a fixed 0.1-pip spread; this is not executable cross-rate arbitrage evidence."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ddd8c5cc2652745650aa0229e6567de9e10fc60d"
+        },
+        {
+          "path": "cross_forex_arbitrage_trading.py",
+          "blob_sha": "129acada26da0405449b268b66bb5be9c2488fe8"
+        }
+      ]
+    },
+    {
+      "name": "computer_vision_trading_metatrader_5",
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "commit": "0aabf5bf43052a1fb4bc98c07126811a165e911d",
+      "commit_url": "https://github.com/Shtenco/computer_vision_trading_metatrader_5/commit/0aabf5bf43052a1fb4bc98c07126811a165e911d",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus main source file review; no backtest or live execution performed.",
+      "capabilities": [
+        "mt5-h1-indicator-engineering",
+        "rolling-window-image-encoding",
+        "cnn-lstm-direction-and-return-prediction"
+      ],
+      "findings": [
+        "Source builds rolling 60-bar windows with 24-bar forward targets and chronological 80/20 train/test split.",
+        "The train/validation split then uses shuffle=True on overlapping windows, so adjacent windows with heavily shared history/targets can leak across train and validation.",
+        "README itself lists purged walk-forward splitting, window isolation, and independent security/engineering audit as unresolved; no trading profitability or deployment evidence is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d25f566d9f3113057288f4ee2f28afc58f24b834"
+        },
+        {
+          "path": "computer_vision_trading.py",
+          "blob_sha": "587163516fb6ae1c4b46932b68b0d8168fd45027"
+        }
+      ]
+    },
+    {
+      "name": "swap_arbitrage_metatrader_5",
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "commit": "232c704f37156eac5d774f33fb652b7afa3866e0",
+      "commit_url": "https://github.com/Shtenco/swap_arbitrage_metatrader_5/commit/232c704f37156eac5d774f33fb652b7afa3866e0",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus main source file review; no backtest or live execution performed.",
+      "capabilities": [
+        "mt5-swap-metadata-ingestion",
+        "portfolio-slsqp-optimization",
+        "swap-carry-simulation"
+      ],
+      "findings": [
+        "Source uses current broker swap_long/swap_short metadata alongside historical price returns; it does not demonstrate a historical daily swap-rate series for the full 2015-2025 simulation horizon.",
+        "README explicitly says spread, commissions, slippage, margin and stop-out are absent, no reproducible ten-year historical-swap backtest is proven, and dependencies are not pinned.",
+        "SLSQP optimization and three equity simulations are quantitative research only, not evidence of executable positive carry arbitrage."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "9667f5b4ad44d7f0c8f56925054f2f10d095b12f"
+        },
+        {
+          "path": "swap_arbitrage_trading.py",
+          "blob_sha": "0c92285d554fefa0e00f1a2f002820b21c95bd49"
+        }
+      ]
+    },
+    {
+      "name": "shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "commit": "262458f406678f7c9bc9cf0290b64f318d720cea",
+      "commit_url": "https://github.com/Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python/commit/262458f406678f7c9bc9cf0290b64f318d720cea",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus main source file review; no backtest or live execution performed.",
+      "capabilities": [
+        "mt5-online-trading",
+        "xgboost-random-forest-gmm-feature-pipeline",
+        "portfolio-position-sizing",
+        "multithreaded-symbol-workers"
+      ],
+      "findings": [
+        "Source contains a direct live mt5.order_send path and retries each request up to 30,000 times with 3-second sleeps; repeated sends can create duplicate orders if a broker response is delayed or ambiguous.",
+        "Symbol workers can operate concurrently without a single serialized order/risk arbiter; global position flags and portfolio exposure are race-prone.",
+        "Risk sizing uses stop_loss_pips * trade_tick_value without trade_tick_size conversion, and forces broker minimum lot even when it exceeds the calculated risk budget.",
+        "process_data performs markup, GMM clustering and RFECV before chronological train/test separation; online_trading also consumes previously prepared test_features rather than a fresh last-bar inference path."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "2c8dc07b781ce2551571ee2465ccb25d788fe97f"
+        },
+        {
+          "path": "Multi-Threaded Trading Robot with Machine Learning.py",
+          "blob_sha": "967a49120da95b52a2153e3374e5ea7ce5c39cb0"
+        }
+      ]
+    },
+    {
+      "name": "global_liquidity_dataminer",
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "commit": "728b6af3e53fc0d8beafe060d6f1ee209395b3f5",
+      "commit_url": "https://github.com/Shtenco/global_liquidity_dataminer/commit/728b6af3e53fc0d8beafe060d6f1ee209395b3f5",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus main source file review; no backtest or live execution performed.",
+      "capabilities": [
+        "fred-yfinance-macro-ingestion",
+        "global-liquidity-index",
+        "random-forest-price-forecast"
+      ],
+      "findings": [
+        "Source labels yfinance FX-price proxies (EURGBP, USDJPY, USDCNY scaled by constants) as ECB/BOJ/PBOC balance-sheet series; these are not central-bank balance-sheet observations.",
+        "Forecast confidence is clipped test R² in [0,1], not a calibrated probability of forecast correctness.",
+        "README identifies missing vintage-aware release-time data; historical macro revisions can leak future information even with chronological price splits."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "433734bf212d37842140ebfaeac0f27bde235e31"
+        },
+        {
+          "path": "global_liquidity_dataminer.py",
+          "blob_sha": "f9927caf3c314ba1d18b7b72bc946c8008c7c353"
+        }
+      ]
     }
   ],
-  "audit_record_count": 104
+  "audit_record_count": 109
 }
