@@ -169,14 +169,13 @@
       "maturity": "ARCHITECTURAL_MASTER",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "registry",
-        "federation",
-        "architecture",
-        "governance"
+        "owner-repository-inventory",
+        "master-graph-enrichment",
+        "registry-rebuild-cli"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -184,7 +183,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1409433270",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "9ab053764cde5cef74c304234ea9e1ac08204386",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source on main; no tests executed in this audit."
+      },
+      "audit_findings": [
+        "Main registry snapshot registry/repos.json contains 92 repository records from 2026-11-20; live owner inventory and Hypergraph V3 contain 112 unique GitHub IDs.",
+        "scripts/rebuild_registry.py uses gh repo list --limit 1000 and enriches records from master_graph.json, but serializes repository names/full_name without immutable GitHub numeric IDs; no test directory exists on main.",
+        "Open PRs #5/#6 separately refresh the live 112-repository inventory; Hypergraph V3 keeps its own ID-keyed inventory and does not silently rewrite the legacy snapshot."
+      ]
     },
     {
       "node_id": "github-repo:1456611297",
@@ -623,8 +633,12 @@
         "status": "stub_confirmed",
         "commit": "1d84bddfec16998c9300c984ca50980c1f946d56",
         "audited_at": "2026-11-25",
-        "scope": "README and complete main-branch tree"
-      }
+        "scope": "README plus selected source on main; no tests executed in this audit."
+      },
+      "audit_findings": [
+        "Main is documentation-first and contains README plus owner-manifest documentation only; no runtime, schemas, tests, CI or executable maturity ladder are present.",
+        "README defines strong accounting invariants and explicitly states that no runtime test command exists; it must not be treated as a working credit/loan engine."
+      ]
     },
     {
       "node_id": "github-repo:1168739656",
@@ -1234,13 +1248,20 @@
       "category": "apps-interface",
       "maturity": "HARDENED_ALPHA",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "double-ratchet-1to1",
+        "webrtc-waku-transport-abstraction",
+        "encrypted-local-state",
+        "replay-and-rate-limit-guards",
+        "finance-bridge-interface",
+        "mls-provider-boundary"
+      ],
       "declared_dependencies": [],
       "risks": [
         "Main branch does not substantiate the claimed messenger runtime; branch/tag code must be separately audited before reuse.",
         "No cryptographic implementation or P2P messaging behavior is verified by this main-branch snapshot."
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1250,11 +1271,17 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+        "status": "branch_only_prototype",
+        "commit": "aab3f83e29013eab3437020afe8cefaede3bc154",
         "audited_at": "2026-11-25",
-        "scope": "README, package manifest and complete main-branch tree"
-      }
+        "scope": "README plus selected source/tests on an open feature/PR branch; main is documentation-only."
+      },
+      "audit_findings": [
+        "Main contains package/manifest/release metadata but no src, tests, scripts or generated www runtime; executable alpha.9 source is on open PR #2 branch import/alpha9-direct-final.",
+        "Reviewed branch has substantial Double Ratchet, ingress replay/rate-limit, P2P/Waku and Finance Bridge interfaces; OpenMlsProvider is an injected backend boundary and README says production groups fail closed without a real RFC 9420 backend.",
+        "package.json test command points to tests/v3/*.test.js, but tests/v3 is absent on both main and the reviewed PR branch; RELEASE-MANIFEST claims 249/249 tests and 293 files, which cannot be reproduced from the reviewed branch tree.",
+        "No official Android APK/AAB build, independent cryptographic review or cross-network physical-device validation is established."
+      ]
     },
     {
       "node_id": "github-repo:1351698135",
@@ -1396,7 +1423,13 @@
       "category": "agi-agentic",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "revenue-first-company-control-plane",
+        "risk-gated-opportunity-pipeline",
+        "sqlite-event-and-ledger-store",
+        "telegram-control-interface",
+        "shttps-adapter-boundaries"
+      ],
       "declared_dependencies": [
         "Shtenco/synergy_agi_nexus",
         "Shtenco/synergy_agentic_ai_economy",
@@ -1408,7 +1441,7 @@
       "risks": [
         "No autonomous company runtime, agent role engine, process execution or integration is established."
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1418,11 +1451,17 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+        "status": "branch_only_prototype",
+        "commit": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
         "audited_at": "2026-11-25",
-        "scope": "README and complete repository tree"
-      }
+        "scope": "README plus selected source/tests on an open feature/PR branch; main is documentation-only."
+      },
+      "audit_findings": [
+        "Main is STUB/concept; executable Auto-Company 2.0 is on open PR #1 branch feat/auto-company-v2.",
+        "Branch defaults to paper mode, disables financial/trading/blockchain actions, defaults financial caps to zero, requires human approval for external side effects, and keeps Autopilot/Nexus adapters disabled by default.",
+        "Settings._float accepts NaN and Infinity; RiskPolicy performs ordinary float comparisons without isfinite validation, so malformed/unbounded caps and action values are not rejected at the boundary.",
+        "SQLite store provides events, opportunities, actions, approvals, usage and local ledger records; this is not canonical accounting or settlement. Tests exist on the branch but were not executed in this audit."
+      ]
     },
     {
       "node_id": "github-repo:1420783404",
@@ -2745,12 +2784,19 @@
       "category": "agi-agentic",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "content-addressed-chunk-memory",
+        "sqlite-wal-memory-store",
+        "fenced-mission-leases",
+        "idempotent-mission-submit",
+        "human-approval-gates",
+        "signed-verification-receipts"
+      ],
       "declared_dependencies": [],
       "risks": [
         "Cannot be treated as the federation-wide long-term test harness until implementation exists."
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2760,11 +2806,17 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+        "status": "branch_only_prototype",
+        "commit": "bdc26413d886fb026bdc22c3a6f76dc2df873a1c",
         "audited_at": "2026-11-25",
-        "scope": "README and complete main-branch tree"
-      }
+        "scope": "README plus selected source/tests on an open feature/PR branch; main is documentation-only."
+      },
+      "audit_findings": [
+        "Main contains only a README title; executable source, tests and pyproject are on open PR #1 branch feat/company-autopilot-memory-v1.",
+        "MemoryStore chunks exact UTF-8 source with SHA-256, zlib compression, bounded restore, namespace isolation and metadata digest checks; MissionStore uses SQLite WAL, BEGIN IMMEDIATE, idempotency fingerprints, lease epochs and append-only mission events.",
+        "Financial transfer capability is hard-blocked and external side effects require approval; approval actor authentication is delegated to the hosting application, and the independent verifier service is not yet connected.",
+        "README labels this an executable early foundation, not a full autonomous company or production coding agent."
+      ]
     },
     {
       "node_id": "github-repo:1465022679",
