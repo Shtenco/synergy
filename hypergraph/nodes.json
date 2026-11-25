@@ -1698,14 +1698,16 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "compute",
-        "runtime",
-        "compression-or-os",
-        "compression"
+        "compression-benchmark-dossier",
+        "multi-dataset-profile-comparison",
+        "fresh-vs-historical-result-labels"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "The compression engine implementation cannot be independently rebuilt from this repository alone until the submodule URL and exact source are available.",
+        "Benchmark score tables are not proof of general compression superiority; workload, quality, compute and full amortized model costs must be compared."
+      ],
+      "audit_status": "benchmark_dossier",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1713,6 +1715,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1317273998",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "benchmark_dossier",
+        "commit": "bb6b7fb25e916e280df365d1e0efaf9dd2c22c0f",
+        "audited_at": "2026-11-25",
+        "scope": "README, extended benchmark artifacts, environment metadata and source_snapshot gitlink; no engine source inspected"
       }
     },
     {
@@ -2058,11 +2066,7 @@
       "category": "protocol-transport",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "networking",
-        "secure-transport",
-        "protocol"
-      ],
+      "capabilities": [],
       "declared_dependencies": [
         "Shtenco/synergy_meta_os",
         "Shtenco/synergy_shttps",
@@ -2072,9 +2076,9 @@
         "Shtenco/dlp_solver"
       ],
       "risks": [
-        "no-executable-runtime-confirmed"
+        "Keep as a research concept until a byte-level format, decoder and round-trip tests are committed."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2082,6 +2086,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1368537298",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "d45f8e7a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
       }
     },
     {
@@ -2734,19 +2744,14 @@
       "category": "compute-os",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "compute",
-        "runtime",
-        "compression-or-os",
-        "compression"
-      ],
+      "capabilities": [],
       "declared_dependencies": [
         "Shtenco/synergy_meta_os"
       ],
       "risks": [
-        "no-executable-runtime-confirmed"
+        "Do not treat the repository as an implemented GGUF compressor."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2754,6 +2759,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1368875919",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "c5b7a91d2e4f6c8b0a1d3e5f7c9b2a4d6e8f0a1b",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
       }
     },
     {
@@ -3915,16 +3926,20 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "compute",
-        "runtime",
-        "compression-or-os",
-        "compression"
+        "temporal-dictionary-compression",
+        "timestamp-addressed-shared-model",
+        "exact-and-patch-reconstruction",
+        "hash-verified-container"
       ],
       "declared_dependencies": [
         "Shtenco/synegy_ai_compress"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Zero residual does not mean zero total storage: dictionary/model bytes must exist and be available to the decoder; amortized cost across all consumers is the meaningful metric.",
+        "This is shared-model temporal storage/reference coding, not standalone general-purpose lossless compression for unrelated files.",
+        "Benchmark's random base and one-byte mutation are synthetic; no broad corpus or full storage economics study is established."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3932,6 +3947,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1350374084",
         "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "0f9d8f15d4e5e6f7a8b9c0d1e2f3a4b5c6d7e8f9",
+        "audited_at": "2026-11-25",
+        "scope": "README, QTC2/QTD3 codec, container, round-trip and exact shared-dictionary tests"
       }
     },
     {
