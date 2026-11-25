@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 16,
-  "source_code_reviewed_count": 15,
+  "audited_repository_count": 20,
+  "source_code_reviewed_count": 19,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -537,6 +537,208 @@
       "repository": "Shtenco/synergy_net",
       "commit_url": "https://github.com/Shtenco/synergy_net/commit/84fbfb842be97e5c2195c30e7c4188e5af813001",
       "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_hierarchical_cognitive_memory_architecture",
+      "commit": "8c23bcb41199f89bb9afb57ca5e0766787154fd7",
+      "scope": "README, dependency AST scanner, cross-repository registry, contract intelligence, tests and security policy",
+      "capabilities": [
+        "hierarchical-rag-memory",
+        "commit-pinned-python-import-graph",
+        "cross-repository-inventory",
+        "candidate-dependency-ledger",
+        "contract-id-provider-matching",
+        "ci-evidence-import"
+      ],
+      "findings": [
+        "Main branch contains a substantial implementation: SQLite-backed memory, git dependency intelligence, cross-repository inventory and contract intelligence; this contradicts the stale synergy_system README statement that its main branch is README-only.",
+        "Dependency scanner parses Python AST at exact commit SHAs and does not import or execute repository code; dynamic dispatch and runtime plugin loading are not inferred.",
+        "Cross-repository registry canonicalizes GitHub URLs, derives stable SHA-256 URL identities, records observations and stores explicitly evidenced candidate dependencies only.",
+        "Contract intelligence requires full commit SHA, blob SHA, safe source path and explicit declared/upstream contract IDs; ambiguous and unresolved providers are reported instead of guessed.",
+        "Security docs keep API local-only, require admin token for system-core endpoint and reserve trust elevation for authorized review."
+      ],
+      "limitations": [
+        "Repository identity in its own cross-repo DB is a canonical-URL hash, not GitHub's immutable provider ID; Hypergraph needs a mapping layer.",
+        "Static AST links do not prove runtime calls; candidate dependencies do not prove reachability or compatibility.",
+        "This review did not execute the test suite or validate current branch CI."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "125d1c709b98b4a0372603a19706c697142312f8"
+        },
+        {
+          "path": "synergy_memory/dependency_intelligence.py",
+          "blob_sha": "c7ea297e906f8233232559af617f7e150750cbe2"
+        },
+        {
+          "path": "synergy_memory/cross_repository_intelligence.py",
+          "blob_sha": "70425d2ec5d279a739ad3d89bf7eae5f9887caae"
+        },
+        {
+          "path": "synergy_memory/contract_intelligence.py",
+          "blob_sha": "a8b5b1eabcbad27ed96a48ad54a227de1711c44a"
+        },
+        {
+          "path": "tests/test_dependency_intelligence.py",
+          "blob_sha": "9473b5a2e40635d08d4375f5c39c9f1efa555aaf"
+        },
+        {
+          "path": "tests/test_cross_repository_intelligence.py",
+          "blob_sha": "35601b2960f2d26ca0e1438a4854398dae995267"
+        },
+        {
+          "path": "docs/SECURITY.md",
+          "blob_sha": "38f8c40d4a920345712187f0e86c7d64a2a31d2c"
+        }
+      ],
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "commit_url": "https://github.com/Shtenco/synergy_hierarchical_cognitive_memory_architecture/commit/8c23bcb41199f89bb9afb57ca5e0766787154fd7",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_agentic_ai_economy",
+      "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+      "scope": "README, economy simulation contract, ledger and closed-economy tests",
+      "capabilities": [
+        "agentic-economic-simulation",
+        "closed-ledger-model",
+        "internal-demand-and-work",
+        "hardnav-simulation"
+      ],
+      "findings": [
+        "Repository is explicitly a deterministic research/simulation environment; internal issuance, gross TVL and transaction volume are not automatically real profit.",
+        "Closed economy engine asserts zero external inflow/outflow, conservation and internal jobs/useful work; internal loans/deposits/investments do not create system cash.",
+        "Simulation contract explicitly sets payment_authority=false and accounting_authority=false."
+      ],
+      "limitations": [
+        "No live payment execution or real-world marketplace settlement is established by this simulation.",
+        "Historical replay includes modeled layers and must retain its own evidence/assumption labels."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "bea45a76fcc40d013362ff082d3b31989fc385bd"
+        },
+        {
+          "path": "agent_economy/synergy_contracts.py",
+          "blob_sha": "daa8479492ceb614a23ab15a23c57d86f7d37c7e"
+        },
+        {
+          "path": "agent_economy/ledger.py",
+          "blob_sha": "e05924ce4b934c1d76270f478cc2cec7227df3de"
+        },
+        {
+          "path": "agent_economy/closed_engine.py",
+          "blob_sha": "e856d6cfd430d19b951552308b68788616012625"
+        },
+        {
+          "path": "tests/test_closed_agent_economy.py",
+          "blob_sha": "e7680063f725b5ac064f88dfd8ed37d731fcd3de"
+        }
+      ],
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "commit_url": "https://github.com/Shtenco/synergy_agentic_ai_economy/commit/3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_market_graph",
+      "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+      "scope": "README, graph core, fair-value contract, enterprise resilience/auth and tests",
+      "capabilities": [
+        "directed-executable-conversion-graph",
+        "multi-path-fair-value",
+        "cycle-search",
+        "enterprise-api",
+        "advisory-fair-value-contract"
+      ],
+      "findings": [
+        "Executable edge rate deducts fee and slippage; graph enumerates paths and cycles; fair value is geometric mean of positive executable path rates.",
+        "Typed fair-value contract returns authorization=false; tests assert advisory-only output.",
+        "Enterprise layer includes HMAC-signed tenant/role token helpers and retry/circuit-breaker primitives."
+      ],
+      "limitations": [
+        "Capacity, latency, stale quotes, correlated/overlapping paths and execution sequencing are not incorporated into core fair-value calculation.",
+        "Fee/slippage bounds are not enforced in Edge model; negative executable rates are filtered from fair-value paths rather than rejected at ingestion.",
+        "A conversion graph is not a general buyer/seller offer marketplace or commercial transaction orchestrator."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "cd6305afac5bec7d4cf98f881442ce8096e0537c"
+        },
+        {
+          "path": "src/synergy_market_graph/core.py",
+          "blob_sha": "ad2b4d3d81f4f54ae85ad4b4be187534497a067f"
+        },
+        {
+          "path": "src/synergy_market_graph/synergy_contracts.py",
+          "blob_sha": "a426be3b0976c7d41d38acae82a6ef8b1e05e998"
+        },
+        {
+          "path": "src/synergy_market_graph/enterprise/resilience.py",
+          "blob_sha": "270cddef43bf4cc7f492e616f15e617d5300dae5"
+        },
+        {
+          "path": "src/synergy_market_graph/enterprise/auth.py",
+          "blob_sha": "5c3fd87354d95c6a9226a8edc537bf66975e6bd1"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "bba8c858d3ea2d4cb79e42f56e098d09b468b94a"
+        },
+        {
+          "path": "tests/test_synergy_contracts.py",
+          "blob_sha": "7b476a5182875f4517a86cc875d0efdcd1f59083"
+        }
+      ],
+      "repository": "Shtenco/synergy_market_graph",
+      "commit_url": "https://github.com/Shtenco/synergy_market_graph/commit/b38ed0fb94e0834244a88d863d19069bb33a62ba",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_meta_os",
+      "commit": "cf3d18ca533ca9824794ad48e208b41b0fdf4475",
+      "scope": "README, compatibility orchestrator and orchestrator tests",
+      "capabilities": [
+        "node-service-orchestration",
+        "signed-manifest-model",
+        "artifact-sha256-verification",
+        "capability-ceilings",
+        "resource-limits",
+        "audit-journal-and-rollback-staging"
+      ],
+      "findings": [
+        "Runtime verifies manifest shape, service role/capability ceilings, artifact SHA-256 and explicit attestation for high-value roles.",
+        "Activation launches subprocesses with reduced environment and POSIX CPU/address-space/open-file limits; audit events are appended to JSONL.",
+        "Tests cover manifest verification, dry-run, activation and rejection of capability escalation."
+      ],
+      "limitations": [
+        "RLIMITs and process sessions are not an OS sandbox: no namespaces, seccomp, chroot, filesystem policy or network isolation is applied by the inspected code.",
+        "This compatibility runtime is not evidence of the full native TURBO Linux ring-3 service-cell implementation.",
+        "The test service is a trivial local shell script; production service isolation and rollback semantics are not proven."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "6740a2f28c84dbe87a236f1918920694e558b059"
+        },
+        {
+          "path": "runtime/orchestrator.py",
+          "blob_sha": "9eba924eff38e0b21dbefe033194d2781a3ec326"
+        },
+        {
+          "path": "tests/test_orchestrator.py",
+          "blob_sha": "093d4da8cc3ce8fac6d017336c3ce74c1c239129"
+        }
+      ],
+      "repository": "Shtenco/synergy_meta_os",
+      "commit_url": "https://github.com/Shtenco/synergy_meta_os/commit/cf3d18ca533ca9824794ad48e208b41b0fdf4475",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
     }
   ]
 }
