@@ -265,7 +265,7 @@ class HypergraphCoreTests(unittest.TestCase):
                 pinned_files = {item.get("path"): item.get("blob_sha") for item in audit_record["files"]}
                 for file_record in evidence["files"]:
                     self.assertEqual(file_record["blob_sha"], pinned_files[file_record["path"]])
-                self.assertIn("does not assert production readiness", evidence["evidence_scope"])
+                self.assertIn("do not assert production readiness", evidence["evidence_scope"])
 
     def test_target_graph_links_resolve(self):
         target_ids = {node["node_id"] for node in self.target["nodes"]}
