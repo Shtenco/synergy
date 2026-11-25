@@ -388,6 +388,38 @@
       "repository": "Shtenco/synergy_matrix_sota",
       "description": "Debt/credit lifecycle repository is documentation-only with five mechanisms and 42 legacy units assigned for rewrite; no executable maturity or expected-loss engine exists.",
       "next_action": "Keep the Financial OS as accounting authority and implement a contract-first maturity/expected-loss module only after ownership and legacy rewrite review."
+    },
+    {
+      "id": "GAP-050",
+      "severity": "medium",
+      "area": "compression_source_reproducibility",
+      "repository": "Shtenco/synegy_ai_compress",
+      "description": "Compression engine is represented by a source_snapshot gitlink, but .gitmodules is absent; the benchmark repository does not independently expose the exact engine source or a cloneable submodule URL.",
+      "next_action": "Add .gitmodules with a stable public source URL and pin commit; provide a reproducible environment lock and benchmark runner."
+    },
+    {
+      "id": "GAP-051",
+      "severity": "medium",
+      "area": "shared_model_storage_economics",
+      "repository": "Shtenco/synergy_qr_compress",
+      "description": "QTC2 zero-residual exact mode depends on a shared temporal dictionary; dictionary storage/distribution and retention costs must be amortized before claiming net compression savings.",
+      "next_action": "Publish full amortized cost model: model bytes, container bytes, update/replication/retention, number of consumers and decoder availability; benchmark against standalone compressors."
+    },
+    {
+      "id": "GAP-052",
+      "severity": "medium",
+      "area": "gguf_compression_implementation",
+      "repository": "Shtenco/synergy_gguf_compress",
+      "description": "Main branch is README-only and contains no executable GGUF compressor.",
+      "next_action": "Keep as concept or implement parser/codec with bit-exact round-trip, quantization-quality and compatibility tests."
+    },
+    {
+      "id": "GAP-053",
+      "severity": "medium",
+      "area": "shhts_format_implementation",
+      "repository": "Shtenco/synergy_shhts",
+      "description": "Main branch is a specification stub without parser, codec or decoder.",
+      "next_action": "Define byte-level format, versioning, integrity envelope and cross-language round-trip tests before claiming a compression format."
     }
   ]
 }
