@@ -62,6 +62,16 @@
       "domain": "trading_risk_veto",
       "owner": "Shtenco/synergy_riskguard",
       "role": "Independent pre-trade risk veto and enterprise RBAC/audit boundary; insufficient-history handling requires fail-closed hardening."
+    },
+    {
+      "domain": "real_estate_lead_discovery",
+      "owner": "Shtenco/synergy_lead_search_engline",
+      "role": "Offline candidate scoring, human review and approval-gated CRM outbox; not a deployed public crawler or multi-tenant service."
+    },
+    {
+      "domain": "geospatial_viewer_and_boundary_assets",
+      "owner": "Shtenco/synergy_maps",
+      "role": "Cesium global globe and EAEU boundary subset; not authoritative cadastral or global city-scale map data."
     }
   ],
   "integration_contract": {
