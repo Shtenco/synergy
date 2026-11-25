@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 64,
-  "source_code_reviewed_count": 53,
+  "audited_repository_count": 68,
+  "source_code_reviewed_count": 57,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -2398,6 +2398,172 @@
       ],
       "repository": "Shtenco/synergy_shhts",
       "commit_url": "https://github.com/Shtenco/synergy_shhts/commit/8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_eurasian",
+      "commit": "b911bb017103f122f2c75ef08b99ffebe665883d",
+      "status": "source_reviewed_limited",
+      "scope": "README, EIIOM optimizer, federation audit, sector optimizer and invariant tests",
+      "capabilities": [
+        "multi-sector-economic-allocation-model",
+        "project-proposal-evaluation",
+        "federation-policy-audit",
+        "scenario-optimization"
+      ],
+      "findings": [
+        "Main implements EIIOM-style project allocation and multi-sector resource optimization with explicit scenario/config inputs and invariant tests.",
+        "Country/sector suitability, value-added and project coefficients are configuration assumptions; they are not automatically measured macroeconomic facts.",
+        "Federation audit checks required repositories and authority exclusions; it is a registry policy check, not proof of live API integration."
+      ],
+      "limitations": [
+        "README describes six failed tests in a 2026-11-07 snapshot; no workflow run was returned for the current main commit, so current CI state is unknown.",
+        "The model is a planning/simulation tool; no live national statistical data pipeline or calibrated causal model was established in this review."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "b76f14d9ec1cca28e48723a27805ab5875e48823"
+        },
+        {
+          "path": "src/eiiom_optimizer.py",
+          "blob_sha": "c8d89508661d51e9aec80fe223c21a929eb51660"
+        },
+        {
+          "path": "src/federation_audit.py",
+          "blob_sha": "a2d1b7daeefc7b4447a0cf44d9a33b03b35b2ad0"
+        },
+        {
+          "path": "src/synergy_sector_optimizer_v4.py",
+          "blob_sha": "7f23fd59c4049d70b713b32de1e37ed4f585c8ce"
+        },
+        {
+          "path": "tests/test_invariants.py",
+          "blob_sha": "8b4184995a39a6f06d7374ea5b88594b5556b462"
+        }
+      ],
+      "repository": "Shtenco/synergy_eurasian",
+      "commit_url": "https://github.com/Shtenco/synergy_eurasian/commit/b911bb017103f122f2c75ef08b99ffebe665883d",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_project",
+      "commit": "f1055866444a2e6bdbc8ac6b76f4334f1e171105",
+      "status": "source_reviewed_limited",
+      "scope": "README, capital governance contract and contract tests",
+      "capabilities": [
+        "project_master_dossier",
+        "capital_authorization_contract",
+        "milestone_and_use_of_funds_policy"
+      ],
+      "findings": [
+        "README positions the repository as a master project dossier and explicitly defers runtime execution to domain repositories.",
+        "Capital governance contract is a typed authorization artifact with scope, limits, expiry and decision metadata; it does not move funds or update accounting."
+      ],
+      "limitations": [
+        "No project execution engine, capital ledger, investor onboarding or payment authority is established in main.",
+        "Repository inventory counts and status in this dossier are historical and should not override the canonical 112-ID registry."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "6a8824ff37cef7c62d66e8eaadac6d8c0b63af00"
+        },
+        {
+          "path": "contracts/capital_governance_v1.py",
+          "blob_sha": "9a5d2c4ddd3f09ff109e8a6439c6209c087c6cb9"
+        },
+        {
+          "path": "tests/test_capital_governance_contract.py",
+          "blob_sha": "c1f7b6a3e087262b46692c5d0b5a4e7694e5cc35"
+        }
+      ],
+      "repository": "Shtenco/synergy_project",
+      "commit_url": "https://github.com/Shtenco/synergy_project/commit/f1055866444a2e6bdbc8ac6b76f4334f1e171105",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_megaproject",
+      "commit": "f1d359afd0729741ed9452518c5dfc26ea7ad979",
+      "status": "source_reviewed_limited",
+      "scope": "README, research graph validator, science evidence contracts and tests",
+      "capabilities": [
+        "research_claim_graph",
+        "evidence_provenance_schema",
+        "review_state_machine",
+        "graph_integrity_validator"
+      ],
+      "findings": [
+        "Main contains a machine-readable science graph and a validator for schema, node/edge references and evidence state.",
+        "Science contracts distinguish claim, evidence, source revision and review status; pending/unreviewed evidence does not become a verified claim automatically.",
+        "The graph is a research/claim evidence graph, not a repository dependency or runtime call graph."
+      ],
+      "limitations": [
+        "Source hash metadata and declared review state do not independently prove scientific truth; domain review and reproducible experiments remain necessary.",
+        "This graph should feed evidence review/provenance into Hypergraph V3 rather than be merged as verified software dependency edges."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "695fe6247eeb5e197ab0dee71c3283aba142f5d5"
+        },
+        {
+          "path": "tools/validate_graph.py",
+          "blob_sha": "f5ed4c62d737ce30de1693ce0ab9ad882532a9af"
+        },
+        {
+          "path": "tools/science_contracts.py",
+          "blob_sha": "ecfd59e0b39f6d447c9524724156f7912840cfd6"
+        },
+        {
+          "path": "tests/test_science_contracts.py",
+          "blob_sha": "4c202d62f6d1af8c5d3066069cbc7bf0059d1673"
+        }
+      ],
+      "repository": "Shtenco/synergy_megaproject",
+      "commit_url": "https://github.com/Shtenco/synergy_megaproject/commit/f1d359afd0729741ed9452518c5dfc26ea7ad979",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_binary_quantum_theory",
+      "commit": "3d48d8ba6c190efe23ee655528365f5045216af7",
+      "status": "source_reviewed_limited",
+      "scope": "README, current audit, falsification test matrix and core-scope audit script",
+      "capabilities": [
+        "mathematical_claim_registry",
+        "finite_falsification_harness",
+        "symbolic_and_numerical_validation",
+        "open_physical_gate_tracking"
+      ],
+      "findings": [
+        "README distinguishes 23 proved mathematical claims and 21 finite checks from unresolved physical claims; physical gates remain open and no complete Lorentzian V4 path is claimed.",
+        "AUDIT_CURRENT.md is dated 2026-10-10 while README is updated 2026-11-10, creating a documentation freshness mismatch.",
+        "Core-scope audit script explicitly excludes historical archives and side sectors from the current core gate."
+      ],
+      "limitations": [
+        "Mathematical consistency and finite tests do not establish empirical physical validity or a complete quantum-gravity theory.",
+        "The audit document must be refreshed to the current README snapshot and all proof claims must retain their scope."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "bbe3034b9abfb97f05cc59c04d28cd0de58250f1"
+        },
+        {
+          "path": "AUDIT_CURRENT.md",
+          "blob_sha": "165494ec87b6842d67f8034a25cc954cef38dfea"
+        },
+        {
+          "path": "CORE_FALSIFICATION_TESTS.md",
+          "blob_sha": "9c4e8ed7ee4b29aff740b8439d110e611bb3fd7e"
+        },
+        {
+          "path": "scripts/audit_core_scope.py",
+          "blob_sha": "a10f359ea7d8d005dc4cd8ac3b0afeb535c3690c"
+        }
+      ],
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "commit_url": "https://github.com/Shtenco/synergy_binary_quantum_theory/commit/3d48d8ba6c190efe23ee655528365f5045216af7",
       "audited_at": "2026-11-25"
     }
   ]
