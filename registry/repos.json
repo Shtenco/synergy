@@ -186,7 +186,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "b601f79db253751e4c7d99d671420bf95d840d3c",
+      "source_audit_scope": "README, policy implementation, tests, benchmark and results card"
     },
     {
       "name": "shtenco_multi_threaded_trading_robot_with_machine_learning_python",
@@ -365,7 +367,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "e69ce454424c4d29da54dc649d7379ec24b9bef0",
+      "source_audit_scope": "README, browser runtime and core tests"
     },
     {
       "name": "synergy_matrix_sota",
@@ -550,7 +554,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "9d6db41edc273189fe4795b3803f98181cff02be",
+      "source_audit_scope": "README, uncertainty analysis, tests and archived result"
     },
     {
       "name": "synergy_computing_topology",
@@ -1080,7 +1086,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "a3c4f4aebc69f741f6c380682b882b9a106f0d17",
+      "source_audit_scope": "README and complete repository tree"
     },
     {
       "name": "synegy_ai_compress",
@@ -1399,7 +1407,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "6fb12232e07a82d86a6689d8aa0d1c6efde453d3",
+      "source_audit_scope": "README and allowlisted action planner"
     },
     {
       "name": "timeweb_synergy_fault_injection_lab",
@@ -1421,7 +1431,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "53585459cefbc3956f1601feaaece80d68da7170",
+      "source_audit_scope": "README, two-replica experiment, QA validator, evidence scope and results"
     },
     {
       "name": "3D_bars_market_structure",
@@ -1682,7 +1694,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "d350865dbf602c3b518ec0a1f6e183e6d0438d80",
+      "source_audit_scope": "README, recovery scenario and tests"
     },
     {
       "name": "midas_lite",
@@ -1853,7 +1867,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "a5ec554db4f10ec5076be74f8283603cb1fedf3d",
+      "source_audit_scope": "README, diagnostic function and tests"
     },
     {
       "name": "timeweb_synergy_agent_long_term_memory",
@@ -1875,7 +1891,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "2bcb732a92fe8053c18f913edb1318ac21ef3620",
+      "source_audit_scope": "README and SQLite experiment"
     },
     {
       "name": "synergy_metachain",
@@ -2241,7 +2259,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "1c116e449ca992f5bccbaa70ae98d65972a08e69",
+      "source_audit_scope": "README and leakage demonstration"
     },
     {
       "name": "shtenco.github.io",
@@ -2457,7 +2477,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "5c25ddb97838a1d14e40dc9458847743fa94191f",
+      "source_audit_scope": "README, cost calculator, tests and repository tree"
     },
     {
       "name": "synergy_meta_os",
@@ -2690,7 +2712,9 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "audit_status": "inventory_only_unreviewed"
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
+      "source_audit_scope": "README, SQLite experiment and invariant tests"
     }
   ],
   "branch_inventory": {
