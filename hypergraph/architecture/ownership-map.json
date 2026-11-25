@@ -92,6 +92,21 @@
       "domain": "autonomous_workflow_orchestration",
       "owner": "Shtenco/synergy_agi_autopilot",
       "role": "Main branch architecture stub; no runtime ownership established."
+    },
+    {
+      "domain": "relative_value_research",
+      "owner": "Shtenco/synergy_relative_value",
+      "role": "OLS pair and spread research signal; no execution authority."
+    },
+    {
+      "domain": "adaptive_policy_and_regime",
+      "owner": "Shtenco/synergy_adaptive_engine",
+      "role": "Bounded online strategy weighting and regime signal; execution disabled by default."
+    },
+    {
+      "domain": "institutional_assessment",
+      "owner": "Shtenco/synergy_midas_institutional",
+      "role": "Bounded notional assessment that still requires canonical RiskGuard validation."
     }
   ],
   "integration_contract": {
