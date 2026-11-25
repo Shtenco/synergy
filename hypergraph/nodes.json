@@ -1666,7 +1666,14 @@
       "category": "protocol-transport",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "hybrid-pq-handshake",
+        "liboqs-provider-adapter",
+        "aead-record-framing",
+        "replay-protection",
+        "stcp-remote-mcp-gateway",
+        "federation-and-key-rotation"
+      ],
       "declared_dependencies": [
         "Shtenco/synergy_meta_os",
         "Shtenco/synergy_shhts",
@@ -1678,7 +1685,7 @@
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1688,14 +1695,15 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "f7207aa8082c78399e4130f4eaf29ff8984c5413",
+        "status": "branch_only_prototype",
+        "commit": "f3eda6bb7cdfd5478f9594dad4ee5dd91381e9b8",
         "audited_at": "2026-11-25",
-        "scope": "README plus selected source/tests on main; no tests or experiments executed during this audit."
+        "scope": "README plus selected source/tests on open PR branch; main remains documentation-only."
       },
       "audit_findings": [
-        "Main contains README, LICENSE, assets and docs only; README explicitly says a ready HTTPS replacement or production protocol is not claimed.",
-        "No executable transport, certificate, peer-authentication or integration tests are present."
+        "Main remains specification-only; substantial SHTTPS v2/STCP/Remote MCP implementation and 14 test modules exist on open PR #2 branch feat/stcp-shttps-remote-mcp-v2-20260925.",
+        "PQ production provider is an optional liboqs adapter; handshake tests use FakePQProvider, so those tests do not validate the real ML-KEM/ML-DSA/SLH-DSA provider or interoperability.",
+        "RemoteMCPGateway.run accepts allowlisted executable basenames including python/cargo/rustc/git, but permits arbitrary arguments such as python -c and does not sandbox the subprocess; basename matching also allows a different executable path ending in an allowed name. It is privileged remote code execution, not a safe command sandbox."
       ]
     },
     {
@@ -1922,10 +1930,18 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "sqlite-append-only-mission-journal",
+        "idempotency-key-events",
+        "optimistic-versioning",
+        "namespace-isolation",
+        "checkpoint-hashes",
+        "bounded-thread-safe-ring-buffer",
+        "strict-engineering-state-contract"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1935,11 +1951,16 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "a3c4f4aebc69f741f6c380682b882b9a106f0d17",
+        "status": "branch_only_prototype",
+        "commit": "04e666038ac7cd0652ea77ce4de2c2f1ec706dcf",
         "audited_at": "2026-11-25",
-        "scope": "README and complete repository tree"
-      }
+        "scope": "README plus selected source/tests on open PR branch; main remains documentation-only."
+      },
+      "audit_findings": [
+        "Main is README-only; the open PR #2 branch feat/persistent-mission-runtime-v1 contains a SQLite WAL/FULL mission journal, checkpoints, idempotency fingerprints, namespace-scoped queries and a bounded ring buffer.",
+        "Canonical JSON rejects NaN and custom objects; writes use SQLite BEGIN IMMEDIATE and idempotency key conflicts reject payload changes.",
+        "The runtime explicitly delegates principal authentication and namespace authorization to callers; no LLM provider, task DAG scheduler, cross-repository transaction coordinator or production tenant identity service is included."
+      ]
     },
     {
       "node_id": "github-repo:1317273998",
@@ -2643,14 +2664,20 @@
       "category": "protocol-transport",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [],
+      "capabilities": [
+        "ml-kem-1024",
+        "ml-dsa-87-and-slh-dsa-signatures",
+        "authenticated-radio-handshake",
+        "pi-pq-evidence-lane",
+        "simulation-vs-hardware-teleportation-boundary"
+      ],
       "declared_dependencies": [
         "Shtenco/synergy_meta_os"
       ],
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "stub_confirmed",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2660,14 +2687,16 @@
         "search_page": 1
       },
       "source_audit": {
-        "status": "stub_confirmed",
-        "commit": "b3084f709aaa1023289cfec6e550a1a35d884513",
+        "status": "branch_only_prototype",
+        "commit": "2938d6aa1e939b198fb4e98bb32b3cbfc958f6e4",
         "audited_at": "2026-11-25",
-        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+        "scope": "README plus selected source/tests on open PR branch; main remains documentation-only."
       },
       "audit_findings": [
-        "Checked main contains README, LICENSE, assets and docs only; no executable radio or post-quantum protocol runtime, tests or evidence artifacts are present.",
-        "README explicitly labels main STUB / specification-only."
+        "Main is documentation-only; open PR #1 branch contains Rust ML-KEM-1024, ML-DSA-87, SLH-DSA-SHAKE-256s, authenticated handshake, replay protections and simulation/hardware backend interfaces.",
+        "README explicitly labels the project PROTOTYPE / RESEARCH, states no independent cryptographic audit and rejects the legacy Hash16D 2^4096 security claim.",
+        "AttestedHardwareTeleportationBackend accepts a driver-supplied nonzero hardware_attestation_root; may_strengthen_physical_security_claim checks only Hardware mode plus presence. The test's FakeHardware returns [7;32] and is accepted, so no cryptographic signature/attestation-chain verification is implemented at this boundary.",
+        "All teleportation correctness tests use a simulator or fake hardware driver; no real QPU/radio hardware experiment is evidenced."
       ]
     },
     {
