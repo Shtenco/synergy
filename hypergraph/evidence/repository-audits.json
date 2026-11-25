@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 32,
-  "source_code_reviewed_count": 28,
+  "audited_repository_count": 36,
+  "source_code_reviewed_count": 31,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -1182,6 +1182,144 @@
       ],
       "repository": "Shtenco/synergy_messenger",
       "commit_url": "https://github.com/Shtenco/synergy_messenger/commit/549688f0346b351b43d485bf6e66b3bcfb65a59b",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_algotrading_graph_system",
+      "commit": "5fb87036fe833a6e7939654469766c86f92533ee",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README describes a formal research architecture for amount-dependent market graphs, shared capacity and settlement-aware routing.",
+        "Main tree contains README and assets only; no graph algorithm, package, tests or settlement evidence ledger is implemented."
+      ],
+      "limitations": [
+        "Do not treat the architecture specification as an executable arbitrage engine."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d28bb161a00b7988d3967c6b5c3e19eb7f219442"
+        }
+      ],
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "commit_url": "https://github.com/Shtenco/synergy_algotrading_graph_system/commit/5fb87036fe833a6e7939654469766c86f92533ee",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_relative_value",
+      "commit": "ef2a44ea4d5551dccbda4b24d9b0a0d06d9a6a77",
+      "status": "source_reviewed_limited",
+      "scope": "README, OLS pair core and non-authorizing signal contract",
+      "capabilities": [
+        "ols-pair-fit",
+        "spread-zscore",
+        "heuristic-carry-score",
+        "relative-value-signal-contract"
+      ],
+      "findings": [
+        "Core fits a linear pair by least squares, computes spread z-score and a normalized carry heuristic.",
+        "Contract outputs authorization=false and requires downstream domain validation."
+      ],
+      "limitations": [
+        "OLS fit and high z-score do not establish cointegration, stationarity or stable hedge ratio; README explicitly lists these missing tests.",
+        "No costs, borrow/funding, liquidity, asynchronous price or selection-bias model in the core."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d3be4ca24a957ebfa148b42fb24640921c9b19f7"
+        },
+        {
+          "path": "src/synergy_relative_value/core.py",
+          "blob_sha": "1f5c489130cf3b9a82a474d2f332be60cca0ffd1"
+        },
+        {
+          "path": "src/synergy_relative_value/synergy_contracts.py",
+          "blob_sha": "73166f6afcda7749e28eb1b7b48b8159f5b8d152"
+        }
+      ],
+      "repository": "Shtenco/synergy_relative_value",
+      "commit_url": "https://github.com/Shtenco/synergy_relative_value/commit/ef2a44ea4d5551dccbda4b24d9b0a0d06d9a6a77",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_adaptive_engine",
+      "commit": "f0622aa6d60be3c47d2ac752b9ef686e6dac6c5b",
+      "status": "source_reviewed_limited",
+      "scope": "README, adaptive ensemble core and market-regime contract",
+      "capabilities": [
+        "bounded-online-expert-weighting",
+        "volatility-regime-classification",
+        "enterprise-rbac-audit"
+      ],
+      "findings": [
+        "AdaptiveEnsemble updates strategy weights using exponentiated clipped rewards and caps per-step weight movement.",
+        "Regime classifier returns UNKNOWN with fewer than five returns and emits a non-authorizing market-regime contract.",
+        "README documents tenant-aware RBAC, audit events and live execution disabled by default."
+      ],
+      "limitations": [
+        "No out-of-sample or live trading validation was executed in this review.",
+        "Core input validation for finite rewards/threshold ordering should be strengthened before adversarial or production use."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0999ce7505713b18c6e27caaab46203e9ac05c9d"
+        },
+        {
+          "path": "src/synergy_adaptive_engine/core.py",
+          "blob_sha": "21629fec5a7074f33fd4782ab060cd4d3eddf3c1"
+        },
+        {
+          "path": "src/synergy_adaptive_engine/synergy_contracts.py",
+          "blob_sha": "062fda139736f9d8e2ef24e7efba3b7c0bb23d76"
+        }
+      ],
+      "repository": "Shtenco/synergy_adaptive_engine",
+      "commit_url": "https://github.com/Shtenco/synergy_adaptive_engine/commit/f0622aa6d60be3c47d2ac752b9ef686e6dac6c5b",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_midas_institutional",
+      "commit": "6eb09ac2b2c72bf7ec6aaa26390136f9013efd58",
+      "status": "source_reviewed_limited",
+      "scope": "README, bounded assessment core, contract and tests",
+      "capabilities": [
+        "institutional-assessment-stage-machine",
+        "injected-validation-and-risk-hooks",
+        "bounded-notional-output"
+      ],
+      "findings": [
+        "MidasOrchestrator calls injected validator and risk functions; it blocks on failed validation or non-positive risk and caps approved notional at target notional.",
+        "Contract binds decision to the exact signal and emits authorization=false plus requires_canonical_risk_validation=true.",
+        "README explicitly states EXECUTION_READY is only readiness for the next gate, not broker authorization."
+      ],
+      "limitations": [
+        "Quality and provenance of injected validator/risk functions are outside this repository's core.",
+        "The institutional assessment is not itself a canonical risk veto or execution adapter."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ad8d3b77cc2c09d1d5677ccc4810bdec8e6fd3d2"
+        },
+        {
+          "path": "src/synergy_midas/core.py",
+          "blob_sha": "fee5fb377d3111ec89a2ca893dcc948c19dc1d80"
+        },
+        {
+          "path": "src/synergy_midas/synergy_contracts.py",
+          "blob_sha": "12d9dae9b1d383fadbfe9bfc8d77b0acfcdd0398"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "00f64c9a2ccafc38506784089bbf1bc3928f0204"
+        }
+      ],
+      "repository": "Shtenco/synergy_midas_institutional",
+      "commit_url": "https://github.com/Shtenco/synergy_midas_institutional/commit/6eb09ac2b2c72bf7ec6aaa26390136f9013efd58",
       "audited_at": "2026-11-25"
     }
   ]
