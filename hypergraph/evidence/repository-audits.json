@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 99,
+  "audited_repository_count": 95,
   "source_code_reviewed_count": 83,
   "records": [
     {
@@ -1013,7 +1013,8 @@
       ],
       "repository": "Shtenco/synergy_ai_company",
       "commit_url": "https://github.com/Shtenco/synergy_ai_company/commit/ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
-      "audited_at": "2026-11-25"
+      "audited_at": "2026-11-25",
+      "superseded_by_commit": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc"
     },
     {
       "name": "synergy_maps",
@@ -1182,7 +1183,8 @@
       ],
       "repository": "Shtenco/synergy_messenger",
       "commit_url": "https://github.com/Shtenco/synergy_messenger/commit/549688f0346b351b43d485bf6e66b3bcfb65a59b",
-      "audited_at": "2026-11-25"
+      "audited_at": "2026-11-25",
+      "superseded_by_commit": "aab3f83e29013eab3437020afe8cefaede3bc154"
     },
     {
       "name": "synergy_algotrading_graph_system",
@@ -1755,7 +1757,8 @@
       ],
       "repository": "Shtenco/synergy_long_term_harness",
       "commit_url": "https://github.com/Shtenco/synergy_long_term_harness/commit/cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
-      "audited_at": "2026-11-25"
+      "audited_at": "2026-11-25",
+      "superseded_by_commit": "bdc26413d886fb026bdc22c3a6f76dc2df873a1c"
     },
     {
       "name": "synergy_quantlab",
@@ -2262,7 +2265,8 @@
       ],
       "repository": "Shtenco/synergy_matrix_sota",
       "commit_url": "https://github.com/Shtenco/synergy_matrix_sota/commit/1d84bddfec16998c9300c984ca50980c1f946d56",
-      "audited_at": "2026-11-25"
+      "audited_at": "2026-11-25",
+      "superseded_by_commit": "1d84bddfec16998c9300c984ca50980c1f946d56"
     },
     {
       "name": "synegy_ai_compress",
@@ -3554,5 +3558,6 @@
         }
       ]
     }
-  ]
+  ],
+  "audit_record_count": 99
 }
