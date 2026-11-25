@@ -78,7 +78,8 @@
         "inventory_only_unreviewed",
         "source_reviewed_limited",
         "stub_confirmed",
-        "branch_only_prototype"
+        "branch_only_prototype",
+        "benchmark_dossier"
       ]
     },
     "inventory_source": {
