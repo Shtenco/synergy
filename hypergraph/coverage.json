@@ -27,7 +27,7 @@
     "inventory_only_relative_to_pr_branch": 12
   },
   "audit": {
-    "registry_records_present": 100,
+    "registry_records_present": 112,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
     "source_code_reviewed_in_this_pass": 0,
@@ -146,15 +146,10 @@
       "timeweb_synergy_service_recovery"
     ],
     "stub_only_repository_names": [
-      "synergy_agent_long_term_memory",
-      "synergy_ai_company",
-      "synergy_agi_autopilot",
-      "synergy_messenger",
-      "synergy_algotrading_graph_system",
       "sinergy_app",
-      "synergy_long_term_harness",
-      "synergy_matrix_sota",
-      "synergy_gguf_compress",
+      "synergy_algotrading_graph_system",
+      "synergy_app_family",
+      "synergy_chain_print_money",
       "synergy_shhts"
     ],
     "existing_governance_registry": {
@@ -184,9 +179,21 @@
     "real_estate_lead_search_owner": "Shtenco/synergy_lead_search_engline",
     "spatial_platform_owner": "Shtenco/synergy_maps",
     "branch_only_prototype_names": [
+      "print_money_synergychain",
+      "synergy_agent_long_term_memory",
+      "synergy_agi_autopilot",
+      "synergy_ai_company",
+      "synergy_ai_economic",
+      "synergy_ai_llm_rwkv",
       "synergy_ai_workspace",
+      "synergy_gguf_compress",
       "synergy_gllm_nexus",
-      "synergy_ai_llm_rwkv"
+      "synergy_long_term_harness",
+      "synergy_matrix_sota",
+      "synergy_messenger",
+      "synergy_post_quantum_radio",
+      "synergy_qe",
+      "synergy_shttps"
     ],
     "benchmark_dossier_repository_names": [
       "synegy_ai_compress"
@@ -210,7 +217,11 @@
       "documentation_only": 5,
       "benchmark_dossier": 1,
       "tests_or_benchmarks_executed": 0
-    }
+    },
+    "proposal_overlap_assessments": 39,
+    "proposal_overlap_evidence_references": 91,
+    "governance_scope_recommendations": 35,
+    "governance_scope_owner_decisions_pending": 35
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
@@ -218,7 +229,9 @@
     "edge_verification": 0,
     "contract_verification": 0,
     "readme_review": 100,
-    "repository_content_audit": 100
+    "repository_content_audit": 100,
+    "proposal_overlap_assessment": 100,
+    "governance_scope_recommendation_coverage": 100
   },
   "interpretation": "The search result set contains 112 unique GitHub repository IDs. This reconciles the 100-record owner-affiliation listing plus 12 additional repositories. Inventory is complete for this search result set; source-level audit and relationship verification are not complete.",
   "existing_governance_registry": {
