@@ -148,6 +148,38 @@
       "repository": "Shtenco/synergy_maps",
       "description": "Current Maps implementation is a global globe plus EAEU boundary subset; higher-detail layers and live logistics/real-estate data integration are not established.",
       "next_action": "Define versioned geospatial contracts and source licensing/authority before routing commercial services through Maps."
+    },
+    {
+      "id": "GAP-020",
+      "severity": "high",
+      "area": "messenger_main_branch",
+      "repository": "Shtenco/synergy_messenger",
+      "description": "Main branch package scripts reference missing tests/v3 and scripts/copy-www.js; inspected main tree has no messenger source or test suite despite README describing alpha.9.",
+      "next_action": "Reconcile default branch with the claimed release artifact; add required source/test files or narrow main README/package scripts."
+    },
+    {
+      "id": "GAP-021",
+      "severity": "medium",
+      "area": "workspace_release_branch",
+      "repository": "Shtenco/synergy_ai_workspace",
+      "description": "Workspace implementation exists on release/v1.0-desktop-rc but main is README-only; the release branch is not a production desktop installer and has no tenant-isolated public backend.",
+      "next_action": "Keep branch status explicit; complete release build, GUI E2E, tenant/privacy review and provider adapter verification before production claims."
+    },
+    {
+      "id": "GAP-022",
+      "severity": "medium",
+      "area": "autopilot_runtime",
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "description": "Main branch is a stub with no DAG planner or autonomous runtime; do not treat the architecture node as an orchestrator implementation.",
+      "next_action": "Assign orchestration runtime ownership to verified components and keep Autopilot as a proposal until source is added."
+    },
+    {
+      "id": "GAP-023",
+      "severity": "medium",
+      "area": "coding_agent_scope",
+      "repository": "Shtenco/synergy_ai_coder",
+      "description": "AI Coder main implements requirement/change evidence contracts only, not a full autonomous coding agent.",
+      "next_action": "Keep coding execution in a separate sandboxed component and reuse the evidence contract for approvals."
     }
   ]
 }
