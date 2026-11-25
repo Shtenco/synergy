@@ -1,11 +1,11 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "generated_from": "Full GitHub inventory + M0 content audit",
-  "generated_at": "2026-11-20",
+  "generated_at": "2026-11-25",
   "umbrella_repository": "Shtenco/synergy",
   "discovery_rule": "ALL repositories accessible under Shtenco are inventoried; SYNERGY relation is determined by content/role, not name alone.",
-  "total_account_repositories": 92,
-  "inventoried_repositories": 92,
+  "total_account_repositories": 100,
+  "inventoried_repositories": 100,
   "repositories": [
     {
       "name": "3D_bars_market_structure",
@@ -26,7 +26,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1091998611"
     },
     {
       "name": "computer_vision_trading_metatrader_5",
@@ -50,7 +51,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1091968186"
     },
     {
       "name": "cross_forex_arbitrage_trading_metatrader_5",
@@ -71,7 +73,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1091983056"
     },
     {
       "name": "dlp_solver",
@@ -91,7 +94,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1362541171"
     },
     {
       "name": "global_liquidity_dataminer",
@@ -112,7 +116,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1091992955"
     },
     {
       "name": "midas_lite",
@@ -134,7 +139,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1165602026"
     },
     {
       "name": "print_money_synergychain",
@@ -157,7 +163,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1357102715"
     },
     {
       "name": "quantum-trading_metatrader5",
@@ -178,7 +185,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "937796740"
     },
     {
       "name": "shtenco_micro_ai",
@@ -204,7 +212,8 @@
         "no device-specific throughput or accuracy qualification established"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1459873284"
     },
     {
       "name": "shtenco_multi_threaded_trading_robot_with_machine_learning_python",
@@ -225,7 +234,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1098247138"
     },
     {
       "name": "shtenco.github.io",
@@ -245,7 +255,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "890519259"
     },
     {
       "name": "shtencoauantai.github.io",
@@ -265,7 +276,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1171792036"
     },
     {
       "name": "sinergy_app",
@@ -295,7 +307,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1344027509"
     },
     {
       "name": "sinergy_super_app",
@@ -315,7 +328,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1227851612"
     },
     {
       "name": "swap_arbitrage_metatrader_5",
@@ -336,7 +350,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1091973987"
     },
     {
       "name": "synegy_ai_compress",
@@ -358,7 +373,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1317273998"
     },
     {
       "name": "synergistic_economics",
@@ -382,7 +398,8 @@
         "preliminary simulation results require independent replication and calibration"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1451354855"
     },
     {
       "name": "synergy",
@@ -404,7 +421,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1409433270"
     },
     {
       "name": "synergy_2chain_qe",
@@ -425,7 +443,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1378708908"
     },
     {
       "name": "synergy_adaptive_engine",
@@ -453,7 +472,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376377980"
     },
     {
       "name": "synergy_agentic_ai_economy",
@@ -474,7 +494,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1387121392"
     },
     {
       "name": "synergy_agi_autopilot",
@@ -504,7 +525,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1343965302"
     },
     {
       "name": "synergy_agi_nexus",
@@ -533,7 +555,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1341271800"
     },
     {
       "name": "synergy_agi_olga",
@@ -556,7 +579,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1167196077"
     },
     {
       "name": "synergy_agi_trader",
@@ -577,7 +601,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1373708585"
     },
     {
       "name": "synergy_ai_blockchain",
@@ -601,7 +626,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1317641638"
     },
     {
       "name": "synergy_ai_coder",
@@ -624,7 +650,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1168739656"
     },
     {
       "name": "synergy_ai_company",
@@ -654,7 +681,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1368484353"
     },
     {
       "name": "synergy_ai_economic",
@@ -676,7 +704,8 @@
         "no executable model in current main"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1420783404"
     },
     {
       "name": "synergy_ai_financial_system",
@@ -700,7 +729,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1310793915"
     },
     {
       "name": "synergy_ai_investment_committee",
@@ -722,7 +752,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376377703"
     },
     {
       "name": "synergy_ai_language",
@@ -743,7 +774,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1181574900"
     },
     {
       "name": "synergy_ai_llm_rwkv",
@@ -766,7 +798,8 @@
         "mainline does not establish full inference or quality-preserving compression"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1413525853"
     },
     {
       "name": "synergy_ai_trade_terminal",
@@ -790,7 +823,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1168765679"
     },
     {
       "name": "synergy_ai_workspace",
@@ -812,7 +846,8 @@
         "current main contains README only; desktop release and GUI E2E not confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1428810995"
     },
     {
       "name": "synergy_algotrading_graph_system",
@@ -835,7 +870,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1316045651"
     },
     {
       "name": "synergy_app",
@@ -855,7 +891,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1344028054"
     },
     {
       "name": "synergy_app_family",
@@ -879,7 +916,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1365353815"
     },
     {
       "name": "synergy_apps",
@@ -907,7 +945,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1371974932"
     },
     {
       "name": "synergy_binary_quantum_theory",
@@ -927,7 +966,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1293271223"
     },
     {
       "name": "synergy_blochain_budget",
@@ -948,7 +988,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1341358637"
     },
     {
       "name": "synergy_cashero",
@@ -974,7 +1015,8 @@
         "deployment-blocked"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1180497488"
     },
     {
       "name": "synergy_chain",
@@ -995,7 +1037,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1317824815"
     },
     {
       "name": "synergy_chain_print_money",
@@ -1020,7 +1063,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1366684382"
     },
     {
       "name": "synergy_cold_nuclear",
@@ -1039,7 +1083,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1327916781"
     },
     {
       "name": "synergy_complex_matrix_multiplication",
@@ -1060,7 +1105,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1394514826"
     },
     {
       "name": "synergy_computing_topology",
@@ -1081,7 +1127,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1397603060"
     },
     {
       "name": "synergy_crypto_pump",
@@ -1102,7 +1149,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1364435985"
     },
     {
       "name": "synergy_epstein_network",
@@ -1126,7 +1174,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1377447162"
     },
     {
       "name": "synergy_eurasian",
@@ -1147,7 +1196,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1336911571"
     },
     {
       "name": "synergy_financial_os",
@@ -1168,7 +1218,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1336910945"
     },
     {
       "name": "synergy_gguf_compress",
@@ -1194,7 +1245,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1368875919"
     },
     {
       "name": "synergy_gllm_nexus",
@@ -1219,7 +1271,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1370636640"
     },
     {
       "name": "synergy_graph_print_money",
@@ -1243,7 +1296,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1364848219"
     },
     {
       "name": "synergy_hierarchical_cognitive_memory_architecture",
@@ -1251,7 +1305,7 @@
       "visibility": "private",
       "archived": false,
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20",
+      "inventory_observed_at": "2026-11-25",
       "url": "https://github.com/Shtenco/synergy_hierarchical_cognitive_memory_architecture",
       "ecosystem_relation": "core-candidate",
       "category": "agi-agentic",
@@ -1271,7 +1325,8 @@
         "Repository ingestion does not reject symlink files before reading",
         "Current sources index is keyed by URI rather than repository namespace; provenance collision risk",
         "No cross-repository memory contract or E2E integration is registered"
-      ]
+      ],
+      "github_repository_id": "1464742221"
     },
     {
       "name": "synergy_lead_search_engline",
@@ -1295,7 +1350,8 @@
         "offline candidate only; no external crawling, production CRM dispatch or deployed service verified"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1409209160"
     },
     {
       "name": "synergy_long_term_harness",
@@ -1320,7 +1376,8 @@
         "draft implementation PR CI failed; production execution not established"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1463301548"
     },
     {
       "name": "synergy_maps",
@@ -1341,7 +1398,8 @@
         "no executable implementation in current main"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1456611297"
     },
     {
       "name": "synergy_market_graph",
@@ -1363,7 +1421,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376377201"
     },
     {
       "name": "synergy_market_maker",
@@ -1385,7 +1444,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376377837"
     },
     {
       "name": "synergy_marketvision",
@@ -1407,7 +1467,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376378125"
     },
     {
       "name": "synergy_matrix_sota",
@@ -1430,7 +1491,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1336912141"
     },
     {
       "name": "synergy_megaproject",
@@ -1450,7 +1512,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1390438988"
     },
     {
       "name": "synergy_messenger",
@@ -1471,7 +1534,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1371942189"
     },
     {
       "name": "synergy_meta_api",
@@ -1494,7 +1558,8 @@
         "branch-only prototype; no production multi-tenant authorization or deployed gateway proven"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1428731702"
     },
     {
       "name": "synergy_meta_os",
@@ -1520,7 +1585,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1341275176"
     },
     {
       "name": "synergy_metachain",
@@ -1541,7 +1607,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1351534269"
     },
     {
       "name": "synergy_metaverse",
@@ -1562,7 +1629,8 @@
         "no executable implementation in current main"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1456604903"
     },
     {
       "name": "synergy_midas_ai",
@@ -1598,7 +1666,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1341272872"
     },
     {
       "name": "synergy_midas_ai_trading_system",
@@ -1620,7 +1689,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1151919657"
     },
     {
       "name": "synergy_midas_institutional",
@@ -1642,7 +1712,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376377374"
     },
     {
       "name": "synergy_motherboard_xpu_xml",
@@ -1666,7 +1737,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1351698135"
     },
     {
       "name": "synergy_net",
@@ -1692,7 +1764,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1341273955"
     },
     {
       "name": "synergy_nexus_science_agent",
@@ -1718,7 +1791,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1341273613"
     },
     {
       "name": "synergy_pay_system",
@@ -1740,7 +1814,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1317622231"
     },
     {
       "name": "synergy_post_quantum_radio",
@@ -1765,7 +1840,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1391275828"
     },
     {
       "name": "synergy_project",
@@ -1791,7 +1867,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1359110009"
     },
     {
       "name": "synergy_qe",
@@ -1814,7 +1891,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1380118593"
     },
     {
       "name": "synergy_qr_compress",
@@ -1838,7 +1916,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1350374084"
     },
     {
       "name": "synergy_quantlab",
@@ -1860,7 +1939,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376376805"
     },
     {
       "name": "synergy_relative_value",
@@ -1881,7 +1961,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376377560"
     },
     {
       "name": "synergy_riskguard",
@@ -1909,7 +1990,8 @@
       ],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376376981"
     },
     {
       "name": "synergy_search_engline",
@@ -1934,7 +2016,8 @@
         "no CI workflow or automated test suite found in main"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1409193535"
     },
     {
       "name": "synergy_shhts",
@@ -1964,7 +2047,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1368537298"
     },
     {
       "name": "synergy_shttps",
@@ -1994,7 +2078,8 @@
         "no-executable-runtime-confirmed"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1368539352"
     },
     {
       "name": "synergy_system",
@@ -2016,7 +2101,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1341273343"
     },
     {
       "name": "synergy_trademux",
@@ -2038,7 +2124,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1376378295"
     },
     {
       "name": "synergy_triangle_money_system",
@@ -2061,7 +2148,8 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1409209832"
     },
     {
       "name": "synergy_turbo_linux",
@@ -2087,7 +2175,8 @@
         "committed unencrypted SSH private key remains on main; PR #13 draft removes file on branch only; external rotation/revocation and history remediation unverified"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1165635662"
     },
     {
       "name": "synergy_usds",
@@ -2114,7 +2203,8 @@
         "deployment-blocked"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1331946228"
     },
     {
       "name": "synergy.github.io",
@@ -2137,7 +2227,8 @@
         "frontend source does not prove backend services or production business workflows"
       ],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1426159613"
     },
     {
       "name": "synergychain.github.io",
@@ -2158,7 +2249,184 @@
       "dependencies": [],
       "risks": [],
       "default_branch": "main",
-      "inventory_observed_at": "2026-11-20"
+      "inventory_observed_at": "2026-11-25",
+      "github_repository_id": "1318145141"
+    },
+    {
+      "name": "synergy_agent_long_term_memory",
+      "full_name": "Shtenco/synergy_agent_long_term_memory",
+      "github_repository_id": "1465066359",
+      "visibility": "unknown",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_agent_long_term_memory",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "node_type": "repository",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-25",
+      "audit_status": "inventory_only_unreviewed"
+    },
+    {
+      "name": "synergy_ai_browser-",
+      "full_name": "Shtenco/synergy_ai_browser-",
+      "github_repository_id": "1469906584",
+      "visibility": "unknown",
+      "archived": false,
+      "url": "https://github.com/Shtenco/synergy_ai_browser-",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "node_type": "repository",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-25",
+      "audit_status": "inventory_only_unreviewed"
+    },
+    {
+      "name": "tiimeweb_synergy_exactly_once_delivery",
+      "full_name": "Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "github_repository_id": "1465156316",
+      "visibility": "unknown",
+      "archived": false,
+      "url": "https://github.com/Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "node_type": "repository",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-25",
+      "audit_status": "inventory_only_unreviewed"
+    },
+    {
+      "name": "timeweb_synergy_agent_long_term_memory",
+      "full_name": "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "github_repository_id": "1465262827",
+      "visibility": "unknown",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_agent_long_term_memory",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "node_type": "repository",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-25",
+      "audit_status": "inventory_only_unreviewed"
+    },
+    {
+      "name": "timeweb_synergy_ai_infrastructure_agent",
+      "full_name": "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "github_repository_id": "1465024116",
+      "visibility": "unknown",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "node_type": "repository",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-25",
+      "audit_status": "inventory_only_unreviewed"
+    },
+    {
+      "name": "timeweb_synergy_backtest_oos_lab",
+      "full_name": "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "github_repository_id": "1465065411",
+      "visibility": "unknown",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_backtest_oos_lab",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "node_type": "repository",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-25",
+      "audit_status": "inventory_only_unreviewed"
+    },
+    {
+      "name": "timeweb_synergy_benchmark_statistics",
+      "full_name": "Shtenco/timeweb_synergy_benchmark_statistics",
+      "github_repository_id": "1465066858",
+      "visibility": "unknown",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_benchmark_statistics",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "node_type": "repository",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-25",
+      "audit_status": "inventory_only_unreviewed"
+    },
+    {
+      "name": "timeweb_synergy_binary_neural_networks",
+      "full_name": "Shtenco/timeweb_synergy_binary_neural_networks",
+      "github_repository_id": "1465021493",
+      "visibility": "unknown",
+      "archived": false,
+      "url": "https://github.com/Shtenco/timeweb_synergy_binary_neural_networks",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "node_type": "repository",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "default_branch": "main",
+      "inventory_observed_at": "2026-11-25",
+      "audit_status": "inventory_only_unreviewed"
     }
   ],
   "branch_inventory": {
@@ -2169,5 +2437,59 @@
     "branch_inventory_csv": "registry/BRANCH_INVENTORY_2026-11-20.csv",
     "branch_inventory_report": "docs/BRANCH_INVENTORY_2026-11-20.md",
     "note": "92 repositories; all 1,294 branch refs have non-historical SHA provenance. 210 refs have live compare-to-main ancestry (36 AHEAD, 22 BEHIND, 120 DIVERGED, 32 IDENTICAL); 1,084 still need ancestry comparison. Protection remains historical for 1,292 refs; two new refs are NOT_CHECKED."
+  },
+  "inventory_scope": {
+    "provider": "GitHub",
+    "affiliation": "owner",
+    "observed_count": 100,
+    "unique_repository_ids": 100,
+    "listing_limit": 100,
+    "completeness": "lower_bound_only",
+    "note": "The connected owner-list endpoint returned 100 records and exposed no additional page. This is not proof that the account contains exactly 100 repositories or that the previously reported 112 count is correct."
+  },
+  "reconciliation": {
+    "prior_snapshot_count": 92,
+    "current_observed_count": 100,
+    "added_since_snapshot": [
+      {
+        "name": "synergy_agent_long_term_memory",
+        "github_repository_id": "1465066359"
+      },
+      {
+        "name": "synergy_ai_browser-",
+        "github_repository_id": "1469906584"
+      },
+      {
+        "name": "tiimeweb_synergy_exactly_once_delivery",
+        "github_repository_id": "1465156316"
+      },
+      {
+        "name": "timeweb_synergy_agent_long_term_memory",
+        "github_repository_id": "1465262827"
+      },
+      {
+        "name": "timeweb_synergy_ai_infrastructure_agent",
+        "github_repository_id": "1465024116"
+      },
+      {
+        "name": "timeweb_synergy_backtest_oos_lab",
+        "github_repository_id": "1465065411"
+      },
+      {
+        "name": "timeweb_synergy_benchmark_statistics",
+        "github_repository_id": "1465066858"
+      },
+      {
+        "name": "timeweb_synergy_binary_neural_networks",
+        "github_repository_id": "1465021493"
+      }
+    ],
+    "identity_key": "github_repository_id",
+    "unresolved_names": [
+      "timeweb_synergy_fault_injection_lab",
+      "timeweb_synergy_rag_quality_cost",
+      "timeweb_synergy_retry_storm_lab",
+      "timeweb_synergy_service_recovery"
+    ]
   }
 }
