@@ -1174,7 +1174,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1317273998"
+      "github_repository_id": "1317273998",
+      "audit_status": "benchmark_dossier",
+      "source_audit_commit": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+      "source_audit_scope": "README, extended benchmark artifacts, environment metadata and source_snapshot gitlink; no engine source inspected"
     },
     {
       "name": "synergy_ai_workspace",
@@ -1434,7 +1437,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1368537298"
+      "github_repository_id": "1368537298",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+      "source_audit_scope": "README and complete main-branch tree"
     },
     {
       "name": "synergy_market_maker",
@@ -1897,7 +1903,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1368875919"
+      "github_repository_id": "1368875919",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "c1882525e12f4662c30851cf1a7995a957cba543",
+      "source_audit_scope": "README and complete main-branch tree"
     },
     {
       "name": "synergy_ai_trade_terminal",
@@ -2710,7 +2719,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1350374084"
+      "github_repository_id": "1350374084",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "8e116b253cdc3cf42740d08b502eaf00e4b09176",
+      "source_audit_scope": "README, QTC2/QTD3 codec, container, round-trip and exact shared-dictionary tests"
     },
     {
       "name": "synergy_2chain_qe",
