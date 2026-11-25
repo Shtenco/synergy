@@ -30,13 +30,13 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 63,
+    "source_code_reviewed_in_this_pass": 10,
     "source_code_audited_total": 63,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 74,
+    "readme_reviewed_in_this_pass": 10,
     "source_code_reviewed_repository_names": [
       "midas_lite",
       "quantum-trading_metatrader5",
@@ -149,8 +149,11 @@
       "synegy_ai_compress"
     ],
     "completion_percentages": {
-      "repository_source_audit": 56.25
-    }
+      "repository_source_audit": 56.25,
+      "readme_review": 66.07
+    },
+    "main_branch_source_reviewed": 60,
+    "non_main_branch_source_reviewed": 3
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
