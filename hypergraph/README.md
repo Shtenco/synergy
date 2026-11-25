@@ -143,3 +143,12 @@ Key decisions:
 - Tutoring and courses should be designed as one education vertical initially, not two overlapping infrastructure repositories.
 
 Every assessment separates existing partial primitives from missing domain functionality. A README or architecture concept is not treated as implementation evidence. See `architecture/overlap-matrix.json` for commit-pinned evidence and decisions.
+
+
+## Governance registry reconciliation — 2026-11-25
+
+The canonical `synergy_system` registry is a **75-repository dependency-graph subset** and a **77-repository interface subset**, not a mirror of the 112-repository owner-scoped inventory. All 75 dependency-graph repositories are represented in the 77 interface records; the two interface-only records are `synergy_hierarchical_cognitive_memory_architecture` and `synergy_long_term_harness`. The remaining 35 inventory repositories lack interface records and 37 lack dependency-graph nodes. This is tracked as GAP-090 pending an explicit scope manifest.
+
+Do not collapse the governance counters: the dependency graph contains 22 `RUNTIME_DEPENDENCY`, 22 `RUNTIME_CONTRACT` and 22 `CONTRACT_FLOW` edges; its summary reports 22 adapter-implemented runtime dependency edges. The M5 plan separately scopes 44 required runtime edges across six suites, but observed execution is `BLOCKED_BY_RUNNER`, with zero successful suites, zero E2E-verified edges and zero deployed runtime edges. The 39 contract registry entries marked `ADAPTER_IMPLEMENTED` are not E2E proof.
+
+Pinned source counts and the exact 112-to-75/77 set reconciliation are stored in `evidence/governance-registry-snapshot.json`.
