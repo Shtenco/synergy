@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://synergy.invalid/schemas/governance-graph-projection.schema.json",
+  "title": "SYNERGY Governance Graph Read-only Projection V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "projection_type",
+    "generated_at",
+    "source",
+    "counts",
+    "nodes",
+    "edges",
+    "maturity_interpretation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "projection_type": {
+      "const": "read_only_governance_graph_projection"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "repository",
+        "commit",
+        "path",
+        "blob_sha"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string"
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "path": {
+          "type": "string"
+        },
+        "blob_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "nodes",
+        "edges",
+        "edge_type_counts",
+        "edge_status_counts",
+        "unique_contract_ids",
+        "m5_required_edges",
+        "e2e_tested_edges",
+        "deployed_runtime_edges"
+      ],
+      "properties": {
+        "nodes": {
+          "const": 75
+        },
+        "edges": {
+          "const": 136
+        },
+        "unique_contract_ids": {
+          "const": 38
+        },
+        "m5_required_edges": {
+          "const": 44
+        },
+        "e2e_tested_edges": {
+          "const": 0
+        },
+        "deployed_runtime_edges": {
+          "const": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 75,
+      "maxItems": 75,
+      "items": {
+        "type": "object",
+        "required": [
+          "node_id",
+          "repository",
+          "domain",
+          "role"
+        ],
+        "properties": {
+          "node_id": {
+            "type": "string"
+          },
+          "repository": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "minItems": 136,
+      "maxItems": 136,
+      "items": {
+        "type": "object",
+        "required": [
+          "edge_id",
+          "source_node_id",
+          "target_node_id",
+          "source_repository",
+          "target_repository",
+          "relation",
+          "status",
+          "authority_transfer",
+          "evidence_paths",
+          "in_m5_required_scope"
+        ],
+        "properties": {
+          "edge_id": {
+            "type": "string"
+          },
+          "source_node_id": {
+            "type": "string"
+          },
+          "target_node_id": {
+            "type": "string"
+          },
+          "source_repository": {
+            "type": "string"
+          },
+          "target_repository": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "DOCUMENTED",
+              "CONTRACT_DEFINED",
+              "PRODUCER_IMPLEMENTED",
+              "CONSUMER_IMPLEMENTED",
+              "ADAPTER_IMPLEMENTED",
+              "E2E_TESTED",
+              "DEPLOYED"
+            ]
+          },
+          "authority_transfer": {
+            "type": "boolean"
+          },
+          "contract_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_paths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_path_semantics": {
+            "type": "string"
+          },
+          "in_m5_required_scope": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "maturity_interpretation": {
+      "type": "string"
+    }
+  }
+}
