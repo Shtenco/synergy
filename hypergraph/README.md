@@ -152,3 +152,10 @@ The canonical `synergy_system` registry is a **75-repository dependency-graph su
 Do not collapse the governance counters: the dependency graph contains 22 `RUNTIME_DEPENDENCY`, 22 `RUNTIME_CONTRACT` and 22 `CONTRACT_FLOW` edges; its summary reports 22 adapter-implemented runtime dependency edges. The M5 plan separately scopes 44 required runtime edges across six suites, but observed execution is `BLOCKED_BY_RUNNER`, with zero successful suites, zero E2E-verified edges and zero deployed runtime edges. The 39 contract registry entries marked `ADAPTER_IMPLEMENTED` are not E2E proof.
 
 Pinned source counts and the exact 112-to-75/77 set reconciliation are stored in `evidence/governance-registry-snapshot.json`.
+
+
+## M5 scope and contract-count reconciliation — 2026-11-25
+
+The frozen M5 scope has 44 unique edges. 42 match the canonical dependency graph by exact repository names; two Wave 4 edges use legacy aliases (`binary_quantum_theory` and `epstein_network`). Mapping those to `synergy_binary_quantum_theory` and `synergy_epstein_network` yields 44/44 graph matches: 22 `RUNTIME_DEPENDENCY` and 22 `RUNTIME_CONTRACT`, all marked `ADAPTER_IMPLEMENTED`. This is scope reconciliation only; M5 observed execution remains blocked and no E2E edge is verified.
+
+The dependency graph contains 38 unique cross-repository contract IDs. The 39th registry contract, `synergy.trading.execution-plan/v1`, is intra-repository and correctly absent from the cross-repository graph. The graph summary's `typed_contracts: 17` does not reconcile with the 38 unique graph contract IDs and is tracked as GAP-092 until its counting rule is clarified.
