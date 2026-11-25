@@ -2137,13 +2137,17 @@
       "maturity": "RND_SIMULATION",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "agents",
-        "reasoning",
-        "orchestration"
+        "agentic-economic-simulation",
+        "closed-ledger-model",
+        "internal-demand-and-work",
+        "hardnav-simulation"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "No live payment execution or real-world marketplace settlement is established by this simulation.",
+        "Historical replay includes modeled layers and must retain its own evidence/assumption labels."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2151,6 +2155,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1387121392",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+        "audited_at": "2026-11-25",
+        "scope": "README, economy simulation contract, ledger and closed-economy tests"
       }
     },
     {
@@ -3391,20 +3401,20 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "hierarchical-cognitive-memory",
-        "dynamic-context-planning",
-        "lexical-and-vector-retrieval",
-        "content-addressed-provenance",
-        "read-only-repository-ingestion"
+        "hierarchical-rag-memory",
+        "commit-pinned-python-import-graph",
+        "cross-repository-inventory",
+        "candidate-dependency-ledger",
+        "contract-id-provider-matching",
+        "ci-evidence-import"
       ],
       "declared_dependencies": [],
       "risks": [
-        "No authenticated API boundary; local development adapter only",
-        "Repository ingestion does not reject symlink files before reading",
-        "Current sources index is keyed by URI rather than repository namespace; provenance collision risk",
-        "No cross-repository memory contract or E2E integration is registered"
+        "Repository identity in its own cross-repo DB is a canonical-URL hash, not GitHub's immutable provider ID; Hypergraph needs a mapping layer.",
+        "Static AST links do not prove runtime calls; candidate dependencies do not prove reachability or compatibility.",
+        "This review did not execute the test suite or validate current branch CI."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3412,6 +3422,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1464742221",
         "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "8c23bcb41199f89bb9afb57ca5e0766787154fd7",
+        "audited_at": "2026-11-25",
+        "scope": "README, dependency AST scanner, cross-repository registry, contract intelligence, tests and security policy"
       }
     },
     {
@@ -3466,9 +3482,12 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "compute",
-        "runtime",
-        "compression-or-os"
+        "node-service-orchestration",
+        "signed-manifest-model",
+        "artifact-sha256-verification",
+        "capability-ceilings",
+        "resource-limits",
+        "audit-journal-and-rollback-staging"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_system",
@@ -3476,8 +3495,12 @@
         "Shtenco/synergy_net",
         "Shtenco/synergy_gllm_nexus"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "RLIMITs and process sessions are not an OS sandbox: no namespaces, seccomp, chroot, filesystem policy or network isolation is applied by the inspected code.",
+        "This compatibility runtime is not evidence of the full native TURBO Linux ring-3 service-cell implementation.",
+        "The test service is a trivial local shell script; production service isolation and rollback semantics are not proven."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3485,6 +3508,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1341275176",
         "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "cf3d18ca533ca9824794ad48e208b41b0fdf4475",
+        "audited_at": "2026-11-25",
+        "scope": "README, compatibility orchestrator and orchestrator tests"
       }
     },
     {
@@ -3661,14 +3690,19 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "fair-value-graph"
+        "directed-executable-conversion-graph",
+        "multi-path-fair-value",
+        "cycle-search",
+        "enterprise-api",
+        "advisory-fair-value-contract"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Capacity, latency, stale quotes, correlated/overlapping paths and execution sequencing are not incorporated into core fair-value calculation.",
+        "Fee/slippage bounds are not enforced in Edge model; negative executable rates are filtered from fair-value paths rather than rejected at ingestion.",
+        "A conversion graph is not a general buyer/seller offer marketplace or commercial transaction orchestrator."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3676,6 +3710,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376377201",
         "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+        "audited_at": "2026-11-25",
+        "scope": "README, graph core, fair-value contract, enterprise resilience/auth and tests"
       }
     },
     {
