@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 28,
-  "source_code_reviewed_count": 26,
+  "audited_repository_count": 32,
+  "source_code_reviewed_count": 28,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -1049,6 +1049,139 @@
       ],
       "repository": "Shtenco/synergy_maps",
       "commit_url": "https://github.com/Shtenco/synergy_maps/commit/576871d1aee78273ec97a45cacca49de8873cf51",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_agi_autopilot",
+      "commit": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README explicitly labels main as STUB/architecture node; repository tree contains README, docs and assets only."
+      ],
+      "limitations": [
+        "No DAG planner, agent runtime, execution engine or integration is implemented on main."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "5a50b9d90bc106294fb488523fe2caef6d3867d9"
+        }
+      ],
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "commit_url": "https://github.com/Shtenco/synergy_agi_autopilot/commit/65433bca107e823ebe1223646601541bb86b5d0d",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_coder",
+      "commit": "4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+      "status": "source_reviewed_limited",
+      "scope": "README, engineering evidence contract and tests",
+      "capabilities": [
+        "requirement-to-repository-trace",
+        "change-evidence-contract",
+        "sha256-artifact-identity",
+        "approval-gated-check-status"
+      ],
+      "findings": [
+        "Compact evidence-contract layer maps REQ requirements to affected repositories and changes; APPROVED requires all checks PASS.",
+        "Optional SHA-256 hashes bind evidence bytes and artifact bytes; README correctly says hash is content identity, not proof of correctness."
+      ],
+      "limitations": [
+        "This is not a complete autonomous coding agent, code execution environment or repository orchestration runtime.",
+        "Commit SHA validation checks format only; it does not fetch/verify that commit exists in the named repository."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7b862f61f9e87587a536972ae6637c347b66ad33"
+        },
+        {
+          "path": "runtime/contracts.py",
+          "blob_sha": "a192a19e115a946f96377066f4ba78162359a9c3"
+        },
+        {
+          "path": "tests/test_contracts.py",
+          "blob_sha": "5941addfe56fb621d96f146924214236646c2635"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_coder",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_coder/commit/4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_workspace",
+      "commit": "5483f61106e626267c521cf64be8eaeb82448fba",
+      "status": "branch_only_prototype",
+      "scope": "main README plus release/v1.0-desktop-rc local service, orchestrator and capital engine",
+      "capabilities": [
+        "localhost-control-plane",
+        "sqlite-wal-task-lead-audit-store",
+        "policy-limited-local-workflow",
+        "capital-import-provenance",
+        "explicit-human-approval"
+      ],
+      "findings": [
+        "Default main contains only README; inspected application code is on release/v1.0-desktop-rc, not main.",
+        "Release branch service binds local control plane to 127.0.0.1:8129, stores tasks/leads/actions/audit in SQLite WAL and requires bearer token.",
+        "Workspace orchestrator exposes only local read/planning capabilities; external Avito publishing and investment trading are blocked and it returns external_effects=false.",
+        "Capital engine stores source-supplied financial records with immutable source IDs and SHA-256 conflict detection; it explicitly does not call banks, brokers or exchanges."
+      ],
+      "limitations": [
+        "Release branch README says Windows installer and GUI E2E are not confirmed; not a production desktop release.",
+        "No tenant separation in the inspected local schema; not a public multi-tenant SaaS backend.",
+        "Main branch is README-only; branch code must not be described as merged main functionality."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "06cbe60941907c2672b91b752865d7620a2884cd"
+        },
+        {
+          "path": "workspace/service.py",
+          "blob_sha": "ae1933a93364ecd92255086e833372afec94d32d"
+        },
+        {
+          "path": "workspace/meta_orchestrator.py",
+          "blob_sha": "e24e6b16c036651d52aac1b57de1c52766295f53"
+        },
+        {
+          "path": "workspace/capital_engine.py",
+          "blob_sha": "b0a01f11b47bf4de296a7e602e8e6db983556bde"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_workspace",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_workspace/commit/5483f61106e626267c521cf64be8eaeb82448fba",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_messenger",
+      "commit": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+      "status": "stub_confirmed",
+      "scope": "README, package manifest and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README describes Messenger V3 alpha architecture and explicitly says production security, real MLS backend and physical-device tests remain required.",
+        "Main tree contains README, package.json, service worker and documentation/assets, but no application source or tests/v3 files.",
+        "package.json test script references tests/v3/*.test.js and build:www references scripts/copy-www.js; these paths are absent from inspected main tree."
+      ],
+      "limitations": [
+        "Main branch does not substantiate the claimed messenger runtime; branch/tag code must be separately audited before reuse.",
+        "No cryptographic implementation or P2P messaging behavior is verified by this main-branch snapshot."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "410446bb271431207a0b51d077c8fe1c8f74c060"
+        },
+        {
+          "path": "package.json",
+          "blob_sha": "e4daf78b2ee133c32d134cfaaeed1e7d4fdf9719"
+        }
+      ],
+      "repository": "Shtenco/synergy_messenger",
+      "commit_url": "https://github.com/Shtenco/synergy_messenger/commit/549688f0346b351b43d485bf6e66b3bcfb65a59b",
       "audited_at": "2026-11-25"
     }
   ]
