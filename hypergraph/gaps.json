@@ -268,6 +268,22 @@
       "repository": "Shtenco/synergy_long_term_harness",
       "description": "Long-Term Harness main branch is README-only; no executable soak test framework exists in the inspected repository.",
       "next_action": "Keep long-term test coverage assigned to existing CI/soak workflows until this repository gains a reproducible runner."
+    },
+    {
+      "id": "GAP-035",
+      "severity": "medium",
+      "area": "market_maker_config_validation",
+      "repository": "Shtenco/synergy_market_maker",
+      "description": "MMConfig has no explicit validation for gamma, kappa, horizon, max_inventory or min spread; malformed values can produce invalid quote geometry or math errors.",
+      "next_action": "Add immutable config validation for finite values and safe parameter ranges, plus property tests for non-crossed quotes and monotonic inventory/volatility behavior."
+    },
+    {
+      "id": "GAP-036",
+      "severity": "medium",
+      "area": "validation_provenance",
+      "repository": "Shtenco/synergy_quantlab",
+      "description": "Validation contract permits an optional dataset manifest digest and does not verify the digest format or fetch/verify the dataset; strong validation runs can be emitted without bound dataset provenance.",
+      "next_action": "Require a versioned dataset manifest and verify SHA-256/source revision before issuing a promotion gate."
     }
   ]
 }
