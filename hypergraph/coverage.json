@@ -36,7 +36,7 @@
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 5,
+    "readme_reviewed_in_this_pass": 1,
     "source_code_reviewed_repository_names": [
       "midas_lite",
       "quantum-trading_metatrader5",
@@ -170,11 +170,11 @@
     ],
     "completion_percentages": {
       "repository_source_audit": 74.11,
-      "readme_review": 88.39
+      "readme_review": 84.82
     },
     "main_branch_source_reviewed": 76,
     "non_main_branch_source_reviewed": 7,
-    "readme_reviewed_total": 99,
+    "readme_reviewed_total": 95,
     "source_code_reviewed_total": 83
   },
   "completion_percentages": {
@@ -182,7 +182,7 @@
     "repository_source_audit": 74.11,
     "edge_verification": 0,
     "contract_verification": 0,
-    "readme_review": 88.39
+    "readme_review": 84.82
   },
   "interpretation": "The search result set contains 112 unique GitHub repository IDs. This reconciles the 100-record owner-affiliation listing plus 12 additional repositories. Inventory is complete for this search result set; source-level audit and relationship verification are not complete."
 }
