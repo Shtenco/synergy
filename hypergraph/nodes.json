@@ -1528,17 +1528,14 @@
       "category": "apps-interface",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "client-ui",
-        "control-plane"
-      ],
+      "capabilities": [],
       "declared_dependencies": [
         "Shtenco/synergy_apps"
       ],
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1546,7 +1543,17 @@
         "observed_at": "2026-11-25",
         "provider_id": "1365353815",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Checked main contains README, LICENSE, assets and docs only; no executable family application runtime, tests or persisted evidence are present.",
+        "README explicitly labels main STUB / specification-only and lists consent, member data leakage and UI-balance authority as design risks."
+      ]
     },
     {
       "node_id": "github-repo:1368539352",
@@ -1719,14 +1726,14 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "execution-planning"
+        "venue-smart-routing",
+        "risk-decision-to-plan-contract",
+        "paper-execution-adapter",
+        "execution-result-contract"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1734,7 +1741,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376378295",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3ef2e4ac61215fcf0ad073b4b59cc7938482b08e",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Main implements venue ranking/slicing by fee, slippage, risk score and latency, with a paper adapter and typed plan/result payloads.",
+        "README explicitly says paper fills do not prove broker connectivity; correlation UUIDs exist but persistent idempotency state machine is not implemented.",
+        "Core route and contract validation do not consistently reject NaN/infinite quote fields, negative costs/latency, invalid side/symbol or malformed fill quantities; risk action gating alone is not sufficient for production execution."
+      ]
     },
     {
       "node_id": "github-repo:1376378125",
@@ -2408,13 +2426,14 @@
       "maturity": "ACTIVE_EXPERIMENTAL",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "compute",
-        "runtime",
-        "compression-or-os"
+        "structured-linear-operator-research",
+        "low-rank-and-basis-deduplication",
+        "checkpoint-evaluation",
+        "matrix-operator-benchmarks"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2422,7 +2441,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1394514826",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "077ce326b2037511c215f7d7b104be72e1b5e34d",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Main contains a substantial research codebase with multiple QCNO versions, benchmark scripts, checkpoints/results documentation and falsification notes.",
+        "The inspected factor-4 dedup script loads a checkpoint with weights_only=False, reads a fixed local /mnt/data checkpoint, and writes outputs to /mnt/data; the common evaluation script executes a source-file prefix via exec. These scripts are research runners tightly coupled to local artifacts, not a packaged safe runtime.",
+        "README states the full V9 pipeline was not completed before the final checkpoint because prototype forward execution was slow/timeouts; earlier speed/quality results must not be generalized to a completed V9 pipeline."
+      ]
     },
     {
       "node_id": "github-repo:1391275828",
@@ -2438,18 +2468,14 @@
       "category": "protocol-transport",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "networking",
-        "secure-transport",
-        "protocol"
-      ],
+      "capabilities": [],
       "declared_dependencies": [
         "Shtenco/synergy_meta_os"
       ],
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2457,7 +2483,17 @@
         "observed_at": "2026-11-25",
         "provider_id": "1391275828",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "b3084f709aaa1023289cfec6e550a1a35d884513",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Checked main contains README, LICENSE, assets and docs only; no executable radio or post-quantum protocol runtime, tests or evidence artifacts are present.",
+        "README explicitly labels main STUB / specification-only."
+      ]
     },
     {
       "node_id": "github-repo:1091973987",
@@ -3754,10 +3790,9 @@
       "maturity": "RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "registry",
-        "federation",
-        "architecture",
-        "governance"
+        "capital-governance-contract",
+        "project-proposal-validation",
+        "funding-authorization-payload"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_system",
@@ -3765,7 +3800,7 @@
         "Shtenco/synergy_algotrading_graph_system"
       ],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3773,7 +3808,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1359110009",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "f1055866444a2e6bdbc8ac6b76f4334f1e171105",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Repository describes itself as an economic master dossier, not canonical owner inventory or runtime authority; its PR #2 still references an 89-repository assessment and is explicitly stale against the current inventory.",
+        "Capital governance contract prevents ProjectProposal from self-authorizing and requires approver provenance, underwriting evidence, rails and future expiry for AUTHORIZE payloads.",
+        "Decimal amounts are not checked with is_finite(); Decimal('Infinity') can pass positive capital/max_amount checks. Contract functions construct payloads only and do not provide durable approval workflow or payment execution."
+      ]
     },
     {
       "node_id": "github-repo:1180497488",
