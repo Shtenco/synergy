@@ -25,6 +25,7 @@ class HypergraphCoreTests(unittest.TestCase):
         cls.target = load_json(HYPERGRAPH / "architecture" / "target-graph.json")
         cls.overlap = load_json(HYPERGRAPH / "architecture" / "overlap-matrix.json")
         cls.audit = load_json(HYPERGRAPH / "evidence" / "repository-audits.json")
+        cls.governance = load_json(HYPERGRAPH / "evidence" / "governance-registry-snapshot.json")
         cls.registry = load_json(ROOT / "registry" / "repos.json")
 
     def test_inventory_has_112_unique_provider_ids(self):
@@ -115,6 +116,40 @@ class HypergraphCoreTests(unittest.TestCase):
         self.assertEqual(
             self.coverage["completion_percentages"]["repository_content_audit"], 100
         )
+
+    def test_governance_registry_subset_is_explicit_and_counts_are_not_conflated(self):
+        snapshot = self.governance
+        counts = snapshot["counts"]
+        reconcile = snapshot["reconciliation"]
+        inventory = {node["full_name"] for node in self.nodes_doc["nodes"]}
+        graph = set(reconcile["dependency_graph_names_missing_from_hypergraph"])
+        interface = set(reconcile["interface_names_missing_from_hypergraph"])
+        self.assertEqual(counts["authority_registry_entries"], 42)
+        self.assertEqual(counts["contract_registry_entries"], 39)
+        self.assertEqual(counts["dependency_graph_nodes"], 75)
+        self.assertEqual(counts["dependency_graph_edges"], 136)
+        self.assertEqual(counts["repository_interface_records"], 77)
+        self.assertEqual(reconcile["hypergraph_inventory_repositories"], 112)
+        self.assertEqual(len(reconcile["hypergraph_names_missing_from_interface_registry"]), 35)
+        self.assertEqual(len(reconcile["hypergraph_names_missing_from_dependency_graph"]), 37)
+        self.assertEqual(reconcile["interface_only_names_not_in_dependency_graph"], [
+            "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+            "Shtenco/synergy_long_term_harness",
+        ])
+        self.assertEqual(counts["dependency_graph_edge_type_counts"], {
+            "ARCHITECTURAL_PARENT": 70,
+            "CONTRACT_FLOW": 22,
+            "RUNTIME_DEPENDENCY": 22,
+            "RUNTIME_CONTRACT": 22,
+        })
+        self.assertEqual(counts["dependency_graph_summary"]["adapter_implemented_runtime_edges"], 22)
+        self.assertEqual(counts["m5_required_runtime_edges"], 44)
+        self.assertEqual(counts["m5_observed_execution"]["status"], "BLOCKED_BY_RUNNER")
+        self.assertEqual(counts["m5_observed_execution"]["verified_runtime_edges"], 0)
+        self.assertEqual(counts["dependency_graph_summary"]["e2e_tested_runtime_edges"], 0)
+        self.assertEqual(counts["dependency_graph_summary"]["deployed_runtime_edges"], 0)
+        self.assertTrue(set(reconcile["interface_registry_repositories"]).issubset(inventory))
+        self.assertTrue(set(reconcile["dependency_graph_repositories"]).issubset(inventory))
 
     def test_proposals_are_not_counted_as_repositories(self):
         actual_ids = {node["node_id"] for node in self.nodes_doc["nodes"]}
