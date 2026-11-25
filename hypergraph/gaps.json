@@ -423,43 +423,19 @@
     },
     {
       "id": "GAP-054",
-      "severity": "medium",
-      "area": "economic_model_calibration",
-      "repository": "Shtenco/synergy_eurasian",
-      "description": "EIIOM country/sector coefficients are scenario inputs and no live statistical data calibration was established; README reports six failed tests in a prior 2026-11-07 snapshot and current CI has no observed run.",
-      "next_action": "Separate measured inputs from assumptions, add source provenance/update timestamps and obtain a fresh reproducible CI run."
+      "severity": "high",
+      "area": "science_contract_numeric_validation",
+      "repository": "Shtenco/synergy_nexus_science_agent",
+      "description": "Science evidence contracts validate digest shape and some epistemic gates but do not verify source bytes against locators; several numeric fields accept NaN/infinity or negative counts because finiteness and range checks are incomplete.",
+      "next_action": "Use math.isfinite for every numeric field, constrain counts and physical bounds, validate required identifiers and bind source bytes/digests in a trusted ingestion adapter; add adversarial tests."
     },
     {
       "id": "GAP-055",
       "severity": "medium",
-      "area": "science_audit_freshness",
-      "repository": "Shtenco/synergy_binary_quantum_theory",
-      "description": "AUDIT_CURRENT.md is dated 2026-10-10 while the README's current status is 2026-11-10; open physical gates must not be inferred closed from older audit text.",
-      "next_action": "Regenerate the audit from current claim/test registry and preserve explicit mathematical-vs-physical evidence boundaries."
-    },
-    {
-      "id": "GAP-057",
-      "severity": "high",
-      "area": "pq_crypto_provider_activation",
-      "repository": "Shtenco/synergy_ai_blockchain",
-      "description": "The reference PQ cryptographic provider is optional behind the reference-pq Cargo feature while default features are empty; the repository is explicitly not audited and no production EVM client integration is established.",
-      "next_action": "Define a reproducible production build profile that enables an independently reviewed FIPS provider, verifies cross-implementation vectors and stores keys behind HSM/OS keystore before any real asset custody."
-    },
-    {
-      "id": "GAP-058",
-      "severity": "medium",
-      "area": "budget_trace_authenticity",
-      "repository": "Shtenco/synergy_blochain_budget",
-      "description": "Merkle roots and hashes bind imported budget/EIS bytes but do not by themselves authenticate the publisher or prove the legal/payment meaning of a matched record.",
-      "next_action": "Add source signature/transport verification where available, preserve raw source artifact provenance and keep traceability separate from legal/accounting authorization."
-    },
-    {
-      "id": "GAP-059",
-      "severity": "high",
-      "area": "collateral_debt_lifecycle",
-      "repository": "Shtenco/synergy_triangle_money_system",
-      "description": "Inspected CollateralVault exposes draw and collateral accounting but no repayment/debt-reduction function; RiskOracle prices are owner-controlled and internal swap minOut is sometimes zero.",
-      "next_action": "Implement repay/close lifecycle, independent oracle freshness/quorum, price manipulation tests, nonzero slippage bounds and external audit before any deployment."
+      "area": "benchmark_scope_labeling",
+      "repository": "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "description": "The main scenario is an analytical scheduling simulation with no LLM calls, yet repository naming can be mistaken for an empirical multi-agent benchmark if its scope is not repeated in summaries.",
+      "next_action": "Keep simulation labels in every result card and distinguish scheduling arithmetic from measured agent quality, token cost, latency and failure rates."
     }
   ]
 }
