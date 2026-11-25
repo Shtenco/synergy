@@ -142,6 +142,26 @@
       "domain": "two_token_collateral_experiment",
       "owner": "Shtenco/synergy_cashero",
       "role": "CASRS/CASRG collateral and CPMM experiments; tracked env files require secret rotation review."
+    },
+    {
+      "domain": "low_level_runtime_primitives",
+      "owner": "Shtenco/synergy_turbo_linux",
+      "role": "Turbo Core capabilities, scheduler and SPSC IPC; historical SSH credential incident requires confirmed revocation; duplicate task enqueue needs a fix."
+    },
+    {
+      "domain": "compute_topology_and_benchmarks",
+      "owner": "Shtenco/synergy_computing_topology",
+      "role": "V4 correctness closure and compact-index benchmarks; kernel runtime on current kernel remains untested."
+    },
+    {
+      "domain": "xpu_architecture_model",
+      "owner": "Shtenco/synergy_motherboard_xpu_xml",
+      "role": "Parameterized EML/XPU model and reference evaluator; no physical silicon or measured RTL claim."
+    },
+    {
+      "domain": "long_term_test_harness",
+      "owner": "Shtenco/synergy_long_term_harness",
+      "role": "Reserved architecture node only; main branch contains no harness implementation."
     }
   ],
   "integration_contract": {
