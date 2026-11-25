@@ -5,8 +5,8 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Fifty-six README reviews and forty-nine limited source reviews, each pinned to the exact main commit and file blob SHA.
-- 39 proposed shared cores and domain routers are kept separate from actual repositories; 26 have first-pass overlap assessments and 13 remain unaudited.
+- Sixty README reviews and fifty-two limited source reviews, each pinned to the exact main commit and file blob SHA.
+- 39 proposed shared cores and domain routers are kept separate from actual repositories; 27 have first-pass overlap assessments and 12 remain unaudited.
 - Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
 ## Files
@@ -56,6 +56,10 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 23. `midas_lite` contains direct MT5 order submission in a legacy agent; `synergy_ai_trade_terminal` contains embedded credentials. Keep execution disabled and rotate credentials.
 24. `synergy_usds`, `synergy_cashero` and `synergy_turbo_linux` have tracked or historical credential exposure findings. The security playbook records containment steps without storing secret material.
 
+25. AI Language's multi-target code generator interpolates unescaped strings for C/Rust/Solidity/Kotlin; command execution is not an OS sandbox and trace output is not secret-redacted.
+26. GLLM runtime and RWKV quantization code are branch-only; neither should be described as default-main functionality or production-ready model runtime.
+27. Matrix SOTA is a documentation-only debt/credit maturity design, not an executable credit engine.
+
 ## Evidence rules
 1. Repository names are not identities; GitHub repository IDs are.
 2. A registry dependency is a candidate edge, not proof of an import or runtime call.
@@ -67,14 +71,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 56/112 (50.00%).
-- Source reviewed (limited scope): 49/112 (43.75%).
+- README reviewed: 60/112 (53.57%).
+- Source reviewed (limited scope): 52/112 (46.43%).
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
 ## Next audit sequence
 1. Close the browser subresource network-policy finding.
-2. Audit the remaining 63 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+2. Audit the remaining 60 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
 3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
 5. Run capability-overlap analysis before proposing any new repository.
