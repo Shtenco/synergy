@@ -1,27 +1,51 @@
 # SYNERGY Hypergraph Core — V3
 
-This directory is the machine-readable inventory and evidence-aware graph seed for the ecosystem audit.
+Machine-readable repository inventory, evidence-aware dependency graph and target architecture for the ecosystem audit.
+
+## Current snapshot
+- 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
+- 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
+- Twelve README reviews and eleven limited source reviews, each pinned to the exact main commit and file blob SHA.
+- 39 proposed shared cores and domain routers are kept separate from actual repositories.
+- Six target architecture layers and fourteen candidate target relationships are documented separately from observed dependencies.
 
 ## Files
-- `nodes.json`: live owner-inventory repository nodes keyed by immutable GitHub repository ID.
-- `edges.json`: registry-declared dependency edges. Every edge is `candidate` until source evidence verifies it.
+- `nodes.json`: 112 repository nodes and per-repository audit status.
+- `edges.json`: registry-declared dependency edges; every edge remains `candidate` until source evidence verifies it.
+- `architecture/target-graph.json`: six-layer target graph and candidate architecture links.
 - `coverage.json`: measurable inventory and audit coverage.
-- `gaps.json`: unresolved inventory, evidence, contract and overlap gaps.
-- `proposals.json`: proposed components, deliberately separate from actual repositories.
-- `evidence/registry-snapshot.json`: provenance for the existing umbrella registry snapshot.
-- `schemas/`: JSON Schema contracts for graph nodes and n-ary hyperedges.
+- `gaps.json`: unresolved source audit, security, evidence, contract and overlap gaps.
+- `proposals.json`: 39 proposed components, not actual repositories.
+- `evidence/registry-snapshot.json`: provenance for the original 92-record registry snapshot.
+- `evidence/repository-audits.json`: twelve commit-pinned repository reviews.
+- `contracts/`: requirements for versioned OpenAPI, JSON Schema, AsyncAPI and contract tests.
+- `schemas/`: JSON Schema contracts for repository nodes and n-ary hyperedges.
+
+## Current findings
+1. `synergy_ai_browser-`: the Playwright route guard checks top-level document navigation, but continues subresource requests without equivalent host/IP checks. Treat as a high-priority potential SSRF/private-network exposure until fixed and tested.
+2. `timeweb_synergy_service_recovery`: inspected recovery scenario is an in-memory simulator, while README describes local HTTP/SQLite restarts. Evidence scope must be reconciled.
+3. `timeweb_synergy_cpu_gpu_cost_benchmark`: inspected code is an assumption-based cost calculator; a GPU benchmark harness and paid cloud evidence were not found in the inspected tree.
+4. `timeweb_synergy_retry_storm_lab`: the protected policy reached 32.92% median success versus 56.25% for retry-budget plus bulkhead in its fixed localhost fault model. This is a configuration/granularity warning, not a general verdict on circuit breakers.
+5. `timeweb_synergy_benchmark_statistics`: archived UCI digits results show binary model accuracy 88.81% versus FP32 95.85% over three paired seeds; uncertainty is exploratory and fixed-test-set limitations apply.
 
 ## Evidence rules
 1. Repository names are not identities; GitHub repository IDs are.
 2. A registry dependency is a candidate edge, not proof of an import or runtime call.
-3. `candidate`, `reviewed`, `verified`, and `rejected` are separate states. `verified` requires reproducible source or runtime evidence.
+3. `candidate`, `reviewed`, `verified`, and `rejected` are distinct states. `verified` requires reproducible source or runtime evidence.
 4. Proposed components are not repository inventory entries.
 5. Hashes establish byte identity, not truth, authorization or correctness.
-6. The owner listing returned 100 records in this observation. Do not infer that 100 is the account's final total or repeat the historical 112 claim without ID-level reconciliation.
+6. No tests were executed as part of the current repository review; archived results are not fresh CI runs.
+
+## Coverage
+- Inventory: 112/112 unique IDs returned by owner-scoped search.
+- README reviewed: 12/112 (10.71%).
+- Source reviewed (limited scope): 11/112 (9.82%).
+- Dependency edges verified: 0/109.
+- Cross-repository contracts verified: 0.
 
 ## Next audit sequence
-1. Reconcile repository IDs beyond the current listing cap.
-2. Audit README, manifests, source imports, API routes, event schemas, tests and workflows in batches.
-3. Replace registry-only candidate edges with file- and revision-specific evidence.
+1. Close the browser subresource network-policy finding.
+2. Audit the remaining repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
-5. Run overlap analysis before proposing new repositories.
+5. Run capability-overlap analysis before proposing any new repository.
