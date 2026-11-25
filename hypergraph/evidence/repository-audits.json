@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 95,
-  "source_code_reviewed_count": 83,
+  "audited_repository_count": 100,
+  "source_code_reviewed_count": 87,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -3557,7 +3557,176 @@
           "blob_sha": "87476c9dc819919b5335d15cf292a2dbec4f103a"
         }
       ]
+    },
+    {
+      "name": "synergy_shttps",
+      "repository": "Shtenco/synergy_shttps",
+      "commit": "f7207aa8082c78399e4130f4eaf29ff8984c5413",
+      "commit_url": "https://github.com/Shtenco/synergy_shttps/commit/f7207aa8082c78399e4130f4eaf29ff8984c5413",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README plus selected source/tests on main; no tests or experiments executed during this audit.",
+      "capabilities": [],
+      "findings": [
+        "Main contains README, LICENSE, assets and docs only; README explicitly says a ready HTTPS replacement or production protocol is not claimed.",
+        "No executable transport, certificate, peer-authentication or integration tests are present."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ef6c480c4ffac452739331aa761c1d0761ae6429"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_codebase_intelligence",
+      "repository": "Shtenco/timeweb_synergy_codebase_intelligence",
+      "commit": "9eca8881fa15cd8e14c5e4a714014adc0df95029",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_codebase_intelligence/commit/9eca8881fa15cd8e14c5e4a714014adc0df95029",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or experiments executed during this audit.",
+      "capabilities": [
+        "15-scenario-research-runner",
+        "immutable-json-evidence-artifacts",
+        "synthetic-repository-navigation",
+        "benchmark-and-validation-demos"
+      ],
+      "findings": [
+        "Runner constrains scenario IDs, requires explicit evidence_type and limitations, records seed/platform/time and writes immutable output with exclusive-create semantics.",
+        "Scenario 04 generates a toy repository in memory; its README explicitly says no real source repository or LLM patches are used and default scale is 1,000 files/10,000 lines.",
+        "Archived JSON/CSV are historical outputs, not fresh CI runs; repository labels simulation/synthetic must not be promoted to production evidence."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "f96bd5e099f0a9ba827d2229e2cace168311d016"
+        },
+        {
+          "path": "prototypes/runner.py",
+          "blob_sha": "bfcac3f3f1787de10919da7f41c7c6ef04ae0c51"
+        },
+        {
+          "path": "prototypes/scenarios/article04.py",
+          "blob_sha": "3a64709c7f4c4edb5e4a38e1461e7eabd49c4fab"
+        },
+        {
+          "path": "prototypes/tests/test_articles_01_05.py",
+          "blob_sha": "de484b0e91df9c091bb08b30ac24e0f62b747be0"
+        }
+      ]
+    },
+    {
+      "name": "synergy_ai_investment_committee",
+      "repository": "Shtenco/synergy_ai_investment_committee",
+      "commit": "7dbec0202badf1afce60ada83b5402f8d8ed9f14",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_investment_committee/commit/7dbec0202badf1afce60ada83b5402f8d8ed9f14",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or experiments executed during this audit.",
+      "capabilities": [
+        "multi-role-market-voting",
+        "volatility-veto",
+        "typed-investment-thesis-contract",
+        "fastapi-enterprise-surface"
+      ],
+      "findings": [
+        "Main has a bounded investment committee core, typed federation payload, FastAPI enterprise surface and multiple test suites.",
+        "Contract explicitly sets authorization=false and requires downstream domain validation; the output is advisory evidence, not trade authorization.",
+        "MarketContext and contract inputs convert floats without checking finiteness/ranges; NaN volatility can evade the >= risk-veto comparison and produce an ill-defined thesis. No production deployment or live-trading integration is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "2c455b8da6b0fa9bc730402a43104458d76d2ad8"
+        },
+        {
+          "path": "src/synergy_ai_committee/core.py",
+          "blob_sha": "976c5d4432359b742581815f4554f68b9e836e31"
+        },
+        {
+          "path": "src/synergy_ai_committee/synergy_contracts.py",
+          "blob_sha": "d86bb3662c8b1f845f309bf8ef74e5c7f4daae3e"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "bd3343b80ce62495e36c312ffd579561a67b8652"
+        }
+      ]
+    },
+    {
+      "name": "synergy_megaproject",
+      "repository": "Shtenco/synergy_megaproject",
+      "commit": "f1d359afd0729741ed9452518c5dfc26ea7ad979",
+      "commit_url": "https://github.com/Shtenco/synergy_megaproject/commit/f1d359afd0729741ed9452518c5dfc26ea7ad979",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or experiments executed during this audit.",
+      "capabilities": [
+        "civilizational-research-graph",
+        "typed-science-evidence-ingestion",
+        "csv-graph-validator",
+        "epistemic-status-separation"
+      ],
+      "findings": [
+        "Main owns a civilizational research graph, not federation governance, accounting, settlement or runtime execution; README reports 0 E2E-tested federation edges.",
+        "Science contract stages source and claim evidence into a review queue, distinguishes direct/non-direct/falsified epistemic states and always sets canonical_graph_mutation=false.",
+        "Graph validator checks node/edge IDs, allowed relations, evidence fields, confidence range and frontier coverage; its checks are structural consistency, not external source verification or runtime integration."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "695fe6247eeb5e197ab0dee71c3283aba142f5d5"
+        },
+        {
+          "path": "tools/science_contracts.py",
+          "blob_sha": "ecfd59e0b39f6d447c9524724156f7912840cfd6"
+        },
+        {
+          "path": "tools/validate_graph.py",
+          "blob_sha": "f5ed4c62d737ce30de1693ce0ab9ad882532a9af"
+        },
+        {
+          "path": "tests/test_science_contracts.py",
+          "blob_sha": "4c202d62f6d1af8c5d3066069cbc7bf0059d1673"
+        }
+      ]
+    },
+    {
+      "name": "dlp_solver",
+      "repository": "Shtenco/dlp_solver",
+      "commit": "f140d3e7f1db141d7ce5497b65663fd4d4f5b305",
+      "commit_url": "https://github.com/Shtenco/dlp_solver/commit/f140d3e7f1db141d7ce5497b65663fd4d4f5b305",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or experiments executed during this audit.",
+      "capabilities": [
+        "secp256k1-research-experiments",
+        "synthetic-gcd-hypothesis-audit",
+        "SAT-BDD-ZDD-experiments",
+        "reversible-computation-probes",
+        "typed-benchmark-contract"
+      ],
+      "findings": [
+        "Main contains extensive cryptographic-research experiments and explicit falsification/negative results; V18 tests synthetic random secp256k1 keys and concludes the approximately 39.2% non-coprime rate is generic random-integer behavior, with no observed cryptanalytic value.",
+        "README states no monotonic SAT difficulty transition was found and rejects Python-bruteforce crossover as evidence; some quantum runtime validation workflows fail before runner steps.",
+        "The benchmark payload contract checks dimensions and candidate counts but does not reject non-finite elapsed_s; NaN compares false to <0 and can be serialized as a MEASURED benchmark unless the caller rejects it."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "84bb2656aad88bdad70c32cf0a3301c00bb67217"
+        },
+        {
+          "path": "src/reverse_exp_v18_gcd_hypothesis_audit.py",
+          "blob_sha": "33bb40ffd04aceb18ef113b360c1bdcdb2b4a305"
+        },
+        {
+          "path": "src/synergy_contracts.py",
+          "blob_sha": "5c101900996234c802a4b859d6160ea0713661fd"
+        }
+      ]
     }
   ],
-  "audit_record_count": 99
+  "audit_record_count": 104
 }
