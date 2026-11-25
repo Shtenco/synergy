@@ -842,13 +842,18 @@
       "maturity": "ACTIVE_EXPERIMENTAL",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "compute",
-        "runtime",
-        "compression-or-os"
+        "correctness-first-compression-harness",
+        "deterministic-batch-validation",
+        "persistent-cache-recovery-tests",
+        "compact-descriptor-index-benchmark"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "These are archived results, not tests rerun in this audit session.",
+        "No OS-wide, arbitrary-workload or production kernel performance claim is supported.",
+        "Kernel module runtime on the current host was explicitly not tested."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -856,6 +861,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1397603060",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+        "audited_at": "2026-11-25",
+        "scope": "README, V4 correctness harness, archived gate results and validation report"
       }
     },
     {
@@ -1125,16 +1136,19 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "compute",
-        "runtime",
-        "compression-or-os"
+        "parameterized-xpu-area-bandwidth-power-model",
+        "eml-q16-reference-profile",
+        "hardware-floorplan-and-rtl-roadmap"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_meta_os",
         "Shtenco/synergy_system"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "No fabricated silicon, FPGA timing closure, synthesized area/energy or production hardware benchmark is established.",
+        "7.077888 T EML primitives/s is an analytical ceiling under modeled assumptions, not FLOPS or measured throughput."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1142,6 +1156,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1351698135",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "10f2d999004ae83956239d954c452113dadb8bcc",
+        "audited_at": "2026-11-25",
+        "scope": "README, analytical XPU model and deterministic EML Q16.16 reference evaluator"
       }
     },
     {
@@ -1784,18 +1804,21 @@
       "maturity": "SECURITY_BLOCKED",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "compute",
-        "runtime",
-        "compression-or-os"
+        "siphash-sealed-capabilities",
+        "64-level-bitmap-priority-scheduler",
+        "bounded-spsc-ipc-ring",
+        "x86-64-fast-path-lab"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_meta_os",
         "Shtenco/synergy_system"
       ],
       "risks": [
-        "committed unencrypted SSH private key remains on main; PR #13 draft removes file on branch only; external rotation/revocation and history remediation unverified"
+        "Microbenchmarks are not OS-wide acceleration claims; remote orchestration is a separate historical track.",
+        "Capability generation is MAC-bound but inspected resolve path does not consult a revocation/current-generation registry.",
+        "Old SSH credential must remain treated as compromised until revoked at every authorized host."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1803,6 +1826,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1165635662",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "c5ee1119369cd90c9ff23b346a405ac3e8bc6cad",
+        "audited_at": "2026-11-25",
+        "scope": "README, Turbo Core capability/scheduler/IPC implementation and historical SSH key incident report"
       }
     },
     {
@@ -2403,18 +2432,12 @@
       "category": "agi-agentic",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "long-horizon-agent-evaluation-design",
-        "memory-harness-design",
-        "provider-routing-research"
-      ],
+      "capabilities": [],
       "declared_dependencies": [],
       "risks": [
-        "main contains README only",
-        "implementation is present on non-main branches and must not be treated as main runtime",
-        "draft implementation PR CI failed; production execution not established"
+        "Cannot be treated as the federation-wide long-term test harness until implementation exists."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2422,6 +2445,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1463301548",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
       }
     },
     {
