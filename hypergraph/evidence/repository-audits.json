@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 48,
-  "source_code_reviewed_count": 41,
+  "audited_repository_count": 52,
+  "source_code_reviewed_count": 45,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -1756,6 +1756,154 @@
       "repository": "Shtenco/synergy_long_term_harness",
       "commit_url": "https://github.com/Shtenco/synergy_long_term_harness/commit/cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
       "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_quantlab",
+      "commit": "57ee40a6879c0db6550b573aacadad27347fb2db",
+      "scope": "README, purged walk-forward core and validation decision contract",
+      "capabilities": [
+        "purged-walk-forward-splits",
+        "cost-adjusted-return-metrics",
+        "research-paper-canary-gate"
+      ],
+      "findings": [
+        "Core provides expanding walk-forward folds with purge/embargo, return metrics, simple linear cost adjustment and RESEARCH/PAPER/CANARY gate; it never returns FULL_PRODUCTION.",
+        "Validation contract binds candidate event ID, protocol ID and optional dataset manifest digest; it is non-execution authority."
+      ],
+      "limitations": [
+        "Sharpe uses simple sample standard deviation without autocorrelation/Newey-West correction; no probabilistic Sharpe, multiple-testing correction, bootstrap CI or nonlinear impact model.",
+        "Dataset manifest digest is optional and the inspected contract does not verify its format or fetch the dataset itself.",
+        "No tests were executed during this audit; README's local test status remains documentary evidence."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7a5fe2a688599aec74e7f1668c1cc101ffff5d6a"
+        },
+        {
+          "path": "src/synergy_quantlab/core.py",
+          "blob_sha": "1289704129d4c2959c3f4beeca2f010eda981d3a"
+        },
+        {
+          "path": "src/synergy_quantlab/synergy_contracts.py",
+          "blob_sha": "8fe24fd513b32f31de0878398839ede820fd8fbf"
+        }
+      ],
+      "repository": "Shtenco/synergy_quantlab",
+      "commit_url": "https://github.com/Shtenco/synergy_quantlab/commit/57ee40a6879c0db6550b573aacadad27347fb2db",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_midas_ai",
+      "commit": "90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+      "scope": "README, portfolio decision contract and M4 market advisory consumers",
+      "capabilities": [
+        "canonical-trading-intelligence-target",
+        "portfolio-decision-contract",
+        "typed-market-advisory-consumers"
+      ],
+      "findings": [
+        "README declares MIDAS AI as target canonical home for independently validated trading architecture and explicitly preserves historical repositories as provenance.",
+        "Main tree contains contract files and research artifacts, but no general strategy-engine Python package under src; this is a contract/target-architecture layer, not a complete live trading engine.",
+        "Portfolio decision contract validates confidence, position side and non-negative notional; M4 advisory consumers explicitly return authorization=false and require domain validation."
+      ],
+      "limitations": [
+        "Canonical-home status is a target ownership decision, not proof that all strategy experts, data pipelines and execution adapters are consolidated.",
+        "No direct broker execution or canonical accounting authority is implemented in the inspected main branch."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "70eebf132b53e0809408be1e5c6f8833bae0048f"
+        },
+        {
+          "path": "contracts/portfolio_decision_v1.py",
+          "blob_sha": "ab6ed928111b2a35911bf5929e55091e07e94118"
+        },
+        {
+          "path": "contracts/m4_market_advisory_v1.py",
+          "blob_sha": "3bc401230128dd476ee4fc70853fff3466bed2fd"
+        }
+      ],
+      "repository": "Shtenco/synergy_midas_ai",
+      "commit_url": "https://github.com/Shtenco/synergy_midas_ai/commit/90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_market_maker",
+      "commit": "3edcea187c45866d55a65b74dc707b7b1009a69b",
+      "scope": "README, quote core and non-authorizing liquidity quote contract",
+      "capabilities": [
+        "inventory-skewed-liquidity-quote",
+        "reservation-price-heuristic",
+        "hedge-notional-proposal",
+        "enterprise-api-and-audit"
+      ],
+      "findings": [
+        "Core computes bid/ask/reservation from mid, inventory, volatility and configured spread/risk parameters; inventory limit returns no quote.",
+        "Contract includes observation ID and explicit authorization=false; enterprise tests described in README cover trader/viewer roles and audit linkage."
+      ],
+      "limitations": [
+        "No order-book depth, queue position, adverse selection, fill probability, venue latency, cancel/replace, multi-venue inventory or realized maker P&L in the core.",
+        "MMConfig has no explicit parameter validation for gamma/kappa/horizon/max_inventory/min spread; malformed config can produce invalid geometry or math errors.",
+        "Quote and hedge notional are proposals, not orders or fills."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0d11fbc92b5aab3a3c83bc74d3906661e18c69b2"
+        },
+        {
+          "path": "src/synergy_market_maker/core.py",
+          "blob_sha": "15d05c3fb774c437ca9f01b1b0715269221d7432"
+        },
+        {
+          "path": "src/synergy_market_maker/synergy_contracts.py",
+          "blob_sha": "0e2f113426b60431ca3db8fd359b24f438aba77b"
+        }
+      ],
+      "repository": "Shtenco/synergy_market_maker",
+      "commit_url": "https://github.com/Shtenco/synergy_market_maker/commit/3edcea187c45866d55a65b74dc707b7b1009a69b",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_marketvision",
+      "commit": "d1018cba6b6c977ba8dce43ba8257601c0e2fe64",
+      "scope": "README, OHLCV feature cube and market-features contract",
+      "capabilities": [
+        "ohlcv-window-feature-cube",
+        "robust-per-window-scaling",
+        "market-feature-summary-contract"
+      ],
+      "findings": [
+        "Core converts OHLCV windows into a 3×window×4 float32 cube using returns, high-low spread, log-volume and direction with median/IQR scaling.",
+        "Federation contract emits only shape/mean/std/energy summary and explicit authorization=false."
+      ],
+      "limitations": [
+        "Feature cube is not a forecast or trading signal; it excludes order book, bid/ask and cross-asset context.",
+        "Scaling occurs within the current window and the summary compresses the tensor heavily; downstream OOS ablation is required to prove value."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "69b1cf250dd83fadbbd4fc43f9bdc7e2c5f2539f"
+        },
+        {
+          "path": "src/synergy_marketvision/core.py",
+          "blob_sha": "0ed97bad4d50aa5d02a863addae6c99b53253e9d"
+        },
+        {
+          "path": "src/synergy_marketvision/synergy_contracts.py",
+          "blob_sha": "56bd3476af36d84a3db573c29873819c853680bd"
+        }
+      ],
+      "repository": "Shtenco/synergy_marketvision",
+      "commit_url": "https://github.com/Shtenco/synergy_marketvision/commit/d1018cba6b6c977ba8dce43ba8257601c0e2fe64",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
     }
   ]
 }
