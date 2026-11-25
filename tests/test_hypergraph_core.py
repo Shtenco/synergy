@@ -272,6 +272,22 @@ class HypergraphCoreTests(unittest.TestCase):
         for node in self.nodes_doc["nodes"]:
             self.assertIn(node["audit_status"], allowed)
 
+    def test_memory_api_auth_and_security_blocker_registry_freshness(self):
+        by_id = {gap["id"]: gap for gap in self.gaps["gaps"]}
+        memory = by_id["GAP-096"]
+        self.assertEqual(memory["severity"], "high")
+        self.assertIn("api.py is unchanged", memory["description"])
+        self.assertIn("45475196929", memory["validation"])
+        stale = by_id["GAP-097"]
+        self.assertEqual(stale["severity"], "high")
+        self.assertIn("CLOSED and unmerged", stale["description"])
+        related = self.governance["related_branch_audits"][-1]
+        self.assertEqual(related["pull_request"], 56)
+        self.assertEqual(related["portfolio"]["live_repository_count"], 112)
+        self.assertFalse(related["portfolio"]["full_source_review_complete"])
+        self.assertEqual(related["registry"]["interface_records"], 77)
+        self.assertEqual(related["registry"]["backlog_repository_count"], 77)
+
     def test_canonical_financial_integration_risks_are_explicit(self):
         by_id = {gap["id"]: gap for gap in self.gaps["gaps"]}
         self.assertEqual(
