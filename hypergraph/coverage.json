@@ -30,19 +30,24 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 4,
-    "source_code_audited_total": 87,
+    "source_code_reviewed_in_this_pass": 5,
+    "source_code_audited_total": 92,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
     "readme_reviewed_in_this_pass": 5,
     "source_code_reviewed_repository_names": [
+      "computer_vision_trading_metatrader_5",
+      "cross_forex_arbitrage_trading_metatrader_5",
       "dlp_solver",
+      "global_liquidity_dataminer",
       "midas_lite",
       "quantum-trading_metatrader5",
       "shtenco_micro_ai",
+      "shtenco_multi_threaded_trading_robot_with_machine_learning_python",
       "sinergy_super_app",
+      "swap_arbitrage_metatrader_5",
       "synergistic_economics",
       "synergy",
       "synergy_2chain_qe",
@@ -173,20 +178,20 @@
       "synegy_ai_compress"
     ],
     "completion_percentages": {
-      "repository_source_audit": 77.68,
-      "readme_review": 89.29
+      "repository_source_audit": 82.14,
+      "readme_review": 93.75
     },
-    "main_branch_source_reviewed": 80,
+    "main_branch_source_reviewed": 85,
     "non_main_branch_source_reviewed": 7,
-    "readme_reviewed_total": 100,
-    "source_code_reviewed_total": 87
+    "readme_reviewed_total": 105,
+    "source_code_reviewed_total": 92
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 77.68,
+    "repository_source_audit": 82.14,
     "edge_verification": 0,
     "contract_verification": 0,
-    "readme_review": 89.29
+    "readme_review": 93.75
   },
   "interpretation": "The search result set contains 112 unique GitHub repository IDs. This reconciles the 100-record owner-affiliation listing plus 12 additional repositories. Inventory is complete for this search result set; source-level audit and relationship verification are not complete."
 }
