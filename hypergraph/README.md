@@ -5,7 +5,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- All 112 unique repository README reviews (131 commit-pinned audit records across 112 repositories) and 106 limited source/prototype reviews, each pinned to exact commits and file blob SHAs (91 main-branch reviews and 15 branch-only prototype reviews).
+- All 112 unique repository README reviews (131 commit-pinned audit records across 112 repositories) and 106 limited source/prototype reviews, each pinned to exact commits and file blob SHAs (91 main-branch reviews and 15 branch-only prototype reviews). The remaining six are five main-branch stubs and one benchmark dossier; these are not counted as executable source.
 - 39 proposed shared cores and domain routers are kept separate from actual repositories; all 39 have overlap assessments with 91 repository/file evidence references pinned to the canonical audit ledger.
 - Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
