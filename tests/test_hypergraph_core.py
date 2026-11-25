@@ -149,6 +149,27 @@ class HypergraphCoreTests(unittest.TestCase):
         self.assertTrue(set(reconcile["interface_registry_repository_names"]).issubset(inventory))
         self.assertTrue(set(reconcile["dependency_graph_repository_names"]).issubset(inventory))
 
+    def test_m5_scope_aliases_and_contract_counts_reconcile(self):
+        snapshot = self.governance
+        counts = snapshot["counts"]
+        contract = snapshot["contract_reconciliation"]
+        m5 = snapshot["m5_scope_reconciliation"]
+        self.assertEqual(counts["unique_contract_ids_in_dependency_graph"], 38)
+        self.assertEqual(contract["registry_contract_count"], 39)
+        self.assertEqual(contract["intra_repository_contracts_not_in_graph"], [
+            "synergy.trading.execution-plan/v1"
+        ])
+        self.assertEqual(contract["stale_summary_value"]["reported"], 17)
+        self.assertEqual(m5["required_edges"], 44)
+        self.assertEqual(m5["exact_name_matches_to_dependency_graph"], 42)
+        self.assertEqual(m5["legacy_alias_matches"], 2)
+        self.assertEqual(m5["normalized_matches_to_dependency_graph"], 44)
+        self.assertEqual(m5["unmatched_after_alias_normalization"], 0)
+        self.assertEqual(m5["matched_edge_type_counts"], {
+            "RUNTIME_DEPENDENCY": 22, "RUNTIME_CONTRACT": 22
+        })
+        self.assertEqual(m5["matched_status_counts"], {"ADAPTER_IMPLEMENTED": 44})
+
     def test_proposals_are_not_counted_as_repositories(self):
         actual_ids = {node["node_id"] for node in self.nodes_doc["nodes"]}
         proposal_ids = {proposal["proposal_id"] for proposal in self.proposals["proposals"]}
