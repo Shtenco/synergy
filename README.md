@@ -67,6 +67,9 @@ Three complementary implementations were source-reviewed: AI Coder's engineering
 
 ## Canonical registries and audit reports
 
+- [Information & Knowledge Economy — architecture and lifecycle](docs/INFORMATION_KNOWLEDGE_ECONOMY.md)
+- [Information & Knowledge Economy — machine-readable hypergraph schema](registry/INFORMATION_KNOWLEDGE_ECONOMY.json)
+
 - [Owner repository inventory JSON](registry/repos.json)
 - [Canonical branch inventory JSON — refreshed from all 1,294 live refs](registry/BRANCH_INVENTORY_2026-11-20.json)
 - [Canonical branch inventory CSV](registry/BRANCH_INVENTORY_2026-11-20.csv)
@@ -221,14 +224,29 @@ These are responsibility boundaries, not assertions of live runtime integration.
 
 Four unresolved P0 credential/security blockers remain in `synergy_usds`, `synergy_cashero`, `synergy_turbo_linux` and `synergy_ai_trade_terminal`. A P1 production/promotion blocker is recorded for the cognitive-memory candidate: unauthenticated local API, symlink ingestion boundary and cross-repository source-identity collision risks. Secret rotation/revocation is not claimed unless externally evidenced.
 
+## Hypergraph V3 — machine-readable audit core
+
+The `hypergraph/` directory now contains a first-pass machine-readable graph seed:
+- 100 repository nodes keyed by immutable GitHub repository IDs;
+- 109 `DEPENDS_ON` edges copied from the prior registry, all explicitly marked `candidate` pending source-level verification;
+- JSON Schemas for repository nodes and n-ary hyperedges;
+- evidence provenance, coverage metrics, unresolved gaps and 39 proposed components kept separate from actual repositories.
+
+The owner-scoped GitHub repository search returned 100 results on page 1 and 12 on page 2: 112 unique repository IDs. The owner-affiliation listing independently returned 100 records. The 2026-11-20 registry snapshot contained 92 records; 20 repositories have since been added to the registry, with roles left unclassified where no content audit exists. Inventory is reconciled for this 112-result search set. Source-code audit remains incomplete. No dependency edge is promoted to `verified` on registry evidence alone.
+
 ## Current next gates
 
+- Inventory reconciliation now covers 112 unique IDs returned by the owner-scoped search; continue monitoring for newly created repositories.
+- Continue source audits for the remaining 59 repositories. Sixty-four README reviews and fifty-three limited source reviews are recorded with commit-pinned evidence (53/112 = 47.32% source-code coverage).
+- Replace the 109 registry-only candidate dependency edges with file-, revision- and line-specific evidence; zero edges are currently verified.
+- Close the browser subresource egress-policy finding; rotate exposed or historically compromised credentials; fix accounting-recognition bypass, durable settlement, RiskGuard insufficient-history handling, duplicate scheduler enqueue, market-maker config validation, QuantLab dataset provenance, MIDAS veto/WebSocket defects, compiler injection, unsandboxed commands, compression benchmark provenance and exposed credentials.
+- Extract OpenAPI/JSON Schema/event contracts and test compatibility before asserting runtime integrations.
 - Re-fetch exact HEAD SHA and branch protection for the 211 branches still carrying historical census SHAs.
 - Enrich 198 remaining open PRs with head/base SHA, reviews, stacked dependencies and exact-head CI.
 - Complete the remaining source audits; the earlier 53-repository backlog is not marked complete.
 - Define the cognitive-memory contract and prove authenticated, namespace-safe integration with AI Language, AI Coder and Long Term Harness.
 - Restore actionable CI evidence for Autopilot, AI Coder, AI Language, Long Term Harness and cognitive memory.
-- Reconcile stale portfolio PRs against the 92-repository owner inventory.
+- Reconcile stale portfolio PRs against the refreshed 112-repository inventory.
 
 ---
-*Generated from connected GitHub inventory and repository-scoped PR discovery on 2026-11-20. No source branches were merged, deleted or force-updated by this README refresh.*
+*Generated from connected GitHub inventory and repository-scoped PR discovery on 2026-11-25. No source branches were merged, deleted or force-updated by this refresh.*

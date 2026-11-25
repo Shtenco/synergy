@@ -1,0 +1,2404 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
+  "audited_repository_count": 64,
+  "source_code_reviewed_count": 53,
+  "records": [
+    {
+      "name": "synergy_agent_long_term_memory",
+      "repository": "Shtenco/synergy_agent_long_term_memory",
+      "commit": "a3c4f4aebc69f741f6c380682b882b9a106f0d17",
+      "commit_url": "https://github.com/Shtenco/synergy_agent_long_term_memory/commit/a3c4f4aebc69f741f6c380682b882b9a106f0d17",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README and complete repository tree",
+      "capabilities": [],
+      "findings": [
+        "README contains only a title; repository tree contains only README.md.",
+        "No implementation, tests, API or executable memory capability established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "739c65dfeba67b712d9c0607aab6a3cb5f9b13d6"
+        }
+      ]
+    },
+    {
+      "name": "synergy_ai_browser-",
+      "repository": "Shtenco/synergy_ai_browser-",
+      "commit": "e69ce454424c4d29da54dc649d7379ec24b9bef0",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_browser-/commit/e69ce454424c4d29da54dc649d7379ec24b9bef0",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, browser runtime and core tests",
+      "capabilities": [
+        "playwright-browser-runtime",
+        "allowlisted-navigation",
+        "bounded-actions",
+        "dom-observation",
+        "detector-evidence-capture"
+      ],
+      "findings": [
+        "Top-level document navigation is restricted to HTTPS allowlisted hosts; embedded credentials, direct IP and nonstandard ports are rejected.",
+        "Actions are limited to click/fill/press; arbitrary agent-supplied JavaScript is rejected.",
+        "Tests cover unsafe top-level URLs, local opt-in, local DOM interaction and detector result parsing.",
+        "SECURITY FINDING: _guard_request applies NavigationPolicy only to navigation requests with resource_type=document; all subresource requests are continued without equivalent host/IP checks. An allowlisted page may attempt private-network requests unless network isolation blocks them."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ef7af39fc6b6a7618247320df449863c489cc4cf"
+        },
+        {
+          "path": "synergy_browser/browser.py",
+          "blob_sha": "7fe88d7bf0af89b7f454b642a7bd991d539d9851"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "46138f62caf71edd5b00e92418fe849ad9d3bae0"
+        }
+      ]
+    },
+    {
+      "name": "tiimeweb_synergy_exactly_once_delivery",
+      "repository": "Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "commit": "35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
+      "commit_url": "https://github.com/Shtenco/tiimeweb_synergy_exactly_once_delivery/commit/35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, SQLite experiment and invariant tests",
+      "capabilities": [
+        "sqlite-transactional-idempotency",
+        "payload-fingerprint-conflict-detection",
+        "crash-redelivery-experiment"
+      ],
+      "findings": [
+        "Robust path uses BEGIN IMMEDIATE, unique event_id, SHA-256 payload fingerprint and effect insert in one SQLite transaction.",
+        "Crash probes exercise process exit before and after commit, then repeated redelivery.",
+        "README states CI checks syntax and minimal documentation only."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d48d1fa9b940acff18d2d02ae55dee2fcfd6cab0"
+        },
+        {
+          "path": "experiments/exactly_once_lab.py",
+          "blob_sha": "68b9261fa4409acc3256d7397d1ad7a19bf7f815"
+        },
+        {
+          "path": "tests/test_invariants.py",
+          "blob_sha": "cd1bcf1adf2afb8b8c9b305a212b22888e6d36db"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_agent_long_term_memory",
+      "repository": "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "commit": "2bcb732a92fe8053c18f913edb1318ac21ef3620",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_agent_long_term_memory/commit/2bcb732a92fe8053c18f913edb1318ac21ef3620",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README and SQLite experiment",
+      "capabilities": [
+        "sqlite-exact-record-persistence",
+        "cross-connection-state-persistence"
+      ],
+      "findings": [
+        "Four distinct SQLite connections verify exact SHA-256 matches for 15 records and retain a state update across connections.",
+        "Default corpus is synthetic; historical 15-document result is archival."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "1c707f037e9c61eb44286b96e34f0b873fe6dca4"
+        },
+        {
+          "path": "experiments/sqlite_cross_session.py",
+          "blob_sha": "bd02b8802035600a882b619e20d6d26ed34ab3cc"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_ai_infrastructure_agent",
+      "repository": "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "commit": "6fb12232e07a82d86a6689d8aa0d1c6efde453d3",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_ai_infrastructure_agent/commit/6fb12232e07a82d86a6689d8aa0d1c6efde453d3",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README and allowlisted action planner",
+      "capabilities": [
+        "allowlist-policy-evaluation",
+        "human-review-action-proposal"
+      ],
+      "findings": [
+        "Planner normalizes commands and performs exact allowlist membership checks.",
+        "Every result has executed=false; no shell, host, server or cloud API is called."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "42bda02804111c1614734051bac7e53b27cc71f3"
+        },
+        {
+          "path": "prototypes/scenarios/article09.py",
+          "blob_sha": "1bcb2ae6d6e186bb3263e3da4adf5436cd2f1990"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_backtest_oos_lab",
+      "repository": "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "commit": "1c116e449ca992f5bccbaa70ae98d65972a08e69",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_backtest_oos_lab/commit/1c116e449ca992f5bccbaa70ae98d65972a08e69",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README and leakage demonstration",
+      "capabilities": [
+        "lookahead-bias-demonstration",
+        "lagged-signal-vs-leaky-signal"
+      ],
+      "findings": [
+        "Code compares lagged signal positions with deliberately same-period lookahead positions.",
+        "Fixture is six hand-authored prices; tests demonstrate the lookahead effect."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "3aa2d049a9de8e3117d0f03126a8f6639d6c624c"
+        },
+        {
+          "path": "prototypes/scenarios/article10.py",
+          "blob_sha": "8540b9a43b34733f49922a0fdb4037ca20de1a2b"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_benchmark_statistics",
+      "repository": "Shtenco/timeweb_synergy_benchmark_statistics",
+      "commit": "9d6db41edc273189fe4795b3803f98181cff02be",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_benchmark_statistics/commit/9d6db41edc273189fe4795b3803f98181cff02be",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, uncertainty analysis, tests and archived result",
+      "capabilities": [
+        "wilson-proportion-intervals",
+        "paired-seed-difference-t-interval",
+        "sample-size-approximation"
+      ],
+      "findings": [
+        "Archived UCI digits comparison: 450 test rows, three paired seeds; mean FP32 accuracy 95.85%, binary model 88.81%, difference -7.04 percentage points.",
+        "Exploratory paired-seed t95 interval approximately -11.98 to -2.09 percentage points."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "20b85499036be89a1240a109ead29a8764c9b67e"
+        },
+        {
+          "path": "prototypes/real_experiments/article15_measured_uncertainty.py",
+          "blob_sha": "4633c08d69ba19034cce1fd0329f36fa6cc2f300"
+        },
+        {
+          "path": "prototypes/tests/test_article15_measured_uncertainty.py",
+          "blob_sha": "daec965cb714026497d12b2c3f8ca9561b30aecf"
+        },
+        {
+          "path": "results/article-15-binary-uncertainty-20261117T151503.201483Z.json",
+          "blob_sha": "73d04a0aebba61494a7e3a4bb4f076acdcc154f9"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_cpu_gpu_cost_benchmark",
+      "repository": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "commit": "5c25ddb97838a1d14e40dc9458847743fa94191f",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark/commit/5c25ddb97838a1d14e40dc9458847743fa94191f",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, cost calculator, tests and repository tree",
+      "capabilities": [
+        "assumption-based-compute-cost-estimation"
+      ],
+      "findings": [
+        "Calculator estimates cost per thousand correct answers from caller-supplied hourly cost, throughput, utilization and success rate.",
+        "No live provider tariffs or paid GPU bills; inspected tree exposes no independent GPU harness. README's local CPU measurement claim was not confirmed in inspected source."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "aba086e8d56fd8af2cd81ee7bc7862aadb78aaad"
+        },
+        {
+          "path": "prototypes/scenarios/article12.py",
+          "blob_sha": "bd445ee5aa1df4d571e2c07e99f96d3f088127c2"
+        },
+        {
+          "path": "prototypes/tests/test_articles_09_12.py",
+          "blob_sha": "a6a358a0b618a519816d5a5541f4058f602f2a9e"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_fault_injection_lab",
+      "repository": "Shtenco/timeweb_synergy_fault_injection_lab",
+      "commit": "53585459cefbc3956f1601feaaece80d68da7170",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_fault_injection_lab/commit/53585459cefbc3956f1601feaaece80d68da7170",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, two-replica experiment, QA validator, evidence scope and results",
+      "capabilities": [
+        "two-process-localhost-fault-injection",
+        "retry-failover-experiment",
+        "archived-json-csv-measurements"
+      ],
+      "findings": [
+        "Two local HTTP server processes; three process terminations per run plus deterministic 503s and delays.",
+        "Archived results: no_retry 91/120 successes and retry_failover 120/120 in each of three runs.",
+        "QA validator checks six summaries and expected counts."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "abdb219e3447336ab428e440d9492aa56a1e6750"
+        },
+        {
+          "path": "experiments/fault_injection_lab.py",
+          "blob_sha": "8a07dab89460add97a322efaf030fdde642558f6"
+        },
+        {
+          "path": "qa/validate.py",
+          "blob_sha": "71b4f954fc8597408d49ecd54d59f9f198b82634"
+        },
+        {
+          "path": "docs/EVIDENCE_SCOPE.md",
+          "blob_sha": "15bf515234bffcfa092d93136164322e23911142"
+        },
+        {
+          "path": "results/17/fault_injection_results.json",
+          "blob_sha": "bf266927734a9be8e02421c94693e60bbf9ab5a4"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_rag_quality_cost",
+      "repository": "Shtenco/timeweb_synergy_rag_quality_cost",
+      "commit": "a5ec554db4f10ec5076be74f8283603cb1fedf3d",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_rag_quality_cost/commit/a5ec554db4f10ec5076be74f8283603cb1fedf3d",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, diagnostic function and tests",
+      "capabilities": [
+        "retrieval-recall-diagnostic",
+        "answer-claim-support-rate-diagnostic"
+      ],
+      "findings": [
+        "Function reports required-document recall separately from answer-claim support rate and identifies unsupported claim IDs."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "2e4b12a1d7067b8554797947d35c5ee047fd4b1d"
+        },
+        {
+          "path": "prototypes/scenarios/article14.py",
+          "blob_sha": "f5f6ccf8c613bfddf2c92e5bdf1ca766e0d984e8"
+        },
+        {
+          "path": "prototypes/tests/test_articles_13_15.py",
+          "blob_sha": "4a149d8791f13c46ece2dc2d3204c4a086216d4f"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_retry_storm_lab",
+      "repository": "Shtenco/timeweb_synergy_retry_storm_lab",
+      "commit": "b601f79db253751e4c7d99d671420bf95d840d3c",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_retry_storm_lab/commit/b601f79db253751e4c7d99d671420bf95d840d3c",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, policy implementation, tests, benchmark and results card",
+      "capabilities": [
+        "retry-budget",
+        "deadline-aware-retries",
+        "full-jitter",
+        "bulkhead",
+        "circuit-breaker-epoch-fencing"
+      ],
+      "findings": [
+        "Circuit breaker uses epoch-tagged permits, one half-open probe and stale-completion fencing; local bulkhead rejection is not recorded as upstream failure.",
+        "Tests cover concurrent half-open admission, stale completion, atomic retry budget, deterministic jitter and local-only endpoint restriction.",
+        "Benchmark: 240 requests x six policies x three repeats on one localhost service; protected policy success 32.92% vs budget_bulkhead 56.25%."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "359f34b0fe429ccdb20cad2db9b97be5fddc06f8"
+        },
+        {
+          "path": "src/retrystorm/policies.py",
+          "blob_sha": "461714632b18a9dde26097b9bae7760033ac35e6"
+        },
+        {
+          "path": "tests/test_policies.py",
+          "blob_sha": "41abcb2d43120fdc696e4dbe2f71e5ae9c49d94c"
+        },
+        {
+          "path": "results/experiment_18/benchmark.json",
+          "blob_sha": "9579cbd7f941bde9dba35bbc1d0ac0a5b30e9c31"
+        },
+        {
+          "path": "docs/RESULTS_CARD.md",
+          "blob_sha": "ad2e16edb51c0ac67d13481eec25b607c7998032"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_service_recovery",
+      "repository": "Shtenco/timeweb_synergy_service_recovery",
+      "commit": "d350865dbf602c3b518ec0a1f6e183e6d0438d80",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_service_recovery/commit/d350865dbf602c3b518ec0a1f6e183e6d0438d80",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, recovery scenario and tests",
+      "capabilities": [
+        "fault-scenario-state-simulation",
+        "approval-gate-for-destructive-restore"
+      ],
+      "findings": [
+        "Inspected article11 is a pure-state simulator and never executes real service or file operations.",
+        "Data-loss restore is blocked pending approval; tests assert real_actions_executed=false.",
+        "README describes local HTTP/SQLite restarts, but inspected source path does not demonstrate that claim."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "f6293369285762468ba58379ebb75bd5434b49a6"
+        },
+        {
+          "path": "prototypes/scenarios/article11.py",
+          "blob_sha": "42e35f6c33e6eec61831843041f66806f5b002f6"
+        },
+        {
+          "path": "prototypes/tests/test_articles_09_12.py",
+          "blob_sha": "a6a358a0b618a519816d5a5541f4058f602f2a9e"
+        }
+      ]
+    },
+    {
+      "name": "synergy_agi_nexus",
+      "commit": "997dbe4934f3f114a36d34bc2b0a719eae1f6a6f",
+      "status": "source_reviewed_limited",
+      "scope": "README, AI proposal contract and contract tests",
+      "capabilities": [
+        "canonical-nexus-intelligence-target",
+        "model-generation-governance",
+        "typed-ai-proposal-contract"
+      ],
+      "findings": [
+        "README defines NEXUS as intelligence engine and explicitly denies automatic financial, ledger, payment, consensus or deployment authority.",
+        "ai_proposal_v1 contract requires task type, model ID, confidence and limitations; human authorization defaults true.",
+        "Contract tests assert that NEXUS output is a proposal, not authorization."
+      ],
+      "limitations": [
+        "README describes target canonical architecture; this review does not prove all listed generations are production-integrated.",
+        "No cross-repository runtime call is established by the proposal contract alone."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "428984dcff1607d86d3f4b47519b30b45d7eb112"
+        },
+        {
+          "path": "contracts/ai_proposal_v1.py",
+          "blob_sha": "dc3cf1b69d8159b33bc4a52d2975acfd117a41ab"
+        },
+        {
+          "path": "tests/test_ai_proposal_contract.py",
+          "blob_sha": "4479482b0fce26aa01397f8c2634f1bc56061d36"
+        }
+      ],
+      "repository": "Shtenco/synergy_agi_nexus",
+      "commit_url": "https://github.com/Shtenco/synergy_agi_nexus/commit/997dbe4934f3f114a36d34bc2b0a719eae1f6a6f",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_system",
+      "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+      "status": "source_reviewed_limited",
+      "scope": "README governance snapshot, federation config and typed event envelope",
+      "capabilities": [
+        "federation-governance",
+        "canonical-contract-registry",
+        "authority-boundaries",
+        "typed-event-envelope"
+      ],
+      "findings": [
+        "README snapshot as of 2026-11-20 lists 77 interface components, 39 contract families, 42 authorities, 44 runtime adapter edges and zero E2E-tested edges.",
+        "SynergyEnvelope carries contract ID, event/trace IDs, producer, authority, timestamps, payload digest, evidence IDs, idempotency key and state version; canonical JSON payload SHA-256 is verified.",
+        "Federation config explicitly states architecture relation is not runtime dependency and green requires reproducible evidence."
+      ],
+      "limitations": [
+        "README owner inventory says 92 and config/repository_federation_v2.yaml says 75 as of 2026-09-28; both are stale relative to current 112-node inventory.",
+        "The governance registry is the existing authority; Hypergraph V3 should project/reference it rather than create a competing contract authority.",
+        "Zero E2E-tested edges means adapter declarations must not be treated as working integrations."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "c53388642c4189e38daa537d431a23d77ee4b823"
+        },
+        {
+          "path": "config/repository_federation_v2.yaml",
+          "blob_sha": "c17900cd8ea8ee0a9646e22c31afa3631577d766"
+        },
+        {
+          "path": "contracts/python/synergy_contracts_v1.py",
+          "blob_sha": "b306fa6b32eb115329c3daacdaa2d45e21a7b342"
+        }
+      ],
+      "repository": "Shtenco/synergy_system",
+      "commit_url": "https://github.com/Shtenco/synergy_system/commit/f1183d54121c3bbc558e4a171ddbba20973f8520",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_meta_api",
+      "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+      "status": "source_reviewed_limited",
+      "scope": "README, deny-by-default policy and execution API",
+      "capabilities": [
+        "local-tool-registry",
+        "mcp-json-rpc-subset",
+        "deny-by-default-policy",
+        "operator-configured-get-connectors"
+      ],
+      "findings": [
+        "V0.1 prototype exposes local read-only tools and a subset of MCP initialize/ping/tools/list/tools/call.",
+        "Policy denies by default, enforces tenant/tool/scope matching and returns approval_required for allowed mutating actions only when permission is not read-only.",
+        "Connector execution is disabled unless SYNERGY_ENABLE_CONNECTOR_CALLS=true; code explicitly says there is no authentication yet and flag is for private development only."
+      ],
+      "limitations": [
+        "Not full MCP streaming, sessions, OAuth, A2A, production tenancy or public-safe external execution.",
+        "No runtime integration to the 22 proposed routers is proven."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "f8b350ff83a8e45b0d67ee778d9e6b038d452f61"
+        },
+        {
+          "path": "src/synergy_meta_api/policy.py",
+          "blob_sha": "b518f8ef2beedea02b88c9c31731c9b8276befa2"
+        },
+        {
+          "path": "src/synergy_meta_api/execution_api.py",
+          "blob_sha": "7d8306ae28b999810ae6bf65a24e03077a505888"
+        }
+      ],
+      "repository": "Shtenco/synergy_meta_api",
+      "commit_url": "https://github.com/Shtenco/synergy_meta_api/commit/ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_net",
+      "commit": "84fbfb842be97e5c2195c30e7c4188e5af813001",
+      "status": "source_reviewed_limited",
+      "scope": "README, transport evidence contract and tests",
+      "capabilities": [
+        "planned-p2p-mesh-architecture",
+        "authenticated-transport-evidence-contract",
+        "content-addressed-transport-metadata"
+      ],
+      "findings": [
+        "README describes SynergyNet as a planned network overlay and explicitly frames performance benefits as hypotheses requiring matched benchmarks.",
+        "Runtime contract helper hashes delivered content, requires authenticated delivery and validates route endpoints and basic measurement bounds.",
+        "Tests validate archive evidence gating, authenticated delivery and content hashing."
+      ],
+      "limitations": [
+        "Inspected runtime file is a contract/evidence helper, not a complete P2P transport implementation.",
+        "No measured network throughput, latency, multipath, peer discovery or production post-quantum session is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "e841994690f17d364eb3915326eda74c4460b8ad"
+        },
+        {
+          "path": "runtime/synergy_contracts.py",
+          "blob_sha": "3f584b0392deec992b4dc59dfd4e34961601ecdb"
+        },
+        {
+          "path": "tests/test_synergy_contracts.py",
+          "blob_sha": "80ef1665a602b90b2f99aa520c83f87d9f3436b7"
+        }
+      ],
+      "repository": "Shtenco/synergy_net",
+      "commit_url": "https://github.com/Shtenco/synergy_net/commit/84fbfb842be97e5c2195c30e7c4188e5af813001",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_hierarchical_cognitive_memory_architecture",
+      "commit": "8c23bcb41199f89bb9afb57ca5e0766787154fd7",
+      "scope": "README, dependency AST scanner, cross-repository registry, contract intelligence, tests and security policy",
+      "capabilities": [
+        "hierarchical-rag-memory",
+        "commit-pinned-python-import-graph",
+        "cross-repository-inventory",
+        "candidate-dependency-ledger",
+        "contract-id-provider-matching",
+        "ci-evidence-import"
+      ],
+      "findings": [
+        "Main branch contains a substantial implementation: SQLite-backed memory, git dependency intelligence, cross-repository inventory and contract intelligence; this contradicts the stale synergy_system README statement that its main branch is README-only.",
+        "Dependency scanner parses Python AST at exact commit SHAs and does not import or execute repository code; dynamic dispatch and runtime plugin loading are not inferred.",
+        "Cross-repository registry canonicalizes GitHub URLs, derives stable SHA-256 URL identities, records observations and stores explicitly evidenced candidate dependencies only.",
+        "Contract intelligence requires full commit SHA, blob SHA, safe source path and explicit declared/upstream contract IDs; ambiguous and unresolved providers are reported instead of guessed.",
+        "Security docs keep API local-only, require admin token for system-core endpoint and reserve trust elevation for authorized review."
+      ],
+      "limitations": [
+        "Repository identity in its own cross-repo DB is a canonical-URL hash, not GitHub's immutable provider ID; Hypergraph needs a mapping layer.",
+        "Static AST links do not prove runtime calls; candidate dependencies do not prove reachability or compatibility.",
+        "This review did not execute the test suite or validate current branch CI."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "125d1c709b98b4a0372603a19706c697142312f8"
+        },
+        {
+          "path": "synergy_memory/dependency_intelligence.py",
+          "blob_sha": "c7ea297e906f8233232559af617f7e150750cbe2"
+        },
+        {
+          "path": "synergy_memory/cross_repository_intelligence.py",
+          "blob_sha": "70425d2ec5d279a739ad3d89bf7eae5f9887caae"
+        },
+        {
+          "path": "synergy_memory/contract_intelligence.py",
+          "blob_sha": "a8b5b1eabcbad27ed96a48ad54a227de1711c44a"
+        },
+        {
+          "path": "tests/test_dependency_intelligence.py",
+          "blob_sha": "9473b5a2e40635d08d4375f5c39c9f1efa555aaf"
+        },
+        {
+          "path": "tests/test_cross_repository_intelligence.py",
+          "blob_sha": "35601b2960f2d26ca0e1438a4854398dae995267"
+        },
+        {
+          "path": "docs/SECURITY.md",
+          "blob_sha": "38f8c40d4a920345712187f0e86c7d64a2a31d2c"
+        }
+      ],
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "commit_url": "https://github.com/Shtenco/synergy_hierarchical_cognitive_memory_architecture/commit/8c23bcb41199f89bb9afb57ca5e0766787154fd7",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_agentic_ai_economy",
+      "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+      "scope": "README, economy simulation contract, ledger and closed-economy tests",
+      "capabilities": [
+        "agentic-economic-simulation",
+        "closed-ledger-model",
+        "internal-demand-and-work",
+        "hardnav-simulation"
+      ],
+      "findings": [
+        "Repository is explicitly a deterministic research/simulation environment; internal issuance, gross TVL and transaction volume are not automatically real profit.",
+        "Closed economy engine asserts zero external inflow/outflow, conservation and internal jobs/useful work; internal loans/deposits/investments do not create system cash.",
+        "Simulation contract explicitly sets payment_authority=false and accounting_authority=false."
+      ],
+      "limitations": [
+        "No live payment execution or real-world marketplace settlement is established by this simulation.",
+        "Historical replay includes modeled layers and must retain its own evidence/assumption labels."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "bea45a76fcc40d013362ff082d3b31989fc385bd"
+        },
+        {
+          "path": "agent_economy/synergy_contracts.py",
+          "blob_sha": "daa8479492ceb614a23ab15a23c57d86f7d37c7e"
+        },
+        {
+          "path": "agent_economy/ledger.py",
+          "blob_sha": "e05924ce4b934c1d76270f478cc2cec7227df3de"
+        },
+        {
+          "path": "agent_economy/closed_engine.py",
+          "blob_sha": "e856d6cfd430d19b951552308b68788616012625"
+        },
+        {
+          "path": "tests/test_closed_agent_economy.py",
+          "blob_sha": "e7680063f725b5ac064f88dfd8ed37d731fcd3de"
+        }
+      ],
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "commit_url": "https://github.com/Shtenco/synergy_agentic_ai_economy/commit/3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_market_graph",
+      "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+      "scope": "README, graph core, fair-value contract, enterprise resilience/auth and tests",
+      "capabilities": [
+        "directed-executable-conversion-graph",
+        "multi-path-fair-value",
+        "cycle-search",
+        "enterprise-api",
+        "advisory-fair-value-contract"
+      ],
+      "findings": [
+        "Executable edge rate deducts fee and slippage; graph enumerates paths and cycles; fair value is geometric mean of positive executable path rates.",
+        "Typed fair-value contract returns authorization=false; tests assert advisory-only output.",
+        "Enterprise layer includes HMAC-signed tenant/role token helpers and retry/circuit-breaker primitives."
+      ],
+      "limitations": [
+        "Capacity, latency, stale quotes, correlated/overlapping paths and execution sequencing are not incorporated into core fair-value calculation.",
+        "Fee/slippage bounds are not enforced in Edge model; negative executable rates are filtered from fair-value paths rather than rejected at ingestion.",
+        "A conversion graph is not a general buyer/seller offer marketplace or commercial transaction orchestrator."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "cd6305afac5bec7d4cf98f881442ce8096e0537c"
+        },
+        {
+          "path": "src/synergy_market_graph/core.py",
+          "blob_sha": "ad2b4d3d81f4f54ae85ad4b4be187534497a067f"
+        },
+        {
+          "path": "src/synergy_market_graph/synergy_contracts.py",
+          "blob_sha": "a426be3b0976c7d41d38acae82a6ef8b1e05e998"
+        },
+        {
+          "path": "src/synergy_market_graph/enterprise/resilience.py",
+          "blob_sha": "270cddef43bf4cc7f492e616f15e617d5300dae5"
+        },
+        {
+          "path": "src/synergy_market_graph/enterprise/auth.py",
+          "blob_sha": "5c3fd87354d95c6a9226a8edc537bf66975e6bd1"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "bba8c858d3ea2d4cb79e42f56e098d09b468b94a"
+        },
+        {
+          "path": "tests/test_synergy_contracts.py",
+          "blob_sha": "7b476a5182875f4517a86cc875d0efdcd1f59083"
+        }
+      ],
+      "repository": "Shtenco/synergy_market_graph",
+      "commit_url": "https://github.com/Shtenco/synergy_market_graph/commit/b38ed0fb94e0834244a88d863d19069bb33a62ba",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_meta_os",
+      "commit": "cf3d18ca533ca9824794ad48e208b41b0fdf4475",
+      "scope": "README, compatibility orchestrator and orchestrator tests",
+      "capabilities": [
+        "node-service-orchestration",
+        "signed-manifest-model",
+        "artifact-sha256-verification",
+        "capability-ceilings",
+        "resource-limits",
+        "audit-journal-and-rollback-staging"
+      ],
+      "findings": [
+        "Runtime verifies manifest shape, service role/capability ceilings, artifact SHA-256 and explicit attestation for high-value roles.",
+        "Activation launches subprocesses with reduced environment and POSIX CPU/address-space/open-file limits; audit events are appended to JSONL.",
+        "Tests cover manifest verification, dry-run, activation and rejection of capability escalation."
+      ],
+      "limitations": [
+        "RLIMITs and process sessions are not an OS sandbox: no namespaces, seccomp, chroot, filesystem policy or network isolation is applied by the inspected code.",
+        "This compatibility runtime is not evidence of the full native TURBO Linux ring-3 service-cell implementation.",
+        "The test service is a trivial local shell script; production service isolation and rollback semantics are not proven."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "6740a2f28c84dbe87a236f1918920694e558b059"
+        },
+        {
+          "path": "runtime/orchestrator.py",
+          "blob_sha": "9eba924eff38e0b21dbefe033194d2781a3ec326"
+        },
+        {
+          "path": "tests/test_orchestrator.py",
+          "blob_sha": "093d4da8cc3ce8fac6d017336c3ce74c1c239129"
+        }
+      ],
+      "repository": "Shtenco/synergy_meta_os",
+      "commit_url": "https://github.com/Shtenco/synergy_meta_os/commit/cf3d18ca533ca9824794ad48e208b41b0fdf4475",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_financial_os",
+      "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+      "scope": "README, accounting-recognition contract and contract tests",
+      "capabilities": [
+        "canonical-accounting-authority",
+        "accounting-recognition-contract",
+        "double-entry-balance-validation"
+      ],
+      "findings": [
+        "README defines Financial OS as canonical accounting authority and distinguishes external profit from internal value changes.",
+        "Main branch tree contains contract and test artifacts; README says larger runtime is on open feature PRs, so do not treat those unmerged branches as main implementation.",
+        "Recognition helper validates SETTLED/reconciled settlement only when settlement_payload is supplied; parameter is optional, so callers can bypass upstream settlement check by omitting it.",
+        "Empty entries pass _check_double_entry because zero debits equals zero credits; non-empty journal and nonzero amount invariants are not enforced here."
+      ],
+      "limitations": [
+        "Main branch is a contract-level implementation, not the full Financial OS runtime described in README.",
+        "Accounting authority does not itself execute payments or prove external settlement."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0c05200b323f75064a8e195a64c6744180159573"
+        },
+        {
+          "path": "contracts/accounting_recognition_v1.py",
+          "blob_sha": "c5a5a2f71e9a89c8d44ff3d3461c3b3f6af860be"
+        },
+        {
+          "path": "tests/test_accounting_recognition_contract.py",
+          "blob_sha": "8c02985093f90108089ef0386edd889ecccb5bac"
+        }
+      ],
+      "repository": "Shtenco/synergy_financial_os",
+      "commit_url": "https://github.com/Shtenco/synergy_financial_os/commit/ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_pay_system",
+      "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+      "scope": "README, live readiness, execution coordinator, provider registry and settlement engine",
+      "capabilities": [
+        "multi-provider-quote-routing",
+        "provider-capability-registry",
+        "fail-closed-live-readiness",
+        "execution-coordinator",
+        "paper-settlement-state-machine"
+      ],
+      "findings": [
+        "Live readiness requires global enablement, production environment, emergency-stop clearance, approved change ticket, notional limit, jurisdiction allowlists and provider allowlist.",
+        "Provider profiles model credentials/scopes, legal basis, KYB, settlement accounts, fees, rails, prefunds, HSM/MPC custody, sanctions screening, audits, bridge codehashes, health and disaster recovery.",
+        "LiveExecutionCoordinator rejects expired/non-executable quotes, missing provider context, provider policy failures and readiness blockers before calling an authenticated adapter.",
+        "README says live execution is disabled by default and public quotes are non-executable until authenticated adapters are separately approved."
+      ],
+      "limitations": [
+        "Inspected SettlementEngine stores records and idempotency keys in process memory; this is not durable cross-process exactly-once settlement.",
+        "A crash after external provider execution but before ledger posting requires durable outbox/reconciliation evidence beyond the in-memory path inspected.",
+        "Source review does not prove access to live bank/CBDC/venue accounts or regulatory authorization."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "189557cf4a24be60c143fc16e9612f3a4209e208"
+        },
+        {
+          "path": "src/synergy_pay/live_readiness.py",
+          "blob_sha": "84d8eb110de8e1799abe9a46550485d408bc8128"
+        },
+        {
+          "path": "src/synergy_pay/live_execution.py",
+          "blob_sha": "5aa0c35ad3b62ea10296a9f3aca409b665391b6e"
+        },
+        {
+          "path": "src/synergy_pay/provider_registry.py",
+          "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
+        },
+        {
+          "path": "src/synergy_pay/settlement.py",
+          "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
+        }
+      ],
+      "repository": "Shtenco/synergy_pay_system",
+      "commit_url": "https://github.com/Shtenco/synergy_pay_system/commit/d9a05854d3ca38f838c835c56fa5189b536da5a0",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_ai_financial_system",
+      "commit": "c7e9ea9dde51500f88ed701423164309e4ae6242",
+      "scope": "README, integer graph arbitrage simulator and scenario evidence contract",
+      "capabilities": [
+        "integer-cpmm-graph-arbitrage-simulation",
+        "dual-circuit-solvency-model",
+        "simulation-evidence-contract"
+      ],
+      "findings": [
+        "Graph arbitrage uses integer arithmetic, explicit fee/transfer-tax treatment and USDT cycle repayment; internal token QE is assigned zero external reserve value while paired stablecoin/POL capital is charged to LNAV.",
+        "Scenario evidence contract explicitly sets accounting_authority=false, settlement_authority=false and capital_authorization=false."
+      ],
+      "limitations": [
+        "The inspected module is a deterministic simulation/research model, not a live exchange executor or accounting/settlement authority.",
+        "Deployment claims require archive-block fork tests and external reserve/fee evidence as stated in project docs."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "1944e7b28813fb82c46d88e150bf7953e47b8f45"
+        },
+        {
+          "path": "simulation/graph_arbitrage.py",
+          "blob_sha": "e593c9fac62890604319e2c0323e250425aa1284"
+        },
+        {
+          "path": "simulation/synergy_contracts.py",
+          "blob_sha": "9f054c4fcd678f8f689981eec94270f22e96c9c3"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_financial_system",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_financial_system/commit/c7e9ea9dde51500f88ed701423164309e4ae6242",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_riskguard",
+      "commit": "e5ba5eab09e42ac25c695740bdc464ef3617c33c",
+      "scope": "README, risk core, typed risk contract, enterprise service and tests",
+      "capabilities": [
+        "independent-pretrade-risk-veto",
+        "historical-var-cvar",
+        "drawdown-and-exposure-limits",
+        "tenant-rbac-jwt",
+        "audit-and-metrics"
+      ],
+      "findings": [
+        "Core evaluates daily loss, drawdown, historical VaR/CVaR, gross exposure and single-position caps; contract requires upstream validation gate PAPER or CANARY.",
+        "Enterprise service verifies HMAC JWT claims, tenant identity and roles, and records audit events.",
+        "README reports 21 local tests and 80/80 local health checks; this audit did not rerun them."
+      ],
+      "limitations": [
+        "historical_var and cvar return 0.0 when fewer than five returns are supplied; decide may then treat missing/insufficient history as zero market risk instead of failing closed.",
+        "Core decide uses abs(order.notional) and does not independently reject negative notional or invalid side; contract adapter checks positive notional, but direct callers can bypass that layer.",
+        "Local smoke and benchmarks are not production SLA or realized trading evidence."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "479a012f63c56890e104d40f330cbb07f404863b"
+        },
+        {
+          "path": "src/synergy_riskguard/core.py",
+          "blob_sha": "4b3cc872e33544bb7153bd9315496a6cc67ba75c"
+        },
+        {
+          "path": "src/synergy_riskguard/synergy_contracts.py",
+          "blob_sha": "1304926c91db3eb854fde512af8ed3be84450371"
+        },
+        {
+          "path": "src/synergy_riskguard/enterprise/service.py",
+          "blob_sha": "b17d2a56bf448abab8a5e0dd6b557b05d6723535"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "4b9a83ad1c5bc80846276c61ead5458f325553d9"
+        }
+      ],
+      "repository": "Shtenco/synergy_riskguard",
+      "commit_url": "https://github.com/Shtenco/synergy_riskguard/commit/e5ba5eab09e42ac25c695740bdc464ef3617c33c",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_search_engline",
+      "commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+      "scope": "README, HardNAV multiplier simulation and assumptions/limits",
+      "status": "source_reviewed_limited",
+      "capabilities": [
+        "hardnav-multiplier-simulation",
+        "capacity-limited-edge-model"
+      ],
+      "findings": [
+        "Despite its name, main branch contains a deterministic HardNAV multiplier simulation and EVM lab baseline, not a general-purpose search engine or web index.",
+        "README labels outputs simulated and lists omitted stochastic edge decay, competition, missed fills, gas volatility, MEV distribution, bridge risk and latency."
+      ],
+      "limitations": [
+        "Do not assign this repository as the provider for classifieds, bank or real-estate search without separate implementation evidence."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "2404d42ac0d753a5e168451c3973f4cba48fdd5c"
+        },
+        {
+          "path": "sim/hardnav_multiplier_v2.py",
+          "blob_sha": "489b5121d91d842897fedec088826d69718d7905"
+        },
+        {
+          "path": "docs/10_ASSUMPTIONS_AND_LIMITS.md",
+          "blob_sha": "7bb742379bbde8123328110089ea13b5b9794816"
+        }
+      ],
+      "repository": "Shtenco/synergy_search_engline",
+      "commit_url": "https://github.com/Shtenco/synergy_search_engline/commit/8e3c6cd42c476cb900490c759774097f2c90dca2",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_lead_search_engline",
+      "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+      "scope": "README, SQLite/FTS5 lead store, token-protected API, CRM approval dispatcher and tests",
+      "status": "source_reviewed_limited",
+      "capabilities": [
+        "offline-real-estate-lead-store",
+        "fts5-search",
+        "rule-based-intent-candidates",
+        "human-review-audit",
+        "approval-gated-crm-outbox"
+      ],
+      "findings": [
+        "README labels V8 as offline candidate, not deployed lead discovery; scoring is an interpretable regex/rule baseline, not trained CatBoost.",
+        "Documents are stored in SQLite/FTS5; candidate signals never equal verified buyer; CRM outbox requires human review, documented lawful basis, contact opt-in and explicit approval.",
+        "API fails closed if LEAD_OS_API_TOKEN is missing/short; CRM dispatch requires approved outbox state and HTTPS webhook."
+      ],
+      "limitations": [
+        "No tenant_id isolation is present in inspected document/review/outbox schema; single operator token is not a multi-tenant authorization model.",
+        "No production deployment, external crawler or upgraded ML ranker is proven.",
+        "Configured CRM webhook checks HTTPS but does not enforce a fixed Bitrix24 host allowlist; outbound target is environment-controlled and should be hardened before hosting untrusted tenants."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "b8fd0aeca7ed61a9fa49e892c36be3671b5dc583"
+        },
+        {
+          "path": "lead_os/core.py",
+          "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
+        },
+        {
+          "path": "lead_os/api.py",
+          "blob_sha": "7b28abb05461ce491b67f2129d1a755000c0449f"
+        },
+        {
+          "path": "lead_os/crm.py",
+          "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
+        },
+        {
+          "path": "tests/test_lead_os.py",
+          "blob_sha": "0c5d9b2f9d0298e575ecfe3b229056f5e1e666f2"
+        }
+      ],
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "commit_url": "https://github.com/Shtenco/synergy_lead_search_engline/commit/5654e37fdc348ace7398a7104d54f52e6dbd6800",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_company",
+      "commit": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+      "scope": "README and complete repository tree",
+      "status": "stub_confirmed",
+      "capabilities": [],
+      "findings": [
+        "README explicitly labels the repository STUB/concept; tree contains README, docs and image assets only."
+      ],
+      "limitations": [
+        "No autonomous company runtime, agent role engine, process execution or integration is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "dcef01711df79f517101bdfca6d5a40a7358d681"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_company",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_company/commit/ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_maps",
+      "commit": "576871d1aee78273ec97a45cacca49de8873cf51",
+      "scope": "README, EAEU country registry and Overture tile coverage auditor",
+      "status": "source_reviewed_limited",
+      "capabilities": [
+        "cesium-global-globe-viewer",
+        "eaeu-country-boundary-subset",
+        "overture-tile-planning-and-audit"
+      ],
+      "findings": [
+        "Main branch has a CesiumJS global globe and EAEU country boundary subset, with country IDs and geometry validation tests.",
+        "Overture coverage auditor verifies raw tile artifact hashes, pinned release and run ledger; its output explicitly does not claim geographic completeness, authoritative borders, cross-tile deduplication or 3D Tiles publication."
+      ],
+      "limitations": [
+        "Not a detailed worldwide street/cadastral/3D map; higher-resolution L1-L4 layers remain planned or require external datasets.",
+        "No verified live integration with logistics, real-estate or enterprise routers was found in the inspected files."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0eb38b7916d9a4fd775982f5a35d764ed1323bbb"
+        },
+        {
+          "path": "src/regions/eaeu.ts",
+          "blob_sha": "e3e9c24155746997afc8e334fdaf98fbe91ffa83"
+        },
+        {
+          "path": "scripts/audit_overture_coverage.py",
+          "blob_sha": "8083b62c590533b11478035fc9f0fc1a01ed13b8"
+        }
+      ],
+      "repository": "Shtenco/synergy_maps",
+      "commit_url": "https://github.com/Shtenco/synergy_maps/commit/576871d1aee78273ec97a45cacca49de8873cf51",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_agi_autopilot",
+      "commit": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README explicitly labels main as STUB/architecture node; repository tree contains README, docs and assets only."
+      ],
+      "limitations": [
+        "No DAG planner, agent runtime, execution engine or integration is implemented on main."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "5a50b9d90bc106294fb488523fe2caef6d3867d9"
+        }
+      ],
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "commit_url": "https://github.com/Shtenco/synergy_agi_autopilot/commit/65433bca107e823ebe1223646601541bb86b5d0d",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_coder",
+      "commit": "4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+      "status": "source_reviewed_limited",
+      "scope": "README, engineering evidence contract and tests",
+      "capabilities": [
+        "requirement-to-repository-trace",
+        "change-evidence-contract",
+        "sha256-artifact-identity",
+        "approval-gated-check-status"
+      ],
+      "findings": [
+        "Compact evidence-contract layer maps REQ requirements to affected repositories and changes; APPROVED requires all checks PASS.",
+        "Optional SHA-256 hashes bind evidence bytes and artifact bytes; README correctly says hash is content identity, not proof of correctness."
+      ],
+      "limitations": [
+        "This is not a complete autonomous coding agent, code execution environment or repository orchestration runtime.",
+        "Commit SHA validation checks format only; it does not fetch/verify that commit exists in the named repository."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7b862f61f9e87587a536972ae6637c347b66ad33"
+        },
+        {
+          "path": "runtime/contracts.py",
+          "blob_sha": "a192a19e115a946f96377066f4ba78162359a9c3"
+        },
+        {
+          "path": "tests/test_contracts.py",
+          "blob_sha": "5941addfe56fb621d96f146924214236646c2635"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_coder",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_coder/commit/4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_workspace",
+      "commit": "5483f61106e626267c521cf64be8eaeb82448fba",
+      "status": "branch_only_prototype",
+      "scope": "main README plus release/v1.0-desktop-rc local service, orchestrator and capital engine",
+      "capabilities": [
+        "localhost-control-plane",
+        "sqlite-wal-task-lead-audit-store",
+        "policy-limited-local-workflow",
+        "capital-import-provenance",
+        "explicit-human-approval"
+      ],
+      "findings": [
+        "Default main contains only README; inspected application code is on release/v1.0-desktop-rc, not main.",
+        "Release branch service binds local control plane to 127.0.0.1:8129, stores tasks/leads/actions/audit in SQLite WAL and requires bearer token.",
+        "Workspace orchestrator exposes only local read/planning capabilities; external Avito publishing and investment trading are blocked and it returns external_effects=false.",
+        "Capital engine stores source-supplied financial records with immutable source IDs and SHA-256 conflict detection; it explicitly does not call banks, brokers or exchanges."
+      ],
+      "limitations": [
+        "Release branch README says Windows installer and GUI E2E are not confirmed; not a production desktop release.",
+        "No tenant separation in the inspected local schema; not a public multi-tenant SaaS backend.",
+        "Main branch is README-only; branch code must not be described as merged main functionality."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "06cbe60941907c2672b91b752865d7620a2884cd"
+        },
+        {
+          "path": "workspace/service.py",
+          "blob_sha": "ae1933a93364ecd92255086e833372afec94d32d"
+        },
+        {
+          "path": "workspace/meta_orchestrator.py",
+          "blob_sha": "e24e6b16c036651d52aac1b57de1c52766295f53"
+        },
+        {
+          "path": "workspace/capital_engine.py",
+          "blob_sha": "b0a01f11b47bf4de296a7e602e8e6db983556bde"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_workspace",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_workspace/commit/5483f61106e626267c521cf64be8eaeb82448fba",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_messenger",
+      "commit": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+      "status": "stub_confirmed",
+      "scope": "README, package manifest and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README describes Messenger V3 alpha architecture and explicitly says production security, real MLS backend and physical-device tests remain required.",
+        "Main tree contains README, package.json, service worker and documentation/assets, but no application source or tests/v3 files.",
+        "package.json test script references tests/v3/*.test.js and build:www references scripts/copy-www.js; these paths are absent from inspected main tree."
+      ],
+      "limitations": [
+        "Main branch does not substantiate the claimed messenger runtime; branch/tag code must be separately audited before reuse.",
+        "No cryptographic implementation or P2P messaging behavior is verified by this main-branch snapshot."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "410446bb271431207a0b51d077c8fe1c8f74c060"
+        },
+        {
+          "path": "package.json",
+          "blob_sha": "e4daf78b2ee133c32d134cfaaeed1e7d4fdf9719"
+        }
+      ],
+      "repository": "Shtenco/synergy_messenger",
+      "commit_url": "https://github.com/Shtenco/synergy_messenger/commit/549688f0346b351b43d485bf6e66b3bcfb65a59b",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_algotrading_graph_system",
+      "commit": "5fb87036fe833a6e7939654469766c86f92533ee",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README describes a formal research architecture for amount-dependent market graphs, shared capacity and settlement-aware routing.",
+        "Main tree contains README and assets only; no graph algorithm, package, tests or settlement evidence ledger is implemented."
+      ],
+      "limitations": [
+        "Do not treat the architecture specification as an executable arbitrage engine."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d28bb161a00b7988d3967c6b5c3e19eb7f219442"
+        }
+      ],
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "commit_url": "https://github.com/Shtenco/synergy_algotrading_graph_system/commit/5fb87036fe833a6e7939654469766c86f92533ee",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_relative_value",
+      "commit": "ef2a44ea4d5551dccbda4b24d9b0a0d06d9a6a77",
+      "status": "source_reviewed_limited",
+      "scope": "README, OLS pair core and non-authorizing signal contract",
+      "capabilities": [
+        "ols-pair-fit",
+        "spread-zscore",
+        "heuristic-carry-score",
+        "relative-value-signal-contract"
+      ],
+      "findings": [
+        "Core fits a linear pair by least squares, computes spread z-score and a normalized carry heuristic.",
+        "Contract outputs authorization=false and requires downstream domain validation."
+      ],
+      "limitations": [
+        "OLS fit and high z-score do not establish cointegration, stationarity or stable hedge ratio; README explicitly lists these missing tests.",
+        "No costs, borrow/funding, liquidity, asynchronous price or selection-bias model in the core."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d3be4ca24a957ebfa148b42fb24640921c9b19f7"
+        },
+        {
+          "path": "src/synergy_relative_value/core.py",
+          "blob_sha": "1f5c489130cf3b9a82a474d2f332be60cca0ffd1"
+        },
+        {
+          "path": "src/synergy_relative_value/synergy_contracts.py",
+          "blob_sha": "73166f6afcda7749e28eb1b7b48b8159f5b8d152"
+        }
+      ],
+      "repository": "Shtenco/synergy_relative_value",
+      "commit_url": "https://github.com/Shtenco/synergy_relative_value/commit/ef2a44ea4d5551dccbda4b24d9b0a0d06d9a6a77",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_adaptive_engine",
+      "commit": "f0622aa6d60be3c47d2ac752b9ef686e6dac6c5b",
+      "status": "source_reviewed_limited",
+      "scope": "README, adaptive ensemble core and market-regime contract",
+      "capabilities": [
+        "bounded-online-expert-weighting",
+        "volatility-regime-classification",
+        "enterprise-rbac-audit"
+      ],
+      "findings": [
+        "AdaptiveEnsemble updates strategy weights using exponentiated clipped rewards and caps per-step weight movement.",
+        "Regime classifier returns UNKNOWN with fewer than five returns and emits a non-authorizing market-regime contract.",
+        "README documents tenant-aware RBAC, audit events and live execution disabled by default."
+      ],
+      "limitations": [
+        "No out-of-sample or live trading validation was executed in this review.",
+        "Core input validation for finite rewards/threshold ordering should be strengthened before adversarial or production use."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0999ce7505713b18c6e27caaab46203e9ac05c9d"
+        },
+        {
+          "path": "src/synergy_adaptive_engine/core.py",
+          "blob_sha": "21629fec5a7074f33fd4782ab060cd4d3eddf3c1"
+        },
+        {
+          "path": "src/synergy_adaptive_engine/synergy_contracts.py",
+          "blob_sha": "062fda139736f9d8e2ef24e7efba3b7c0bb23d76"
+        }
+      ],
+      "repository": "Shtenco/synergy_adaptive_engine",
+      "commit_url": "https://github.com/Shtenco/synergy_adaptive_engine/commit/f0622aa6d60be3c47d2ac752b9ef686e6dac6c5b",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_midas_institutional",
+      "commit": "6eb09ac2b2c72bf7ec6aaa26390136f9013efd58",
+      "status": "source_reviewed_limited",
+      "scope": "README, bounded assessment core, contract and tests",
+      "capabilities": [
+        "institutional-assessment-stage-machine",
+        "injected-validation-and-risk-hooks",
+        "bounded-notional-output"
+      ],
+      "findings": [
+        "MidasOrchestrator calls injected validator and risk functions; it blocks on failed validation or non-positive risk and caps approved notional at target notional.",
+        "Contract binds decision to the exact signal and emits authorization=false plus requires_canonical_risk_validation=true.",
+        "README explicitly states EXECUTION_READY is only readiness for the next gate, not broker authorization."
+      ],
+      "limitations": [
+        "Quality and provenance of injected validator/risk functions are outside this repository's core.",
+        "The institutional assessment is not itself a canonical risk veto or execution adapter."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ad8d3b77cc2c09d1d5677ccc4810bdec8e6fd3d2"
+        },
+        {
+          "path": "src/synergy_midas/core.py",
+          "blob_sha": "fee5fb377d3111ec89a2ca893dcc948c19dc1d80"
+        },
+        {
+          "path": "src/synergy_midas/synergy_contracts.py",
+          "blob_sha": "12d9dae9b1d383fadbfe9bfc8d77b0acfcdd0398"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "00f64c9a2ccafc38506784089bbf1bc3928f0204"
+        }
+      ],
+      "repository": "Shtenco/synergy_midas_institutional",
+      "commit_url": "https://github.com/Shtenco/synergy_midas_institutional/commit/6eb09ac2b2c72bf7ec6aaa26390136f9013efd58",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "sinergy_super_app",
+      "commit": "3494f2cdebd0b9510ac65a470b32a085e4920537",
+      "status": "source_reviewed_limited",
+      "scope": "README, mobile PWA shell, source-surface integrity contract and Android build workflow",
+      "capabilities": [
+        "responsive-pwa-shell",
+        "android-capacitor-wrapper",
+        "source-surface-hash-contract"
+      ],
+      "findings": [
+        "Main contains responsive mobile/PWA HTML, web manifest, Android wrapper and a workflow configured to build assembleDebug.",
+        "Surface contract hashes manifest/index/Gradle/wrapper but explicitly sets android_artifact_built=false and deployment_authority=false."
+      ],
+      "limitations": [
+        "UI description names wallet, AGI, DAO, L1, MetaPay and mesh modules, but the inspected source-surface contract does not prove these backend integrations exist.",
+        "Workflow definition is not proof of a successful APK build or published app."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "f1eeb27b14d4a027d061e7a514087dd16f837be1"
+        },
+        {
+          "path": "federation/surface_contract.py",
+          "blob_sha": "9b531d0a65159fe77b5404f636a58812b0848adc"
+        },
+        {
+          "path": "mobile/app/index.html",
+          "blob_sha": "3cda1c5023d1dd38d450114907efef095d7be47b"
+        },
+        {
+          "path": ".github/workflows/android.yml",
+          "blob_sha": "bd2c70d27590b521561ea2e0c2c1cb8cc1ff23d6"
+        }
+      ],
+      "repository": "Shtenco/sinergy_super_app",
+      "commit_url": "https://github.com/Shtenco/sinergy_super_app/commit/3494f2cdebd0b9510ac65a470b32a085e4920537",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "sinergy_app",
+      "commit": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README states main contains only README.md and explicitly marks the client app STUB/documentation-only."
+      ],
+      "limitations": [
+        "No UI source, package/build manifest, tests, CI, release pipeline or API client exists in main."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a301fe07f3b3e129c7482f3240d3fda5e2c00890"
+        }
+      ],
+      "repository": "Shtenco/sinergy_app",
+      "commit_url": "https://github.com/Shtenco/sinergy_app/commit/2e8af43e14875442f89b6dca13d96306defaf1bd",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_app",
+      "commit": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
+      "status": "source_reviewed_limited",
+      "scope": "README, mobile release contract and Android manifest",
+      "capabilities": [
+        "android-ios-web-finance-client-source",
+        "source-integrity-contract",
+        "restricted-android-permissions"
+      ],
+      "findings": [
+        "Main contains Android project, iOS project, web assets, tests/scripts and a source-integrity contract.",
+        "Release contract hashes Android Gradle/manifest and iOS project/privacy manifest, checks target/compile SDK 36, cleartext disabled, backups disabled and rejects selected dangerous permissions.",
+        "Manifest inspection shows INTERNET only, allowBackup=false, usesCleartextTraffic=false and explicit network security config."
+      ],
+      "limitations": [
+        "Source verification does not prove a built, signed or store-published artifact; README explicitly separates these states.",
+        "Main branch includes binary finance-next source parts whose full provenance/build integration needs separate audit."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "dc050539ced9562541e47987ade6472184ee6add"
+        },
+        {
+          "path": "federation/release_contract.py",
+          "blob_sha": "4e452400fde57f220e94f21c10207ba76b40983c"
+        },
+        {
+          "path": "android/app/src/main/AndroidManifest.xml",
+          "blob_sha": "8fdecd5b095a2c1b1c3673151938adf5ec887912"
+        }
+      ],
+      "repository": "Shtenco/synergy_app",
+      "commit_url": "https://github.com/Shtenco/synergy_app/commit/d0f531aa402b58326db3fad361a7ae8c88ee9667",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_apps",
+      "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+      "status": "source_reviewed_limited",
+      "scope": "README, read-only accounting/trust projections and tests",
+      "capabilities": [
+        "application-master-registry",
+        "read-only-accounting-projection",
+        "read-only-trust-projection"
+      ],
+      "findings": [
+        "README labels repository an architectural master/documentation layer, not a unified app runtime.",
+        "Read models project accounting recognition and blockchain trust status while explicitly returning read_only=true and authority labels canonical_accounting/blockchain_trust.",
+        "Tests assert read-only projections."
+      ],
+      "limitations": [
+        "Projection helpers do not authenticate source evidence, validate accounting signatures or grant authority; they rely on upstream domain payloads.",
+        "Not a marketplace backend or shared app execution runtime."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda"
+        },
+        {
+          "path": "runtime/read_models.py",
+          "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+        },
+        {
+          "path": "tests/test_read_models.py",
+          "blob_sha": "9f7b7f29975c9bb9686d4d3a842bb97d7ca441f8"
+        }
+      ],
+      "repository": "Shtenco/synergy_apps",
+      "commit_url": "https://github.com/Shtenco/synergy_apps/commit/7b3dec583964d26c0f2d326bb040f9166db9d793",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_chain",
+      "commit": "0f731f56c3f067095d3a2ff89f7e73bdc7365177",
+      "status": "source_reviewed_limited",
+      "scope": "README, packaged source boundary, QE V10 Solidity contracts and Foundry tests",
+      "capabilities": [
+        "packaged-growth-os-source-archive",
+        "static-pages-subset",
+        "evm-qe-v10-research-testbed"
+      ],
+      "findings": [
+        "Repository separates Node/web source archive, static GitHub Pages subset and QE V10 Solidity testbed as distinct evidence surfaces.",
+        "CI defines Node source validation and Foundry build/test; Pages deploys only the static public subset.",
+        "QE V10 tests use minimal custom test tokens, fixed DEX and local vault/debt contracts; tests assert NAV conservation and modeled fee loss."
+      ],
+      "limitations": [
+        "Source archive is not expanded in the repository; reproducibility depends on archive integrity and its internal lock/dependencies.",
+        "QE V10 custom tokens and bridge contracts are research fixtures, not production ERC20/bridge contracts.",
+        "Pages deployment cannot run backend sessions, CRM writes, vault or live model calls."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "833ac6455774203c66c049ad75755802230f72d0"
+        },
+        {
+          "path": "qe_v10/src/QEV10TwoElevator.sol",
+          "blob_sha": "896e2147647284f946398413bf666cef02dc46bf"
+        },
+        {
+          "path": "qe_v10/test/QEV10TwoElevator.t.sol",
+          "blob_sha": "9642ed2645b11e5924b2ded66077558ff411964b"
+        }
+      ],
+      "repository": "Shtenco/synergy_chain",
+      "commit_url": "https://github.com/Shtenco/synergy_chain/commit/0f731f56c3f067095d3a2ff89f7e73bdc7365177",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_metachain",
+      "commit": "a568a5afaea5bf2ca8f68202d2c64856367316ad",
+      "status": "source_reviewed_limited",
+      "scope": "README, trust/replay consumer and tests",
+      "capabilities": [
+        "finalized-commitment-gate",
+        "in-memory-replay-guard",
+        "source-event-digest-binding"
+      ],
+      "findings": [
+        "Consumer requires FINALIZED status, commitment ID, 64-hex payload digest, source event and source contract IDs; repeated commitment IDs in the same process are rejected.",
+        "Output explicitly sets claimable_once=true and accounting_authority=false."
+      ],
+      "limitations": [
+        "Replay state is an in-memory Python set and is lost on process restart; replay can be accepted after restart unless a durable store is added.",
+        "The consumer trusts the supplied FINALIZED flag and digest; it does not verify signatures, chain RPC, light-client proofs, validator set, Merkle/SPV proofs or reorgs.",
+        "This is a local trust/replay gate, not a full cross-chain bridge."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "bad687c1638e87a81c9b854c963c5fe955d093fe"
+        },
+        {
+          "path": "runtime/trust_contracts.py",
+          "blob_sha": "e62c5e2ddcfc4053b401afe535cf94b402301605"
+        },
+        {
+          "path": "tests/test_trust_contracts.py",
+          "blob_sha": "ea54138c42e9fb976d38ba477e838d3e8c8460df"
+        }
+      ],
+      "repository": "Shtenco/synergy_metachain",
+      "commit_url": "https://github.com/Shtenco/synergy_metachain/commit/a568a5afaea5bf2ca8f68202d2c64856367316ad",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_usds",
+      "commit": "0234edac62492ceff8af8195506aa1cef672ada1",
+      "status": "source_reviewed_limited",
+      "scope": "README, explicit security blocker, gitignore and deployment script; secret file contents deliberately not inspected",
+      "capabilities": [
+        "usds-mint-sell-pp-economic-model",
+        "base-fork-experiment",
+        "foundry-test-and-deploy-script"
+      ],
+      "findings": [
+        "Repository contains a dedicated SECURITY_FEDERATION_BLOCKER.md that says it is not eligible for runtime federation until deployer credential hygiene is completed.",
+        "Tracked root artifact named base-mainnet-deployer.key is present in the Git tree; contents were not inspected. The blocker explicitly says treat it as exposed until proven otherwise and rotate/revoke.",
+        "The deploy script expects a private key file, checks Base chain ID 8453 and a 0600 permission mode before deploying; this does not neutralize a tracked root credential."
+      ],
+      "limitations": [
+        "Keep ARCHITECTURAL_ONLY and block deployment/federation until rotation, history cleanup, secret scanning and independent verification are complete.",
+        "Economic model's external value-added assumption is scenario input, not profit generated by mint/sell mechanics."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "3aa046c0c0dba4467e8f4a435a83db27125988b4"
+        },
+        {
+          "path": "SECURITY_FEDERATION_BLOCKER.md",
+          "blob_sha": "a15b124e8da34f0d4687ca62cd89a50335378172"
+        },
+        {
+          "path": ".gitignore",
+          "blob_sha": "157cfeaa77bf49d1c02f4f40b7f4bf304412308c"
+        },
+        {
+          "path": "valut_v4/scripts/deploy_mainnet.sh",
+          "blob_sha": "cc531fbc0c097a90b0d5a8350d628b7ca9bdc608"
+        }
+      ],
+      "repository": "Shtenco/synergy_usds",
+      "commit_url": "https://github.com/Shtenco/synergy_usds/commit/0234edac62492ceff8af8195506aa1cef672ada1",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_cashero",
+      "commit": "4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
+      "status": "source_reviewed_limited",
+      "scope": "README, repository tree and CASRSv3/CASRGv3 Solidity token/collateral contracts; secret files not opened",
+      "capabilities": [
+        "two-token-collateral-economy",
+        "custom-erc20-like-token-contracts",
+        "cpmm-bot-and-reserve-experiments"
+      ],
+      "findings": [
+        "Main contains CASRSv3/CASRGv3 contracts, CPMM robot/simulation scripts and archived 150-cycle reports.",
+        "README explicitly warns that synthetic pool returns are not externally realized income and tracked configuration files may contain secrets.",
+        "Git tree contains tracked .env, owner.env, bot1.env and bot2.env files; their contents were not inspected. No .gitignore file was found at the expected root path."
+      ],
+      "limitations": [
+        "Treat any credentials in tracked environment files as exposed until proven otherwise; rotate/revoke and purge history if real secrets are present.",
+        "Custom token contracts and bot simulations require independent security review, fork-state evidence and reserve accounting before mainnet claims.",
+        "No external audit or verified live settlement evidence was established by this review."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a732eaeda0fa215160ea476f0fd6cceca4d99461"
+        },
+        {
+          "path": "contracts/CASRSv3.sol",
+          "blob_sha": "7f20cf546e2e87b2698b9ee05d8d5d141e7262c3"
+        },
+        {
+          "path": "contracts/CASRGv3.sol",
+          "blob_sha": "5bc9b21c6a9d4e47d670445470872ed134435029"
+        }
+      ],
+      "repository": "Shtenco/synergy_cashero",
+      "commit_url": "https://github.com/Shtenco/synergy_cashero/commit/4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_turbo_linux",
+      "commit": "c5ee1119369cd90c9ff23b346a405ac3e8bc6cad",
+      "status": "source_reviewed_limited",
+      "scope": "README, Turbo Core capability/scheduler/IPC implementation and historical SSH key incident report",
+      "capabilities": [
+        "siphash-sealed-capabilities",
+        "64-level-bitmap-priority-scheduler",
+        "bounded-spsc-ipc-ring",
+        "x86-64-fast-path-lab"
+      ],
+      "findings": [
+        "Turbo Core implements keyed SipHash capability seals, rights masks, a 64-priority bitmap scheduler and cacheline-separated SPSC ring.",
+        "Historical security incident report confirms an unencrypted SSH private key was committed to main history on 2026-09-04; current tree removed the private file, but external key rotation/revocation and history sanitization are explicitly not proven.",
+        "Scheduler enqueue does not track whether task_id is already queued; enqueueing the same ID twice can create a self-referential next pointer and leave the queue stuck."
+      ],
+      "limitations": [
+        "Microbenchmarks are not OS-wide acceleration claims; remote orchestration is a separate historical track.",
+        "Capability generation is MAC-bound but inspected resolve path does not consult a revocation/current-generation registry.",
+        "Old SSH credential must remain treated as compromised until revoked at every authorized host."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "464ef9bcd62b7dd61f05718f58b319aac5a0e409"
+        },
+        {
+          "path": "turbo_core/src/core.c",
+          "blob_sha": "83a2b6876d8f816744b8c4a97b6256bfbce05ad8"
+        },
+        {
+          "path": "turbo_core/include/turbo/core.h",
+          "blob_sha": "e0d1aa33f472aa8af137958dfe4d20146a6d51f5"
+        },
+        {
+          "path": "docs/SECURITY_INCIDENT_SSH_KEY_20260904.md",
+          "blob_sha": "fbe537f62fb1d4d6c0dabfafd7ac6e251107b459"
+        }
+      ],
+      "repository": "Shtenco/synergy_turbo_linux",
+      "commit_url": "https://github.com/Shtenco/synergy_turbo_linux/commit/c5ee1119369cd90c9ff23b346a405ac3e8bc6cad",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_computing_topology",
+      "commit": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+      "status": "source_reviewed_limited",
+      "scope": "README, V4 correctness harness, archived gate results and validation report",
+      "capabilities": [
+        "correctness-first-compression-harness",
+        "deterministic-batch-validation",
+        "persistent-cache-recovery-tests",
+        "compact-descriptor-index-benchmark"
+      ],
+      "findings": [
+        "V4 harness compares batch and sequential QPIPE, checks deterministic repeated runs, 1000 fresh-process decompression corpora with SHA-256, corruption rejection, cache restart/delete and tail-byte preservation.",
+        "Archived 2026-09-30 gate results report the userspace checks passing and kernel runtime NOT TESTED due vermagic mismatch (built for 6.12.96 headers, host kernel 6.18.44).",
+        "Measured speedups are specific to repeated queries over a precomputed compact descriptor index with build cost included; one-query case is 0.931x, while 3000 varied queries report 2116.714x."
+      ],
+      "limitations": [
+        "These are archived results, not tests rerun in this audit session.",
+        "No OS-wide, arbitrary-workload or production kernel performance claim is supported.",
+        "Kernel module runtime on the current host was explicitly not tested."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "51027fe745a1decafd2c58a80b13d41eed19a2f8"
+        },
+        {
+          "path": "src/v4/v4_correctness_harness.py",
+          "blob_sha": "e51b1b173af4a0006511ca97addb6a190538efc2"
+        },
+        {
+          "path": "validation/V4_GATE_RESULTS.json",
+          "blob_sha": "1f82a5380fb0f8d4e9b3417f0aedad3dc8da4560"
+        },
+        {
+          "path": "docs/SHTENCO_V4_VALIDATION_REPORT_2026-09-30.md",
+          "blob_sha": "3ab14fdc08086fc475f6a2933001cb498aabb087"
+        }
+      ],
+      "repository": "Shtenco/synergy_computing_topology",
+      "commit_url": "https://github.com/Shtenco/synergy_computing_topology/commit/ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_motherboard_xpu_xml",
+      "commit": "10f2d999004ae83956239d954c452113dadb8bcc",
+      "status": "source_reviewed_limited",
+      "scope": "README, analytical XPU model and deterministic EML Q16.16 reference evaluator",
+      "capabilities": [
+        "parameterized-xpu-area-bandwidth-power-model",
+        "eml-q16-reference-profile",
+        "hardware-floorplan-and-rtl-roadmap"
+      ],
+      "findings": [
+        "Repository provides explicit first-order compute, HBM, PCIe, persistent-memory, area and energy models with coefficients labeled as assumptions unless measured.",
+        "EML Q16.16 reference evaluator uses Decimal exp/ln and enforces b>0 plus signed 32-bit input range.",
+        "README explicitly disclaims fabricated EML cell, timing-closed RTL, measured silicon area/energy and CPU/GPU replacement equivalence."
+      ],
+      "limitations": [
+        "No fabricated silicon, FPGA timing closure, synthesized area/energy or production hardware benchmark is established.",
+        "7.077888 T EML primitives/s is an analytical ceiling under modeled assumptions, not FLOPS or measured throughput."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "66af9de8603d401601422e5283ef10269c57d945"
+        },
+        {
+          "path": "calculations/xpu_v1_model.py",
+          "blob_sha": "b6d82fc6c0444589ca1b66deae4ab08b180e6d6a"
+        },
+        {
+          "path": "software/reference/eml_q16.py",
+          "blob_sha": "8acbe75d451d4c77c8c8b6f6edd2dacfcada2d20"
+        }
+      ],
+      "repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "commit_url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/commit/10f2d999004ae83956239d954c452113dadb8bcc",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_long_term_harness",
+      "commit": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "Main branch contains only a one-line README heading; no harness, test runner, long-term soak orchestration or artifacts."
+      ],
+      "limitations": [
+        "Cannot be treated as the federation-wide long-term test harness until implementation exists."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7bfaf07aaa087803fb0940735b36db4ee7854bb0"
+        }
+      ],
+      "repository": "Shtenco/synergy_long_term_harness",
+      "commit_url": "https://github.com/Shtenco/synergy_long_term_harness/commit/cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_quantlab",
+      "commit": "57ee40a6879c0db6550b573aacadad27347fb2db",
+      "scope": "README, purged walk-forward core and validation decision contract",
+      "capabilities": [
+        "purged-walk-forward-splits",
+        "cost-adjusted-return-metrics",
+        "research-paper-canary-gate"
+      ],
+      "findings": [
+        "Core provides expanding walk-forward folds with purge/embargo, return metrics, simple linear cost adjustment and RESEARCH/PAPER/CANARY gate; it never returns FULL_PRODUCTION.",
+        "Validation contract binds candidate event ID, protocol ID and optional dataset manifest digest; it is non-execution authority."
+      ],
+      "limitations": [
+        "Sharpe uses simple sample standard deviation without autocorrelation/Newey-West correction; no probabilistic Sharpe, multiple-testing correction, bootstrap CI or nonlinear impact model.",
+        "Dataset manifest digest is optional and the inspected contract does not verify its format or fetch the dataset itself.",
+        "No tests were executed during this audit; README's local test status remains documentary evidence."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7a5fe2a688599aec74e7f1668c1cc101ffff5d6a"
+        },
+        {
+          "path": "src/synergy_quantlab/core.py",
+          "blob_sha": "1289704129d4c2959c3f4beeca2f010eda981d3a"
+        },
+        {
+          "path": "src/synergy_quantlab/synergy_contracts.py",
+          "blob_sha": "8fe24fd513b32f31de0878398839ede820fd8fbf"
+        }
+      ],
+      "repository": "Shtenco/synergy_quantlab",
+      "commit_url": "https://github.com/Shtenco/synergy_quantlab/commit/57ee40a6879c0db6550b573aacadad27347fb2db",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_midas_ai",
+      "commit": "90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+      "scope": "README, portfolio decision contract and M4 market advisory consumers",
+      "capabilities": [
+        "canonical-trading-intelligence-target",
+        "portfolio-decision-contract",
+        "typed-market-advisory-consumers"
+      ],
+      "findings": [
+        "README declares MIDAS AI as target canonical home for independently validated trading architecture and explicitly preserves historical repositories as provenance.",
+        "Main tree contains contract files and research artifacts, but no general strategy-engine Python package under src; this is a contract/target-architecture layer, not a complete live trading engine.",
+        "Portfolio decision contract validates confidence, position side and non-negative notional; M4 advisory consumers explicitly return authorization=false and require domain validation."
+      ],
+      "limitations": [
+        "Canonical-home status is a target ownership decision, not proof that all strategy experts, data pipelines and execution adapters are consolidated.",
+        "No direct broker execution or canonical accounting authority is implemented in the inspected main branch."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "70eebf132b53e0809408be1e5c6f8833bae0048f"
+        },
+        {
+          "path": "contracts/portfolio_decision_v1.py",
+          "blob_sha": "ab6ed928111b2a35911bf5929e55091e07e94118"
+        },
+        {
+          "path": "contracts/m4_market_advisory_v1.py",
+          "blob_sha": "3bc401230128dd476ee4fc70853fff3466bed2fd"
+        }
+      ],
+      "repository": "Shtenco/synergy_midas_ai",
+      "commit_url": "https://github.com/Shtenco/synergy_midas_ai/commit/90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_market_maker",
+      "commit": "3edcea187c45866d55a65b74dc707b7b1009a69b",
+      "scope": "README, quote core and non-authorizing liquidity quote contract",
+      "capabilities": [
+        "inventory-skewed-liquidity-quote",
+        "reservation-price-heuristic",
+        "hedge-notional-proposal",
+        "enterprise-api-and-audit"
+      ],
+      "findings": [
+        "Core computes bid/ask/reservation from mid, inventory, volatility and configured spread/risk parameters; inventory limit returns no quote.",
+        "Contract includes observation ID and explicit authorization=false; enterprise tests described in README cover trader/viewer roles and audit linkage."
+      ],
+      "limitations": [
+        "No order-book depth, queue position, adverse selection, fill probability, venue latency, cancel/replace, multi-venue inventory or realized maker P&L in the core.",
+        "MMConfig has no explicit parameter validation for gamma/kappa/horizon/max_inventory/min spread; malformed config can produce invalid geometry or math errors.",
+        "Quote and hedge notional are proposals, not orders or fills."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0d11fbc92b5aab3a3c83bc74d3906661e18c69b2"
+        },
+        {
+          "path": "src/synergy_market_maker/core.py",
+          "blob_sha": "15d05c3fb774c437ca9f01b1b0715269221d7432"
+        },
+        {
+          "path": "src/synergy_market_maker/synergy_contracts.py",
+          "blob_sha": "0e2f113426b60431ca3db8fd359b24f438aba77b"
+        }
+      ],
+      "repository": "Shtenco/synergy_market_maker",
+      "commit_url": "https://github.com/Shtenco/synergy_market_maker/commit/3edcea187c45866d55a65b74dc707b7b1009a69b",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_marketvision",
+      "commit": "d1018cba6b6c977ba8dce43ba8257601c0e2fe64",
+      "scope": "README, OHLCV feature cube and market-features contract",
+      "capabilities": [
+        "ohlcv-window-feature-cube",
+        "robust-per-window-scaling",
+        "market-feature-summary-contract"
+      ],
+      "findings": [
+        "Core converts OHLCV windows into a 3×window×4 float32 cube using returns, high-low spread, log-volume and direction with median/IQR scaling.",
+        "Federation contract emits only shape/mean/std/energy summary and explicit authorization=false."
+      ],
+      "limitations": [
+        "Feature cube is not a forecast or trading signal; it excludes order book, bid/ask and cross-asset context.",
+        "Scaling occurs within the current window and the summary compresses the tensor heavily; downstream OOS ablation is required to prove value."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "69b1cf250dd83fadbbd4fc43f9bdc7e2c5f2539f"
+        },
+        {
+          "path": "src/synergy_marketvision/core.py",
+          "blob_sha": "0ed97bad4d50aa5d02a863addae6c99b53253e9d"
+        },
+        {
+          "path": "src/synergy_marketvision/synergy_contracts.py",
+          "blob_sha": "56bd3476af36d84a3db573c29873819c853680bd"
+        }
+      ],
+      "repository": "Shtenco/synergy_marketvision",
+      "commit_url": "https://github.com/Shtenco/synergy_marketvision/commit/d1018cba6b6c977ba8dce43ba8257601c0e2fe64",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_midas_ai_trading_system",
+      "commit": "2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+      "status": "source_reviewed_limited",
+      "scope": "README critical findings, decision pipeline, risk engine, API/WebSocket, MT5 simulator, signal fusion and archive service",
+      "capabilities": [
+        "modular-strategy-pipeline",
+        "signal-fusion",
+        "adaptive-policy",
+        "portfolio-optimizer",
+        "risk-veto",
+        "audit-archive",
+        "fastapi-control-center"
+      ],
+      "findings": [
+        "DecisionPipeline.run_with_metrics risk-veto branch references undefined exc and uses bare raise outside an active except; veto can crash instead of returning a safe blocked decision.",
+        "RiskEngine stores lower-tail return quantiles as negative VaR/CVaR while is_veto compares them against positive maximum thresholds; sign convention is inconsistent.",
+        "WebSocket /logs/stream and /metrics/stream call accept without require_api_key; HTTP endpoints are protected.",
+        "MT5Execution.execute performs local parameter/slippage/latency checks and returns accepted without calling mt5.order_send; accepted is not submitted or filled.",
+        "ArchiveService chain_hash previous state is held in an instance-local dictionary and is not recovered from persistent archive on restart."
+      ],
+      "limitations": [
+        "README lists these as P0/P1 findings; this review confirmed the relevant source paths but did not run the test suite.",
+        "Legacy scripts coexist with modular package; authority path and historical code still require isolation.",
+        "No live broker execution or independent audited PnL is established by this main-branch package."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "cefa13f71478134050b0382f115211607c28495e"
+        },
+        {
+          "path": "midas/core/meta_strategy/pipeline.py",
+          "blob_sha": "d36af04cbd568fd2a72243776ddecbb3b3b815d0"
+        },
+        {
+          "path": "midas/core/risk_engine/risk_engine.py",
+          "blob_sha": "42c5d2ec7f775c1dc9bc40a9624bd6222c26d59d"
+        },
+        {
+          "path": "midas/control_center/api/app.py",
+          "blob_sha": "52730d5edc177e4b8d948d68d5b8390db3ba9522"
+        },
+        {
+          "path": "midas/execution/mt5/mt5_execution.py",
+          "blob_sha": "37d99d6d30715fadf65cdc8678270e7775804d53"
+        },
+        {
+          "path": "midas/core/meta_intelligence/fusion.py",
+          "blob_sha": "3104e10e3326031e89d58296ebbb623ef299298b"
+        },
+        {
+          "path": "midas/data/archive/service.py",
+          "blob_sha": "10be7695caf686cccdb0b6e82bee2a209dfa4d39"
+        }
+      ],
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "commit_url": "https://github.com/Shtenco/synergy_midas_ai_trading_system/commit/2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "midas_lite",
+      "commit": "03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+      "status": "source_reviewed_limited",
+      "scope": "README, legacy MT5 agent source and sealed EURUSD H1 research evidence",
+      "capabilities": [
+        "eurusd-h1-statistical-specialist",
+        "sealed-oos-reporting",
+        "sqlite-agent-memory",
+        "legacy-mt5-execution-path"
+      ],
+      "findings": [
+        "Repository preserves a EURUSD H1 specialist with frozen configuration and separate rolling and sealed OOS reports.",
+        "README explicitly labels 100-window/415-signal/688 gross pips as modeled research, and a separate sealed 2-month period as four trades, three correct directions and -3.5 net pips at assumed 0.5 pip cost.",
+        "Legacy agi_trader_final_v1.py contains direct MetaTrader5 order_send calls at multiple code paths."
+      ],
+      "limitations": [
+        "The presence of order_send means the legacy script can attempt real broker orders depending on terminal/account configuration; do not run outside isolated demo until all paths are audited and execution is explicitly disabled by default.",
+        "No broker-confirmed PnL or live MT5 test is established by the README's research reports.",
+        "Legacy and specialist lines should be isolated; research reports are not permission to execute."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "9c63dd33d21f87814a55ae02214859e5c7ff9e16"
+        },
+        {
+          "path": "agi_trader_final_v1.py",
+          "blob_sha": "5041dc700a7ec284947135296b25fc158063581c"
+        }
+      ],
+      "repository": "Shtenco/midas_lite",
+      "commit_url": "https://github.com/Shtenco/midas_lite/commit/03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_trade_terminal",
+      "commit": "e53064ec6741dce47ee10a5f30b798c0cf4daa2a",
+      "status": "source_reviewed_limited",
+      "scope": "README, Cassandra terminal source and process supervisor",
+      "capabilities": [
+        "mt5-data-and-orderbook-collector",
+        "flask-socketio-dashboard",
+        "cassandra-api-integration",
+        "order-tester"
+      ],
+      "findings": [
+        "README explicitly states credentials are embedded in Python source and must be revoked/replaced before public deployment.",
+        "Credential-pattern scan confirmed hard-coded password/account credential fields and bearer-token handling in cassandra_v6_FIXED.py; token material is also emitted into a login_success event/log prefix.",
+        "Repository includes a separate order tester with broker requests and stop-limit management; this audit did not execute any order path."
+      ],
+      "limitations": [
+        "Treat embedded credentials and issued tokens as exposed; rotate/revoke them and remove sensitive history after rotation.",
+        "No evidence of tenant isolation or production-grade secret management was established.",
+        "Order execution paths require separate authorization, demo-only testing and explicit operator confirmation."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "31350fb4264cb80dbfc8f373120bbdc1be6129c5"
+        },
+        {
+          "path": "cassandra_v6_FIXED.py",
+          "blob_sha": "61d2b4a094150ed6b3086ccf3e2904067ee9d44a"
+        },
+        {
+          "path": "MAIN.py",
+          "blob_sha": "9145e627d8f3f44549cb49999f6dda4b3e8d730b"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_trade_terminal",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_trade_terminal/commit/e53064ec6741dce47ee10a5f30b798c0cf4daa2a",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "quantum-trading_metatrader5",
+      "commit": "a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+      "status": "source_reviewed_limited",
+      "scope": "README and MT5/Qiskit main program",
+      "capabilities": [
+        "mt5-historical-data-ingestion",
+        "fixed-qpe-like-aer-simulation",
+        "binary-horizon-comparison"
+      ],
+      "findings": [
+        "README and main show price_binary is passed into analyze_market_state but not used; circuit parameters are fixed and do not depend on market history.",
+        "The code compares stochastic Aer measurements with future horizon labels; it does not establish predictive accuracy or quantum advantage.",
+        "Main contains MT5 initialization/data collection but no order_send path in the inspected file."
+      ],
+      "limitations": [
+        "Research prototype only; no proof of QPE correctness, market forecast skill or quantum advantage.",
+        "No live trading execution was found in the inspected main.py; other files were not exhaustively audited."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "2486738ec177f291bd1f54531d221868e77c2a31"
+        },
+        {
+          "path": "main.py",
+          "blob_sha": "8c1b6be206405f0df8815d5838999a447a8adc33"
+        }
+      ],
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "commit_url": "https://github.com/Shtenco/quantum-trading_metatrader5/commit/a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_language",
+      "commit": "64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
+      "status": "source_reviewed_limited",
+      "scope": "README, requirement-to-change trace, source-indexed agent, compiler, command runner and tests",
+      "capabilities": [
+        "requirement-traceability",
+        "ast-symbol-call-graph",
+        "multi-target-code-scaffold",
+        "workspace-file-policy",
+        "approval-gated-tool-runner"
+      ],
+      "findings": [
+        "SemanticTrace creates REQ-linked intent/repository/change/impact graphs and records tool actions; AST extraction is bounded and does not execute source.",
+        "Workspace file APIs restrict paths to workspace and hide common secret-like filenames; run_command blocks shell operators and selected destructive shells/commands.",
+        "Compiler emits Python/C/Rust/Solidity/Kotlin from instruction strings; Python uses repr, but C/Rust/Solidity/Kotlin generators interpolate action/target directly into string literals without language-specific escaping.",
+        "execute_python_file and Workspace.run_command use subprocess with no OS sandbox, namespace, filesystem isolation or network egress control; approval and command filters are not a sandbox.",
+        "SemanticTrace.record truncates the first output line but does not redact credential patterns, despite its docstring saying raw credentials are not persisted."
+      ],
+      "limitations": [
+        "No target-language compilation or sandboxed execution is demonstrated for generated C/Rust/Solidity/Kotlin.",
+        "Auto-approval bypasses interactive approval; commands run with the user's OS permissions after filtering.",
+        "File-name secret filters do not identify arbitrary secrets embedded in ordinary config/source files."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "22089615c6731e5448cea4e982a3a1d97d0cfac3"
+        },
+        {
+          "path": "src/ai_language/agent.py",
+          "blob_sha": "b239d2156df5e1a68da9d923a6a6f299c940af42"
+        },
+        {
+          "path": "src/ai_language/semantic_trace.py",
+          "blob_sha": "41201c30fd3789ab6fb54396e4ecf14e783dd26a"
+        },
+        {
+          "path": "src/ai_language/pipeline.py",
+          "blob_sha": "dee0346db3ffac0b0ec25cb0192064a33aeec4a7"
+        },
+        {
+          "path": "src/ai_language/compiler.py",
+          "blob_sha": "460b9e0436f08afaaf7eba5eafc83d0b05c3cdbd"
+        },
+        {
+          "path": "tests/test_semantic_trace.py",
+          "blob_sha": "a511a83760c57a2062c460f5e890e44ca43da653"
+        },
+        {
+          "path": "tests/test_compiler.py",
+          "blob_sha": "ec0efd96276ce760a411873ba27f70b7cc7116a9"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_language",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_language/commit/64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_gllm_nexus",
+      "commit": "a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
+      "status": "branch_only_prototype",
+      "scope": "unified-v3-generalization-first branch README, graph-native runtime, MoE router and frozen benchmark artifacts; main is docs/registry only",
+      "capabilities": [
+        "typed-hypergraph-cognition",
+        "persistent-graph-memory",
+        "temporal-causal-reasoning",
+        "russian-neural-graph-compiler",
+        "recurrent-graph-cortex",
+        "policy-gated-moe-routing"
+      ],
+      "findings": [
+        "Default main branch is documentation/benchmark registry; substantive Python runtime is on unified-v3-generalization-first at commit a18fa5a (2026-09-20).",
+        "Branch runtime has typed GraphCard/TypedHyperEdge, persistent DynamicHyperGraph, mutation/retraction, temporal/causal reasoning, graph recurrent core, Russian neural compiler and AnswerGraph semantic guard.",
+        "NEXUS-MOE-B1 archived one-shot result reports learned MoE 94.44%, best single 33.33%, naive 59.17%, oracle 95.83%; negative transfer 1.45%. Result file says sealed_before_evaluation=true and test_open_count=1.",
+        "FTX1 README says exact BLIND generator/corpus/gold are sealed outside development branch and should be opened exactly once after preblind freeze."
+      ],
+      "limitations": [
+        "Runtime is not in default main; branch is dated 2026-09-20 and must be explicitly pinned before use.",
+        "Benchmark results are synthetic/frozen protocol results, not real-world general intelligence or production performance.",
+        "FTX1 sealed blind contents were not accessed; no claim about its final score is made.",
+        "The graph-native runtime is a distinct cognitive hypergraph, not a substitute for the repository-dependency/evidence graph."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "572d513c8e6c6c00b81e4d45b815cf68c4c28434"
+        },
+        {
+          "path": "src/nexus_gllm/model.py",
+          "blob_sha": "c07329c2a7822e76dea8f519020c91b68db195f7"
+        },
+        {
+          "path": "src/nexus_gllm/unified_v3/moe/capability_router.py",
+          "blob_sha": "e360ab4d745bfcb2ca6c8763fec9b5715a43836e"
+        },
+        {
+          "path": "benchmarks/moe_b1/evaluate.py",
+          "blob_sha": "31bad6d2d41a6a627294aedb77fca38d6f7a6424"
+        },
+        {
+          "path": "benchmarks/moe_b1/results/NEXUS_MOE_B1_ONE_SHOT_RESULT.json",
+          "blob_sha": "ed8555898ec4ef4d646a17f610c70cb963d2792b"
+        },
+        {
+          "path": "benchmarks/ftx1/README.md",
+          "blob_sha": "ef87d2d4e887051f0664ccdd2b259c487278cf4e"
+        }
+      ],
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "commit_url": "https://github.com/Shtenco/synergy_gllm_nexus/commit/a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_llm_rwkv",
+      "commit": "dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
+      "status": "branch_only_prototype",
+      "scope": "feature/rwkv7-original-weights branch quantizer, Triton low-bit matvec, evaluation harness and tests; main contains workflow/docs",
+      "capabilities": [
+        "weight-only-mixed-bit-quantization",
+        "bitpacked-storage",
+        "optional-low-rank-residual",
+        "triton-lowbit-matvec"
+      ],
+      "findings": [
+        "Default main does not contain the quantizer/runtime; experimental implementation is on feature/rwkv7-original-weights at commit dfc163f.",
+        "Quantizer preserves tensor names/shapes and samples weight reconstruction MSE; README explicitly says this is not activation/task-loss sensitivity and full 2.9B checkpoint has not been validated.",
+        "Triton backend implements one-CTA-per-row matvec, rejects N>65536, and is not a full RWKV generation runtime.",
+        "Tests cover synthetic arrays and a tiny synthetic checkpoint pipeline; no real checkpoint, full-model perplexity or target-GPU performance was measured."
+      ],
+      "limitations": [
+        "The 700 MB target is a disk archive budget; restored FP16 checkpoint expands and requires original RWKV runner.",
+        "Full model quality parity, long-context drift and speed are unmeasured; quantization can degrade quality, especially 1-bit.",
+        "Branch implementation is experimental and not in default main."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "bff1c2b66b5f07b76b54fca25ec09f9cd3104e41"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/README.md",
+          "blob_sha": "3b164092c0341357b94214ada6fe1a1eac630e60"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/quant.py",
+          "blob_sha": "7851a07133155726bd708cb644ddbaffa24d3806"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/cuda_lowbit.py",
+          "blob_sha": "2a4e4ec2eea9f4e3fcf76b72259adbadfde45320"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/real_model_eval.py",
+          "blob_sha": "28cda74470c842582253e265840d37e398eb4098"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/tests/test_quant.py",
+          "blob_sha": "f9f6f085059bf66f5ec96a3f3ef80511530d7aa7"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_llm_rwkv/commit/dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_matrix_sota",
+      "commit": "1d84bddfec16998c9300c984ca50980c1f946d56",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "Main branch contains README and documentation only; it assigns five legacy debt/credit mechanisms and 42 legacy code units for high-risk rewrite review.",
+        "No runtime, schemas, tests, CI, simulator, accounting fixtures, maturity ladder or expected-loss model exists in main."
+      ],
+      "limitations": [
+        "Do not count as a debt/credit runtime or financial OS component until executable implementation and property tests exist."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "87476c9dc819919b5335d15cf292a2dbec4f103a"
+        },
+        {
+          "path": "docs/LEGACY_DISTILLATION_V2_OWNER.md",
+          "blob_sha": "e214d550591154c99a99dad61336fa79d5ab0a92"
+        }
+      ],
+      "repository": "Shtenco/synergy_matrix_sota",
+      "commit_url": "https://github.com/Shtenco/synergy_matrix_sota/commit/1d84bddfec16998c9300c984ca50980c1f946d56",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synegy_ai_compress",
+      "commit": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+      "status": "benchmark_dossier",
+      "scope": "README, extended benchmark artifacts, environment metadata and source_snapshot gitlink; no engine source inspected",
+      "capabilities": [
+        "compression-benchmark-dossier",
+        "multi-dataset-profile-comparison",
+        "fresh-vs-historical-result-labels"
+      ],
+      "findings": [
+        "Main branch contains benchmark reports/results and a source_snapshot gitlink (commit 6d2d8f0c...) rather than directly vendored engine source.",
+        "No .gitmodules file was found, so the source_snapshot submodule URL is not declared in the repository metadata inspected.",
+        "README distinguishes fresh 38-profile results from historical/legacy comparisons and labels the benchmark environment and dataset limitations."
+      ],
+      "limitations": [
+        "The compression engine implementation cannot be independently rebuilt from this repository alone until the submodule URL and exact source are available.",
+        "Benchmark score tables are not proof of general compression superiority; workload, quality, compute and full amortized model costs must be compared."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d12b09678ac1b88c5c02c294abe28cba6569f8a0"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/environment.json",
+          "blob_sha": "4f646c93655a9f22871d45bc264bb1044e9ffb11"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/fresh_world_38_summary.csv",
+          "blob_sha": "fbbd6ca07f9fda81f1f4b939b65466f2176da576"
+        },
+        {
+          "path": "source_snapshot",
+          "gitlink_commit": "c681ec94fe5194156b71fc304035f7aaff4d2327"
+        }
+      ],
+      "repository": "Shtenco/synegy_ai_compress",
+      "commit_url": "https://github.com/Shtenco/synegy_ai_compress/commit/189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_qr_compress",
+      "commit": "8e116b253cdc3cf42740d08b502eaf00e4b09176",
+      "status": "source_reviewed_limited",
+      "scope": "README, QTC2/QTD3 codec, container, round-trip and exact shared-dictionary tests",
+      "capabilities": [
+        "temporal-dictionary-compression",
+        "timestamp-addressed-shared-model",
+        "exact-and-patch-reconstruction",
+        "hash-verified-container"
+      ],
+      "findings": [
+        "QTC2 stores a model ID and timestamp-addressed shared dictionary reference; exact mode can have zero residual bytes when the target is already present in the shared model.",
+        "Patch mode stores changed bytes and original SHA-256; decoder rejects wrong model IDs and corrupted payloads.",
+        "Tests use random data and a shared model; one-byte mutation on a 1,000,000-byte target verifies exact reconstruction and 99.9999% model coverage."
+      ],
+      "limitations": [
+        "Zero residual does not mean zero total storage: dictionary/model bytes must exist and be available to the decoder; amortized cost across all consumers is the meaningful metric.",
+        "This is shared-model temporal storage/reference coding, not standalone general-purpose lossless compression for unrelated files.",
+        "Benchmark's random base and one-byte mutation are synthetic; no broad corpus or full storage economics study is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "5ad8f7ae02825a64eb28deb2560c26633973f49e"
+        },
+        {
+          "path": "qr_temporal/qtc2.py",
+          "blob_sha": "5ac58223ec7c99517fae758a67305c3e5852c98e"
+        },
+        {
+          "path": "qr_temporal/qtd3.py",
+          "blob_sha": "226c29cc949117b55590860c6db2a204a578a1ea"
+        },
+        {
+          "path": "qr_temporal/container.py",
+          "blob_sha": "76a7635547f613cadc260609ea39b1607864087d"
+        },
+        {
+          "path": "tests/test_qtc2.py",
+          "blob_sha": "1f4694d2b57d1cb34870212dd13e71e7aee50df1"
+        },
+        {
+          "path": "benchmark_qtc2.py",
+          "blob_sha": "86ad27762ecbd38d879a642d7e0a709c3f9cff75"
+        }
+      ],
+      "repository": "Shtenco/synergy_qr_compress",
+      "commit_url": "https://github.com/Shtenco/synergy_qr_compress/commit/8e116b253cdc3cf42740d08b502eaf00e4b09176",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_gguf_compress",
+      "commit": "c1882525e12f4662c30851cf1a7995a957cba543",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "Main branch contains README/documentation only; no GGUF parser, quantizer, repacker, runtime, tests or CI."
+      ],
+      "limitations": [
+        "Do not treat the repository as an implemented GGUF compressor."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0fb95afb2962fb0edf02979f62053ffa26a03492"
+        }
+      ],
+      "repository": "Shtenco/synergy_gguf_compress",
+      "commit_url": "https://github.com/Shtenco/synergy_gguf_compress/commit/c1882525e12f4662c30851cf1a7995a957cba543",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_shhts",
+      "commit": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "Main branch is a documentation/specification stub; no parser, codec, tests or executable format implementation exists."
+      ],
+      "limitations": [
+        "Keep as a research concept until a byte-level format, decoder and round-trip tests are committed."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ea4b354ca82c208d834e762d5963a9b02586fd73"
+        }
+      ],
+      "repository": "Shtenco/synergy_shhts",
+      "commit_url": "https://github.com/Shtenco/synergy_shhts/commit/8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+      "audited_at": "2026-11-25"
+    }
+  ]
+}

@@ -1,0 +1,4169 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "inventory_source": "GitHub repository search query user:Shtenco, pages 1-2",
+  "inventory_limit": 112,
+  "unique_github_ids": 112,
+  "repository_count": 112,
+  "nodes": [
+    {
+      "node_id": "github-repo:937796740",
+      "node_type": "repository",
+      "github_repository_id": "937796740",
+      "name": "quantum-trading_metatrader5",
+      "full_name": "Shtenco/quantum-trading_metatrader5",
+      "url": "https://github.com/Shtenco/quantum-trading_metatrader5",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "mt5-historical-data-ingestion",
+        "fixed-qpe-like-aer-simulation",
+        "binary-horizon-comparison"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Research prototype only; no proof of QPE correctness, market forecast skill or quantum advantage.",
+        "No live trading execution was found in the inspected main.py; other files were not exhaustively audited."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "937796740",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+        "audited_at": "2026-11-25",
+        "scope": "README and MT5/Qiskit main program"
+      }
+    },
+    {
+      "node_id": "github-repo:1091983056",
+      "node_type": "repository",
+      "github_repository_id": "1091983056",
+      "name": "cross_forex_arbitrage_trading_metatrader_5",
+      "full_name": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "url": "https://github.com/Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1091983056",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1091968186",
+      "node_type": "repository",
+      "github_repository_id": "1091968186",
+      "name": "computer_vision_trading_metatrader_5",
+      "full_name": "Shtenco/computer_vision_trading_metatrader_5",
+      "url": "https://github.com/Shtenco/computer_vision_trading_metatrader_5",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1091968186",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1181574900",
+      "node_type": "repository",
+      "github_repository_id": "1181574900",
+      "name": "synergy_ai_language",
+      "full_name": "Shtenco/synergy_ai_language",
+      "url": "https://github.com/Shtenco/synergy_ai_language",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "requirement-traceability",
+        "ast-symbol-call-graph",
+        "multi-target-code-scaffold",
+        "workspace-file-policy",
+        "approval-gated-tool-runner"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "No target-language compilation or sandboxed execution is demonstrated for generated C/Rust/Solidity/Kotlin.",
+        "Auto-approval bypasses interactive approval; commands run with the user's OS permissions after filtering.",
+        "File-name secret filters do not identify arbitrary secrets embedded in ordinary config/source files."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1181574900",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
+        "audited_at": "2026-11-25",
+        "scope": "README, requirement-to-change trace, source-indexed agent, compiler, command runner and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1409433270",
+      "node_type": "repository",
+      "github_repository_id": "1409433270",
+      "name": "synergy",
+      "full_name": "Shtenco/synergy",
+      "url": "https://github.com/Shtenco/synergy",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "umbrella",
+      "category": "architecture-governance",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "registry",
+        "federation",
+        "architecture",
+        "governance"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1409433270",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1456611297",
+      "node_type": "repository",
+      "github_repository_id": "1456611297",
+      "name": "synergy_maps",
+      "full_name": "Shtenco/synergy_maps",
+      "url": "https://github.com/Shtenco/synergy_maps",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-rnd",
+      "category": "apps-interface",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "cesium-global-globe-viewer",
+        "eaeu-country-boundary-subset",
+        "overture-tile-planning-and-audit"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Not a detailed worldwide street/cadastral/3D map; higher-resolution L1-L4 layers remain planned or require external datasets.",
+        "No verified live integration with logistics, real-estate or enterprise routers was found in the inspected files."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1456611297",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "576871d1aee78273ec97a45cacca49de8873cf51",
+        "audited_at": "2026-11-25",
+        "scope": "README, EAEU country registry and Overture tile coverage auditor"
+      }
+    },
+    {
+      "node_id": "github-repo:1376377703",
+      "node_type": "repository",
+      "github_repository_id": "1376377703",
+      "name": "synergy_ai_investment_committee",
+      "full_name": "Shtenco/synergy_ai_investment_committee",
+      "url": "https://github.com/Shtenco/synergy_ai_investment_committee",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "portfolio-governance"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376377703",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1466823100",
+      "node_type": "repository",
+      "github_repository_id": "1466823100",
+      "name": "timeweb_synergy_retry_storm_lab",
+      "full_name": "Shtenco/timeweb_synergy_retry_storm_lab",
+      "url": "https://github.com/Shtenco/timeweb_synergy_retry_storm_lab",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "retry-budget",
+        "deadline-aware-retries",
+        "full-jitter",
+        "bulkhead",
+        "circuit-breaker-epoch-fencing"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1466823100",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "b601f79db253751e4c7d99d671420bf95d840d3c",
+        "audited_at": "2026-11-25",
+        "scope": "README, policy implementation, tests, benchmark and results card"
+      }
+    },
+    {
+      "node_id": "github-repo:1098247138",
+      "node_type": "repository",
+      "github_repository_id": "1098247138",
+      "name": "shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "full_name": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "url": "https://github.com/Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1098247138",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1465021198",
+      "node_type": "repository",
+      "github_repository_id": "1465021198",
+      "name": "timeweb_synergy_llm_memory_lab",
+      "full_name": "Shtenco/timeweb_synergy_llm_memory_lab",
+      "url": "https://github.com/Shtenco/timeweb_synergy_llm_memory_lab",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "inventory_only_unreviewed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465021198",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1465023909",
+      "node_type": "repository",
+      "github_repository_id": "1465023909",
+      "name": "timeweb_synergy_ml_validation_lab",
+      "full_name": "Shtenco/timeweb_synergy_ml_validation_lab",
+      "url": "https://github.com/Shtenco/timeweb_synergy_ml_validation_lab",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "inventory_only_unreviewed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465023909",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1371974932",
+      "node_type": "repository",
+      "github_repository_id": "1371974932",
+      "name": "synergy_apps",
+      "full_name": "Shtenco/synergy_apps",
+      "url": "https://github.com/Shtenco/synergy_apps",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "application-master-registry",
+        "read-only-accounting-projection",
+        "read-only-trust-projection"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_app",
+        "Shtenco/sinergy_app",
+        "Shtenco/sinergy_super_app",
+        "Shtenco/synergy_app_family",
+        "Shtenco/synergy_messenger",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "Projection helpers do not authenticate source evidence, validate accounting signatures or grant authority; they rely on upstream domain payloads.",
+        "Not a marketplace backend or shared app execution runtime."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1371974932",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+        "audited_at": "2026-11-25",
+        "scope": "README, read-only accounting/trust projections and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1377447162",
+      "node_type": "repository",
+      "github_repository_id": "1377447162",
+      "name": "synergy_epstein_network",
+      "full_name": "Shtenco/synergy_epstein_network",
+      "url": "https://github.com/Shtenco/synergy_epstein_network",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-research",
+      "category": "graph-research",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "graph",
+        "provenance",
+        "research"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_megaproject",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1377447162",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1341272872",
+      "node_type": "repository",
+      "github_repository_id": "1341272872",
+      "name": "synergy_midas_ai",
+      "full_name": "Shtenco/synergy_midas_ai",
+      "url": "https://github.com/Shtenco/synergy_midas_ai",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "canonical-trading-intelligence-target",
+        "portfolio-decision-contract",
+        "typed-market-advisory-consumers"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_midas_ai_trading_system",
+        "Shtenco/midas_lite",
+        "Shtenco/synergy_ai_trade_terminal",
+        "Shtenco/synergy_algotrading_graph_system",
+        "Shtenco/3D_bars_market_structure",
+        "Shtenco/computer_vision_trading_metatrader_5",
+        "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+        "Shtenco/swap_arbitrage_metatrader_5",
+        "Shtenco/global_liquidity_dataminer",
+        "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+        "Shtenco/quantum-trading_metatrader5"
+      ],
+      "risks": [
+        "Canonical-home status is a target ownership decision, not proof that all strategy experts, data pipelines and execution adapters are consolidated.",
+        "No direct broker execution or canonical accounting authority is implemented in the inspected main branch."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1341272872",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+        "audited_at": "2026-11-25",
+        "scope": "README, portfolio decision contract and M4 market advisory consumers"
+      }
+    },
+    {
+      "node_id": "github-repo:1469906584",
+      "node_type": "repository",
+      "github_repository_id": "1469906584",
+      "name": "synergy_ai_browser-",
+      "full_name": "Shtenco/synergy_ai_browser-",
+      "url": "https://github.com/Shtenco/synergy_ai_browser-",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "unknown",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "playwright-browser-runtime",
+        "allowlisted-navigation",
+        "bounded-actions",
+        "dom-observation",
+        "detector-evidence-capture"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "SECURITY FINDING: _guard_request applies NavigationPolicy only to navigation requests with resource_type=document; all subresource requests are continued without equivalent host/IP checks. An allowlisted page may attempt private-network requests unless network isolation blocks them."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1469906584",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "e69ce454424c4d29da54dc649d7379ec24b9bef0",
+        "audited_at": "2026-11-25",
+        "scope": "README, browser runtime and core tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1336912141",
+      "node_type": "repository",
+      "github_repository_id": "1336912141",
+      "name": "synergy_matrix_sota",
+      "full_name": "Shtenco/synergy_matrix_sota",
+      "url": "https://github.com/Shtenco/synergy_matrix_sota",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [
+        "Do not count as a debt/credit runtime or financial OS component until executable implementation and property tests exist."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1336912141",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "1d84bddfec16998c9300c984ca50980c1f946d56",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1168739656",
+      "node_type": "repository",
+      "github_repository_id": "1168739656",
+      "name": "synergy_ai_coder",
+      "full_name": "Shtenco/synergy_ai_coder",
+      "url": "https://github.com/Shtenco/synergy_ai_coder",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "requirement-to-repository-trace",
+        "change-evidence-contract",
+        "sha256-artifact-identity",
+        "approval-gated-check-status"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_agi_nexus"
+      ],
+      "risks": [
+        "This is not a complete autonomous coding agent, code execution environment or repository orchestration runtime.",
+        "Commit SHA validation checks format only; it does not fetch/verify that commit exists in the named repository."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1168739656",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+        "audited_at": "2026-11-25",
+        "scope": "README, engineering evidence contract and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1227851612",
+      "node_type": "repository",
+      "github_repository_id": "1227851612",
+      "name": "sinergy_super_app",
+      "full_name": "Shtenco/sinergy_super_app",
+      "url": "https://github.com/Shtenco/sinergy_super_app",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "responsive-pwa-shell",
+        "android-capacitor-wrapper",
+        "source-surface-hash-contract"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "UI description names wallet, AGI, DAO, L1, MetaPay and mesh modules, but the inspected source-surface contract does not prove these backend integrations exist.",
+        "Workflow definition is not proof of a successful APK build or published app."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1227851612",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3494f2cdebd0b9510ac65a470b32a085e4920537",
+        "audited_at": "2026-11-25",
+        "scope": "README, mobile PWA shell, source-surface integrity contract and Android build workflow"
+      }
+    },
+    {
+      "node_id": "github-repo:1465023729",
+      "node_type": "repository",
+      "github_repository_id": "1465023729",
+      "name": "timeweb_synergy_python_cpp_performance",
+      "full_name": "Shtenco/timeweb_synergy_python_cpp_performance",
+      "url": "https://github.com/Shtenco/timeweb_synergy_python_cpp_performance",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "inventory_only_unreviewed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465023729",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1310793915",
+      "node_type": "repository",
+      "github_repository_id": "1310793915",
+      "name": "synergy_ai_financial_system",
+      "full_name": "Shtenco/synergy_ai_financial_system",
+      "url": "https://github.com/Shtenco/synergy_ai_financial_system",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "RND_LOCAL_TESTING",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "integer-cpmm-graph-arbitrage-simulation",
+        "dual-circuit-solvency-model",
+        "simulation-evidence-contract"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "The inspected module is a deterministic simulation/research model, not a live exchange executor or accounting/settlement authority.",
+        "Deployment claims require archive-block fork tests and external reserve/fee evidence as stated in project docs."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1310793915",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "c7e9ea9dde51500f88ed701423164309e4ae6242",
+        "audited_at": "2026-11-25",
+        "scope": "README, integer graph arbitrage simulator and scenario evidence contract"
+      }
+    },
+    {
+      "node_id": "github-repo:1364848219",
+      "node_type": "repository",
+      "github_repository_id": "1364848219",
+      "name": "synergy_graph_print_money",
+      "full_name": "Shtenco/synergy_graph_print_money",
+      "url": "https://github.com/Shtenco/synergy_graph_print_money",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1364848219",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1336910945",
+      "node_type": "repository",
+      "github_repository_id": "1336910945",
+      "name": "synergy_financial_os",
+      "full_name": "Shtenco/synergy_financial_os",
+      "url": "https://github.com/Shtenco/synergy_financial_os",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "RND_FEDERATION",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "canonical-accounting-authority",
+        "accounting-recognition-contract",
+        "double-entry-balance-validation"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Main branch is a contract-level implementation, not the full Financial OS runtime described in README.",
+        "Accounting authority does not itself execute payments or prove external settlement."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1336910945",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+        "audited_at": "2026-11-25",
+        "scope": "README, accounting-recognition contract and contract tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1465066858",
+      "node_type": "repository",
+      "github_repository_id": "1465066858",
+      "name": "timeweb_synergy_benchmark_statistics",
+      "full_name": "Shtenco/timeweb_synergy_benchmark_statistics",
+      "url": "https://github.com/Shtenco/timeweb_synergy_benchmark_statistics",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "unknown",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "wilson-proportion-intervals",
+        "paired-seed-difference-t-interval",
+        "sample-size-approximation"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465066858",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "9d6db41edc273189fe4795b3803f98181cff02be",
+        "audited_at": "2026-11-25",
+        "scope": "README, uncertainty analysis, tests and archived result"
+      }
+    },
+    {
+      "node_id": "github-repo:1397603060",
+      "node_type": "repository",
+      "github_repository_id": "1397603060",
+      "name": "synergy_computing_topology",
+      "full_name": "Shtenco/synergy_computing_topology",
+      "url": "https://github.com/Shtenco/synergy_computing_topology",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "correctness-first-compression-harness",
+        "deterministic-batch-validation",
+        "persistent-cache-recovery-tests",
+        "compact-descriptor-index-benchmark"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "These are archived results, not tests rerun in this audit session.",
+        "No OS-wide, arbitrary-workload or production kernel performance claim is supported.",
+        "Kernel module runtime on the current host was explicitly not tested."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1397603060",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+        "audited_at": "2026-11-25",
+        "scope": "README, V4 correctness harness, archived gate results and validation report"
+      }
+    },
+    {
+      "node_id": "github-repo:1428731702",
+      "node_type": "repository",
+      "github_repository_id": "1428731702",
+      "name": "synergy_meta_api",
+      "full_name": "Shtenco/synergy_meta_api",
+      "url": "https://github.com/Shtenco/synergy_meta_api",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-rnd",
+      "category": "protocol-transport",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "local-tool-registry",
+        "mcp-json-rpc-subset",
+        "deny-by-default-policy",
+        "operator-configured-get-connectors"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Not full MCP streaming, sessions, OAuth, A2A, production tenancy or public-safe external execution.",
+        "No runtime integration to the 22 proposed routers is proven."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1428731702",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+        "audited_at": "2026-11-25",
+        "scope": "README, deny-by-default policy and execution API"
+      }
+    },
+    {
+      "node_id": "github-repo:1344028054",
+      "node_type": "repository",
+      "github_repository_id": "1344028054",
+      "name": "synergy_app",
+      "full_name": "Shtenco/synergy_app",
+      "url": "https://github.com/Shtenco/synergy_app",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "android-ios-web-finance-client-source",
+        "source-integrity-contract",
+        "restricted-android-permissions"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Source verification does not prove a built, signed or store-published artifact; README explicitly separates these states.",
+        "Main branch includes binary finance-next source parts whose full provenance/build integration needs separate audit."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1344028054",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
+        "audited_at": "2026-11-25",
+        "scope": "README, mobile release contract and Android manifest"
+      }
+    },
+    {
+      "node_id": "github-repo:1151919657",
+      "node_type": "repository",
+      "github_repository_id": "1151919657",
+      "name": "synergy_midas_ai_trading_system",
+      "full_name": "Shtenco/synergy_midas_ai_trading_system",
+      "url": "https://github.com/Shtenco/synergy_midas_ai_trading_system",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "modular-strategy-pipeline",
+        "signal-fusion",
+        "adaptive-policy",
+        "portfolio-optimizer",
+        "risk-veto",
+        "audit-archive",
+        "fastapi-control-center"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "README lists these as P0/P1 findings; this review confirmed the relevant source paths but did not run the test suite.",
+        "Legacy scripts coexist with modular package; authority path and historical code still require isolation.",
+        "No live broker execution or independent audited PnL is established by this main-branch package."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1151919657",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+        "audited_at": "2026-11-25",
+        "scope": "README critical findings, decision pipeline, risk engine, API/WebSocket, MT5 simulator, signal fusion and archive service"
+      }
+    },
+    {
+      "node_id": "github-repo:1167196077",
+      "node_type": "repository",
+      "github_repository_id": "1167196077",
+      "name": "synergy_agi_olga",
+      "full_name": "Shtenco/synergy_agi_olga",
+      "url": "https://github.com/Shtenco/synergy_agi_olga",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1167196077",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1366684382",
+      "node_type": "repository",
+      "github_repository_id": "1366684382",
+      "name": "synergy_chain_print_money",
+      "full_name": "Shtenco/synergy_chain_print_money",
+      "url": "https://github.com/Shtenco/synergy_chain_print_money",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_ai_blockchain"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1366684382",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1370636640",
+      "node_type": "repository",
+      "github_repository_id": "1370636640",
+      "name": "synergy_gllm_nexus",
+      "full_name": "Shtenco/synergy_gllm_nexus",
+      "url": "https://github.com/Shtenco/synergy_gllm_nexus",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "typed-hypergraph-cognition",
+        "persistent-graph-memory",
+        "temporal-causal-reasoning",
+        "russian-neural-graph-compiler",
+        "recurrent-graph-cortex",
+        "policy-gated-moe-routing"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "Runtime is not in default main; branch is dated 2026-09-20 and must be explicitly pinned before use.",
+        "Benchmark results are synthetic/frozen protocol results, not real-world general intelligence or production performance.",
+        "FTX1 sealed blind contents were not accessed; no claim about its final score is made.",
+        "The graph-native runtime is a distinct cognitive hypergraph, not a substitute for the repository-dependency/evidence graph."
+      ],
+      "audit_status": "branch_only_prototype",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1370636640",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "branch_only_prototype",
+        "commit": "a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
+        "audited_at": "2026-11-25",
+        "scope": "unified-v3-generalization-first branch README, graph-native runtime, MoE router and frozen benchmark artifacts; main is docs/registry only"
+      }
+    },
+    {
+      "node_id": "github-repo:1371942189",
+      "node_type": "repository",
+      "github_repository_id": "1371942189",
+      "name": "synergy_messenger",
+      "full_name": "Shtenco/synergy_messenger",
+      "url": "https://github.com/Shtenco/synergy_messenger",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "maturity": "HARDENED_ALPHA",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [
+        "Main branch does not substantiate the claimed messenger runtime; branch/tag code must be separately audited before reuse.",
+        "No cryptographic implementation or P2P messaging behavior is verified by this main-branch snapshot."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1371942189",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+        "audited_at": "2026-11-25",
+        "scope": "README, package manifest and complete main-branch tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1351698135",
+      "node_type": "repository",
+      "github_repository_id": "1351698135",
+      "name": "synergy_motherboard_xpu_xml",
+      "full_name": "Shtenco/synergy_motherboard_xpu_xml",
+      "url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "parameterized-xpu-area-bandwidth-power-model",
+        "eml-q16-reference-profile",
+        "hardware-floorplan-and-rtl-roadmap"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "No fabricated silicon, FPGA timing closure, synthesized area/energy or production hardware benchmark is established.",
+        "7.077888 T EML primitives/s is an analytical ceiling under modeled assumptions, not FLOPS or measured throughput."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1351698135",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "10f2d999004ae83956239d954c452113dadb8bcc",
+        "audited_at": "2026-11-25",
+        "scope": "README, analytical XPU model and deterministic EML Q16.16 reference evaluator"
+      }
+    },
+    {
+      "node_id": "github-repo:1376377374",
+      "node_type": "repository",
+      "github_repository_id": "1376377374",
+      "name": "synergy_midas_institutional",
+      "full_name": "Shtenco/synergy_midas_institutional",
+      "url": "https://github.com/Shtenco/synergy_midas_institutional",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "institutional-assessment-stage-machine",
+        "injected-validation-and-risk-hooks",
+        "bounded-notional-output"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Quality and provenance of injected validator/risk functions are outside this repository's core.",
+        "The institutional assessment is not itself a canonical risk veto or execution adapter."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376377374",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "6eb09ac2b2c72bf7ec6aaa26390136f9013efd58",
+        "audited_at": "2026-11-25",
+        "scope": "README, bounded assessment core, contract and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1341358637",
+      "node_type": "repository",
+      "github_repository_id": "1341358637",
+      "name": "synergy_blochain_budget",
+      "full_name": "Shtenco/synergy_blochain_budget",
+      "url": "https://github.com/Shtenco/synergy_blochain_budget",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1341358637",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1368484353",
+      "node_type": "repository",
+      "github_repository_id": "1368484353",
+      "name": "synergy_ai_company",
+      "full_name": "Shtenco/synergy_ai_company",
+      "url": "https://github.com/Shtenco/synergy_ai_company",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_agentic_ai_economy",
+        "Shtenco/synergy_agi_autopilot",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "No autonomous company runtime, agent role engine, process execution or integration is established."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1368484353",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete repository tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1420783404",
+      "node_type": "repository",
+      "github_repository_id": "1420783404",
+      "name": "synergy_ai_economic",
+      "full_name": "Shtenco/synergy_ai_economic",
+      "url": "https://github.com/Shtenco/synergy_ai_economic",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-rnd",
+      "category": "finance-economy",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "economic-model-documentation",
+        "scenario-visualization"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "no executable model in current main"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1420783404",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1376377980",
+      "node_type": "repository",
+      "github_repository_id": "1376377980",
+      "name": "synergy_adaptive_engine",
+      "full_name": "Shtenco/synergy_adaptive_engine",
+      "url": "https://github.com/Shtenco/synergy_adaptive_engine",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "bounded-online-expert-weighting",
+        "volatility-regime-classification",
+        "enterprise-rbac-audit"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_quantlab",
+        "Shtenco/synergy_riskguard",
+        "Shtenco/synergy_ai_investment_committee"
+      ],
+      "risks": [
+        "No out-of-sample or live trading validation was executed in this review.",
+        "Core input validation for finite rewards/threshold ordering should be strengthened before adversarial or production use."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376377980",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "f0622aa6d60be3c47d2ac752b9ef686e6dac6c5b",
+        "audited_at": "2026-11-25",
+        "scope": "README, adaptive ensemble core and market-regime contract"
+      }
+    },
+    {
+      "node_id": "github-repo:1365353815",
+      "node_type": "repository",
+      "github_repository_id": "1365353815",
+      "name": "synergy_app_family",
+      "full_name": "Shtenco/synergy_app_family",
+      "url": "https://github.com/Shtenco/synergy_app_family",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "client-ui",
+        "control-plane"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_apps"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1365353815",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1368539352",
+      "node_type": "repository",
+      "github_repository_id": "1368539352",
+      "name": "synergy_shttps",
+      "full_name": "Shtenco/synergy_shttps",
+      "url": "https://github.com/Shtenco/synergy_shttps",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "protocol-transport",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_shhts",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_post_quantum_radio",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1368539352",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1171792036",
+      "node_type": "repository",
+      "github_repository_id": "1171792036",
+      "name": "shtencoauantai.github.io",
+      "full_name": "Shtenco/shtencoauantai.github.io",
+      "url": "https://github.com/Shtenco/shtencoauantai.github.io",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "presentation",
+      "category": "presentation",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "public-presentation",
+        "navigation"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1171792036",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1364435985",
+      "node_type": "repository",
+      "github_repository_id": "1364435985",
+      "name": "synergy_crypto_pump",
+      "full_name": "Shtenco/synergy_crypto_pump",
+      "url": "https://github.com/Shtenco/synergy_crypto_pump",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1364435985",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1336911571",
+      "node_type": "repository",
+      "github_repository_id": "1336911571",
+      "name": "synergy_eurasian",
+      "full_name": "Shtenco/synergy_eurasian",
+      "url": "https://github.com/Shtenco/synergy_eurasian",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "MODEL_SPEC_READY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1336911571",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1376378295",
+      "node_type": "repository",
+      "github_repository_id": "1376378295",
+      "name": "synergy_trademux",
+      "full_name": "Shtenco/synergy_trademux",
+      "url": "https://github.com/Shtenco/synergy_trademux",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution",
+        "execution-planning"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376378295",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1376378125",
+      "node_type": "repository",
+      "github_repository_id": "1376378125",
+      "name": "synergy_marketvision",
+      "full_name": "Shtenco/synergy_marketvision",
+      "url": "https://github.com/Shtenco/synergy_marketvision",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "ohlcv-window-feature-cube",
+        "robust-per-window-scaling",
+        "market-feature-summary-contract"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Feature cube is not a forecast or trading signal; it excludes order book, bid/ask and cross-asset context.",
+        "Scaling occurs within the current window and the summary compresses the tensor heavily; downstream OOS ablation is required to prove value."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376378125",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "d1018cba6b6c977ba8dce43ba8257601c0e2fe64",
+        "audited_at": "2026-11-25",
+        "scope": "README, OHLCV feature cube and market-features contract"
+      }
+    },
+    {
+      "node_id": "github-repo:1465066359",
+      "node_type": "repository",
+      "github_repository_id": "1465066359",
+      "name": "synergy_agent_long_term_memory",
+      "full_name": "Shtenco/synergy_agent_long_term_memory",
+      "url": "https://github.com/Shtenco/synergy_agent_long_term_memory",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "unknown",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465066359",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "a3c4f4aebc69f741f6c380682b882b9a106f0d17",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete repository tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1317273998",
+      "node_type": "repository",
+      "github_repository_id": "1317273998",
+      "name": "synegy_ai_compress",
+      "full_name": "Shtenco/synegy_ai_compress",
+      "url": "https://github.com/Shtenco/synegy_ai_compress",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compression-benchmark-dossier",
+        "multi-dataset-profile-comparison",
+        "fresh-vs-historical-result-labels"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "The compression engine implementation cannot be independently rebuilt from this repository alone until the submodule URL and exact source are available.",
+        "Benchmark score tables are not proof of general compression superiority; workload, quality, compute and full amortized model costs must be compared."
+      ],
+      "audit_status": "benchmark_dossier",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1317273998",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "benchmark_dossier",
+        "commit": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+        "audited_at": "2026-11-25",
+        "scope": "README, extended benchmark artifacts, environment metadata and source_snapshot gitlink; no engine source inspected"
+      }
+    },
+    {
+      "node_id": "github-repo:1428810995",
+      "node_type": "repository",
+      "github_repository_id": "1428810995",
+      "name": "synergy_ai_workspace",
+      "full_name": "Shtenco/synergy_ai_workspace",
+      "url": "https://github.com/Shtenco/synergy_ai_workspace",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-rnd",
+      "category": "apps-interface",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "localhost-control-plane",
+        "sqlite-wal-task-lead-audit-store",
+        "policy-limited-local-workflow",
+        "capital-import-provenance",
+        "explicit-human-approval"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Release branch README says Windows installer and GUI E2E are not confirmed; not a production desktop release.",
+        "No tenant separation in the inspected local schema; not a public multi-tenant SaaS backend.",
+        "Main branch is README-only; branch code must not be described as merged main functionality."
+      ],
+      "audit_status": "branch_only_prototype",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1428810995",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "branch_only_prototype",
+        "commit": "5483f61106e626267c521cf64be8eaeb82448fba",
+        "audited_at": "2026-11-25",
+        "scope": "main README plus release/v1.0-desktop-rc local service, orchestrator and capital engine"
+      }
+    },
+    {
+      "node_id": "github-repo:1341273613",
+      "node_type": "repository",
+      "github_repository_id": "1341273613",
+      "name": "synergy_nexus_science_agent",
+      "full_name": "Shtenco/synergy_nexus_science_agent",
+      "url": "https://github.com/Shtenco/synergy_nexus_science_agent",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration",
+        "nexus"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_cold_nuclear"
+      ],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1341273613",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1293271223",
+      "node_type": "repository",
+      "github_repository_id": "1293271223",
+      "name": "synergy_binary_quantum_theory",
+      "full_name": "Shtenco/synergy_binary_quantum_theory",
+      "url": "https://github.com/Shtenco/synergy_binary_quantum_theory",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-research",
+      "category": "science-research",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "scientific-research",
+        "evidence"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1293271223",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1465021493",
+      "node_type": "repository",
+      "github_repository_id": "1465021493",
+      "name": "timeweb_synergy_binary_neural_networks",
+      "full_name": "Shtenco/timeweb_synergy_binary_neural_networks",
+      "url": "https://github.com/Shtenco/timeweb_synergy_binary_neural_networks",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "unknown",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [
+        "source-audit-pending",
+        "ecosystem-role-not-yet-classified"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465021493",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1165635662",
+      "node_type": "repository",
+      "github_repository_id": "1165635662",
+      "name": "synergy_turbo_linux",
+      "full_name": "Shtenco/synergy_turbo_linux",
+      "url": "https://github.com/Shtenco/synergy_turbo_linux",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "SECURITY_BLOCKED",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "siphash-sealed-capabilities",
+        "64-level-bitmap-priority-scheduler",
+        "bounded-spsc-ipc-ring",
+        "x86-64-fast-path-lab"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "Microbenchmarks are not OS-wide acceleration claims; remote orchestration is a separate historical track.",
+        "Capability generation is MAC-bound but inspected resolve path does not consult a revocation/current-generation registry.",
+        "Old SSH credential must remain treated as compromised until revoked at every authorized host."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1165635662",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "c5ee1119369cd90c9ff23b346a405ac3e8bc6cad",
+        "audited_at": "2026-11-25",
+        "scope": "README, Turbo Core capability/scheduler/IPC implementation and historical SSH key incident report"
+      }
+    },
+    {
+      "node_id": "github-repo:1341273955",
+      "node_type": "repository",
+      "github_repository_id": "1341273955",
+      "name": "synergy_net",
+      "full_name": "Shtenco/synergy_net",
+      "url": "https://github.com/Shtenco/synergy_net",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "protocol-transport",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "planned-p2p-mesh-architecture",
+        "authenticated-transport-evidence-contract",
+        "content-addressed-transport-metadata"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synegy_ai_compress",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_turbo_linux"
+      ],
+      "risks": [
+        "Inspected runtime file is a contract/evidence helper, not a complete P2P transport implementation.",
+        "No measured network throughput, latency, multipath, peer discovery or production post-quantum session is established."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1341273955",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "84fbfb842be97e5c2195c30e7c4188e5af813001",
+        "audited_at": "2026-11-25",
+        "scope": "README, transport evidence contract and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1426159613",
+      "node_type": "repository",
+      "github_repository_id": "1426159613",
+      "name": "synergy.github.io",
+      "full_name": "Shtenco/synergy.github.io",
+      "url": "https://github.com/Shtenco/synergy.github.io",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "presentation",
+      "category": "presentation",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "public-web-portal",
+        "product-navigation",
+        "static-ui"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "frontend source does not prove backend services or production business workflows"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1426159613",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1456604903",
+      "node_type": "repository",
+      "github_repository_id": "1456604903",
+      "name": "synergy_metaverse",
+      "full_name": "Shtenco/synergy_metaverse",
+      "url": "https://github.com/Shtenco/synergy_metaverse",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-rnd",
+      "category": "apps-interface",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "metaverse-concept"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "no executable implementation in current main"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1456604903",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1459873284",
+      "node_type": "repository",
+      "github_repository_id": "1459873284",
+      "name": "shtenco_micro_ai",
+      "full_name": "Shtenco/shtenco_micro_ai",
+      "url": "https://github.com/Shtenco/shtenco_micro_ai",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-rnd",
+      "category": "compute-os",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "local-model-inference",
+        "MNN-runtime",
+        "INT4-model-download",
+        "benchmarking"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "model weights are external and not stored in Git",
+        "main inference workflow failed on the inspected main SHA; log cause unavailable",
+        "no device-specific throughput or accuracy qualification established"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1459873284",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1368537298",
+      "node_type": "repository",
+      "github_repository_id": "1368537298",
+      "name": "synergy_shhts",
+      "full_name": "Shtenco/synergy_shhts",
+      "url": "https://github.com/Shtenco/synergy_shhts",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "protocol-transport",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_shttps",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "Keep as a research concept until a byte-level format, decoder and round-trip tests are committed."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1368537298",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1376377837",
+      "node_type": "repository",
+      "github_repository_id": "1376377837",
+      "name": "synergy_market_maker",
+      "full_name": "Shtenco/synergy_market_maker",
+      "url": "https://github.com/Shtenco/synergy_market_maker",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "inventory-skewed-liquidity-quote",
+        "reservation-price-heuristic",
+        "hedge-notional-proposal",
+        "enterprise-api-and-audit"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "No order-book depth, queue position, adverse selection, fill probability, venue latency, cancel/replace, multi-venue inventory or realized maker P&L in the core.",
+        "MMConfig has no explicit parameter validation for gamma/kappa/horizon/max_inventory/min spread; malformed config can produce invalid geometry or math errors.",
+        "Quote and hedge notional are proposals, not orders or fills."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376377837",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3edcea187c45866d55a65b74dc707b7b1009a69b",
+        "audited_at": "2026-11-25",
+        "scope": "README, quote core and non-authorizing liquidity quote contract"
+      }
+    },
+    {
+      "node_id": "github-repo:1465024116",
+      "node_type": "repository",
+      "github_repository_id": "1465024116",
+      "name": "timeweb_synergy_ai_infrastructure_agent",
+      "full_name": "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "url": "https://github.com/Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "unknown",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "allowlist-policy-evaluation",
+        "human-review-action-proposal"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465024116",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "6fb12232e07a82d86a6689d8aa0d1c6efde453d3",
+        "audited_at": "2026-11-25",
+        "scope": "README and allowlisted action planner"
+      }
+    },
+    {
+      "node_id": "github-repo:1465067741",
+      "node_type": "repository",
+      "github_repository_id": "1465067741",
+      "name": "timeweb_synergy_fault_injection_lab",
+      "full_name": "Shtenco/timeweb_synergy_fault_injection_lab",
+      "url": "https://github.com/Shtenco/timeweb_synergy_fault_injection_lab",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "two-process-localhost-fault-injection",
+        "retry-failover-experiment",
+        "archived-json-csv-measurements"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465067741",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "53585459cefbc3956f1601feaaece80d68da7170",
+        "audited_at": "2026-11-25",
+        "scope": "README, two-replica experiment, QA validator, evidence scope and results"
+      }
+    },
+    {
+      "node_id": "github-repo:1091998611",
+      "node_type": "repository",
+      "github_repository_id": "1091998611",
+      "name": "3D_bars_market_structure",
+      "full_name": "Shtenco/3D_bars_market_structure",
+      "url": "https://github.com/Shtenco/3D_bars_market_structure",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1091998611",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1394514826",
+      "node_type": "repository",
+      "github_repository_id": "1394514826",
+      "name": "synergy_complex_matrix_multiplication",
+      "full_name": "Shtenco/synergy_complex_matrix_multiplication",
+      "url": "https://github.com/Shtenco/synergy_complex_matrix_multiplication",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "compute",
+        "runtime",
+        "compression-or-os"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1394514826",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1391275828",
+      "node_type": "repository",
+      "github_repository_id": "1391275828",
+      "name": "synergy_post_quantum_radio",
+      "full_name": "Shtenco/synergy_post_quantum_radio",
+      "url": "https://github.com/Shtenco/synergy_post_quantum_radio",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "protocol-transport",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "networking",
+        "secure-transport",
+        "protocol"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_meta_os"
+      ],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1391275828",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1091973987",
+      "node_type": "repository",
+      "github_repository_id": "1091973987",
+      "name": "swap_arbitrage_metatrader_5",
+      "full_name": "Shtenco/swap_arbitrage_metatrader_5",
+      "url": "https://github.com/Shtenco/swap_arbitrage_metatrader_5",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1091973987",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1387121392",
+      "node_type": "repository",
+      "github_repository_id": "1387121392",
+      "name": "synergy_agentic_ai_economy",
+      "full_name": "Shtenco/synergy_agentic_ai_economy",
+      "url": "https://github.com/Shtenco/synergy_agentic_ai_economy",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "RND_SIMULATION",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agentic-economic-simulation",
+        "closed-ledger-model",
+        "internal-demand-and-work",
+        "hardnav-simulation"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "No live payment execution or real-world marketplace settlement is established by this simulation.",
+        "Historical replay includes modeled layers and must retain its own evidence/assumption labels."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1387121392",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+        "audited_at": "2026-11-25",
+        "scope": "README, economy simulation contract, ledger and closed-economy tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1317622231",
+      "node_type": "repository",
+      "github_repository_id": "1317622231",
+      "name": "synergy_pay_system",
+      "full_name": "Shtenco/synergy_pay_system",
+      "url": "https://github.com/Shtenco/synergy_pay_system",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "multi-provider-quote-routing",
+        "provider-capability-registry",
+        "fail-closed-live-readiness",
+        "execution-coordinator",
+        "paper-settlement-state-machine"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Inspected SettlementEngine stores records and idempotency keys in process memory; this is not durable cross-process exactly-once settlement.",
+        "A crash after external provider execution but before ledger posting requires durable outbox/reconciliation evidence beyond the in-memory path inspected.",
+        "Source review does not prove access to live bank/CBDC/venue accounts or regulatory authorization."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1317622231",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+        "audited_at": "2026-11-25",
+        "scope": "README, live readiness, execution coordinator, provider registry and settlement engine"
+      }
+    },
+    {
+      "node_id": "github-repo:1341271800",
+      "node_type": "repository",
+      "github_repository_id": "1341271800",
+      "name": "synergy_agi_nexus",
+      "full_name": "Shtenco/synergy_agi_nexus",
+      "url": "https://github.com/Shtenco/synergy_agi_nexus",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "canonical-nexus-intelligence-target",
+        "model-generation-governance",
+        "typed-ai-proposal-contract"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_agi_olga",
+        "Shtenco/synergy_nexus_science_agent",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_chain",
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "risks": [
+        "README describes target canonical architecture; this review does not prove all listed generations are production-integrated.",
+        "No cross-repository runtime call is established by the proposal contract alone."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1341271800",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "997dbe4934f3f114a36d34bc2b0a719eae1f6a6f",
+        "audited_at": "2026-11-25",
+        "scope": "README, AI proposal contract and contract tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1316045651",
+      "node_type": "repository",
+      "github_repository_id": "1316045651",
+      "name": "synergy_algotrading_graph_system",
+      "full_name": "Shtenco/synergy_algotrading_graph_system",
+      "url": "https://github.com/Shtenco/synergy_algotrading_graph_system",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [
+        "Do not treat the architecture specification as an executable arbitrage engine."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1316045651",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "5fb87036fe833a6e7939654469766c86f92533ee",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1463301548",
+      "node_type": "repository",
+      "github_repository_id": "1463301548",
+      "name": "synergy_long_term_harness",
+      "full_name": "Shtenco/synergy_long_term_harness",
+      "url": "https://github.com/Shtenco/synergy_long_term_harness",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-rnd",
+      "category": "agi-agentic",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [
+        "Cannot be treated as the federation-wide long-term test harness until implementation exists."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1463301548",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1465022679",
+      "node_type": "repository",
+      "github_repository_id": "1465022679",
+      "name": "timeweb_synergy_codebase_intelligence",
+      "full_name": "Shtenco/timeweb_synergy_codebase_intelligence",
+      "url": "https://github.com/Shtenco/timeweb_synergy_codebase_intelligence",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "inventory_only_unreviewed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465022679",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1465065775",
+      "node_type": "repository",
+      "github_repository_id": "1465065775",
+      "name": "timeweb_synergy_service_recovery",
+      "full_name": "Shtenco/timeweb_synergy_service_recovery",
+      "url": "https://github.com/Shtenco/timeweb_synergy_service_recovery",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "fault-scenario-state-simulation",
+        "approval-gate-for-destructive-restore"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "README describes local HTTP/SQLite restarts, but inspected source path does not demonstrate that claim."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465065775",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "d350865dbf602c3b518ec0a1f6e183e6d0438d80",
+        "audited_at": "2026-11-25",
+        "scope": "README, recovery scenario and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1165602026",
+      "node_type": "repository",
+      "github_repository_id": "1165602026",
+      "name": "midas_lite",
+      "full_name": "Shtenco/midas_lite",
+      "url": "https://github.com/Shtenco/midas_lite",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "eurusd-h1-statistical-specialist",
+        "sealed-oos-reporting",
+        "sqlite-agent-memory",
+        "legacy-mt5-execution-path"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "The presence of order_send means the legacy script can attempt real broker orders depending on terminal/account configuration; do not run outside isolated demo until all paths are audited and execution is explicitly disabled by default.",
+        "No broker-confirmed PnL or live MT5 test is established by the README's research reports.",
+        "Legacy and specialist lines should be isolated; research reports are not permission to execute."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1165602026",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+        "audited_at": "2026-11-25",
+        "scope": "README, legacy MT5 agent source and sealed EURUSD H1 research evidence"
+      }
+    },
+    {
+      "node_id": "github-repo:1331946228",
+      "node_type": "repository",
+      "github_repository_id": "1331946228",
+      "name": "synergy_usds",
+      "full_name": "Shtenco/synergy_usds",
+      "url": "https://github.com/Shtenco/synergy_usds",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "SECURITY_BLOCKED",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "usds-mint-sell-pp-economic-model",
+        "base-fork-experiment",
+        "foundry-test-and-deploy-script"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_ai_blockchain",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "Keep ARCHITECTURAL_ONLY and block deployment/federation until rotation, history cleanup, secret scanning and independent verification are complete.",
+        "Economic model's external value-added assumption is scenario input, not profit generated by mint/sell mechanics."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1331946228",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "0234edac62492ceff8af8195506aa1cef672ada1",
+        "audited_at": "2026-11-25",
+        "scope": "README, explicit security blocker, gitignore and deployment script; secret file contents deliberately not inspected"
+      }
+    },
+    {
+      "node_id": "github-repo:1413525853",
+      "node_type": "repository",
+      "github_repository_id": "1413525853",
+      "name": "synergy_ai_llm_rwkv",
+      "full_name": "Shtenco/synergy_ai_llm_rwkv",
+      "url": "https://github.com/Shtenco/synergy_ai_llm_rwkv",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-rnd",
+      "category": "compute-os",
+      "maturity": "RND",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "weight-only-mixed-bit-quantization",
+        "bitpacked-storage",
+        "optional-low-rank-residual",
+        "triton-lowbit-matvec"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "The 700 MB target is a disk archive budget; restored FP16 checkpoint expands and requires original RWKV runner.",
+        "Full model quality parity, long-context drift and speed are unmeasured; quantization can degrade quality, especially 1-bit.",
+        "Branch implementation is experimental and not in default main."
+      ],
+      "audit_status": "branch_only_prototype",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1413525853",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "branch_only_prototype",
+        "commit": "dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
+        "audited_at": "2026-11-25",
+        "scope": "feature/rwkv7-original-weights branch quantizer, Triton low-bit matvec, evaluation harness and tests; main contains workflow/docs"
+      }
+    },
+    {
+      "node_id": "github-repo:1368875919",
+      "node_type": "repository",
+      "github_repository_id": "1368875919",
+      "name": "synergy_gguf_compress",
+      "full_name": "Shtenco/synergy_gguf_compress",
+      "url": "https://github.com/Shtenco/synergy_gguf_compress",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [
+        "Shtenco/synergy_meta_os"
+      ],
+      "risks": [
+        "Do not treat the repository as an implemented GGUF compressor."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1368875919",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "c1882525e12f4662c30851cf1a7995a957cba543",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1168765679",
+      "node_type": "repository",
+      "github_repository_id": "1168765679",
+      "name": "synergy_ai_trade_terminal",
+      "full_name": "Shtenco/synergy_ai_trade_terminal",
+      "url": "https://github.com/Shtenco/synergy_ai_trade_terminal",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "mt5-data-and-orderbook-collector",
+        "flask-socketio-dashboard",
+        "cassandra-api-integration",
+        "order-tester"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "Treat embedded credentials and issued tokens as exposed; rotate/revoke them and remove sensitive history after rotation.",
+        "No evidence of tenant isolation or production-grade secret management was established.",
+        "Order execution paths require separate authorization, demo-only testing and explicit operator confirmation."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1168765679",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "e53064ec6741dce47ee10a5f30b798c0cf4daa2a",
+        "audited_at": "2026-11-25",
+        "scope": "README, Cassandra terminal source and process supervisor"
+      }
+    },
+    {
+      "node_id": "github-repo:1317824815",
+      "node_type": "repository",
+      "github_repository_id": "1317824815",
+      "name": "synergy_chain",
+      "full_name": "Shtenco/synergy_chain",
+      "url": "https://github.com/Shtenco/synergy_chain",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "blockchain-protocol",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "packaged-growth-os-source-archive",
+        "static-pages-subset",
+        "evm-qe-v10-research-testbed"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Source archive is not expanded in the repository; reproducibility depends on archive integrity and its internal lock/dependencies.",
+        "QE V10 custom tokens and bridge contracts are research fixtures, not production ERC20/bridge contracts.",
+        "Pages deployment cannot run backend sessions, CRM writes, vault or live model calls."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1317824815",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "0f731f56c3f067095d3a2ff89f7e73bdc7365177",
+        "audited_at": "2026-11-25",
+        "scope": "README, packaged source boundary, QE V10 Solidity contracts and Foundry tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1465066578",
+      "node_type": "repository",
+      "github_repository_id": "1465066578",
+      "name": "timeweb_synergy_rag_quality_cost",
+      "full_name": "Shtenco/timeweb_synergy_rag_quality_cost",
+      "url": "https://github.com/Shtenco/timeweb_synergy_rag_quality_cost",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "retrieval-recall-diagnostic",
+        "answer-claim-support-rate-diagnostic"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465066578",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "a5ec554db4f10ec5076be74f8283603cb1fedf3d",
+        "audited_at": "2026-11-25",
+        "scope": "README, diagnostic function and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1465262827",
+      "node_type": "repository",
+      "github_repository_id": "1465262827",
+      "name": "timeweb_synergy_agent_long_term_memory",
+      "full_name": "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "url": "https://github.com/Shtenco/timeweb_synergy_agent_long_term_memory",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "unknown",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "sqlite-exact-record-persistence",
+        "cross-connection-state-persistence"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465262827",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "2bcb732a92fe8053c18f913edb1318ac21ef3620",
+        "audited_at": "2026-11-25",
+        "scope": "README and SQLite experiment"
+      }
+    },
+    {
+      "node_id": "github-repo:1351534269",
+      "node_type": "repository",
+      "github_repository_id": "1351534269",
+      "name": "synergy_metachain",
+      "full_name": "Shtenco/synergy_metachain",
+      "url": "https://github.com/Shtenco/synergy_metachain",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "blockchain-protocol",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "finalized-commitment-gate",
+        "in-memory-replay-guard",
+        "source-event-digest-binding"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Replay state is an in-memory Python set and is lost on process restart; replay can be accepted after restart unless a durable store is added.",
+        "The consumer trusts the supplied FINALIZED flag and digest; it does not verify signatures, chain RPC, light-client proofs, validator set, Merkle/SPV proofs or reorgs.",
+        "This is a local trust/replay gate, not a full cross-chain bridge."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1351534269",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "a568a5afaea5bf2ca8f68202d2c64856367316ad",
+        "audited_at": "2026-11-25",
+        "scope": "README, trust/replay consumer and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1409209832",
+      "node_type": "repository",
+      "github_repository_id": "1409209832",
+      "name": "synergy_triangle_money_system",
+      "full_name": "Shtenco/synergy_triangle_money_system",
+      "url": "https://github.com/Shtenco/synergy_triangle_money_system",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow",
+        "hardnav",
+        "triangular-economy"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1409209832",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1376376805",
+      "node_type": "repository",
+      "github_repository_id": "1376376805",
+      "name": "synergy_quantlab",
+      "full_name": "Shtenco/synergy_quantlab",
+      "url": "https://github.com/Shtenco/synergy_quantlab",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "purged-walk-forward-splits",
+        "cost-adjusted-return-metrics",
+        "research-paper-canary-gate"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Sharpe uses simple sample standard deviation without autocorrelation/Newey-West correction; no probabilistic Sharpe, multiple-testing correction, bootstrap CI or nonlinear impact model.",
+        "Dataset manifest digest is optional and the inspected contract does not verify its format or fetch the dataset itself.",
+        "No tests were executed during this audit; README's local test status remains documentary evidence."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376376805",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "57ee40a6879c0db6550b573aacadad27347fb2db",
+        "audited_at": "2026-11-25",
+        "scope": "README, purged walk-forward core and validation decision contract"
+      }
+    },
+    {
+      "node_id": "github-repo:1376376981",
+      "node_type": "repository",
+      "github_repository_id": "1376376981",
+      "name": "synergy_riskguard",
+      "full_name": "Shtenco/synergy_riskguard",
+      "url": "https://github.com/Shtenco/synergy_riskguard",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "independent-pretrade-risk-veto",
+        "historical-var-cvar",
+        "drawdown-and-exposure-limits",
+        "tenant-rbac-jwt",
+        "audit-and-metrics"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_quantlab",
+        "Shtenco/synergy_trademux",
+        "Shtenco/synergy_financial_os"
+      ],
+      "risks": [
+        "historical_var and cvar return 0.0 when fewer than five returns are supplied; decide may then treat missing/insufficient history as zero market risk instead of failing closed.",
+        "Core decide uses abs(order.notional) and does not independently reject negative notional or invalid side; contract adapter checks positive notional, but direct callers can bypass that layer.",
+        "Local smoke and benchmarks are not production SLA or realized trading evidence."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376376981",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "e5ba5eab09e42ac25c695740bdc464ef3617c33c",
+        "audited_at": "2026-11-25",
+        "scope": "README, risk core, typed risk contract, enterprise service and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1341273343",
+      "node_type": "repository",
+      "github_repository_id": "1341273343",
+      "name": "synergy_system",
+      "full_name": "Shtenco/synergy_system",
+      "url": "https://github.com/Shtenco/synergy_system",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "architecture-governance",
+      "maturity": "ARCHITECTURAL_MASTER",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "federation-governance",
+        "canonical-contract-registry",
+        "authority-boundaries",
+        "typed-event-envelope"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "README owner inventory says 92 and config/repository_federation_v2.yaml says 75 as of 2026-09-28; both are stale relative to current 112-node inventory.",
+        "The governance registry is the existing authority; Hypergraph V3 should project/reference it rather than create a competing contract authority.",
+        "Zero E2E-tested edges means adapter declarations must not be treated as working integrations."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1341273343",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+        "audited_at": "2026-11-25",
+        "scope": "README governance snapshot, federation config and typed event envelope"
+      }
+    },
+    {
+      "node_id": "github-repo:1409209160",
+      "node_type": "repository",
+      "github_repository_id": "1409209160",
+      "name": "synergy_lead_search_engline",
+      "full_name": "Shtenco/synergy_lead_search_engline",
+      "url": "https://github.com/Shtenco/synergy_lead_search_engline",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "search-growth",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "offline-real-estate-lead-store",
+        "fts5-search",
+        "rule-based-intent-candidates",
+        "human-review-audit",
+        "approval-gated-crm-outbox"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "No tenant_id isolation is present in inspected document/review/outbox schema; single operator token is not a multi-tenant authorization model.",
+        "No production deployment, external crawler or upgraded ML ranker is proven.",
+        "Configured CRM webhook checks HTTPS but does not enforce a fixed Bitrix24 host allowlist; outbound target is environment-controlled and should be hardened before hosting untrusted tenants."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1409209160",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+        "audited_at": "2026-11-25",
+        "scope": "README, SQLite/FTS5 lead store, token-protected API, CRM approval dispatcher and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1376377560",
+      "node_type": "repository",
+      "github_repository_id": "1376377560",
+      "name": "synergy_relative_value",
+      "full_name": "Shtenco/synergy_relative_value",
+      "url": "https://github.com/Shtenco/synergy_relative_value",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "ols-pair-fit",
+        "spread-zscore",
+        "heuristic-carry-score",
+        "relative-value-signal-contract"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "OLS fit and high z-score do not establish cointegration, stationarity or stable hedge ratio; README explicitly lists these missing tests.",
+        "No costs, borrow/funding, liquidity, asynchronous price or selection-bias model in the core."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376377560",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ef2a44ea4d5551dccbda4b24d9b0a0d06d9a6a77",
+        "audited_at": "2026-11-25",
+        "scope": "README, OLS pair core and non-authorizing signal contract"
+      }
+    },
+    {
+      "node_id": "github-repo:1343965302",
+      "node_type": "repository",
+      "github_repository_id": "1343965302",
+      "name": "synergy_agi_autopilot",
+      "full_name": "Shtenco/synergy_agi_autopilot",
+      "url": "https://github.com/Shtenco/synergy_agi_autopilot",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [
+        "Shtenco/synergy_agi_nexus",
+        "Shtenco/synergy_agentic_ai_economy",
+        "Shtenco/synergy_ai_coder",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_system",
+        "Shtenco/dlp_solver"
+      ],
+      "risks": [
+        "No DAG planner, agent runtime, execution engine or integration is implemented on main."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1343965302",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "65433bca107e823ebe1223646601541bb86b5d0d",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1344027509",
+      "node_type": "repository",
+      "github_repository_id": "1344027509",
+      "name": "sinergy_app",
+      "full_name": "Shtenco/sinergy_app",
+      "url": "https://github.com/Shtenco/sinergy_app",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "apps-interface",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [],
+      "declared_dependencies": [
+        "Shtenco/synergy_apps",
+        "Shtenco/synergy_app",
+        "Shtenco/sinergy_super_app",
+        "Shtenco/synergy_messenger",
+        "Shtenco/synergy_meta_os",
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_pay_system"
+      ],
+      "risks": [
+        "No UI source, package/build manifest, tests, CI, release pipeline or API client exists in main."
+      ],
+      "audit_status": "stub_confirmed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1344027509",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1318145141",
+      "node_type": "repository",
+      "github_repository_id": "1318145141",
+      "name": "synergychain.github.io",
+      "full_name": "Shtenco/synergychain.github.io",
+      "url": "https://github.com/Shtenco/synergychain.github.io",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "blockchain-protocol",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1318145141",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1357102715",
+      "node_type": "repository",
+      "github_repository_id": "1357102715",
+      "name": "print_money_synergychain",
+      "full_name": "Shtenco/print_money_synergychain",
+      "url": "https://github.com/Shtenco/print_money_synergychain",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1357102715",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1451354855",
+      "node_type": "repository",
+      "github_repository_id": "1451354855",
+      "name": "synergistic_economics",
+      "full_name": "Shtenco/synergistic_economics",
+      "url": "https://github.com/Shtenco/synergistic_economics",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-rnd",
+      "category": "finance-economy",
+      "maturity": "RND_SIMULATION",
+      "activity_band": "UNVERIFIED",
+      "capabilities": [
+        "stock-flow-consistent-model",
+        "cellular-coordination",
+        "physical-financial-balance",
+        "economic-simulation"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "preliminary simulation results require independent replication and calibration"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1451354855",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1390438988",
+      "node_type": "repository",
+      "github_repository_id": "1390438988",
+      "name": "synergy_megaproject",
+      "full_name": "Shtenco/synergy_megaproject",
+      "url": "https://github.com/Shtenco/synergy_megaproject",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "research-strategy",
+      "maturity": "ACTIVE_RESEARCH",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "strategic-research",
+        "graph"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1390438988",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1465021727",
+      "node_type": "repository",
+      "github_repository_id": "1465021727",
+      "name": "timeweb_synergy_multiagent_benchmark",
+      "full_name": "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "url": "https://github.com/Shtenco/timeweb_synergy_multiagent_benchmark",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "inventory_only_unreviewed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465021727",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1465065411",
+      "node_type": "repository",
+      "github_repository_id": "1465065411",
+      "name": "timeweb_synergy_backtest_oos_lab",
+      "full_name": "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "url": "https://github.com/Shtenco/timeweb_synergy_backtest_oos_lab",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "unknown",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "lookahead-bias-demonstration",
+        "lagged-signal-vs-leaky-signal"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465065411",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "1c116e449ca992f5bccbaa70ae98d65972a08e69",
+        "audited_at": "2026-11-25",
+        "scope": "README and leakage demonstration"
+      }
+    },
+    {
+      "node_id": "github-repo:890519259",
+      "node_type": "repository",
+      "github_repository_id": "890519259",
+      "name": "shtenco.github.io",
+      "full_name": "Shtenco/shtenco.github.io",
+      "url": "https://github.com/Shtenco/shtenco.github.io",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "presentation",
+      "category": "presentation",
+      "maturity": "PRESENTATION_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "public-presentation",
+        "navigation"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "890519259",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1091992955",
+      "node_type": "repository",
+      "github_repository_id": "1091992955",
+      "name": "global_liquidity_dataminer",
+      "full_name": "Shtenco/global_liquidity_dataminer",
+      "url": "https://github.com/Shtenco/global_liquidity_dataminer",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "federated-legacy",
+      "category": "trading-quant",
+      "maturity": "LEGACY_RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "market-data",
+        "quant-research",
+        "validation-or-execution"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1091992955",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1359110009",
+      "node_type": "repository",
+      "github_repository_id": "1359110009",
+      "name": "synergy_project",
+      "full_name": "Shtenco/synergy_project",
+      "url": "https://github.com/Shtenco/synergy_project",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "architecture-governance",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "registry",
+        "federation",
+        "architecture",
+        "governance"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_pay_system",
+        "Shtenco/synergy_algotrading_graph_system"
+      ],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1359110009",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1180497488",
+      "node_type": "repository",
+      "github_repository_id": "1180497488",
+      "name": "synergy_cashero",
+      "full_name": "Shtenco/synergy_cashero",
+      "url": "https://github.com/Shtenco/synergy_cashero",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "SECURITY_BLOCKED",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "two-token-collateral-economy",
+        "custom-erc20-like-token-contracts",
+        "cpmm-bot-and-reserve-experiments"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_system"
+      ],
+      "risks": [
+        "Treat any credentials in tracked environment files as exposed until proven otherwise; rotate/revoke and purge history if real secrets are present.",
+        "Custom token contracts and bot simulations require independent security review, fork-state evidence and reserve accounting before mainnet claims.",
+        "No external audit or verified live settlement evidence was established by this review."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1180497488",
+        "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
+        "audited_at": "2026-11-25",
+        "scope": "README, repository tree and CASRSv3/CASRGv3 Solidity token/collateral contracts; secret files not opened"
+      }
+    },
+    {
+      "node_id": "github-repo:1373708585",
+      "node_type": "repository",
+      "github_repository_id": "1373708585",
+      "name": "synergy_agi_trader",
+      "full_name": "Shtenco/synergy_agi_trader",
+      "url": "https://github.com/Shtenco/synergy_agi_trader",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "agi-agentic",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "agents",
+        "reasoning",
+        "orchestration"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1373708585",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1380118593",
+      "node_type": "repository",
+      "github_repository_id": "1380118593",
+      "name": "synergy_qe",
+      "full_name": "Shtenco/synergy_qe",
+      "url": "https://github.com/Shtenco/synergy_qe",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "STUB_SPEC_ONLY",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "no-executable-runtime-confirmed"
+      ],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1380118593",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1465022937",
+      "node_type": "repository",
+      "github_repository_id": "1465022937",
+      "name": "timeweb_synergy_cpu_language_model",
+      "full_name": "Shtenco/timeweb_synergy_cpu_language_model",
+      "url": "https://github.com/Shtenco/timeweb_synergy_cpu_language_model",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "inventory_only_unreviewed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465022937",
+        "search_page": 1
+      }
+    },
+    {
+      "node_id": "github-repo:1464742221",
+      "node_type": "repository",
+      "github_repository_id": "1464742221",
+      "name": "synergy_hierarchical_cognitive_memory_architecture",
+      "full_name": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "url": "https://github.com/Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core-candidate",
+      "category": "agi-agentic",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "hierarchical-rag-memory",
+        "commit-pinned-python-import-graph",
+        "cross-repository-inventory",
+        "candidate-dependency-ledger",
+        "contract-id-provider-matching",
+        "ci-evidence-import"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Repository identity in its own cross-repo DB is a canonical-URL hash, not GitHub's immutable provider ID; Hypergraph needs a mapping layer.",
+        "Static AST links do not prove runtime calls; candidate dependencies do not prove reachability or compatibility.",
+        "This review did not execute the test suite or validate current branch CI."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1464742221",
+        "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "8c23bcb41199f89bb9afb57ca5e0766787154fd7",
+        "audited_at": "2026-11-25",
+        "scope": "README, dependency AST scanner, cross-repository registry, contract intelligence, tests and security policy"
+      }
+    },
+    {
+      "node_id": "github-repo:1465066115",
+      "node_type": "repository",
+      "github_repository_id": "1465066115",
+      "name": "timeweb_synergy_cpu_gpu_cost_benchmark",
+      "full_name": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "url": "https://github.com/Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "assumption-based-compute-cost-estimation"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "No live provider tariffs or paid GPU bills; inspected tree exposes no independent GPU harness. README's local CPU measurement claim was not confirmed in inspected source."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465066115",
+        "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "5c25ddb97838a1d14e40dc9458847743fa94191f",
+        "audited_at": "2026-11-25",
+        "scope": "README, cost calculator, tests and repository tree"
+      }
+    },
+    {
+      "node_id": "github-repo:1341275176",
+      "node_type": "repository",
+      "github_repository_id": "1341275176",
+      "name": "synergy_meta_os",
+      "full_name": "Shtenco/synergy_meta_os",
+      "url": "https://github.com/Shtenco/synergy_meta_os",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "node-service-orchestration",
+        "signed-manifest-model",
+        "artifact-sha256-verification",
+        "capability-ceilings",
+        "resource-limits",
+        "audit-journal-and-rollback-staging"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_system",
+        "Shtenco/synergy_turbo_linux",
+        "Shtenco/synergy_net",
+        "Shtenco/synergy_gllm_nexus"
+      ],
+      "risks": [
+        "RLIMITs and process sessions are not an OS sandbox: no namespaces, seccomp, chroot, filesystem policy or network isolation is applied by the inspected code.",
+        "This compatibility runtime is not evidence of the full native TURBO Linux ring-3 service-cell implementation.",
+        "The test service is a trivial local shell script; production service isolation and rollback semantics are not proven."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1341275176",
+        "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "cf3d18ca533ca9824794ad48e208b41b0fdf4475",
+        "audited_at": "2026-11-25",
+        "scope": "README, compatibility orchestrator and orchestrator tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1327916781",
+      "node_type": "repository",
+      "github_repository_id": "1327916781",
+      "name": "synergy_cold_nuclear",
+      "full_name": "Shtenco/synergy_cold_nuclear",
+      "url": "https://github.com/Shtenco/synergy_cold_nuclear",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "research-other",
+      "maturity": "RND_SCIENCE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "research"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1327916781",
+        "search_page": 2
+      }
+    },
+    {
+      "node_id": "github-repo:1362541171",
+      "node_type": "repository",
+      "github_repository_id": "1362541171",
+      "name": "dlp_solver",
+      "full_name": "Shtenco/dlp_solver",
+      "url": "https://github.com/Shtenco/dlp_solver",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "federated-research",
+      "category": "science-research",
+      "maturity": "ACTIVE_EXPERIMENTAL",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "scientific-research",
+        "evidence"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1362541171",
+        "search_page": 2
+      }
+    },
+    {
+      "node_id": "github-repo:1350374084",
+      "node_type": "repository",
+      "github_repository_id": "1350374084",
+      "name": "synergy_qr_compress",
+      "full_name": "Shtenco/synergy_qr_compress",
+      "url": "https://github.com/Shtenco/synergy_qr_compress",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "compute-os",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "temporal-dictionary-compression",
+        "timestamp-addressed-shared-model",
+        "exact-and-patch-reconstruction",
+        "hash-verified-container"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synegy_ai_compress"
+      ],
+      "risks": [
+        "Zero residual does not mean zero total storage: dictionary/model bytes must exist and be available to the decoder; amortized cost across all consumers is the meaningful metric.",
+        "This is shared-model temporal storage/reference coding, not standalone general-purpose lossless compression for unrelated files.",
+        "Benchmark's random base and one-byte mutation are synthetic; no broad corpus or full storage economics study is established."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1350374084",
+        "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "8e116b253cdc3cf42740d08b502eaf00e4b09176",
+        "audited_at": "2026-11-25",
+        "scope": "README, QTC2/QTD3 codec, container, round-trip and exact shared-dictionary tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1378708908",
+      "node_type": "repository",
+      "github_repository_id": "1378708908",
+      "name": "synergy_2chain_qe",
+      "full_name": "Shtenco/synergy_2chain_qe",
+      "url": "https://github.com/Shtenco/synergy_2chain_qe",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "RND_CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "economic-model",
+        "financial-protocol",
+        "value-flow"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1378708908",
+        "search_page": 2
+      }
+    },
+    {
+      "node_id": "github-repo:1409193535",
+      "node_type": "repository",
+      "github_repository_id": "1409193535",
+      "name": "synergy_search_engline",
+      "full_name": "Shtenco/synergy_search_engline",
+      "url": "https://github.com/Shtenco/synergy_search_engline",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "finance-economy",
+      "maturity": "RND",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "hardnav-multiplier-simulation",
+        "capacity-limited-edge-model"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Do not assign this repository as the provider for classifieds, bank or real-estate search without separate implementation evidence."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1409193535",
+        "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+        "audited_at": "2026-11-25",
+        "scope": "README, HardNAV multiplier simulation and assumptions/limits"
+      }
+    },
+    {
+      "node_id": "github-repo:1376377201",
+      "node_type": "repository",
+      "github_repository_id": "1376377201",
+      "name": "synergy_market_graph",
+      "full_name": "Shtenco/synergy_market_graph",
+      "url": "https://github.com/Shtenco/synergy_market_graph",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "trading-quant",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "directed-executable-conversion-graph",
+        "multi-path-fair-value",
+        "cycle-search",
+        "enterprise-api",
+        "advisory-fair-value-contract"
+      ],
+      "declared_dependencies": [],
+      "risks": [
+        "Capacity, latency, stale quotes, correlated/overlapping paths and execution sequencing are not incorporated into core fair-value calculation.",
+        "Fee/slippage bounds are not enforced in Edge model; negative executable rates are filtered from fair-value paths rather than rejected at ingestion.",
+        "A conversion graph is not a general buyer/seller offer marketplace or commercial transaction orchestrator."
+      ],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1376377201",
+        "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+        "audited_at": "2026-11-25",
+        "scope": "README, graph core, fair-value contract, enterprise resilience/auth and tests"
+      }
+    },
+    {
+      "node_id": "github-repo:1317641638",
+      "node_type": "repository",
+      "github_repository_id": "1317641638",
+      "name": "synergy_ai_blockchain",
+      "full_name": "Shtenco/synergy_ai_blockchain",
+      "url": "https://github.com/Shtenco/synergy_ai_blockchain",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "private",
+      "ecosystem_relation": "core",
+      "category": "blockchain-protocol",
+      "maturity": "CANDIDATE",
+      "activity_band": "ACTIVE_30D",
+      "capabilities": [
+        "smart-contracts",
+        "protocol",
+        "chain-runtime"
+      ],
+      "declared_dependencies": [
+        "Shtenco/synergy_agi_olga",
+        "Shtenco/synergy_system"
+      ],
+      "risks": [],
+      "audit_status": "registry_snapshot_present",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1317641638",
+        "search_page": 2
+      }
+    },
+    {
+      "node_id": "github-repo:1465023512",
+      "node_type": "repository",
+      "github_repository_id": "1465023512",
+      "name": "timeweb_synergy_rnn_transformer_benchmark",
+      "full_name": "Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "url": "https://github.com/Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "public",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "inventory_only_unreviewed",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465023512",
+        "search_page": 2
+      }
+    },
+    {
+      "node_id": "github-repo:1465156316",
+      "node_type": "repository",
+      "github_repository_id": "1465156316",
+      "name": "tiimeweb_synergy_exactly_once_delivery",
+      "full_name": "Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "url": "https://github.com/Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "default_branch": "main",
+      "archived": false,
+      "visibility": "unknown",
+      "ecosystem_relation": "unclassified",
+      "category": "unclassified",
+      "maturity": "UNASSESSED",
+      "activity_band": "UNASSESSED",
+      "capabilities": [
+        "sqlite-transactional-idempotency",
+        "payload-fingerprint-conflict-detection",
+        "crash-redelivery-experiment"
+      ],
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
+      "inventory_source": {
+        "provider": "GitHub",
+        "query": "user:Shtenco",
+        "page": null,
+        "observed_at": "2026-11-25",
+        "provider_id": "1465156316",
+        "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
+        "audited_at": "2026-11-25",
+        "scope": "README, SQLite experiment and invariant tests"
+      }
+    }
+  ]
+}

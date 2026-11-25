@@ -1,0 +1,425 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "gaps": [
+    {
+      "id": "GAP-001",
+      "severity": "high",
+      "area": "source_audit",
+      "description": "112 repositories are inventoried; 20 README reviews and 19 limited source reviews are pinned in the evidence ledger. The remaining 93 repositories still require source-level review, and the 19 reviewed scopes are not full repository certification.",
+      "next_action": "Audit the remaining 93 repositories in batches; expand each limited review to dependencies, tests, workflows and runtime contracts."
+    },
+    {
+      "id": "GAP-002",
+      "severity": "high",
+      "area": "edges",
+      "description": "109 DEPENDS_ON edges were copied from the 92-record umbrella registry and remain candidate claims, not verified source dependencies.",
+      "next_action": "Verify imports, API calls, package manifests, workflow references and runtime contracts."
+    },
+    {
+      "id": "GAP-003",
+      "severity": "high",
+      "area": "contracts",
+      "description": "No cross-repository API/event contracts have been independently extracted in this pass.",
+      "next_action": "Create contracts directory with OpenAPI, JSON Schema and event envelope artifacts."
+    },
+    {
+      "id": "GAP-004",
+      "severity": "medium",
+      "area": "proposals",
+      "description": "39 proposed shared cores and domain routers may overlap existing repositories.",
+      "next_action": "Perform capability overlap matrix before creating any repository."
+    },
+    {
+      "id": "GAP-005",
+      "severity": "high",
+      "area": "evidence",
+      "description": "Registry dependency assertions cite the umbrella registry blob rather than original source lines.",
+      "next_action": "Replace or supplement each candidate edge with source-level evidence."
+    },
+    {
+      "id": "GAP-006",
+      "severity": "high",
+      "area": "browser_security",
+      "repository": "Shtenco/synergy_ai_browser-",
+      "description": "Playwright request guard applies policy only to top-level document navigations; subresource requests are continued without equivalent host/IP restrictions. Potential private-network/SSRF path through an allowlisted page.",
+      "next_action": "Enforce policy for every request, resolve and reject private/loopback/link-local/reserved IPs, validate redirects and add local fixtures proving blocked subresource requests."
+    },
+    {
+      "id": "GAP-007",
+      "severity": "medium",
+      "area": "evidence_scope",
+      "repository": "Shtenco/timeweb_synergy_service_recovery",
+      "description": "README describes local HTTP/SQLite restarts, but inspected article11 source is an in-memory state simulator with no real side effects.",
+      "next_action": "Add reproducible HTTP/SQLite recovery experiments or narrow README claims to the implemented simulator."
+    },
+    {
+      "id": "GAP-008",
+      "severity": "medium",
+      "area": "evidence_scope",
+      "repository": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "description": "README references local CPU measurements, but inspected source exposes an assumption-based cost calculator and no independent GPU benchmark harness.",
+      "next_action": "Add reproducible CPU/GPU measurement scripts and provider invoice evidence, or narrow README claims."
+    },
+    {
+      "id": "GAP-009",
+      "severity": "medium",
+      "area": "governance_inventory",
+      "repository": "Shtenco/synergy_system",
+      "description": "Existing governance snapshots report 92 repositories in README and 75 in repository_federation_v2.yaml (2026-09-28), while the reconciled current inventory contains 112.",
+      "next_action": "Synchronize the governance inventory from immutable GitHub IDs while preserving historical snapshot provenance."
+    },
+    {
+      "id": "GAP-010",
+      "severity": "high",
+      "area": "api_security",
+      "repository": "Shtenco/synergy_meta_api",
+      "description": "Connector execution endpoint has no authentication and is disabled by default; enabling the environment flag is documented as private-development-only.",
+      "next_action": "Keep connector execution disabled on public interfaces until tenant authentication, scoped authorization, audit, egress allowlist, quotas and secret management are implemented and tested."
+    },
+    {
+      "id": "GAP-011",
+      "severity": "high",
+      "area": "memory_inventory_conflict",
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "description": "synergy_system README snapshot dated 2026-11-20 says the cognitive-memory main branch is README-only, but current main contains a full Python package, tests, git dependency intelligence, cross-repository registry and contract intelligence.",
+      "next_action": "Refresh governance snapshot from exact current main SHA; do not rely on stale README-only status."
+    },
+    {
+      "id": "GAP-012",
+      "severity": "high",
+      "area": "runtime_isolation",
+      "repository": "Shtenco/synergy_meta_os",
+      "description": "The compatibility orchestrator applies POSIX RLIMITs and a minimal environment but does not enforce namespaces, seccomp, filesystem or network isolation. It is not a complete sandbox.",
+      "next_action": "Keep untrusted service execution disabled or externally sandboxed until a dedicated isolation layer and adversarial tests are implemented."
+    },
+    {
+      "id": "GAP-013",
+      "severity": "medium",
+      "area": "market_graph_model",
+      "repository": "Shtenco/synergy_market_graph",
+      "description": "Fair-value graph does not apply capacity/latency constraints; fee/slippage values are not bounded in Edge, and negative executable paths are silently filtered.",
+      "next_action": "Add fee/slippage validation, capacity/latency-aware path evaluation and tests before using outputs for execution decisions."
+    },
+    {
+      "id": "GAP-014",
+      "severity": "high",
+      "area": "accounting_recognition",
+      "repository": "Shtenco/synergy_financial_os",
+      "description": "Main-branch accounting recognition helper accepts settlement_payload=None, bypassing its reconciled-settlement precondition; an empty double-entry list also balances and is accepted.",
+      "next_action": "Require reconciled settlement evidence for every recognition path (or explicit non-recognition classification), reject empty/zero journals and add bypass tests."
+    },
+    {
+      "id": "GAP-015",
+      "severity": "high",
+      "area": "durable_settlement",
+      "repository": "Shtenco/synergy_pay_system",
+      "description": "Inspected settlement engine keeps settlement records and idempotency keys in process memory; this does not survive restart and does not prove exactly-once external side effects.",
+      "next_action": "Persist settlement state, idempotency keys and outbox atomically; add crash-after-provider-call recovery and reconciliation tests."
+    },
+    {
+      "id": "GAP-016",
+      "severity": "high",
+      "area": "risk_fail_closed",
+      "repository": "Shtenco/synergy_riskguard",
+      "description": "VaR/CVaR return 0 when fewer than five returns are available, so the risk core can understate uncertainty and continue to approve orders without sufficient history.",
+      "next_action": "Make insufficient history an explicit blocker or use a conservative fallback; validate positive notional and side at the core boundary."
+    },
+    {
+      "id": "GAP-017",
+      "severity": "medium",
+      "area": "domain_ownership",
+      "repository": "Shtenco/synergy_search_engline",
+      "description": "The repository named search_engline is a HardNAV multiplier simulation, not a general search engine; it cannot be treated as the search backend for classifieds, banks or real estate.",
+      "next_action": "Map each actual search implementation to its domain and rename/clarify the repository role in the federation registry."
+    },
+    {
+      "id": "GAP-018",
+      "severity": "high",
+      "area": "tenant_privacy",
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "description": "Lead OS schema has no tenant_id isolation and the API uses a single operator bearer token; it is not a safe multi-tenant CRM lead service as-is.",
+      "next_action": "Add tenant-scoped document/review/outbox ownership, per-tenant auth and authorization, retention/deletion workflows and cross-tenant negative tests before multi-client hosting."
+    },
+    {
+      "id": "GAP-019",
+      "severity": "medium",
+      "area": "spatial_integration",
+      "repository": "Shtenco/synergy_maps",
+      "description": "Current Maps implementation is a global globe plus EAEU boundary subset; higher-detail layers and live logistics/real-estate data integration are not established.",
+      "next_action": "Define versioned geospatial contracts and source licensing/authority before routing commercial services through Maps."
+    },
+    {
+      "id": "GAP-020",
+      "severity": "high",
+      "area": "messenger_main_branch",
+      "repository": "Shtenco/synergy_messenger",
+      "description": "Main branch package scripts reference missing tests/v3 and scripts/copy-www.js; inspected main tree has no messenger source or test suite despite README describing alpha.9.",
+      "next_action": "Reconcile default branch with the claimed release artifact; add required source/test files or narrow main README/package scripts."
+    },
+    {
+      "id": "GAP-021",
+      "severity": "medium",
+      "area": "workspace_release_branch",
+      "repository": "Shtenco/synergy_ai_workspace",
+      "description": "Workspace implementation exists on release/v1.0-desktop-rc but main is README-only; the release branch is not a production desktop installer and has no tenant-isolated public backend.",
+      "next_action": "Keep branch status explicit; complete release build, GUI E2E, tenant/privacy review and provider adapter verification before production claims."
+    },
+    {
+      "id": "GAP-022",
+      "severity": "medium",
+      "area": "autopilot_runtime",
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "description": "Main branch is a stub with no DAG planner or autonomous runtime; do not treat the architecture node as an orchestrator implementation.",
+      "next_action": "Assign orchestration runtime ownership to verified components and keep Autopilot as a proposal until source is added."
+    },
+    {
+      "id": "GAP-023",
+      "severity": "medium",
+      "area": "coding_agent_scope",
+      "repository": "Shtenco/synergy_ai_coder",
+      "description": "AI Coder main implements requirement/change evidence contracts only, not a full autonomous coding agent.",
+      "next_action": "Keep coding execution in a separate sandboxed component and reuse the evidence contract for approvals."
+    },
+    {
+      "id": "GAP-024",
+      "severity": "medium",
+      "area": "graph_arbitrage_implementation",
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "description": "Repository describes settlement-aware graph arbitrage architecture but main branch contains only README and assets, no executable graph engine or tests.",
+      "next_action": "Keep it as a specification; implement inside an existing graph owner or add code/tests before claiming an engine."
+    },
+    {
+      "id": "GAP-025",
+      "severity": "medium",
+      "area": "relative_value_validation",
+      "repository": "Shtenco/synergy_relative_value",
+      "description": "Pair OLS/z-score signals are non-authorizing and do not establish cointegration, stationarity, hedge stability or executable edge after costs.",
+      "next_action": "Require aligned train/OOS data, cointegration/stationarity tests, rolling stability, borrow/funding, liquidity and cost-aware negative tests."
+    },
+    {
+      "id": "GAP-026",
+      "severity": "medium",
+      "area": "superapp_integration",
+      "repository": "Shtenco/sinergy_super_app",
+      "description": "Main branch contains a PWA/Android source surface and UI descriptions of wallet/AGI/DAO/L1/MetaPay/mesh, but the source contract explicitly does not prove backend integrations or a built APK.",
+      "next_action": "Bind each UI module to a versioned backend contract and attach successful APK build artifact evidence before claiming operational features."
+    },
+    {
+      "id": "GAP-027",
+      "severity": "medium",
+      "area": "mobile_release_evidence",
+      "repository": "Shtenco/synergy_app",
+      "description": "Mobile source integrity contract verifies source files but explicitly returns artifact_built=false and store_published=false; source checks are not release evidence.",
+      "next_action": "Add reproducible signed build workflow, artifact digest/attestation and install smoke tests before release claims."
+    },
+    {
+      "id": "GAP-028",
+      "severity": "medium",
+      "area": "read_model_trust",
+      "repository": "Shtenco/synergy_apps",
+      "description": "Read-model helpers label payloads read-only but do not authenticate upstream evidence or verify canonical accounting/trust signatures.",
+      "next_action": "Require validated contract envelope and source provenance before constructing any user-visible authoritative projection."
+    },
+    {
+      "id": "GAP-029",
+      "severity": "critical",
+      "area": "credential_exposure",
+      "repository": "Shtenco/synergy_usds",
+      "description": "Tracked root artifact base-mainnet-deployer.key exists. Contents were deliberately not inspected; repository's own SECURITY_FEDERATION_BLOCKER confirms credential hygiene is an explicit federation blocker.",
+      "next_action": "Immediately rotate/revoke the associated deployer credential, remove the file and sensitive history, move secrets to a secret manager, enable secret scanning/push protection and provide verified cleanup evidence. Keep deployment disabled."
+    },
+    {
+      "id": "GAP-030",
+      "severity": "critical",
+      "area": "credential_exposure",
+      "repository": "Shtenco/synergy_cashero",
+      "description": "Tracked .env, owner.env, bot1.env and bot2.env files are present in the repository tree. Contents were deliberately not inspected; README warns tracked configs may include secrets; root .gitignore was not found.",
+      "next_action": "Treat any credentials as exposed until proven otherwise; rotate/revoke wallet and bot credentials, remove secret files/history, add secret scanning and provide evidence before any deployment."
+    },
+    {
+      "id": "GAP-031",
+      "severity": "high",
+      "area": "bridge_replay_durability",
+      "repository": "Shtenco/synergy_metachain",
+      "description": "Commitment replay guard stores consumed IDs in process memory and trusts supplied FINALIZED/digest fields; restart loses replay state and no chain proof/signature is verified.",
+      "next_action": "Persist replay state transactionally with unique constraints and verify signed source authority/finality proofs plus reorg handling."
+    },
+    {
+      "id": "GAP-032",
+      "severity": "critical",
+      "area": "historical_ssh_credential",
+      "repository": "Shtenco/synergy_turbo_linux",
+      "description": "Repository incident report confirms an unencrypted SSH private key was committed to main history. Current tree removal is not proof that the credential was rotated/revoked or that history was sanitized.",
+      "next_action": "Verify new key issuance, revoke old public key on every authorized host, inspect access logs, rotate dependent credentials and complete human-approved history sanitization."
+    },
+    {
+      "id": "GAP-033",
+      "severity": "high",
+      "area": "scheduler_queue_integrity",
+      "repository": "Shtenco/synergy_turbo_linux",
+      "description": "turbo_scheduler_enqueue does not reject an already-enqueued task ID; duplicate enqueue can set next[id]=id and create a self-loop.",
+      "next_action": "Track queued membership or add a state bitset, reject duplicates, and add regression tests for duplicate enqueue, dequeue/re-enqueue and queue count invariants."
+    },
+    {
+      "id": "GAP-034",
+      "severity": "medium",
+      "area": "long_term_testing",
+      "repository": "Shtenco/synergy_long_term_harness",
+      "description": "Long-Term Harness main branch is README-only; no executable soak test framework exists in the inspected repository.",
+      "next_action": "Keep long-term test coverage assigned to existing CI/soak workflows until this repository gains a reproducible runner."
+    },
+    {
+      "id": "GAP-035",
+      "severity": "medium",
+      "area": "market_maker_config_validation",
+      "repository": "Shtenco/synergy_market_maker",
+      "description": "MMConfig has no explicit validation for gamma, kappa, horizon, max_inventory or min spread; malformed values can produce invalid quote geometry or math errors.",
+      "next_action": "Add immutable config validation for finite values and safe parameter ranges, plus property tests for non-crossed quotes and monotonic inventory/volatility behavior."
+    },
+    {
+      "id": "GAP-036",
+      "severity": "medium",
+      "area": "validation_provenance",
+      "repository": "Shtenco/synergy_quantlab",
+      "description": "Validation contract permits an optional dataset manifest digest and does not verify the digest format or fetch/verify the dataset; strong validation runs can be emitted without bound dataset provenance.",
+      "next_action": "Require a versioned dataset manifest and verify SHA-256/source revision before issuing a promotion gate."
+    },
+    {
+      "id": "GAP-037",
+      "severity": "critical",
+      "area": "risk_veto_crash",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "DecisionPipeline risk-veto path references undefined exc and bare-raises outside an active exception; a risk veto can crash instead of returning a blocked decision.",
+      "next_action": "Remove invalid exception path, return an explicit non-tradable veto decision, and add a test proving no execution adapter can be called after veto."
+    },
+    {
+      "id": "GAP-038",
+      "severity": "critical",
+      "area": "websocket_authentication",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "/logs/stream and /metrics/stream accept WebSocket connections without API-key validation while HTTP endpoints require the key.",
+      "next_action": "Authenticate before WebSocket accept, authorize per tenant/scope, rate-limit and add unauthenticated connection rejection tests."
+    },
+    {
+      "id": "GAP-039",
+      "severity": "high",
+      "area": "risk_sign_convention",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "RiskEngine computes lower-tail VaR/CVaR as negative returns but compares them against positive maximum-risk thresholds; risk sign conventions are inconsistent.",
+      "next_action": "Represent VaR/CVaR as positive loss magnitudes or invert comparisons consistently; add positive/negative return fixtures and veto boundary tests."
+    },
+    {
+      "id": "GAP-040",
+      "severity": "high",
+      "area": "archive_chain_persistence",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "ArchiveService previous chain hash is held only in instance memory and is lost on restart or across multiple service instances.",
+      "next_action": "Recover last trusted chain hash from durable archive transactionally and test restart, concurrent writers and tamper detection."
+    },
+    {
+      "id": "GAP-041",
+      "severity": "critical",
+      "area": "embedded_credentials",
+      "repository": "Shtenco/synergy_ai_trade_terminal",
+      "description": "README and source scan confirm credential fields are embedded in cassandra_v6_FIXED.py and bearer token material is emitted into login events/log prefix.",
+      "next_action": "Immediately rotate/revoke embedded account credentials and all issued tokens; purge history after rotation; move secrets to a secret manager and redact tokens from logs/events."
+    },
+    {
+      "id": "GAP-042",
+      "severity": "critical",
+      "area": "uncontrolled_live_execution",
+      "repository": "Shtenco/midas_lite",
+      "description": "Legacy agi_trader_final_v1.py contains multiple direct mt5.order_send calls; the reviewed repository includes a potentially live order path.",
+      "next_action": "Keep the script disabled outside isolated demo; add default-deny execution flag, account/environment allowlist, notional and daily loss limits, operator approval and tests that block order_send by default."
+    },
+    {
+      "id": "GAP-043",
+      "severity": "medium",
+      "area": "quantum_claim_boundary",
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "description": "The QPE-like circuit ignores the supplied market binary history; stochastic measurement output is compared to future labels without a causal prediction path.",
+      "next_action": "Treat as circuit simulation only; either encode causal history and compare against classical baselines or narrow all claims to a non-predictive Qiskit experiment."
+    },
+    {
+      "id": "GAP-044",
+      "severity": "high",
+      "area": "compiler_code_injection",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "C/Rust/Solidity/Kotlin code generators interpolate action/target strings directly into target-language string literals without escaping, enabling generated-code injection from crafted instructions.",
+      "next_action": "Use target-language literal encoders or AST emitters, reject control characters where appropriate, and add adversarial quote/newline/escape payload tests for every target."
+    },
+    {
+      "id": "GAP-045",
+      "severity": "high",
+      "area": "local_command_sandbox",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "Workspace.run_command and execute_python_file execute subprocesses with the user's OS permissions; path guards and command filters do not isolate filesystem, network or process capabilities.",
+      "next_action": "Run commands in a dedicated OS/container sandbox with read-only base filesystem, workspace-only mounts, no secrets, no network by default, CPU/memory/time limits and explicit egress policy."
+    },
+    {
+      "id": "GAP-046",
+      "severity": "medium",
+      "area": "trace_secret_redaction",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "SemanticTrace.record stores the first result line after truncation but does not redact credential patterns, despite documenting that raw credentials are not persisted.",
+      "next_action": "Apply structured secret redaction before trace persistence and test API keys, bearer tokens, passwords, private keys and multiline output."
+    },
+    {
+      "id": "GAP-047",
+      "severity": "medium",
+      "area": "branch_authority",
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "description": "The graph-native runtime and MoE experiments are on unified-v3-generalization-first at a 2026-09-20 commit; default main is documentation/benchmark registry only.",
+      "next_action": "Choose an explicit canonical branch/release and pin runtime, checkpoint, data and benchmark artifacts before integrating NEXUS."
+    },
+    {
+      "id": "GAP-048",
+      "severity": "medium",
+      "area": "model_quantization_evidence",
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "description": "RWKV converter and Triton matvec are branch-only; tests use synthetic matrices/checkpoints and no full 2.9B model perplexity or target-GPU performance has been measured.",
+      "next_action": "Run exact full-checkpoint restore, aligned held-out logits/PPL, long-context drift, GPU kernel correctness and matched latency/memory benchmarks."
+    },
+    {
+      "id": "GAP-049",
+      "severity": "medium",
+      "area": "debt_credit_runtime_gap",
+      "repository": "Shtenco/synergy_matrix_sota",
+      "description": "Debt/credit lifecycle repository is documentation-only with five mechanisms and 42 legacy units assigned for rewrite; no executable maturity or expected-loss engine exists.",
+      "next_action": "Keep the Financial OS as accounting authority and implement a contract-first maturity/expected-loss module only after ownership and legacy rewrite review."
+    },
+    {
+      "id": "GAP-050",
+      "severity": "medium",
+      "area": "compression_source_reproducibility",
+      "repository": "Shtenco/synegy_ai_compress",
+      "description": "Compression engine is represented by a source_snapshot gitlink, but .gitmodules is absent; the benchmark repository does not independently expose the exact engine source or a cloneable submodule URL.",
+      "next_action": "Add .gitmodules with a stable public source URL and pin commit; provide a reproducible environment lock and benchmark runner."
+    },
+    {
+      "id": "GAP-051",
+      "severity": "medium",
+      "area": "shared_model_storage_economics",
+      "repository": "Shtenco/synergy_qr_compress",
+      "description": "QTC2 zero-residual exact mode depends on a shared temporal dictionary; dictionary storage/distribution and retention costs must be amortized before claiming net compression savings.",
+      "next_action": "Publish full amortized cost model: model bytes, container bytes, update/replication/retention, number of consumers and decoder availability; benchmark against standalone compressors."
+    },
+    {
+      "id": "GAP-052",
+      "severity": "medium",
+      "area": "gguf_compression_implementation",
+      "repository": "Shtenco/synergy_gguf_compress",
+      "description": "Main branch is README-only and contains no executable GGUF compressor.",
+      "next_action": "Keep as concept or implement parser/codec with bit-exact round-trip, quantization-quality and compatibility tests."
+    },
+    {
+      "id": "GAP-053",
+      "severity": "medium",
+      "area": "shhts_format_implementation",
+      "repository": "Shtenco/synergy_shhts",
+      "description": "Main branch is a specification stub without parser, codec or decoder.",
+      "next_action": "Define byte-level format, versioning, integrity envelope and cross-language round-trip tests before claiming a compression format."
+    }
+  ]
+}
