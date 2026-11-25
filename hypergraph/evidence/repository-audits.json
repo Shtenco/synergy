@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 52,
-  "source_code_reviewed_count": 45,
+  "audited_repository_count": 56,
+  "source_code_reviewed_count": 49,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -1904,6 +1904,181 @@
       "commit_url": "https://github.com/Shtenco/synergy_marketvision/commit/d1018cba6b6c977ba8dce43ba8257601c0e2fe64",
       "audited_at": "2026-11-25",
       "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_midas_ai_trading_system",
+      "commit": "2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+      "status": "source_reviewed_limited",
+      "scope": "README critical findings, decision pipeline, risk engine, API/WebSocket, MT5 simulator, signal fusion and archive service",
+      "capabilities": [
+        "modular-strategy-pipeline",
+        "signal-fusion",
+        "adaptive-policy",
+        "portfolio-optimizer",
+        "risk-veto",
+        "audit-archive",
+        "fastapi-control-center"
+      ],
+      "findings": [
+        "DecisionPipeline.run_with_metrics risk-veto branch references undefined exc and uses bare raise outside an active except; veto can crash instead of returning a safe blocked decision.",
+        "RiskEngine stores lower-tail return quantiles as negative VaR/CVaR while is_veto compares them against positive maximum thresholds; sign convention is inconsistent.",
+        "WebSocket /logs/stream and /metrics/stream call accept without require_api_key; HTTP endpoints are protected.",
+        "MT5Execution.execute performs local parameter/slippage/latency checks and returns accepted without calling mt5.order_send; accepted is not submitted or filled.",
+        "ArchiveService chain_hash previous state is held in an instance-local dictionary and is not recovered from persistent archive on restart."
+      ],
+      "limitations": [
+        "README lists these as P0/P1 findings; this review confirmed the relevant source paths but did not run the test suite.",
+        "Legacy scripts coexist with modular package; authority path and historical code still require isolation.",
+        "No live broker execution or independent audited PnL is established by this main-branch package."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "cefa13f71478134050b0382f115211607c28495e"
+        },
+        {
+          "path": "midas/core/meta_strategy/pipeline.py",
+          "blob_sha": "d36af04cbd568fd2a72243776ddecbb3b3b815d0"
+        },
+        {
+          "path": "midas/core/risk_engine/risk_engine.py",
+          "blob_sha": "42c5d2ec7f775c1dc9bc40a9624bd6222c26d59d"
+        },
+        {
+          "path": "midas/control_center/api/app.py",
+          "blob_sha": "52730d5edc177e4b8d948d68d5b8390db3ba9522"
+        },
+        {
+          "path": "midas/execution/mt5/mt5_execution.py",
+          "blob_sha": "37d99d6d30715fadf65cdc8678270e7775804d53"
+        },
+        {
+          "path": "midas/core/meta_intelligence/fusion.py",
+          "blob_sha": "3104e10e3326031e89d58296ebbb623ef299298b"
+        },
+        {
+          "path": "midas/data/archive/service.py",
+          "blob_sha": "10be7695caf686cccdb0b6e82bee2a209dfa4d39"
+        }
+      ],
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "commit_url": "https://github.com/Shtenco/synergy_midas_ai_trading_system/commit/2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "midas_lite",
+      "commit": "03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+      "status": "source_reviewed_limited",
+      "scope": "README, legacy MT5 agent source and sealed EURUSD H1 research evidence",
+      "capabilities": [
+        "eurusd-h1-statistical-specialist",
+        "sealed-oos-reporting",
+        "sqlite-agent-memory",
+        "legacy-mt5-execution-path"
+      ],
+      "findings": [
+        "Repository preserves a EURUSD H1 specialist with frozen configuration and separate rolling and sealed OOS reports.",
+        "README explicitly labels 100-window/415-signal/688 gross pips as modeled research, and a separate sealed 2-month period as four trades, three correct directions and -3.5 net pips at assumed 0.5 pip cost.",
+        "Legacy agi_trader_final_v1.py contains direct MetaTrader5 order_send calls at multiple code paths."
+      ],
+      "limitations": [
+        "The presence of order_send means the legacy script can attempt real broker orders depending on terminal/account configuration; do not run outside isolated demo until all paths are audited and execution is explicitly disabled by default.",
+        "No broker-confirmed PnL or live MT5 test is established by the README's research reports.",
+        "Legacy and specialist lines should be isolated; research reports are not permission to execute."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "9c63dd33d21f87814a55ae02214859e5c7ff9e16"
+        },
+        {
+          "path": "agi_trader_final_v1.py",
+          "blob_sha": "5041dc700a7ec284947135296b25fc158063581c"
+        },
+        {
+          "path": "systems/eurusd_h1_v5_fixed_q90_sl45/V5_CONFIG.json",
+          "blob_sha": "(configuration path listed in tree; not separately hashed in this review)"
+        },
+        {
+          "path": "systems/eurusd_h1_v5_fixed_q90_sl45/reports/v4_sealed_2m_report.json",
+          "blob_sha": "(sealed report path listed in tree; not separately hashed in this review)"
+        }
+      ],
+      "repository": "Shtenco/midas_lite",
+      "commit_url": "https://github.com/Shtenco/midas_lite/commit/03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_trade_terminal",
+      "commit": "e53064ec6741dce47ee10a5f30b798c0cf4daa2a",
+      "status": "source_reviewed_limited",
+      "scope": "README, Cassandra terminal source and process supervisor",
+      "capabilities": [
+        "mt5-data-and-orderbook-collector",
+        "flask-socketio-dashboard",
+        "cassandra-api-integration",
+        "order-tester"
+      ],
+      "findings": [
+        "README explicitly states credentials are embedded in Python source and must be revoked/replaced before public deployment.",
+        "Credential-pattern scan confirmed hard-coded password/account credential fields and bearer-token handling in cassandra_v6_FIXED.py; token material is also emitted into a login_success event/log prefix.",
+        "Repository includes a separate order tester with broker requests and stop-limit management; this audit did not execute any order path."
+      ],
+      "limitations": [
+        "Treat embedded credentials and issued tokens as exposed; rotate/revoke them and remove sensitive history after rotation.",
+        "No evidence of tenant isolation or production-grade secret management was established.",
+        "Order execution paths require separate authorization, demo-only testing and explicit operator confirmation."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "31350fb4264cb80dbfc8f373120bbdc1be6129c5"
+        },
+        {
+          "path": "cassandra_v6_FIXED.py",
+          "blob_sha": "61d2b4a094150ed6b3086ccf3e2904067ee9d44a"
+        },
+        {
+          "path": "MAIN.py",
+          "blob_sha": "9145e627d8f3f44549cb49999f6dda4b3e8d730b"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_trade_terminal",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_trade_terminal/commit/e53064ec6741dce47ee10a5f30b798c0cf4daa2a",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "quantum-trading_metatrader5",
+      "commit": "a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+      "status": "source_reviewed_limited",
+      "scope": "README and MT5/Qiskit main program",
+      "capabilities": [
+        "mt5-historical-data-ingestion",
+        "fixed-qpe-like-aer-simulation",
+        "binary-horizon-comparison"
+      ],
+      "findings": [
+        "README and main show price_binary is passed into analyze_market_state but not used; circuit parameters are fixed and do not depend on market history.",
+        "The code compares stochastic Aer measurements with future horizon labels; it does not establish predictive accuracy or quantum advantage.",
+        "Main contains MT5 initialization/data collection but no order_send path in the inspected file."
+      ],
+      "limitations": [
+        "Research prototype only; no proof of QPE correctness, market forecast skill or quantum advantage.",
+        "No live trading execution was found in the inspected main.py; other files were not exhaustively audited."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "2486738ec177f291bd1f54531d221868e77c2a31"
+        },
+        {
+          "path": "main.py",
+          "blob_sha": "8c1b6be206405f0df8815d5838999a447a8adc33"
+        }
+      ],
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "commit_url": "https://github.com/Shtenco/quantum-trading_metatrader5/commit/a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+      "audited_at": "2026-11-25"
     }
   ]
 }
