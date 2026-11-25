@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 89,
-  "source_code_reviewed_count": 74,
+  "audited_repository_count": 94,
+  "source_code_reviewed_count": 79,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -3152,6 +3152,194 @@
         {
           "path": "README.md",
           "blob_sha": "79107b23ea1868ecfb061d12593abcf2c1ea2ad9"
+        }
+      ]
+    },
+    {
+      "name": "shtenco_micro_ai",
+      "repository": "Shtenco/shtenco_micro_ai",
+      "commit": "5c9f0b341f59b1567c2d5109fbfeee17f357d196",
+      "commit_url": "https://github.com/Shtenco/shtenco_micro_ai/commit/5c9f0b341f59b1567c2d5109fbfeee17f357d196",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "mnn-pocket-0.3b-int4-runtime",
+        "revision-pinned-model-downloader",
+        "cpu-smoke-benchmark",
+        "metric-parser"
+      ],
+      "findings": [
+        "Repository pins MNN runtime to release 3.6.2/commit and model downloader resolves a Hugging Face commit SHA before snapshot download.",
+        "Tests cover manifest/runtime pins, downloader revision-lock logic, missing-model error handling and benchmark metric parsing.",
+        "README explicitly limits GitHub workflow to portable CPU smoke testing; it is not device-specific mobile throughput or acceleration evidence. Download lock records file sizes and resolved model revision, not per-file SHA-256 digests."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "cac2aaf44211630a84ad47682f7007a9c9888a8c"
+        },
+        {
+          "path": "scripts/download_model.py",
+          "blob_sha": "b3e190c3d688659e3b7da813bf5eea19b3db2905"
+        },
+        {
+          "path": "tests/test_project.py",
+          "blob_sha": "05807324f4cbc215ad6cfe2b761132adf14eacfa"
+        },
+        {
+          "path": "models/MNN-Pocket-0.3B-MNN/manifest.json",
+          "blob_sha": "cfa300e411b1f2d6637fb036f850fcfeb290c025"
+        }
+      ]
+    },
+    {
+      "name": "synergy_metaverse",
+      "repository": "Shtenco/synergy_metaverse",
+      "commit": "63c180f6d6b0c4e20d84604d47599700c43d19c6",
+      "commit_url": "https://github.com/Shtenco/synergy_metaverse/commit/63c180f6d6b0c4e20d84604d47599700c43d19c6",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "tenant-scoped-spatial-registry",
+        "rfc8785-sha256-ed25519-verifier",
+        "aes256gcm-envelope-interface",
+        "consent-and-revocation-contracts",
+        "sqlite-projection-store"
+      ],
+      "findings": [
+        "Main implements canonical payload digest verification, Ed25519 signature checks, producer-bound active-key validation, encrypted payload envelopes and tenant-scoped spatial registry/projection components.",
+        "The verifier and envelope layer depend on caller-supplied authoritative key/signature resolvers and ManagedDataKeyBackend; README says production KMS/HSM, independently governed commitment service, key registry, consent/revocation adapters and retention/legal authorizer are not deployed.",
+        "README states CI execution remains unverified until GitHub allocates a runner; backup/WAL/replica deletion and host-failure recovery still need independent validation."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "919359717b8450c85cd3500f0f1192fd2e099faf"
+        },
+        {
+          "path": "src/synergy_metaverse/crypto.py",
+          "blob_sha": "3c3934d7e7cd9c29f7bd298161fd061a5a6bdea1"
+        },
+        {
+          "path": "src/synergy_metaverse/envelope_protector.py",
+          "blob_sha": "0b74292e7998061911aee27c3f1357fec64fb8a1"
+        },
+        {
+          "path": "tests/test_crypto.py",
+          "blob_sha": "105d319a8af9593ad5764c6733efd5c580da8cdd"
+        },
+        {
+          "path": "docs/roadmap/implementation-plan.md",
+          "blob_sha": "d825e125c02d85302d9184a685ce33781df2659e"
+        }
+      ]
+    },
+    {
+      "name": "synergy_cold_nuclear",
+      "repository": "Shtenco/synergy_cold_nuclear",
+      "commit": "0218157a8197c3b9e1c300cb433b805e3a3ea3fb",
+      "commit_url": "https://github.com/Shtenco/synergy_cold_nuclear/commit/0218157a8197c3b9e1c300cb433b805e3a3ea3fb",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "dd-rate-consistency-calculation",
+        "isotope-capture-decay-network",
+        "material-state-sensitivity-model",
+        "falsification-and-negative-controls"
+      ],
+      "findings": [
+        "Inspected LENR screening model is explicitly a sensitivity/falsification model and says it does not establish cold fusion, molten-metal nuclear reactions or transmutation.",
+        "Scientific boundaries require evaluated/derived/hypothesis/stress-test/legacy labels and define product-rate and isotope-source falsifiers.",
+        "The model is computational hypothesis exploration; numerical output is not experimental evidence or a reactor prediction."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "055979dda4693ec45640ab044d8c5253b38b8a33"
+        },
+        {
+          "path": "models/molten_lenr_screen.py",
+          "blob_sha": "3f9fccdbb1e50e40668b6ca84a54308770453b31"
+        },
+        {
+          "path": "research/SCIENTIFIC_BOUNDARIES.md",
+          "blob_sha": "624d6cb04c3eb9f0d5b8837f4f7997db58586d86"
+        }
+      ]
+    },
+    {
+      "name": "synergy_binary_quantum_theory",
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "commit": "3d48d8ba6c190efe23ee655528365f5045216af7",
+      "commit_url": "https://github.com/Shtenco/synergy_binary_quantum_theory/commit/3d48d8ba6c190efe23ee655528365f5045216af7",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "finite-dimensional-operator-checks",
+        "theory-gate-ledger",
+        "adversarial-status-tests",
+        "proof-and-physicalization-frontier"
+      ],
+      "findings": [
+        "Current THEORY_STATUS explicitly reports structural_candidate_closed=false, physicalization_complete=false and experimentally_confirmed=false; nine physical conditions remain open.",
+        "Regression tests ensure a valid no-go result cannot close the theory and that all nine physical conditions remain required.",
+        "Finite numerical certificates and internal consistency tests are not proof of continuum closure or experimental validation; the README distinguishes tested finite results from physical predictions."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "bbe3034b9abfb97f05cc59c04d28cd0de58250f1"
+        },
+        {
+          "path": "THEORY_STATUS.md",
+          "blob_sha": "9eaa87fb8a58e08b1fb17b1d57c11bccb9d63089"
+        },
+        {
+          "path": "tests/test_audit_status.py",
+          "blob_sha": "7c49f7b09c39fabc906c2c3e3d7fb50d5d3a9a4c"
+        }
+      ]
+    },
+    {
+      "name": "synergy_ai_blockchain",
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "commit": "b9353bf52542ed55ec36c30d84046f330df5f1de",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_blockchain/commit/b9353bf52542ed55ec36c30d84046f330df5f1de",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "rust-consensus-activation-commitments",
+        "hybrid-pq-authorization-envelopes",
+        "replay-protection-state",
+        "evm-compatibility-interfaces",
+        "adversarial-mvp-tests"
+      ],
+      "findings": [
+        "Main contains a substantial Rust/Solidity research integration with consensus activation commitments binding block height, model manifest hash, implementation hash and gas schedule.",
+        "PQ authorization code defines explicit secp256k1/ML-DSA/SLH-DSA profiles and replay/expiry domains; README says the production PQ provider, EVM-client integration, cross-client vectors, light clients, bridge proofs and independent cryptographic audit remain incomplete.",
+        "README explicitly says not to custody real assets; code presence and local tests do not establish production chain security or interoperable client consensus."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "4cd83d4584885d3f24a48b10012f4711534671ff"
+        },
+        {
+          "path": "src/consensus.rs",
+          "blob_sha": "87f9efa31d3f4e3bf63bcf53e9bd1b82b7f160e7"
+        },
+        {
+          "path": "src/pq.rs",
+          "blob_sha": "902c477fdf0948cec00a138fcf988f272ca40685"
+        },
+        {
+          "path": "tests/mvp_adversarial.rs",
+          "blob_sha": "e881a8a2c9d45c9ef35db25720f18dd84e173147"
         }
       ]
     }
