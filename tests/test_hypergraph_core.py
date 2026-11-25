@@ -53,8 +53,8 @@ class HypergraphCoreTests(unittest.TestCase):
     def test_audit_provenance_is_pinned_and_consistent(self):
         node_by_name = {node["name"]: node for node in self.nodes_doc["nodes"]}
         records = self.audit["records"]
-        self.assertEqual(len(records), 64)
-        self.assertEqual(self.audit["source_code_reviewed_count"], 53)
+        self.assertEqual(len(records), self.audit["audited_repository_count"])
+        self.assertEqual(self.audit["source_code_reviewed_count"], self.coverage["audit"]["source_code_reviewed_total"])
         for record in records:
             self.assertRegex(record["commit"], r"^[0-9a-f]{40}$")
             node = node_by_name[record["name"]]
@@ -70,13 +70,14 @@ class HypergraphCoreTests(unittest.TestCase):
             1 for node in self.nodes_doc["nodes"]
             if node["audit_status"] in {"source_reviewed_limited", "branch_only_prototype"}
         )
-        self.assertEqual(reviewed, 53)
+        self.assertEqual(reviewed, self.coverage["audit"]["source_code_reviewed_total"])
         self.assertEqual(self.coverage["audit"]["source_code_audited_total"], reviewed)
+        self.assertEqual(reviewed, len(self.coverage["audit"]["source_code_reviewed_repository_names"]))
         self.assertAlmostEqual(
             self.coverage["completion_percentages"]["repository_source_audit"],
             round(reviewed / 112 * 100, 2),
         )
-        self.assertEqual(self.coverage["audit"]["readme_reviewed_in_this_pass"], 64)
+        self.assertEqual(self.coverage["audit"]["readme_reviewed_total"], self.audit["audited_repository_count"])
 
     def test_proposals_are_not_counted_as_repositories(self):
         actual_ids = {node["node_id"] for node in self.nodes_doc["nodes"]}
