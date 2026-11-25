@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "decision": "Do not create a separate synergy_hypergraph_core repository at this stage. Keep the canonical graph projection and inventory in Shtenco/synergy/hypergraph; reuse the existing memory dependency/evidence engine and System governance registry.",
+  "owners": [
+    {
+      "domain": "federation_governance_and_contract_authority",
+      "owner": "Shtenco/synergy_system",
+      "role": "Canonical authority map, interface registry and contract families; 0 E2E edges in the 2026-11-20 snapshot."
+    },
+    {
+      "domain": "static_dependency_and_cross_repository_evidence",
+      "owner": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "role": "Commit-pinned AST dependency scans, cross-repository observations, explicit candidate edges and contract ID matching."
+    },
+    {
+      "domain": "intelligence_and_proposals",
+      "owner": "Shtenco/synergy_agi_nexus",
+      "role": "NEXUS inference and typed proposals; no automatic payment, ledger or deployment authority."
+    },
+    {
+      "domain": "api_and_tool_gateway",
+      "owner": "Shtenco/synergy_meta_api",
+      "role": "Local typed tool registry and deny-by-default policy; current V0.1 prototype is not production."
+    },
+    {
+      "domain": "node_runtime_orchestration",
+      "owner": "Shtenco/synergy_meta_os",
+      "role": "Manifest and service orchestration; compatibility runtime requires stronger isolation before untrusted execution."
+    },
+    {
+      "domain": "p2p_transport",
+      "owner": "Shtenco/synergy_net",
+      "role": "Target transport evidence and planned mesh architecture; complete production data plane not established by inspected code."
+    },
+    {
+      "domain": "agent_economic_simulation",
+      "owner": "Shtenco/synergy_agentic_ai_economy",
+      "role": "Closed agent-economy simulation and ledger model; not real payment settlement."
+    },
+    {
+      "domain": "market_conversion_graph",
+      "owner": "Shtenco/synergy_market_graph",
+      "role": "Executable conversion-path/fair-value graph; not a general marketplace or transaction authority."
+    }
+  ],
+  "integration_contract": {
+    "identity": "Keep GitHub numeric repository ID as Hypergraph canonical node identity; map to memory engine canonical clone URL/hash without replacing provider ID.",
+    "evidence": "Import memory engine candidate dependency records only with source and target commit SHA, file path, blob SHA, relation and confidence.",
+    "trust": "Candidate remains candidate; source review may become reviewed; verified requires reproducible contract/runtime evidence.",
+    "governance": "Reference System contract IDs and authority declarations; do not fork or duplicate canonical contract authority.",
+    "projection": "Hypergraph V3 is a read model / cross-repository projection in the umbrella repository, not a new runtime or new repository."
+  }
+}
