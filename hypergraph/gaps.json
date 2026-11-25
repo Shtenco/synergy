@@ -612,6 +612,30 @@
       "repository": "Shtenco/swap_arbitrage_metatrader_5",
       "description": "Portfolio simulation combines current broker swap metadata with historical price returns and omits spread, commissions, slippage, margin and stop-out; a historical carry edge is not established.",
       "next_action": "Acquire dated historical swap schedules and broker contract specifications, model all execution/financing costs and margin calls, then run purged OOS tests before any paper/live use."
+    },
+    {
+      "id": "GAP-078",
+      "severity": "high",
+      "area": "person_entity_resolution_false_merge_and_privacy",
+      "repository": "Shtenco/synergy_epstein_network",
+      "description": "Exact normalized-name/token-order matches are automatically merged into one person ID without corroborating identifiers; common or homonymous names can create false identity links. Deterministic unsalted email/phone hashes are pseudonymous and dictionary-matchable, not anonymization.",
+      "next_action": "Require multi-attribute corroboration and human review before identity merges, preserve source-level identities, minimize contact fields, use keyed HMAC or opaque IDs where appropriate, and enforce access/retention controls."
+    },
+    {
+      "id": "GAP-079",
+      "severity": "medium",
+      "area": "3d_bars_feature_scaling_bug",
+      "repository": "Shtenco/3D_bars_market_structure",
+      "description": "time_numeric is scaled by fitting MinMaxScaler to one scalar at a time; each one-row fit maps to the lower bound and collapses the feature to a constant.",
+      "next_action": "Fit scalers on a training partition or stable reference range, transform held-out data without refitting, add constant-feature and chronological OOS tests."
+    },
+    {
+      "id": "GAP-080",
+      "severity": "medium",
+      "area": "3d_bars_license_conflict",
+      "repository": "Shtenco/3D_bars_market_structure",
+      "description": "Source header simultaneously states CC BY-NC-ND and MIT, which impose materially different commercial/modification permissions.",
+      "next_action": "Select one authoritative license, update source headers and repository LICENSE consistently, and verify third-party dependency licenses."
     }
   ]
 }
