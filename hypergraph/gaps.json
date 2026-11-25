@@ -708,7 +708,9 @@
       "area": "shttps_remote_mcp_command_execution",
       "repository": "Shtenco/synergy_shttps",
       "description": "RemoteMCPGateway.run is not a safe command allowlist: allowed python/cargo/rustc/git executables accept arbitrary arguments, including arbitrary Python code, and basename-only matching can execute a different path with an allowed basename. No OS-level sandbox or syscall/network confinement is enforced in this gateway.",
-      "next_action": "Treat the endpoint as privileged remote code execution until redesigned: remove generic interpreters/compilers from allowlist, use typed fixed operations, resolve executable paths to trusted absolute binaries, run in an isolated ephemeral sandbox with no ambient credentials/network by default, enforce per-principal capabilities and audit every action."
+      "next_action": "Treat the endpoint as privileged remote code execution until redesigned: remove generic interpreters/compilers from allowlist, use typed fixed operations, resolve executable paths to trusted absolute binaries, run in an isolated ephemeral sandbox with no ambient credentials/network by default, enforce per-principal capabilities and audit every action.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The reviewed implementation is on a branch-only prototype; the repository's main branch was classified as a stub at audit time. This is a critical blocker if the prototype is merged, deployed or exposed; it is not evidence of a currently deployed main-branch endpoint."
     },
     {
       "id": "GAP-084",
@@ -716,7 +718,9 @@
       "area": "pq_radio_hardware_attestation_verification",
       "repository": "Shtenco/synergy_post_quantum_radio",
       "description": "Hardware teleportation receipt accepts any nonzero driver-supplied attestation root; the claim-strengthening method checks only Hardware mode and root presence. A fake driver with a constant [7;32] root passes the test, so the root is not independently authenticated.",
-      "next_action": "Verify a signed hardware attestation chain against pinned device/vendor roots, bind device identity/calibration/experiment transcript and measurements, reject unknown keys and test forged/expired/replayed attestations; keep all simulation receipts non-authoritative."
+      "next_action": "Verify a signed hardware attestation chain against pinned device/vendor roots, bind device identity/calibration/experiment transcript and measurements, reject unknown keys and test forged/expired/replayed attestations; keep all simulation receipts non-authoritative.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The reviewed fake-attestation weakness is in a branch-only prototype; the repository's main branch was classified as a stub at audit time. No verified physical hardware attestation or production hardware integration is established."
     },
     {
       "id": "GAP-085",
@@ -724,7 +728,9 @@
       "area": "autopilot_plugin_authorization_fail_open",
       "repository": "Shtenco/synergy_agi_autopilot",
       "description": "The shared plugin PolicyEngine defaults to Allow for unmapped capabilities; PluginManifest does not require mapped_core_capabilities or signed/approved manifests. PluginCall.approved is caller-supplied and, when no persistent control-plane DB is configured, requires_approval can be bypassed by setting approved=true without an independently authenticated approval record.",
-      "next_action": "Change policy default to Deny, require every capability to map to a canonical core capability, require signed/admin-approved manifests and bind approval to authenticated principal, plugin/version/capability/input hash/work item with mandatory persistent control-plane verification for all side effects."
+      "next_action": "Change policy default to Deny, require every capability to map to a canonical core capability, require signed/admin-approved manifests and bind approval to authenticated principal, plugin/version/capability/input hash/work item with mandatory persistent control-plane verification for all side effects.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The fail-open policy behavior is in a branch-only prototype; the repository's main branch was classified as a stub at audit time. Treat it as a merge/deployment blocker, not as evidence that the main branch currently runs this plugin runtime."
     },
     {
       "id": "GAP-086",
@@ -732,7 +738,9 @@
       "area": "qe_bridge_claim_attestation",
       "repository": "Shtenco/synergy_qe",
       "description": "BridgeAccounting trusts BRIDGE_ROLE callers to open source-settled claims and mark destination-settled values; no on-chain light-client proof, finality verification or destination inclusion proof is checked by the contract.",
-      "next_action": "Add a verified bridge proof adapter/light-client or explicitly constrain the trust model to a named multisig/attestor set with threshold, timelock, monitoring and emergency pause; do not describe as trustless settlement."
+      "next_action": "Add a verified bridge proof adapter/light-client or explicitly constrain the trust model to a named multisig/attestor set with threshold, timelock, monitoring and emergency pause; do not describe as trustless settlement.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The reviewed bridge contract is a branch-only prototype; the repository's main branch was classified as a stub at audit time. No production bridge settlement or trustless proof verification is established."
     },
     {
       "id": "GAP-087",
@@ -740,7 +748,9 @@
       "area": "revenue_vault_owner_key_governance",
       "repository": "Shtenco/print_money_synergychain",
       "description": "RevenueVault protects principal and refundable liabilities but places all expense/distribution authority behind one immutable owner EOA with no multisig, timelock, pause or role separation.",
-      "next_action": "Keep as a test fixture/research contract until ownership is a reviewed multisig/timelock with guardian pause, role-separated accounting and independent Solidity audit."
+      "next_action": "Keep as a test fixture/research contract until ownership is a reviewed multisig/timelock with guardian pause, role-separated accounting and independent Solidity audit.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The reviewed RevenueVault is a branch-only prototype; the repository's main branch was classified as a stub at audit time. Do not interpret it as a deployed treasury contract."
     },
     {
       "id": "GAP-088",
