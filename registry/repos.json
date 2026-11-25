@@ -286,7 +286,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1371974932"
+      "github_repository_id": "1371974932",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+      "source_audit_scope": "README, read-only accounting/trust projections and tests"
     },
     {
       "name": "synergy_epstein_network",
@@ -444,7 +447,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1227851612"
+      "github_repository_id": "1227851612",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "3494f2cdebd0b9510ac65a470b32a085e4920537",
+      "source_audit_scope": "README, mobile PWA shell, source-surface integrity contract and Android build workflow"
     },
     {
       "name": "timeweb_synergy_python_cpp_performance",
@@ -590,7 +596,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1397603060"
+      "github_repository_id": "1397603060",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+      "source_audit_scope": "README, V4 correctness harness, archived gate results and validation report"
     },
     {
       "name": "synergy_meta_api",
@@ -638,7 +647,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1344028054"
+      "github_repository_id": "1344028054",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
+      "source_audit_scope": "README, mobile release contract and Android manifest"
     },
     {
       "name": "synergy_midas_ai_trading_system",
@@ -787,7 +799,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1351698135"
+      "github_repository_id": "1351698135",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "10f2d999004ae83956239d954c452113dadb8bcc",
+      "source_audit_scope": "README, analytical XPU model and deterministic EML Q16.16 reference evaluator"
     },
     {
       "name": "synergy_midas_institutional",
@@ -1261,7 +1276,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1165635662"
+      "github_repository_id": "1165635662",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "c5ee1119369cd90c9ff23b346a405ac3e8bc6cad",
+      "source_audit_scope": "README, Turbo Core capability/scheduler/IPC implementation and historical SSH key incident report"
     },
     {
       "name": "synergy_net",
@@ -1695,7 +1713,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1463301548"
+      "github_repository_id": "1463301548",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "source_audit_scope": "README and complete main-branch tree"
     },
     {
       "name": "timeweb_synergy_codebase_intelligence",
@@ -1792,7 +1813,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1331946228"
+      "github_repository_id": "1331946228",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "0234edac62492ceff8af8195506aa1cef672ada1",
+      "source_audit_scope": "README, explicit security blocker, gitignore and deployment script; secret file contents deliberately not inspected"
     },
     {
       "name": "synergy_ai_llm_rwkv",
@@ -1890,7 +1914,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1317824815"
+      "github_repository_id": "1317824815",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "0f731f56c3f067095d3a2ff89f7e73bdc7365177",
+      "source_audit_scope": "README, packaged source boundary, QE V10 Solidity contracts and Foundry tests"
     },
     {
       "name": "timeweb_synergy_rag_quality_cost",
@@ -1960,7 +1987,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1351534269"
+      "github_repository_id": "1351534269",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "a568a5afaea5bf2ca8f68202d2c64856367316ad",
+      "source_audit_scope": "README, trust/replay consumer and tests"
     },
     {
       "name": "synergy_triangle_money_system",
@@ -2183,7 +2213,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1344027509"
+      "github_repository_id": "1344027509",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+      "source_audit_scope": "README and complete main-branch tree"
     },
     {
       "name": "synergychain.github.io",
@@ -2418,7 +2451,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1180497488"
+      "github_repository_id": "1180497488",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
+      "source_audit_scope": "README, repository tree and CASRSv3/CASRGv3 Solidity token/collateral contracts; secret files not opened"
     },
     {
       "name": "synergy_agi_trader",
