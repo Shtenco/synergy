@@ -716,6 +716,22 @@
       "repository": "Shtenco/synergy_system",
       "description": "The canonical governance registry is a 75-repository dependency-graph subset and 77-repository interface subset, while Hypergraph V3 inventories 112 repositories. 35 inventory repositories have no interface record and 37 have no dependency-graph node; the two additional interface records are synergy_hierarchical_cognitive_memory_architecture and synergy_long_term_harness, which are not dependency-graph nodes. This may be an intentional scope boundary, but no explicit inclusion/exclusion manifest currently reconciles the sets.",
       "next_action": "Publish an immutable-ID scope manifest classifying all 112 repositories as governance-in-scope, documentation-only, research-only, external surface or excluded with rationale. Add missing interface records where ownership/contract boundaries are relevant, and update dependency graph only for evidenced relationships. Preserve 0 E2E and 0 deployed claims until observed verification."
+    },
+    {
+      "id": "GAP-091",
+      "severity": "high",
+      "area": "m5_scope_legacy_repository_aliases",
+      "repository": "Shtenco/synergy_system",
+      "description": "The frozen M5 manifest contains 44 unique required edges, but only 42 match the current dependency graph by exact producer/consumer names. Two M4 Wave 4 entries use legacy names `binary_quantum_theory` and `epstein_network`; the current canonical repositories are `synergy_binary_quantum_theory` and `synergy_epstein_network`. The contract IDs and current graph edges match after explicit alias normalization.",
+      "next_action": "Preserve the frozen M5 scope and add a versioned alias/reconciliation manifest that maps legacy repository names to immutable GitHub repository IDs and canonical full names. Update future scope versions to canonical names; do not silently rewrite historical evidence. Keep all 44 edges unverified until M5 observed execution passes."
+    },
+    {
+      "id": "GAP-092",
+      "severity": "medium",
+      "area": "dependency_graph_summary_typed_contract_count",
+      "repository": "Shtenco/synergy_system",
+      "description": "The dependency graph contains 66 contract-bearing edges and 38 unique cross-repository contract IDs, while its integration_summary.typed_contracts field reports 17. The contract registry contains 39 contracts; the only registry contract absent from the cross-repository graph is synergy.trading.execution-plan/v1, whose producer and consumer are both synergy_trademux and whose scope is INTRA_REPOSITORY. The summary count 17 therefore appears stale or differently defined and is not explained by the current graph data.",
+      "next_action": "Define the exact typed_contracts counting rule and regenerate the summary from registry data. If it means unique cross-repository contract IDs, set it to 38; if it means another subset, publish that filter. Keep the intra-repository execution-plan contract separately identified."
     }
   ]
 }
