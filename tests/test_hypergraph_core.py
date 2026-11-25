@@ -184,10 +184,15 @@ class HypergraphCoreTests(unittest.TestCase):
             self.assertIn(edge["source_node_id"], nodes)
             self.assertIn(edge["target_node_id"], nodes)
         self.assertEqual(projection["source"]["commit"], "f1183d54121c3bbc558e4a171ddbba20973f8520")
+        projection_schema = self.governance_projection_schema
         self.assertEqual(
-            self.governance_projection_schema["properties"]["projection_type"]["const"],
+            projection_schema["properties"]["projection_type"]["const"],
             "read_only_governance_graph_projection",
         )
+        self.assertEqual(set(projection), set(projection_schema["properties"]))
+        edge_schema_properties = projection_schema["properties"]["edges"]["items"]["properties"]
+        for edge in projection["edges"]:
+            self.assertTrue(set(edge).issubset(edge_schema_properties))
 
     def test_governance_scope_manifest_partitions_all_112_repositories(self):
         manifest = self.scope_manifest
