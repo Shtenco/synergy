@@ -242,6 +242,26 @@
       "domain": "shhts_format_research",
       "owner": "Shtenco/synergy_shhts",
       "role": "Documentation-only format concept; no executable decoder on main."
+    },
+    {
+      "domain": "regional_economic_allocation_research",
+      "owner": "Shtenco/synergy_eurasian",
+      "role": "EIIOM project/sector allocation simulation with scenario coefficients; not a live macroeconomic data authority."
+    },
+    {
+      "domain": "project_capital_governance_dossier",
+      "owner": "Shtenco/synergy_project",
+      "role": "Master project dossier and typed capital authorization artifact; not a capital ledger or payment executor."
+    },
+    {
+      "domain": "scientific_claim_and_evidence_graph",
+      "owner": "Shtenco/synergy_megaproject",
+      "role": "Research claim/evidence graph and review-state validator; its evidence should feed Hypergraph without being misclassified as runtime dependencies."
+    },
+    {
+      "domain": "binary_quantum_gravity_research",
+      "owner": "Shtenco/synergy_binary_quantum_theory",
+      "role": "Mathematical claim registry and falsification harness; physical validity gates remain open."
     }
   ],
   "integration_contract": {
