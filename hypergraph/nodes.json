@@ -458,10 +458,9 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "midas"
+        "canonical-trading-intelligence-target",
+        "portfolio-decision-contract",
+        "typed-market-advisory-consumers"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_system",
@@ -478,8 +477,11 @@
         "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
         "Shtenco/quantum-trading_metatrader5"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Canonical-home status is a target ownership decision, not proof that all strategy experts, data pipelines and execution adapters are consolidated.",
+        "No direct broker execution or canonical accounting authority is implemented in the inspected main branch."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -487,6 +489,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1341272872",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+        "audited_at": "2026-11-25",
+        "scope": "README, portfolio decision contract and M4 market advisory consumers"
       }
     },
     {
@@ -1568,14 +1576,16 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "market-feature-cube"
+        "ohlcv-window-feature-cube",
+        "robust-per-window-scaling",
+        "market-feature-summary-contract"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Feature cube is not a forecast or trading signal; it excludes order book, bid/ask and cross-asset context.",
+        "Scaling occurs within the current window and the summary compresses the tensor heavily; downstream OOS ablation is required to prove value."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1583,6 +1593,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376378125",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "d1018cba6b6c977ba8dce43ba8257601c0e2fe64",
+        "audited_at": "2026-11-25",
+        "scope": "README, OHLCV feature cube and market-features contract"
       }
     },
     {
@@ -2034,14 +2050,18 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "market-making"
+        "inventory-skewed-liquidity-quote",
+        "reservation-price-heuristic",
+        "hedge-notional-proposal",
+        "enterprise-api-and-audit"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "No order-book depth, queue position, adverse selection, fill probability, venue latency, cancel/replace, multi-venue inventory or realized maker P&L in the core.",
+        "MMConfig has no explicit parameter validation for gamma/kappa/horizon/max_inventory/min spread; malformed config can produce invalid geometry or math errors.",
+        "Quote and hedge notional are proposals, not orders or fills."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2049,6 +2069,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376377837",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3edcea187c45866d55a65b74dc707b7b1009a69b",
+        "audited_at": "2026-11-25",
+        "scope": "README, quote core and non-authorizing liquidity quote contract"
       }
     },
     {
@@ -2898,14 +2924,17 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "benchmark-validation"
+        "purged-walk-forward-splits",
+        "cost-adjusted-return-metrics",
+        "research-paper-canary-gate"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Sharpe uses simple sample standard deviation without autocorrelation/Newey-West correction; no probabilistic Sharpe, multiple-testing correction, bootstrap CI or nonlinear impact model.",
+        "Dataset manifest digest is optional and the inspected contract does not verify its format or fetch the dataset itself.",
+        "No tests were executed during this audit; README's local test status remains documentary evidence."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2913,6 +2942,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376376805",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "57ee40a6879c0db6550b573aacadad27347fb2db",
+        "audited_at": "2026-11-25",
+        "scope": "README, purged walk-forward core and validation decision contract"
       }
     },
     {
