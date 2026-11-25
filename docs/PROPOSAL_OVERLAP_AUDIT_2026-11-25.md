@@ -2,7 +2,7 @@
 
 ## Scope
 
-This audit compares all 39 proposed components against the inspected main-branch implementations and contracts of existing SYNERGY repositories. It does not claim that every listed repository has been fully tested. Each assessment cites exact commits and file blob SHAs in `hypergraph/architecture/overlap-matrix.json`.
+This audit compares all 39 proposed components against commit-pinned evidence from the repository audit ledger. Evidence may refer to main-branch code, branch-only prototypes, documentation-only stubs or research dossiers; each reference carries its audit status. A branch-only prototype is not treated as a main-branch capability. The audit does not claim that every listed repository has been fully tested. Each assessment cites exact commits and file blob SHAs in `hypergraph/architecture/overlap-matrix.json`.
 
 ## Decisions
 
@@ -38,6 +38,6 @@ No new repository is approved by this audit. Build the missing contracts and ver
 ## Coverage
 
 - Proposed components: 39
-- Assessed with pinned evidence: 39
+- Assessed with pinned evidence: 39 (91 repository/file evidence references, all reconciled to the audit ledger)
 - Remaining unaudited proposals: 0
 - Runtime integrations proven by this proposal audit: 0
