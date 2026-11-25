@@ -524,6 +524,38 @@
       "repository": "Shtenco/synergy_ai_blockchain",
       "description": "PQ/EVM consensus integration remains research/integration code; production PQ provider, client integration, cross-client vectors, light clients, bridge proofs and independent cryptographic audit are incomplete.",
       "next_action": "Keep real-asset custody disabled; complete provider and client implementations, cross-client deterministic vectors, light-client/bridge proof verification and independent cryptographic audit."
+    },
+    {
+      "id": "GAP-067",
+      "severity": "high",
+      "area": "messenger_release_evidence_mismatch",
+      "repository": "Shtenco/synergy_messenger",
+      "description": "The alpha.9 release manifest claims 249/249 tests and 293 files, but main and the reviewed open PR branch do not contain tests/v3; package.json points npm test at that missing directory. The branch is not a verified releasable build.",
+      "next_action": "Restore the exact test suite and checksum manifest into the release branch, make npm test pass in CI, generate a reproducible Android APK/AAB and align the release manifest with the exact commit/file set."
+    },
+    {
+      "id": "GAP-068",
+      "severity": "medium",
+      "area": "canonical_inventory_registry_drift",
+      "repository": "Shtenco/synergy",
+      "description": "Legacy registry/repos.json remains a 92-record snapshot and rebuild_registry.py omits immutable GitHub numeric IDs; current Hypergraph V3 is 112-ID keyed. Open inventory refresh PRs #5/#6 are not yet merged.",
+      "next_action": "Merge one reconciled 112-ID inventory update, add GitHub numeric IDs to the canonical registry schema and make Hypergraph nodes a deterministic projection of that source."
+    },
+    {
+      "id": "GAP-069",
+      "severity": "medium",
+      "area": "long_term_harness_external_verification_authority",
+      "repository": "Shtenco/synergy_long_term_harness",
+      "description": "Mission approval relies on the host authenticating actor identity and signed verification uses a supplied HMAC secret; an independently operated verifier service/key lifecycle is not yet connected. Implementation exists only on open PR branches.",
+      "next_action": "Bind actor identity to authenticated host principal, move verifier keys to managed secret/KMS service, separate executor/verifier identities and add cross-process receipt verification and key-rotation tests."
+    },
+    {
+      "id": "GAP-070",
+      "severity": "high",
+      "area": "ai_company_risk_cap_numeric_validation",
+      "repository": "Shtenco/synergy_ai_company",
+      "description": "Auto-Company 2.0 Settings._float accepts NaN/Infinity and RiskPolicy does not reject non-finite spend/loss limits or action amounts before comparison.",
+      "next_action": "Require math.isfinite on all configured caps and action amounts, reject negative/NaN/Infinity at settings and domain-model boundaries, and add adversarial tests for all risk classes."
     }
   ]
 }
