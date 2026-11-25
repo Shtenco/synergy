@@ -6,8 +6,8 @@
       "id": "GAP-001",
       "severity": "high",
       "area": "source_audit",
-      "description": "All 112 inventoried repositories still require systematic README, source tree, dependency, test and workflow review. Twelve preliminary README notes from an earlier pass are not yet represented as revision-pinned evidence in this graph.",
-      "next_action": "Audit repositories in batches and attach source revision and file-level evidence."
+      "description": "112 repositories are inventoried; 20 README reviews and 19 limited source reviews are pinned in the evidence ledger. The remaining 93 repositories still require source-level review, and the 19 reviewed scopes are not full repository certification.",
+      "next_action": "Audit the remaining 93 repositories in batches; expand each limited review to dependencies, tests, workflows and runtime contracts."
     },
     {
       "id": "GAP-002",
