@@ -1078,7 +1078,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1336911571"
+      "github_repository_id": "1336911571",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "b911bb017103f122f2c75ef08b99ffebe665883d",
+      "source_audit_scope": "README, EIIOM optimizer, federation audit, sector optimizer and invariant tests"
     },
     {
       "name": "synergy_trademux",
@@ -1251,7 +1254,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1293271223"
+      "github_repository_id": "1293271223",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "3d48d8ba6c190efe23ee655528365f5045216af7",
+      "source_audit_scope": "README, current audit, falsification test matrix and core-scope audit script"
     },
     {
       "name": "timeweb_synergy_binary_neural_networks",
@@ -2353,7 +2359,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1390438988"
+      "github_repository_id": "1390438988",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "f1d359afd0729741ed9452518c5dfc26ea7ad979",
+      "source_audit_scope": "README, research graph validator, science evidence contracts and tests"
     },
     {
       "name": "timeweb_synergy_multiagent_benchmark",
@@ -2469,7 +2478,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1359110009"
+      "github_repository_id": "1359110009",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "f1055866444a2e6bdbc8ac6b76f4334f1e171105",
+      "source_audit_scope": "README, capital governance contract and contract tests"
     },
     {
       "name": "synergy_cashero",
