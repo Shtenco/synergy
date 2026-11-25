@@ -340,6 +340,54 @@
       "repository": "Shtenco/quantum-trading_metatrader5",
       "description": "The QPE-like circuit ignores the supplied market binary history; stochastic measurement output is compared to future labels without a causal prediction path.",
       "next_action": "Treat as circuit simulation only; either encode causal history and compare against classical baselines or narrow all claims to a non-predictive Qiskit experiment."
+    },
+    {
+      "id": "GAP-044",
+      "severity": "high",
+      "area": "compiler_code_injection",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "C/Rust/Solidity/Kotlin code generators interpolate action/target strings directly into target-language string literals without escaping, enabling generated-code injection from crafted instructions.",
+      "next_action": "Use target-language literal encoders or AST emitters, reject control characters where appropriate, and add adversarial quote/newline/escape payload tests for every target."
+    },
+    {
+      "id": "GAP-045",
+      "severity": "high",
+      "area": "local_command_sandbox",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "Workspace.run_command and execute_python_file execute subprocesses with the user's OS permissions; path guards and command filters do not isolate filesystem, network or process capabilities.",
+      "next_action": "Run commands in a dedicated OS/container sandbox with read-only base filesystem, workspace-only mounts, no secrets, no network by default, CPU/memory/time limits and explicit egress policy."
+    },
+    {
+      "id": "GAP-046",
+      "severity": "medium",
+      "area": "trace_secret_redaction",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "SemanticTrace.record stores the first result line after truncation but does not redact credential patterns, despite documenting that raw credentials are not persisted.",
+      "next_action": "Apply structured secret redaction before trace persistence and test API keys, bearer tokens, passwords, private keys and multiline output."
+    },
+    {
+      "id": "GAP-047",
+      "severity": "medium",
+      "area": "branch_authority",
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "description": "The graph-native runtime and MoE experiments are on unified-v3-generalization-first at a 2026-09-20 commit; default main is documentation/benchmark registry only.",
+      "next_action": "Choose an explicit canonical branch/release and pin runtime, checkpoint, data and benchmark artifacts before integrating NEXUS."
+    },
+    {
+      "id": "GAP-048",
+      "severity": "medium",
+      "area": "model_quantization_evidence",
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "description": "RWKV converter and Triton matvec are branch-only; tests use synthetic matrices/checkpoints and no full 2.9B model perplexity or target-GPU performance has been measured.",
+      "next_action": "Run exact full-checkpoint restore, aligned held-out logits/PPL, long-context drift, GPU kernel correctness and matched latency/memory benchmarks."
+    },
+    {
+      "id": "GAP-049",
+      "severity": "medium",
+      "area": "debt_credit_runtime_gap",
+      "repository": "Shtenco/synergy_matrix_sota",
+      "description": "Debt/credit lifecycle repository is documentation-only with five mechanisms and 42 legacy units assigned for rewrite; no executable maturity or expected-loss engine exists.",
+      "next_action": "Keep the Financial OS as accounting authority and implement a contract-first maturity/expected-loss module only after ownership and legacy rewrite review."
     }
   ]
 }
