@@ -36,7 +36,7 @@
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 0,
+    "readme_reviewed_in_this_pass": 6,
     "source_code_reviewed_repository_names": [
       "3D_bars_market_structure",
       "computer_vision_trading_metatrader_5",
@@ -193,19 +193,24 @@
     ],
     "completion_percentages": {
       "repository_source_audit": 94.64,
-      "readme_review": 100
+      "readme_review": 100,
+      "repository_content_audit": 100
     },
     "main_branch_source_reviewed": 91,
     "non_main_branch_source_reviewed": 15,
     "readme_reviewed_total": 112,
-    "source_code_reviewed_total": 106
+    "source_code_reviewed_total": 106,
+    "non_code_content_reviewed_in_this_pass": 6,
+    "content_reviewed_repository_total": 112,
+    "executable_source_reviewed_total": 106
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
     "repository_source_audit": 94.64,
     "edge_verification": 0,
     "contract_verification": 0,
-    "readme_review": 100
+    "readme_review": 100,
+    "repository_content_audit": 100
   },
   "interpretation": "The search result set contains 112 unique GitHub repository IDs. This reconciles the 100-record owner-affiliation listing plus 12 additional repositories. Inventory is complete for this search result set; source-level audit and relationship verification are not complete."
 }
