@@ -86,6 +86,36 @@ class HypergraphCoreTests(unittest.TestCase):
             round(self.audit["audited_repository_count"] / 112 * 100, 2),
         )
 
+    def test_every_inventory_node_has_commit_pinned_content_audit(self):
+        node_names = {node["name"] for node in self.nodes_doc["nodes"]}
+        audit_names = {record["name"] for record in self.audit["records"]}
+        self.assertEqual(node_names, audit_names)
+        self.assertEqual(self.audit["audited_repository_count"], 112)
+        self.assertEqual(self.audit["content_reviewed_repository_count"], 112)
+        self.assertEqual(self.audit["audit_record_count"], len(self.audit["records"]))
+        latest = {record["name"]: record for record in self.audit["records"]}
+        for node in self.nodes_doc["nodes"]:
+            record = latest[node["name"]]
+            self.assertEqual(node["source_audit"]["commit"], record["commit"])
+            self.assertEqual(node["source_audit"]["status"], record["status"])
+
+    def test_documentation_dossiers_are_not_counted_as_executable_source(self):
+        executable = sum(
+            1 for node in self.nodes_doc["nodes"]
+            if node["audit_status"] in {"source_reviewed_limited", "branch_only_prototype"}
+        )
+        self.assertEqual(executable, 106)
+        self.assertEqual(self.coverage["audit"]["executable_source_reviewed_total"], 106)
+        self.assertEqual(self.coverage["audit"]["content_reviewed_repository_total"], 112)
+        self.assertEqual(self.coverage["audit"]["non_code_content_reviewed_in_this_pass"], 6)
+        self.assertAlmostEqual(
+            self.coverage["completion_percentages"]["repository_source_audit"],
+            round(106 / 112 * 100, 2),
+        )
+        self.assertEqual(
+            self.coverage["completion_percentages"]["repository_content_audit"], 100
+        )
+
     def test_proposals_are_not_counted_as_repositories(self):
         actual_ids = {node["node_id"] for node in self.nodes_doc["nodes"]}
         proposal_ids = {proposal["proposal_id"] for proposal in self.proposals["proposals"]}
