@@ -556,6 +556,22 @@
       "repository": "Shtenco/synergy_ai_company",
       "description": "Auto-Company 2.0 Settings._float accepts NaN/Infinity and RiskPolicy does not reject non-finite spend/loss limits or action amounts before comparison.",
       "next_action": "Require math.isfinite on all configured caps and action amounts, reject negative/NaN/Infinity at settings and domain-model boundaries, and add adversarial tests for all risk classes."
+    },
+    {
+      "id": "GAP-071",
+      "severity": "medium",
+      "area": "cryptographic_benchmark_contract_numeric_validation",
+      "repository": "Shtenco/dlp_solver",
+      "description": "constraint_benchmark_payload accepts NaN elapsed_s because it only checks elapsed_s < 0; non-finite measurements can be labelled MEASURED.",
+      "next_action": "Require math.isfinite(elapsed_s), strict integer validation for dimensions/counts and add NaN/Infinity adversarial tests."
+    },
+    {
+      "id": "GAP-072",
+      "severity": "medium",
+      "area": "investment_committee_input_validation",
+      "repository": "Shtenco/synergy_ai_investment_committee",
+      "description": "MarketContext and investment_thesis_payload accept non-finite float inputs; NaN volatility can evade the risk-veto threshold and produce an undefined advisory thesis.",
+      "next_action": "Validate all market values and veto thresholds with math.isfinite and domain ranges before voting; add NaN/Infinity and out-of-range tests."
     }
   ]
 }
