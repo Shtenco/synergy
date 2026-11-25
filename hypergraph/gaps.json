@@ -227,7 +227,16 @@
       "area": "credential_exposure",
       "repository": "Shtenco/synergy_usds",
       "description": "Tracked root artifact base-mainnet-deployer.key exists. Contents were deliberately not inspected; repository's own SECURITY_FEDERATION_BLOCKER confirms credential hygiene is an explicit federation blocker.",
-      "next_action": "Immediately rotate/revoke the associated deployer credential, remove the file and sensitive history, move secrets to a secret manager, enable secret scanning/push protection and provide verified cleanup evidence. Keep deployment disabled."
+      "next_action": "Immediately rotate/revoke the associated deployer credential, remove the file and sensitive history, move secrets to a secret manager, enable secret scanning/push protection and provide verified cleanup evidence. Keep deployment disabled.",
+      "remediation_state": {
+        "current_main_path_present": true,
+        "security_pr": 6,
+        "security_pr_state": "CLOSED_NOT_MERGED",
+        "security_pr_head": "9554fcdace121599e37ed2b70b7deae04df2a8d3",
+        "external_rotation_verified": false,
+        "history_purge_verified": false
+      },
+      "last_reaudited": "2026-11-25"
     },
     {
       "id": "GAP-030",
@@ -235,7 +244,23 @@
       "area": "credential_exposure",
       "repository": "Shtenco/synergy_cashero",
       "description": "Tracked .env, owner.env, bot1.env and bot2.env files are present in the repository tree. Contents were deliberately not inspected; README warns tracked configs may include secrets; root .gitignore was not found.",
-      "next_action": "Treat any credentials as exposed until proven otherwise; rotate/revoke wallet and bot credentials, remove secret files/history, add secret scanning and provide evidence before any deployment."
+      "next_action": "Treat any credentials as exposed until proven otherwise; rotate/revoke wallet and bot credentials, remove secret files/history, add secret scanning and provide evidence before any deployment.",
+      "remediation_state": {
+        "current_main_paths_present": [
+          ".env",
+          "owner.env",
+          "bot1.env",
+          "bot2.env"
+        ],
+        "security_pr": 10,
+        "security_pr_state": "OPEN_DRAFT",
+        "security_pr_head": "37efc706410125abc68fac04f225b86a52ccd041",
+        "secret_hygiene_workflow_run": 45498923978,
+        "secret_hygiene_workflow_result": "success",
+        "external_rotation_verified": false,
+        "history_purge_verified": false
+      },
+      "last_reaudited": "2026-11-25"
     },
     {
       "id": "GAP-031",
@@ -251,7 +276,17 @@
       "area": "historical_ssh_credential",
       "repository": "Shtenco/synergy_turbo_linux",
       "description": "Repository incident report confirms an unencrypted SSH private key was committed to main history. Current tree removal is not proof that the credential was rotated/revoked or that history was sanitized.",
-      "next_action": "Verify new key issuance, revoke old public key on every authorized host, inspect access logs, rotate dependent credentials and complete human-approved history sanitization."
+      "next_action": "Verify new key issuance, revoke old public key on every authorized host, inspect access logs, rotate dependent credentials and complete human-approved history sanitization.",
+      "remediation_state": {
+        "private_key_path_present_in_current_main": false,
+        "historical_exposure_remains": true,
+        "security_pr": 13,
+        "security_pr_state": "CLOSED_NOT_MERGED",
+        "security_pr_head": "006cd6b48dbf4be8b6f2003f66240dc662e67126",
+        "external_rotation_verified": false,
+        "history_purge_verified": false
+      },
+      "last_reaudited": "2026-11-25"
     },
     {
       "id": "GAP-033",
@@ -323,7 +358,21 @@
       "area": "embedded_credentials",
       "repository": "Shtenco/synergy_ai_trade_terminal",
       "description": "README and source scan confirm credential fields are embedded in cassandra_v6_FIXED.py and bearer token material is emitted into login events/log prefix.",
-      "next_action": "Immediately rotate/revoke embedded account credentials and all issued tokens; purge history after rotation; move secrets to a secret manager and redact tokens from logs/events."
+      "next_action": "Immediately rotate/revoke embedded account credentials and all issued tokens; purge history after rotation; move secrets to a secret manager and redact tokens from logs/events.",
+      "remediation_state": {
+        "current_main_paths_present": [
+          "cassandra_v6_FIXED.py",
+          "cassandra_ai_collector.py"
+        ],
+        "security_pr": 5,
+        "security_pr_state": "OPEN_DRAFT",
+        "security_pr_head": "1c77b9156c8d772bd862b22b5a021823f9758d29",
+        "credential_hygiene_workflow_run": 45498737127,
+        "credential_hygiene_workflow_result": "failure_before_steps_or_logs",
+        "external_broker_revocation_verified": false,
+        "history_purge_verified": false
+      },
+      "last_reaudited": "2026-11-25"
     },
     {
       "id": "GAP-042",
@@ -841,6 +890,69 @@
         }
       ],
       "validation": "PR #10 is open/draft/unmerged. Runs 43864234518, 43864234530 and 43864234504 failed with empty step lists and unavailable logs; no exact-head tests or corrected replay are attested."
+    },
+    {
+      "id": "GAP-096",
+      "severity": "high",
+      "area": "cognitive_memory_api_authentication",
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "description": "The current main API exposes unauthenticated read/write endpoints for memory put/get/search/retrieve, consolidation proposals and context planning. Only the system-core mutation endpoint checks X-Synergy-Admin-Token. The open draft PR #7 hardens symlink containment and repository-scoped source identities, but its api.py is unchanged and still has no general caller authentication, authorization, tenant isolation or rate limiting. Its exact-head CI run 45475196929 failed with no steps and unavailable logs.",
+      "next_action": "Keep the API loopback/local-only. Before any network exposure, add authenticated caller identity, per-tenant authorization, namespace isolation, rate limiting, audit events and adversarial tests; require exact-head CI with executed steps. Do not treat the ingestion fixes as an API security fix.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+          "ref": "main",
+          "commit": "8c23bcb41199f89bb9afb57ca5e0766787154fd",
+          "files": [
+            {
+              "path": "synergy_memory/api.py",
+              "blob_sha": "7b6e7547ffd076e33c4c1e8295c76e380eea5d05"
+            },
+            {
+              "path": "synergy_memory/ingest.py",
+              "blob_sha": "2e34b4f2d494ffd86c9d7c1990185c405d245d9e"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+          "ref": "fix/ingest-symlink-and-source-identity-2026-11-24",
+          "commit": "536b18ecae65ec565007f825ee964ea073d44095",
+          "files": [
+            {
+              "path": "synergy_memory/api.py",
+              "blob_sha": "7b6e7547ffd076e33c4c1e8295c76e380eea5d05"
+            },
+            {
+              "path": "synergy_memory/ingest.py",
+              "blob_sha": "53ad69af6ddb4f116e02655eeff23e249244d0f0"
+            }
+          ]
+        }
+      ],
+      "validation": "PR #7 open/draft/unmerged. Its CI run 45475196929 concluded failure with steps=[] and job-log download returned BlobNotFound."
+    },
+    {
+      "id": "GAP-097",
+      "severity": "high",
+      "area": "security_blocker_registry_stale_pr_state",
+      "repository": "Shtenco/synergy_system",
+      "description": "The SECURITY_BLOCKERS.json snapshot on draft PR #56 is dated 2026-11-25 but contains stale remediation PR state/head data. It reports synergy_usds PR #6 as OPEN_NOT_MERGED although live GitHub state is CLOSED and unmerged; it reports synergy_turbo_linux PR #13 as OPEN_DRAFT although live state is CLOSED and unmerged. It also records stale head SHAs for the current Cashero PR #10 and AI Trade Terminal PR #5. These discrepancies affect P0 incident tracking and must not be treated as proof of remediation.",
+      "next_action": "Refresh the security blocker registry from live PR metadata and immutable head SHAs. Distinguish open/draft, closed-unmerged and merged states; retain current-main path state, historical exposure, external credential rotation, session/allowance revocation and history purge as separate gates. Do not clear any P0 blocker solely because a remediation branch deletes a file.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_system",
+          "ref": "feat/synergy-2x-master-architecture-2026-11-24",
+          "commit": "77a410a2166bd41795ecda776aabbb720c807c64",
+          "files": [
+            {
+              "path": "registry/SECURITY_BLOCKERS.json",
+              "blob_sha": "4d81c0a2a9d4ff1ab9d67ea4191e81a999330c5a"
+            }
+          ]
+        }
+      ],
+      "validation": "Live PR API rechecked on 2026-11-25: synergy_usds#6 CLOSED/unmerged; synergy_turbo_linux#13 CLOSED/unmerged; synergy_cashero#10 OPEN/draft; synergy_ai_trade_terminal#5 OPEN/draft; cognitive memory#7 OPEN/draft."
     }
   ]
 }
