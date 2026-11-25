@@ -533,16 +533,17 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "graph",
-        "provenance",
-        "research"
+        "source-registry-and-provenance",
+        "entity-normalization",
+        "person-entity-resolution",
+        "neo4j-evidence-graph-import"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_megaproject",
         "Shtenco/synergy_system"
       ],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -550,7 +551,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1377447162",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "48a00e43026f441a3b95a5e91bd442b8174f0c10",
+        "audited_at": "2026-11-25",
+        "scope": "README plus main source/tests or complete main tree; no tests or backtests executed during this audit."
+      },
+      "audit_findings": [
+        "Main contains source adapters, normalization, entity resolution, graph build and tests; README limits the graph to public-source provenance and explicitly denies authority to infer wrongdoing or identity claims.",
+        "Exact normalized/token-order name matches are automatically mapped to a canonical person ID without corroborating attributes; identical names can refer to different individuals, so automatic identity merge can create false links. Fuzzy matches are only emitted as review candidates.",
+        "Email/phone identifiers are normalized and hashed with unsalted deterministic SHA-256 prefixes; these hashes are pseudonymous identifiers, not anonymization, and can be dictionary-matched. Public-source provenance, minimization, access control and retention remain necessary."
+      ]
     },
     {
       "node_id": "github-repo:1341272872",
@@ -2525,13 +2537,12 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "mt5-renko-derived-feature-generation",
+        "multidimensional-price-volume-time-visualization"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2539,7 +2550,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1091998611",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "5bcf5a95e54d454116d89fa23d1337500091accd",
+        "audited_at": "2026-11-25",
+        "scope": "README plus main source/tests or complete main tree; no tests or backtests executed during this audit."
+      },
+      "audit_findings": [
+        "Source computes Renko-like derived features and interactive plots from MT5 bars; README says there is no dedicated unit-test suite or reproducible out-of-sample evaluation.",
+        "Inside the row loop, MinMaxScaler.fit_transform is called on a single time_numeric scalar, which maps each single-value sample to the lower feature bound and collapses that feature to a constant.",
+        "The source header states both CC BY-NC-ND and MIT, creating a material licensing conflict that must be resolved before commercial reuse."
+      ]
     },
     {
       "node_id": "github-repo:1394514826",
@@ -3714,16 +3736,12 @@
       "category": "finance-economy",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
-      ],
+      "capabilities": [],
       "declared_dependencies": [],
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3731,7 +3749,17 @@
         "observed_at": "2026-11-25",
         "provider_id": "1357102715",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "7dd01e7da992d2efedb957e83a48218b86d0083f",
+        "audited_at": "2026-11-25",
+        "scope": "README plus main source/tests or complete main tree; no tests or backtests executed during this audit."
+      },
+      "audit_findings": [
+        "Main contains README, LICENSE, assets and docs only; README explicitly states runtime, simulator, contracts, tests, CI, datasets and evidence artifacts are absent.",
+        "The repository is a research specification, not a deployed monetary protocol or production system."
+      ]
     },
     {
       "node_id": "github-repo:1451354855",
