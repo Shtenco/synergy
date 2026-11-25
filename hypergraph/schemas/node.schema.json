@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://synergy.invalid/schemas/hypergraph-node.schema.json",
+  "type": "object",
+  "required": [
+    "node_id",
+    "node_type",
+    "github_repository_id",
+    "name",
+    "full_name",
+    "audit_status"
+  ],
+  "properties": {
+    "node_id": {
+      "type": "string"
+    },
+    "node_type": {
+      "const": "repository"
+    },
+    "github_repository_id": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "full_name": {
+      "type": "string",
+      "pattern": "^[^/]+/[^/]+$"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "default_branch": {
+      "type": "string"
+    },
+    "archived": {
+      "type": "boolean"
+    },
+    "visibility": {
+      "type": "string"
+    },
+    "ecosystem_relation": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "maturity": {
+      "type": "string"
+    },
+    "activity_band": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "declared_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audit_status": {
+      "enum": [
+        "registry_snapshot_present",
+        "inventory_only_unreviewed"
+      ]
+    },
+    "inventory_source": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
