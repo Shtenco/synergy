@@ -816,15 +816,17 @@
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "UNVERIFIED",
       "capabilities": [
-        "api-catalogue-design",
-        "mcp-gateway-research",
-        "policy-bound-tool-execution"
+        "local-tool-registry",
+        "mcp-json-rpc-subset",
+        "deny-by-default-policy",
+        "operator-configured-get-connectors"
       ],
       "declared_dependencies": [],
       "risks": [
-        "branch-only prototype; no production multi-tenant authorization or deployed gateway proven"
+        "Not full MCP streaming, sessions, OAuth, A2A, production tenancy or public-safe external execution.",
+        "No runtime integration to the 22 proposed routers is proven."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -832,6 +834,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1428731702",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+        "audited_at": "2026-11-25",
+        "scope": "README, deny-by-default policy and execution API"
       }
     },
     {
@@ -1711,9 +1719,9 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "networking",
-        "secure-transport",
-        "protocol"
+        "planned-p2p-mesh-architecture",
+        "authenticated-transport-evidence-contract",
+        "content-addressed-transport-metadata"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_system",
@@ -1721,8 +1729,11 @@
         "Shtenco/synergy_meta_os",
         "Shtenco/synergy_turbo_linux"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Inspected runtime file is a contract/evidence helper, not a complete P2P transport implementation.",
+        "No measured network throughput, latency, multipath, peer discovery or production post-quantum session is established."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1730,6 +1741,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1341273955",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "84fbfb842be97e5c2195c30e7c4188e5af813001",
+        "audited_at": "2026-11-25",
+        "scope": "README, transport evidence contract and tests"
       }
     },
     {
@@ -2183,10 +2200,9 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "agents",
-        "reasoning",
-        "orchestration",
-        "nexus"
+        "canonical-nexus-intelligence-target",
+        "model-generation-governance",
+        "typed-ai-proposal-contract"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_system",
@@ -2196,8 +2212,11 @@
         "Shtenco/synergy_chain",
         "Shtenco/synergy_gllm_nexus"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "README describes target canonical architecture; this review does not prove all listed generations are production-integrated.",
+        "No cross-repository runtime call is established by the proposal contract alone."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2205,6 +2224,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1341271800",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "997dbe4934f3f114a36d34bc2b0a719eae1f6a6f",
+        "audited_at": "2026-11-25",
+        "scope": "README, AI proposal contract and contract tests"
       }
     },
     {
@@ -2764,14 +2789,18 @@
       "maturity": "ARCHITECTURAL_MASTER",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "registry",
-        "federation",
-        "architecture",
-        "governance"
+        "federation-governance",
+        "canonical-contract-registry",
+        "authority-boundaries",
+        "typed-event-envelope"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "README owner inventory says 92 and config/repository_federation_v2.yaml says 75 as of 2026-09-28; both are stale relative to current 112-node inventory.",
+        "The governance registry is the existing authority; Hypergraph V3 should project/reference it rather than create a competing contract authority.",
+        "Zero E2E-tested edges means adapter declarations must not be treated as working integrations."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2779,6 +2808,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1341273343",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+        "audited_at": "2026-11-25",
+        "scope": "README governance snapshot, federation config and typed event envelope"
       }
     },
     {
