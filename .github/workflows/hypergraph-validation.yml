@@ -1,0 +1,34 @@
+name: hypergraph-validation
+
+on:
+  pull_request:
+    paths:
+      - "hypergraph/**"
+      - "registry/repos.json"
+      - "README.md"
+      - "tests/test_hypergraph_core.py"
+      - ".github/workflows/hypergraph-validation.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "hypergraph/**"
+      - "registry/repos.json"
+      - "README.md"
+      - "tests/test_hypergraph_core.py"
+      - ".github/workflows/hypergraph-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-hypergraph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate graph, inventory and provenance
+        run: python -m unittest discover -s tests -p "test_hypergraph_core.py" -v
