@@ -222,6 +222,26 @@
       "domain": "debt_credit_maturity_design",
       "owner": "Shtenco/synergy_matrix_sota",
       "role": "Documentation owner for maturity-sensitive credit mechanisms; no executable implementation on main."
+    },
+    {
+      "domain": "compression_benchmark_dossier",
+      "owner": "Shtenco/synegy_ai_compress",
+      "role": "Benchmark artifacts and source snapshot pointer; source URL/reproducibility needs repair."
+    },
+    {
+      "domain": "shared_model_temporal_compression",
+      "owner": "Shtenco/synergy_qr_compress",
+      "role": "QTC2/QTD3 dictionary-reference and patch codec; exact mode depends on shared model retention."
+    },
+    {
+      "domain": "gguf_compression_research",
+      "owner": "Shtenco/synergy_gguf_compress",
+      "role": "Documentation-only proposal; no executable codec on main."
+    },
+    {
+      "domain": "shhts_format_research",
+      "owner": "Shtenco/synergy_shhts",
+      "role": "Documentation-only format concept; no executable decoder on main."
     }
   ],
   "integration_contract": {
