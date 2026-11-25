@@ -200,6 +200,43 @@
         "Shtenco/synergy_financial_os"
       ],
       "decision": "Bank/provider integration and financial accounting are present as boundaries; a bank-product comparison router is not established."
+    },
+    {
+      "proposal": "synergy_ai_real_estate_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_lead_search_engline",
+        "Shtenco/synergy_maps"
+      ],
+      "decision": "Existing offline lead candidate store and geographic viewer cover parts of discovery and location; property listings, valuation, availability and transaction workflow remain distinct."
+    },
+    {
+      "proposal": "synergy_ai_enterprise_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_lead_search_engline",
+        "Shtenco/synergy_ai_company"
+      ],
+      "decision": "Lead OS provides a narrow offline lead workflow; AI Company is a stub. General enterprise supplier discovery remains unimplemented."
+    },
+    {
+      "proposal": "synergy_ai_classifieds_graph",
+      "status": "unresolved",
+      "existing_repositories": [
+        "Shtenco/synergy_market_graph",
+        "Shtenco/synergy_search_engline"
+      ],
+      "decision": "Market Graph is a conversion graph and search_engline is a HardNAV simulation; neither proves a general classifieds graph."
+    },
+    {
+      "proposal": "synergy_ai_economy_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_lead_search_engline",
+        "Shtenco/synergy_pay_system",
+        "Shtenco/synergy_market_graph"
+      ],
+      "decision": "Some discovery, route and payment primitives exist; a cross-domain demand/supply marketplace router is not established."
     }
   ],
   "remaining_proposals": [
@@ -216,15 +253,7 @@
       "status": "not_yet_overlap_audited"
     },
     {
-      "proposal": "synergy_ai_economy_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
       "proposal": "synergy_ai_skills_marketplace",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_classifieds_graph",
       "status": "not_yet_overlap_audited"
     },
     {
@@ -261,14 +290,6 @@
     },
     {
       "proposal": "synergy_ai_logistics_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_real_estate_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_enterprise_router",
       "status": "not_yet_overlap_audited"
     },
     {
