@@ -202,6 +202,26 @@
       "domain": "quantum_market_experiment",
       "owner": "Shtenco/quantum-trading_metatrader5",
       "role": "Fixed Qiskit/Aer circuit research; not a validated market prediction or execution system."
+    },
+    {
+      "domain": "source_indexed_coding_agent_and_compiler",
+      "owner": "Shtenco/synergy_ai_language",
+      "role": "Requirement-to-change trace, AST graphs and multi-language scaffold compiler; codegen escaping, command sandbox and trace redaction require hardening."
+    },
+    {
+      "domain": "graph_native_cognitive_model",
+      "owner": "Shtenco/synergy_gllm_nexus",
+      "role": "Typed cognitive hypergraph, recurrent graph reasoning and Russian compiler on branch unified-v3-generalization-first; default main is docs-only."
+    },
+    {
+      "domain": "rwkv_quantization_research",
+      "owner": "Shtenco/synergy_ai_llm_rwkv",
+      "role": "Experimental mixed-bit converter and Triton matvec on feature branch; no full-model quality or inference evidence."
+    },
+    {
+      "domain": "debt_credit_maturity_design",
+      "owner": "Shtenco/synergy_matrix_sota",
+      "role": "Documentation owner for maturity-sensitive credit mechanisms; no executable implementation on main."
     }
   ],
   "integration_contract": {
