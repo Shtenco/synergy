@@ -196,6 +196,30 @@
       "repository": "Shtenco/synergy_relative_value",
       "description": "Pair OLS/z-score signals are non-authorizing and do not establish cointegration, stationarity, hedge stability or executable edge after costs.",
       "next_action": "Require aligned train/OOS data, cointegration/stationarity tests, rolling stability, borrow/funding, liquidity and cost-aware negative tests."
+    },
+    {
+      "id": "GAP-026",
+      "severity": "medium",
+      "area": "superapp_integration",
+      "repository": "Shtenco/sinergy_super_app",
+      "description": "Main branch contains a PWA/Android source surface and UI descriptions of wallet/AGI/DAO/L1/MetaPay/mesh, but the source contract explicitly does not prove backend integrations or a built APK.",
+      "next_action": "Bind each UI module to a versioned backend contract and attach successful APK build artifact evidence before claiming operational features."
+    },
+    {
+      "id": "GAP-027",
+      "severity": "medium",
+      "area": "mobile_release_evidence",
+      "repository": "Shtenco/synergy_app",
+      "description": "Mobile source integrity contract verifies source files but explicitly returns artifact_built=false and store_published=false; source checks are not release evidence.",
+      "next_action": "Add reproducible signed build workflow, artifact digest/attestation and install smoke tests before release claims."
+    },
+    {
+      "id": "GAP-028",
+      "severity": "medium",
+      "area": "read_model_trust",
+      "repository": "Shtenco/synergy_apps",
+      "description": "Read-model helpers label payloads read-only but do not authenticate upstream evidence or verify canonical accounting/trust signatures.",
+      "next_action": "Require validated contract envelope and source provenance before constructing any user-visible authoritative projection."
     }
   ]
 }
