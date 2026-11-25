@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 20,
-  "source_code_reviewed_count": 19,
+  "audited_repository_count": 24,
+  "source_code_reviewed_count": 23,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -737,6 +737,177 @@
       ],
       "repository": "Shtenco/synergy_meta_os",
       "commit_url": "https://github.com/Shtenco/synergy_meta_os/commit/cf3d18ca533ca9824794ad48e208b41b0fdf4475",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_financial_os",
+      "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+      "scope": "README, accounting-recognition contract and contract tests",
+      "capabilities": [
+        "canonical-accounting-authority",
+        "accounting-recognition-contract",
+        "double-entry-balance-validation"
+      ],
+      "findings": [
+        "README defines Financial OS as canonical accounting authority and distinguishes external profit from internal value changes.",
+        "Main branch tree contains contract and test artifacts; README says larger runtime is on open feature PRs, so do not treat those unmerged branches as main implementation.",
+        "Recognition helper validates SETTLED/reconciled settlement only when settlement_payload is supplied; parameter is optional, so callers can bypass upstream settlement check by omitting it.",
+        "Empty entries pass _check_double_entry because zero debits equals zero credits; non-empty journal and nonzero amount invariants are not enforced here."
+      ],
+      "limitations": [
+        "Main branch is a contract-level implementation, not the full Financial OS runtime described in README.",
+        "Accounting authority does not itself execute payments or prove external settlement."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0c05200b323f75064a8e195a64c6744180159573"
+        },
+        {
+          "path": "contracts/accounting_recognition_v1.py",
+          "blob_sha": "c5a5a2f71e9a89c8d44ff3d3461c3b3f6af860be"
+        },
+        {
+          "path": "tests/test_accounting_recognition_contract.py",
+          "blob_sha": "8c02985093f90108089ef0386edd889ecccb5bac"
+        }
+      ],
+      "repository": "Shtenco/synergy_financial_os",
+      "commit_url": "https://github.com/Shtenco/synergy_financial_os/commit/ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_pay_system",
+      "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+      "scope": "README, live readiness, execution coordinator, provider registry and settlement engine",
+      "capabilities": [
+        "multi-provider-quote-routing",
+        "provider-capability-registry",
+        "fail-closed-live-readiness",
+        "execution-coordinator",
+        "paper-settlement-state-machine"
+      ],
+      "findings": [
+        "Live readiness requires global enablement, production environment, emergency-stop clearance, approved change ticket, notional limit, jurisdiction allowlists and provider allowlist.",
+        "Provider profiles model credentials/scopes, legal basis, KYB, settlement accounts, fees, rails, prefunds, HSM/MPC custody, sanctions screening, audits, bridge codehashes, health and disaster recovery.",
+        "LiveExecutionCoordinator rejects expired/non-executable quotes, missing provider context, provider policy failures and readiness blockers before calling an authenticated adapter.",
+        "README says live execution is disabled by default and public quotes are non-executable until authenticated adapters are separately approved."
+      ],
+      "limitations": [
+        "Inspected SettlementEngine stores records and idempotency keys in process memory; this is not durable cross-process exactly-once settlement.",
+        "A crash after external provider execution but before ledger posting requires durable outbox/reconciliation evidence beyond the in-memory path inspected.",
+        "Source review does not prove access to live bank/CBDC/venue accounts or regulatory authorization."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "189557cf4a24be60c143fc16e9612f3a4209e208"
+        },
+        {
+          "path": "src/synergy_pay/live_readiness.py",
+          "blob_sha": "84d8eb110de8e1799abe9a46550485d408bc8128"
+        },
+        {
+          "path": "src/synergy_pay/live_execution.py",
+          "blob_sha": "5aa0c35ad3b62ea10296a9f3aca409b665391b6e"
+        },
+        {
+          "path": "src/synergy_pay/provider_registry.py",
+          "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
+        },
+        {
+          "path": "src/synergy_pay/settlement.py",
+          "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
+        }
+      ],
+      "repository": "Shtenco/synergy_pay_system",
+      "commit_url": "https://github.com/Shtenco/synergy_pay_system/commit/d9a05854d3ca38f838c835c56fa5189b536da5a0",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_ai_financial_system",
+      "commit": "c7e9ea9dde51500f88ed701423164309e4ae6242",
+      "scope": "README, integer graph arbitrage simulator and scenario evidence contract",
+      "capabilities": [
+        "integer-cpmm-graph-arbitrage-simulation",
+        "dual-circuit-solvency-model",
+        "simulation-evidence-contract"
+      ],
+      "findings": [
+        "Graph arbitrage uses integer arithmetic, explicit fee/transfer-tax treatment and USDT cycle repayment; internal token QE is assigned zero external reserve value while paired stablecoin/POL capital is charged to LNAV.",
+        "Scenario evidence contract explicitly sets accounting_authority=false, settlement_authority=false and capital_authorization=false."
+      ],
+      "limitations": [
+        "The inspected module is a deterministic simulation/research model, not a live exchange executor or accounting/settlement authority.",
+        "Deployment claims require archive-block fork tests and external reserve/fee evidence as stated in project docs."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "1944e7b28813fb82c46d88e150bf7953e47b8f45"
+        },
+        {
+          "path": "simulation/graph_arbitrage.py",
+          "blob_sha": "e593c9fac62890604319e2c0323e250425aa1284"
+        },
+        {
+          "path": "simulation/synergy_contracts.py",
+          "blob_sha": "9f054c4fcd678f8f689981eec94270f22e96c9c3"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_financial_system",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_financial_system/commit/c7e9ea9dde51500f88ed701423164309e4ae6242",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_riskguard",
+      "commit": "e5ba5eab09e42ac25c695740bdc464ef3617c33c",
+      "scope": "README, risk core, typed risk contract, enterprise service and tests",
+      "capabilities": [
+        "independent-pretrade-risk-veto",
+        "historical-var-cvar",
+        "drawdown-and-exposure-limits",
+        "tenant-rbac-jwt",
+        "audit-and-metrics"
+      ],
+      "findings": [
+        "Core evaluates daily loss, drawdown, historical VaR/CVaR, gross exposure and single-position caps; contract requires upstream validation gate PAPER or CANARY.",
+        "Enterprise service verifies HMAC JWT claims, tenant identity and roles, and records audit events.",
+        "README reports 21 local tests and 80/80 local health checks; this audit did not rerun them."
+      ],
+      "limitations": [
+        "historical_var and cvar return 0.0 when fewer than five returns are supplied; decide may then treat missing/insufficient history as zero market risk instead of failing closed.",
+        "Core decide uses abs(order.notional) and does not independently reject negative notional or invalid side; contract adapter checks positive notional, but direct callers can bypass that layer.",
+        "Local smoke and benchmarks are not production SLA or realized trading evidence."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "479a012f63c56890e104d40f330cbb07f404863b"
+        },
+        {
+          "path": "src/synergy_riskguard/core.py",
+          "blob_sha": "4b3cc872e33544bb7153bd9315496a6cc67ba75c"
+        },
+        {
+          "path": "src/synergy_riskguard/synergy_contracts.py",
+          "blob_sha": "1304926c91db3eb854fde512af8ed3be84450371"
+        },
+        {
+          "path": "src/synergy_riskguard/enterprise/service.py",
+          "blob_sha": "b17d2a56bf448abab8a5e0dd6b557b05d6723535"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "4b9a83ad1c5bc80846276c61ead5458f325553d9"
+        }
+      ],
+      "repository": "Shtenco/synergy_riskguard",
+      "commit_url": "https://github.com/Shtenco/synergy_riskguard/commit/e5ba5eab09e42ac25c695740bdc464ef3617c33c",
       "audited_at": "2026-11-25",
       "status": "source_reviewed_limited"
     }
