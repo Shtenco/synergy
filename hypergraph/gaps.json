@@ -508,6 +508,22 @@
       "repository": "Shtenco/synergy_project",
       "description": "The master dossier's open PR #2 still describes an 89-repository assessment, while the current owner-scoped inventory contains 112 unique repositories.",
       "next_action": "Reconcile the dossier/PR to canonical GitHub IDs and current Hypergraph coverage before promoting it as the master ecosystem assessment."
+    },
+    {
+      "id": "GAP-065",
+      "severity": "high",
+      "area": "metaverse_key_management_and_erasure",
+      "repository": "Shtenco/synergy_metaverse",
+      "description": "The spatial signature/envelope components depend on external key and consent resolvers; production KMS/HSM, governed key registry, consent/revocation adapters and retention/legal authorization are not deployed. Backup/WAL/replica erasure and host-failure recovery remain unverified.",
+      "next_action": "Implement independently governed KMS/HSM and key registry adapters, consent/revocation source, legal retention authorizer, backup/WAL erasure and cross-process recovery tests; keep deployment blocked until all are evidenced."
+    },
+    {
+      "id": "GAP-066",
+      "severity": "high",
+      "area": "pq_blockchain_production_assurance",
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "description": "PQ/EVM consensus integration remains research/integration code; production PQ provider, client integration, cross-client vectors, light clients, bridge proofs and independent cryptographic audit are incomplete.",
+      "next_action": "Keep real-asset custody disabled; complete provider and client implementations, cross-client deterministic vectors, light-client/bridge proof verification and independent cryptographic audit."
     }
   ]
 }
