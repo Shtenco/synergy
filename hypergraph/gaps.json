@@ -572,6 +572,46 @@
       "repository": "Shtenco/synergy_ai_investment_committee",
       "description": "MarketContext and investment_thesis_payload accept non-finite float inputs; NaN volatility can evade the risk-veto threshold and produce an undefined advisory thesis.",
       "next_action": "Validate all market values and veto thresholds with math.isfinite and domain ranges before voting; add NaN/Infinity and out-of-range tests."
+    },
+    {
+      "id": "GAP-073",
+      "severity": "critical",
+      "area": "mt5_live_order_execution_safety",
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "description": "The live MT5 robot calls order_send and retries up to 30,000 times without a durable idempotency key or single order executor; concurrent symbol workers can race global position/risk state. Position sizing can exceed budget when broker minimum lot is forced and tick_size is omitted.",
+      "next_action": "Disable live order_send by default; add one serialized executor, broker request idempotency/reconciliation, bounded retries with explicit ambiguous-outcome handling, account-wide exposure lock, and order_calc_profit-based risk sizing with min-lot rejection when over budget."
+    },
+    {
+      "id": "GAP-074",
+      "severity": "high",
+      "area": "cross_forex_backtest_lookahead_and_units",
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "description": "Backtest uses the entire day's average spread to choose direction before simulating trades through that same day, creating look-ahead; fixed 0.00001 pip conversion is invalid for JPY and broker-specific symbol precision.",
+      "next_action": "Use event-driven signal generation only after each timestamp, use contemporaneous bid/ask for every leg, model conversion direction and executable cycle costs, and derive pip/tick size from symbol metadata."
+    },
+    {
+      "id": "GAP-075",
+      "severity": "high",
+      "area": "cv_trading_overlapping_window_leakage",
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "description": "Chronological train/test split is followed by shuffled train/validation splitting of heavily overlapping rolling windows with 24-bar forward targets, allowing adjacent target windows to cross partitions.",
+      "next_action": "Use purged chronological walk-forward folds with embargo at least the target horizon and verify no source/target timestamp overlap across partitions."
+    },
+    {
+      "id": "GAP-076",
+      "severity": "high",
+      "area": "global_liquidity_source_validity_and_confidence",
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "description": "FX price series are scaled and labelled as ECB/BOJ/PBOC balance-sheet proxies; forecast confidence is clipped test R² rather than a calibrated probability, and macro vintage/release-time leakage is unhandled.",
+      "next_action": "Replace proxies with official central-bank series or label them as FX proxies, store release_time/first_available_time/vintage/source_hash, and rename R²-derived score to an uncalibrated fit metric."
+    },
+    {
+      "id": "GAP-077",
+      "severity": "high",
+      "area": "swap_arbitrage_historical_cost_model",
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "description": "Portfolio simulation combines current broker swap metadata with historical price returns and omits spread, commissions, slippage, margin and stop-out; a historical carry edge is not established.",
+      "next_action": "Acquire dated historical swap schedules and broker contract specifications, model all execution/financing costs and margin calls, then run purged OOS tests before any paper/live use."
     }
   ]
 }
