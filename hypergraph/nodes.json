@@ -1713,12 +1713,12 @@
       "maturity": "PRESENTATION_CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "public-presentation",
-        "navigation"
+        "single-file-bilingual-quant-portfolio",
+        "responsive-presentation-ui"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1726,7 +1726,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1171792036",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "0c9556adbf4c72c4075cd2b64e39c055d3da208d",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected main-branch source/workflow files; no browser or deployment tests executed during this audit."
+      },
+      "audit_findings": [
+        "Main is a single-file HTML/CSS/JS portfolio presentation; no backend, trading service or independently verified fund runtime is present.",
+        "README explicitly states published financial targets/capacity metrics are editorial claims, not audited financial performance, and that no investment return is established.",
+        "Page title makes a superlative hedge-fund claim while README qualifies the page as a portfolio/presentation surface; the headline should not be treated as technical or financial evidence."
+      ]
     },
     {
       "node_id": "github-repo:1364435985",
@@ -2254,15 +2265,16 @@
       "maturity": "PRESENTATION_CANDIDATE",
       "activity_band": "UNVERIFIED",
       "capabilities": [
-        "public-web-portal",
-        "product-navigation",
-        "static-ui"
+        "static-product-portal",
+        "503-backend-not-configured-fallback",
+        "static-site-audit",
+        "local-design-and-onboarding-tests"
       ],
       "declared_dependencies": [],
       "risks": [
         "frontend source does not prove backend services or production business workflows"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2270,7 +2282,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1426159613",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "4d1b67fd00c4a1584c8428ef71d17c8b707c1703",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected main-branch source/workflow files; no browser or deployment tests executed during this audit."
+      },
+      "audit_findings": [
+        "Main contains a substantial static frontend portal, static-site audit scripts, local onboarding/Monte Carlo tests and GitHub Pages workflows.",
+        "pages-runtime.js explicitly returns HTTP 503 for same-origin API paths while backend is unconfigured; it is a frontend fallback, not server-side authorization or a backend security boundary.",
+        "README says tests/test_capital_montecarlo.cjs was not found, but the file is present in the inspected main tree; the documentation/evidence statement is stale."
+      ]
     },
     {
       "node_id": "github-repo:1456604903",
@@ -3706,13 +3729,13 @@
       "maturity": "PRESENTATION_CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "smart-contracts",
-        "protocol",
-        "chain-runtime"
+        "static-growth-os-demo",
+        "github-pages-deploy",
+        "external-archive-splitting-workflow"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3720,7 +3743,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1318145141",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "4e1374b8d268b943bd78178dbfd280509d7fc344",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected main-branch source/workflow files; no browser or deployment tests executed during this audit."
+      },
+      "audit_findings": [
+        "Main is a static single-file Growth OS presentation with a real GitHub Pages deployment workflow; README explicitly says it is not a backend, accounting ledger, payment authority or live market feed.",
+        "Archive workflow downloads a Google Drive ZIP, checks exact byte size and ZIP integrity, then computes SHA-256 and splits it into artifacts; no pre-pinned expected archive SHA is compared before processing.",
+        "Artifact retention is one day, so this is a transient distribution workflow rather than durable data archival."
+      ]
     },
     {
       "node_id": "github-repo:1357102715",
@@ -3940,12 +3974,13 @@
       "maturity": "PRESENTATION_CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "public-presentation",
-        "navigation"
+        "jekyll-liquid-portfolio",
+        "eight-group-json-project-catalog",
+        "responsive-static-presentation"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3953,7 +3988,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "890519259",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "a1041cd4852e21afd2a2982d1b470a385dd21512",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected main-branch source/workflow files; no browser or deployment tests executed during this audit."
+      },
+      "audit_findings": [
+        "Main is a Jekyll/Liquid static portfolio that composes original-source.html with an eight-group JSON catalogue; it is a presentation layer, not a backend or independent certification of every linked project.",
+        "The 77-project catalogue is a curated editorial subset, not a claim that the owner has only 77 repositories; README explicitly distinguishes it from the current 86-repository snapshot used by that site's own review.",
+        "The _data and data directory tree hashes match in the inspected commit, so the mirrored JSON groups are identical at this snapshot; future drift remains a maintenance risk."
+      ]
     },
     {
       "node_id": "github-repo:1091992955",
