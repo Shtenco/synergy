@@ -36,6 +36,30 @@
       "area": "evidence",
       "description": "Registry dependency assertions cite the umbrella registry blob rather than original source lines.",
       "next_action": "Replace or supplement each candidate edge with source-level evidence."
+    },
+    {
+      "id": "GAP-006",
+      "severity": "high",
+      "area": "browser_security",
+      "repository": "Shtenco/synergy_ai_browser-",
+      "description": "Playwright request guard applies policy only to top-level document navigations; subresource requests are continued without equivalent host/IP restrictions. Potential private-network/SSRF path through an allowlisted page.",
+      "next_action": "Enforce policy for every request, resolve and reject private/loopback/link-local/reserved IPs, validate redirects and add local fixtures proving blocked subresource requests."
+    },
+    {
+      "id": "GAP-007",
+      "severity": "medium",
+      "area": "evidence_scope",
+      "repository": "Shtenco/timeweb_synergy_service_recovery",
+      "description": "README describes local HTTP/SQLite restarts, but inspected article11 source is an in-memory state simulator with no real side effects.",
+      "next_action": "Add reproducible HTTP/SQLite recovery experiments or narrow README claims to the implemented simulator."
+    },
+    {
+      "id": "GAP-008",
+      "severity": "medium",
+      "area": "evidence_scope",
+      "repository": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "description": "README references local CPU measurements, but inspected source exposes an assumption-based cost calculator and no independent GPU benchmark harness.",
+      "next_action": "Add reproducible CPU/GPU measurement scripts and provider invoice evidence, or narrow README claims."
     }
   ]
 }
