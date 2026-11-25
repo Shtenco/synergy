@@ -447,5 +447,103 @@
       }
     ],
     "interpretation": "The frozen M5 scope resolves to all 44 graph edges after applying the two explicit legacy repository-name aliases. The two aliases are name/provenance drift, not missing implementations. The M5 execution remains BLOCKED_BY_RUNNER; scope matching is not E2E verification."
-  }
+  },
+  "related_branch_audits": [
+    {
+      "repository": "Shtenco/synergy_system",
+      "pull_request": 56,
+      "title": "docs: SYNERGY 2X master architecture and 30-capability portfolio",
+      "state": "OPEN",
+      "draft": true,
+      "head_branch": "feat/synergy-2x-master-architecture-2026-11-24",
+      "head_commit": "77a410a2166bd41795ecda776aabbb720c807c64",
+      "ahead_by": 28,
+      "behind_by": 0,
+      "workflows": [
+        {
+          "run_id": 45498706833,
+          "name": "SYNERGY Federation Maturity Gate",
+          "result": "success"
+        },
+        {
+          "run_id": 45498706792,
+          "name": "Validate SYNERGY Typed Contracts",
+          "result": "success"
+        },
+        {
+          "run_id": 45498706667,
+          "name": "Validate SYNERGY Federation",
+          "result": "success"
+        },
+        {
+          "run_id": 45498706640,
+          "name": "SYNERGY Federation Security Gate",
+          "result": "success"
+        }
+      ],
+      "registry": {
+        "interface_records": 77,
+        "interface_repository_set_unchanged": true,
+        "dependency_graph_nodes": 75,
+        "dependency_graph_edges": 136,
+        "backlog_repository_count": 77,
+        "backlog_integrated_count": 41,
+        "backlog_non_integrated_count": 36,
+        "backlog_unclassified_count": 0
+      },
+      "portfolio": {
+        "live_repository_count": 112,
+        "previous_registry_count": 92,
+        "delta_count": 20,
+        "all_112_readmes_fetched": true,
+        "full_source_review_complete": false,
+        "new_repositories": 20,
+        "capabilities": 30
+      },
+      "interface_status_changes": [
+        {
+          "repo": "Shtenco/synergy_ai_trade_terminal",
+          "from": "EXTERNAL_RUNTIME_PENDING",
+          "to": "SECURITY_BLOCKED"
+        },
+        {
+          "repo": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+          "from": "ARCHITECTURAL_ONLY",
+          "to": "SECURITY_BLOCKED"
+        },
+        {
+          "repo": "Shtenco/synergy_long_term_harness",
+          "from": "ARCHITECTURAL_ONLY",
+          "to": "DOCUMENTATION_ONLY"
+        }
+      ],
+      "source_files": [
+        {
+          "path": "registry/REPOSITORY_INTERFACES.json",
+          "blob_sha": "f439ed0ebd1910797bf081e2332c95f9d3fb6b4b"
+        },
+        {
+          "path": "registry/FEDERATION_BACKLOG.json",
+          "blob_sha": "8fefccefc237363bb06a083636889e7529ce5a4c"
+        },
+        {
+          "path": "registry/SYNERGY_LIVE_112_ASSOCIATIVE_EXPANSION.json",
+          "blob_sha": "b7678cc8d6a83fb8ba79d50f412e3cbb4022c13a"
+        },
+        {
+          "path": "registry/SYNERGY_2X_CAPABILITIES.json",
+          "blob_sha": "feb5bc0e147dfc8f79ecb56be830dbdf98006af9"
+        },
+        {
+          "path": "registry/SECURITY_BLOCKERS.json",
+          "blob_sha": "4d81c0a2a9d4ff1ab9d67ea4191e81a999330c5a"
+        },
+        {
+          "path": "docs/SYNERGY_20_NEW_REPOSITORIES_SOURCE_AUDIT_2026-11-24.md",
+          "blob_sha": "5d79fdc63847f1ef7610977b368d45312e8ef86c"
+        }
+      ],
+      "interpretation": "This branch has passing registry/schema/security workflows but is not merged. Its 112-row portfolio is README-level and explicitly not a full source audit; its interface registry remains 77 and backlog is scoped to those 77, so it does not close the 112-versus-75/77 governance gap. The 30 capabilities are a separate portfolio proposal set from Hypergraph's 39 proposed components."
+    }
+  ]
 }
