@@ -810,16 +810,16 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
+        "flash-loan-multi-token-cycle-executor",
+        "in-kind-token-repayment",
+        "pinned-base-fork-test"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_ai_blockchain",
         "Shtenco/synergy_system"
       ],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -827,7 +827,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1364848219",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "bf5733de1a1e1b31cbb0b91b91a2742536b68cad",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "V7.4 executor is a research/fork contract; it validates token-closed cycles and repays each borrowed ERC-20 principal plus the actual callback fee in-kind.",
+        "The pinned Base fork test checks same-block balances, Chainlink ETH/USD and post-repayment HardNAV; README says the hosted runner fails before the first workflow step, so this exact fork gate is not currently proven passing.",
+        "Contract documentation explicitly says it is not audited for production; no live deployment or production readiness is claimed."
+      ]
     },
     {
       "node_id": "github-repo:1336910945",
@@ -1134,18 +1145,14 @@
       "category": "finance-economy",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
-      ],
+      "capabilities": [],
       "declared_dependencies": [
         "Shtenco/synergy_ai_blockchain"
       ],
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1153,7 +1160,17 @@
         "observed_at": "2026-11-25",
         "provider_id": "1366684382",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "c1d6674a9cf92aee2989ff34d66078e70435b59e",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Checked main contains README.md and LICENSE only; no executable runtime, tests or evidence artifacts are present.",
+        "The README explicitly labels the repository STUB / specification-only."
+      ]
     },
     {
       "node_id": "github-repo:1370636640",
@@ -1337,13 +1354,14 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
+        "budget-data-normalization",
+        "evidence-scored-reconciliation",
+        "merkle-snapshot",
+        "local-hash-chained-jsonl"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1351,7 +1369,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1341358637",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "bc31841d024b02c1b803e28d0a360e5893bb2c4b",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Main includes typed budget normalization, reconciliation, trace/evidence hashes, Merkle snapshot generation and a local JSONL hash chain.",
+        "append_block reads the full file then appends without inter-process locking, atomic replacement or fsync; this is a local integrity prototype, not a crash-safe concurrent ledger or external trust anchor.",
+        "README distinguishes strong contract identifiers from weaker aggregate cash-execution evidence and forbids false transaction-level causality."
+      ]
     },
     {
       "node_id": "github-repo:1368484353",
@@ -1410,14 +1439,15 @@
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "UNVERIFIED",
       "capabilities": [
-        "economic-model-documentation",
-        "scenario-visualization"
+        "four-regime-economic-simulation",
+        "macro-kpi-dashboard",
+        "scenario-experiments"
       ],
       "declared_dependencies": [],
       "risks": [
         "no executable model in current main"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1425,7 +1455,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1420783404",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "branch_only_prototype",
+        "commit": "6a84410ad2107945069c4f153381854948816b91",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source on research/v8-russia-four-economies-escrow; main is docs/registry only."
+      },
+      "audit_findings": [
+        "Default main contains README, LICENSE, assets and docs; the executable V8 source and tests are on research/v8-russia-four-economies-escrow, not main.",
+        "README states the economic digital twin is a research model, not a validated national digital twin; some technology coefficients, currency and market assumptions are synthetic.",
+        "The README advertises 96 scenarios and 12/12 V9.1 tests, but those artifacts are on the research branch and were not executed in this audit."
+      ]
     },
     {
       "node_id": "github-repo:1376377980",
@@ -1592,13 +1633,14 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "point-in-time-feature-engineering",
+        "purged-walk-forward-splits",
+        "isotonic-calibration",
+        "falsification-tests"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1606,7 +1648,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1364435985",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "5232f83f3051721c491aaf739c4a20c2382be9ee",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "README describes a structured ML research stack using point-in-time data, purged walk-forward out-of-sample evaluation and validation-only calibration.",
+        "The split helper defaults purge_bars and embargo_bars to zero; callers must supply purge at least as large as the longest label horizon, so a default call does not itself guarantee leakage-safe folds.",
+        "README explicitly treats pump-and-dump markets as adversarial and states prediction metrics/backtests are not evidence of executable profit."
+      ]
     },
     {
       "node_id": "github-repo:1336911571",
@@ -1623,13 +1676,14 @@
       "maturity": "MODEL_SPEC_READY",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
+        "federation-authority-static-audit",
+        "economic-simulation",
+        "typed-evidence-contracts",
+        "productivity-flywheel"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1637,7 +1691,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1336911571",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "b911bb017103f122f2c75ef08b99ffebe665883d",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Static federation audit checks canonical accounting, settlement and real-economy authority assignments, forbidden cross-domain promotions and scoped runtime authority.",
+        "The checked main README reports that pytest currently stops during test collection because V6.6 modules imported by main-branch tests are absent; research PR branches contain additional implementation and have separate failing tests.",
+        "The static audit is metadata-only and explicitly does not grant runtime, financial, settlement, regulatory or blockchain authority."
+      ]
     },
     {
       "node_id": "github-repo:1376378295",
@@ -3069,15 +3134,14 @@
       "maturity": "ACTIVE_EXPERIMENTAL",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow",
-        "hardnav",
-        "triangular-economy"
+        "solidity-cpmm-pool",
+        "collateral-vault",
+        "risk-oracle",
+        "treasury-and-recursive-engine"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3085,7 +3149,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1409209832",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "8fb8a604a225a1ceaa9ee9272bf502d4603f9c39",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Main contains Solidity pool, collateral vault, risk oracle, treasury, recursive engine and Foundry integration tests.",
+        "The inspected system test deploys MockHardToken instances and seeds local pools; this demonstrates deterministic EVM simulation, not external-market liquidity or a production collateral system.",
+        "README labels the project SIMULATION / EVM LAB; no real external revenue or audited deployment is established."
+      ]
     },
     {
       "node_id": "github-repo:1376376805",
@@ -3467,16 +3542,16 @@
       "maturity": "RND_SIMULATION",
       "activity_band": "UNVERIFIED",
       "capabilities": [
-        "stock-flow-consistent-model",
-        "cellular-coordination",
-        "physical-financial-balance",
-        "economic-simulation"
+        "double-entry-ledger-prototype",
+        "idempotent-in-memory-event-store",
+        "physical-production-constraints",
+        "deterministic-pool-allocation"
       ],
       "declared_dependencies": [],
       "risks": [
         "preliminary simulation results require independent replication and calibration"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3484,7 +3559,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1451354855",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Dependency-free Python prototype implements balanced journal entries, duplicate entry/idempotency checks, event digests, constrained production and deterministic pool allocation.",
+        "Ledger and event store are in-memory collections; the inspected kernel does not provide durable persistence, concurrent transaction isolation or external payment settlement.",
+        "README distinguishes research simulations from empirical evidence and states several economic coefficients are synthetic assumptions."
+      ]
     },
     {
       "node_id": "github-repo:1390438988",
@@ -3788,16 +3874,12 @@
       "category": "finance-economy",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
-      ],
+      "capabilities": [],
       "declared_dependencies": [],
       "risks": [
         "no-executable-runtime-confirmed"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3805,7 +3887,17 @@
         "observed_at": "2026-11-25",
         "provider_id": "1380118593",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Checked main contains README.md, LICENSE and documentation/assets only; no executable QE runtime or tests are present.",
+        "README explicitly identifies main as STUB / specification-only."
+      ]
     },
     {
       "node_id": "github-repo:1465022937",
@@ -4097,13 +4189,14 @@
       "maturity": "RND_CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
+        "solidity-bridge-lock-mint",
+        "internal-amm",
+        "role-gated-arbitrage-executor",
+        "foundry-fork-tests"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -4111,7 +4204,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1378708908",
         "search_page": 2
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "79c105dac4c65e125b1ce395e8a493822de6356f",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Main contains Solidity BridgeCore, managed oracle, internal AMM, treasury distributor and arbitrage executor with OpenZeppelin role and reentrancy primitives in the bridge.",
+        "ArbitrageExecutor source labels the external DEX purchase as simulated and says production requires a DEX router; the cycle therefore is not a demonstrated end-to-end external arbitrage execution path.",
+        "README reports 77 Foundry tests, but this audit did not run them; README distinguishes experimental code from proven public profit."
+      ]
     },
     {
       "node_id": "github-repo:1409193535",
