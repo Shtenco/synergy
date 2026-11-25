@@ -162,6 +162,26 @@
       "domain": "long_term_test_harness",
       "owner": "Shtenco/synergy_long_term_harness",
       "role": "Reserved architecture node only; main branch contains no harness implementation."
+    },
+    {
+      "domain": "trading_validation_authority",
+      "owner": "Shtenco/synergy_quantlab",
+      "role": "Purged walk-forward, cost-adjusted metrics and RESEARCH/PAPER/CANARY decision; not execution authority."
+    },
+    {
+      "domain": "canonical_trading_intelligence_contracts",
+      "owner": "Shtenco/synergy_midas_ai",
+      "role": "Target canonical MIDAS contract layer for portfolio decisions and advisory inputs; main is not yet a full trading runtime."
+    },
+    {
+      "domain": "liquidity_quote_engine",
+      "owner": "Shtenco/synergy_market_maker",
+      "role": "Bounded inventory/volatility quote proposals with enterprise RBAC; no fill/execution authority."
+    },
+    {
+      "domain": "market_feature_representation",
+      "owner": "Shtenco/synergy_marketvision",
+      "role": "OHLCV feature cube and compressed summary contract; not a predictive signal or execution authority."
     }
   ],
   "integration_contract": {
