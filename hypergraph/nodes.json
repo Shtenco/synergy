@@ -242,10 +242,16 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "retry-budget",
+        "deadline-aware-retries",
+        "full-jitter",
+        "bulkhead",
+        "circuit-breaker-epoch-fencing"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -253,6 +259,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1466823100",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "b601f79db253751e4c7d99d671420bf95d840d3c",
+        "audited_at": "2026-11-25",
+        "scope": "README, policy implementation, tests, benchmark and results card"
       }
     },
     {
@@ -472,13 +484,18 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "playwright-browser-runtime",
+        "allowlisted-navigation",
+        "bounded-actions",
+        "dom-observation",
+        "detector-evidence-capture"
+      ],
       "declared_dependencies": [],
       "risks": [
-        "source-audit-pending",
-        "ecosystem-role-not-yet-classified"
+        "SECURITY FINDING: _guard_request applies NavigationPolicy only to navigation requests with resource_type=document; all subresource requests are continued without equivalent host/IP checks. An allowlisted page may attempt private-network requests unless network isolation blocks them."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -486,6 +503,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1469906584",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "e69ce454424c4d29da54dc649d7379ec24b9bef0",
+        "audited_at": "2026-11-25",
+        "scope": "README, browser runtime and core tests"
       }
     },
     {
@@ -724,13 +747,14 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
-      "declared_dependencies": [],
-      "risks": [
-        "source-audit-pending",
-        "ecosystem-role-not-yet-classified"
+      "capabilities": [
+        "wilson-proportion-intervals",
+        "paired-seed-difference-t-interval",
+        "sample-size-approximation"
       ],
-      "audit_status": "registry_snapshot_present",
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -738,6 +762,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465066858",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "9d6db41edc273189fe4795b3803f98181cff02be",
+        "audited_at": "2026-11-25",
+        "scope": "README, uncertainty analysis, tests and archived result"
       }
     },
     {
@@ -1453,11 +1483,8 @@
       "activity_band": "UNASSESSED",
       "capabilities": [],
       "declared_dependencies": [],
-      "risks": [
-        "source-audit-pending",
-        "ecosystem-role-not-yet-classified"
-      ],
-      "audit_status": "registry_snapshot_present",
+      "risks": [],
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1465,6 +1492,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465066359",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "a3c4f4aebc69f741f6c380682b882b9a106f0d17",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete repository tree"
       }
     },
     {
@@ -1885,13 +1918,13 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
-      "declared_dependencies": [],
-      "risks": [
-        "source-audit-pending",
-        "ecosystem-role-not-yet-classified"
+      "capabilities": [
+        "allowlist-policy-evaluation",
+        "human-review-action-proposal"
       ],
-      "audit_status": "registry_snapshot_present",
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1899,6 +1932,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465024116",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "6fb12232e07a82d86a6689d8aa0d1c6efde453d3",
+        "audited_at": "2026-11-25",
+        "scope": "README and allowlisted action planner"
       }
     },
     {
@@ -1915,10 +1954,14 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "two-process-localhost-fault-injection",
+        "retry-failover-experiment",
+        "archived-json-csv-measurements"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1926,6 +1969,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465067741",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "53585459cefbc3956f1601feaaece80d68da7170",
+        "audited_at": "2026-11-25",
+        "scope": "README, two-replica experiment, QA validator, evidence scope and results"
       }
     },
     {
@@ -2267,10 +2316,15 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "fault-scenario-state-simulation",
+        "approval-gate-for-destructive-restore"
+      ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "risks": [
+        "README describes local HTTP/SQLite restarts, but inspected source path does not demonstrate that claim."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2278,6 +2332,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465065775",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "d350865dbf602c3b518ec0a1f6e183e6d0438d80",
+        "audited_at": "2026-11-25",
+        "scope": "README, recovery scenario and tests"
       }
     },
     {
@@ -2497,10 +2557,13 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "retrieval-recall-diagnostic",
+        "answer-claim-support-rate-diagnostic"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2508,6 +2571,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465066578",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "a5ec554db4f10ec5076be74f8283603cb1fedf3d",
+        "audited_at": "2026-11-25",
+        "scope": "README, diagnostic function and tests"
       }
     },
     {
@@ -2524,13 +2593,13 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
-      "declared_dependencies": [],
-      "risks": [
-        "source-audit-pending",
-        "ecosystem-role-not-yet-classified"
+      "capabilities": [
+        "sqlite-exact-record-persistence",
+        "cross-connection-state-persistence"
       ],
-      "audit_status": "registry_snapshot_present",
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2538,6 +2607,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465262827",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "2bcb732a92fe8053c18f913edb1318ac21ef3620",
+        "audited_at": "2026-11-25",
+        "scope": "README and SQLite experiment"
       }
     },
     {
@@ -3020,13 +3095,13 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
-      "declared_dependencies": [],
-      "risks": [
-        "source-audit-pending",
-        "ecosystem-role-not-yet-classified"
+      "capabilities": [
+        "lookahead-bias-demonstration",
+        "lagged-signal-vs-leaky-signal"
       ],
-      "audit_status": "registry_snapshot_present",
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3034,6 +3109,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465065411",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "1c116e449ca992f5bccbaa70ae98d65972a08e69",
+        "audited_at": "2026-11-25",
+        "scope": "README and leakage demonstration"
       }
     },
     {
@@ -3312,10 +3393,14 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "assumption-based-compute-cost-estimation"
+      ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "risks": [
+        "No live provider tariffs or paid GPU bills; inspected tree exposes no independent GPU harness. README's local CPU measurement claim was not confirmed in inspected source."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3323,6 +3408,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465066115",
         "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "5c25ddb97838a1d14e40dc9458847743fa94191f",
+        "audited_at": "2026-11-25",
+        "scope": "README, cost calculator, tests and repository tree"
       }
     },
     {
@@ -3627,13 +3718,14 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
-      "declared_dependencies": [],
-      "risks": [
-        "source-audit-pending",
-        "ecosystem-role-not-yet-classified"
+      "capabilities": [
+        "sqlite-transactional-idempotency",
+        "payload-fingerprint-conflict-detection",
+        "crash-redelivery-experiment"
       ],
-      "audit_status": "registry_snapshot_present",
+      "declared_dependencies": [],
+      "risks": [],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3641,6 +3733,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465156316",
         "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
+        "audited_at": "2026-11-25",
+        "scope": "README, SQLite experiment and invariant tests"
       }
     }
   ]
