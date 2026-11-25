@@ -692,6 +692,22 @@
       "repository": "Shtenco/print_money_synergychain",
       "description": "RevenueVault protects principal and refundable liabilities but places all expense/distribution authority behind one immutable owner EOA with no multisig, timelock, pause or role separation.",
       "next_action": "Keep as a test fixture/research contract until ownership is a reviewed multisig/timelock with guardian pause, role-separated accounting and independent Solidity audit."
+    },
+    {
+      "id": "GAP-088",
+      "severity": "high",
+      "area": "compression_benchmark_source_reproducibility",
+      "repository": "Shtenco/synegy_ai_compress",
+      "description": "source_snapshot is a Git submodule entry with no submodule URL; its target commit message says implementation sources and test harnesses were removed from public main. The benchmark results therefore cannot be independently regenerated from this repository snapshot.",
+      "next_action": "Publish a reproducible source archive or accessible immutable source repository with commit and dependency lock, test harness, raw inputs, environment manifest and signed result provenance; otherwise label all benchmark figures as archived and non-reproducible."
+    },
+    {
+      "id": "GAP-089",
+      "severity": "low",
+      "area": "benchmark_artifact_schema_mismatch",
+      "repository": "Shtenco/synegy_ai_compress",
+      "description": "benchmarks/extended_80plus_20261020/results/environment.json contains CSV header/rows rather than JSON, so generic JSON tooling will fail despite the extension.",
+      "next_action": "Rename it to .csv or convert it to valid JSON and add a schema validation test."
     }
   ]
 }
