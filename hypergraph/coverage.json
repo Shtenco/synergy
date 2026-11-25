@@ -364,6 +364,7 @@
       "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
       "Shtenco/synergy_long_term_harness"
     ],
-    "dependency_graph_names_not_in_interface_registry": []
+    "dependency_graph_names_not_in_interface_registry": [],
+    "scope_manifest": "hypergraph/evidence/governance-scope-manifest.json"
   }
 }
