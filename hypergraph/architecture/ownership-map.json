@@ -262,6 +262,26 @@
       "domain": "binary_quantum_gravity_research",
       "owner": "Shtenco/synergy_binary_quantum_theory",
       "role": "Mathematical claim registry and falsification harness; physical validity gates remain open."
+    },
+    {
+      "domain": "pq_evm_consensus_research",
+      "owner": "Shtenco/synergy_ai_blockchain",
+      "role": "Rust PQ-EVM/NEXUS consensus reference core and optional FIPS PQ provider; not audited or integrated with production EVM clients."
+    },
+    {
+      "domain": "public_budget_traceability",
+      "owner": "Shtenco/synergy_blochain_budget",
+      "role": "Public budget/EIS data normalizer, append-only trace graph and Merkle proofs; not accounting or legal authorization."
+    },
+    {
+      "domain": "recursive_collateral_money_simulation",
+      "owner": "Shtenco/synergy_triangle_money_system",
+      "role": "Five-pool CPMM/collateral simulation with HardNAV conservation; incomplete repayment lifecycle and owner oracle."
+    },
+    {
+      "domain": "quantitative_easing_research",
+      "owner": "Shtenco/synergy_qe",
+      "role": "Documentation-only monetary design stub; no executable runtime on main."
     }
   ],
   "integration_contract": {
