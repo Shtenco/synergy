@@ -342,10 +342,15 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "synthetic-retrieval",
+        "bm25",
+        "lsa-tfidf-svd",
+        "graph-retrieval"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -353,7 +358,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465021198",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "b67b34f30a48a1a8b4bf1277a273da432711b725",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "The inspected scenario retrieves three candidate documents for one synthetic retention question and records corpus digest and gold-support coverage.",
+        "It does not invoke an LLM, generate answers or measure answer correctness; the corpus is synthetic.",
+        "README explicitly says archived outputs are not new CI runs and CI checks only syntax/minimal documentation."
+      ]
     },
     {
       "node_id": "github-repo:1465023909",
@@ -369,10 +385,15 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "grouped-validation",
+        "subject-heldout-evaluation",
+        "safe-nested-zip-extraction",
+        "random-forest-baseline"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -380,7 +401,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465023909",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ba93cabf4d2ec15886c7c524669c851f546e73d7",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "Real-experiment script compares row-wise stratified splitting with official UCI HAR subject-held-out splitting across seeds and records subject overlap, accuracy and macro-F1.",
+        "Archive extraction rejects traversal paths and symlinks, writes files exclusively, and verifies required dataset members.",
+        "Inspected unit test uses a small synthetic fixture to verify subject overlap behavior; it is not a fresh UCI HAR model evaluation."
+      ]
     },
     {
       "node_id": "github-repo:1371974932",
@@ -691,10 +723,15 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "python-cpp-microbenchmark",
+        "checksum-equivalence",
+        "bounded-workload",
+        "compiler-discovery"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -702,7 +739,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465023729",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ea477e276c7339931864b8cea54b34756ae663b5",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "Benchmark validates workload bounds, computes an independent checksum, compiles a C++ executable in a temporary directory and checks output checksum equality.",
+        "Subprocess invocation uses argument arrays without shell, timeout and captured output; performance remains specific to compiler, flags, hardware and workload.",
+        "README archives historical JSON/CSV results and explicitly says they are not new CI runs; no benchmark was executed in this audit."
+      ]
     },
     {
       "node_id": "github-repo:1310793915",
@@ -1041,15 +1089,17 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "agents",
-        "reasoning",
-        "orchestration"
+        "smallworld-graph-model",
+        "collective-consensus",
+        "arc-program-synthesis",
+        "russian-symbolic-logic",
+        "world-model"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_gllm_nexus"
       ],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1057,7 +1107,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1167196077",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "503982f3df83fdcc9f5070bddf3e485dfba742bd",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "Inspected V18 test checks parameter partition, stochastic-matrix symmetry/row sums, Russian morphology, symbolic entailment/counterexample and cybernetic controller convergence.",
+        "Some tests assert precomputed JSON report values rather than regenerating the full benchmark; they validate report consistency, not independent reproduction of the experiment.",
+        "Consensus agreement is not treated as correctness; benchmark claims require exact source commit and frozen experiment artifacts."
+      ]
     },
     {
       "node_id": "github-repo:1366684382",
@@ -1781,10 +1842,10 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "agents",
-        "reasoning",
-        "orchestration",
-        "nexus"
+        "science-evidence-package",
+        "epistemic-status-gating",
+        "source-digest-record",
+        "nexus-advisory-contract"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_system",
@@ -1792,7 +1853,7 @@
         "Shtenco/synergy_cold_nuclear"
       ],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1800,7 +1861,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1341273613",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "5ccad4e6d2bc82f147e6955b811720df2542ea23",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "Science contracts enforce explicit epistemic statuses, source IDs, SHA-256-shaped source digests, reproduction command for REPRODUCED packages and advisory-only NEXUS task input.",
+        "Contract functions do not fetch source material or independently verify that locator content matches supplied digest; evidence integrity is caller-attested at this layer.",
+        "Numeric validation is incomplete: NaN can pass some float comparisons, provenance counts are not constrained non-negative, and quantum reference values are not checked for finiteness or physical bounds."
+      ]
     },
     {
       "node_id": "github-repo:1293271223",
@@ -1846,13 +1918,18 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "binary-hidden-mlp",
+        "straight-through-estimator",
+        "python-popcount-backend",
+        "uci-digits"
+      ],
       "declared_dependencies": [],
       "risks": [
         "source-audit-pending",
         "ecosystem-role-not-yet-classified"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1860,7 +1937,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465021493",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "e391b2f2809e8033a39258303017c23d023fe93a",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "Inspected model trains FP32 and binary-hidden MLPs on sklearn digits and measures a Python big-integer popcount backend.",
+        "The implementation is not fully integer: biases and output layer remain FP32, training uses FP32 straight-through gradients, and the Python popcount backend is not optimized SIMD/native code.",
+        "Three seeds and one fixed split are exploratory, not broad accuracy evidence; no fresh training run was executed in this audit."
+      ]
     },
     {
       "node_id": "github-repo:1165635662",
@@ -3442,10 +3530,12 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "analytical-task-scheduling-simulation"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3453,7 +3543,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465021727",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "a493423ec344819de485b50d26eb7f85511bd54b",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "The scenario is explicitly an analytical scheduling toy: it compares 1, 3 and 15 workers using equal-duration independent-task assumptions.",
+        "No LLM calls, agent runtime, token consumption, answer quality, latency or coordination failures are measured.",
+        "The output must not be described as an empirical multi-agent performance benchmark."
+      ]
     },
     {
       "node_id": "github-repo:1465065411",
@@ -3646,13 +3747,13 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "agents",
-        "reasoning",
-        "orchestration"
+        "sovereign-trader-target-spec",
+        "legacy-migration-manifest",
+        "2026-ytd-evaluation-protocol"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3660,7 +3761,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1373708585",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "8efe7942ed6c68ac4b081ee44b651ac99fd0ae7c",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "README describes the target Sovereign Trader architecture and explicitly states the approved runtime is not yet materialized as one production stack.",
+        "Evaluation README records 599 exact-24-hour model decisions and a deterministic control benchmark with profit factor 0.9466; this is a control baseline, not an LLM/Qwen result.",
+        "Actual Qwen inference was not run because the stated 2.7 GB checkpoint was unavailable in the documented environment; no Qwen performance claim is supported."
+      ]
     },
     {
       "node_id": "github-repo:1380118593",
@@ -3709,10 +3821,14 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "tiny-character-transformer",
+        "tiny-shakespeare-corpus",
+        "cpu-training-measurement"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3720,7 +3836,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465022937",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "bcde48c89e60cd0498dbf33a969d009fe6e98df8",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "Inspected implementation trains a small causal character-level Transformer on Tiny Shakespeare with sequential train/validation/test partitions and train-only vocabulary.",
+        "This is a small educational language-model experiment, not evidence of a production LLM or useful general-purpose CPU inference.",
+        "Archived result files exist; no fresh training run or reproducibility check was performed in this audit."
+      ]
     },
     {
       "node_id": "github-repo:1464742221",
@@ -4115,10 +4242,15 @@
       "category": "unclassified",
       "maturity": "UNASSESSED",
       "activity_band": "UNASSESSED",
-      "capabilities": [],
+      "capabilities": [
+        "gru-classifier",
+        "transformer-encoder",
+        "uci-har-sequences",
+        "bounded-training-budget"
+      ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "inventory_only_unreviewed",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -4126,7 +4258,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1465023512",
         "search_page": 2
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "76ec7c407f2015b391b9f0d4561ce3caa54e5c05",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests; no tests or benchmark executed in this audit."
+      },
+      "audit_findings": [
+        "Inspected real-experiment compares a one-layer GRU with a one-layer Transformer encoder on nine UCI HAR sensor channels and six activity classes.",
+        "The protocol uses official subject-held-out data and a bounded training budget; the result applies to this small activity-recognition task only.",
+        "No fresh experiment was run during this audit; archived results are not independent reruns."
+      ]
     },
     {
       "node_id": "github-repo:1465156316",
