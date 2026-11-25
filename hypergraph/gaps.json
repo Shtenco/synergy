@@ -420,6 +420,22 @@
       "repository": "Shtenco/synergy_shhts",
       "description": "Main branch is a specification stub without parser, codec or decoder.",
       "next_action": "Define byte-level format, versioning, integrity envelope and cross-language round-trip tests before claiming a compression format."
+    },
+    {
+      "id": "GAP-054",
+      "severity": "medium",
+      "area": "economic_model_calibration",
+      "repository": "Shtenco/synergy_eurasian",
+      "description": "EIIOM country/sector coefficients are scenario inputs and no live statistical data calibration was established; README reports six failed tests in a prior 2026-11-07 snapshot and current CI has no observed run.",
+      "next_action": "Separate measured inputs from assumptions, add source provenance/update timestamps and obtain a fresh reproducible CI run."
+    },
+    {
+      "id": "GAP-055",
+      "severity": "medium",
+      "area": "science_audit_freshness",
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "description": "AUDIT_CURRENT.md is dated 2026-10-10 while the README's current status is 2026-11-10; open physical gates must not be inferred closed from older audit text.",
+      "next_action": "Regenerate the audit from current claim/test registry and preserve explicit mathematical-vs-physical evidence boundaries."
     }
   ]
 }
