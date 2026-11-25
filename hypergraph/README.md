@@ -5,7 +5,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Sixty README reviews and fifty-two limited source reviews, each pinned to the exact main commit and file blob SHA.
+- Sixty-four README reviews and fifty-three limited source reviews, each pinned to the exact main commit and file blob SHA.
 - 39 proposed shared cores and domain routers are kept separate from actual repositories; 27 have first-pass overlap assessments and 12 remain unaudited.
 - Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
@@ -21,6 +21,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 - `evidence/registry-snapshot.json`: provenance for the original 92-record registry snapshot.
 - `evidence/repository-audits.json`: twelve commit-pinned repository reviews.
 - `contracts/`: requirements for versioned OpenAPI, JSON Schema, AsyncAPI and contract tests.
+- `security/RESPONSE_PLAYBOOK.md`: credential rotation and live-execution containment without secret material.
 - `schemas/`: JSON Schema contracts for repository nodes and n-ary hyperedges.
 
 ## Current findings
@@ -60,6 +61,10 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 26. GLLM runtime and RWKV quantization code are branch-only; neither should be described as default-main functionality or production-ready model runtime.
 27. Matrix SOTA is a documentation-only debt/credit maturity design, not an executable credit engine.
 
+28. `synergy_qr_compress` is a shared-model temporal dictionary/patch codec; zero residual is only meaningful after amortizing dictionary storage and distribution.
+29. `synegy_ai_compress` is a benchmark dossier whose engine source is a gitlink without `.gitmodules`; exact source retrieval is not reproducible from the repository alone.
+30. `synergy_gguf_compress` and `synergy_shhts` are documentation-only on main.
+
 ## Evidence rules
 1. Repository names are not identities; GitHub repository IDs are.
 2. A registry dependency is a candidate edge, not proof of an import or runtime call.
@@ -71,14 +76,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 60/112 (53.57%).
-- Source reviewed (limited scope): 52/112 (46.43%).
+- README reviewed: 64/112 (57.14%).
+- Source reviewed (limited scope): 53/112 (47.32%).
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
 ## Next audit sequence
 1. Close the browser subresource network-policy finding.
-2. Audit the remaining 60 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+2. Audit the remaining 59 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
 3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
 5. Run capability-overlap analysis before proposing any new repository.
