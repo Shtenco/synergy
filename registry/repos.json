@@ -27,7 +27,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "937796740"
+      "github_repository_id": "937796740",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+      "source_audit_scope": "README and MT5/Qiskit main program"
     },
     {
       "name": "cross_forex_arbitrage_trading_metatrader_5",
@@ -676,7 +679,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1151919657"
+      "github_repository_id": "1151919657",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+      "source_audit_scope": "README critical findings, decision pipeline, risk engine, API/WebSocket, MT5 simulator, signal fusion and archive service"
     },
     {
       "name": "synergy_agi_olga",
@@ -1794,7 +1800,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1165602026"
+      "github_repository_id": "1165602026",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+      "source_audit_scope": "README, legacy MT5 agent source and sealed EURUSD H1 research evidence"
     },
     {
       "name": "synergy_usds",
@@ -1901,7 +1910,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1168765679"
+      "github_repository_id": "1168765679",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "e53064ec6741dce47ee10a5f30b798c0cf4daa2a",
+      "source_audit_scope": "README, Cassandra terminal source and process supervisor"
     },
     {
       "name": "synergy_chain",
