@@ -21,13 +21,16 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "mt5-historical-data-ingestion",
+        "fixed-qpe-like-aer-simulation",
+        "binary-horizon-comparison"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Research prototype only; no proof of QPE correctness, market forecast skill or quantum advantage.",
+        "No live trading execution was found in the inspected main.py; other files were not exhaustively audited."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -35,6 +38,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "937796740",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+        "audited_at": "2026-11-25",
+        "scope": "README and MT5/Qiskit main program"
       }
     },
     {
@@ -973,14 +982,21 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "midas"
+        "modular-strategy-pipeline",
+        "signal-fusion",
+        "adaptive-policy",
+        "portfolio-optimizer",
+        "risk-veto",
+        "audit-archive",
+        "fastapi-control-center"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "README lists these as P0/P1 findings; this review confirmed the relevant source paths but did not run the test suite.",
+        "Legacy scripts coexist with modular package; authority path and historical code still require isolation.",
+        "No live broker execution or independent audited PnL is established by this main-branch package."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -988,6 +1004,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1151919657",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "2decc8e6e23e3d90cc1e539e0f31d46ea06a8703",
+        "audited_at": "2026-11-25",
+        "scope": "README critical findings, decision pipeline, risk engine, API/WebSocket, MT5 simulator, signal fusion and archive service"
       }
     },
     {
@@ -2559,14 +2581,18 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "midas"
+        "eurusd-h1-statistical-specialist",
+        "sealed-oos-reporting",
+        "sqlite-agent-memory",
+        "legacy-mt5-execution-path"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "The presence of order_send means the legacy script can attempt real broker orders depending on terminal/account configuration; do not run outside isolated demo until all paths are audited and execution is explicitly disabled by default.",
+        "No broker-confirmed PnL or live MT5 test is established by the README's research reports.",
+        "Legacy and specialist lines should be isolated; research reports are not permission to execute."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2574,6 +2600,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1165602026",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "03c352f9d2225cbdbb50f77845fb3c8ca9e2814e",
+        "audited_at": "2026-11-25",
+        "scope": "README, legacy MT5 agent source and sealed EURUSD H1 research evidence"
       }
     },
     {
@@ -2703,16 +2735,21 @@
       "maturity": "RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "mt5-data-and-orderbook-collector",
+        "flask-socketio-dashboard",
+        "cassandra-api-integration",
+        "order-tester"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_midas_ai",
         "Shtenco/synergy_system"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Treat embedded credentials and issued tokens as exposed; rotate/revoke them and remove sensitive history after rotation.",
+        "No evidence of tenant isolation or production-grade secret management was established.",
+        "Order execution paths require separate authorization, demo-only testing and explicit operator confirmation."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2720,6 +2757,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1168765679",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "e53064ec6741dce47ee10a5f30b798c0cf4daa2a",
+        "audited_at": "2026-11-25",
+        "scope": "README, Cassandra terminal source and process supervisor"
       }
     },
     {
