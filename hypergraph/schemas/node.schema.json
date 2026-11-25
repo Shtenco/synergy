@@ -109,6 +109,12 @@
           "type": "string"
         }
       }
+    },
+    "audit_findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "additionalProperties": true
