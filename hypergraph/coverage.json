@@ -30,7 +30,7 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 5,
+    "source_code_reviewed_in_this_pass": 0,
     "source_code_audited_total": 106,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
@@ -202,7 +202,15 @@
     "source_code_reviewed_total": 106,
     "non_code_content_reviewed_in_this_pass": 6,
     "content_reviewed_repository_total": 112,
-    "executable_source_reviewed_total": 106
+    "executable_source_reviewed_total": 106,
+    "last_audit_pass": {
+      "date": "2026-11-25",
+      "repositories_reviewed": 6,
+      "executable_source_reviewed": 0,
+      "documentation_only": 5,
+      "benchmark_dossier": 1,
+      "tests_or_benchmarks_executed": 0
+    }
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
