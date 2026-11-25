@@ -1355,6 +1355,142 @@
       "status": "candidate",
       "basis": "ownership_map_and_source_review",
       "rationale": "Memory repository provides commit-pinned static dependency scans and cross-repository evidence ledger; adapter mapping remains to be implemented."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_marketvision:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376378125",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Market feature contract is a declared upstream advisory input."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_adaptive_engine:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377980",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Market regime contract is declared as an upstream advisory input."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_market_maker:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377837",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Liquidity quote contract is declared as an upstream advisory input."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_market_graph:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377201",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Fair-value contract is declared as an upstream advisory input."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_relative_value:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377560",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Relative-value signal is a research producer; target MIDAS integration remains advisory."
+    },
+    {
+      "edge_id": "target:VALIDATES:synergy_quantlab:synergy_midas_ai",
+      "relation": "VALIDATES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376805",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "QuantLab validation contract consumes portfolio decision contract."
+    },
+    {
+      "edge_id": "target:PROTECTED_BY:synergy_riskguard:synergy_midas_ai",
+      "relation": "PROTECTED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376981",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "RiskGuard is intended as independent veto; no runtime wiring asserted."
+    },
+    {
+      "edge_id": "target:VALIDATES:synergy_midas_institutional:synergy_midas_ai",
+      "relation": "VALIDATES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377374",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Institutional assessment requires canonical risk validation and binds exact signal."
     }
   ],
   "guardrails": [
