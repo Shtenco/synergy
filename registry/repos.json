@@ -868,7 +868,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1341358637"
+      "github_repository_id": "1341358637",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "bc31841d024b02c1b803e28d0a360e5893bb2c4b",
+      "source_audit_scope": "README, trace builder, trace graph, Merkle proof, versioned KBK registry, EIS normalizer and V0.3 tests"
     },
     {
       "name": "synergy_ai_company",
@@ -2062,7 +2065,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1409209832"
+      "github_repository_id": "1409209832",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "8fb8a604a225a1ceaa9ee9272bf502d4603f9c39",
+      "source_audit_scope": "README, recursive engine, collateral vault, owner-controlled risk oracle and Foundry system tests"
     },
     {
       "name": "synergy_quantlab",
@@ -2557,7 +2563,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1380118593"
+      "github_repository_id": "1380118593",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
+      "source_audit_scope": "README and complete main-branch tree"
     },
     {
       "name": "timeweb_synergy_cpu_language_model",
@@ -2836,7 +2845,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1317641638"
+      "github_repository_id": "1317641638",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "b9353bf52542ed55ec36c30d84046f330df5f1de",
+      "source_audit_scope": "README, Cargo feature graph, Rust PQ/NEXUS/consensus/migration modules and security document"
     },
     {
       "name": "timeweb_synergy_rnn_transformer_benchmark",
