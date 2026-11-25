@@ -61,13 +61,13 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "mt5-m1-cross-rate-ingestion",
+        "synthetic-currency-price-analysis",
+        "daily-arbitrage-simulation"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -75,7 +75,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1091983056",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "09fb17a3e70a21ee5bb10815b70d6fc3c41105a7",
+        "audited_at": "2026-11-25",
+        "scope": "README plus main source file review; no backtest or live execution performed."
+      },
+      "audit_findings": [
+        "Source creates synthetic prices from same-day M1 bars and derives direction from the mean spread across the entire day before simulating a trade from the day's data; this introduces look-ahead in the daily backtest.",
+        "TP/SL pip conversion uses a fixed 0.00001 price multiplier; JPY and broker-specific digits/tick sizes are not handled.",
+        "Historical bid/ask are fabricated from close with a fixed 0.1-pip spread; this is not executable cross-rate arbitrage evidence."
+      ]
     },
     {
       "node_id": "github-repo:1091968186",
@@ -92,16 +103,16 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "mt5-h1-indicator-engineering",
+        "rolling-window-image-encoding",
+        "cnn-lstm-direction-and-return-prediction"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_midas_ai",
         "Shtenco/synergy_system"
       ],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -109,7 +120,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1091968186",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "0aabf5bf43052a1fb4bc98c07126811a165e911d",
+        "audited_at": "2026-11-25",
+        "scope": "README plus main source file review; no backtest or live execution performed."
+      },
+      "audit_findings": [
+        "Source builds rolling 60-bar windows with 24-bar forward targets and chronological 80/20 train/test split.",
+        "The train/validation split then uses shuffle=True on overlapping windows, so adjacent windows with heavily shared history/targets can leak across train and validation.",
+        "README itself lists purged walk-forward splitting, window isolation, and independent security/engineering audit as unresolved; no trading profitability or deployment evidence is established."
+      ]
     },
     {
       "node_id": "github-repo:1181574900",
@@ -333,13 +355,14 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "mt5-online-trading",
+        "xgboost-random-forest-gmm-feature-pipeline",
+        "portfolio-position-sizing",
+        "multithreaded-symbol-workers"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -347,7 +370,19 @@
         "observed_at": "2026-11-25",
         "provider_id": "1098247138",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "262458f406678f7c9bc9cf0290b64f318d720cea",
+        "audited_at": "2026-11-25",
+        "scope": "README plus main source file review; no backtest or live execution performed."
+      },
+      "audit_findings": [
+        "Source contains a direct live mt5.order_send path and retries each request up to 30,000 times with 3-second sleeps; repeated sends can create duplicate orders if a broker response is delayed or ambiguous.",
+        "Symbol workers can operate concurrently without a single serialized order/risk arbiter; global position flags and portfolio exposure are race-prone.",
+        "Risk sizing uses stop_loss_pips * trade_tick_value without trade_tick_size conversion, and forces broker minimum lot even when it exceeds the calculated risk budget.",
+        "process_data performs markup, GMM clustering and RFECV before chronological train/test separation; online_trading also consumes previously prepared test_features rather than a fresh last-bar inference path."
+      ]
     },
     {
       "node_id": "github-repo:1465021198",
@@ -2605,13 +2640,13 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "mt5-swap-metadata-ingestion",
+        "portfolio-slsqp-optimization",
+        "swap-carry-simulation"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2619,7 +2654,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1091973987",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "232c704f37156eac5d774f33fb652b7afa3866e0",
+        "audited_at": "2026-11-25",
+        "scope": "README plus main source file review; no backtest or live execution performed."
+      },
+      "audit_findings": [
+        "Source uses current broker swap_long/swap_short metadata alongside historical price returns; it does not demonstrate a historical daily swap-rate series for the full 2015-2025 simulation horizon.",
+        "README explicitly says spread, commissions, slippage, margin and stop-out are absent, no reproducible ten-year historical-swap backtest is proven, and dependencies are not pinned.",
+        "SLSQP optimization and three equity simulations are quantitative research only, not evidence of executable positive carry arbitrage."
+      ]
     },
     {
       "node_id": "github-repo:1387121392",
@@ -3896,13 +3942,13 @@
       "maturity": "LEGACY_RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "fred-yfinance-macro-ingestion",
+        "global-liquidity-index",
+        "random-forest-price-forecast"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3910,7 +3956,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1091992955",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "728b6af3e53fc0d8beafe060d6f1ee209395b3f5",
+        "audited_at": "2026-11-25",
+        "scope": "README plus main source file review; no backtest or live execution performed."
+      },
+      "audit_findings": [
+        "Source labels yfinance FX-price proxies (EURGBP, USDJPY, USDCNY scaled by constants) as ECB/BOJ/PBOC balance-sheet series; these are not central-bank balance-sheet observations.",
+        "Forecast confidence is clipped test R² in [0,1], not a calibrated probability of forecast correctness.",
+        "README identifies missing vintage-aware release-time data; historical macro revisions can leak future information even with chronological price splits."
+      ]
     },
     {
       "node_id": "github-repo:1359110009",
