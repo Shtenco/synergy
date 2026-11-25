@@ -5,8 +5,8 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- All 112 unique repository README reviews (119 commit-pinned audit records) and one hundred six limited source reviews, each pinned to the exact inspected commit and file blob SHA (76 main-branch reviews and 7 branch-only prototype reviews).
-- 39 proposed shared cores and domain routers are kept separate from actual repositories; 27 have first-pass overlap assessments and 12 remain unaudited.
+- All 112 unique repository README reviews (131 commit-pinned audit records across 112 repositories) and 106 limited source/prototype reviews, each pinned to exact commits and file blob SHAs (91 main-branch reviews and 15 branch-only prototype reviews).
+- 39 proposed shared cores and domain routers are kept separate from actual repositories; all 39 have overlap assessments with 91 repository/file evidence references pinned to the canonical audit ledger.
 - Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
 ## Files
@@ -14,12 +14,13 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 - `edges.json`: registry-declared dependency edges; every edge remains `candidate` until source evidence verifies it.
 - `architecture/target-graph.json`: six-layer target graph and candidate architecture links.
 - `architecture/ownership-map.json`: canonical owners and integration direction; avoids duplicate core repositories.
-- `architecture/overlap-matrix.json`: first-pass overlap review for proposed shared cores.
+- `architecture/overlap-matrix.json`: commit/blob-pinned overlap review for all 39 proposed shared cores and domain routers.
+- `evidence/governance-scope-recommendations.json`: provisional, evidence-pinned scope recommendations for the 35 repositories absent from both canonical governance registries; all owner decisions remain pending.
 - `coverage.json`: measurable inventory and audit coverage.
 - `gaps.json`: unresolved source audit, security, evidence, contract and overlap gaps.
 - `proposals.json`: 39 proposed components, not actual repositories.
 - `evidence/registry-snapshot.json`: provenance for the original 92-record registry snapshot.
-- `evidence/repository-audits.json`: 125 commit-pinned audit records across 112 unique repositories across 95 unique repositories; older main-branch snapshots are retained when a newer branch-only prototype is reviewed with selected source/test blob references.
+- `evidence/repository-audits.json`: 131 commit-pinned audit records across 112 unique repositories; repeated records preserve separate main-branch and branch-only prototype snapshots.
 - `contracts/`: requirements for versioned OpenAPI, JSON Schema, AsyncAPI and contract tests.
 - `security/RESPONSE_PLAYBOOK.md`: credential rotation and live-execution containment without secret material.
 - `schemas/`: JSON Schema contracts for repository nodes and n-ary hyperedges.
@@ -103,13 +104,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 3. `candidate`, `reviewed`, `verified`, and `rejected` are distinct states. `verified` requires reproducible source or runtime evidence.
 4. Proposed components are not repository inventory entries.
 5. Hashes establish byte identity, not truth, authorization or correctness.
-6. No tests were executed as part of the current repository review; archived results are not fresh CI runs.
+6. No upstream repository tests or benchmark experiments were executed as part of this source review; archived results are not fresh CI runs. The Hypergraph repository's own CI validates registry invariants separately.
 7. Existing implementation boundaries: `synergy_system` owns governance/contracts; hierarchical cognitive memory owns static dependency and cross-repository evidence intelligence; Hypergraph V3 is a projection/read model, not a new competing runtime or repository.
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
 - README reviewed: 112/112 (100%).
 - Source reviewed (limited scope): 106/112 (94.64%): 91 main-branch reviews and 15 branch-only prototype reviews.
+- Governance scope: 35/35 repositories absent from both canonical registries have provisional evidence-based recommendations; owner decisions remain pending.
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
@@ -133,7 +135,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Proposal overlap audit — 2026-11-25
 
-All 39 proposed components now have an explicit overlap assessment with pinned repository/file evidence. The 12 previously unreviewed proposals were checked against the current main-branch contracts and implementations of the existing system, API gateway, market graph, economic schema, payment stack, application catalog, maps and Lead OS.
+All 39 proposed components have explicit overlap assessments, each with commit/blob-pinned evidence reconciled to the audit ledger. Evidence may be main-branch or branch-only and is scope-tagged; it is not proof of runtime integration.
 
 Key decisions:
 - Reuse `synergy_system` for Offer/Quote and event contracts; do not create a separate offer-protocol repository.
