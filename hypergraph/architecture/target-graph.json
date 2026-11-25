@@ -1006,6 +1006,13 @@
       "kind": "proposal",
       "name": "synergy_ai_legal_router",
       "domain": "services"
+    },
+    {
+      "node_id": "concept:synergy_hypergraph_core",
+      "kind": "architecture_concept",
+      "name": "SYNERGY Hypergraph Core",
+      "repository": false,
+      "description": "Canonical graph projection/read model stored in Shtenco/synergy/hypergraph; not a separate repository."
     }
   ],
   "edges": [
@@ -1297,6 +1304,57 @@
       "status": "candidate",
       "basis": "documented_architecture_or_contract_not_runtime_integration",
       "rationale": "SynergyNet README declares synergy_system as architecture root; no runtime dependency claimed."
+    },
+    {
+      "edge_id": "target:HOSTS:synergy:synergy_hypergraph_core",
+      "relation": "HOSTS",
+      "participants": [
+        {
+          "node_id": "github-repo:1409433270",
+          "role": "source"
+        },
+        {
+          "node_id": "concept:synergy_hypergraph_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "ownership_map_and_source_review",
+      "rationale": "Umbrella repository contains the Hypergraph V3 canonical graph projection."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_system:synergy_hypergraph_core",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "source"
+        },
+        {
+          "node_id": "concept:synergy_hypergraph_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "ownership_map_and_source_review",
+      "rationale": "System remains canonical federation governance and contract authority."
+    },
+    {
+      "edge_id": "target:PROVIDES_EVIDENCE_INTELLIGENCE:synergy_hierarchical_cognitive_memory_architecture:synergy_hypergraph_core",
+      "relation": "PROVIDES_EVIDENCE_INTELLIGENCE",
+      "participants": [
+        {
+          "node_id": "github-repo:1464742221",
+          "role": "source"
+        },
+        {
+          "node_id": "concept:synergy_hypergraph_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "ownership_map_and_source_review",
+      "rationale": "Memory repository provides commit-pinned static dependency scans and cross-repository evidence ledger; adapter mapping remains to be implemented."
     }
   ],
   "guardrails": [
