@@ -141,7 +141,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1456611297"
+      "github_repository_id": "1456611297",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "576871d1aee78273ec97a45cacca49de8873cf51",
+      "source_audit_scope": "README, EAEU country registry and Overture tile coverage auditor"
     },
     {
       "name": "synergy_ai_investment_committee",
@@ -417,7 +420,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1168739656"
+      "github_repository_id": "1168739656",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+      "source_audit_scope": "README, engineering evidence contract and tests"
     },
     {
       "name": "sinergy_super_app",
@@ -753,7 +759,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1371942189"
+      "github_repository_id": "1371942189",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+      "source_audit_scope": "README, package manifest and complete main-branch tree"
     },
     {
       "name": "synergy_motherboard_xpu_xml",
@@ -854,7 +863,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1368484353"
+      "github_repository_id": "1368484353",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+      "source_audit_scope": "README and complete repository tree"
     },
     {
       "name": "synergy_ai_economic",
@@ -1143,7 +1155,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1428810995"
+      "github_repository_id": "1428810995",
+      "audit_status": "branch_only_prototype",
+      "source_audit_commit": "5483f61106e626267c521cf64be8eaeb82448fba",
+      "source_audit_scope": "main README plus release/v1.0-desktop-rc local service, orchestrator and capital engine"
     },
     {
       "name": "synergy_nexus_science_agent",
@@ -2066,7 +2081,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1409209160"
+      "github_repository_id": "1409209160",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+      "source_audit_scope": "README, SQLite/FTS5 lead store, token-protected API, CRM approval dispatcher and tests"
     },
     {
       "name": "synergy_relative_value",
@@ -2119,7 +2137,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1343965302"
+      "github_repository_id": "1343965302",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "65433bca107e823ebe1223646601541bb86b5d0d",
+      "source_audit_scope": "README and complete main-branch tree"
     },
     {
       "name": "sinergy_app",
@@ -2653,7 +2674,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1409193535"
+      "github_repository_id": "1409193535",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+      "source_audit_scope": "README, HardNAV multiplier simulation and assumptions/limits"
     },
     {
       "name": "synergy_market_graph",
