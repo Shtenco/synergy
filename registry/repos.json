@@ -485,7 +485,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1310793915"
+      "github_repository_id": "1310793915",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "c7e9ea9dde51500f88ed701423164309e4ae6242",
+      "source_audit_scope": "README, integer graph arbitrage simulator and scenario evidence contract"
     },
     {
       "name": "synergy_graph_print_money",
@@ -532,7 +535,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1336910945"
+      "github_repository_id": "1336910945",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+      "source_audit_scope": "README, accounting-recognition contract and contract tests"
     },
     {
       "name": "timeweb_synergy_benchmark_statistics",
@@ -1579,7 +1585,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1317622231"
+      "github_repository_id": "1317622231",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+      "source_audit_scope": "README, live readiness, execution coordinator, provider registry and settlement engine"
     },
     {
       "name": "synergy_agi_nexus",
@@ -2003,7 +2012,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1376376981"
+      "github_repository_id": "1376376981",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "e5ba5eab09e42ac25c695740bdc464ef3617c33c",
+      "source_audit_scope": "README, risk core, typed risk contract, enterprise service and tests"
     },
     {
       "name": "synergy_system",
