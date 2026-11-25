@@ -244,6 +244,30 @@
       "repository": "Shtenco/synergy_metachain",
       "description": "Commitment replay guard stores consumed IDs in process memory and trusts supplied FINALIZED/digest fields; restart loses replay state and no chain proof/signature is verified.",
       "next_action": "Persist replay state transactionally with unique constraints and verify signed source authority/finality proofs plus reorg handling."
+    },
+    {
+      "id": "GAP-032",
+      "severity": "critical",
+      "area": "historical_ssh_credential",
+      "repository": "Shtenco/synergy_turbo_linux",
+      "description": "Repository incident report confirms an unencrypted SSH private key was committed to main history. Current tree removal is not proof that the credential was rotated/revoked or that history was sanitized.",
+      "next_action": "Verify new key issuance, revoke old public key on every authorized host, inspect access logs, rotate dependent credentials and complete human-approved history sanitization."
+    },
+    {
+      "id": "GAP-033",
+      "severity": "high",
+      "area": "scheduler_queue_integrity",
+      "repository": "Shtenco/synergy_turbo_linux",
+      "description": "turbo_scheduler_enqueue does not reject an already-enqueued task ID; duplicate enqueue can set next[id]=id and create a self-loop.",
+      "next_action": "Track queued membership or add a state bitset, reject duplicates, and add regression tests for duplicate enqueue, dequeue/re-enqueue and queue count invariants."
+    },
+    {
+      "id": "GAP-034",
+      "severity": "medium",
+      "area": "long_term_testing",
+      "repository": "Shtenco/synergy_long_term_harness",
+      "description": "Long-Term Harness main branch is README-only; no executable soak test framework exists in the inspected repository.",
+      "next_action": "Keep long-term test coverage assigned to existing CI/soak workflows until this repository gains a reproducible runner."
     }
   ]
 }
