@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
+  "audited_repository_count": 12,
+  "source_code_reviewed_count": 11,
+  "records": [
+    {
+      "name": "synergy_agent_long_term_memory",
+      "repository": "Shtenco/synergy_agent_long_term_memory",
+      "commit": "a3c4f4aebc69f741f6c380682b882b9a106f0d17",
+      "commit_url": "https://github.com/Shtenco/synergy_agent_long_term_memory/commit/a3c4f4aebc69f741f6c380682b882b9a106f0d17",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README and complete repository tree",
+      "capabilities": [],
+      "findings": [
+        "README contains only a title; repository tree contains only README.md.",
+        "No implementation, tests, API or executable memory capability established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "739c65dfeba67b712d9c0607aab6a3cb5f9b13d6"
+        }
+      ]
+    },
+    {
+      "name": "synergy_ai_browser-",
+      "repository": "Shtenco/synergy_ai_browser-",
+      "commit": "e69ce454424c4d29da54dc649d7379ec24b9bef0",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_browser-/commit/e69ce454424c4d29da54dc649d7379ec24b9bef0",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, browser runtime and core tests",
+      "capabilities": [
+        "playwright-browser-runtime",
+        "allowlisted-navigation",
+        "bounded-actions",
+        "dom-observation",
+        "detector-evidence-capture"
+      ],
+      "findings": [
+        "Top-level document navigation is restricted to HTTPS allowlisted hosts; embedded credentials, direct IP and nonstandard ports are rejected.",
+        "Actions are limited to click/fill/press; arbitrary agent-supplied JavaScript is rejected.",
+        "Tests cover unsafe top-level URLs, local opt-in, local DOM interaction and detector result parsing.",
+        "SECURITY FINDING: _guard_request applies NavigationPolicy only to navigation requests with resource_type=document; all subresource requests are continued without equivalent host/IP checks. An allowlisted page may attempt private-network requests unless network isolation blocks them."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ef7af39fc6b6a7618247320df449863c489cc4cf"
+        },
+        {
+          "path": "synergy_browser/browser.py",
+          "blob_sha": "7fe88d7bf0af89b7f454b642a7bd991d539d9851"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "46138f62caf71edd5b00e92418fe849ad9d3bae0"
+        }
+      ]
+    },
+    {
+      "name": "tiimeweb_synergy_exactly_once_delivery",
+      "repository": "Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "commit": "35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
+      "commit_url": "https://github.com/Shtenco/tiimeweb_synergy_exactly_once_delivery/commit/35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, SQLite experiment and invariant tests",
+      "capabilities": [
+        "sqlite-transactional-idempotency",
+        "payload-fingerprint-conflict-detection",
+        "crash-redelivery-experiment"
+      ],
+      "findings": [
+        "Robust path uses BEGIN IMMEDIATE, unique event_id, SHA-256 payload fingerprint and effect insert in one SQLite transaction.",
+        "Crash probes exercise process exit before and after commit, then repeated redelivery.",
+        "README states CI checks syntax and minimal documentation only."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d48d1fa9b940acff18d2d02ae55dee2fcfd6cab0"
+        },
+        {
+          "path": "experiments/exactly_once_lab.py",
+          "blob_sha": "68b9261fa4409acc3256d7397d1ad7a19bf7f815"
+        },
+        {
+          "path": "tests/test_invariants.py",
+          "blob_sha": "cd1bcf1adf2afb8b8c9b305a212b22888e6d36db"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_agent_long_term_memory",
+      "repository": "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "commit": "2bcb732a92fe8053c18f913edb1318ac21ef3620",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_agent_long_term_memory/commit/2bcb732a92fe8053c18f913edb1318ac21ef3620",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README and SQLite experiment",
+      "capabilities": [
+        "sqlite-exact-record-persistence",
+        "cross-connection-state-persistence"
+      ],
+      "findings": [
+        "Four distinct SQLite connections verify exact SHA-256 matches for 15 records and retain a state update across connections.",
+        "Default corpus is synthetic; historical 15-document result is archival."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "1c707f037e9c61eb44286b96e34f0b873fe6dca4"
+        },
+        {
+          "path": "experiments/sqlite_cross_session.py",
+          "blob_sha": "bd02b8802035600a882b619e20d6d26ed34ab3cc"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_ai_infrastructure_agent",
+      "repository": "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "commit": "6fb12232e07a82d86a6689d8aa0d1c6efde453d3",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_ai_infrastructure_agent/commit/6fb12232e07a82d86a6689d8aa0d1c6efde453d3",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README and allowlisted action planner",
+      "capabilities": [
+        "allowlist-policy-evaluation",
+        "human-review-action-proposal"
+      ],
+      "findings": [
+        "Planner normalizes commands and performs exact allowlist membership checks.",
+        "Every result has executed=false; no shell, host, server or cloud API is called."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "42bda02804111c1614734051bac7e53b27cc71f3"
+        },
+        {
+          "path": "prototypes/scenarios/article09.py",
+          "blob_sha": "1bcb2ae6d6e186bb3263e3da4adf5436cd2f1990"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_backtest_oos_lab",
+      "repository": "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "commit": "1c116e449ca992f5bccbaa70ae98d65972a08e69",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_backtest_oos_lab/commit/1c116e449ca992f5bccbaa70ae98d65972a08e69",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README and leakage demonstration",
+      "capabilities": [
+        "lookahead-bias-demonstration",
+        "lagged-signal-vs-leaky-signal"
+      ],
+      "findings": [
+        "Code compares lagged signal positions with deliberately same-period lookahead positions.",
+        "Fixture is six hand-authored prices; tests demonstrate the lookahead effect."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "3aa2d049a9de8e3117d0f03126a8f6639d6c624c"
+        },
+        {
+          "path": "prototypes/scenarios/article10.py",
+          "blob_sha": "8540b9a43b34733f49922a0fdb4037ca20de1a2b"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_benchmark_statistics",
+      "repository": "Shtenco/timeweb_synergy_benchmark_statistics",
+      "commit": "9d6db41edc273189fe4795b3803f98181cff02be",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_benchmark_statistics/commit/9d6db41edc273189fe4795b3803f98181cff02be",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, uncertainty analysis, tests and archived result",
+      "capabilities": [
+        "wilson-proportion-intervals",
+        "paired-seed-difference-t-interval",
+        "sample-size-approximation"
+      ],
+      "findings": [
+        "Archived UCI digits comparison: 450 test rows, three paired seeds; mean FP32 accuracy 95.85%, binary model 88.81%, difference -7.04 percentage points.",
+        "Exploratory paired-seed t95 interval approximately -11.98 to -2.09 percentage points."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "20b85499036be89a1240a109ead29a8764c9b67e"
+        },
+        {
+          "path": "prototypes/real_experiments/article15_measured_uncertainty.py",
+          "blob_sha": "4633c08d69ba19034cce1fd0329f36fa6cc2f300"
+        },
+        {
+          "path": "prototypes/tests/test_article15_measured_uncertainty.py",
+          "blob_sha": "daec965cb714026497d12b2c3f8ca9561b30aecf"
+        },
+        {
+          "path": "results/article-15-binary-uncertainty-20261117T151503.201483Z.json",
+          "blob_sha": "73d04a0aebba61494a7e3a4bb4f076acdcc154f9"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_cpu_gpu_cost_benchmark",
+      "repository": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "commit": "5c25ddb97838a1d14e40dc9458847743fa94191f",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark/commit/5c25ddb97838a1d14e40dc9458847743fa94191f",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, cost calculator, tests and repository tree",
+      "capabilities": [
+        "assumption-based-compute-cost-estimation"
+      ],
+      "findings": [
+        "Calculator estimates cost per thousand correct answers from caller-supplied hourly cost, throughput, utilization and success rate.",
+        "No live provider tariffs or paid GPU bills; inspected tree exposes no independent GPU harness. README's local CPU measurement claim was not confirmed in inspected source."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "aba086e8d56fd8af2cd81ee7bc7862aadb78aaad"
+        },
+        {
+          "path": "prototypes/scenarios/article12.py",
+          "blob_sha": "bd445ee5aa1df4d571e2c07e99f96d3f088127c2"
+        },
+        {
+          "path": "prototypes/tests/test_articles_09_12.py",
+          "blob_sha": "a6a358a0b618a519816d5a5541f4058f602f2a9e"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_fault_injection_lab",
+      "repository": "Shtenco/timeweb_synergy_fault_injection_lab",
+      "commit": "53585459cefbc3956f1601feaaece80d68da7170",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_fault_injection_lab/commit/53585459cefbc3956f1601feaaece80d68da7170",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, two-replica experiment, QA validator, evidence scope and results",
+      "capabilities": [
+        "two-process-localhost-fault-injection",
+        "retry-failover-experiment",
+        "archived-json-csv-measurements"
+      ],
+      "findings": [
+        "Two local HTTP server processes; three process terminations per run plus deterministic 503s and delays.",
+        "Archived results: no_retry 91/120 successes and retry_failover 120/120 in each of three runs.",
+        "QA validator checks six summaries and expected counts."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "abdb219e3447336ab428e440d9492aa56a1e6750"
+        },
+        {
+          "path": "experiments/fault_injection_lab.py",
+          "blob_sha": "8a07dab89460add97a322efaf030fdde642558f6"
+        },
+        {
+          "path": "qa/validate.py",
+          "blob_sha": "71b4f954fc8597408d49ecd54d59f9f198b82634"
+        },
+        {
+          "path": "docs/EVIDENCE_SCOPE.md",
+          "blob_sha": "15bf515234bffcfa092d93136164322e23911142"
+        },
+        {
+          "path": "results/17/fault_injection_results.json",
+          "blob_sha": "bf266927734a9be8e02421c94693e60bbf9ab5a4"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_rag_quality_cost",
+      "repository": "Shtenco/timeweb_synergy_rag_quality_cost",
+      "commit": "a5ec554db4f10ec5076be74f8283603cb1fedf3d",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_rag_quality_cost/commit/a5ec554db4f10ec5076be74f8283603cb1fedf3d",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, diagnostic function and tests",
+      "capabilities": [
+        "retrieval-recall-diagnostic",
+        "answer-claim-support-rate-diagnostic"
+      ],
+      "findings": [
+        "Function reports required-document recall separately from answer-claim support rate and identifies unsupported claim IDs."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "2e4b12a1d7067b8554797947d35c5ee047fd4b1d"
+        },
+        {
+          "path": "prototypes/scenarios/article14.py",
+          "blob_sha": "f5f6ccf8c613bfddf2c92e5bdf1ca766e0d984e8"
+        },
+        {
+          "path": "prototypes/tests/test_articles_13_15.py",
+          "blob_sha": "4a149d8791f13c46ece2dc2d3204c4a086216d4f"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_retry_storm_lab",
+      "repository": "Shtenco/timeweb_synergy_retry_storm_lab",
+      "commit": "b601f79db253751e4c7d99d671420bf95d840d3c",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_retry_storm_lab/commit/b601f79db253751e4c7d99d671420bf95d840d3c",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, policy implementation, tests, benchmark and results card",
+      "capabilities": [
+        "retry-budget",
+        "deadline-aware-retries",
+        "full-jitter",
+        "bulkhead",
+        "circuit-breaker-epoch-fencing"
+      ],
+      "findings": [
+        "Circuit breaker uses epoch-tagged permits, one half-open probe and stale-completion fencing; local bulkhead rejection is not recorded as upstream failure.",
+        "Tests cover concurrent half-open admission, stale completion, atomic retry budget, deterministic jitter and local-only endpoint restriction.",
+        "Benchmark: 240 requests x six policies x three repeats on one localhost service; protected policy success 32.92% vs budget_bulkhead 56.25%."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "359f34b0fe429ccdb20cad2db9b97be5fddc06f8"
+        },
+        {
+          "path": "src/retrystorm/policies.py",
+          "blob_sha": "461714632b18a9dde26097b9bae7760033ac35e6"
+        },
+        {
+          "path": "tests/test_policies.py",
+          "blob_sha": "41abcb2d43120fdc696e4dbe2f71e5ae9c49d94c"
+        },
+        {
+          "path": "results/experiment_18/benchmark.json",
+          "blob_sha": "9579cbd7f941bde9dba35bbc1d0ac0a5b30e9c31"
+        },
+        {
+          "path": "docs/RESULTS_CARD.md",
+          "blob_sha": "ad2e16edb51c0ac67d13481eec25b607c7998032"
+        }
+      ]
+    },
+    {
+      "name": "timeweb_synergy_service_recovery",
+      "repository": "Shtenco/timeweb_synergy_service_recovery",
+      "commit": "d350865dbf602c3b518ec0a1f6e183e6d0438d80",
+      "commit_url": "https://github.com/Shtenco/timeweb_synergy_service_recovery/commit/d350865dbf602c3b518ec0a1f6e183e6d0438d80",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README, recovery scenario and tests",
+      "capabilities": [
+        "fault-scenario-state-simulation",
+        "approval-gate-for-destructive-restore"
+      ],
+      "findings": [
+        "Inspected article11 is a pure-state simulator and never executes real service or file operations.",
+        "Data-loss restore is blocked pending approval; tests assert real_actions_executed=false.",
+        "README describes local HTTP/SQLite restarts, but inspected source path does not demonstrate that claim."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "f6293369285762468ba58379ebb75bd5434b49a6"
+        },
+        {
+          "path": "prototypes/scenarios/article11.py",
+          "blob_sha": "42e35f6c33e6eec61831843041f66806f5b002f6"
+        },
+        {
+          "path": "prototypes/tests/test_articles_09_12.py",
+          "blob_sha": "a6a358a0b618a519816d5a5541f4058f602f2a9e"
+        }
+      ]
+    }
+  ]
+}
