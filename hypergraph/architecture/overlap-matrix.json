@@ -138,6 +138,68 @@
         "synergy_ai_company"
       ],
       "decision": "Need a focused order/catalog/settlement ownership audit before deciding whether a core is missing."
+    },
+    {
+      "proposal": "synergy_ai_credit_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_pay_system",
+        "Shtenco/synergy_agentic_ai_economy"
+      ],
+      "decision": "Existing finance and payment layers provide accounting/settlement rails and simulation credit; lender discovery and jurisdiction-specific credit offers remain unverified."
+    },
+    {
+      "proposal": "synergy_ai_card_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_pay_system"
+      ],
+      "decision": "Pay System supports payment routing and provider capabilities, not a verified bank-card product comparison marketplace."
+    },
+    {
+      "proposal": "synergy_ai_microloan_router",
+      "status": "unresolved",
+      "existing_repositories": [
+        "Shtenco/synergy_financial_os",
+        "Shtenco/synergy_pay_system"
+      ],
+      "decision": "No source-reviewed licensed microloan offer aggregation was found; audit credit/lending domain before creation."
+    },
+    {
+      "proposal": "synergy_ai_remittance_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_pay_system"
+      ],
+      "decision": "Multi-provider and cross-border payment routing overlap strongly; remittance-specific corridor discovery and compliance comparison need scope definition."
+    },
+    {
+      "proposal": "synergy_ai_cashback_router",
+      "status": "unresolved",
+      "existing_repositories": [
+        "Shtenco/synergy_pay_system"
+      ],
+      "decision": "Payment rails do not establish cashback provider aggregation; inspect existing app/merchant projects before creation."
+    },
+    {
+      "proposal": "synergy_ai_broker_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_riskguard",
+        "Shtenco/synergy_midas_ai",
+        "Shtenco/synergy_financial_os"
+      ],
+      "decision": "Trading risk and market analytics exist; broker discovery, account opening and broker-product comparison remain distinct."
+    },
+    {
+      "proposal": "synergy_ai_bank_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_pay_system",
+        "Shtenco/synergy_financial_os"
+      ],
+      "decision": "Bank/provider integration and financial accounting are present as boundaries; a bank-product comparison router is not established."
     }
   ],
   "remaining_proposals": [
@@ -194,35 +256,7 @@
       "status": "not_yet_overlap_audited"
     },
     {
-      "proposal": "synergy_ai_credit_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_card_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_microloan_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_remittance_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_cashback_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_broker_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
       "proposal": "synergy_ai_coupon_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_bank_router",
       "status": "not_yet_overlap_audited"
     },
     {
