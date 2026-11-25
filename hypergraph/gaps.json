@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "gaps": [
+    {
+      "id": "GAP-001",
+      "severity": "high",
+      "area": "inventory",
+      "description": "Current owner listing returns 100 records; endpoint does not expose further pages. Four previously reported lab names are not confirmed in this result set.",
+      "next_action": "Reconcile by immutable GitHub repository ID using broader repository search/installation inventory."
+    },
+    {
+      "id": "GAP-002",
+      "severity": "high",
+      "area": "source_audit",
+      "description": "All 100 live inventory entries still require systematic README, source tree, dependencies, tests and workflow review.",
+      "next_action": "Audit repositories in batches and attach source revision and file-level evidence."
+    },
+    {
+      "id": "GAP-003",
+      "severity": "high",
+      "area": "edges",
+      "description": "109 DEPENDS_ON edges were copied from the umbrella registry and remain candidate claims, not verified source dependencies.",
+      "next_action": "Verify imports, API calls, package manifests, workflow references and runtime contracts."
+    },
+    {
+      "id": "GAP-004",
+      "severity": "high",
+      "area": "contracts",
+      "description": "No cross-repository API/event contracts have been independently extracted in this pass.",
+      "next_action": "Create contracts directory with OpenAPI, JSON Schema and event envelope artifacts."
+    },
+    {
+      "id": "GAP-005",
+      "severity": "medium",
+      "area": "proposals",
+      "description": "39 proposed shared cores and domain routers may overlap existing repositories.",
+      "next_action": "Perform capability overlap matrix before creating any repository."
+    },
+    {
+      "id": "GAP-006",
+      "severity": "high",
+      "area": "evidence",
+      "description": "Registry dependency assertions currently cite the umbrella registry blob rather than original source lines.",
+      "next_action": "Replace or supplement each candidate edge with source-level evidence."
+    }
+  ],
+  "known_unconfirmed_names": [
+    "timeweb_synergy_fault_injection_lab",
+    "timeweb_synergy_rag_quality_cost",
+    "timeweb_synergy_retry_storm_lab",
+    "timeweb_synergy_service_recovery"
+  ]
+}
