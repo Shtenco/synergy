@@ -28,6 +28,7 @@ class HypergraphCoreTests(unittest.TestCase):
         cls.governance = load_json(HYPERGRAPH / "evidence" / "governance-registry-snapshot.json")
         cls.governance_projection = load_json(HYPERGRAPH / "governance-edges.json")
         cls.scope_manifest = load_json(HYPERGRAPH / "evidence" / "governance-scope-manifest.json")
+        cls.scope_recommendations = load_json(HYPERGRAPH / "evidence" / "governance-scope-recommendations.json")
         cls.governance_projection_schema = load_json(HYPERGRAPH / "schemas" / "governance-graph-projection.schema.json")
         cls.registry = load_json(ROOT / "registry" / "repos.json")
 
@@ -215,6 +216,21 @@ class HypergraphCoreTests(unittest.TestCase):
                 if item["in_dependency_graph"] or item["in_interface_registry"]
                 else "needs_owner_scope_decision",
             )
+
+    def test_governance_scope_recommendations_cover_absent_repositories_without_claiming_owner_approval(self):
+        doc = self.scope_recommendations
+        self.assertEqual(doc["inventory_repository_count"], 112)
+        self.assertEqual(doc["absent_from_both_count"], 35)
+        self.assertEqual(doc["owner_decision_count"], 0)
+        absent = {item["repository"] for item in self.scope_manifest["repositories"]
+                  if not item["in_dependency_graph"] and not item["in_interface_registry"]}
+        self.assertEqual({item["repository"] for item in doc["recommendations"]}, absent)
+        for item in doc["recommendations"]:
+            self.assertEqual(item["owner_decision"], "pending")
+            self.assertTrue(item["rationale"])
+            self.assertTrue(item["evidence"])
+            self.assertRegex(item["source_commit"], r"^[0-9a-f]{40}$")
+            self.assertIn("Do not add, remove or promote", item["decision_guard"])
 
     def test_m5_scope_aliases_and_contract_counts_reconcile(self):
         snapshot = self.governance
