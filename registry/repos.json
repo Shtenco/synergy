@@ -351,7 +351,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1341272872"
+      "github_repository_id": "1341272872",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
+      "source_audit_scope": "README, portfolio decision contract and M4 market advisory consumers"
     },
     {
       "name": "synergy_ai_browser-",
@@ -1106,7 +1109,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1376378125"
+      "github_repository_id": "1376378125",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "d1018cba6b6c977ba8dce43ba8257601c0e2fe64",
+      "source_audit_scope": "README, OHLCV feature cube and market-features contract"
     },
     {
       "name": "synergy_agent_long_term_memory",
@@ -1436,7 +1442,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1376377837"
+      "github_repository_id": "1376377837",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "3edcea187c45866d55a65b74dc707b7b1009a69b",
+      "source_audit_scope": "README, quote core and non-authorizing liquidity quote contract"
     },
     {
       "name": "timeweb_synergy_ai_infrastructure_agent",
@@ -2037,7 +2046,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1376376805"
+      "github_repository_id": "1376376805",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "57ee40a6879c0db6550b573aacadad27347fb2db",
+      "source_audit_scope": "README, purged walk-forward core and validation decision contract"
     },
     {
       "name": "synergy_riskguard",
