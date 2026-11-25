@@ -5,8 +5,8 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Twenty-four README reviews and twenty-three limited source reviews, each pinned to the exact main commit and file blob SHA.
-- 39 proposed shared cores and domain routers are kept separate from actual repositories.
+- Thirty-two README reviews and twenty-eight limited source reviews, each pinned to the exact main commit and file blob SHA.
+- 39 proposed shared cores and domain routers are kept separate from actual repositories; 26 have first-pass overlap assessments and 13 remain unaudited.
 - Six target architecture layers and fourteen candidate target relationships are documented separately from observed dependencies.
 
 ## Files
@@ -37,6 +37,11 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 10. `synergy_financial_os` recognition helper has an optional settlement evidence parameter and accepts empty balanced entries; `synergy_pay_system` settlement idempotency is process-local; `synergy_riskguard` treats fewer than five returns as zero VaR/CVaR.
 
+11. `synergy_lead_search_engline` is an offline real-estate lead candidate store with human review, not a deployed multi-tenant crawler; current schema lacks tenant isolation.
+12. `synergy_search_engline` is a HardNAV simulation, not a general search service.
+13. `synergy_messenger` main branch has a manifest whose scripts reference missing source/test paths; the alpha runtime is not verified on main.
+14. `synergy_ai_workspace` implementation exists only on a release branch; main remains README-only.
+
 ## Evidence rules
 1. Repository names are not identities; GitHub repository IDs are.
 2. A registry dependency is a candidate edge, not proof of an import or runtime call.
@@ -48,14 +53,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 24/112 (21.43%).
-- Source reviewed (limited scope): 23/112 (20.54%).
+- README reviewed: 32/112 (28.57%).
+- Source reviewed (limited scope): 28/112 (25.00%).
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
 ## Next audit sequence
 1. Close the browser subresource network-policy finding.
-2. Audit the remaining 89 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+2. Audit the remaining 84 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
 3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
 5. Run capability-overlap analysis before proposing any new repository.
