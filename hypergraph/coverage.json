@@ -270,7 +270,13 @@
     "uncontracted_components": 2,
     "observed_contract_risks": 3,
     "coverage_scope": "75-repository governance subset; not all 112 inventory nodes.",
-    "registry_reconciliation": "hypergraph/evidence/governance-registry-snapshot.json"
+    "registry_reconciliation": "hypergraph/evidence/governance-registry-snapshot.json",
+    "unique_cross_repository_contract_ids_in_graph": 38,
+    "dependency_graph_summary_typed_contracts_reported": 17,
+    "m5_scope_required_edges": 44,
+    "m5_scope_exact_name_matches": 42,
+    "m5_scope_alias_normalized_matches": 44,
+    "m5_scope_alias_count": 2
   },
   "governance_registry_reconciliation": {
     "hypergraph_inventory_repositories": 112,
