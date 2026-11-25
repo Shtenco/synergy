@@ -30,14 +30,15 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 5,
-    "source_code_audited_total": 92,
+    "source_code_reviewed_in_this_pass": 2,
+    "source_code_audited_total": 94,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 5,
+    "readme_reviewed_in_this_pass": 3,
     "source_code_reviewed_repository_names": [
+      "3D_bars_market_structure",
       "computer_vision_trading_metatrader_5",
       "cross_forex_arbitrage_trading_metatrader_5",
       "dlp_solver",
@@ -77,6 +78,7 @@
       "synergy_complex_matrix_multiplication",
       "synergy_computing_topology",
       "synergy_crypto_pump",
+      "synergy_epstein_network",
       "synergy_eurasian",
       "synergy_financial_os",
       "synergy_gllm_nexus",
@@ -178,20 +180,20 @@
       "synegy_ai_compress"
     ],
     "completion_percentages": {
-      "repository_source_audit": 82.14,
-      "readme_review": 93.75
+      "repository_source_audit": 83.93,
+      "readme_review": 96.43
     },
-    "main_branch_source_reviewed": 85,
+    "main_branch_source_reviewed": 87,
     "non_main_branch_source_reviewed": 7,
-    "readme_reviewed_total": 105,
-    "source_code_reviewed_total": 92
+    "readme_reviewed_total": 108,
+    "source_code_reviewed_total": 94
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 82.14,
+    "repository_source_audit": 83.93,
     "edge_verification": 0,
     "contract_verification": 0,
-    "readme_review": 93.75
+    "readme_review": 96.43
   },
   "interpretation": "The search result set contains 112 unique GitHub repository IDs. This reconciles the 100-record owner-affiliation listing plus 12 additional repositories. Inventory is complete for this search result set; source-level audit and relationship verification are not complete."
 }
