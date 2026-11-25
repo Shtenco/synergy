@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 84,
-  "source_code_reviewed_count": 71,
+  "audited_repository_count": 89,
+  "source_code_reviewed_count": 74,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -3007,6 +3007,151 @@
         {
           "path": "tests/test_federation_v4.py",
           "blob_sha": "0726a28d2a2d14fd752c510406df31e8b24052e2"
+        }
+      ]
+    },
+    {
+      "name": "synergy_project",
+      "repository": "Shtenco/synergy_project",
+      "commit": "f1055866444a2e6bdbc8ac6b76f4334f1e171105",
+      "commit_url": "https://github.com/Shtenco/synergy_project/commit/f1055866444a2e6bdbc8ac6b76f4334f1e171105",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "capital-governance-contract",
+        "project-proposal-validation",
+        "funding-authorization-payload"
+      ],
+      "findings": [
+        "Repository describes itself as an economic master dossier, not canonical owner inventory or runtime authority; its PR #2 still references an 89-repository assessment and is explicitly stale against the current inventory.",
+        "Capital governance contract prevents ProjectProposal from self-authorizing and requires approver provenance, underwriting evidence, rails and future expiry for AUTHORIZE payloads.",
+        "Decimal amounts are not checked with is_finite(); Decimal('Infinity') can pass positive capital/max_amount checks. Contract functions construct payloads only and do not provide durable approval workflow or payment execution."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "6a8824ff37cef7c62d66e8eaadac6d8c0b63af00"
+        },
+        {
+          "path": "contracts/capital_governance_v1.py",
+          "blob_sha": "9a5d2c4ddd3f09ff109e8a6439c6209c087c6cb9"
+        },
+        {
+          "path": "tests/test_capital_governance_contract.py",
+          "blob_sha": "c1f7b6a3e087262b46692c5d0b5a4e7694e5cc35"
+        }
+      ]
+    },
+    {
+      "name": "synergy_trademux",
+      "repository": "Shtenco/synergy_trademux",
+      "commit": "3ef2e4ac61215fcf0ad073b4b59cc7938482b08e",
+      "commit_url": "https://github.com/Shtenco/synergy_trademux/commit/3ef2e4ac61215fcf0ad073b4b59cc7938482b08e",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "venue-smart-routing",
+        "risk-decision-to-plan-contract",
+        "paper-execution-adapter",
+        "execution-result-contract"
+      ],
+      "findings": [
+        "Main implements venue ranking/slicing by fee, slippage, risk score and latency, with a paper adapter and typed plan/result payloads.",
+        "README explicitly says paper fills do not prove broker connectivity; correlation UUIDs exist but persistent idempotency state machine is not implemented.",
+        "Core route and contract validation do not consistently reject NaN/infinite quote fields, negative costs/latency, invalid side/symbol or malformed fill quantities; risk action gating alone is not sufficient for production execution."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ffb832cde688db998411cd188336cfb29cfcaf36"
+        },
+        {
+          "path": "src/synergy_trademux/core.py",
+          "blob_sha": "17b913b062781cd9cca3b7a48c47cb4b4c90b0ed"
+        },
+        {
+          "path": "src/synergy_trademux/synergy_contracts.py",
+          "blob_sha": "36a52ac09d656317ec06b6e0c0e927cc2729ec14"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "a151382824309acaf9693d7f806d2329a1a711fa"
+        }
+      ]
+    },
+    {
+      "name": "synergy_app_family",
+      "repository": "Shtenco/synergy_app_family",
+      "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+      "commit_url": "https://github.com/Shtenco/synergy_app_family/commit/b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [],
+      "findings": [
+        "Checked main contains README, LICENSE, assets and docs only; no executable family application runtime, tests or persisted evidence are present.",
+        "README explicitly labels main STUB / specification-only and lists consent, member data leakage and UI-balance authority as design risks."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "c57e17c05c4f24daef8d1a04da8a7b5330fd81a1"
+        }
+      ]
+    },
+    {
+      "name": "synergy_complex_matrix_multiplication",
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "commit": "077ce326b2037511c215f7d7b104be72e1b5e34d",
+      "commit_url": "https://github.com/Shtenco/synergy_complex_matrix_multiplication/commit/077ce326b2037511c215f7d7b104be72e1b5e34d",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "structured-linear-operator-research",
+        "low-rank-and-basis-deduplication",
+        "checkpoint-evaluation",
+        "matrix-operator-benchmarks"
+      ],
+      "findings": [
+        "Main contains a substantial research codebase with multiple QCNO versions, benchmark scripts, checkpoints/results documentation and falsification notes.",
+        "The inspected factor-4 dedup script loads a checkpoint with weights_only=False, reads a fixed local /mnt/data checkpoint, and writes outputs to /mnt/data; the common evaluation script executes a source-file prefix via exec. These scripts are research runners tightly coupled to local artifacts, not a packaged safe runtime.",
+        "README states the full V9 pipeline was not completed before the final checkpoint because prototype forward execution was slow/timeouts; earlier speed/quality results must not be generalized to a completed V9 pipeline."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "9ea700dddd9f5baeef534e9ec37f2e1b238bebae"
+        },
+        {
+          "path": "src/qcno_v8_dedup_factor4_run.py",
+          "blob_sha": "b14a52396c7dcd95785717678c4bad12776900a6"
+        },
+        {
+          "path": "src/qcno_v8_common_eval.py",
+          "blob_sha": "bb31dadf83a71efe65e6b34670a95b47849dd0a0"
+        }
+      ]
+    },
+    {
+      "name": "synergy_post_quantum_radio",
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "commit": "b3084f709aaa1023289cfec6e550a1a35d884513",
+      "commit_url": "https://github.com/Shtenco/synergy_post_quantum_radio/commit/b3084f709aaa1023289cfec6e550a1a35d884513",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [],
+      "findings": [
+        "Checked main contains README, LICENSE, assets and docs only; no executable radio or post-quantum protocol runtime, tests or evidence artifacts are present.",
+        "README explicitly labels main STUB / specification-only."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "79107b23ea1868ecfb061d12593abcf2c1ea2ad9"
         }
       ]
     }
