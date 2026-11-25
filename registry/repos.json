@@ -99,7 +99,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1181574900"
+      "github_repository_id": "1181574900",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
+      "source_audit_scope": "README, requirement-to-change trace, source-indexed agent, compiler, command runner and tests"
     },
     {
       "name": "synergy",
@@ -405,7 +408,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1336912141"
+      "github_repository_id": "1336912141",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "1d84bddfec16998c9300c984ca50980c1f946d56",
+      "source_audit_scope": "README and complete main-branch tree"
     },
     {
       "name": "synergy_ai_coder",
@@ -758,7 +764,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1370636640"
+      "github_repository_id": "1370636640",
+      "audit_status": "branch_only_prototype",
+      "source_audit_commit": "a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
+      "source_audit_scope": "unified-v3-generalization-first branch README, graph-native runtime, MoE router and frozen benchmark artifacts; main is docs/registry only"
     },
     {
       "name": "synergy_messenger",
@@ -1858,7 +1867,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1413525853"
+      "github_repository_id": "1413525853",
+      "audit_status": "branch_only_prototype",
+      "source_audit_commit": "dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
+      "source_audit_scope": "feature/rwkv7-original-weights branch quantizer, Triton low-bit matvec, evaluation harness and tests; main contains workflow/docs"
     },
     {
       "name": "synergy_gguf_compress",
