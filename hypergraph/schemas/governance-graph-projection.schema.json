@@ -189,6 +189,100 @@
     },
     "maturity_interpretation": {
       "type": "string"
+    },
+    "source_semantics": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "status_vocabulary": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "original_integration_summary": {
+      "type": "object",
+      "required": [
+        "repositories",
+        "typed_contracts",
+        "adapter_implemented_runtime_edges",
+        "e2e_tested_runtime_edges",
+        "deployed_runtime_edges"
+      ],
+      "properties": {
+        "repositories": {
+          "type": "integer"
+        },
+        "typed_contracts": {
+          "type": "integer"
+        },
+        "adapter_implemented_runtime_edges": {
+          "type": "integer"
+        },
+        "e2e_tested_runtime_edges": {
+          "type": "integer"
+        },
+        "deployed_runtime_edges": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": true
+    },
+    "contract_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "m5_scope": {
+      "type": "object",
+      "required": [
+        "required_edge_count",
+        "normalized_scope_match_count",
+        "legacy_aliases",
+        "scope_source_files"
+      ],
+      "properties": {
+        "required_edge_count": {
+          "const": 44
+        },
+        "normalized_scope_match_count": {
+          "const": 44
+        },
+        "legacy_aliases": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "scope_source_files": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "blob_sha"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "blob_sha": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
     }
   }
 }
