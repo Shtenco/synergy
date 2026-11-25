@@ -3,7 +3,7 @@
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
   "audited_repository_count": 112,
-  "source_code_reviewed_count": 101,
+  "source_code_reviewed_count": 106,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -4248,7 +4248,249 @@
           "blob_sha": "1c8482dd492be338593f417988a7b14b3f912b7d"
         }
       ]
+    },
+    {
+      "name": "synergy_gguf_compress",
+      "repository": "Shtenco/synergy_gguf_compress",
+      "commit": "8c92ebde71126ad9bbbf3730b45b6269e74825ad",
+      "commit_url": "https://github.com/Shtenco/synergy_gguf_compress/commit/8c92ebde71126ad9bbbf3730b45b6269e74825ad",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only.",
+      "capabilities": [
+        "adaptive-rank-low-rank-compression",
+        "sparse-residual-codec",
+        "packed-q4-native-cpu-kernel",
+        "gguf-v2-v3-io",
+        "global-quality-budget-search",
+        "llama-cpp-patcher"
+      ],
+      "findings": [
+        "Main is a stub; substantial V2-V8 implementation, C++ packed-Q4 kernel and 13 test modules exist on open PR #7 branch feat/omega-mix-v8-behavioral-budget.",
+        "README reports local unit/native-kernel and patcher tests, but complete patched llama.cpp link/build and real Llama/Qwen end-to-end model runs are not complete; prior Actions jobs had runner_id=0/no steps.",
+        "Compression is lossy and quality must be validated with real perplexity/logit/task metrics; static PASS is not promoted to end-to-end model-quality PASS when llama.cpp did not execute."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "5bbe1750ece076e14fd174996c9d692d275d0965"
+        },
+        {
+          "path": "src/gguf_compress/omega_v8_budget.py",
+          "blob_sha": "d56cab7604ca66cdf59077a9579320b3b09f7710"
+        },
+        {
+          "path": "src/gguf_compress/e2e_quality.py",
+          "blob_sha": "1f44fa1a5768857fd09fc073f3e1846407860a41"
+        },
+        {
+          "path": "src/gguf_compress/gguf_io.py",
+          "blob_sha": "6ef4e0f7fedcc0de7c5503281b2593e5be007a4e"
+        },
+        {
+          "path": "src/gguf_compress/native_q4.py",
+          "blob_sha": "75974e3126c957ff0230f31518140502bb1789ec"
+        },
+        {
+          "path": "tests/test_omega_v8_budget.py",
+          "blob_sha": "e9872de5673a301c66783af12296d26ebac2a032"
+        }
+      ]
+    },
+    {
+      "name": "synergy_agi_autopilot",
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "commit": "337ca67415f2856da4d31ffa03517e6f40cfdab2",
+      "commit_url": "https://github.com/Shtenco/synergy_agi_autopilot/commit/337ca67415f2856da4d31ffa03517e6f40cfdab2",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only.",
+      "capabilities": [
+        "rust-goal-to-result-control-plane",
+        "plugin-fabric-and-registry",
+        "capability-policy-engine",
+        "business-runtime-sidecar",
+        "verification-pipeline",
+        "mission-workforce-and-recovery"
+      ],
+      "findings": [
+        "Main is documentation/specification-only; the large Rust control plane and Python business runtime are on open integration PR #7 branch integration/synergy-ai-autopilot-v1, with additional M12 hardening PRs still open.",
+        "Plugin policy defaults to Allow for capabilities without a matching deny/approval rule. PluginManifest permits capabilities with no mapped_core_capabilities, and registry loading does not cryptographically sign or attest manifests.",
+        "PluginRuntime trusts a caller-supplied PluginCall.approved boolean when no persistent control-plane DB is configured; persistent approval lookup is conditional on that DB being present. A plugin manifest can also declare requires_approval=false and a low risk class.",
+        "Business sidecar defaults to paper mode and external effects disabled, hard-denies payment/accounting/blockchain/host-shell capabilities and has tests for approval gates; these controls do not remove the default-allow and caller-asserted approval weaknesses in the shared plugin runtime."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "f4e5b343c0d6cf97347e47389d2dfe110a56ad2e"
+        },
+        {
+          "path": "crates/autopilot-policy/src/lib.rs",
+          "blob_sha": "a2a31bc4e57d5520fe2af17dd26be4e97ebf1bc5"
+        },
+        {
+          "path": "crates/autopilot-plugin-runtime/src/lib.rs",
+          "blob_sha": "48f31324044be1ae91f1e761ea91720f65a02954"
+        },
+        {
+          "path": "crates/autopilot-plugins/src/lib.rs",
+          "blob_sha": "7361107cd23be686d3a2a0371650402ae9446b0a"
+        },
+        {
+          "path": "crates/autopilot-verification/src/lib.rs",
+          "blob_sha": "4ffee5ef9c1bbf72bbd52de93cc757a05a9921ad"
+        },
+        {
+          "path": "crates/autopilot-secrets/src/lib.rs",
+          "blob_sha": "f6577628f0a82741800a38bc5ff18251756ab72c"
+        },
+        {
+          "path": "sidecars/business-runtime/src/agi_autopilot/runtime.py",
+          "blob_sha": "88944806faf0c46f59554f9f7c79d52c2d75b046"
+        },
+        {
+          "path": "sidecars/business-runtime/tests/test_runtime.py",
+          "blob_sha": "4a353cc66ed0714f087dc1471bc6cc851c5b390b"
+        }
+      ]
+    },
+    {
+      "name": "synergy_qe",
+      "repository": "Shtenco/synergy_qe",
+      "commit": "b5a6b5006df7b9eaa12cae35acaffbac8cd4919a",
+      "commit_url": "https://github.com/Shtenco/synergy_qe/commit/b5a6b5006df7b9eaa12cae35acaffbac8cd4919a",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only.",
+      "capabilities": [
+        "temporary-qe-token-issuance",
+        "cycle-escrow-and-principal-burn",
+        "facilitator-registry",
+        "hard-nav-risk-capacity",
+        "hard-treasury",
+        "bridge-claim-accounting",
+        "foundry-invariant-tests"
+      ],
+      "findings": [
+        "Main is a specification-only QE design; the M1 Solidity contracts and Foundry unit/invariant tests are on open PR #2 branch impl/qe-engine-v1-m1.",
+        "RiskEngine computes capacity as the minimum of independent hard-NAV, executable-depth, bridge, loss-budget, oracle and global caps; contraction/global-settlement modes and unhealthy oracle return zero.",
+        "BridgeAccounting accepts source/destination hard values and state transitions from a BRIDGE_ROLE caller; it does not independently verify source-chain proofs, destination inclusion or finality. This is a trusted bridge-attestor model, not a trustless bridge.",
+        "QEController and HardTreasury use role-gated mint/burn, settlement and asset registration; no external audit or deployed integration is evidenced."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7dce75a71813d324956062f922e32ee23b4ea2e9"
+        },
+        {
+          "path": "contracts/RiskEngine.sol",
+          "blob_sha": "71786ad828e14267ea866c605b3435d6e3373aeb"
+        },
+        {
+          "path": "contracts/QEController.sol",
+          "blob_sha": "556d5535c80f6267aa14114aab324b0f6d8baa0f"
+        },
+        {
+          "path": "contracts/BridgeAccounting.sol",
+          "blob_sha": "973346f5f975d721eb012c3a2748ccfbc9181113"
+        },
+        {
+          "path": "contracts/HardTreasury.sol",
+          "blob_sha": "9cb10de2c128ee467a8a12b4e6dd46960018f58f"
+        },
+        {
+          "path": "test/invariant/QECoreInvariants.t.sol",
+          "blob_sha": "c43aadf34a397b1a9fbd8349fd0b17ea6cf2e1ee"
+        },
+        {
+          "path": "test/unit/RiskEngine.t.sol",
+          "blob_sha": "cca40baa9a490502eaf0e7d0088855fce90c43f9"
+        }
+      ]
+    },
+    {
+      "name": "print_money_synergychain",
+      "repository": "Shtenco/print_money_synergychain",
+      "commit": "dd956f05186790ff27a3443e17dd914e90c7154a",
+      "commit_url": "https://github.com/Shtenco/print_money_synergychain/commit/dd956f05186790ff27a3443e17dd914e90c7154a",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only.",
+      "capabilities": [
+        "revenue-vault",
+        "principal-and-refund-liability-separation",
+        "external-cash-flow-accounting",
+        "base-usdc-fork-smoke-test"
+      ],
+      "findings": [
+        "Main is an R&D specification with no runtime; research/omega-v5-real-flow-fork contains a Solidity RevenueVault and Foundry tests.",
+        "RevenueVault separates seeded principal, recognized external revenue, expenses, refundable liabilities and owner distributions; reserve checks prevent expenses/distributions from consuming principal or refund obligations.",
+        "Only-owner control is a single immutable EOA with no multisig, timelock or pause; tests use MockUSDC and a Base USDC fork smoke, not real profitable swaps or audited production settlement.",
+        "Branch README explicitly says actual Base RPC and Foundry were unavailable in the authoring environment and future Curve/Uniswap swaps, trade P&L and stress-redemption tests remain open."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "8d8bdf77c577e5caac0b1c483627e61ce706c303"
+        },
+        {
+          "path": "omega_v5/README.md",
+          "blob_sha": "35a00e4c881b7c1ac891816e98c217b944219f65"
+        },
+        {
+          "path": "omega_v5/src/RevenueVault.sol",
+          "blob_sha": "c06659a8b6c4d162ba7daaf3a3c8e968b617775b"
+        },
+        {
+          "path": "omega_v5/test/RevenueVault.t.sol",
+          "blob_sha": "50be93da6c922bf13572218434f1f07888a75031"
+        }
+      ]
+    },
+    {
+      "name": "synergy_matrix_sota",
+      "repository": "Shtenco/synergy_matrix_sota",
+      "commit": "120d662a54bb13334fd98ca5312c52b4cde38682",
+      "commit_url": "https://github.com/Shtenco/synergy_matrix_sota/commit/120d662a54bb13334fd98ca5312c52b4cde38682",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on open PR or research branch; main remains documentation-only.",
+      "capabilities": [
+        "decimal-safe-household-maturity-book",
+        "tranche-liquidity-classes",
+        "borrower-self-funding-exclusion",
+        "maturity-snapshot-v1",
+        "canonical-household-capital-contract"
+      ],
+      "findings": [
+        "Main is documentation-only; executable MaturityBook and snapshot library plus four test modules exist on open PR #1 branch feat/canonical-household-capital-os-20260817.",
+        "Core rejects NaN/Infinity Decimal values, enforces positive principal and 1..100 week duration, separates callable from term/locked liquidity and excludes borrower-owned tranches by default.",
+        "Snapshot requires timezone-aware as_of, safe-integer week index and bounded horizon, and hashes canonical finite JSON; it exports a maturity schedule but does not calculate LCR or provide lending/credit authority.",
+        "This is a reference accounting/maturity library, not a persisted household capital engine or production credit system."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "55061159881d36ab7ce15e637af0c2e7d300fe70"
+        },
+        {
+          "path": "sinergy_matrix_sota/core.py",
+          "blob_sha": "91c9b1e39218bc173e5b73dd3196d768c2e83e83"
+        },
+        {
+          "path": "sinergy_matrix_sota/snapshot.py",
+          "blob_sha": "90d8976bb76a70c1f1fb60937ac36a51f3be56da"
+        },
+        {
+          "path": "tests/test_core.py",
+          "blob_sha": "96e10690ce11980954c1c2ffcfd45674ad132eb9"
+        },
+        {
+          "path": "tests/test_numeric_safety.py",
+          "blob_sha": "7f7858802c29dbe17a1d2690022638b15d95a899"
+        }
+      ]
     }
   ],
-  "audit_record_count": 119
+  "audit_record_count": 124
 }
