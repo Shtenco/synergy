@@ -5,7 +5,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Ninety-four README reviews and seventy-nine limited source reviews, each pinned to the exact inspected commit and file blob SHA (75 main-branch reviews and 4 branch-only prototype reviews).
+- Ninety-nine README reviews and eighty-three limited source reviews, each pinned to the exact inspected commit and file blob SHA (76 main-branch reviews and 7 branch-only prototype reviews).
 - 39 proposed shared cores and domain routers are kept separate from actual repositories; 27 have first-pass overlap assessments and 12 remain unaudited.
 - Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
@@ -19,7 +19,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 - `gaps.json`: unresolved source audit, security, evidence, contract and overlap gaps.
 - `proposals.json`: 39 proposed components, not actual repositories.
 - `evidence/registry-snapshot.json`: provenance for the original 92-record registry snapshot.
-- `evidence/repository-audits.json`: 94 commit-pinned repository reviews with selected source/test blob references.
+- `evidence/repository-audits.json`: 99 commit-pinned repository reviews with selected source/test blob references.
 - `contracts/`: requirements for versioned OpenAPI, JSON Schema, AsyncAPI and contract tests.
 - `security/RESPONSE_PLAYBOOK.md`: credential rotation and live-execution containment without secret material.
 - `schemas/`: JSON Schema contracts for repository nodes and n-ary hyperedges.
@@ -87,6 +87,10 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 49. `shtenco_micro_ai` pins MNN/model revisions and tests metric parsing; its CI is a CPU smoke test, not a device-specific mobile benchmark.
 50. `synergy_cold_nuclear` explicitly separates evaluated data, derived calculations, hypotheses and stress tests; its LENR models do not establish cold fusion or transmutation.
 51. `synergy_binary_quantum_theory` keeps finite mathematical checks separate from physicalization and experiment; its current theory status explicitly remains open.
+52. `synergy_long_term_harness` has content-addressed SQLite memory and fenced mission leases on open PR branches; main remains README-only and independent verifier/host identity adapters are incomplete.
+53. `synergy_ai_company` Auto-Company 2.0 exists on an open feature PR with paper-mode defaults and approval gates; risk caps still need NaN/Infinity validation.
+54. `synergy_messenger` has an alpha.9 source branch, but the claimed 249-test release suite is absent from the reviewed branch and the npm test path is unresolved.
+55. The umbrella `registry/repos.json` remains the 92-repository legacy snapshot; live 112-ID refresh PRs are still separate and unmerged.
 
 ## Evidence rules
 1. Repository names are not identities; GitHub repository IDs are.
@@ -99,14 +103,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 94/112 (83.93%).
-- Source reviewed (limited scope): 79/112 (70.54%): 75 main-branch reviews and 4 branch-only prototype reviews.
+- README reviewed: 99/112 (88.39%).
+- Source reviewed (limited scope): 83/112 (74.11%): 76 main-branch reviews and 7 branch-only prototype reviews.
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
 ## Next audit sequence
 1. Close the browser subresource network-policy finding.
-2. Audit the remaining 33 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+2. Audit the remaining 29 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
 3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
 5. Run capability-overlap analysis before proposing any new repository.
