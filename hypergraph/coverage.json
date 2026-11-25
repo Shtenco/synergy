@@ -30,8 +30,8 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 10,
-    "source_code_audited_total": 63,
+    "source_code_reviewed_in_this_pass": 8,
+    "source_code_audited_total": 71,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
@@ -41,6 +41,8 @@
       "midas_lite",
       "quantum-trading_metatrader5",
       "sinergy_super_app",
+      "synergistic_economics",
+      "synergy_2chain_qe",
       "synergy_adaptive_engine",
       "synergy_agentic_ai_economy",
       "synergy_agi_nexus",
@@ -48,6 +50,7 @@
       "synergy_agi_trader",
       "synergy_ai_browser-",
       "synergy_ai_coder",
+      "synergy_ai_economic",
       "synergy_ai_financial_system",
       "synergy_ai_language",
       "synergy_ai_llm_rwkv",
@@ -55,11 +58,15 @@
       "synergy_ai_workspace",
       "synergy_app",
       "synergy_apps",
+      "synergy_blochain_budget",
       "synergy_cashero",
       "synergy_chain",
       "synergy_computing_topology",
+      "synergy_crypto_pump",
+      "synergy_eurasian",
       "synergy_financial_os",
       "synergy_gllm_nexus",
+      "synergy_graph_print_money",
       "synergy_hierarchical_cognitive_memory_architecture",
       "synergy_lead_search_engline",
       "synergy_maps",
@@ -82,6 +89,7 @@
       "synergy_riskguard",
       "synergy_search_engline",
       "synergy_system",
+      "synergy_triangle_money_system",
       "synergy_turbo_linux",
       "synergy_usds",
       "tiimeweb_synergy_exactly_once_delivery",
@@ -149,20 +157,20 @@
       "synegy_ai_compress"
     ],
     "completion_percentages": {
-      "repository_source_audit": 56.25,
-      "readme_review": 66.07
+      "repository_source_audit": 63.39,
+      "readme_review": 75
     },
-    "main_branch_source_reviewed": 60,
-    "non_main_branch_source_reviewed": 3,
-    "readme_reviewed_total": 74,
-    "source_code_reviewed_total": 63
+    "main_branch_source_reviewed": 67,
+    "non_main_branch_source_reviewed": 4,
+    "readme_reviewed_total": 84,
+    "source_code_reviewed_total": 71
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 56.25,
+    "repository_source_audit": 63.39,
     "edge_verification": 0,
     "contract_verification": 0,
-    "readme_review": 66.07
+    "readme_review": 75
   },
   "interpretation": "The search result set contains 112 unique GitHub repository IDs. This reconciles the 100-record owner-affiliation listing plus 12 additional repositories. Inventory is complete for this search result set; source-level audit and relationship verification are not complete."
 }
