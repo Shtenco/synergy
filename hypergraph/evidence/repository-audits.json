@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 36,
-  "source_code_reviewed_count": 31,
+  "audited_repository_count": 40,
+  "source_code_reviewed_count": 34,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -1320,6 +1320,142 @@
       ],
       "repository": "Shtenco/synergy_midas_institutional",
       "commit_url": "https://github.com/Shtenco/synergy_midas_institutional/commit/6eb09ac2b2c72bf7ec6aaa26390136f9013efd58",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "sinergy_super_app",
+      "commit": "3494f2cdebd0b9510ac65a470b32a085e4920537",
+      "status": "source_reviewed_limited",
+      "scope": "README, mobile PWA shell, source-surface integrity contract and Android build workflow",
+      "capabilities": [
+        "responsive-pwa-shell",
+        "android-capacitor-wrapper",
+        "source-surface-hash-contract"
+      ],
+      "findings": [
+        "Main contains responsive mobile/PWA HTML, web manifest, Android wrapper and a workflow configured to build assembleDebug.",
+        "Surface contract hashes manifest/index/Gradle/wrapper but explicitly sets android_artifact_built=false and deployment_authority=false."
+      ],
+      "limitations": [
+        "UI description names wallet, AGI, DAO, L1, MetaPay and mesh modules, but the inspected source-surface contract does not prove these backend integrations exist.",
+        "Workflow definition is not proof of a successful APK build or published app."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "f1eeb27b14d4a027d061e7a514087dd16f837be1"
+        },
+        {
+          "path": "federation/surface_contract.py",
+          "blob_sha": "9b531d0a65159fe77b5404f636a58812b0848adc"
+        },
+        {
+          "path": "mobile/app/index.html",
+          "blob_sha": "3cda1c5023d1dd38d450114907efef095d7be47b"
+        },
+        {
+          "path": ".github/workflows/android.yml",
+          "blob_sha": "bd2c70d27590b521561ea2e0c2c1cb8cc1ff23d6"
+        }
+      ],
+      "repository": "Shtenco/sinergy_super_app",
+      "commit_url": "https://github.com/Shtenco/sinergy_super_app/commit/3494f2cdebd0b9510ac65a470b32a085e4920537",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "sinergy_app",
+      "commit": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README states main contains only README.md and explicitly marks the client app STUB/documentation-only."
+      ],
+      "limitations": [
+        "No UI source, package/build manifest, tests, CI, release pipeline or API client exists in main."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a301fe07f3b3e129c7482f3240d3fda5e2c00890"
+        }
+      ],
+      "repository": "Shtenco/sinergy_app",
+      "commit_url": "https://github.com/Shtenco/sinergy_app/commit/2e8af43e14875442f89b6dca13d96306defaf1bd",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_app",
+      "commit": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
+      "status": "source_reviewed_limited",
+      "scope": "README, mobile release contract and Android manifest",
+      "capabilities": [
+        "android-ios-web-finance-client-source",
+        "source-integrity-contract",
+        "restricted-android-permissions"
+      ],
+      "findings": [
+        "Main contains Android project, iOS project, web assets, tests/scripts and a source-integrity contract.",
+        "Release contract hashes Android Gradle/manifest and iOS project/privacy manifest, checks target/compile SDK 36, cleartext disabled, backups disabled and rejects selected dangerous permissions.",
+        "Manifest inspection shows INTERNET only, allowBackup=false, usesCleartextTraffic=false and explicit network security config."
+      ],
+      "limitations": [
+        "Source verification does not prove a built, signed or store-published artifact; README explicitly separates these states.",
+        "Main branch includes binary finance-next source parts whose full provenance/build integration needs separate audit."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "dc050539ced9562541e47987ade6472184ee6add"
+        },
+        {
+          "path": "federation/release_contract.py",
+          "blob_sha": "4e452400fde57f220e94f21c10207ba76b40983c"
+        },
+        {
+          "path": "android/app/src/main/AndroidManifest.xml",
+          "blob_sha": "8fdecd5b095a2c1b1c3673151938adf5ec887912"
+        }
+      ],
+      "repository": "Shtenco/synergy_app",
+      "commit_url": "https://github.com/Shtenco/synergy_app/commit/d0f531aa402b58326db3fad361a7ae8c88ee9667",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_apps",
+      "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+      "status": "source_reviewed_limited",
+      "scope": "README, read-only accounting/trust projections and tests",
+      "capabilities": [
+        "application-master-registry",
+        "read-only-accounting-projection",
+        "read-only-trust-projection"
+      ],
+      "findings": [
+        "README labels repository an architectural master/documentation layer, not a unified app runtime.",
+        "Read models project accounting recognition and blockchain trust status while explicitly returning read_only=true and authority labels canonical_accounting/blockchain_trust.",
+        "Tests assert read-only projections."
+      ],
+      "limitations": [
+        "Projection helpers do not authenticate source evidence, validate accounting signatures or grant authority; they rely on upstream domain payloads.",
+        "Not a marketplace backend or shared app execution runtime."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda"
+        },
+        {
+          "path": "runtime/read_models.py",
+          "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+        },
+        {
+          "path": "tests/test_read_models.py",
+          "blob_sha": "9f7b7f29975c9bb9686d4d3a842bb97d7ca441f8"
+        }
+      ],
+      "repository": "Shtenco/synergy_apps",
+      "commit_url": "https://github.com/Shtenco/synergy_apps/commit/7b3dec583964d26c0f2d326bb040f9166db9d793",
       "audited_at": "2026-11-25"
     }
   ]
