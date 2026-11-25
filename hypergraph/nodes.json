@@ -649,16 +649,19 @@
       "maturity": "RND_LOCAL_TESTING",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
+        "integer-cpmm-graph-arbitrage-simulation",
+        "dual-circuit-solvency-model",
+        "simulation-evidence-contract"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_financial_os",
         "Shtenco/synergy_system"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "The inspected module is a deterministic simulation/research model, not a live exchange executor or accounting/settlement authority.",
+        "Deployment claims require archive-block fork tests and external reserve/fee evidence as stated in project docs."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -666,6 +669,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1310793915",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "c7e9ea9dde51500f88ed701423164309e4ae6242",
+        "audited_at": "2026-11-25",
+        "scope": "README, integer graph arbitrage simulator and scenario evidence contract"
       }
     },
     {
@@ -717,13 +726,16 @@
       "maturity": "RND_FEDERATION",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
+        "canonical-accounting-authority",
+        "accounting-recognition-contract",
+        "double-entry-balance-validation"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Main branch is a contract-level implementation, not the full Financial OS runtime described in README.",
+        "Accounting authority does not itself execute payments or prove external settlement."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -731,6 +743,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1336910945",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+        "audited_at": "2026-11-25",
+        "scope": "README, accounting-recognition contract and contract tests"
       }
     },
     {
@@ -2178,14 +2196,19 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow",
-        "payments"
+        "multi-provider-quote-routing",
+        "provider-capability-registry",
+        "fail-closed-live-readiness",
+        "execution-coordinator",
+        "paper-settlement-state-machine"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Inspected SettlementEngine stores records and idempotency keys in process memory; this is not durable cross-process exactly-once settlement.",
+        "A crash after external provider execution but before ledger posting requires durable outbox/reconciliation evidence beyond the in-memory path inspected.",
+        "Source review does not prove access to live bank/CBDC/venue accounts or regulatory authorization."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2193,6 +2216,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1317622231",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+        "audited_at": "2026-11-25",
+        "scope": "README, live readiness, execution coordinator, provider registry and settlement engine"
       }
     },
     {
@@ -2761,10 +2790,11 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "risk-gating"
+        "independent-pretrade-risk-veto",
+        "historical-var-cvar",
+        "drawdown-and-exposure-limits",
+        "tenant-rbac-jwt",
+        "audit-and-metrics"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_midas_ai",
@@ -2773,8 +2803,12 @@
         "Shtenco/synergy_trademux",
         "Shtenco/synergy_financial_os"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "historical_var and cvar return 0.0 when fewer than five returns are supplied; decide may then treat missing/insufficient history as zero market risk instead of failing closed.",
+        "Core decide uses abs(order.notional) and does not independently reject negative notional or invalid side; contract adapter checks positive notional, but direct callers can bypass that layer.",
+        "Local smoke and benchmarks are not production SLA or realized trading evidence."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2782,6 +2816,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376376981",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "e5ba5eab09e42ac25c695740bdc464ef3617c33c",
+        "audited_at": "2026-11-25",
+        "scope": "README, risk core, typed risk contract, enterprise service and tests"
       }
     },
     {
