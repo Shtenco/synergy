@@ -732,6 +732,115 @@
       "repository": "Shtenco/synergy_system",
       "description": "The dependency graph contains 66 contract-bearing edges and 38 unique cross-repository contract IDs, while its integration_summary.typed_contracts field reports 17. The contract registry contains 39 contracts; the only registry contract absent from the cross-repository graph is synergy.trading.execution-plan/v1, whose producer and consumer are both synergy_trademux and whose scope is INTRA_REPOSITORY. The summary count 17 therefore appears stale or differently defined and is not explained by the current graph data.",
       "next_action": "Define the exact typed_contracts counting rule and regenerate the summary from registry data. If it means unique cross-repository contract IDs, set it to 38; if it means another subset, publish that filter. Keep the intra-repository execution-plan contract separately identified."
+    },
+    {
+      "id": "GAP-093",
+      "severity": "critical",
+      "area": "payment_settlement_actual_receipt_reconciliation",
+      "repository": "Shtenco/synergy_pay_system",
+      "description": "The main-branch reference SettlementEngine marks a settlement SETTLED after provider calls without validating each provider result against a terminal-success allowlist. It uses `result.received_amount or step.output_amount`, so a zero received amount falls back to the planned output, and `_post_ledger` posts `route.output_amount` rather than the actual accumulated received amount. The engine stores records/idempotency in process-memory dictionaries and uses an InMemoryLedger; this is not durable exactly-once settlement. The API currently wires a paper executor by default, so this is a live-path blocker if the engine is used with live adapters, not evidence that real funds were moved.",
+      "next_action": "Keep live settlement disabled until provider receipts are validated for SUCCESS/FINALIZED state, actual received amounts are independently reconciled, zero/partial/mismatched amounts fail closed, ledger postings use reconciled actual amounts, and durable transactional idempotency/outbox plus crash/retry/concurrency E2E tests exist.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_pay_system",
+          "ref": "main",
+          "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+          "files": [
+            {
+              "path": "src/synergy_pay/settlement.py",
+              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
+            },
+            {
+              "path": "src/synergy_pay/api.py",
+              "blob_sha": "05b7306aa5822870f6c67f0c02b51c3affdaf718"
+            },
+            {
+              "path": "src/synergy_pay/ledger.py",
+              "blob_sha": "865b3cd015ee481c88a2caa1f4b6c0991e9b0dfd"
+            }
+          ]
+        }
+      ],
+      "validation": "Source review of main only; no tests or live-provider executions were run in this Hypergraph audit."
+    },
+    {
+      "id": "GAP-094",
+      "severity": "high",
+      "area": "financial_outbox_authenticity_and_concurrency",
+      "repository": "Shtenco/synergy_financial_os",
+      "description": "The AccountingTransactionalOutbox implementation is present only on draft/open PR #39 branch federation-v3-domain-expansion, not on main. The inspected branch validates event bytes against a caller-supplied SHA-256 digest but does not authenticate a signer identity or cryptographic signature, despite describing the event as signed. It opens SQLite with check_same_thread=False and shares one connection across methods without an explicit per-connection mutex; current tests cover atomicity and idempotent retry but not concurrent transaction callers or signature authenticity. The associated exact-head workflow run 43754510440 failed with an empty step list and unavailable logs, so no test pass or code failure can be asserted.",
+      "next_action": "Keep the outbox branch-only and non-authoritative until signer identity/key policy is independently verified, per-connection transaction serialization is implemented or concurrency is otherwise proven safe, and exact-head CI executes tests for concurrency, crash recovery, replay, authenticity and consumer verification. Reconcile the PR description's validation statement with the actual failed zero-step run.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_financial_os",
+          "ref": "federation-v3-domain-expansion",
+          "commit": "935780514b2b3ff2c93a16bbfdfaaab0bc2f7d24",
+          "files": [
+            {
+              "path": "src/synergy_financial_os/federation_outbox.py",
+              "blob_sha": "ce8a405d52cf67edd22b9a8f4d669c5479ea8108"
+            },
+            {
+              "path": "src/synergy_financial_os/contracts.py",
+              "blob_sha": "c37f8170bd5831c5e5bb44939891f62b3a4146bd"
+            },
+            {
+              "path": "tests/test_federation_outbox.py",
+              "blob_sha": "58386651ea9b1ea28ab228341f9da15bf6ab1b9e"
+            }
+          ]
+        }
+      ],
+      "validation": "PR #39 is open/draft/unmerged; run 43754510440 concluded failure, steps=[], job-log download returned BlobNotFound."
+    },
+    {
+      "id": "GAP-095",
+      "severity": "critical",
+      "area": "modeled_external_fee_recognition_in_hardnav",
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "description": "The current main branch computes external bridge fees from modeled gross volume and configured fee basis points, and credits those fees to protected USDC/HardNAV without transaction-level receipts. Its external market move also adds modeled AMM fees to HardNAV from price-ratio simulation. The committed V4 report records bridge/swap fees 339.64424 and external AMM fees 7.808553498290258 while marking external_bridge_fees_in_hardnav and external_amm_fees_in_hardnav true. Draft PR #10 adds an injected receipt verifier and durable journal and excludes modeled fee estimates, but it is unmerged; its three exact-head workflows failed before exposing any steps/logs and the 13,000-block corrected replay remains pending. The corrected accounting must not be treated as deployed or validated.",
+      "next_action": "Keep the current V4 fee-derived HardNAV figures flagged as superseded/unverified for realized external revenue. Merge only after the receipt verifier is independently trusted, journal/replay tests execute, exact-head CI passes, and the pinned 13,000-block replay regenerates a new report with modeled fees excluded and transaction-level receipts required for realized fees.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_agentic_ai_economy",
+          "ref": "main",
+          "commit": "",
+          "files": [
+            {
+              "path": "agent_economy/multimarket.py",
+              "blob_sha": "c19a1b5cb80c7fce339e6e3d0f494ff2ba3bfb52"
+            },
+            {
+              "path": "experiments/closed_multimarket_hardnav_v4.py",
+              "blob_sha": "7d0b7cc21ff154d92242221648dd40c3488886dc"
+            },
+            {
+              "path": "reports/closed_multimarket_hardnav_v4/seed77_10000_train_3000_oos.json",
+              "blob_sha": "d123102c170e86950100ca9d23cf3af87294c7ae"
+            },
+            {
+              "path": "tests/test_multimarket_hardnav.py",
+              "blob_sha": "7090677060388f50a5a1db1b764b05f137e38a80"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_agentic_ai_economy",
+          "ref": "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
+          "commit": "0effe839d160af295d511eaea6a3d3830e024557",
+          "files": [
+            {
+              "path": "experiments/closed_multimarket_hardnav_v4.py",
+              "blob_sha": "05d560443c5a50e75147b54c342ef7341411359b"
+            },
+            {
+              "path": "tests/test_multimarket_hardnav.py",
+              "blob_sha": "038a7c599b4f76cba86252994021cb62df0ac517"
+            }
+          ]
+        }
+      ],
+      "validation": "PR #10 is open/draft/unmerged. Runs 43864234518, 43864234530 and 43864234504 failed with empty step lists and unavailable logs; no exact-head tests or corrected replay are attested."
     }
   ]
 }
