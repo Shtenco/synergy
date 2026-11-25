@@ -129,3 +129,17 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 - Relationship verification: 0 runtime edges and 0 contracts independently verified. The 109 registry-declared dependency edges remain candidates only.
 - No repository-wide tests or benchmark experiments were executed during source review. CI validates this Hypergraph registry and its invariants, not every upstream repository.
 - The compression benchmark dossier's `environment.json` is valid JSON; its remaining limitation is the narrow 11-dataset fixed-size corpus and unavailable reproducible engine source snapshot.
+
+
+## Proposal overlap audit — 2026-11-25
+
+All 39 proposed components now have an explicit overlap assessment with pinned repository/file evidence. The 12 previously unreviewed proposals were checked against the current main-branch contracts and implementations of the existing system, API gateway, market graph, economic schema, payment stack, application catalog, maps and Lead OS.
+
+Key decisions:
+- Reuse `synergy_system` for Offer/Quote and event contracts; do not create a separate offer-protocol repository.
+- Reuse `synergy_market_graph` and `synergistic_economics` as pricing primitives, but do not claim they already implement a general pricing engine.
+- Keep payment routing/accounting in `synergy_pay_system` / `synergy_financial_os`; META API's workflow runner is bounded/read-only and is not a durable commercial transaction saga.
+- Skills marketplace, education, video, advertising, SEO, coupons, logistics and legal services remain distinct product domains, but repository creation is deferred until provider, rights, trust, compliance and transaction contracts are concrete.
+- Tutoring and courses should be designed as one education vertical initially, not two overlapping infrastructure repositories.
+
+Every assessment separates existing partial primitives from missing domain functionality. A README or architecture concept is not treated as implementation evidence. See `architecture/overlap-matrix.json` for commit-pinned evidence and decisions.
