@@ -173,3 +173,10 @@ Three canonical risks from the current synergy_system integration-gap registry a
 - GAP-095 — Agentic Economy main currently credits modeled bridge and AMM fee estimates to HardNAV. Draft PR #10 proposes receipt-verified fee recognition and durable journaling, but is unmerged; three exact-head workflows failed before exposing steps/logs and the corrected 13,000-block replay remains pending.
 
 Do not present the proposed branch corrections as merged, tested or deployed. See gaps.json for exact source commits, blob SHAs, PR states and CI evidence.
+
+
+## Read-only governance graph projection
+
+Hypergraph V3 now includes `governance-edges.json`, a read-only projection of the canonical `synergy_system` dependency graph: 75 nodes, 136 typed edges and 38 unique cross-repository contract IDs. The original statuses are preserved: 70 DOCUMENTED and 66 ADAPTER_IMPLEMENTED. The 44 M5-required edges are explicitly marked in the projection, with two historical repository aliases normalized to canonical names.
+
+This projection does not promote edges: E2E-tested and deployed counts remain zero. It preserves the source commit and registry blob SHA, and the canonical governance registry remains authoritative. Regenerate the projection from the source registry rather than editing it independently.
