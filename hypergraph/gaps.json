@@ -476,6 +476,38 @@
       "repository": "Shtenco/synergistic_economics",
       "description": "The balanced ledger and idempotent event store are in-memory only; they are not a durable accounting or settlement service.",
       "next_action": "Treat as a deterministic research kernel and only promote after transactional persistence, crash recovery, concurrency control and external settlement boundaries are tested."
+    },
+    {
+      "id": "GAP-061",
+      "severity": "high",
+      "area": "trademux_numeric_validation_and_idempotency",
+      "repository": "Shtenco/synergy_trademux",
+      "description": "Venue quote, approved notional and fill fields are not consistently checked for finiteness, valid ranges and schema integrity; correlation UUIDs do not provide durable idempotency or broker-side deduplication.",
+      "next_action": "Validate every numeric with isfinite and non-negative bounds, validate side/symbol/venue IDs and fill invariants, persist plan/result state and implement broker idempotency keys with reconciliation."
+    },
+    {
+      "id": "GAP-062",
+      "severity": "high",
+      "area": "capital_governance_nonfinite_amounts",
+      "repository": "Shtenco/synergy_project",
+      "description": "Capital governance contract uses Decimal comparisons without is_finite(), so positive Infinity can pass capital_required and max_amount validation.",
+      "next_action": "Reject non-finite Decimal values before comparisons, validate currency/UUID/timezone fields and add NaN/Infinity adversarial tests."
+    },
+    {
+      "id": "GAP-063",
+      "severity": "medium",
+      "area": "matrix_benchmark_reproducibility_and_untrusted_artifacts",
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "description": "Research runners depend on fixed /mnt/data artifacts and one evaluation script executes a source prefix via exec; checkpoint loading uses weights_only=False. This is not a portable or safe untrusted-artifact execution path.",
+      "next_action": "Package deterministic entry points, pin and verify checkpoint/source hashes, avoid dynamic exec, use safe checkpoint loading where possible and record exact environment/artifact manifests."
+    },
+    {
+      "id": "GAP-064",
+      "severity": "medium",
+      "area": "economic_master_dossier_inventory_drift",
+      "repository": "Shtenco/synergy_project",
+      "description": "The master dossier's open PR #2 still describes an 89-repository assessment, while the current owner-scoped inventory contains 112 unique repositories.",
+      "next_action": "Reconcile the dossier/PR to canonical GitHub IDs and current Hypergraph coverage before promoting it as the master ecosystem assessment."
     }
   ]
 }
