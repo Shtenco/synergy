@@ -220,6 +220,30 @@
       "repository": "Shtenco/synergy_apps",
       "description": "Read-model helpers label payloads read-only but do not authenticate upstream evidence or verify canonical accounting/trust signatures.",
       "next_action": "Require validated contract envelope and source provenance before constructing any user-visible authoritative projection."
+    },
+    {
+      "id": "GAP-029",
+      "severity": "critical",
+      "area": "credential_exposure",
+      "repository": "Shtenco/synergy_usds",
+      "description": "Tracked root artifact base-mainnet-deployer.key exists. Contents were deliberately not inspected; repository's own SECURITY_FEDERATION_BLOCKER confirms credential hygiene is an explicit federation blocker.",
+      "next_action": "Immediately rotate/revoke the associated deployer credential, remove the file and sensitive history, move secrets to a secret manager, enable secret scanning/push protection and provide verified cleanup evidence. Keep deployment disabled."
+    },
+    {
+      "id": "GAP-030",
+      "severity": "critical",
+      "area": "credential_exposure",
+      "repository": "Shtenco/synergy_cashero",
+      "description": "Tracked .env, owner.env, bot1.env and bot2.env files are present in the repository tree. Contents were deliberately not inspected; README warns tracked configs may include secrets; root .gitignore was not found.",
+      "next_action": "Treat any credentials as exposed until proven otherwise; rotate/revoke wallet and bot credentials, remove secret files/history, add secret scanning and provide evidence before any deployment."
+    },
+    {
+      "id": "GAP-031",
+      "severity": "high",
+      "area": "bridge_replay_durability",
+      "repository": "Shtenco/synergy_metachain",
+      "description": "Commitment replay guard stores consumed IDs in process memory and trusts supplied FINALIZED/digest fields; restart loses replay state and no chain proof/signature is verified.",
+      "next_action": "Persist replay state transactionally with unique constraints and verify signed source authority/finality proofs plus reorg handling."
     }
   ]
 }
