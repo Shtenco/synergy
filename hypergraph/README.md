@@ -180,3 +180,10 @@ Do not present the proposed branch corrections as merged, tested or deployed. Se
 Hypergraph V3 now includes `governance-edges.json`, a read-only projection of the canonical `synergy_system` dependency graph: 75 nodes, 136 typed edges and 38 unique cross-repository contract IDs. The original statuses are preserved: 70 DOCUMENTED and 66 ADAPTER_IMPLEMENTED. The 44 M5-required edges are explicitly marked in the projection, with two historical repository aliases normalized to canonical names.
 
 This projection does not promote edges: E2E-tested and deployed counts remain zero. It preserves the source commit and registry blob SHA, and the canonical governance registry remains authoritative. Regenerate the projection from the source registry rather than editing it independently.
+
+
+## Security blocker re-audit and 2X PR #56 — 2026-11-25
+
+The related draft PR #56 in `synergy_system` passes four registry/schema/security workflows, but its 112-row portfolio explicitly says full source review is incomplete. Its interface registry remains 77 repositories and its federation backlog is also scoped to 77 (41 integrated, 36 non-integrated); it does not resolve the 35 inventory repositories absent from the interface registry. The 30 capability portfolio is separate from Hypergraph's 39 proposed components.
+
+Security re-audit adds GAP-096 for unauthenticated cognitive-memory API routes and GAP-097 for stale remediation PR states in PR #56's SECURITY_BLOCKERS snapshot. Two PR states are already closed-unmerged (USDS #6 and Turbo Linux #13); other remediation branches remain open/draft. A green branch hygiene scan or file deletion does not prove external credential rotation, revocation, history purge or production safety.
