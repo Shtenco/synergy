@@ -804,7 +804,7 @@
         {
           "repository": "Shtenco/synergy_agentic_ai_economy",
           "ref": "main",
-          "commit": "",
+          "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
           "files": [
             {
               "path": "agent_economy/multimarket.py",
