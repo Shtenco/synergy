@@ -246,6 +246,16 @@
         "Shtenco/synergy_pay_system"
       ],
       "decision": "Local tool gateway and provider API boundaries exist; global API provider discovery, metering and failover remain unverified."
+    },
+    {
+      "proposal": "synergy_ai_model_router",
+      "status": "unresolved",
+      "existing_repositories": [
+        "Shtenco/synergy_gllm_nexus",
+        "Shtenco/synergy_ai_llm_rwkv",
+        "Shtenco/synergy_ai_language"
+      ],
+      "decision": "These are model/runtime/compiler implementations, not a generic provider/model routing service. Define provider registry, benchmark and cost contract before creation."
     }
   ],
   "remaining_proposals": [
@@ -275,10 +285,6 @@
     },
     {
       "proposal": "synergy_ai_video_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_model_router",
       "status": "not_yet_overlap_audited"
     },
     {
