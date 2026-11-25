@@ -253,11 +253,19 @@ class HypergraphCoreTests(unittest.TestCase):
         self.assertEqual(proposal_names, assessed_names)
         self.assertEqual(len(self.overlap["assessments"]), len(proposal_names))
         self.assertEqual(self.overlap["remaining_proposals"], [])
+        audit_by_name = {record["name"]: record for record in self.audit["records"]}
         for assessment in self.overlap["assessments"]:
             self.assertTrue(assessment["decision"])
-            for evidence in assessment.get("evidence", []):
+            self.assertTrue(assessment.get("evidence"), assessment["proposal"])
+            for evidence in assessment["evidence"]:
                 self.assertRegex(evidence["commit"], r"^[0-9a-f]{40}$")
                 self.assertTrue(evidence["files"])
+                audit_record = audit_by_name[evidence["repository"].split("/")[-1]]
+                self.assertEqual(evidence["commit"], audit_record["commit"])
+                pinned_files = {item.get("path"): item.get("blob_sha") for item in audit_record["files"]}
+                for file_record in evidence["files"]:
+                    self.assertEqual(file_record["blob_sha"], pinned_files[file_record["path"]])
+                self.assertIn("does not assert production readiness", evidence["evidence_scope"])
 
     def test_target_graph_links_resolve(self):
         target_ids = {node["node_id"] for node in self.target["nodes"]}
