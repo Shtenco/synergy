@@ -60,6 +60,22 @@
       "repository": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
       "description": "README references local CPU measurements, but inspected source exposes an assumption-based cost calculator and no independent GPU benchmark harness.",
       "next_action": "Add reproducible CPU/GPU measurement scripts and provider invoice evidence, or narrow README claims."
+    },
+    {
+      "id": "GAP-009",
+      "severity": "medium",
+      "area": "governance_inventory",
+      "repository": "Shtenco/synergy_system",
+      "description": "Existing governance snapshots report 92 repositories in README and 75 in repository_federation_v2.yaml (2026-09-28), while the reconciled current inventory contains 112.",
+      "next_action": "Synchronize the governance inventory from immutable GitHub IDs while preserving historical snapshot provenance."
+    },
+    {
+      "id": "GAP-010",
+      "severity": "high",
+      "area": "api_security",
+      "repository": "Shtenco/synergy_meta_api",
+      "description": "Connector execution endpoint has no authentication and is disabled by default; enabling the environment flag is documented as private-development-only.",
+      "next_action": "Keep connector execution disabled on public interfaces until tenant authentication, scoped authorization, audit, egress allowlist, quotas and secret management are implemented and tested."
     }
   ]
 }
