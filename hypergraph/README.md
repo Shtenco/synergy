@@ -5,7 +5,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Twelve README reviews and eleven limited source reviews, each pinned to the exact main commit and file blob SHA.
+- Twenty README reviews and nineteen limited source reviews, each pinned to the exact main commit and file blob SHA.
 - 39 proposed shared cores and domain routers are kept separate from actual repositories.
 - Six target architecture layers and fourteen candidate target relationships are documented separately from observed dependencies.
 
@@ -13,6 +13,8 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 - `nodes.json`: 112 repository nodes and per-repository audit status.
 - `edges.json`: registry-declared dependency edges; every edge remains `candidate` until source evidence verifies it.
 - `architecture/target-graph.json`: six-layer target graph and candidate architecture links.
+- `architecture/ownership-map.json`: canonical owners and integration direction; avoids duplicate core repositories.
+- `architecture/overlap-matrix.json`: first-pass overlap review for proposed shared cores.
 - `coverage.json`: measurable inventory and audit coverage.
 - `gaps.json`: unresolved source audit, security, evidence, contract and overlap gaps.
 - `proposals.json`: 39 proposed components, not actual repositories.
@@ -35,11 +37,12 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 4. Proposed components are not repository inventory entries.
 5. Hashes establish byte identity, not truth, authorization or correctness.
 6. No tests were executed as part of the current repository review; archived results are not fresh CI runs.
+7. Existing implementation boundaries: `synergy_system` owns governance/contracts; hierarchical cognitive memory owns static dependency and cross-repository evidence intelligence; Hypergraph V3 is a projection/read model, not a new competing runtime or repository.
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 12/112 (10.71%).
-- Source reviewed (limited scope): 11/112 (9.82%).
+- README reviewed: 20/112 (17.86%).
+- Source reviewed (limited scope): 19/112 (16.96%).
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
