@@ -42,6 +42,26 @@
       "domain": "market_conversion_graph",
       "owner": "Shtenco/synergy_market_graph",
       "role": "Executable conversion-path/fair-value graph; not a general marketplace or transaction authority."
+    },
+    {
+      "domain": "canonical_accounting",
+      "owner": "Shtenco/synergy_financial_os",
+      "role": "Accounting recognition and canonical accounting authority; main branch currently exposes contract-level artifacts, larger runtime remains in open PR/feature lines."
+    },
+    {
+      "domain": "payment_routing_and_settlement",
+      "owner": "Shtenco/synergy_pay_system",
+      "role": "Provider registry, compliance/readiness gates, route selection, settlement orchestration and live-execution coordinator; live execution remains disabled by default."
+    },
+    {
+      "domain": "financial_research_simulation",
+      "owner": "Shtenco/synergy_ai_financial_system",
+      "role": "Integer AMM graph-arbitrage and dual-circuit research simulation; no accounting or settlement authority."
+    },
+    {
+      "domain": "trading_risk_veto",
+      "owner": "Shtenco/synergy_riskguard",
+      "role": "Independent pre-trade risk veto and enterprise RBAC/audit boundary; insufficient-history handling requires fail-closed hardening."
     }
   ],
   "integration_contract": {
