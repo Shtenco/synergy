@@ -349,7 +349,8 @@
       "Shtenco/synergy_turbo_linux",
       "Shtenco/synergy_usds",
       "Shtenco/synergychain.github.io"
-    ]
+    ],
+    "governance_scope_manifest": "hypergraph/evidence/governance-scope-manifest.json"
   },
   "interpretation": [
     "The governance registry is a 75-repository subset of the 112-repository owner-scoped inventory; it is not a complete inventory mirror.",
