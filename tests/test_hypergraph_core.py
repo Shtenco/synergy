@@ -122,8 +122,6 @@ class HypergraphCoreTests(unittest.TestCase):
         counts = snapshot["counts"]
         reconcile = snapshot["reconciliation"]
         inventory = {node["full_name"] for node in self.nodes_doc["nodes"]}
-        graph = set(reconcile["dependency_graph_names_missing_from_hypergraph"])
-        interface = set(reconcile["interface_names_missing_from_hypergraph"])
         self.assertEqual(counts["authority_registry_entries"], 42)
         self.assertEqual(counts["contract_registry_entries"], 39)
         self.assertEqual(counts["dependency_graph_nodes"], 75)
@@ -148,8 +146,8 @@ class HypergraphCoreTests(unittest.TestCase):
         self.assertEqual(counts["m5_observed_execution"]["verified_runtime_edges"], 0)
         self.assertEqual(counts["dependency_graph_summary"]["e2e_tested_runtime_edges"], 0)
         self.assertEqual(counts["dependency_graph_summary"]["deployed_runtime_edges"], 0)
-        self.assertTrue(set(reconcile["interface_registry_repositories"]).issubset(inventory))
-        self.assertTrue(set(reconcile["dependency_graph_repositories"]).issubset(inventory))
+        self.assertTrue(set(reconcile["interface_registry_repository_names"]).issubset(inventory))
+        self.assertTrue(set(reconcile["dependency_graph_repository_names"]).issubset(inventory))
 
     def test_proposals_are_not_counted_as_repositories(self):
         actual_ids = {node["node_id"] for node in self.nodes_doc["nodes"]}
