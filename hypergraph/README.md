@@ -159,3 +159,6 @@ Pinned source counts and the exact 112-to-75/77 set reconciliation are stored in
 The frozen M5 scope has 44 unique edges. 42 match the canonical dependency graph by exact repository names; two Wave 4 edges use legacy aliases (`binary_quantum_theory` and `epstein_network`). Mapping those to `synergy_binary_quantum_theory` and `synergy_epstein_network` yields 44/44 graph matches: 22 `RUNTIME_DEPENDENCY` and 22 `RUNTIME_CONTRACT`, all marked `ADAPTER_IMPLEMENTED`. This is scope reconciliation only; M5 observed execution remains blocked and no E2E edge is verified.
 
 The dependency graph contains 38 unique cross-repository contract IDs. The 39th registry contract, `synergy.trading.execution-plan/v1`, is intra-repository and correctly absent from the cross-repository graph. The graph summary's `typed_contracts: 17` does not reconcile with the 38 unique graph contract IDs and is tracked as GAP-092 until its counting rule is clarified.
+
+
+A machine-readable `evidence/governance-scope-manifest.json` now reconciles all 112 inventory repositories against both canonical registries: 75 appear in both, two are interface-only, and 35 are absent from both and await an explicit owner scope decision. Absence is not treated as exclusion or as permission to invent a dependency edge.
