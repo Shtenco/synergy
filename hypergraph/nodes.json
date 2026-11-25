@@ -2008,7 +2008,13 @@
         "commit": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
         "audited_at": "2026-11-25",
         "scope": "README, extended benchmark artifacts, environment metadata and source_snapshot gitlink; no engine source inspected"
-      }
+      },
+      "audit_findings": [
+        "Main is a benchmark dossier, not an executable compression runtime; the README separates 69 frozen historical profiles from a current fresh-world benchmark and explicitly warns that their protocols are not directly comparable.",
+        "The fresh-world CSV reports 38 profiles x 11 datasets, 360,448 input bytes per profile and exact reconstruction PASS; this does not establish the proprietary compression source implementation or a unified 81-system competition.",
+        "source_snapshot is a Git submodule entry with no submodule URL; its target commit message says implementation sources and test harnesses were removed from public main, so the implementation cannot be independently reconstructed from this repository snapshot.",
+        "results/environment.json contains CSV header/rows rather than JSON, creating a machine-readable artifact format mismatch."
+      ]
     },
     {
       "node_id": "github-repo:1428810995",
