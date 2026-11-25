@@ -1994,14 +1994,6 @@
         {
           "path": "agi_trader_final_v1.py",
           "blob_sha": "5041dc700a7ec284947135296b25fc158063581c"
-        },
-        {
-          "path": "systems/eurusd_h1_v5_fixed_q90_sl45/V5_CONFIG.json",
-          "blob_sha": "(configuration path listed in tree; not separately hashed in this review)"
-        },
-        {
-          "path": "systems/eurusd_h1_v5_fixed_q90_sl45/reports/v4_sealed_2m_report.json",
-          "blob_sha": "(sealed report path listed in tree; not separately hashed in this review)"
         }
       ],
       "repository": "Shtenco/midas_lite",
@@ -2265,7 +2257,7 @@
         },
         {
           "path": "docs/LEGACY_DISTILLATION_V2_OWNER.md",
-          "blob_sha": "(document path confirmed in tree; blob SHA not separately fetched)"
+          "blob_sha": "e214d550591154c99a99dad61336fa79d5ab0a92"
         }
       ],
       "repository": "Shtenco/synergy_matrix_sota",
@@ -2274,7 +2266,7 @@
     },
     {
       "name": "synegy_ai_compress",
-      "commit": "bb6b7fb25e916e280df365d1e0efaf9dd2c22c0f",
+      "commit": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
       "status": "benchmark_dossier",
       "scope": "README, extended benchmark artifacts, environment metadata and source_snapshot gitlink; no engine source inspected",
       "capabilities": [
@@ -2294,28 +2286,28 @@
       "files": [
         {
           "path": "README.md",
-          "blob_sha": "fdc4f0f2d49b6a2f6cc30b2d7d6f49f8f41f3d09"
+          "blob_sha": "d12b09678ac1b88c5c02c294abe28cba6569f8a0"
         },
         {
           "path": "benchmarks/extended_80plus_20261020/results/environment.json",
-          "blob_sha": "bfa1f65cc9e89c3a2b7f0a3c9d1f1a4f8b6c5d02"
+          "blob_sha": "4f646c93655a9f22871d45bc264bb1044e9ffb11"
         },
         {
           "path": "benchmarks/extended_80plus_20261020/results/fresh_world_38_summary.csv",
-          "blob_sha": "(path confirmed in tree; blob SHA not separately fetched)"
+          "blob_sha": "fbbd6ca07f9fda81f1f4b939b65466f2176da576"
         },
         {
           "path": "source_snapshot",
-          "blob_sha": "6d2d8f0c9a4b6d1f2e7c3a5b8d9f0e1a2b3c4d5e"
+          "gitlink_commit": "c681ec94fe5194156b71fc304035f7aaff4d2327"
         }
       ],
       "repository": "Shtenco/synegy_ai_compress",
-      "commit_url": "https://github.com/Shtenco/synegy_ai_compress/commit/bb6b7fb25e916e280df365d1e0efaf9dd2c22c0f",
+      "commit_url": "https://github.com/Shtenco/synegy_ai_compress/commit/189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
       "audited_at": "2026-11-25"
     },
     {
       "name": "synergy_qr_compress",
-      "commit": "0f9d8f15d4e5e6f7a8b9c0d1e2f3a4b5c6d7e8f9",
+      "commit": "8e116b253cdc3cf42740d08b502eaf00e4b09176",
       "status": "source_reviewed_limited",
       "scope": "README, QTC2/QTD3 codec, container, round-trip and exact shared-dictionary tests",
       "capabilities": [
@@ -2337,19 +2329,19 @@
       "files": [
         {
           "path": "README.md",
-          "blob_sha": "8bd0d2d3c3d4a5a6b7c8d9e0f1a2b3c4d5e6f708"
+          "blob_sha": "5ad8f7ae02825a64eb28deb2560c26633973f49e"
         },
         {
           "path": "qr_temporal/qtc2.py",
-          "blob_sha": "5bc0a1b2c3d4e5f60718293a4b5c6d7e8f901234"
+          "blob_sha": "5ac58223ec7c99517fae758a67305c3e5852c98e"
         },
         {
           "path": "qr_temporal/qtd3.py",
-          "blob_sha": "a8a1b2c3d4e5f60718293a4b5c6d7e8f90123456"
+          "blob_sha": "226c29cc949117b55590860c6db2a204a578a1ea"
         },
         {
           "path": "qr_temporal/container.py",
-          "blob_sha": "c3d4e5f60718293a4b5c6d7e8f90123456789abc"
+          "blob_sha": "76a7635547f613cadc260609ea39b1607864087d"
         },
         {
           "path": "tests/test_qtc2.py",
@@ -2361,12 +2353,12 @@
         }
       ],
       "repository": "Shtenco/synergy_qr_compress",
-      "commit_url": "https://github.com/Shtenco/synergy_qr_compress/commit/0f9d8f15d4e5e6f7a8b9c0d1e2f3a4b5c6d7e8f9",
+      "commit_url": "https://github.com/Shtenco/synergy_qr_compress/commit/8e116b253cdc3cf42740d08b502eaf00e4b09176",
       "audited_at": "2026-11-25"
     },
     {
       "name": "synergy_gguf_compress",
-      "commit": "c5b7a91d2e4f6c8b0a1d3e5f7c9b2a4d6e8f0a1b",
+      "commit": "c1882525e12f4662c30851cf1a7995a957cba543",
       "status": "stub_confirmed",
       "scope": "README and complete main-branch tree",
       "capabilities": [],
@@ -2379,16 +2371,16 @@
       "files": [
         {
           "path": "README.md",
-          "blob_sha": "cf5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a"
+          "blob_sha": "0fb95afb2962fb0edf02979f62053ffa26a03492"
         }
       ],
       "repository": "Shtenco/synergy_gguf_compress",
-      "commit_url": "https://github.com/Shtenco/synergy_gguf_compress/commit/c5b7a91d2e4f6c8b0a1d3e5f7c9b2a4d6e8f0a1b",
+      "commit_url": "https://github.com/Shtenco/synergy_gguf_compress/commit/c1882525e12f4662c30851cf1a7995a957cba543",
       "audited_at": "2026-11-25"
     },
     {
       "name": "synergy_shhts",
-      "commit": "d45f8e7a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e",
+      "commit": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
       "status": "stub_confirmed",
       "scope": "README and complete main-branch tree",
       "capabilities": [],
@@ -2401,11 +2393,11 @@
       "files": [
         {
           "path": "README.md",
-          "blob_sha": "5e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f"
+          "blob_sha": "ea4b354ca82c208d834e762d5963a9b02586fd73"
         }
       ],
       "repository": "Shtenco/synergy_shhts",
-      "commit_url": "https://github.com/Shtenco/synergy_shhts/commit/d45f8e7a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e",
+      "commit_url": "https://github.com/Shtenco/synergy_shhts/commit/8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
       "audited_at": "2026-11-25"
     }
   ]
