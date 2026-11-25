@@ -715,7 +715,7 @@
       "area": "governance_registry_inventory_coverage",
       "repository": "Shtenco/synergy_system",
       "description": "The canonical governance registry is a 75-repository dependency-graph subset and 77-repository interface subset, while Hypergraph V3 inventories 112 repositories. 35 inventory repositories have no interface record and 37 have no dependency-graph node; the two additional interface records are synergy_hierarchical_cognitive_memory_architecture and synergy_long_term_harness, which are not dependency-graph nodes. This may be an intentional scope boundary, but no explicit inclusion/exclusion manifest currently reconciles the sets.",
-      "next_action": "Publish an immutable-ID scope manifest classifying all 112 repositories as governance-in-scope, documentation-only, research-only, external surface or excluded with rationale. Add missing interface records where ownership/contract boundaries are relevant, and update dependency graph only for evidenced relationships. Preserve 0 E2E and 0 deployed claims until observed verification."
+      "next_action": "A machine-readable scope-presence manifest now classifies all 112 inventory nodes by observed dependency-graph/interface-registry presence. Obtain an explicit owner decision for the 35 repositories absent from both registries; add interface records where ownership/contract boundaries are relevant, and update dependency graph only for evidenced relationships. Preserve 0 E2E and 0 deployed claims until observed verification."
     },
     {
       "id": "GAP-091",
