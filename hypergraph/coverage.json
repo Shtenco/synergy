@@ -30,13 +30,13 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 15,
-    "source_code_audited_total": 15,
+    "source_code_reviewed_in_this_pass": 19,
+    "source_code_audited_total": 19,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 16,
+    "readme_reviewed_in_this_pass": 20,
     "source_code_reviewed_repository_names": [
       "synergy_ai_browser-",
       "tiimeweb_synergy_exactly_once_delivery",
@@ -52,7 +52,11 @@
       "synergy_agi_nexus",
       "synergy_system",
       "synergy_meta_api",
-      "synergy_net"
+      "synergy_net",
+      "synergy_hierarchical_cognitive_memory_architecture",
+      "synergy_agentic_ai_economy",
+      "synergy_market_graph",
+      "synergy_meta_os"
     ],
     "stub_only_repository_names": [
       "synergy_agent_long_term_memory"
@@ -66,11 +70,21 @@
       "e2e_tested_edges": 0,
       "source_snapshot_date": "2026-11-20",
       "note": "Hypergraph V3 should reference/project this registry, not create a competing authority."
+    },
+    "authoritative_component_owners": {
+      "governance": "Shtenco/synergy_system",
+      "intelligence": "Shtenco/synergy_agi_nexus",
+      "memory_and_static_dependency_intelligence": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "api_gateway": "Shtenco/synergy_meta_api",
+      "node_runtime_orchestration": "Shtenco/synergy_meta_os",
+      "p2p_transport": "Shtenco/synergy_net",
+      "agent_economic_simulation": "Shtenco/synergy_agentic_ai_economy",
+      "market_conversion_graph": "Shtenco/synergy_market_graph"
     }
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 13.39,
+    "repository_source_audit": 16.96,
     "edge_verification": 0,
     "contract_verification": 0
   },
