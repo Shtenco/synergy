@@ -237,7 +237,7 @@ The owner-scoped GitHub repository search returned 100 results on page 1 and 12 
 ## Current next gates
 
 - Inventory reconciliation now covers 112 unique IDs returned by the owner-scoped search; continue monitoring for newly created repositories.
-- Continue source audits for the remaining 59 repositories. Sixty-four README reviews and fifty-three limited source reviews are recorded with commit-pinned evidence (53/112 = 47.32% source-code coverage).
+- Continue source audits for the remaining 55 repositories. Sixty-eight README reviews and fifty-seven limited source reviews are recorded with commit-pinned evidence (57/112 = 50.89% source-code coverage).
 - Replace the 109 registry-only candidate dependency edges with file-, revision- and line-specific evidence; zero edges are currently verified.
 - Close the browser subresource egress-policy finding; rotate exposed or historically compromised credentials; fix accounting-recognition bypass, durable settlement, RiskGuard insufficient-history handling, duplicate scheduler enqueue, market-maker config validation, QuantLab dataset provenance, MIDAS veto/WebSocket defects, compiler injection, unsandboxed commands, compression benchmark provenance and exposed credentials.
 - Extract OpenAPI/JSON Schema/event contracts and test compatibility before asserting runtime integrations.
