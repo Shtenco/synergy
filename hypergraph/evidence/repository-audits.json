@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 12,
-  "source_code_reviewed_count": 11,
+  "audited_repository_count": 16,
+  "source_code_reviewed_count": 15,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -386,6 +386,157 @@
           "blob_sha": "a6a358a0b618a519816d5a5541f4058f602f2a9e"
         }
       ]
+    },
+    {
+      "name": "synergy_agi_nexus",
+      "commit": "997dbe4934f3f114a36d34bc2b0a719eae1f6a6f",
+      "status": "source_reviewed_limited",
+      "scope": "README, AI proposal contract and contract tests",
+      "capabilities": [
+        "canonical-nexus-intelligence-target",
+        "model-generation-governance",
+        "typed-ai-proposal-contract"
+      ],
+      "findings": [
+        "README defines NEXUS as intelligence engine and explicitly denies automatic financial, ledger, payment, consensus or deployment authority.",
+        "ai_proposal_v1 contract requires task type, model ID, confidence and limitations; human authorization defaults true.",
+        "Contract tests assert that NEXUS output is a proposal, not authorization."
+      ],
+      "limitations": [
+        "README describes target canonical architecture; this review does not prove all listed generations are production-integrated.",
+        "No cross-repository runtime call is established by the proposal contract alone."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "428984dcff1607d86d3f4b47519b30b45d7eb112"
+        },
+        {
+          "path": "contracts/ai_proposal_v1.py",
+          "blob_sha": "dc3cf1b69d8159b33bc4a52d2975acfd117a41ab"
+        },
+        {
+          "path": "tests/test_ai_proposal_contract.py",
+          "blob_sha": "4479482b0fce26aa01397f8c2634f1bc56061d36"
+        }
+      ],
+      "repository": "Shtenco/synergy_agi_nexus",
+      "commit_url": "https://github.com/Shtenco/synergy_agi_nexus/commit/997dbe4934f3f114a36d34bc2b0a719eae1f6a6f",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_system",
+      "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+      "status": "source_reviewed_limited",
+      "scope": "README governance snapshot, federation config and typed event envelope",
+      "capabilities": [
+        "federation-governance",
+        "canonical-contract-registry",
+        "authority-boundaries",
+        "typed-event-envelope"
+      ],
+      "findings": [
+        "README snapshot as of 2026-11-20 lists 77 interface components, 39 contract families, 42 authorities, 44 runtime adapter edges and zero E2E-tested edges.",
+        "SynergyEnvelope carries contract ID, event/trace IDs, producer, authority, timestamps, payload digest, evidence IDs, idempotency key and state version; canonical JSON payload SHA-256 is verified.",
+        "Federation config explicitly states architecture relation is not runtime dependency and green requires reproducible evidence."
+      ],
+      "limitations": [
+        "README owner inventory says 92 and config/repository_federation_v2.yaml says 75 as of 2026-09-28; both are stale relative to current 112-node inventory.",
+        "The governance registry is the existing authority; Hypergraph V3 should project/reference it rather than create a competing contract authority.",
+        "Zero E2E-tested edges means adapter declarations must not be treated as working integrations."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "c53388642c4189e38daa537d431a23d77ee4b823"
+        },
+        {
+          "path": "config/repository_federation_v2.yaml",
+          "blob_sha": "c17900cd8ea8ee0a9646e22c31afa3631577d766"
+        },
+        {
+          "path": "contracts/python/synergy_contracts_v1.py",
+          "blob_sha": "b306fa6b32eb115329c3daacdaa2d45e21a7b342"
+        }
+      ],
+      "repository": "Shtenco/synergy_system",
+      "commit_url": "https://github.com/Shtenco/synergy_system/commit/f1183d54121c3bbc558e4a171ddbba20973f8520",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_meta_api",
+      "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+      "status": "source_reviewed_limited",
+      "scope": "README, deny-by-default policy and execution API",
+      "capabilities": [
+        "local-tool-registry",
+        "mcp-json-rpc-subset",
+        "deny-by-default-policy",
+        "operator-configured-get-connectors"
+      ],
+      "findings": [
+        "V0.1 prototype exposes local read-only tools and a subset of MCP initialize/ping/tools/list/tools/call.",
+        "Policy denies by default, enforces tenant/tool/scope matching and returns approval_required for allowed mutating actions only when permission is not read-only.",
+        "Connector execution is disabled unless SYNERGY_ENABLE_CONNECTOR_CALLS=true; code explicitly says there is no authentication yet and flag is for private development only."
+      ],
+      "limitations": [
+        "Not full MCP streaming, sessions, OAuth, A2A, production tenancy or public-safe external execution.",
+        "No runtime integration to the 22 proposed routers is proven."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "f8b350ff83a8e45b0d67ee778d9e6b038d452f61"
+        },
+        {
+          "path": "src/synergy_meta_api/policy.py",
+          "blob_sha": "b518f8ef2beedea02b88c9c31731c9b8276befa2"
+        },
+        {
+          "path": "src/synergy_meta_api/execution_api.py",
+          "blob_sha": "7d8306ae28b999810ae6bf65a24e03077a505888"
+        }
+      ],
+      "repository": "Shtenco/synergy_meta_api",
+      "commit_url": "https://github.com/Shtenco/synergy_meta_api/commit/ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_net",
+      "commit": "84fbfb842be97e5c2195c30e7c4188e5af813001",
+      "status": "source_reviewed_limited",
+      "scope": "README, transport evidence contract and tests",
+      "capabilities": [
+        "planned-p2p-mesh-architecture",
+        "authenticated-transport-evidence-contract",
+        "content-addressed-transport-metadata"
+      ],
+      "findings": [
+        "README describes SynergyNet as a planned network overlay and explicitly frames performance benefits as hypotheses requiring matched benchmarks.",
+        "Runtime contract helper hashes delivered content, requires authenticated delivery and validates route endpoints and basic measurement bounds.",
+        "Tests validate archive evidence gating, authenticated delivery and content hashing."
+      ],
+      "limitations": [
+        "Inspected runtime file is a contract/evidence helper, not a complete P2P transport implementation.",
+        "No measured network throughput, latency, multipath, peer discovery or production post-quantum session is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "e841994690f17d364eb3915326eda74c4460b8ad"
+        },
+        {
+          "path": "runtime/synergy_contracts.py",
+          "blob_sha": "3f584b0392deec992b4dc59dfd4e34961601ecdb"
+        },
+        {
+          "path": "tests/test_synergy_contracts.py",
+          "blob_sha": "80ef1665a602b90b2f99aa520c83f87d9f3436b7"
+        }
+      ],
+      "repository": "Shtenco/synergy_net",
+      "commit_url": "https://github.com/Shtenco/synergy_net/commit/84fbfb842be97e5c2195c30e7c4188e5af813001",
+      "audited_at": "2026-11-25"
     }
   ]
 }
