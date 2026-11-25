@@ -232,11 +232,11 @@ The `hypergraph/` directory now contains a first-pass machine-readable graph see
 - JSON Schemas for repository nodes and n-ary hyperedges;
 - evidence provenance, coverage metrics, unresolved gaps and 39 proposed components kept separate from actual repositories.
 
-The current owner-list endpoint returned 100 records (100 unique IDs) and no further page. The 2026-11-20 registry snapshot contained 92 records. The eight additions are inventory-only and unclassified. Four previously reported lab names remain unresolved against the current listing. This is a lower-bound observation, not a verified 100- or 112-repository account total. No dependency edge is promoted to `verified` on registry evidence alone.
+The owner-scoped GitHub repository search returned 100 results on page 1 and 12 on page 2: 112 unique repository IDs. The owner-affiliation listing independently returned 100 records. The 2026-11-20 registry snapshot contained 92 records; 20 repositories have since been added to the registry, with roles left unclassified where no content audit exists. Inventory is reconciled for this 112-result search set. Source-code audit remains incomplete. No dependency edge is promoted to `verified` on registry evidence alone.
 
 ## Current next gates
 
-- Reconcile repository IDs beyond the current 100-record listing limit and resolve the four unconfirmed lab names.
+- Inventory reconciliation now covers 112 unique IDs returned by the owner-scoped search; continue monitoring for newly created repositories.
 - Audit README, source trees, manifests, imports, API routes, event schemas, tests and workflows for all 100 inventoried repositories; source-audit coverage remains 0% in this pass.
 - Replace the 109 registry-only candidate dependency edges with file-, revision- and line-specific evidence.
 - Extract OpenAPI/JSON Schema/event contracts and test compatibility before asserting runtime integrations.
@@ -245,7 +245,7 @@ The current owner-list endpoint returned 100 records (100 unique IDs) and no fur
 - Complete the remaining source audits; the earlier 53-repository backlog is not marked complete.
 - Define the cognitive-memory contract and prove authenticated, namespace-safe integration with AI Language, AI Coder and Long Term Harness.
 - Restore actionable CI evidence for Autopilot, AI Coder, AI Language, Long Term Harness and cognitive memory.
-- Reconcile stale portfolio PRs against the refreshed 100-record minimum inventory.
+- Reconcile stale portfolio PRs against the refreshed 112-repository inventory.
 
 ---
 *Generated from connected GitHub inventory and repository-scoped PR discovery on 2026-11-25. No source branches were merged, deleted or force-updated by this refresh.*
