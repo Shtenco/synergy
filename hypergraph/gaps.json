@@ -76,6 +76,30 @@
       "repository": "Shtenco/synergy_meta_api",
       "description": "Connector execution endpoint has no authentication and is disabled by default; enabling the environment flag is documented as private-development-only.",
       "next_action": "Keep connector execution disabled on public interfaces until tenant authentication, scoped authorization, audit, egress allowlist, quotas and secret management are implemented and tested."
+    },
+    {
+      "id": "GAP-011",
+      "severity": "high",
+      "area": "memory_inventory_conflict",
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "description": "synergy_system README snapshot dated 2026-11-20 says the cognitive-memory main branch is README-only, but current main contains a full Python package, tests, git dependency intelligence, cross-repository registry and contract intelligence.",
+      "next_action": "Refresh governance snapshot from exact current main SHA; do not rely on stale README-only status."
+    },
+    {
+      "id": "GAP-012",
+      "severity": "high",
+      "area": "runtime_isolation",
+      "repository": "Shtenco/synergy_meta_os",
+      "description": "The compatibility orchestrator applies POSIX RLIMITs and a minimal environment but does not enforce namespaces, seccomp, filesystem or network isolation. It is not a complete sandbox.",
+      "next_action": "Keep untrusted service execution disabled or externally sandboxed until a dedicated isolation layer and adversarial tests are implemented."
+    },
+    {
+      "id": "GAP-013",
+      "severity": "medium",
+      "area": "market_graph_model",
+      "repository": "Shtenco/synergy_market_graph",
+      "description": "Fair-value graph does not apply capacity/latency constraints; fee/slippage values are not bounded in Edge, and negative executable paths are silently filtered.",
+      "next_action": "Add fee/slippage validation, capacity/latency-aware path evaluation and tests before using outputs for execution decisions."
     }
   ]
 }
