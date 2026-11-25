@@ -1246,6 +1246,57 @@
       "status": "candidate",
       "basis": "target_architecture_not_observed_runtime",
       "rationale": "Target policy ownership and enforcement relationship."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_agi_nexus:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "documented_architecture_or_contract_not_runtime_integration",
+      "rationale": "README declares synergy_system as architecture root; not a runtime authorization edge."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_meta_api:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1428731702",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "documented_architecture_or_contract_not_runtime_integration",
+      "rationale": "META API identifies itself as an ecosystem gateway; governance contract remains to be bound."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_net:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "documented_architecture_or_contract_not_runtime_integration",
+      "rationale": "SynergyNet README declares synergy_system as architecture root; no runtime dependency claimed."
     }
   ],
   "guardrails": [
