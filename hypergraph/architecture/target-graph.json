@@ -1491,6 +1491,74 @@
       "status": "candidate",
       "basis": "README_and_typed_contract_relationship_not_runtime_integration",
       "rationale": "Institutional assessment requires canonical risk validation and binds exact signal."
+    },
+    {
+      "edge_id": "target:PROVIDES_EVIDENCE:synergy_megaproject:concept:synergy_hypergraph_core",
+      "relation": "PROVIDES_EVIDENCE",
+      "participants": [
+        {
+          "node_id": "github-repo:1390438988",
+          "role": "source"
+        },
+        {
+          "node_id": "concept:synergy_hypergraph_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "source_reviewed_architecture_and_contracts_not_runtime_integration",
+      "rationale": "Science claim/evidence graph can provide reviewed claim evidence to Hypergraph; this is a target data feed, not a runtime dependency."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_eurasian:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1336911571",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "source_reviewed_architecture_and_contracts_not_runtime_integration",
+      "rationale": "Eurasian federation policy references the ecosystem governance authority; no runtime call is asserted."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_project:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1359110009",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "source_reviewed_architecture_and_contracts_not_runtime_integration",
+      "rationale": "Project capital governance contracts reference the canonical federation authority; no runtime call is asserted."
+    },
+    {
+      "edge_id": "target:PROVIDES_CLAIMS:synergy_binary_quantum_theory:synergy_megaproject",
+      "relation": "PROVIDES_CLAIMS",
+      "participants": [
+        {
+          "node_id": "github-repo:1293271223",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1390438988",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "source_reviewed_architecture_and_contracts_not_runtime_integration",
+      "rationale": "Binary Quantum Gravity research claims may be ingested into the science evidence graph after provenance review."
     }
   ],
   "guardrails": [
