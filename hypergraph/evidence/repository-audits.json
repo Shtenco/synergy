@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 94,
-  "source_code_reviewed_count": 79,
+  "audited_repository_count": 99,
+  "source_code_reviewed_count": 83,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -3340,6 +3340,217 @@
         {
           "path": "tests/mvp_adversarial.rs",
           "blob_sha": "e881a8a2c9d45c9ef35db25720f18dd84e173147"
+        }
+      ]
+    },
+    {
+      "name": "synergy",
+      "repository": "Shtenco/synergy",
+      "commit": "9ab053764cde5cef74c304234ea9e1ac08204386",
+      "commit_url": "https://github.com/Shtenco/synergy/commit/9ab053764cde5cef74c304234ea9e1ac08204386",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source on main; no tests executed in this audit.",
+      "capabilities": [
+        "owner-repository-inventory",
+        "master-graph-enrichment",
+        "registry-rebuild-cli"
+      ],
+      "findings": [
+        "Main registry snapshot registry/repos.json contains 92 repository records from 2026-11-20; live owner inventory and Hypergraph V3 contain 112 unique GitHub IDs.",
+        "scripts/rebuild_registry.py uses gh repo list --limit 1000 and enriches records from master_graph.json, but serializes repository names/full_name without immutable GitHub numeric IDs; no test directory exists on main.",
+        "Open PRs #5/#6 separately refresh the live 112-repository inventory; Hypergraph V3 keeps its own ID-keyed inventory and does not silently rewrite the legacy snapshot."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "e4b3bc7ed2e70c0bbb7a53f3acad9fec754bcd98"
+        },
+        {
+          "path": "scripts/rebuild_registry.py",
+          "blob_sha": "38f367ec8d98d9e49c264fe71c874b2c457986b4"
+        },
+        {
+          "path": "registry/repos.json",
+          "blob_sha": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7"
+        },
+        {
+          "path": "registry/BRANCH_DECISIONS_2026-11-20.json",
+          "blob_sha": "def34e4b9288b17b10f7770bcc4b083ef084430d"
+        }
+      ]
+    },
+    {
+      "name": "synergy_messenger",
+      "repository": "Shtenco/synergy_messenger",
+      "commit": "aab3f83e29013eab3437020afe8cefaede3bc154",
+      "commit_url": "https://github.com/Shtenco/synergy_messenger/commit/aab3f83e29013eab3437020afe8cefaede3bc154",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on an open feature/PR branch; main is documentation-only.",
+      "capabilities": [
+        "double-ratchet-1to1",
+        "webrtc-waku-transport-abstraction",
+        "encrypted-local-state",
+        "replay-and-rate-limit-guards",
+        "finance-bridge-interface",
+        "mls-provider-boundary"
+      ],
+      "findings": [
+        "Main contains package/manifest/release metadata but no src, tests, scripts or generated www runtime; executable alpha.9 source is on open PR #2 branch import/alpha9-direct-final.",
+        "Reviewed branch has substantial Double Ratchet, ingress replay/rate-limit, P2P/Waku and Finance Bridge interfaces; OpenMlsProvider is an injected backend boundary and README says production groups fail closed without a real RFC 9420 backend.",
+        "package.json test command points to tests/v3/*.test.js, but tests/v3 is absent on both main and the reviewed PR branch; RELEASE-MANIFEST claims 249/249 tests and 293 files, which cannot be reproduced from the reviewed branch tree.",
+        "No official Android APK/AAB build, independent cryptographic review or cross-network physical-device validation is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ac47f09ceb23e154200aff00ded066b3f35dd042"
+        },
+        {
+          "path": "src/v3/secure-messenger-core.js",
+          "blob_sha": "f95a4655f4e2cf3465e07cacf65cb630d7d093f9"
+        },
+        {
+          "path": "src/v3/crypto/ratchet/double-ratchet.js",
+          "blob_sha": "1464acb1d4f3736ddd9477d3ce1a987034ad0de7"
+        },
+        {
+          "path": "src/v3/security/ingress-security-guard.js",
+          "blob_sha": "b7e7511d683db5730f9d116051fbdc8bdb4c96da"
+        },
+        {
+          "path": "src/v3/groups/openmls-provider.js",
+          "blob_sha": "181f08513ad9f5f232a49340f046c9fb2eb19e78"
+        },
+        {
+          "path": "scripts/copy-www.js",
+          "blob_sha": "bd84488e6fb05423a6f09eaf6214a7f085c4300f"
+        },
+        {
+          "path": "package.json",
+          "blob_sha": "e4daf78b2ee133c32d134cfaaeed1e7d4fdf9719"
+        },
+        {
+          "path": "RELEASE-MANIFEST.json",
+          "blob_sha": "55135f20383cd9245e8e1b006ab6cbaf0cea13e0"
+        }
+      ]
+    },
+    {
+      "name": "synergy_long_term_harness",
+      "repository": "Shtenco/synergy_long_term_harness",
+      "commit": "bdc26413d886fb026bdc22c3a6f76dc2df873a1c",
+      "commit_url": "https://github.com/Shtenco/synergy_long_term_harness/commit/bdc26413d886fb026bdc22c3a6f76dc2df873a1c",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on an open feature/PR branch; main is documentation-only.",
+      "capabilities": [
+        "content-addressed-chunk-memory",
+        "sqlite-wal-memory-store",
+        "fenced-mission-leases",
+        "idempotent-mission-submit",
+        "human-approval-gates",
+        "signed-verification-receipts"
+      ],
+      "findings": [
+        "Main contains only a README title; executable source, tests and pyproject are on open PR #1 branch feat/company-autopilot-memory-v1.",
+        "MemoryStore chunks exact UTF-8 source with SHA-256, zlib compression, bounded restore, namespace isolation and metadata digest checks; MissionStore uses SQLite WAL, BEGIN IMMEDIATE, idempotency fingerprints, lease epochs and append-only mission events.",
+        "Financial transfer capability is hard-blocked and external side effects require approval; approval actor authentication is delegated to the hosting application, and the independent verifier service is not yet connected.",
+        "README labels this an executable early foundation, not a full autonomous company or production coding agent."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "ff4ca5932b5b3e0b28df8a6ba81ee09036beb739"
+        },
+        {
+          "path": "synergy_harness/memory.py",
+          "blob_sha": "1af6f0dbafc23092f62e18ac5e850bee5e07584d"
+        },
+        {
+          "path": "synergy_harness/missions.py",
+          "blob_sha": "723a45d673cc90a371c24aa36af5327faec0edd8"
+        },
+        {
+          "path": "tests/test_missions.py",
+          "blob_sha": "a5384cf36e95db99cb2a8aa8ff4d4e127b4b3da8"
+        },
+        {
+          "path": "tests/test_memory.py",
+          "blob_sha": "ce6543692a1ed832dae048e4b19592aba0a35a63"
+        }
+      ]
+    },
+    {
+      "name": "synergy_ai_company",
+      "repository": "Shtenco/synergy_ai_company",
+      "commit": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_company/commit/2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source/tests on an open feature/PR branch; main is documentation-only.",
+      "capabilities": [
+        "revenue-first-company-control-plane",
+        "risk-gated-opportunity-pipeline",
+        "sqlite-event-and-ledger-store",
+        "telegram-control-interface",
+        "shttps-adapter-boundaries"
+      ],
+      "findings": [
+        "Main is STUB/concept; executable Auto-Company 2.0 is on open PR #1 branch feat/auto-company-v2.",
+        "Branch defaults to paper mode, disables financial/trading/blockchain actions, defaults financial caps to zero, requires human approval for external side effects, and keeps Autopilot/Nexus adapters disabled by default.",
+        "Settings._float accepts NaN and Infinity; RiskPolicy performs ordinary float comparisons without isfinite validation, so malformed/unbounded caps and action values are not rejected at the boundary.",
+        "SQLite store provides events, opportunities, actions, approvals, usage and local ledger records; this is not canonical accounting or settlement. Tests exist on the branch but were not executed in this audit."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d5b8e8edeaca2b5f5cf7f814c7228d3f4f7f28d8"
+        },
+        {
+          "path": "auto_company_v2/README_AUTO_COMPANY_2.md",
+          "blob_sha": "184fcf071b4ac7284cb90ad801477f6686d34f5e"
+        },
+        {
+          "path": "auto_company_v2/company_v2/core/settings.py",
+          "blob_sha": "97a8a82cf35ddff860ba43b27fa8358ec27a4cfa"
+        },
+        {
+          "path": "auto_company_v2/company_v2/core/risk.py",
+          "blob_sha": "46a1a267b9e13c970057388e397be7fd31997ecf"
+        },
+        {
+          "path": "auto_company_v2/company_v2/core/store.py",
+          "blob_sha": "b5dc11f54f6eea72f99a47185f6f6df6c983c11c"
+        },
+        {
+          "path": "auto_company_v2/company_v2/worker.py",
+          "blob_sha": "3de46402ab77fab4583f65d1917cbbc468635144"
+        },
+        {
+          "path": "auto_company_v2/tests/test_risk.py",
+          "blob_sha": "fe3e351ad84362b578791b819b5f3a0f3fb682df"
+        }
+      ]
+    },
+    {
+      "name": "synergy_matrix_sota",
+      "repository": "Shtenco/synergy_matrix_sota",
+      "commit": "1d84bddfec16998c9300c984ca50980c1f946d56",
+      "commit_url": "https://github.com/Shtenco/synergy_matrix_sota/commit/1d84bddfec16998c9300c984ca50980c1f946d56",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README plus selected source on main; no tests executed in this audit.",
+      "capabilities": [],
+      "findings": [
+        "Main is documentation-first and contains README plus owner-manifest documentation only; no runtime, schemas, tests, CI or executable maturity ladder are present.",
+        "README defines strong accounting invariants and explicitly states that no runtime test command exists; it must not be treated as a working credit/loan engine."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "87476c9dc819919b5335d15cf292a2dbec4f103a"
         }
       ]
     }
