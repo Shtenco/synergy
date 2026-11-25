@@ -366,5 +366,16 @@
     ],
     "dependency_graph_names_not_in_interface_registry": [],
     "scope_manifest": "hypergraph/evidence/governance-scope-manifest.json"
+  },
+  "governance_projection": {
+    "path": "hypergraph/governance-edges.json",
+    "schema_path": "hypergraph/schemas/governance-graph-projection.schema.json",
+    "source_commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+    "nodes": 75,
+    "edges": 136,
+    "unique_contract_ids": 38,
+    "m5_required_edges": 44,
+    "e2e_tested_edges": 0,
+    "deployed_runtime_edges": 0
   }
 }
