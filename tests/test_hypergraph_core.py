@@ -53,17 +53,20 @@ class HypergraphCoreTests(unittest.TestCase):
     def test_audit_provenance_is_pinned_and_consistent(self):
         node_by_name = {node["name"]: node for node in self.nodes_doc["nodes"]}
         records = self.audit["records"]
-        self.assertEqual(len(records), self.audit["audited_repository_count"])
+        self.assertEqual(len(records), self.audit["audit_record_count"])
+        self.assertEqual(len({record["name"] for record in records}), self.audit["audited_repository_count"])
         self.assertEqual(self.audit["source_code_reviewed_count"], self.coverage["audit"]["source_code_reviewed_total"])
+        latest_by_name = {record["name"]: record for record in records}
         for record in records:
             self.assertRegex(record["commit"], r"^[0-9a-f]{40}$")
-            node = node_by_name[record["name"]]
-            self.assertEqual(node["source_audit"]["commit"], record["commit"])
+            self.assertIn(record["name"], node_by_name)
             for file_record in record.get("files", []):
                 if "blob_sha" in file_record:
                     self.assertRegex(file_record["blob_sha"], r"^[0-9a-f]{40}$")
                 if "gitlink_commit" in file_record:
                     self.assertRegex(file_record["gitlink_commit"], r"^[0-9a-f]{40}$")
+        for name, record in latest_by_name.items():
+            self.assertEqual(node_by_name[name]["source_audit"]["commit"], record["commit"])
 
     def test_coverage_matches_review_ledger(self):
         reviewed = sum(
@@ -78,6 +81,10 @@ class HypergraphCoreTests(unittest.TestCase):
             round(reviewed / 112 * 100, 2),
         )
         self.assertEqual(self.coverage["audit"]["readme_reviewed_total"], self.audit["audited_repository_count"])
+        self.assertAlmostEqual(
+            self.coverage["completion_percentages"]["readme_review"],
+            round(self.audit["audited_repository_count"] / 112 * 100, 2),
+        )
 
     def test_proposals_are_not_counted_as_repositories(self):
         actual_ids = {node["node_id"] for node in self.nodes_doc["nodes"]}
