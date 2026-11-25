@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "proposal_count": 39,
+  "decision_rule": "No proposed core is promoted to repository creation until ownership, contract, code overlap, security and maintenance costs are reviewed.",
+  "assessments": [
+    {
+      "proposal": "synergy_reliability_core",
+      "status": "high_overlap",
+      "existing_repositories": [
+        "synergy_system",
+        "synergy_long_term_harness",
+        "timeweb_synergy_fault_injection_lab",
+        "timeweb_synergy_retry_storm_lab",
+        "timeweb_synergy_service_recovery"
+      ],
+      "decision": "Reuse existing reliability gates and experiments; consolidate contracts/tests, do not create another core yet."
+    },
+    {
+      "proposal": "synergy_agent_memory_core",
+      "status": "high_overlap",
+      "existing_repositories": [
+        "synergy_hierarchical_cognitive_memory_architecture",
+        "synergy_agent_long_term_memory",
+        "timeweb_synergy_agent_long_term_memory"
+      ],
+      "decision": "Hierarchical memory already owns durable memory, git intelligence and evidence; do not create duplicate."
+    },
+    {
+      "proposal": "synergy_agent_browser_core",
+      "status": "implemented_candidate",
+      "existing_repositories": [
+        "synergy_ai_browser-"
+      ],
+      "decision": "Existing Playwright browser project already has runtime, policy and tests; harden subresource egress before reuse."
+    },
+    {
+      "proposal": "synergy_event_delivery_core",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "synergy_system",
+        "tiimeweb_synergy_exactly_once_delivery"
+      ],
+      "decision": "Reuse typed event envelope and transactional idempotency research; a transport-level delivery protocol is still not established."
+    },
+    {
+      "proposal": "synergy_ai_evaluation_core",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "timeweb_synergy_benchmark_statistics",
+        "timeweb_synergy_ml_validation_lab",
+        "synergy_quantlab"
+      ],
+      "decision": "Reuse statistical and ML validation labs; define shared evidence schema before extracting a core."
+    },
+    {
+      "proposal": "synergy_compute_optimizer",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "timeweb_synergy_cpu_gpu_cost_benchmark",
+        "synergy_computing_topology",
+        "shtenco_micro_ai"
+      ],
+      "decision": "Current calculator/compute research is incomplete; do not create until actual hardware measurements and workload contracts exist."
+    },
+    {
+      "proposal": "synergy_trading_validation_core",
+      "status": "high_overlap",
+      "existing_repositories": [
+        "synergy_quantlab",
+        "timeweb_synergy_backtest_oos_lab",
+        "synergy_market_graph"
+      ],
+      "decision": "QuantLab is existing trading validation owner; OOS lab is a narrow leakage demo."
+    },
+    {
+      "proposal": "synergy_ai_router_core",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "synergy_meta_api",
+        "synergy_agi_autopilot"
+      ],
+      "decision": "META API provides local tool discovery/execution gateway prototype; orchestration and provider routing need a versioned contract."
+    },
+    {
+      "proposal": "synergy_economic_graph",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "synergy_market_graph",
+        "synergy_agentic_ai_economy",
+        "synergy_lead_search_engline"
+      ],
+      "decision": "Existing graph is conversion/trading-focused and economy is simulation; general offer/supply-demand graph remains a distinct unresolved domain."
+    },
+    {
+      "proposal": "synergy_provider_registry",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "synergy_meta_api",
+        "synergy_system"
+      ],
+      "decision": "Tool catalog and governance registries exist, but external provider capability registry is not yet verified."
+    },
+    {
+      "proposal": "synergy_graph_arbitrage_engine",
+      "status": "high_overlap",
+      "existing_repositories": [
+        "synergy_market_graph",
+        "synergy_algotrading_graph_system",
+        "synergy_relative_value"
+      ],
+      "decision": "Existing graph and quant components already cover much of path/cycle and relative-value logic."
+    },
+    {
+      "proposal": "synergy_ai_policy_engine",
+      "status": "high_overlap",
+      "existing_repositories": [
+        "synergy_system",
+        "synergy_meta_api",
+        "synergy_meta_os"
+      ],
+      "decision": "Governance, deny-by-default tool policy and capability ceilings already exist; unify policy contracts rather than create a separate authority."
+    },
+    {
+      "proposal": "synergy_ai_reputation_engine",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "synergy_agentic_ai_economy"
+      ],
+      "decision": "Simulation includes reputation model; real-world verified reputation and dispute evidence remain distinct."
+    },
+    {
+      "proposal": "synergy_marketplace_core",
+      "status": "unresolved",
+      "existing_repositories": [
+        "synergy_apps",
+        "synergy_agentic_ai_economy",
+        "synergy_ai_company"
+      ],
+      "decision": "Need a focused order/catalog/settlement ownership audit before deciding whether a core is missing."
+    }
+  ],
+  "remaining_proposals": [
+    {
+      "proposal": "synergy_offer_protocol",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_pricing_engine",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_transaction_orchestrator",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_economy_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_skills_marketplace",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_classifieds_graph",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_tutors",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_courses",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_video_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_model_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_advertising_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_api_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_seo_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_credit_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_card_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_microloan_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_remittance_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_cashback_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_broker_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_coupon_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_bank_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_logistics_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_real_estate_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_enterprise_router",
+      "status": "not_yet_overlap_audited"
+    },
+    {
+      "proposal": "synergy_ai_legal_router",
+      "status": "not_yet_overlap_audited"
+    }
+  ]
+}
