@@ -105,7 +105,29 @@
     },
     "unique_contract_ids_in_dependency_graph": 38,
     "intra_repository_contracts_not_in_dependency_graph": 1,
-    "dependency_graph_summary_typed_contracts_field": 17
+    "dependency_graph_summary_typed_contracts_field": 17,
+    "observed_contract_risk_details": [
+      {
+        "id": "PAYMENT-SETTLEMENT-LIFECYCLE-2026-11-20",
+        "severity": "CRITICAL",
+        "status": "ADAPTER_PRESENT_LIFECYCLE_UNVERIFIED",
+        "hypergraph_gap": "GAP-093"
+      },
+      {
+        "id": "FINANCIAL-OUTBOX-AUTHENTICITY-AND-CONCURRENCY-2026-11-20",
+        "severity": "P1",
+        "status": "IMPLEMENTED_WITH_VERIFICATION_GAPS",
+        "hypergraph_gap": "GAP-094",
+        "branch_only": true
+      },
+      {
+        "id": "AGENTIC-ECONOMY-HARDNAV-V4-ACCOUNTING-CORRECTION-2026-11-20",
+        "severity": "P1",
+        "status": "ACCOUNTING_CORRECTION_CODE_PRESENT_REPLAY_PENDING",
+        "hypergraph_gap": "GAP-095",
+        "branch_only_correction": true
+      }
+    ]
   },
   "reconciliation": {
     "hypergraph_inventory_repositories": 112,
