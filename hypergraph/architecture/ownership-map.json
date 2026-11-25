@@ -107,6 +107,21 @@
       "domain": "institutional_assessment",
       "owner": "Shtenco/synergy_midas_institutional",
       "role": "Bounded notional assessment that still requires canonical RiskGuard validation."
+    },
+    {
+      "domain": "superapp_mobile_surface",
+      "owner": "Shtenco/sinergy_super_app",
+      "role": "PWA/Android presentation shell with source-integrity contract; APK build and backend integrations are not proven."
+    },
+    {
+      "domain": "finance_mobile_client",
+      "owner": "Shtenco/synergy_app",
+      "role": "Android/iOS/web finance client source and source-integrity checks; artifact/store publication remains separate."
+    },
+    {
+      "domain": "application_registry_and_read_models",
+      "owner": "Shtenco/synergy_apps",
+      "role": "Application master registry and read-only accounting/trust projections, not a unified runtime."
     }
   ],
   "integration_contract": {
