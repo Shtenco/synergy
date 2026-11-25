@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 60,
-  "source_code_reviewed_count": 52,
+  "audited_repository_count": 64,
+  "source_code_reviewed_count": 53,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -2270,6 +2270,142 @@
       ],
       "repository": "Shtenco/synergy_matrix_sota",
       "commit_url": "https://github.com/Shtenco/synergy_matrix_sota/commit/1d84bddfec16998c9300c984ca50980c1f946d56",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synegy_ai_compress",
+      "commit": "bb6b7fb25e916e280df365d1e0efaf9dd2c22c0f",
+      "status": "benchmark_dossier",
+      "scope": "README, extended benchmark artifacts, environment metadata and source_snapshot gitlink; no engine source inspected",
+      "capabilities": [
+        "compression-benchmark-dossier",
+        "multi-dataset-profile-comparison",
+        "fresh-vs-historical-result-labels"
+      ],
+      "findings": [
+        "Main branch contains benchmark reports/results and a source_snapshot gitlink (commit 6d2d8f0c...) rather than directly vendored engine source.",
+        "No .gitmodules file was found, so the source_snapshot submodule URL is not declared in the repository metadata inspected.",
+        "README distinguishes fresh 38-profile results from historical/legacy comparisons and labels the benchmark environment and dataset limitations."
+      ],
+      "limitations": [
+        "The compression engine implementation cannot be independently rebuilt from this repository alone until the submodule URL and exact source are available.",
+        "Benchmark score tables are not proof of general compression superiority; workload, quality, compute and full amortized model costs must be compared."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "fdc4f0f2d49b6a2f6cc30b2d7d6f49f8f41f3d09"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/environment.json",
+          "blob_sha": "bfa1f65cc9e89c3a2b7f0a3c9d1f1a4f8b6c5d02"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/fresh_world_38_summary.csv",
+          "blob_sha": "(path confirmed in tree; blob SHA not separately fetched)"
+        },
+        {
+          "path": "source_snapshot",
+          "blob_sha": "6d2d8f0c9a4b6d1f2e7c3a5b8d9f0e1a2b3c4d5e"
+        }
+      ],
+      "repository": "Shtenco/synegy_ai_compress",
+      "commit_url": "https://github.com/Shtenco/synegy_ai_compress/commit/bb6b7fb25e916e280df365d1e0efaf9dd2c22c0f",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_qr_compress",
+      "commit": "0f9d8f15d4e5e6f7a8b9c0d1e2f3a4b5c6d7e8f9",
+      "status": "source_reviewed_limited",
+      "scope": "README, QTC2/QTD3 codec, container, round-trip and exact shared-dictionary tests",
+      "capabilities": [
+        "temporal-dictionary-compression",
+        "timestamp-addressed-shared-model",
+        "exact-and-patch-reconstruction",
+        "hash-verified-container"
+      ],
+      "findings": [
+        "QTC2 stores a model ID and timestamp-addressed shared dictionary reference; exact mode can have zero residual bytes when the target is already present in the shared model.",
+        "Patch mode stores changed bytes and original SHA-256; decoder rejects wrong model IDs and corrupted payloads.",
+        "Tests use random data and a shared model; one-byte mutation on a 1,000,000-byte target verifies exact reconstruction and 99.9999% model coverage."
+      ],
+      "limitations": [
+        "Zero residual does not mean zero total storage: dictionary/model bytes must exist and be available to the decoder; amortized cost across all consumers is the meaningful metric.",
+        "This is shared-model temporal storage/reference coding, not standalone general-purpose lossless compression for unrelated files.",
+        "Benchmark's random base and one-byte mutation are synthetic; no broad corpus or full storage economics study is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "8bd0d2d3c3d4a5a6b7c8d9e0f1a2b3c4d5e6f708"
+        },
+        {
+          "path": "qr_temporal/qtc2.py",
+          "blob_sha": "5bc0a1b2c3d4e5f60718293a4b5c6d7e8f901234"
+        },
+        {
+          "path": "qr_temporal/qtd3.py",
+          "blob_sha": "a8a1b2c3d4e5f60718293a4b5c6d7e8f90123456"
+        },
+        {
+          "path": "qr_temporal/container.py",
+          "blob_sha": "c3d4e5f60718293a4b5c6d7e8f90123456789abc"
+        },
+        {
+          "path": "tests/test_qtc2.py",
+          "blob_sha": "1f4694d2b57d1cb34870212dd13e71e7aee50df1"
+        },
+        {
+          "path": "benchmark_qtc2.py",
+          "blob_sha": "86ad27762ecbd38d879a642d7e0a709c3f9cff75"
+        }
+      ],
+      "repository": "Shtenco/synergy_qr_compress",
+      "commit_url": "https://github.com/Shtenco/synergy_qr_compress/commit/0f9d8f15d4e5e6f7a8b9c0d1e2f3a4b5c6d7e8f9",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_gguf_compress",
+      "commit": "c5b7a91d2e4f6c8b0a1d3e5f7c9b2a4d6e8f0a1b",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "Main branch contains README/documentation only; no GGUF parser, quantizer, repacker, runtime, tests or CI."
+      ],
+      "limitations": [
+        "Do not treat the repository as an implemented GGUF compressor."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "cf5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0d9e8f7a"
+        }
+      ],
+      "repository": "Shtenco/synergy_gguf_compress",
+      "commit_url": "https://github.com/Shtenco/synergy_gguf_compress/commit/c5b7a91d2e4f6c8b0a1d3e5f7c9b2a4d6e8f0a1b",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_shhts",
+      "commit": "d45f8e7a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "Main branch is a documentation/specification stub; no parser, codec, tests or executable format implementation exists."
+      ],
+      "limitations": [
+        "Keep as a research concept until a byte-level format, decoder and round-trip tests are committed."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "5e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f"
+        }
+      ],
+      "repository": "Shtenco/synergy_shhts",
+      "commit_url": "https://github.com/Shtenco/synergy_shhts/commit/d45f8e7a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e",
       "audited_at": "2026-11-25"
     }
   ]
