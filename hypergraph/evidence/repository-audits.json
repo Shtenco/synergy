@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 44,
-  "source_code_reviewed_count": 38,
+  "audited_repository_count": 48,
+  "source_code_reviewed_count": 41,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -1610,6 +1610,151 @@
       ],
       "repository": "Shtenco/synergy_cashero",
       "commit_url": "https://github.com/Shtenco/synergy_cashero/commit/4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_turbo_linux",
+      "commit": "c5ee1119369cd90c9ff23b346a405ac3e8bc6cad",
+      "status": "source_reviewed_limited",
+      "scope": "README, Turbo Core capability/scheduler/IPC implementation and historical SSH key incident report",
+      "capabilities": [
+        "siphash-sealed-capabilities",
+        "64-level-bitmap-priority-scheduler",
+        "bounded-spsc-ipc-ring",
+        "x86-64-fast-path-lab"
+      ],
+      "findings": [
+        "Turbo Core implements keyed SipHash capability seals, rights masks, a 64-priority bitmap scheduler and cacheline-separated SPSC ring.",
+        "Historical security incident report confirms an unencrypted SSH private key was committed to main history on 2026-09-04; current tree removed the private file, but external key rotation/revocation and history sanitization are explicitly not proven.",
+        "Scheduler enqueue does not track whether task_id is already queued; enqueueing the same ID twice can create a self-referential next pointer and leave the queue stuck."
+      ],
+      "limitations": [
+        "Microbenchmarks are not OS-wide acceleration claims; remote orchestration is a separate historical track.",
+        "Capability generation is MAC-bound but inspected resolve path does not consult a revocation/current-generation registry.",
+        "Old SSH credential must remain treated as compromised until revoked at every authorized host."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "464ef9bcd62b7dd61f05718f58b319aac5a0e409"
+        },
+        {
+          "path": "turbo_core/src/core.c",
+          "blob_sha": "83a2b6876d8f816744b8c4a97b6256bfbce05ad8"
+        },
+        {
+          "path": "turbo_core/include/turbo/core.h",
+          "blob_sha": "e0d1aa33f472aa8af137958dfe4d20146a6d51f5"
+        },
+        {
+          "path": "docs/SECURITY_INCIDENT_SSH_KEY_20260904.md",
+          "blob_sha": "fbe537f62fb1d4d6c0dabfafd7ac6e251107b459"
+        }
+      ],
+      "repository": "Shtenco/synergy_turbo_linux",
+      "commit_url": "https://github.com/Shtenco/synergy_turbo_linux/commit/c5ee1119369cd90c9ff23b346a405ac3e8bc6cad",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_computing_topology",
+      "commit": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+      "status": "source_reviewed_limited",
+      "scope": "README, V4 correctness harness, archived gate results and validation report",
+      "capabilities": [
+        "correctness-first-compression-harness",
+        "deterministic-batch-validation",
+        "persistent-cache-recovery-tests",
+        "compact-descriptor-index-benchmark"
+      ],
+      "findings": [
+        "V4 harness compares batch and sequential QPIPE, checks deterministic repeated runs, 1000 fresh-process decompression corpora with SHA-256, corruption rejection, cache restart/delete and tail-byte preservation.",
+        "Archived 2026-09-30 gate results report the userspace checks passing and kernel runtime NOT TESTED due vermagic mismatch (built for 6.12.96 headers, host kernel 6.18.44).",
+        "Measured speedups are specific to repeated queries over a precomputed compact descriptor index with build cost included; one-query case is 0.931x, while 3000 varied queries report 2116.714x."
+      ],
+      "limitations": [
+        "These are archived results, not tests rerun in this audit session.",
+        "No OS-wide, arbitrary-workload or production kernel performance claim is supported.",
+        "Kernel module runtime on the current host was explicitly not tested."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "51027fe745a1decafd2c58a80b13d41eed19a2f8"
+        },
+        {
+          "path": "src/v4/v4_correctness_harness.py",
+          "blob_sha": "e51b1b173af4a0006511ca97addb6a190538efc2"
+        },
+        {
+          "path": "validation/V4_GATE_RESULTS.json",
+          "blob_sha": "1f82a5380fb0f8d4e9b3417f0aedad3dc8da4560"
+        },
+        {
+          "path": "docs/SHTENCO_V4_VALIDATION_REPORT_2026-09-30.md",
+          "blob_sha": "3ab14fdc08086fc475f6a2933001cb498aabb087"
+        }
+      ],
+      "repository": "Shtenco/synergy_computing_topology",
+      "commit_url": "https://github.com/Shtenco/synergy_computing_topology/commit/ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_motherboard_xpu_xml",
+      "commit": "10f2d999004ae83956239d954c452113dadb8bcc",
+      "status": "source_reviewed_limited",
+      "scope": "README, analytical XPU model and deterministic EML Q16.16 reference evaluator",
+      "capabilities": [
+        "parameterized-xpu-area-bandwidth-power-model",
+        "eml-q16-reference-profile",
+        "hardware-floorplan-and-rtl-roadmap"
+      ],
+      "findings": [
+        "Repository provides explicit first-order compute, HBM, PCIe, persistent-memory, area and energy models with coefficients labeled as assumptions unless measured.",
+        "EML Q16.16 reference evaluator uses Decimal exp/ln and enforces b>0 plus signed 32-bit input range.",
+        "README explicitly disclaims fabricated EML cell, timing-closed RTL, measured silicon area/energy and CPU/GPU replacement equivalence."
+      ],
+      "limitations": [
+        "No fabricated silicon, FPGA timing closure, synthesized area/energy or production hardware benchmark is established.",
+        "7.077888 T EML primitives/s is an analytical ceiling under modeled assumptions, not FLOPS or measured throughput."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "66af9de8603d401601422e5283ef10269c57d945"
+        },
+        {
+          "path": "calculations/xpu_v1_model.py",
+          "blob_sha": "b6d82fc6c0444589ca1b66deae4ab08b180e6d6a"
+        },
+        {
+          "path": "software/reference/eml_q16.py",
+          "blob_sha": "8acbe75d451d4c77c8c8b6f6edd2dacfcada2d20"
+        }
+      ],
+      "repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "commit_url": "https://github.com/Shtenco/synergy_motherboard_xpu_xml/commit/10f2d999004ae83956239d954c452113dadb8bcc",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_long_term_harness",
+      "commit": "cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "Main branch contains only a one-line README heading; no harness, test runner, long-term soak orchestration or artifacts."
+      ],
+      "limitations": [
+        "Cannot be treated as the federation-wide long-term test harness until implementation exists."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7bfaf07aaa087803fb0940735b36db4ee7854bb0"
+        }
+      ],
+      "repository": "Shtenco/synergy_long_term_harness",
+      "commit_url": "https://github.com/Shtenco/synergy_long_term_harness/commit/cc56a44e78e6af1f0d9f03ee81104c7d468593e3",
       "audited_at": "2026-11-25"
     }
   ]
