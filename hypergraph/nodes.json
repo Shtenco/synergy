@@ -1972,12 +1972,14 @@
       "maturity": "ACTIVE_EXPERIMENTAL",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "scientific-research",
-        "evidence"
+        "finite-dimensional-operator-checks",
+        "theory-gate-ledger",
+        "adversarial-status-tests",
+        "proof-and-physicalization-frontier"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1985,7 +1987,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1293271223",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3d48d8ba6c190efe23ee655528365f5045216af7",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Current THEORY_STATUS explicitly reports structural_candidate_closed=false, physicalization_complete=false and experimentally_confirmed=false; nine physical conditions remain open.",
+        "Regression tests ensure a valid no-go result cannot close the theory and that all nine physical conditions remain required.",
+        "Finite numerical certificates and internal consistency tests are not proof of continuum closure or experimental validation; the README distinguishes tested finite results from physical predictions."
+      ]
     },
     {
       "node_id": "github-repo:1465021493",
@@ -2171,13 +2184,17 @@
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "UNVERIFIED",
       "capabilities": [
-        "metaverse-concept"
+        "tenant-scoped-spatial-registry",
+        "rfc8785-sha256-ed25519-verifier",
+        "aes256gcm-envelope-interface",
+        "consent-and-revocation-contracts",
+        "sqlite-projection-store"
       ],
       "declared_dependencies": [],
       "risks": [
         "no executable implementation in current main"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2185,7 +2202,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1456604903",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "63c180f6d6b0c4e20d84604d47599700c43d19c6",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Main implements canonical payload digest verification, Ed25519 signature checks, producer-bound active-key validation, encrypted payload envelopes and tenant-scoped spatial registry/projection components.",
+        "The verifier and envelope layer depend on caller-supplied authoritative key/signature resolvers and ManagedDataKeyBackend; README says production KMS/HSM, independently governed commitment service, key registry, consent/revocation adapters and retention/legal authorizer are not deployed.",
+        "README states CI execution remains unverified until GitHub allocates a runner; backup/WAL/replica deletion and host-failure recovery still need independent validation."
+      ]
     },
     {
       "node_id": "github-repo:1459873284",
@@ -2202,10 +2230,10 @@
       "maturity": "RND_CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "local-model-inference",
-        "MNN-runtime",
-        "INT4-model-download",
-        "benchmarking"
+        "mnn-pocket-0.3b-int4-runtime",
+        "revision-pinned-model-downloader",
+        "cpu-smoke-benchmark",
+        "metric-parser"
       ],
       "declared_dependencies": [],
       "risks": [
@@ -2213,7 +2241,7 @@
         "main inference workflow failed on the inspected main SHA; log cause unavailable",
         "no device-specific throughput or accuracy qualification established"
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2221,7 +2249,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1459873284",
         "search_page": 1
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "5c9f0b341f59b1567c2d5109fbfeee17f357d196",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Repository pins MNN runtime to release 3.6.2/commit and model downloader resolves a Hugging Face commit SHA before snapshot download.",
+        "Tests cover manifest/runtime pins, downloader revision-lock logic, missing-model error handling and benchmark metric parsing.",
+        "README explicitly limits GitHub workflow to portable CPU smoke testing; it is not device-specific mobile throughput or acceleration evidence. Download lock records file sizes and resolved model revision, not per-file SHA-256 digests."
+      ]
     },
     {
       "node_id": "github-repo:1368537298",
@@ -4132,11 +4171,14 @@
       "maturity": "RND_SCIENCE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "research"
+        "dd-rate-consistency-calculation",
+        "isotope-capture-decay-network",
+        "material-state-sensitivity-model",
+        "falsification-and-negative-controls"
       ],
       "declared_dependencies": [],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -4144,7 +4186,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1327916781",
         "search_page": 2
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "0218157a8197c3b9e1c300cb433b805e3a3ea3fb",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Inspected LENR screening model is explicitly a sensitivity/falsification model and says it does not establish cold fusion, molten-metal nuclear reactions or transmutation.",
+        "Scientific boundaries require evaluated/derived/hypothesis/stress-test/legacy labels and define product-rate and isotope-source falsifiers.",
+        "The model is computational hypothesis exploration; numerical output is not experimental evidence or a reactor prediction."
+      ]
     },
     {
       "node_id": "github-repo:1362541171",
@@ -4359,16 +4412,18 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "smart-contracts",
-        "protocol",
-        "chain-runtime"
+        "rust-consensus-activation-commitments",
+        "hybrid-pq-authorization-envelopes",
+        "replay-protection-state",
+        "evm-compatibility-interfaces",
+        "adversarial-mvp-tests"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_agi_olga",
         "Shtenco/synergy_system"
       ],
       "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -4376,7 +4431,18 @@
         "observed_at": "2026-11-25",
         "provider_id": "1317641638",
         "search_page": 2
-      }
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "b9353bf52542ed55ec36c30d84046f330df5f1de",
+        "audited_at": "2026-11-25",
+        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+      },
+      "audit_findings": [
+        "Main contains a substantial Rust/Solidity research integration with consensus activation commitments binding block height, model manifest hash, implementation hash and gas schedule.",
+        "PQ authorization code defines explicit secp256k1/ML-DSA/SLH-DSA profiles and replay/expiry domains; README says the production PQ provider, EVM-client integration, cross-client vectors, light clients, bridge proofs and independent cryptographic audit remain incomplete.",
+        "README explicitly says not to custody real assets; code presence and local tests do not establish production chain security or interoperable client consensus."
+      ]
     },
     {
       "node_id": "github-repo:1465023512",
