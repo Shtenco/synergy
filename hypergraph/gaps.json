@@ -708,6 +708,14 @@
       "repository": "Shtenco/synegy_ai_compress",
       "description": "The fresh-world compression summary covers 38 profiles over 11 fixed datasets of 32,768 bytes each. The README itself separates historical and current protocols and does not claim universal superiority; the small fixed corpus does not establish performance across larger, heterogeneous enterprise workloads.",
       "next_action": "Add larger multi-size corpora, representative real-world workload families, strong current baselines, full CPU/RAM/energy/restore measurements and independent reproduction before making broad generalization claims."
+    },
+    {
+      "id": "GAP-090",
+      "severity": "high",
+      "area": "governance_registry_inventory_coverage",
+      "repository": "Shtenco/synergy_system",
+      "description": "The canonical governance registry is a 75-repository dependency-graph subset and 77-repository interface subset, while Hypergraph V3 inventories 112 repositories. 35 inventory repositories have no interface record and 37 have no dependency-graph node; the two additional interface records are synergy_hierarchical_cognitive_memory_architecture and synergy_long_term_harness, which are not dependency-graph nodes. This may be an intentional scope boundary, but no explicit inclusion/exclusion manifest currently reconciles the sets.",
+      "next_action": "Publish an immutable-ID scope manifest classifying all 112 repositories as governance-in-scope, documentation-only, research-only, external surface or excluded with rationale. Add missing interface records where ownership/contract boundaries are relevant, and update dependency graph only for evidenced relationships. Preserve 0 E2E and 0 deployed claims until observed verification."
     }
   ]
 }
