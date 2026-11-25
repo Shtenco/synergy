@@ -30,13 +30,13 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 53,
-    "source_code_audited_total": 53,
+    "source_code_reviewed_in_this_pass": 57,
+    "source_code_audited_total": 57,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 64,
+    "readme_reviewed_in_this_pass": 68,
     "source_code_reviewed_repository_names": [
       "synergy_ai_browser-",
       "tiimeweb_synergy_exactly_once_delivery",
@@ -90,7 +90,11 @@
       "synergy_ai_language",
       "synergy_gllm_nexus",
       "synergy_ai_llm_rwkv",
-      "synergy_qr_compress"
+      "synergy_qr_compress",
+      "synergy_eurasian",
+      "synergy_project",
+      "synergy_megaproject",
+      "synergy_binary_quantum_theory"
     ],
     "stub_only_repository_names": [
       "synergy_agent_long_term_memory",
@@ -141,7 +145,7 @@
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 47.32,
+    "repository_source_audit": 50.89,
     "edge_verification": 0,
     "contract_verification": 0
   },
