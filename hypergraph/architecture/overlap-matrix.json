@@ -256,56 +256,376 @@
         "Shtenco/synergy_ai_language"
       ],
       "decision": "These are model/runtime/compiler implementations, not a generic provider/model routing service. Define provider registry, benchmark and cost contract before creation."
-    }
-  ],
-  "remaining_proposals": [
+    },
     {
       "proposal": "synergy_offer_protocol",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_partial_overlap",
+      "existing_repositories": [
+        "synergy_system",
+        "synergistic_economics"
+      ],
+      "decision": "Do not create a standalone repository. Reuse the canonical event envelope and economic record schema, then add a versioned Offer/Quote contract under synergy_system. No offer-specific contract with seller, validity, quantity, price components, terms, jurisdiction, expiry and provenance was found in the inspected schemas.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_system",
+          "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+          "files": [
+            {
+              "path": "contracts/schemas/event-envelope-v1.schema.json",
+              "blob_sha": "4f04561d50fd57a3da7b5b6129b76ab5aa2f3dc0"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergistic_economics",
+          "commit": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+          "files": [
+            {
+              "path": "schemas/synergy-economy.schema.json",
+              "blob_sha": "9590cada856a883e3eebe4e7f253aa73b03cd317"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_pricing_engine",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_partial_overlap",
+      "existing_repositories": [
+        "synergy_market_graph",
+        "synergistic_economics"
+      ],
+      "decision": "Do not create a separate pricing engine yet. MarketGraph models conversion rates, fees, slippage and indicative fair value; the economic schema defines typed money and provenance. Neither is a general commercial pricing policy or dynamic price optimizer. First define a quote/price contract and test objective functions in the owning marketplace domain.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_market_graph",
+          "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+          "files": [
+            {
+              "path": "src/synergy_market_graph/core.py",
+              "blob_sha": "ad2b4d3d81f4f54ae85ad4b4be187534497a067f"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergistic_economics",
+          "commit": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+          "files": [
+            {
+              "path": "schemas/synergy-economy.schema.json",
+              "blob_sha": "9590cada856a883e3eebe4e7f253aa73b03cd317"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_transaction_orchestrator",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_partial_overlap",
+      "existing_repositories": [
+        "synergy_meta_api",
+        "synergy_pay_system",
+        "synergy_financial_os",
+        "synergy_system"
+      ],
+      "decision": "Do not create a competing transaction authority. META API workflow is bounded and local/read-only; Pay System owns payment route and settlement logic, while Financial OS owns accounting recognition. A durable multi-party order saga, compensation model, idempotent state machine and marketplace fulfilment contract were not established. Define these in the owning commercial domain and connect to payment/accounting authorities through events.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_meta_api",
+          "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+          "files": [
+            {
+              "path": "src/synergy_meta_api/workflow.py",
+              "blob_sha": "930a8e934cc3f5a8fa9272cd6cafe5362581647c"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_pay_system",
+          "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+          "files": [
+            {
+              "path": "src/synergy_pay/api.py",
+              "blob_sha": "05b7306aa5822870f6c67f0c02b51c3affdaf718"
+            },
+            {
+              "path": "src/synergy_pay/ledger.py",
+              "blob_sha": "865b3cd015ee481c88a2caa1f4b6c0991e9b0dfd"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_skills_marketplace",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_distinct_domain",
+      "existing_repositories": [
+        "synergy_meta_api",
+        "synergy_agi_nexus",
+        "synergy_ai_coder"
+      ],
+      "decision": "A commercial skills marketplace is not implemented by the inspected tool catalog: META API can preview/register OpenAPI tools in an in-memory, non-tenant-isolated catalog and fetch public MCP metadata, but it does not manage skill packages, versions, licensing, seller identity, reviews, payments or royalties. Keep as a distinct product proposal, but defer repository creation until the Agent Skills artifact/manifest and trust/licensing contracts are defined.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_meta_api",
+          "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+          "files": [
+            {
+              "path": "src/synergy_meta_api/registry_api.py",
+              "blob_sha": "05b5990b9d51342e8bbda26e9a8ae210c3fccb0b"
+            },
+            {
+              "path": "src/synergy_meta_api/public_catalog.py",
+              "blob_sha": "3dd9ad580076c55c14b0d6c3a6251c9137e7848f"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_agi_nexus",
+          "commit": "428984dcff1607d86d3f4b47519b30b45d7eb112",
+          "files": [
+            {
+              "path": "README.md",
+              "blob_sha": "428984dcff1607d86d3f4b47519b30b45d7eb112"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_tutors",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_distinct_domain",
+      "existing_repositories": [
+        "synergy_apps",
+        "synergy_app_family"
+      ],
+      "decision": "No tutor matching, lesson runtime, student progress, scheduling or education-specific provider integration was found. The 500-app catalog is a product-design inventory and App Family is a documentation-only stub, not an education platform. Treat tutoring as part of one future education vertical rather than creating a standalone repository before scope and safeguards are specified.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_apps",
+          "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "files": [
+            {
+              "path": "docs/superpowers/specs/2026-09-15-synergy-500-app-catalog-design.md",
+              "blob_sha": "6fb003279ed169bb3321c67cf4ef36e6e0f94341"
+            },
+            {
+              "path": "runtime/read_models.py",
+              "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_app_family",
+          "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+          "files": [
+            {
+              "path": "README.md",
+              "blob_sha": "c57e17c05c4f24daef8d1a04da8a7b5330fd81a1"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_courses",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_distinct_domain",
+      "existing_repositories": [
+        "synergy_apps",
+        "synergy_app_family"
+      ],
+      "decision": "No course catalog, instructor/course lifecycle, enrolment, assessment, certificate or learning-progress runtime was found. The application catalog includes education as a proposed app category only. Combine courses and tutoring under one education domain/product boundary and defer separate repositories until a concrete course schema and delivery model exist.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_apps",
+          "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "files": [
+            {
+              "path": "docs/superpowers/specs/2026-09-15-synergy-500-app-catalog-design.md",
+              "blob_sha": "6fb003279ed169bb3321c67cf4ef36e6e0f94341"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_app_family",
+          "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+          "files": [
+            {
+              "path": "README.md",
+              "blob_sha": "c57e17c05c4f24daef8d1a04da8a7b5330fd81a1"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_video_router",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_partial_overlap",
+      "existing_repositories": [
+        "synergy_meta_api",
+        "synergy_apps"
+      ],
+      "decision": "Generic OpenAPI/MCP discovery can be reused, but no video-specific provider adapters, job lifecycle, media input/output contract, rights/licensing checks, quality evaluation or cost/latency routing were found. Keep the vertical distinct; defer a repository until at least two providers and a reproducible job/quote contract exist.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_meta_api",
+          "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+          "files": [
+            {
+              "path": "src/synergy_meta_api/public_catalog.py",
+              "blob_sha": "3dd9ad580076c55c14b0d6c3a6251c9137e7848f"
+            },
+            {
+              "path": "src/synergy_meta_api/registry_api.py",
+              "blob_sha": "05b5990b9d51342e8bbda26e9a8ae210c3fccb0b"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_apps",
+          "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "files": [
+            {
+              "path": "docs/superpowers/specs/2026-09-15-synergy-500-app-catalog-design.md",
+              "blob_sha": "6fb003279ed169bb3321c67cf4ef36e6e0f94341"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_advertising_router",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_distinct_domain",
+      "existing_repositories": [
+        "synergy_lead_search_engline",
+        "synergy_messenger",
+        "synergy_apps"
+      ],
+      "decision": "The inspected Lead OS discovers and reviews leads and can explicitly dispatch approved records to CRM; it is not an ad campaign router. No campaign budgets, creatives, audience targeting, platform adapters, attribution or campaign reconciliation were found in the reviewed main-branch evidence. Keep distinct from lead discovery and defer until ad-platform connectors and consent/attribution contracts are specified.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_lead_search_engline",
+          "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+          "files": [
+            {
+              "path": "lead_os/core.py",
+              "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
+            },
+            {
+              "path": "lead_os/crm.py",
+              "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_seo_router",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_distinct_domain",
+      "existing_repositories": [
+        "synergy_search_engline",
+        "synergy_lead_search_engline"
+      ],
+      "decision": "The Search Engine repository is explicitly RESEARCH/SIMULATION around HardNAV, token economics and EVM experiments; Lead OS is local FTS5/VK lead discovery. Neither demonstrates technical SEO crawling, keyword/rank tracking, backlink analysis, site audit or SEO provider comparison. Keep SEO as a distinct future service domain, but require a precise product boundary before creating a repository.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_search_engline",
+          "commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+          "files": [
+            {
+              "path": "README.md",
+              "blob_sha": "2404d42ac0d753a5e168451c3973f4cba48fdd5c"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_lead_search_engline",
+          "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+          "files": [
+            {
+              "path": "lead_os/core.py",
+              "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_coupon_router",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_distinct_domain",
+      "existing_repositories": [
+        "synergy_pay_system",
+        "synergy_apps"
+      ],
+      "decision": "Pay System provides payment quotes, routing and settlement, not a coupon catalogue or redemption engine. No merchant-funded coupon inventory, eligibility rules, expiry/stacking, redemption idempotency, fraud controls or merchant reimbursement flow were found. Keep coupon discovery distinct from payment settlement and cashback; defer creation until merchant and redemption contracts are defined.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_pay_system",
+          "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+          "files": [
+            {
+              "path": "src/synergy_pay/api.py",
+              "blob_sha": "05b7306aa5822870f6c67f0c02b51c3affdaf718"
+            },
+            {
+              "path": "src/synergy_pay/models.py",
+              "blob_sha": "832309be20cdd2eb5df4224e0218b8b97eb39ab4"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_logistics_router",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_partial_overlap",
+      "existing_repositories": [
+        "synergy_maps"
+      ],
+      "decision": "Maps provides geospatial visualization, administrative boundaries and a robust geodata ingestion/validation pipeline; it does not provide carrier discovery, freight quotes, shipment state, capacity booking, proof of delivery or logistics settlement. Reuse Maps for geospatial context, not as the logistics router. Defer a vertical repository until carrier APIs and shipment contracts are identified.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_maps",
+          "commit": "576871d1aee78273ec97a45cacca49de8873cf51",
+          "files": [
+            {
+              "path": "src/main.ts",
+              "blob_sha": "e799b5d701046ae6be9c78d5a20cc6c7fc2ced8b"
+            },
+            {
+              "path": "README.md",
+              "blob_sha": "0eb38b7916d9a4fd775982f5a35d764ed1323bbb"
+            }
+          ]
+        }
+      ]
     },
     {
       "proposal": "synergy_ai_legal_router",
-      "status": "not_yet_overlap_audited"
+      "status": "assessed_distinct_domain",
+      "existing_repositories": [
+        "synergy_lead_search_engline",
+        "synergy_apps"
+      ],
+      "decision": "Lead OS includes a real-estate/residency lead workflow, human review and lawful-contact gating, but it does not provide a verified lawyer registry, bar/licence validation, jurisdiction-specific legal expertise, engagement workflow, case management or legal advice quality controls. Keep legal services distinct; require jurisdiction, professional credential, conflict-check and human-responsibility contracts before implementation.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_lead_search_engline",
+          "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+          "files": [
+            {
+              "path": "README.md",
+              "blob_sha": "b8fd0aeca7ed61a9fa49e892c36be3671b5dc583"
+            },
+            {
+              "path": "lead_os/core.py",
+              "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "remaining_proposals": [],
+  "assessment_count": 39,
+  "coverage_percent": 100
 }
