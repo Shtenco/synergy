@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 74,
-  "source_code_reviewed_count": 63,
+  "audited_repository_count": 84,
+  "source_code_reviewed_count": 71,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -2705,6 +2705,308 @@
         {
           "path": "evaluation/2026/README.md",
           "blob_sha": "e057f6040c743cff371474fe52c9e03ddaf8154e"
+        }
+      ]
+    },
+    {
+      "name": "synergy_graph_print_money",
+      "repository": "Shtenco/synergy_graph_print_money",
+      "commit": "bf5733de1a1e1b31cbb0b91b91a2742536b68cad",
+      "commit_url": "https://github.com/Shtenco/synergy_graph_print_money/commit/bf5733de1a1e1b31cbb0b91b91a2742536b68cad",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "flash-loan-multi-token-cycle-executor",
+        "in-kind-token-repayment",
+        "pinned-base-fork-test"
+      ],
+      "findings": [
+        "V7.4 executor is a research/fork contract; it validates token-closed cycles and repays each borrowed ERC-20 principal plus the actual callback fee in-kind.",
+        "The pinned Base fork test checks same-block balances, Chainlink ETH/USD and post-repayment HardNAV; README says the hosted runner fails before the first workflow step, so this exact fork gate is not currently proven passing.",
+        "Contract documentation explicitly says it is not audited for production; no live deployment or production readiness is claimed."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "6621aa82f5cf870f07cc03ee6a46e68a78a2d999"
+        },
+        {
+          "path": "contracts/V7_4GlobalPacketExecutor.sol",
+          "blob_sha": "c3a4cfd5f9b2936137c024267d5360b602db1b24"
+        },
+        {
+          "path": "test/V7_4Run36Packet.t.sol",
+          "blob_sha": "6b60ab3afa4c6aca12366267e11eb69f11097535"
+        }
+      ]
+    },
+    {
+      "name": "synergy_chain_print_money",
+      "repository": "Shtenco/synergy_chain_print_money",
+      "commit": "c1d6674a9cf92aee2989ff34d66078e70435b59e",
+      "commit_url": "https://github.com/Shtenco/synergy_chain_print_money/commit/c1d6674a9cf92aee2989ff34d66078e70435b59e",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [],
+      "findings": [
+        "Checked main contains README.md and LICENSE only; no executable runtime, tests or evidence artifacts are present.",
+        "The README explicitly labels the repository STUB / specification-only."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "7db2b2ff0e1906913f9795f254fbd3209db39cdf"
+        }
+      ]
+    },
+    {
+      "name": "synergy_triangle_money_system",
+      "repository": "Shtenco/synergy_triangle_money_system",
+      "commit": "8fb8a604a225a1ceaa9ee9272bf502d4603f9c39",
+      "commit_url": "https://github.com/Shtenco/synergy_triangle_money_system/commit/8fb8a604a225a1ceaa9ee9272bf502d4603f9c39",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "solidity-cpmm-pool",
+        "collateral-vault",
+        "risk-oracle",
+        "treasury-and-recursive-engine"
+      ],
+      "findings": [
+        "Main contains Solidity pool, collateral vault, risk oracle, treasury, recursive engine and Foundry integration tests.",
+        "The inspected system test deploys MockHardToken instances and seeds local pools; this demonstrates deterministic EVM simulation, not external-market liquidity or a production collateral system.",
+        "README labels the project SIMULATION / EVM LAB; no real external revenue or audited deployment is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a0db6b56bddd42852bdd25562587ef52c808002a"
+        },
+        {
+          "path": "src/CPMMPool.sol",
+          "blob_sha": "637cf6a847904fcc399d2f0e93b93f262992daa7"
+        },
+        {
+          "path": "test/System.t.sol",
+          "blob_sha": "edd973e7bdd18c890425c99ee72537ed4038a3a3"
+        }
+      ]
+    },
+    {
+      "name": "synergistic_economics",
+      "repository": "Shtenco/synergistic_economics",
+      "commit": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+      "commit_url": "https://github.com/Shtenco/synergistic_economics/commit/7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "double-entry-ledger-prototype",
+        "idempotent-in-memory-event-store",
+        "physical-production-constraints",
+        "deterministic-pool-allocation"
+      ],
+      "findings": [
+        "Dependency-free Python prototype implements balanced journal entries, duplicate entry/idempotency checks, event digests, constrained production and deterministic pool allocation.",
+        "Ledger and event store are in-memory collections; the inspected kernel does not provide durable persistence, concurrent transaction isolation or external payment settlement.",
+        "README distinguishes research simulations from empirical evidence and states several economic coefficients are synthetic assumptions."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "cdb74ef2ff99097b455184296004c144fb35a1e9"
+        },
+        {
+          "path": "prototype/synergy_kernel.py",
+          "blob_sha": "9857dc0ac9b5bd4b25f28f108bcb331696441302"
+        }
+      ]
+    },
+    {
+      "name": "synergy_ai_economic",
+      "repository": "Shtenco/synergy_ai_economic",
+      "commit": "6a84410ad2107945069c4f153381854948816b91",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_economic/commit/6a84410ad2107945069c4f153381854948816b91",
+      "audited_at": "2026-11-25",
+      "status": "branch_only_prototype",
+      "scope": "README plus selected source on research/v8-russia-four-economies-escrow; main is docs/registry only.",
+      "capabilities": [
+        "four-regime-economic-simulation",
+        "macro-kpi-dashboard",
+        "scenario-experiments"
+      ],
+      "findings": [
+        "Default main contains README, LICENSE, assets and docs; the executable V8 source and tests are on research/v8-russia-four-economies-escrow, not main.",
+        "README states the economic digital twin is a research model, not a validated national digital twin; some technology coefficients, currency and market assumptions are synthetic.",
+        "The README advertises 96 scenarios and 12/12 V9.1 tests, but those artifacts are on the research branch and were not executed in this audit."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "9af09346d056a2da86d8116957b36cd07ff6477f"
+        },
+        {
+          "path": "src/economy_v8.py",
+          "blob_sha": "9e76b5497066460ca2ff8ccaa342641f12dbeb30"
+        },
+        {
+          "path": "src/run_v8.py",
+          "blob_sha": "8f3ce86a413cf4a86e9be002624949a21f58b87"
+        }
+      ]
+    },
+    {
+      "name": "synergy_qe",
+      "repository": "Shtenco/synergy_qe",
+      "commit": "c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
+      "commit_url": "https://github.com/Shtenco/synergy_qe/commit/c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [],
+      "findings": [
+        "Checked main contains README.md, LICENSE and documentation/assets only; no executable QE runtime or tests are present.",
+        "README explicitly identifies main as STUB / specification-only."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "1a6e6c3b89608edc0a21f1651b8d716069d6468e"
+        }
+      ]
+    },
+    {
+      "name": "synergy_2chain_qe",
+      "repository": "Shtenco/synergy_2chain_qe",
+      "commit": "79c105dac4c65e125b1ce395e8a493822de6356f",
+      "commit_url": "https://github.com/Shtenco/synergy_2chain_qe/commit/79c105dac4c65e125b1ce395e8a493822de6356f",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "solidity-bridge-lock-mint",
+        "internal-amm",
+        "role-gated-arbitrage-executor",
+        "foundry-fork-tests"
+      ],
+      "findings": [
+        "Main contains Solidity BridgeCore, managed oracle, internal AMM, treasury distributor and arbitrage executor with OpenZeppelin role and reentrancy primitives in the bridge.",
+        "ArbitrageExecutor source labels the external DEX purchase as simulated and says production requires a DEX router; the cycle therefore is not a demonstrated end-to-end external arbitrage execution path.",
+        "README reports 77 Foundry tests, but this audit did not run them; README distinguishes experimental code from proven public profit."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "1b964fc675e1e5dbc21566a0aad96007d79cb82c"
+        },
+        {
+          "path": "contracts/BridgeCore.sol",
+          "blob_sha": "991ebd65619fa773be25589677fe0d2755e518d0"
+        },
+        {
+          "path": "contracts/ArbitrageExecutor.sol",
+          "blob_sha": "751d372d1d6df0223d1b0f7e493592bfd83938f4"
+        }
+      ]
+    },
+    {
+      "name": "synergy_crypto_pump",
+      "repository": "Shtenco/synergy_crypto_pump",
+      "commit": "5232f83f3051721c491aaf739c4a20c2382be9ee",
+      "commit_url": "https://github.com/Shtenco/synergy_crypto_pump/commit/5232f83f3051721c491aaf739c4a20c2382be9ee",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "point-in-time-feature-engineering",
+        "purged-walk-forward-splits",
+        "isotonic-calibration",
+        "falsification-tests"
+      ],
+      "findings": [
+        "README describes a structured ML research stack using point-in-time data, purged walk-forward out-of-sample evaluation and validation-only calibration.",
+        "The split helper defaults purge_bars and embargo_bars to zero; callers must supply purge at least as large as the longest label horizon, so a default call does not itself guarantee leakage-safe folds.",
+        "README explicitly treats pump-and-dump markets as adversarial and states prediction metrics/backtests are not evidence of executable profit."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "79118b331a10f34f68fcc0012a1ae169e0515889"
+        },
+        {
+          "path": "src/crypto_pump/v2/splits.py",
+          "blob_sha": "60c2f547ba4b8e6cec027a18a27c4ad8244fe358"
+        }
+      ]
+    },
+    {
+      "name": "synergy_blochain_budget",
+      "repository": "Shtenco/synergy_blochain_budget",
+      "commit": "bc31841d024b02c1b803e28d0a360e5893bb2c4b",
+      "commit_url": "https://github.com/Shtenco/synergy_blochain_budget/commit/bc31841d024b02c1b803e28d0a360e5893bb2c4b",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "budget-data-normalization",
+        "evidence-scored-reconciliation",
+        "merkle-snapshot",
+        "local-hash-chained-jsonl"
+      ],
+      "findings": [
+        "Main includes typed budget normalization, reconciliation, trace/evidence hashes, Merkle snapshot generation and a local JSONL hash chain.",
+        "append_block reads the full file then appends without inter-process locking, atomic replacement or fsync; this is a local integrity prototype, not a crash-safe concurrent ledger or external trust anchor.",
+        "README distinguishes strong contract identifiers from weaker aggregate cash-execution evidence and forbids false transaction-level causality."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a5b98069e47c7a4f1d192a05c6dd5ffcc057f732"
+        },
+        {
+          "path": "src/synergy_budget/ledger.py",
+          "blob_sha": "e7a3dd953a9292d2fece7ea9c9369849276aa5cb"
+        }
+      ]
+    },
+    {
+      "name": "synergy_eurasian",
+      "repository": "Shtenco/synergy_eurasian",
+      "commit": "b911bb017103f122f2c75ef08b99ffebe665883d",
+      "commit_url": "https://github.com/Shtenco/synergy_eurasian/commit/b911bb017103f122f2c75ef08b99ffebe665883d",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit.",
+      "capabilities": [
+        "federation-authority-static-audit",
+        "economic-simulation",
+        "typed-evidence-contracts",
+        "productivity-flywheel"
+      ],
+      "findings": [
+        "Static federation audit checks canonical accounting, settlement and real-economy authority assignments, forbidden cross-domain promotions and scoped runtime authority.",
+        "The checked main README reports that pytest currently stops during test collection because V6.6 modules imported by main-branch tests are absent; research PR branches contain additional implementation and have separate failing tests.",
+        "The static audit is metadata-only and explicitly does not grant runtime, financial, settlement, regulatory or blockchain authority."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "b76f14d9ec1cca28e48723a27805ab5875e48823"
+        },
+        {
+          "path": "src/federation_audit.py",
+          "blob_sha": "a2d1b7daeefc7b4447a0cf44d9a33b03b35b2ad0"
+        },
+        {
+          "path": "config/federation_v4.json",
+          "blob_sha": "e2817311890f1217325276daa52cb126b9884a73"
+        },
+        {
+          "path": "tests/test_federation_v4.py",
+          "blob_sha": "0726a28d2a2d14fd752c510406df31e8b24052e2"
         }
       ]
     }
