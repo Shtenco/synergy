@@ -1245,11 +1245,11 @@
         "status": "stub_confirmed",
         "commit": "c1d6674a9cf92aee2989ff34d66078e70435b59e",
         "audited_at": "2026-11-25",
-        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+        "scope": "README, complete main tree and scientific dossier; no executable runtime or tests found."
       },
       "audit_findings": [
-        "Checked main contains README.md and LICENSE only; no executable runtime, tests or evidence artifacts are present.",
-        "The README explicitly labels the repository STUB / specification-only."
+        "Main contains README, LICENSE, SVG assets and documentation dossiers only; no source/runtime, test suite, dependency manifest, CI or release artifact.",
+        "README explicitly marks the project STUB/specification-only and defines future reserve, mint/burn and settlement evidence requirements; these are target design, not implemented behavior."
       ]
     },
     {
@@ -1653,11 +1653,11 @@
         "status": "stub_confirmed",
         "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
         "audited_at": "2026-11-25",
-        "scope": "README plus selected source/tests on main; no tests or benchmarks executed during this audit."
+        "scope": "README, complete main tree and scientific dossier; no executable runtime or tests found."
       },
       "audit_findings": [
-        "Checked main contains README, LICENSE, assets and docs only; no executable family application runtime, tests or persisted evidence are present.",
-        "README explicitly labels main STUB / specification-only and lists consent, member data leakage and UI-balance authority as design risks."
+        "Main contains README, LICENSE, SVG assets and one scientific dossier; no family application source, tests, build manifest, CI or release artifact.",
+        "The documented consent, member-isolation and financial read-model boundaries are requirements only; there is no executable evidence for their enforcement."
       ]
     },
     {
@@ -2007,13 +2007,14 @@
         "status": "benchmark_dossier",
         "commit": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
         "audited_at": "2026-11-25",
-        "scope": "README, extended benchmark artifacts, environment metadata and source_snapshot gitlink; no engine source inspected"
+        "scope": "README, complete main tree, benchmark result artifacts, environment metadata and source_snapshot gitlink; no engine source inspected."
       },
       "audit_findings": [
-        "Main is a benchmark dossier, not an executable compression runtime; the README separates 69 frozen historical profiles from a current fresh-world benchmark and explicitly warns that their protocols are not directly comparable.",
-        "The fresh-world CSV reports 38 profiles x 11 datasets, 360,448 input bytes per profile and exact reconstruction PASS; this does not establish the proprietary compression source implementation or a unified 81-system competition.",
-        "source_snapshot is a Git submodule entry with no submodule URL; its target commit message says implementation sources and test harnesses were removed from public main, so the implementation cannot be independently reconstructed from this repository snapshot.",
-        "results/environment.json contains CSV header/rows rather than JSON, creating a machine-readable artifact format mismatch."
+        "The main tree contains benchmark CSVs, input corpus files, SVGs and a source_snapshot gitlink, but no directly inspectable engine implementation or test harness.",
+        "README explicitly separates frozen historical profiles from fresh-world measurements and warns that different protocols must not be mixed as a single competition.",
+        "The fresh-world benchmark records 38 profiles over 11 datasets of 32,768 bytes each with exact round-trip PASS; this is a bounded archived benchmark, not independent evidence of broad enterprise performance.",
+        "The environment.json artifact is valid JSON and parses as JSON; the earlier GAP-089 claim that it contains CSV rows was incorrect and is replaced by a corpus-generalization limitation.",
+        "The source_snapshot gitlink has no .gitmodules URL in the main tree, and the source cannot be independently retrieved from this repository snapshot."
       ]
     },
     {
@@ -2462,8 +2463,12 @@
         "status": "stub_confirmed",
         "commit": "8d8c1d2f7b0b1983aaaee92fa56544ceb9382c51",
         "audited_at": "2026-11-25",
-        "scope": "README and complete main-branch tree"
-      }
+        "scope": "README, complete main tree and scientific dossier; no executable transport implementation or tests found."
+      },
+      "audit_findings": [
+        "Main contains README, LICENSE, SVG assets and one scientific dossier; no byte-level transport format, runtime, tests, build manifest or CI is present.",
+        "README marks the project STUB and explicitly requires test vectors, replay/nonce tests and TLS 1.3 comparisons before maturity promotion."
+      ]
     },
     {
       "node_id": "github-repo:1376377837",
@@ -2918,8 +2923,12 @@
         "status": "stub_confirmed",
         "commit": "5fb87036fe833a6e7939654469766c86f92533ee",
         "audited_at": "2026-11-25",
-        "scope": "README and complete main-branch tree"
-      }
+        "scope": "README and complete main tree; no executable graph router or tests found."
+      },
+      "audit_findings": [
+        "Main contains README, LICENSE and a single architecture SVG; there is no executable router, venue adapter, test suite, dependency manifest or CI.",
+        "README defines amount-dependent AlphaGraph and settlement-aware RebalancingGraph as research specification and explicitly says a positive scalar cycle is not proof of executable arbitrage."
+      ]
     },
     {
       "node_id": "github-repo:1463301548",
@@ -3779,8 +3788,12 @@
         "status": "stub_confirmed",
         "commit": "2e8af43e14875442f89b6dca13d96306defaf1bd",
         "audited_at": "2026-11-25",
-        "scope": "README and complete main-branch tree"
-      }
+        "scope": "README, complete main tree and scientific dossier; no executable application runtime or tests found."
+      },
+      "audit_findings": [
+        "Main contains README, LICENSE, SVG assets and a scientific dossier; no UI source, package/build manifest, tests, CI, API client or release artifact is present.",
+        "The thin-client and authoritative-financial-read-model rules are target requirements; no runtime integration or client security enforcement is demonstrated."
+      ]
     },
     {
       "node_id": "github-repo:1318145141",
