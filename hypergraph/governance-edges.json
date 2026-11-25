@@ -1,0 +1,2822 @@
+{
+  "schema_version": "1.0.0",
+  "projection_type": "read_only_governance_graph_projection",
+  "generated_at": "2026-11-25",
+  "source": {
+    "repository": "Shtenco/synergy_system",
+    "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+    "path": "registry/DEPENDENCY_GRAPH.json",
+    "blob_sha": "fe391ee1811d57f2e449307a760013cf38129600"
+  },
+  "source_semantics": {
+    "ARCHITECTURAL_PARENT": "Logical federation placement only; never implies import/runtime call.",
+    "CONTRACT_FLOW": "Producer may emit a typed artifact consumed by the target; authority remains with producer for producer-owned facts.",
+    "RUNTIME_DEPENDENCY": "Reserved for verified executable dependency backed by code/deployment/test evidence.",
+    "EVIDENCE_FLOW": "Evidence is transferred without transferring domain authority."
+  },
+  "status_vocabulary": [
+    "DOCUMENTED",
+    "CONTRACT_DEFINED",
+    "PRODUCER_IMPLEMENTED",
+    "CONSUMER_IMPLEMENTED",
+    "ADAPTER_IMPLEMENTED",
+    "E2E_TESTED",
+    "DEPLOYED"
+  ],
+  "counts": {
+    "nodes": 75,
+    "edges": 136,
+    "edge_type_counts": {
+      "ARCHITECTURAL_PARENT": 70,
+      "CONTRACT_FLOW": 22,
+      "RUNTIME_DEPENDENCY": 22,
+      "RUNTIME_CONTRACT": 22
+    },
+    "edge_status_counts": {
+      "DOCUMENTED": 70,
+      "ADAPTER_IMPLEMENTED": 66
+    },
+    "unique_contract_ids": 38,
+    "m5_required_edges": 44,
+    "m5_edge_type_counts": {
+      "RUNTIME_DEPENDENCY": 22,
+      "RUNTIME_CONTRACT": 22
+    },
+    "e2e_tested_edges": 0,
+    "deployed_runtime_edges": 0
+  },
+  "original_integration_summary": {
+    "repositories": 75,
+    "typed_contracts": 17,
+    "adapter_implemented_runtime_edges": 22,
+    "e2e_tested_runtime_edges": 0,
+    "deployed_runtime_edges": 0
+  },
+  "contract_ids": [
+    "synergy.accounting.recognition/v1",
+    "synergy.agent.economy-simulation/v1",
+    "synergy.ai.benchmark-suite/v1",
+    "synergy.ai.proposal/v1",
+    "synergy.app.store-source-evidence/v1",
+    "synergy.app.superapp-surface/v1",
+    "synergy.archive.benchmark-evidence/v1",
+    "synergy.archive.evidence/v1",
+    "synergy.economy.bridge-health/v1",
+    "synergy.economy.budget-proof/v1",
+    "synergy.economy.funding-authorization/v1",
+    "synergy.economy.monetary-simulation/v1",
+    "synergy.economy.project-proposal/v1",
+    "synergy.economy.scenario-evidence/v1",
+    "synergy.engineering.change-evidence/v1",
+    "synergy.engineering.requirement-trace/v1",
+    "synergy.runtime.hardware-model/v1",
+    "synergy.runtime.node-manifest/v1",
+    "synergy.science.constraint-benchmark/v1",
+    "synergy.science.evidence-package/v1",
+    "synergy.science.model-consistency/v1",
+    "synergy.science.provenance-graph/v1",
+    "synergy.science.quantum-reference-control/v1",
+    "synergy.settlement.evidence/v1",
+    "synergy.trading.crypto-anomaly-score/v1",
+    "synergy.trading.execution-result/v1",
+    "synergy.trading.fair-value/v1",
+    "synergy.trading.institutional-assessment/v1",
+    "synergy.trading.investment-thesis/v1",
+    "synergy.trading.liquidity-quote/v1",
+    "synergy.trading.market-features/v1",
+    "synergy.trading.market-regime/v1",
+    "synergy.trading.portfolio-decision/v1",
+    "synergy.trading.relative-value-signal/v1",
+    "synergy.trading.risk-decision/v1",
+    "synergy.trading.validation-decision/v1",
+    "synergy.transport.evidence/v1",
+    "synergy.trust.commitment/v1"
+  ],
+  "m5_scope": {
+    "required_edge_count": 44,
+    "normalized_scope_match_count": 44,
+    "legacy_aliases": {
+      "Shtenco/binary_quantum_theory": "Shtenco/synergy_binary_quantum_theory",
+      "Shtenco/epstein_network": "Shtenco/synergy_epstein_network"
+    },
+    "scope_source_files": [
+      {
+        "path": "integration/m3_federation/m3_edge_scope_v1.json",
+        "blob_sha": "9c1ba06af370412e45a24d4b06ccabf710e1ed24"
+      },
+      {
+        "path": "integration/m4_market_advisory/edge_scope_v1.json",
+        "blob_sha": "e8c5b5c1a89dbccae48c36bcae78aba2622c4609"
+      },
+      {
+        "path": "integration/m4_wave2/edge_scope_v1.json",
+        "blob_sha": "368d835935a0ae335030b2ab8018f3978bc0b5c7"
+      },
+      {
+        "path": "integration/m4_wave3/edge_scope_v1.json",
+        "blob_sha": "f159498906344362dbf76f359e086ebf93129b73"
+      },
+      {
+        "path": "integration/m4_wave4/edge_scope_v1.json",
+        "blob_sha": "53062c142c5fecb3530f9494aeff04cbef0c533e"
+      },
+      {
+        "path": "integration/m4_wave5/edge_scope_v1.json",
+        "blob_sha": "006dc9985a5dcb3c850b0683cdea0b1cf50edfd1"
+      }
+    ]
+  },
+  "maturity_interpretation": "ADAPTER_IMPLEMENTED is preserved as the canonical registry status. It does not mean E2E_TESTED or DEPLOYED. The source registry reports zero E2E-tested and zero deployed runtime edges; M5 observed execution remains blocked by runner.",
+  "nodes": [
+    {
+      "node_id": "github-repo:890519259",
+      "repository": "Shtenco/shtenco.github.io",
+      "domain": "APPS_INTERFACES",
+      "role": "Публичная web-витрина и навигационный интерфейс к проектам Shtenco."
+    },
+    {
+      "node_id": "github-repo:1171792036",
+      "repository": "Shtenco/shtencoauantai.github.io",
+      "domain": "APPS_INTERFACES",
+      "role": "Публичный web-интерфейс/сайт для представления отдельных направлений экосистемы."
+    },
+    {
+      "node_id": "github-repo:1344027509",
+      "repository": "Shtenco/sinergy_app",
+      "domain": "APPS_INTERFACES",
+      "role": "Приложенческий shell/концепт SINERGY."
+    },
+    {
+      "node_id": "github-repo:1227851612",
+      "repository": "Shtenco/sinergy_super_app",
+      "domain": "APPS_INTERFACES",
+      "role": "Концептуальная/продуктовая оболочка super-app для пользовательских сервисов SINERGY."
+    },
+    {
+      "node_id": "github-repo:1344028054",
+      "repository": "Shtenco/synergy_app",
+      "domain": "APPS_INTERFACES",
+      "role": "Пользовательский финансовый интерфейс/приложение SINERGY."
+    },
+    {
+      "node_id": "github-repo:1365353815",
+      "repository": "Shtenco/synergy_app_family",
+      "domain": "APPS_INTERFACES",
+      "role": "Концептуальный семейный продуктовый слой/семейство приложений."
+    },
+    {
+      "node_id": "github-repo:1371942189",
+      "repository": "Shtenco/synergy_messenger",
+      "domain": "APPS_INTERFACES",
+      "role": "Мессенджер/коммуникационный слой SYNERGY и пользовательская клиентская оболочка."
+    },
+    {
+      "node_id": "github-repo:1318145141",
+      "repository": "Shtenco/synergychain.github.io",
+      "domain": "APPS_INTERFACES",
+      "role": "Публичная web-витрина SINERGYCHAIN."
+    },
+    {
+      "node_id": "github-repo:1357102715",
+      "repository": "Shtenco/print_money_synergychain",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "R&D по программируемой эмиссии, ликвидности, mint/burn и внешне обеспеченному экономическому эффекту."
+    },
+    {
+      "node_id": "github-repo:1378708908",
+      "repository": "Shtenco/synergy_2chain_qe",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Двухцепочечный QE/арбитражный R&D и модели ликвидности на fork/DeFi окружениях."
+    },
+    {
+      "node_id": "github-repo:1317641638",
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Блокчейн/доверительный слой SYNERGY, включая PQ/EVM и привязку проверяемых состояний."
+    },
+    {
+      "node_id": "github-repo:1341358637",
+      "repository": "Shtenco/synergy_blochain_budget",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Блокчейн-трассируемость бюджетов/потоков и provenance финансовых операций."
+    },
+    {
+      "node_id": "github-repo:1317824815",
+      "repository": "Shtenco/synergy_chain",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Экспериментальная блокчейн- и token/economic-ветка SINERGYCHAIN."
+    },
+    {
+      "node_id": "github-repo:1366684382",
+      "repository": "Shtenco/synergy_chain_print_money",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Концептуальный узел интеграции chain-механики и monetary/emission R&D."
+    },
+    {
+      "node_id": "github-repo:1364848219",
+      "repository": "Shtenco/synergy_graph_print_money",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Графовый Economic OS / денежная топология и исследование внешне-обеспеченных контуров эмиссии."
+    },
+    {
+      "node_id": "github-repo:1351534269",
+      "repository": "Shtenco/synergy_metachain",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Cross-chain/bridge архитектура и правила уникального lock/burn → mint/claim соответствия."
+    },
+    {
+      "node_id": "github-repo:1380118593",
+      "repository": "Shtenco/synergy_qe",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Концептуальный узел QE Engine; текущий main содержит только минимальный README."
+    },
+    {
+      "node_id": "github-repo:1331946228",
+      "repository": "Shtenco/synergy_usds",
+      "domain": "BLOCKCHAIN_MONETARY",
+      "role": "Экспериментальная денежная/стейблкоин-модель USDS и Base-fork экономика."
+    },
+    {
+      "node_id": "github-repo:1310793915",
+      "repository": "Shtenco/synergy_ai_financial_system",
+      "domain": "FINANCE_REAL_ECONOMY",
+      "role": "R&D по AI-управлению финансовыми моделями, капиталом и экономическими контурами."
+    },
+    {
+      "node_id": "github-repo:1180497488",
+      "repository": "Shtenco/synergy_cashero",
+      "domain": "FINANCE_REAL_ECONOMY",
+      "role": "Финансово-экономическая R&D-ветка, связанная с денежными потоками и платёжными сценариями."
+    },
+    {
+      "node_id": "github-repo:1336911571",
+      "repository": "Shtenco/synergy_eurasian",
+      "domain": "FINANCE_REAL_ECONOMY",
+      "role": "Контур реальной экономики/индустрии и долгосрочной экономической архитектуры EURASIAN."
+    },
+    {
+      "node_id": "github-repo:1336910945",
+      "repository": "Shtenco/synergy_financial_os",
+      "domain": "FINANCE_REAL_ECONOMY",
+      "role": "Канонический финансовый слой: учёт, NAV, обязательства, ликвидность, риск и экономическая истинность."
+    },
+    {
+      "node_id": "github-repo:1336912141",
+      "repository": "Shtenco/synergy_matrix_sota",
+      "domain": "FINANCE_REAL_ECONOMY",
+      "role": "Владелец части debt/credit lifecycle механизмов и матричной оценки зрелости/архитектуры."
+    },
+    {
+      "node_id": "github-repo:1317622231",
+      "repository": "Shtenco/synergy_pay_system",
+      "domain": "FINANCE_REAL_ECONOMY",
+      "role": "Платёжные маршруты, котировки, settlement/reconciliation и MetaPay-подобные контуры."
+    },
+    {
+      "node_id": "github-repo:1362541171",
+      "repository": "Shtenco/dlp_solver",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "Reverse-EXP / anti-exponential cryptographic research lab с эпистемической дисциплиной и воспроизводимыми экспериментами."
+    },
+    {
+      "node_id": "github-repo:1317273998",
+      "repository": "Shtenco/synegy_ai_compress",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "R&D по компрессии AI-данных/моделей и архивному субстрату."
+    },
+    {
+      "node_id": "github-repo:1368875919",
+      "repository": "Shtenco/synergy_gguf_compress",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "Лаборатория компрессии GGUF/LLM-моделей; на текущем main README остаётся минимальным, поэтому зрелость не предполагается."
+    },
+    {
+      "node_id": "github-repo:1351698135",
+      "repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "Экспериментальный аппаратно-описательный слой XPU/EML и конфигурация вычислительной платформы."
+    },
+    {
+      "node_id": "github-repo:1341273955",
+      "repository": "Shtenco/synergy_net",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "P2P/mesh/data-plane сеть и транспорт между узлами SYNERGY."
+    },
+    {
+      "node_id": "github-repo:1391275828",
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "Концептуальный узел post-quantum radio/physical transport; текущий main пока не доказывает готовую реализацию."
+    },
+    {
+      "node_id": "github-repo:1350374084",
+      "repository": "Shtenco/synergy_qr_compress",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "Temporal dictionary / QR-compression R&D и повторное использование общей структуры данных."
+    },
+    {
+      "node_id": "github-repo:1368537298",
+      "repository": "Shtenco/synergy_shhts",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "Экспериментальный security/transport placeholder; назначение должно подтверждаться будущими артефактами, а не названием."
+    },
+    {
+      "node_id": "github-repo:1368539352",
+      "repository": "Shtenco/synergy_shttps",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "Экспериментальный secure-transport/HTTPS-like placeholder; реализация пока не должна считаться доказанной по одному названию."
+    },
+    {
+      "node_id": "github-repo:1165635662",
+      "repository": "Shtenco/synergy_turbo_linux",
+      "domain": "INFRA_NETWORK_SECURITY",
+      "role": "Хостовый/OS-слой SYNERGY: системная изоляция, сервисы, устройство узла и экспериментальный runtime."
+    },
+    {
+      "node_id": "github-repo:1387121392",
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Экономика AI-агентов: задания, контракты, рынки, заработок и agent-to-agent workflows."
+    },
+    {
+      "node_id": "github-repo:1343965302",
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Агентный автопилот: планирование задач, DAG/оркестрация и ограниченное автономное исполнение."
+    },
+    {
+      "node_id": "github-repo:1341271800",
+      "repository": "Shtenco/synergy_agi_nexus",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Каноническая архитектура AGI NEXUS и поколений reasoning/world-model исследований."
+    },
+    {
+      "node_id": "github-repo:1167196077",
+      "repository": "Shtenco/synergy_agi_olga",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Историческая линия OLGA/AGI и источник части поколений NEXUS."
+    },
+    {
+      "node_id": "github-repo:1168739656",
+      "repository": "Shtenco/synergy_ai_coder",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Подсистема AI Coder и воспроизводимый compiler/build-tooling контур."
+    },
+    {
+      "node_id": "github-repo:1368484353",
+      "repository": "Shtenco/synergy_ai_company",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Концепт AI-native компании: агенты, процессы, контракты и автоматизация организации."
+    },
+    {
+      "node_id": "github-repo:1181574900",
+      "repository": "Shtenco/synergy_ai_language",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Семантический и языковой слой: формализация, язык взаимодействия и AI language tooling."
+    },
+    {
+      "node_id": "github-repo:1370636640",
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Активный research runtime NEXUS/GLLM, бенчмарки, замороженные OOS-протоколы и генерации."
+    },
+    {
+      "node_id": "github-repo:1341273613",
+      "repository": "Shtenco/synergy_nexus_science_agent",
+      "domain": "INTELLIGENCE_AGENTS",
+      "role": "Научный агент NEXUS: поиск, гипотезы, доказательства и исследовательская оркестрация."
+    },
+    {
+      "node_id": "github-repo:1371974932",
+      "repository": "Shtenco/synergy_apps",
+      "domain": "MASTER_GOVERNANCE",
+      "role": "Реестр и master-слой пользовательских приложений SYNERGY."
+    },
+    {
+      "node_id": "github-repo:1390438988",
+      "repository": "Shtenco/synergy_megaproject",
+      "domain": "MASTER_GOVERNANCE",
+      "role": "Цивилизационный master-graph: мегапроекты, фронтирные технологии, научные идеи и их доказательные связи."
+    },
+    {
+      "node_id": "github-repo:1341275176",
+      "repository": "Shtenco/synergy_meta_os",
+      "domain": "MASTER_GOVERNANCE",
+      "role": "Runtime-оркестратор полного узла SYNERGY поверх host OS и сетевых/AI/финансовых сервисов."
+    },
+    {
+      "node_id": "github-repo:1359110009",
+      "repository": "Shtenco/synergy_project",
+      "domain": "MASTER_GOVERNANCE",
+      "role": "Master dossier: экономическая и продуктовая картина SYNERGY поверх архитектурного корня."
+    },
+    {
+      "node_id": "github-repo:1341273343",
+      "repository": "Shtenco/synergy_system",
+      "domain": "MASTER_GOVERNANCE",
+      "role": "Главный архитектурный и governance-корень всей федерации SYNERGY."
+    },
+    {
+      "node_id": "github-repo:1293271223",
+      "repository": "Shtenco/synergy_binary_quantum_theory",
+      "domain": "SCIENCE_RESEARCH",
+      "role": "Теоретико-физическая исследовательская ветка Binary Quantum Gravity."
+    },
+    {
+      "node_id": "github-repo:1377447162",
+      "repository": "Shtenco/synergy_epstein_network",
+      "domain": "SCIENCE_RESEARCH",
+      "role": "Отдельный исследовательский knowledge-graph/дистиллированный граф источников; не runtime-компонент финансовой системы."
+    },
+    {
+      "node_id": "github-repo:1327916781",
+      "repository": "Shtenco/synergy_cold_nuclear",
+      "domain": "SCIENCE_RESEARCH",
+      "role": "Воспроизводимый вычислительный R&D-контур для исследований низкоэнергетических/«cold nuclear» гипотез."
+    },
+    {
+      "node_id": "github-repo:1091998611",
+      "repository": "Shtenco/3D_bars_market_structure",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Эксперименты с трёхмерным представлением цена-время-объём и рыночной структурой."
+    },
+    {
+      "node_id": "github-repo:1091968186",
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Исследования компьютерного зрения для распознавания рыночных структур и торговых сигналов."
+    },
+    {
+      "node_id": "github-repo:1091983056",
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Исследовательский движок cross-FX и синтетического валютного арбитража."
+    },
+    {
+      "node_id": "github-repo:1091992955",
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Сбор и подготовка глобальных макроликвидностных данных для рыночных моделей."
+    },
+    {
+      "node_id": "github-repo:1165602026",
+      "repository": "Shtenco/midas_lite",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Облегчённая исследовательская ветка MIDAS с торговыми прототипами и системами."
+    },
+    {
+      "node_id": "github-repo:1098247138",
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Многопоточный ML-прототип торгового робота на Python."
+    },
+    {
+      "node_id": "github-repo:937796740",
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Ранняя R&D-линия квантово-ассистированного трейдинга и интеграции с MetaTrader 5."
+    },
+    {
+      "node_id": "github-repo:1091973987",
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "R&D по swap/carry-арбитражу и синтетическим портфелям в MetaTrader 5."
+    },
+    {
+      "node_id": "github-repo:1376377980",
+      "repository": "Shtenco/synergy_adaptive_engine",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Адаптивный движок параметров/режимов и переключения политик по состоянию рынка."
+    },
+    {
+      "node_id": "github-repo:1373708585",
+      "repository": "Shtenco/synergy_agi_trader",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "AGI/AI трейдер: объединение reasoning и торговых контуров под риск-ограничениями."
+    },
+    {
+      "node_id": "github-repo:1376377703",
+      "repository": "Shtenco/synergy_ai_investment_committee",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "AI investment committee: агрегирование исследований и формирование ограниченных инвестиционных рекомендаций."
+    },
+    {
+      "node_id": "github-repo:1168765679",
+      "repository": "Shtenco/synergy_ai_trade_terminal",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Терминал и управляющий интерфейс для AI/algorithmic trading workloads."
+    },
+    {
+      "node_id": "github-repo:1316045651",
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Графовая архитектура алгоритмического трейдинга, маршрутов и взаимосвязанных рыночных состояний."
+    },
+    {
+      "node_id": "github-repo:1364435985",
+      "repository": "Shtenco/synergy_crypto_pump",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "ML-исследования раннего обнаружения криптовалютных импульсов/pump-режимов."
+    },
+    {
+      "node_id": "github-repo:1376377201",
+      "repository": "Shtenco/synergy_market_graph",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Граф рыночных сущностей, зависимостей и отношений для моделей/стратегий."
+    },
+    {
+      "node_id": "github-repo:1376377837",
+      "repository": "Shtenco/synergy_market_maker",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Market-making R&D: котирование, inventory/risk и микроструктурные контуры."
+    },
+    {
+      "node_id": "github-repo:1376378125",
+      "repository": "Shtenco/synergy_marketvision",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Рыночное восприятие/vision-layer для признаков, режимов и структур."
+    },
+    {
+      "node_id": "github-repo:1341272872",
+      "repository": "Shtenco/synergy_midas_ai",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Интегрированный слой MIDAS AI: рыночный интеллект, модели и стратегия."
+    },
+    {
+      "node_id": "github-repo:1151919657",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Техническая и экспериментальная ветка MIDAS AI trading system."
+    },
+    {
+      "node_id": "github-repo:1376377374",
+      "repository": "Shtenco/synergy_midas_institutional",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Институциональная архитектура MIDAS и интеграция data→model→portfolio→risk→execution."
+    },
+    {
+      "node_id": "github-repo:1376376805",
+      "repository": "Shtenco/synergy_quantlab",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Quant R&D лаборатория для исследований стратегий, данных и статистических проверок."
+    },
+    {
+      "node_id": "github-repo:1376377560",
+      "repository": "Shtenco/synergy_relative_value",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Relative-value/market-neutral исследования и сравнение относительных оценок."
+    },
+    {
+      "node_id": "github-repo:1376376981",
+      "repository": "Shtenco/synergy_riskguard",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Независимый риск-контур, лимиты и veto-политики для торговых/финансовых систем."
+    },
+    {
+      "node_id": "github-repo:1376378295",
+      "repository": "Shtenco/synergy_trademux",
+      "domain": "TRADING_MARKET_INTELLIGENCE",
+      "role": "Маршрутизация и мультиплексирование торговых intents/стратегий к исполнимым каналам."
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "governance:001",
+      "source_node_id": "github-repo:1371974932",
+      "target_node_id": "github-repo:890519259",
+      "source_repository": "Shtenco/synergy_apps",
+      "target_repository": "Shtenco/shtenco.github.io",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:002",
+      "source_node_id": "github-repo:1371974932",
+      "target_node_id": "github-repo:1171792036",
+      "source_repository": "Shtenco/synergy_apps",
+      "target_repository": "Shtenco/shtencoauantai.github.io",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:003",
+      "source_node_id": "github-repo:1371974932",
+      "target_node_id": "github-repo:1344027509",
+      "source_repository": "Shtenco/synergy_apps",
+      "target_repository": "Shtenco/sinergy_app",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:004",
+      "source_node_id": "github-repo:1371974932",
+      "target_node_id": "github-repo:1227851612",
+      "source_repository": "Shtenco/synergy_apps",
+      "target_repository": "Shtenco/sinergy_super_app",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:005",
+      "source_node_id": "github-repo:1371974932",
+      "target_node_id": "github-repo:1344028054",
+      "source_repository": "Shtenco/synergy_apps",
+      "target_repository": "Shtenco/synergy_app",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:006",
+      "source_node_id": "github-repo:1371974932",
+      "target_node_id": "github-repo:1365353815",
+      "source_repository": "Shtenco/synergy_apps",
+      "target_repository": "Shtenco/synergy_app_family",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:007",
+      "source_node_id": "github-repo:1371974932",
+      "target_node_id": "github-repo:1371942189",
+      "source_repository": "Shtenco/synergy_apps",
+      "target_repository": "Shtenco/synergy_messenger",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:008",
+      "source_node_id": "github-repo:1371974932",
+      "target_node_id": "github-repo:1318145141",
+      "source_repository": "Shtenco/synergy_apps",
+      "target_repository": "Shtenco/synergychain.github.io",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:009",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1357102715",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/print_money_synergychain",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:010",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1378708908",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_2chain_qe",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:011",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1341358637",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_blochain_budget",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:012",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1317824815",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_chain",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:013",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1366684382",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_chain_print_money",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:014",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1364848219",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_graph_print_money",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:015",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1351534269",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_metachain",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:016",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1380118593",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_qe",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:017",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1331946228",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_usds",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:018",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1310793915",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_ai_financial_system",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:019",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1180497488",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_cashero",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:020",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1336911571",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_eurasian",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:021",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1336912141",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_matrix_sota",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:022",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1317622231",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_pay_system",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:023",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1362541171",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/dlp_solver",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:024",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1317273998",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synegy_ai_compress",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:025",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1368875919",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_gguf_compress",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:026",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1351698135",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:027",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1341273955",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_net",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:028",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1391275828",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_post_quantum_radio",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:029",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1350374084",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_qr_compress",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:030",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1368537298",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_shhts",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:031",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1368539352",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_shttps",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:032",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1165635662",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_turbo_linux",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:033",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1387121392",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_agentic_ai_economy",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:034",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1343965302",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_agi_autopilot",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:035",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1167196077",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_agi_olga",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:036",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1168739656",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_ai_coder",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:037",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1368484353",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_ai_company",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:038",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1181574900",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_ai_language",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:039",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1370636640",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_gllm_nexus",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:040",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1341273613",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_nexus_science_agent",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:041",
+      "source_node_id": "github-repo:1341273343",
+      "target_node_id": "github-repo:1371974932",
+      "source_repository": "Shtenco/synergy_system",
+      "target_repository": "Shtenco/synergy_apps",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:042",
+      "source_node_id": "github-repo:1341273343",
+      "target_node_id": "github-repo:1390438988",
+      "source_repository": "Shtenco/synergy_system",
+      "target_repository": "Shtenco/synergy_megaproject",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:043",
+      "source_node_id": "github-repo:1341273343",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synergy_system",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:044",
+      "source_node_id": "github-repo:1341273343",
+      "target_node_id": "github-repo:1359110009",
+      "source_repository": "Shtenco/synergy_system",
+      "target_repository": "Shtenco/synergy_project",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:045",
+      "source_node_id": "github-repo:1390438988",
+      "target_node_id": "github-repo:1293271223",
+      "source_repository": "Shtenco/synergy_megaproject",
+      "target_repository": "Shtenco/synergy_binary_quantum_theory",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:046",
+      "source_node_id": "github-repo:1390438988",
+      "target_node_id": "github-repo:1377447162",
+      "source_repository": "Shtenco/synergy_megaproject",
+      "target_repository": "Shtenco/synergy_epstein_network",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:047",
+      "source_node_id": "github-repo:1390438988",
+      "target_node_id": "github-repo:1327916781",
+      "source_repository": "Shtenco/synergy_megaproject",
+      "target_repository": "Shtenco/synergy_cold_nuclear",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:048",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1091998611",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/3D_bars_market_structure",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:049",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1091968186",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:050",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1091983056",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:051",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1091992955",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/global_liquidity_dataminer",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:052",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1165602026",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/midas_lite",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:053",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1098247138",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:054",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:937796740",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/quantum-trading_metatrader5",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:055",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1091973987",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:056",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376377980",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_adaptive_engine",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:057",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1373708585",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_agi_trader",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:058",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376377703",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_ai_investment_committee",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:059",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1168765679",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_ai_trade_terminal",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:060",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1316045651",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_algotrading_graph_system",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:061",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1364435985",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_crypto_pump",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:062",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376377201",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_market_graph",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:063",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376377837",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_market_maker",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:064",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376378125",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_marketvision",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:065",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1151919657",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_midas_ai_trading_system",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:066",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376377374",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_midas_institutional",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:067",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376376805",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_quantlab",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:068",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376377560",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_relative_value",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:069",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376376981",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_riskguard",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:070",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376378295",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_trademux",
+      "relation": "ARCHITECTURAL_PARENT",
+      "status": "DOCUMENTED",
+      "authority_transfer": false,
+      "contract_id": null,
+      "evidence_paths": [
+        "registry/SYNERGY_REPOSITORIES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:071",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376376805",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_quantlab",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.portfolio-decision/v1",
+      "evidence_paths": [
+        "contracts/schemas/trading-portfolio-decision-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:072",
+      "source_node_id": "github-repo:1376376805",
+      "target_node_id": "github-repo:1376376981",
+      "source_repository": "Shtenco/synergy_quantlab",
+      "target_repository": "Shtenco/synergy_riskguard",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.validation-decision/v1",
+      "evidence_paths": [
+        "contracts/schemas/trading-validation-decision-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:073",
+      "source_node_id": "github-repo:1376376981",
+      "target_node_id": "github-repo:1376378295",
+      "source_repository": "Shtenco/synergy_riskguard",
+      "target_repository": "Shtenco/synergy_trademux",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.risk-decision/v1",
+      "evidence_paths": [
+        "contracts/schemas/trading-risk-decision-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:074",
+      "source_node_id": "github-repo:1376378295",
+      "target_node_id": "github-repo:1317622231",
+      "source_repository": "Shtenco/synergy_trademux",
+      "target_repository": "Shtenco/synergy_pay_system",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.execution-result/v1",
+      "evidence_paths": [
+        "contracts/schemas/trading-execution-result-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:075",
+      "source_node_id": "github-repo:1317622231",
+      "target_node_id": "github-repo:1336910945",
+      "source_repository": "Shtenco/synergy_pay_system",
+      "target_repository": "Shtenco/synergy_financial_os",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.settlement.evidence/v1",
+      "evidence_paths": [
+        "contracts/schemas/settlement-evidence-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:076",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1317641638",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_ai_blockchain",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.accounting.recognition/v1",
+      "evidence_paths": [
+        "contracts/schemas/accounting-recognition-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:077",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1371974932",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_apps",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.accounting.recognition/v1",
+      "evidence_paths": [
+        "contracts/schemas/accounting-recognition-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:078",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1351534269",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_metachain",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trust.commitment/v1",
+      "evidence_paths": [
+        "contracts/schemas/trust-commitment-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:079",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1371974932",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_apps",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trust.commitment/v1",
+      "evidence_paths": [
+        "contracts/schemas/trust-commitment-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:080",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.ai.proposal/v1",
+      "evidence_paths": [
+        "contracts/schemas/ai-proposal-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:081",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1341273613",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_nexus_science_agent",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.ai.proposal/v1",
+      "evidence_paths": [
+        "contracts/schemas/ai-proposal-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:082",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1336911571",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_eurasian",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.ai.proposal/v1",
+      "evidence_paths": [
+        "contracts/schemas/ai-proposal-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:083",
+      "source_node_id": "github-repo:1341273613",
+      "target_node_id": "github-repo:1390438988",
+      "source_repository": "Shtenco/synergy_nexus_science_agent",
+      "target_repository": "Shtenco/synergy_megaproject",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.science.evidence-package/v1",
+      "evidence_paths": [
+        "contracts/schemas/science-evidence-package-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:084",
+      "source_node_id": "github-repo:1181574900",
+      "target_node_id": "github-repo:1168739656",
+      "source_repository": "Shtenco/synergy_ai_language",
+      "target_repository": "Shtenco/synergy_ai_coder",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.engineering.requirement-trace/v1",
+      "evidence_paths": [
+        "contracts/schemas/engineering-requirement-trace-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:085",
+      "source_node_id": "github-repo:1168739656",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synergy_ai_coder",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.engineering.change-evidence/v1",
+      "evidence_paths": [
+        "contracts/schemas/engineering-change-evidence-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:086",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1165635662",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_turbo_linux",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.runtime.node-manifest/v1",
+      "evidence_paths": [
+        "contracts/schemas/runtime-node-manifest-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:087",
+      "source_node_id": "github-repo:1341273955",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synergy_net",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.transport.evidence/v1",
+      "evidence_paths": [
+        "contracts/schemas/transport-evidence-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:088",
+      "source_node_id": "github-repo:1341273955",
+      "target_node_id": "github-repo:1317641638",
+      "source_repository": "Shtenco/synergy_net",
+      "target_repository": "Shtenco/synergy_ai_blockchain",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.transport.evidence/v1",
+      "evidence_paths": [
+        "contracts/schemas/transport-evidence-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:089",
+      "source_node_id": "github-repo:1317273998",
+      "target_node_id": "github-repo:1341273955",
+      "source_repository": "Shtenco/synegy_ai_compress",
+      "target_repository": "Shtenco/synergy_net",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.archive.evidence/v1",
+      "evidence_paths": [
+        "contracts/schemas/archive-evidence-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:090",
+      "source_node_id": "github-repo:1317273998",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synegy_ai_compress",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.archive.evidence/v1",
+      "evidence_paths": [
+        "contracts/schemas/archive-evidence-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:091",
+      "source_node_id": "github-repo:1341272872",
+      "target_node_id": "github-repo:1376376805",
+      "source_repository": "Shtenco/synergy_midas_ai",
+      "target_repository": "Shtenco/synergy_quantlab",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.portfolio-decision/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_midas_ai:contracts/portfolio_decision_v1.py",
+        "Shtenco/synergy_quantlab:src/synergy_quantlab/synergy_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:092",
+      "source_node_id": "github-repo:1376376805",
+      "target_node_id": "github-repo:1376376981",
+      "source_repository": "Shtenco/synergy_quantlab",
+      "target_repository": "Shtenco/synergy_riskguard",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.validation-decision/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_quantlab:src/synergy_quantlab/synergy_contracts.py",
+        "Shtenco/synergy_riskguard:src/synergy_riskguard/synergy_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:093",
+      "source_node_id": "github-repo:1376376981",
+      "target_node_id": "github-repo:1376378295",
+      "source_repository": "Shtenco/synergy_riskguard",
+      "target_repository": "Shtenco/synergy_trademux",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.risk-decision/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_riskguard:src/synergy_riskguard/synergy_contracts.py",
+        "Shtenco/synergy_trademux:src/synergy_trademux/synergy_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:094",
+      "source_node_id": "github-repo:1376378295",
+      "target_node_id": "github-repo:1317622231",
+      "source_repository": "Shtenco/synergy_trademux",
+      "target_repository": "Shtenco/synergy_pay_system",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.execution-result/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_trademux:src/synergy_trademux/synergy_contracts.py",
+        "Shtenco/synergy_pay_system:src/synergy_pay/synergy_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:095",
+      "source_node_id": "github-repo:1317622231",
+      "target_node_id": "github-repo:1336910945",
+      "source_repository": "Shtenco/synergy_pay_system",
+      "target_repository": "Shtenco/synergy_financial_os",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.settlement.evidence/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_pay_system:src/synergy_pay/synergy_contracts.py",
+        "Shtenco/synergy_financial_os:contracts/accounting_recognition_v1.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:096",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1317641638",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_ai_blockchain",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.accounting.recognition/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_financial_os:contracts/accounting_recognition_v1.py",
+        "Shtenco/synergy_ai_blockchain:src/domain_commitment.rs"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:097",
+      "source_node_id": "github-repo:1336911571",
+      "target_node_id": "github-repo:1359110009",
+      "source_repository": "Shtenco/synergy_eurasian",
+      "target_repository": "Shtenco/synergy_project",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.economy.project-proposal/v1",
+      "evidence_paths": [
+        "contracts/schemas/economy-project-proposal-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:098",
+      "source_node_id": "github-repo:1359110009",
+      "target_node_id": "github-repo:1317622231",
+      "source_repository": "Shtenco/synergy_project",
+      "target_repository": "Shtenco/synergy_pay_system",
+      "relation": "CONTRACT_FLOW",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.economy.funding-authorization/v1",
+      "evidence_paths": [
+        "contracts/schemas/economy-funding-authorization-v1.schema.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": false
+    },
+    {
+      "edge_id": "governance:099",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.ai.proposal/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_agi_nexus:contracts/ai_proposal_v1.py",
+        "Shtenco/synergy_midas_ai:contracts/nexus_advisory_v1.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:100",
+      "source_node_id": "github-repo:1336911571",
+      "target_node_id": "github-repo:1359110009",
+      "source_repository": "Shtenco/synergy_eurasian",
+      "target_repository": "Shtenco/synergy_project",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.economy.project-proposal/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_eurasian:interfaces/synergy_contracts.py",
+        "Shtenco/synergy_project:contracts/capital_governance_v1.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:101",
+      "source_node_id": "github-repo:1359110009",
+      "target_node_id": "github-repo:1317622231",
+      "source_repository": "Shtenco/synergy_project",
+      "target_repository": "Shtenco/synergy_pay_system",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.economy.funding-authorization/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_project:contracts/capital_governance_v1.py",
+        "Shtenco/synergy_pay_system:src/synergy_pay/synergy_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:102",
+      "source_node_id": "github-repo:1317273998",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synegy_ai_compress",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.archive.evidence/v1",
+      "evidence_paths": [
+        "Shtenco/synegy_ai_compress:compression_lab/synergy_contracts.py",
+        "Shtenco/synergy_meta_os:runtime/archive_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:103",
+      "source_node_id": "github-repo:1336910945",
+      "target_node_id": "github-repo:1371974932",
+      "source_repository": "Shtenco/synergy_financial_os",
+      "target_repository": "Shtenco/synergy_apps",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.accounting.recognition/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_financial_os:contracts/accounting_recognition_v1.py",
+        "Shtenco/synergy_apps:runtime/read_models.py",
+        "Shtenco/synergy_apps:tests/test_read_models.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:104",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1351534269",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_metachain",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trust.commitment/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_ai_blockchain:src/federation_contracts.rs",
+        "Shtenco/synergy_ai_blockchain:src/lib_v2.rs",
+        "Shtenco/synergy_metachain:runtime/trust_contracts.py",
+        "Shtenco/synergy_metachain:tests/test_trust_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:105",
+      "source_node_id": "github-repo:1317641638",
+      "target_node_id": "github-repo:1371974932",
+      "source_repository": "Shtenco/synergy_ai_blockchain",
+      "target_repository": "Shtenco/synergy_apps",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trust.commitment/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_ai_blockchain:src/federation_contracts.rs",
+        "Shtenco/synergy_ai_blockchain:src/lib_v2.rs",
+        "Shtenco/synergy_apps:runtime/read_models.py",
+        "Shtenco/synergy_apps:tests/test_read_models.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:106",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1341273613",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_nexus_science_agent",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.ai.proposal/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_agi_nexus:contracts/ai_proposal_v1.py",
+        "Shtenco/synergy_nexus_science_agent:contracts/science_contracts.py",
+        "Shtenco/synergy_nexus_science_agent:tests/test_science_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:107",
+      "source_node_id": "github-repo:1341271800",
+      "target_node_id": "github-repo:1336911571",
+      "source_repository": "Shtenco/synergy_agi_nexus",
+      "target_repository": "Shtenco/synergy_eurasian",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.ai.proposal/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_agi_nexus:contracts/ai_proposal_v1.py",
+        "Shtenco/synergy_eurasian:interfaces/ai_contracts.py",
+        "Shtenco/synergy_eurasian:tests/test_ai_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:108",
+      "source_node_id": "github-repo:1341273613",
+      "target_node_id": "github-repo:1390438988",
+      "source_repository": "Shtenco/synergy_nexus_science_agent",
+      "target_repository": "Shtenco/synergy_megaproject",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.science.evidence-package/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_nexus_science_agent:contracts/science_contracts.py",
+        "Shtenco/synergy_nexus_science_agent:tests/test_science_contracts.py",
+        "Shtenco/synergy_megaproject:tools/science_contracts.py",
+        "Shtenco/synergy_megaproject:tests/test_science_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:109",
+      "source_node_id": "github-repo:1181574900",
+      "target_node_id": "github-repo:1168739656",
+      "source_repository": "Shtenco/synergy_ai_language",
+      "target_repository": "Shtenco/synergy_ai_coder",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.engineering.requirement-trace/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_ai_language:src/ai_language/synergy_contracts.py",
+        "Shtenco/synergy_ai_coder:runtime/contracts.py",
+        "Shtenco/synergy_ai_coder:tests/test_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:110",
+      "source_node_id": "github-repo:1168739656",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synergy_ai_coder",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.engineering.change-evidence/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_ai_coder:runtime/contracts.py",
+        "Shtenco/synergy_ai_coder:tests/test_contracts.py",
+        "Shtenco/synergy_meta_os:runtime/change_contracts.py",
+        "Shtenco/synergy_meta_os:tests/test_change_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:111",
+      "source_node_id": "github-repo:1341275176",
+      "target_node_id": "github-repo:1165635662",
+      "source_repository": "Shtenco/synergy_meta_os",
+      "target_repository": "Shtenco/synergy_turbo_linux",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.runtime.node-manifest/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_meta_os:runtime/synergy_contracts.py",
+        "Shtenco/synergy_turbo_linux:turbo_orchestrator/synergy_contracts.py",
+        "Shtenco/synergy_turbo_linux:tests/test_synergy_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:112",
+      "source_node_id": "github-repo:1341273955",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synergy_net",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.transport.evidence/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_net:runtime/synergy_contracts.py",
+        "Shtenco/synergy_net:tests/test_synergy_contracts.py",
+        "Shtenco/synergy_meta_os:runtime/transport_contracts.py",
+        "Shtenco/synergy_meta_os:tests/test_transport_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:113",
+      "source_node_id": "github-repo:1341273955",
+      "target_node_id": "github-repo:1317641638",
+      "source_repository": "Shtenco/synergy_net",
+      "target_repository": "Shtenco/synergy_ai_blockchain",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.transport.evidence/v1",
+      "evidence_paths": [
+        "Shtenco/synergy_net:runtime/synergy_contracts.py",
+        "Shtenco/synergy_net:tests/test_synergy_contracts.py",
+        "Shtenco/synergy_ai_blockchain:src/federation_contracts.rs",
+        "Shtenco/synergy_ai_blockchain:src/lib_v2.rs"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:114",
+      "source_node_id": "github-repo:1317273998",
+      "target_node_id": "github-repo:1341273955",
+      "source_repository": "Shtenco/synegy_ai_compress",
+      "target_repository": "Shtenco/synergy_net",
+      "relation": "RUNTIME_DEPENDENCY",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.archive.evidence/v1",
+      "evidence_paths": [
+        "Shtenco/synegy_ai_compress:compression_lab/synergy_contracts.py",
+        "Shtenco/synergy_net:runtime/synergy_contracts.py",
+        "Shtenco/synergy_net:tests/test_synergy_contracts.py"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:115",
+      "source_node_id": "github-repo:1376378125",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_marketvision",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.market-features/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:116",
+      "source_node_id": "github-repo:1376377980",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_adaptive_engine",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.market-regime/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:117",
+      "source_node_id": "github-repo:1376377201",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_market_graph",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.fair-value/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:118",
+      "source_node_id": "github-repo:1376377837",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_market_maker",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.liquidity-quote/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:119",
+      "source_node_id": "github-repo:1376377703",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_ai_investment_committee",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.investment-thesis/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:120",
+      "source_node_id": "github-repo:1376377374",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_midas_institutional",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.institutional-assessment/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:121",
+      "source_node_id": "github-repo:1364435985",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_crypto_pump",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.crypto-anomaly-score/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:122",
+      "source_node_id": "github-repo:1378708908",
+      "target_node_id": "github-repo:1336910945",
+      "source_repository": "Shtenco/synergy_2chain_qe",
+      "target_repository": "Shtenco/synergy_financial_os",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.economy.bridge-health/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:123",
+      "source_node_id": "github-repo:1341358637",
+      "target_node_id": "github-repo:1317641638",
+      "source_repository": "Shtenco/synergy_blochain_budget",
+      "target_repository": "Shtenco/synergy_ai_blockchain",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.economy.budget-proof/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:124",
+      "source_node_id": "github-repo:1310793915",
+      "target_node_id": "github-repo:1336910945",
+      "source_repository": "Shtenco/synergy_ai_financial_system",
+      "target_repository": "Shtenco/synergy_financial_os",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.economy.scenario-evidence/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:125",
+      "source_node_id": "github-repo:1376377560",
+      "target_node_id": "github-repo:1341272872",
+      "source_repository": "Shtenco/synergy_relative_value",
+      "target_repository": "Shtenco/synergy_midas_ai",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.trading.relative-value-signal/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:126",
+      "source_node_id": "github-repo:1387121392",
+      "target_node_id": "github-repo:1341271800",
+      "source_repository": "Shtenco/synergy_agentic_ai_economy",
+      "target_repository": "Shtenco/synergy_agi_nexus",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.agent.economy-simulation/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:127",
+      "source_node_id": "github-repo:1362541171",
+      "target_node_id": "github-repo:1341273613",
+      "source_repository": "Shtenco/dlp_solver",
+      "target_repository": "Shtenco/synergy_nexus_science_agent",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.science.constraint-benchmark/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:128",
+      "source_node_id": "github-repo:1327916781",
+      "target_node_id": "github-repo:1341273613",
+      "source_repository": "Shtenco/synergy_cold_nuclear",
+      "target_repository": "Shtenco/synergy_nexus_science_agent",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.science.model-consistency/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:129",
+      "source_node_id": "github-repo:1350374084",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synergy_qr_compress",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.archive.benchmark-evidence/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:130",
+      "source_node_id": "github-repo:1351698135",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synergy_motherboard_xpu_xml",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.runtime.hardware-model/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:131",
+      "source_node_id": "github-repo:1293271223",
+      "target_node_id": "github-repo:1341273613",
+      "source_repository": "Shtenco/synergy_binary_quantum_theory",
+      "target_repository": "Shtenco/synergy_nexus_science_agent",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.science.quantum-reference-control/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:132",
+      "source_node_id": "github-repo:1364848219",
+      "target_node_id": "github-repo:1336910945",
+      "source_repository": "Shtenco/synergy_graph_print_money",
+      "target_repository": "Shtenco/synergy_financial_os",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.economy.monetary-simulation/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:133",
+      "source_node_id": "github-repo:1377447162",
+      "target_node_id": "github-repo:1341273613",
+      "source_repository": "Shtenco/synergy_epstein_network",
+      "target_repository": "Shtenco/synergy_nexus_science_agent",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.science.provenance-graph/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:134",
+      "source_node_id": "github-repo:1167196077",
+      "target_node_id": "github-repo:1341271800",
+      "source_repository": "Shtenco/synergy_agi_olga",
+      "target_repository": "Shtenco/synergy_agi_nexus",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.ai.benchmark-suite/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:135",
+      "source_node_id": "github-repo:1344028054",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/synergy_app",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.app.store-source-evidence/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    },
+    {
+      "edge_id": "governance:136",
+      "source_node_id": "github-repo:1227851612",
+      "target_node_id": "github-repo:1341275176",
+      "source_repository": "Shtenco/sinergy_super_app",
+      "target_repository": "Shtenco/synergy_meta_os",
+      "relation": "RUNTIME_CONTRACT",
+      "status": "ADAPTER_IMPLEMENTED",
+      "authority_transfer": false,
+      "contract_id": "synergy.app.superapp-surface/v1",
+      "evidence_paths": [
+        "registry/CONTRACT_REGISTRY.json",
+        "registry/REPOSITORY_INTERFACES.json"
+      ],
+      "evidence_path_semantics": "Registry-provided path references; not independently blob-pinned in this projection.",
+      "in_m5_required_scope": true
+    }
+  ]
+}
