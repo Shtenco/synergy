@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-11-25",
+  "inventory": {
+    "source": "GitHub owner affiliation endpoint",
+    "returned": 100,
+    "unique_provider_ids": 100,
+    "endpoint_page_limit": 100,
+    "complete_beyond_limit": false
+  },
+  "registry_snapshot": {
+    "repository_count": 92,
+    "observed_at": "2026-11-20",
+    "missing_from_snapshot": 8,
+    "missing_names": [
+      "synergy_agent_long_term_memory",
+      "synergy_ai_browser-",
+      "tiimeweb_synergy_exactly_once_delivery",
+      "timeweb_synergy_agent_long_term_memory",
+      "timeweb_synergy_ai_infrastructure_agent",
+      "timeweb_synergy_backtest_oos_lab",
+      "timeweb_synergy_benchmark_statistics",
+      "timeweb_synergy_binary_neural_networks"
+    ]
+  },
+  "audit": {
+    "registry_records_present": 92,
+    "inventory_only_records": 8,
+    "source_code_reviewed_in_this_pass": 0,
+    "source_code_audited_total": 0,
+    "verified_runtime_edges": 0,
+    "registry_declared_candidate_edges": 109,
+    "verified_contracts": 0
+  },
+  "completion_percentages": {
+    "inventory_with_provider_id": 100,
+    "repository_source_audit": 0,
+    "edge_verification": 0,
+    "contract_verification": 0
+  },
+  "interpretation": "Inventory completeness is limited to the 100 records returned by the current owner-list endpoint. This is not proof that the account contains exactly 100 or 112 repositories."
+}
