@@ -30,13 +30,13 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 31,
-    "source_code_audited_total": 31,
+    "source_code_reviewed_in_this_pass": 34,
+    "source_code_audited_total": 34,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 36,
+    "readme_reviewed_in_this_pass": 40,
     "source_code_reviewed_repository_names": [
       "synergy_ai_browser-",
       "tiimeweb_synergy_exactly_once_delivery",
@@ -68,14 +68,18 @@
       "synergy_ai_workspace",
       "synergy_relative_value",
       "synergy_adaptive_engine",
-      "synergy_midas_institutional"
+      "synergy_midas_institutional",
+      "sinergy_super_app",
+      "synergy_app",
+      "synergy_apps"
     ],
     "stub_only_repository_names": [
       "synergy_agent_long_term_memory",
       "synergy_ai_company",
       "synergy_agi_autopilot",
       "synergy_messenger",
-      "synergy_algotrading_graph_system"
+      "synergy_algotrading_graph_system",
+      "sinergy_app"
     ],
     "existing_governance_registry": {
       "repository": "Shtenco/synergy_system",
@@ -109,7 +113,7 @@
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 27.68,
+    "repository_source_audit": 30.36,
     "edge_verification": 0,
     "contract_verification": 0
   },
