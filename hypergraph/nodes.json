@@ -568,15 +568,19 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "agents",
-        "reasoning",
-        "orchestration"
+        "requirement-to-repository-trace",
+        "change-evidence-contract",
+        "sha256-artifact-identity",
+        "approval-gated-check-status"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_agi_nexus"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "This is not a complete autonomous coding agent, code execution environment or repository orchestration runtime.",
+        "Commit SHA validation checks format only; it does not fetch/verify that commit exists in the named repository."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -584,6 +588,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1168739656",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+        "audited_at": "2026-11-25",
+        "scope": "README, engineering evidence contract and tests"
       }
     },
     {
@@ -1048,14 +1058,13 @@
       "category": "apps-interface",
       "maturity": "HARDENED_ALPHA",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "client-ui",
-        "control-plane",
-        "messaging"
-      ],
+      "capabilities": [],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Main branch does not substantiate the claimed messenger runtime; branch/tag code must be separately audited before reuse.",
+        "No cryptographic implementation or P2P messaging behavior is verified by this main-branch snapshot."
+      ],
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1063,6 +1072,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1371942189",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+        "audited_at": "2026-11-25",
+        "scope": "README, package manifest and complete main-branch tree"
       }
     },
     {
@@ -1584,14 +1599,19 @@
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "UNVERIFIED",
       "capabilities": [
-        "local-workspace-design",
-        "task-lead-finance-ui"
+        "localhost-control-plane",
+        "sqlite-wal-task-lead-audit-store",
+        "policy-limited-local-workflow",
+        "capital-import-provenance",
+        "explicit-human-approval"
       ],
       "declared_dependencies": [],
       "risks": [
-        "current main contains README only; desktop release and GUI E2E not confirmed"
+        "Release branch README says Windows installer and GUI E2E are not confirmed; not a production desktop release.",
+        "No tenant separation in the inspected local schema; not a public multi-tenant SaaS backend.",
+        "Main branch is README-only; branch code must not be described as merged main functionality."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "branch_only_prototype",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1599,6 +1619,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1428810995",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "branch_only_prototype",
+        "commit": "5483f61106e626267c521cf64be8eaeb82448fba",
+        "audited_at": "2026-11-25",
+        "scope": "main README plus release/v1.0-desktop-rc local service, orchestrator and capital engine"
       }
     },
     {
@@ -2965,11 +2991,7 @@
       "category": "agi-agentic",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "agents",
-        "reasoning",
-        "orchestration"
-      ],
+      "capabilities": [],
       "declared_dependencies": [
         "Shtenco/synergy_agi_nexus",
         "Shtenco/synergy_agentic_ai_economy",
@@ -2979,9 +3001,9 @@
         "Shtenco/dlp_solver"
       ],
       "risks": [
-        "no-executable-runtime-confirmed"
+        "No DAG planner, agent runtime, execution engine or integration is implemented on main."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2989,6 +3011,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1343965302",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "65433bca107e823ebe1223646601541bb86b5d0d",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
       }
     },
     {
