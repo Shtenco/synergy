@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 56,
-  "source_code_reviewed_count": 49,
+  "audited_repository_count": 60,
+  "source_code_reviewed_count": 52,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -2078,6 +2078,198 @@
       ],
       "repository": "Shtenco/quantum-trading_metatrader5",
       "commit_url": "https://github.com/Shtenco/quantum-trading_metatrader5/commit/a0ec14a8f10c2b26668664c0626ab63bce7094eb",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_language",
+      "commit": "64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
+      "status": "source_reviewed_limited",
+      "scope": "README, requirement-to-change trace, source-indexed agent, compiler, command runner and tests",
+      "capabilities": [
+        "requirement-traceability",
+        "ast-symbol-call-graph",
+        "multi-target-code-scaffold",
+        "workspace-file-policy",
+        "approval-gated-tool-runner"
+      ],
+      "findings": [
+        "SemanticTrace creates REQ-linked intent/repository/change/impact graphs and records tool actions; AST extraction is bounded and does not execute source.",
+        "Workspace file APIs restrict paths to workspace and hide common secret-like filenames; run_command blocks shell operators and selected destructive shells/commands.",
+        "Compiler emits Python/C/Rust/Solidity/Kotlin from instruction strings; Python uses repr, but C/Rust/Solidity/Kotlin generators interpolate action/target directly into string literals without language-specific escaping.",
+        "execute_python_file and Workspace.run_command use subprocess with no OS sandbox, namespace, filesystem isolation or network egress control; approval and command filters are not a sandbox.",
+        "SemanticTrace.record truncates the first output line but does not redact credential patterns, despite its docstring saying raw credentials are not persisted."
+      ],
+      "limitations": [
+        "No target-language compilation or sandboxed execution is demonstrated for generated C/Rust/Solidity/Kotlin.",
+        "Auto-approval bypasses interactive approval; commands run with the user's OS permissions after filtering.",
+        "File-name secret filters do not identify arbitrary secrets embedded in ordinary config/source files."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "22089615c6731e5448cea4e982a3a1d97d0cfac3"
+        },
+        {
+          "path": "src/ai_language/agent.py",
+          "blob_sha": "b239d2156df5e1a68da9d923a6a6f299c940af42"
+        },
+        {
+          "path": "src/ai_language/semantic_trace.py",
+          "blob_sha": "41201c30fd3789ab6fb54396e4ecf14e783dd26a"
+        },
+        {
+          "path": "src/ai_language/pipeline.py",
+          "blob_sha": "dee0346db3ffac0b0ec25cb0192064a33aeec4a7"
+        },
+        {
+          "path": "src/ai_language/compiler.py",
+          "blob_sha": "460b9e0436f08afaaf7eba5eafc83d0b05c3cdbd"
+        },
+        {
+          "path": "tests/test_semantic_trace.py",
+          "blob_sha": "a511a83760c57a2062c460f5e890e44ca43da653"
+        },
+        {
+          "path": "tests/test_compiler.py",
+          "blob_sha": "ec0efd96276ce760a411873ba27f70b7cc7116a9"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_language",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_language/commit/64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_gllm_nexus",
+      "commit": "a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
+      "status": "branch_only_prototype",
+      "scope": "unified-v3-generalization-first branch README, graph-native runtime, MoE router and frozen benchmark artifacts; main is docs/registry only",
+      "capabilities": [
+        "typed-hypergraph-cognition",
+        "persistent-graph-memory",
+        "temporal-causal-reasoning",
+        "russian-neural-graph-compiler",
+        "recurrent-graph-cortex",
+        "policy-gated-moe-routing"
+      ],
+      "findings": [
+        "Default main branch is documentation/benchmark registry; substantive Python runtime is on unified-v3-generalization-first at commit a18fa5a (2026-09-20).",
+        "Branch runtime has typed GraphCard/TypedHyperEdge, persistent DynamicHyperGraph, mutation/retraction, temporal/causal reasoning, graph recurrent core, Russian neural compiler and AnswerGraph semantic guard.",
+        "NEXUS-MOE-B1 archived one-shot result reports learned MoE 94.44%, best single 33.33%, naive 59.17%, oracle 95.83%; negative transfer 1.45%. Result file says sealed_before_evaluation=true and test_open_count=1.",
+        "FTX1 README says exact BLIND generator/corpus/gold are sealed outside development branch and should be opened exactly once after preblind freeze."
+      ],
+      "limitations": [
+        "Runtime is not in default main; branch is dated 2026-09-20 and must be explicitly pinned before use.",
+        "Benchmark results are synthetic/frozen protocol results, not real-world general intelligence or production performance.",
+        "FTX1 sealed blind contents were not accessed; no claim about its final score is made.",
+        "The graph-native runtime is a distinct cognitive hypergraph, not a substitute for the repository-dependency/evidence graph."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "572d513c8e6c6c00b81e4d45b815cf68c4c28434"
+        },
+        {
+          "path": "src/nexus_gllm/model.py",
+          "blob_sha": "c07329c2a7822e76dea8f519020c91b68db195f7"
+        },
+        {
+          "path": "src/nexus_gllm/unified_v3/moe/capability_router.py",
+          "blob_sha": "e360ab4d745bfcb2ca6c8763fec9b5715a43836e"
+        },
+        {
+          "path": "benchmarks/moe_b1/evaluate.py",
+          "blob_sha": "31bad6d2d41a6a627294aedb77fca38d6f7a6424"
+        },
+        {
+          "path": "benchmarks/moe_b1/results/NEXUS_MOE_B1_ONE_SHOT_RESULT.json",
+          "blob_sha": "ed8555898ec4ef4d646a17f610c70cb963d2792b"
+        },
+        {
+          "path": "benchmarks/ftx1/README.md",
+          "blob_sha": "ef87d2d4e887051f0664ccdd2b259c487278cf4e"
+        }
+      ],
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "commit_url": "https://github.com/Shtenco/synergy_gllm_nexus/commit/a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_llm_rwkv",
+      "commit": "dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
+      "status": "branch_only_prototype",
+      "scope": "feature/rwkv7-original-weights branch quantizer, Triton low-bit matvec, evaluation harness and tests; main contains workflow/docs",
+      "capabilities": [
+        "weight-only-mixed-bit-quantization",
+        "bitpacked-storage",
+        "optional-low-rank-residual",
+        "triton-lowbit-matvec"
+      ],
+      "findings": [
+        "Default main does not contain the quantizer/runtime; experimental implementation is on feature/rwkv7-original-weights at commit dfc163f.",
+        "Quantizer preserves tensor names/shapes and samples weight reconstruction MSE; README explicitly says this is not activation/task-loss sensitivity and full 2.9B checkpoint has not been validated.",
+        "Triton backend implements one-CTA-per-row matvec, rejects N>65536, and is not a full RWKV generation runtime.",
+        "Tests cover synthetic arrays and a tiny synthetic checkpoint pipeline; no real checkpoint, full-model perplexity or target-GPU performance was measured."
+      ],
+      "limitations": [
+        "The 700 MB target is a disk archive budget; restored FP16 checkpoint expands and requires original RWKV runner.",
+        "Full model quality parity, long-context drift and speed are unmeasured; quantization can degrade quality, especially 1-bit.",
+        "Branch implementation is experimental and not in default main."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "bff1c2b66b5f07b76b54fca25ec09f9cd3104e41"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/README.md",
+          "blob_sha": "3b164092c0341357b94214ada6fe1a1eac630e60"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/quant.py",
+          "blob_sha": "7851a07133155726bd708cb644ddbaffa24d3806"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/cuda_lowbit.py",
+          "blob_sha": "2a4e4ec2eea9f4e3fcf76b72259adbadfde45320"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/real_model_eval.py",
+          "blob_sha": "28cda74470c842582253e265840d37e398eb4098"
+        },
+        {
+          "path": "rwkv7_extreme_quant_v1/tests/test_quant.py",
+          "blob_sha": "f9f6f085059bf66f5ec96a3f3ef80511530d7aa7"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_llm_rwkv/commit/dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_matrix_sota",
+      "commit": "1d84bddfec16998c9300c984ca50980c1f946d56",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "Main branch contains README and documentation only; it assigns five legacy debt/credit mechanisms and 42 legacy code units for high-risk rewrite review.",
+        "No runtime, schemas, tests, CI, simulator, accounting fixtures, maturity ladder or expected-loss model exists in main."
+      ],
+      "limitations": [
+        "Do not count as a debt/credit runtime or financial OS component until executable implementation and property tests exist."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "87476c9dc819919b5335d15cf292a2dbec4f103a"
+        },
+        {
+          "path": "docs/LEGACY_DISTILLATION_V2_OWNER.md",
+          "blob_sha": "(document path confirmed in tree; blob SHA not separately fetched)"
+        }
+      ],
+      "repository": "Shtenco/synergy_matrix_sota",
+      "commit_url": "https://github.com/Shtenco/synergy_matrix_sota/commit/1d84bddfec16998c9300c984ca50980c1f946d56",
       "audited_at": "2026-11-25"
     }
   ]
