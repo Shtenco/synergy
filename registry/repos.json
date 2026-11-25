@@ -810,7 +810,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1376377374"
+      "github_repository_id": "1376377374",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "6eb09ac2b2c72bf7ec6aaa26390136f9013efd58",
+      "source_audit_scope": "README, bounded assessment core, contract and tests"
     },
     {
       "name": "synergy_blochain_budget",
@@ -918,7 +921,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1376377980"
+      "github_repository_id": "1376377980",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "f0622aa6d60be3c47d2ac752b9ef686e6dac6c5b",
+      "source_audit_scope": "README, adaptive ensemble core and market-regime contract"
     },
     {
       "name": "synergy_app_family",
@@ -1660,7 +1666,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1316045651"
+      "github_repository_id": "1316045651",
+      "audit_status": "stub_confirmed",
+      "source_audit_commit": "5fb87036fe833a6e7939654469766c86f92533ee",
+      "source_audit_scope": "README and complete main-branch tree"
     },
     {
       "name": "synergy_long_term_harness",
@@ -2106,7 +2115,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1376377560"
+      "github_repository_id": "1376377560",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "ef2a44ea4d5551dccbda4b24d9b0a0d06d9a6a77",
+      "source_audit_scope": "README, OLS pair core and non-authorizing signal contract"
     },
     {
       "name": "synergy_agi_autopilot",
