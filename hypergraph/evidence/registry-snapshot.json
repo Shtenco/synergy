@@ -1,0 +1,13 @@
+{
+  "evidence_id": "EVID-REGISTRY-001",
+  "source_uri": "https://github.com/Shtenco/synergy/blob/main/registry/repos.json",
+  "source_revision": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+  "observed_at": "2026-11-25",
+  "content_sha_git_blob": "3efd2dd6471066bf74fc7a5a6b7e9758764f48c7",
+  "source_claim": "The umbrella registry contains 92 repository records generated on 2026-11-20.",
+  "limitations": [
+    "This snapshot is stale relative to the live owner listing.",
+    "It contains declared dependencies, not source-level proof.",
+    "Git blob SHA is an object identifier, not a SHA-256 digest of each evidence span."
+  ]
+}
