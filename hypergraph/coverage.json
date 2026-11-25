@@ -12,36 +12,30 @@
     "unique_provider_ids": 112,
     "owner_affiliation_crosscheck": 100,
     "complete_for_search_result_set": true,
-    "account_total_claim": "112 unique repositories returned by the owner-scoped search; no additional result page after page 2."
-  },
-  "registry_snapshot": {
-    "prior_count": 92,
-    "current_count": 100,
-    "added_to_registry": 12,
-    "added_names": [
-      "timeweb_synergy_retry_storm_lab",
-      "timeweb_synergy_llm_memory_lab",
-      "timeweb_synergy_ml_validation_lab",
-      "timeweb_synergy_python_cpp_performance",
-      "timeweb_synergy_fault_injection_lab",
-      "timeweb_synergy_codebase_intelligence",
-      "timeweb_synergy_service_recovery",
-      "timeweb_synergy_rag_quality_cost",
-      "timeweb_synergy_multiagent_benchmark",
-      "timeweb_synergy_cpu_language_model",
-      "timeweb_synergy_cpu_gpu_cost_benchmark",
-      "timeweb_synergy_rnn_transformer_benchmark"
+    "account_total_claim": "112 unique repositories returned by the owner-scoped search; no additional result page after page 2.",
+    "search_page_counts": [
+      100,
+      12
     ]
   },
+  "registry_snapshot": {
+    "original_main_snapshot_count": 92,
+    "pre_update_pr_branch_count": 100,
+    "final_registry_count": 112,
+    "added_since_original_snapshot": 20,
+    "added_since_pr_branch_snapshot": 12,
+    "inventory_only_relative_to_pr_branch": 12
+  },
   "audit": {
-    "registry_records_present": 92,
+    "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
     "source_code_reviewed_in_this_pass": 0,
     "source_code_audited_total": 0,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
-    "verified_contracts": 0
+    "verified_contracts": 0,
+    "repositories_added_since_original_main_snapshot": 20
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
