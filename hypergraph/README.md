@@ -5,7 +5,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Eighty-four README reviews and seventy-one limited source reviews, each pinned to the exact inspected commit and file blob SHA (67 main-branch reviews and 4 branch-only prototype reviews).
+- Eighty-nine README reviews and seventy-four limited source reviews, each pinned to the exact inspected commit and file blob SHA (70 main-branch reviews and 4 branch-only prototype reviews).
 - 39 proposed shared cores and domain routers are kept separate from actual repositories; 27 have first-pass overlap assessments and 12 remain unaudited.
 - Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
@@ -19,7 +19,7 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 - `gaps.json`: unresolved source audit, security, evidence, contract and overlap gaps.
 - `proposals.json`: 39 proposed components, not actual repositories.
 - `evidence/registry-snapshot.json`: provenance for the original 92-record registry snapshot.
-- `evidence/repository-audits.json`: 84 commit-pinned repository reviews with selected source/test blob references.
+- `evidence/repository-audits.json`: 89 commit-pinned repository reviews with selected source/test blob references.
 - `contracts/`: requirements for versioned OpenAPI, JSON Schema, AsyncAPI and contract tests.
 - `security/RESPONSE_PLAYBOOK.md`: credential rotation and live-execution containment without secret material.
 - `schemas/`: JSON Schema contracts for repository nodes and n-ary hyperedges.
@@ -78,6 +78,10 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 40. `synergistic_economics` has a deterministic double-entry research kernel, but its ledger and event store are in-memory rather than durable.
 41. `synergy_ai_economic` main is documentation-only; the executable V8 prototype is on a research branch and the README labels the economic twin as a synthetic-assumption research model.
 42. `synergy_eurasian` main contains a static federation audit, but its README reports main-branch test collection fails because V6.6 imports are absent; feature branches are not the release branch.
+43. `synergy_trademux` has a paper-routing adapter and typed execution contracts, but no proven broker fills or durable idempotency; quote/fill numeric validation needs hardening.
+44. `synergy_project` is a capital-governance dossier and payload contract, not an authorization runtime; non-finite Decimal amounts require rejection and its PR #2 inventory count is stale.
+45. `synergy_complex_matrix_multiplication` contains substantial operator research, but the V9 pipeline is explicitly incomplete and some runners depend on local checkpoints/dynamic source execution.
+46. `synergy_app_family` and `synergy_post_quantum_radio` are specification-only on main.
 
 ## Evidence rules
 1. Repository names are not identities; GitHub repository IDs are.
@@ -90,14 +94,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 84/112 (75.00%).
-- Source reviewed (limited scope): 71/112 (63.39%): 67 main-branch reviews and 4 branch-only prototype reviews.
+- README reviewed: 89/112 (79.46%).
+- Source reviewed (limited scope): 74/112 (66.07%): 70 main-branch reviews and 4 branch-only prototype reviews.
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
 ## Next audit sequence
 1. Close the browser subresource network-policy finding.
-2. Audit the remaining 41 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+2. Audit the remaining 38 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
 3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
 5. Run capability-overlap analysis before proposing any new repository.
