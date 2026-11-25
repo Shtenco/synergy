@@ -20,7 +20,7 @@
           "repository": "Shtenco/synergy_system",
           "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "config/repository_federation_v2.yaml",
@@ -36,7 +36,7 @@
           "repository": "Shtenco/synergy_long_term_harness",
           "commit": "bdc26413d886fb026bdc22c3a6f76dc2df873a1c",
           "audit_status": "branch_only_prototype",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "synergy_harness/memory.py",
@@ -49,10 +49,6 @@
             {
               "path": "tests/test_missions.py",
               "blob_sha": "a5384cf36e95db99cb2a8aa8ff4d4e127b4b3da8"
-            },
-            {
-              "path": "tests/test_memory.py",
-              "blob_sha": "ce6543692a1ed832dae048e4b19592aba0a35a63"
             }
           ]
         },
@@ -60,7 +56,7 @@
           "repository": "Shtenco/timeweb_synergy_fault_injection_lab",
           "commit": "53585459cefbc3956f1601feaaece80d68da7170",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "experiments/fault_injection_lab.py",
@@ -73,10 +69,6 @@
             {
               "path": "docs/EVIDENCE_SCOPE.md",
               "blob_sha": "15bf515234bffcfa092d93136164322e23911142"
-            },
-            {
-              "path": "results/17/fault_injection_results.json",
-              "blob_sha": "bf266927734a9be8e02421c94693e60bbf9ab5a4"
             }
           ]
         },
@@ -84,7 +76,7 @@
           "repository": "Shtenco/timeweb_synergy_retry_storm_lab",
           "commit": "b601f79db253751e4c7d99d671420bf95d840d3c",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/retrystorm/policies.py",
@@ -97,10 +89,6 @@
             {
               "path": "results/experiment_18/benchmark.json",
               "blob_sha": "9579cbd7f941bde9dba35bbc1d0ac0a5b30e9c31"
-            },
-            {
-              "path": "docs/RESULTS_CARD.md",
-              "blob_sha": "ad2e16edb51c0ac67d13481eec25b607c7998032"
             }
           ]
         },
@@ -108,7 +96,7 @@
           "repository": "Shtenco/timeweb_synergy_service_recovery",
           "commit": "d350865dbf602c3b518ec0a1f6e183e6d0438d80",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "prototypes/scenarios/article11.py",
@@ -136,7 +124,7 @@
           "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
           "commit": "8c23bcb41199f89bb9afb57ca5e0766787154fd7",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "synergy_memory/dependency_intelligence.py",
@@ -149,10 +137,6 @@
             {
               "path": "synergy_memory/contract_intelligence.py",
               "blob_sha": "a8b5b1eabcbad27ed96a48ad54a227de1711c44a"
-            },
-            {
-              "path": "tests/test_dependency_intelligence.py",
-              "blob_sha": "9473b5a2e40635d08d4375f5c39c9f1efa555aaf"
             }
           ]
         },
@@ -160,7 +144,7 @@
           "repository": "Shtenco/synergy_agent_long_term_memory",
           "commit": "04e666038ac7cd0652ea77ce4de2c2f1ec706dcf",
           "audit_status": "branch_only_prototype",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "synergy_agent_long_term_memory/runtime.py",
@@ -173,10 +157,6 @@
             {
               "path": "synergy_agent_long_term_memory/contracts.py",
               "blob_sha": "5616dc9f41e069ab2ee234134f846f0ed737c43e"
-            },
-            {
-              "path": "tests/test_runtime.py",
-              "blob_sha": "2baa455098d7eb477ef7d83d82af6a9754230182"
             }
           ]
         },
@@ -184,7 +164,7 @@
           "repository": "Shtenco/timeweb_synergy_agent_long_term_memory",
           "commit": "2bcb732a92fe8053c18f913edb1318ac21ef3620",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "experiments/sqlite_cross_session.py",
@@ -206,7 +186,7 @@
           "repository": "Shtenco/synergy_ai_browser-",
           "commit": "e69ce454424c4d29da54dc649d7379ec24b9bef0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "synergy_browser/browser.py",
@@ -233,7 +213,7 @@
           "repository": "Shtenco/synergy_system",
           "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "config/repository_federation_v2.yaml",
@@ -249,7 +229,7 @@
           "repository": "Shtenco/tiimeweb_synergy_exactly_once_delivery",
           "commit": "35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "experiments/exactly_once_lab.py",
@@ -277,7 +257,7 @@
           "repository": "Shtenco/timeweb_synergy_benchmark_statistics",
           "commit": "9d6db41edc273189fe4795b3803f98181cff02be",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "prototypes/real_experiments/article15_measured_uncertainty.py",
@@ -297,7 +277,7 @@
           "repository": "Shtenco/timeweb_synergy_ml_validation_lab",
           "commit": "ba93cabf4d2ec15886c7c524669c851f546e73d7",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "prototypes/real_experiments/article08_group_leakage.py",
@@ -313,7 +293,7 @@
           "repository": "Shtenco/synergy_quantlab",
           "commit": "57ee40a6879c0db6550b573aacadad27347fb2db",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_quantlab/core.py",
@@ -341,7 +321,7 @@
           "repository": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
           "commit": "5c25ddb97838a1d14e40dc9458847743fa94191f",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "prototypes/scenarios/article12.py",
@@ -357,7 +337,7 @@
           "repository": "Shtenco/synergy_computing_topology",
           "commit": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/v4/v4_correctness_harness.py",
@@ -377,7 +357,7 @@
           "repository": "Shtenco/shtenco_micro_ai",
           "commit": "5c9f0b341f59b1567c2d5109fbfeee17f357d196",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "scripts/download_model.py",
@@ -409,7 +389,7 @@
           "repository": "Shtenco/synergy_quantlab",
           "commit": "57ee40a6879c0db6550b573aacadad27347fb2db",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_quantlab/core.py",
@@ -425,7 +405,7 @@
           "repository": "Shtenco/timeweb_synergy_backtest_oos_lab",
           "commit": "1c116e449ca992f5bccbaa70ae98d65972a08e69",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "prototypes/scenarios/article10.py",
@@ -437,7 +417,7 @@
           "repository": "Shtenco/synergy_market_graph",
           "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_market_graph/core.py",
@@ -450,10 +430,6 @@
             {
               "path": "src/synergy_market_graph/enterprise/resilience.py",
               "blob_sha": "270cddef43bf4cc7f492e616f15e617d5300dae5"
-            },
-            {
-              "path": "src/synergy_market_graph/enterprise/auth.py",
-              "blob_sha": "5c3fd87354d95c6a9226a8edc537bf66975e6bd1"
             }
           ]
         }
@@ -472,7 +448,7 @@
           "repository": "Shtenco/synergy_meta_api",
           "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_meta_api/policy.py",
@@ -488,7 +464,7 @@
           "repository": "Shtenco/synergy_agi_autopilot",
           "commit": "337ca67415f2856da4d31ffa03517e6f40cfdab2",
           "audit_status": "branch_only_prototype",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "crates/autopilot-policy/src/lib.rs",
@@ -501,10 +477,6 @@
             {
               "path": "crates/autopilot-plugins/src/lib.rs",
               "blob_sha": "7361107cd23be686d3a2a0371650402ae9446b0a"
-            },
-            {
-              "path": "crates/autopilot-verification/src/lib.rs",
-              "blob_sha": "4ffee5ef9c1bbf72bbd52de93cc757a05a9921ad"
             }
           ]
         }
@@ -524,7 +496,7 @@
           "repository": "Shtenco/synergy_market_graph",
           "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_market_graph/core.py",
@@ -537,10 +509,6 @@
             {
               "path": "src/synergy_market_graph/enterprise/resilience.py",
               "blob_sha": "270cddef43bf4cc7f492e616f15e617d5300dae5"
-            },
-            {
-              "path": "src/synergy_market_graph/enterprise/auth.py",
-              "blob_sha": "5c3fd87354d95c6a9226a8edc537bf66975e6bd1"
             }
           ]
         },
@@ -548,7 +516,7 @@
           "repository": "Shtenco/synergy_agentic_ai_economy",
           "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "agent_economy/synergy_contracts.py",
@@ -561,10 +529,6 @@
             {
               "path": "agent_economy/closed_engine.py",
               "blob_sha": "e856d6cfd430d19b951552308b68788616012625"
-            },
-            {
-              "path": "tests/test_closed_agent_economy.py",
-              "blob_sha": "e7680063f725b5ac064f88dfd8ed37d731fcd3de"
             }
           ]
         },
@@ -572,7 +536,7 @@
           "repository": "Shtenco/synergy_lead_search_engline",
           "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "lead_os/core.py",
@@ -585,10 +549,6 @@
             {
               "path": "lead_os/crm.py",
               "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
-            },
-            {
-              "path": "tests/test_lead_os.py",
-              "blob_sha": "0c5d9b2f9d0298e575ecfe3b229056f5e1e666f2"
             }
           ]
         }
@@ -607,7 +567,7 @@
           "repository": "Shtenco/synergy_meta_api",
           "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_meta_api/policy.py",
@@ -623,7 +583,7 @@
           "repository": "Shtenco/synergy_system",
           "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "config/repository_federation_v2.yaml",
@@ -651,7 +611,7 @@
           "repository": "Shtenco/synergy_market_graph",
           "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_market_graph/core.py",
@@ -664,10 +624,6 @@
             {
               "path": "src/synergy_market_graph/enterprise/resilience.py",
               "blob_sha": "270cddef43bf4cc7f492e616f15e617d5300dae5"
-            },
-            {
-              "path": "src/synergy_market_graph/enterprise/auth.py",
-              "blob_sha": "5c3fd87354d95c6a9226a8edc537bf66975e6bd1"
             }
           ]
         },
@@ -675,7 +631,7 @@
           "repository": "Shtenco/synergy_algotrading_graph_system",
           "commit": "5fb87036fe833a6e7939654469766c86f92533ee",
           "audit_status": "stub_confirmed",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "README.md",
@@ -687,7 +643,7 @@
           "repository": "Shtenco/synergy_relative_value",
           "commit": "ef2a44ea4d5551dccbda4b24d9b0a0d06d9a6a77",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_relative_value/core.py",
@@ -715,7 +671,7 @@
           "repository": "Shtenco/synergy_system",
           "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "config/repository_federation_v2.yaml",
@@ -731,7 +687,7 @@
           "repository": "Shtenco/synergy_meta_api",
           "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_meta_api/policy.py",
@@ -747,7 +703,7 @@
           "repository": "Shtenco/synergy_meta_os",
           "commit": "cf3d18ca533ca9824794ad48e208b41b0fdf4475",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "runtime/orchestrator.py",
@@ -773,7 +729,7 @@
           "repository": "Shtenco/synergy_agentic_ai_economy",
           "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "agent_economy/synergy_contracts.py",
@@ -786,10 +742,6 @@
             {
               "path": "agent_economy/closed_engine.py",
               "blob_sha": "e856d6cfd430d19b951552308b68788616012625"
-            },
-            {
-              "path": "tests/test_closed_agent_economy.py",
-              "blob_sha": "e7680063f725b5ac064f88dfd8ed37d731fcd3de"
             }
           ]
         }
@@ -809,7 +761,7 @@
           "repository": "Shtenco/synergy_apps",
           "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "runtime/read_models.py",
@@ -825,7 +777,7 @@
           "repository": "Shtenco/synergy_agentic_ai_economy",
           "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "agent_economy/synergy_contracts.py",
@@ -838,10 +790,6 @@
             {
               "path": "agent_economy/closed_engine.py",
               "blob_sha": "e856d6cfd430d19b951552308b68788616012625"
-            },
-            {
-              "path": "tests/test_closed_agent_economy.py",
-              "blob_sha": "e7680063f725b5ac064f88dfd8ed37d731fcd3de"
             }
           ]
         },
@@ -849,7 +797,7 @@
           "repository": "Shtenco/synergy_ai_company",
           "commit": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
           "audit_status": "branch_only_prototype",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "auto_company_v2/README_AUTO_COMPANY_2.md",
@@ -862,10 +810,6 @@
             {
               "path": "auto_company_v2/company_v2/core/risk.py",
               "blob_sha": "46a1a267b9e13c970057388e397be7fd31997ecf"
-            },
-            {
-              "path": "auto_company_v2/company_v2/core/store.py",
-              "blob_sha": "b5dc11f54f6eea72f99a47185f6f6df6c983c11c"
             }
           ]
         }
@@ -885,7 +829,7 @@
           "repository": "Shtenco/synergy_financial_os",
           "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "contracts/accounting_recognition_v1.py",
@@ -901,7 +845,7 @@
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_pay/live_readiness.py",
@@ -914,10 +858,6 @@
             {
               "path": "src/synergy_pay/provider_registry.py",
               "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
-            },
-            {
-              "path": "src/synergy_pay/settlement.py",
-              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
             }
           ]
         },
@@ -925,7 +865,7 @@
           "repository": "Shtenco/synergy_agentic_ai_economy",
           "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "agent_economy/synergy_contracts.py",
@@ -938,10 +878,6 @@
             {
               "path": "agent_economy/closed_engine.py",
               "blob_sha": "e856d6cfd430d19b951552308b68788616012625"
-            },
-            {
-              "path": "tests/test_closed_agent_economy.py",
-              "blob_sha": "e7680063f725b5ac064f88dfd8ed37d731fcd3de"
             }
           ]
         }
@@ -959,7 +895,7 @@
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_pay/live_readiness.py",
@@ -972,10 +908,6 @@
             {
               "path": "src/synergy_pay/provider_registry.py",
               "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
-            },
-            {
-              "path": "src/synergy_pay/settlement.py",
-              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
             }
           ]
         }
@@ -994,7 +926,7 @@
           "repository": "Shtenco/synergy_financial_os",
           "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "contracts/accounting_recognition_v1.py",
@@ -1010,7 +942,7 @@
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_pay/live_readiness.py",
@@ -1023,10 +955,6 @@
             {
               "path": "src/synergy_pay/provider_registry.py",
               "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
-            },
-            {
-              "path": "src/synergy_pay/settlement.py",
-              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
             }
           ]
         }
@@ -1044,7 +972,7 @@
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_pay/live_readiness.py",
@@ -1057,10 +985,6 @@
             {
               "path": "src/synergy_pay/provider_registry.py",
               "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
-            },
-            {
-              "path": "src/synergy_pay/settlement.py",
-              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
             }
           ]
         }
@@ -1078,7 +1002,7 @@
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_pay/live_readiness.py",
@@ -1091,10 +1015,6 @@
             {
               "path": "src/synergy_pay/provider_registry.py",
               "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
-            },
-            {
-              "path": "src/synergy_pay/settlement.py",
-              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
             }
           ]
         }
@@ -1114,7 +1034,7 @@
           "repository": "Shtenco/synergy_riskguard",
           "commit": "e5ba5eab09e42ac25c695740bdc464ef3617c33c",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_riskguard/core.py",
@@ -1127,10 +1047,6 @@
             {
               "path": "src/synergy_riskguard/enterprise/service.py",
               "blob_sha": "b17d2a56bf448abab8a5e0dd6b557b05d6723535"
-            },
-            {
-              "path": "tests/test_core.py",
-              "blob_sha": "4b9a83ad1c5bc80846276c61ead5458f325553d9"
             }
           ]
         },
@@ -1138,7 +1054,7 @@
           "repository": "Shtenco/synergy_midas_ai",
           "commit": "90e2ec74cfb031eb34c9ec2a05d19a6eb0abe87e",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "contracts/portfolio_decision_v1.py",
@@ -1154,7 +1070,7 @@
           "repository": "Shtenco/synergy_financial_os",
           "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "contracts/accounting_recognition_v1.py",
@@ -1181,7 +1097,7 @@
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_pay/live_readiness.py",
@@ -1194,10 +1110,6 @@
             {
               "path": "src/synergy_pay/provider_registry.py",
               "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
-            },
-            {
-              "path": "src/synergy_pay/settlement.py",
-              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
             }
           ]
         },
@@ -1205,7 +1117,7 @@
           "repository": "Shtenco/synergy_financial_os",
           "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "contracts/accounting_recognition_v1.py",
@@ -1232,7 +1144,7 @@
           "repository": "Shtenco/synergy_lead_search_engline",
           "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "lead_os/core.py",
@@ -1245,10 +1157,6 @@
             {
               "path": "lead_os/crm.py",
               "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
-            },
-            {
-              "path": "tests/test_lead_os.py",
-              "blob_sha": "0c5d9b2f9d0298e575ecfe3b229056f5e1e666f2"
             }
           ]
         },
@@ -1256,7 +1164,7 @@
           "repository": "Shtenco/synergy_maps",
           "commit": "576871d1aee78273ec97a45cacca49de8873cf51",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/regions/eaeu.ts",
@@ -1283,7 +1191,7 @@
           "repository": "Shtenco/synergy_lead_search_engline",
           "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "lead_os/core.py",
@@ -1296,10 +1204,6 @@
             {
               "path": "lead_os/crm.py",
               "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
-            },
-            {
-              "path": "tests/test_lead_os.py",
-              "blob_sha": "0c5d9b2f9d0298e575ecfe3b229056f5e1e666f2"
             }
           ]
         },
@@ -1307,7 +1211,7 @@
           "repository": "Shtenco/synergy_ai_company",
           "commit": "2b0c3561fe4980f7cc02c25a9b19564af3e971bc",
           "audit_status": "branch_only_prototype",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "auto_company_v2/README_AUTO_COMPANY_2.md",
@@ -1320,10 +1224,6 @@
             {
               "path": "auto_company_v2/company_v2/core/risk.py",
               "blob_sha": "46a1a267b9e13c970057388e397be7fd31997ecf"
-            },
-            {
-              "path": "auto_company_v2/company_v2/core/store.py",
-              "blob_sha": "b5dc11f54f6eea72f99a47185f6f6df6c983c11c"
             }
           ]
         }
@@ -1342,7 +1242,7 @@
           "repository": "Shtenco/synergy_market_graph",
           "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_market_graph/core.py",
@@ -1355,10 +1255,6 @@
             {
               "path": "src/synergy_market_graph/enterprise/resilience.py",
               "blob_sha": "270cddef43bf4cc7f492e616f15e617d5300dae5"
-            },
-            {
-              "path": "src/synergy_market_graph/enterprise/auth.py",
-              "blob_sha": "5c3fd87354d95c6a9226a8edc537bf66975e6bd1"
             }
           ]
         },
@@ -1366,7 +1262,7 @@
           "repository": "Shtenco/synergy_search_engline",
           "commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "sim/hardnav_multiplier_v2.py",
@@ -1394,7 +1290,7 @@
           "repository": "Shtenco/synergy_lead_search_engline",
           "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "lead_os/core.py",
@@ -1407,10 +1303,6 @@
             {
               "path": "lead_os/crm.py",
               "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
-            },
-            {
-              "path": "tests/test_lead_os.py",
-              "blob_sha": "0c5d9b2f9d0298e575ecfe3b229056f5e1e666f2"
             }
           ]
         },
@@ -1418,7 +1310,7 @@
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_pay/live_readiness.py",
@@ -1431,10 +1323,6 @@
             {
               "path": "src/synergy_pay/provider_registry.py",
               "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
-            },
-            {
-              "path": "src/synergy_pay/settlement.py",
-              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
             }
           ]
         },
@@ -1442,7 +1330,7 @@
           "repository": "Shtenco/synergy_market_graph",
           "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_market_graph/core.py",
@@ -1455,10 +1343,6 @@
             {
               "path": "src/synergy_market_graph/enterprise/resilience.py",
               "blob_sha": "270cddef43bf4cc7f492e616f15e617d5300dae5"
-            },
-            {
-              "path": "src/synergy_market_graph/enterprise/auth.py",
-              "blob_sha": "5c3fd87354d95c6a9226a8edc537bf66975e6bd1"
             }
           ]
         }
@@ -1477,7 +1361,7 @@
           "repository": "Shtenco/synergy_meta_api",
           "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_meta_api/policy.py",
@@ -1493,7 +1377,7 @@
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_pay/live_readiness.py",
@@ -1506,10 +1390,6 @@
             {
               "path": "src/synergy_pay/provider_registry.py",
               "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
-            },
-            {
-              "path": "src/synergy_pay/settlement.py",
-              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
             }
           ]
         }
@@ -1529,7 +1409,7 @@
           "repository": "Shtenco/synergy_gllm_nexus",
           "commit": "a18fa5a58fcd6d3e3bfb7bb7df0b092f13ff940c",
           "audit_status": "branch_only_prototype",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/nexus_gllm/model.py",
@@ -1542,10 +1422,6 @@
             {
               "path": "benchmarks/moe_b1/evaluate.py",
               "blob_sha": "31bad6d2d41a6a627294aedb77fca38d6f7a6424"
-            },
-            {
-              "path": "benchmarks/moe_b1/results/NEXUS_MOE_B1_ONE_SHOT_RESULT.json",
-              "blob_sha": "ed8555898ec4ef4d646a17f610c70cb963d2792b"
             }
           ]
         },
@@ -1553,7 +1429,7 @@
           "repository": "Shtenco/synergy_ai_llm_rwkv",
           "commit": "dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
           "audit_status": "branch_only_prototype",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "rwkv7_extreme_quant_v1/README.md",
@@ -1566,10 +1442,6 @@
             {
               "path": "rwkv7_extreme_quant_v1/cuda_lowbit.py",
               "blob_sha": "2a4e4ec2eea9f4e3fcf76b72259adbadfde45320"
-            },
-            {
-              "path": "rwkv7_extreme_quant_v1/real_model_eval.py",
-              "blob_sha": "28cda74470c842582253e265840d37e398eb4098"
             }
           ]
         },
@@ -1577,7 +1449,7 @@
           "repository": "Shtenco/synergy_ai_language",
           "commit": "64cb8c7196fe4adb3aa73f306ef943e8ab40b3c6",
           "audit_status": "source_reviewed_limited",
-          "evidence_scope": "Commit-pinned files already recorded in the repository audit ledger. Supports the bounded overlap/scope assessment only; does not assert production readiness or runtime integration.",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/ai_language/agent.py",
@@ -1590,10 +1462,6 @@
             {
               "path": "src/ai_language/pipeline.py",
               "blob_sha": "dee0346db3ffac0b0ec25cb0192064a33aeec4a7"
-            },
-            {
-              "path": "src/ai_language/compiler.py",
-              "blob_sha": "460b9e0436f08afaaf7eba5eafc83d0b05c3cdbd"
             }
           ]
         }
@@ -1611,20 +1479,28 @@
         {
           "repository": "Shtenco/synergy_system",
           "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "contracts/schemas/event-envelope-v1.schema.json",
-              "blob_sha": "4f04561d50fd57a3da7b5b6129b76ab5aa2f3dc0"
+              "path": "config/repository_federation_v2.yaml",
+              "blob_sha": "c17900cd8ea8ee0a9646e22c31afa3631577d766"
+            },
+            {
+              "path": "contracts/python/synergy_contracts_v1.py",
+              "blob_sha": "b306fa6b32eb115329c3daacdaa2d45e21a7b342"
             }
           ]
         },
         {
           "repository": "Shtenco/synergistic_economics",
           "commit": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "schemas/synergy-economy.schema.json",
-              "blob_sha": "9590cada856a883e3eebe4e7f253aa73b03cd317"
+              "path": "prototype/synergy_kernel.py",
+              "blob_sha": "9857dc0ac9b5bd4b25f28f108bcb331696441302"
             }
           ]
         }
@@ -1642,20 +1518,32 @@
         {
           "repository": "Shtenco/synergy_market_graph",
           "commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "src/synergy_market_graph/core.py",
               "blob_sha": "ad2b4d3d81f4f54ae85ad4b4be187534497a067f"
+            },
+            {
+              "path": "src/synergy_market_graph/synergy_contracts.py",
+              "blob_sha": "a426be3b0976c7d41d38acae82a6ef8b1e05e998"
+            },
+            {
+              "path": "src/synergy_market_graph/enterprise/resilience.py",
+              "blob_sha": "270cddef43bf4cc7f492e616f15e617d5300dae5"
             }
           ]
         },
         {
           "repository": "Shtenco/synergistic_economics",
           "commit": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "schemas/synergy-economy.schema.json",
-              "blob_sha": "9590cada856a883e3eebe4e7f253aa73b03cd317"
+              "path": "prototype/synergy_kernel.py",
+              "blob_sha": "9857dc0ac9b5bd4b25f28f108bcb331696441302"
             }
           ]
         }
@@ -1675,24 +1563,68 @@
         {
           "repository": "Shtenco/synergy_meta_api",
           "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "src/synergy_meta_api/workflow.py",
-              "blob_sha": "930a8e934cc3f5a8fa9272cd6cafe5362581647c"
+              "path": "src/synergy_meta_api/policy.py",
+              "blob_sha": "b518f8ef2beedea02b88c9c31731c9b8276befa2"
+            },
+            {
+              "path": "src/synergy_meta_api/execution_api.py",
+              "blob_sha": "7d8306ae28b999810ae6bf65a24e03077a505888"
             }
           ]
         },
         {
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "src/synergy_pay/api.py",
-              "blob_sha": "05b7306aa5822870f6c67f0c02b51c3affdaf718"
+              "path": "src/synergy_pay/live_readiness.py",
+              "blob_sha": "84d8eb110de8e1799abe9a46550485d408bc8128"
             },
             {
-              "path": "src/synergy_pay/ledger.py",
-              "blob_sha": "865b3cd015ee481c88a2caa1f4b6c0991e9b0dfd"
+              "path": "src/synergy_pay/live_execution.py",
+              "blob_sha": "5aa0c35ad3b62ea10296a9f3aca409b665391b6e"
+            },
+            {
+              "path": "src/synergy_pay/provider_registry.py",
+              "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_financial_os",
+          "commit": "ee8a965a034d84e98e524e62e1ba74d43b2003dc",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
+          "files": [
+            {
+              "path": "contracts/accounting_recognition_v1.py",
+              "blob_sha": "c5a5a2f71e9a89c8d44ff3d3461c3b3f6af860be"
+            },
+            {
+              "path": "tests/test_accounting_recognition_contract.py",
+              "blob_sha": "8c02985093f90108089ef0386edd889ecccb5bac"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_system",
+          "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
+          "files": [
+            {
+              "path": "config/repository_federation_v2.yaml",
+              "blob_sha": "c17900cd8ea8ee0a9646e22c31afa3631577d766"
+            },
+            {
+              "path": "contracts/python/synergy_contracts_v1.py",
+              "blob_sha": "b306fa6b32eb115329c3daacdaa2d45e21a7b342"
             }
           ]
         }
@@ -1711,24 +1643,48 @@
         {
           "repository": "Shtenco/synergy_meta_api",
           "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "src/synergy_meta_api/registry_api.py",
-              "blob_sha": "05b5990b9d51342e8bbda26e9a8ae210c3fccb0b"
+              "path": "src/synergy_meta_api/policy.py",
+              "blob_sha": "b518f8ef2beedea02b88c9c31731c9b8276befa2"
             },
             {
-              "path": "src/synergy_meta_api/public_catalog.py",
-              "blob_sha": "3dd9ad580076c55c14b0d6c3a6251c9137e7848f"
+              "path": "src/synergy_meta_api/execution_api.py",
+              "blob_sha": "7d8306ae28b999810ae6bf65a24e03077a505888"
             }
           ]
         },
         {
           "repository": "Shtenco/synergy_agi_nexus",
-          "commit": "428984dcff1607d86d3f4b47519b30b45d7eb112",
+          "commit": "997dbe4934f3f114a36d34bc2b0a719eae1f6a6f",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "README.md",
-              "blob_sha": "428984dcff1607d86d3f4b47519b30b45d7eb112"
+              "path": "contracts/ai_proposal_v1.py",
+              "blob_sha": "dc3cf1b69d8159b33bc4a52d2975acfd117a41ab"
+            },
+            {
+              "path": "tests/test_ai_proposal_contract.py",
+              "blob_sha": "4479482b0fce26aa01397f8c2634f1bc56061d36"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_ai_coder",
+          "commit": "4ccdae38ff831d7b3f2e4e4872b593a5f58609e7",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
+          "files": [
+            {
+              "path": "runtime/contracts.py",
+              "blob_sha": "a192a19e115a946f96377066f4ba78162359a9c3"
+            },
+            {
+              "path": "tests/test_contracts.py",
+              "blob_sha": "5941addfe56fb621d96f146924214236646c2635"
             }
           ]
         }
@@ -1746,24 +1702,28 @@
         {
           "repository": "Shtenco/synergy_apps",
           "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
-            {
-              "path": "docs/superpowers/specs/2026-09-15-synergy-500-app-catalog-design.md",
-              "blob_sha": "6fb003279ed169bb3321c67cf4ef36e6e0f94341"
-            },
             {
               "path": "runtime/read_models.py",
               "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+            },
+            {
+              "path": "tests/test_read_models.py",
+              "blob_sha": "9f7b7f29975c9bb9686d4d3a842bb97d7ca441f8"
             }
           ]
         },
         {
           "repository": "Shtenco/synergy_app_family",
           "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+          "audit_status": "stub_confirmed",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "README.md",
-              "blob_sha": "c57e17c05c4f24daef8d1a04da8a7b5330fd81a1"
+              "path": "docs/SCIENTIFIC_DOSSIER_V3_2026.md",
+              "blob_sha": "9f737534d2dc528b5d1dc9d08b1f1d9400e9a72c"
             }
           ]
         }
@@ -1781,20 +1741,28 @@
         {
           "repository": "Shtenco/synergy_apps",
           "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "docs/superpowers/specs/2026-09-15-synergy-500-app-catalog-design.md",
-              "blob_sha": "6fb003279ed169bb3321c67cf4ef36e6e0f94341"
+              "path": "runtime/read_models.py",
+              "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+            },
+            {
+              "path": "tests/test_read_models.py",
+              "blob_sha": "9f7b7f29975c9bb9686d4d3a842bb97d7ca441f8"
             }
           ]
         },
         {
           "repository": "Shtenco/synergy_app_family",
           "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+          "audit_status": "stub_confirmed",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "README.md",
-              "blob_sha": "c57e17c05c4f24daef8d1a04da8a7b5330fd81a1"
+              "path": "docs/SCIENTIFIC_DOSSIER_V3_2026.md",
+              "blob_sha": "9f737534d2dc528b5d1dc9d08b1f1d9400e9a72c"
             }
           ]
         }
@@ -1812,24 +1780,32 @@
         {
           "repository": "Shtenco/synergy_meta_api",
           "commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "src/synergy_meta_api/public_catalog.py",
-              "blob_sha": "3dd9ad580076c55c14b0d6c3a6251c9137e7848f"
+              "path": "src/synergy_meta_api/policy.py",
+              "blob_sha": "b518f8ef2beedea02b88c9c31731c9b8276befa2"
             },
             {
-              "path": "src/synergy_meta_api/registry_api.py",
-              "blob_sha": "05b5990b9d51342e8bbda26e9a8ae210c3fccb0b"
+              "path": "src/synergy_meta_api/execution_api.py",
+              "blob_sha": "7d8306ae28b999810ae6bf65a24e03077a505888"
             }
           ]
         },
         {
           "repository": "Shtenco/synergy_apps",
           "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "docs/superpowers/specs/2026-09-15-synergy-500-app-catalog-design.md",
-              "blob_sha": "6fb003279ed169bb3321c67cf4ef36e6e0f94341"
+              "path": "runtime/read_models.py",
+              "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+            },
+            {
+              "path": "tests/test_read_models.py",
+              "blob_sha": "9f7b7f29975c9bb9686d4d3a842bb97d7ca441f8"
             }
           ]
         }
@@ -1848,14 +1824,56 @@
         {
           "repository": "Shtenco/synergy_lead_search_engline",
           "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "lead_os/core.py",
               "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
             },
             {
+              "path": "lead_os/api.py",
+              "blob_sha": "7b28abb05461ce491b67f2129d1a755000c0449f"
+            },
+            {
               "path": "lead_os/crm.py",
               "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_messenger",
+          "commit": "aab3f83e29013eab3437020afe8cefaede3bc154",
+          "audit_status": "branch_only_prototype",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
+          "files": [
+            {
+              "path": "src/v3/secure-messenger-core.js",
+              "blob_sha": "f95a4655f4e2cf3465e07cacf65cb630d7d093f9"
+            },
+            {
+              "path": "src/v3/crypto/ratchet/double-ratchet.js",
+              "blob_sha": "1464acb1d4f3736ddd9477d3ce1a987034ad0de7"
+            },
+            {
+              "path": "src/v3/security/ingress-security-guard.js",
+              "blob_sha": "b7e7511d683db5730f9d116051fbdc8bdb4c96da"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_apps",
+          "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
+          "files": [
+            {
+              "path": "runtime/read_models.py",
+              "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+            },
+            {
+              "path": "tests/test_read_models.py",
+              "blob_sha": "9f7b7f29975c9bb9686d4d3a842bb97d7ca441f8"
             }
           ]
         }
@@ -1873,20 +1891,36 @@
         {
           "repository": "Shtenco/synergy_search_engline",
           "commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "README.md",
-              "blob_sha": "2404d42ac0d753a5e168451c3973f4cba48fdd5c"
+              "path": "sim/hardnav_multiplier_v2.py",
+              "blob_sha": "489b5121d91d842897fedec088826d69718d7905"
+            },
+            {
+              "path": "docs/10_ASSUMPTIONS_AND_LIMITS.md",
+              "blob_sha": "7bb742379bbde8123328110089ea13b5b9794816"
             }
           ]
         },
         {
           "repository": "Shtenco/synergy_lead_search_engline",
           "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
               "path": "lead_os/core.py",
               "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
+            },
+            {
+              "path": "lead_os/api.py",
+              "blob_sha": "7b28abb05461ce491b67f2129d1a755000c0449f"
+            },
+            {
+              "path": "lead_os/crm.py",
+              "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
             }
           ]
         }
@@ -1904,14 +1938,36 @@
         {
           "repository": "Shtenco/synergy_pay_system",
           "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "src/synergy_pay/api.py",
-              "blob_sha": "05b7306aa5822870f6c67f0c02b51c3affdaf718"
+              "path": "src/synergy_pay/live_readiness.py",
+              "blob_sha": "84d8eb110de8e1799abe9a46550485d408bc8128"
             },
             {
-              "path": "src/synergy_pay/models.py",
-              "blob_sha": "832309be20cdd2eb5df4224e0218b8b97eb39ab4"
+              "path": "src/synergy_pay/live_execution.py",
+              "blob_sha": "5aa0c35ad3b62ea10296a9f3aca409b665391b6e"
+            },
+            {
+              "path": "src/synergy_pay/provider_registry.py",
+              "blob_sha": "7842a288bcc9b672cc0baec39e374f5c9ad48b3d"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_apps",
+          "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
+          "files": [
+            {
+              "path": "runtime/read_models.py",
+              "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+            },
+            {
+              "path": "tests/test_read_models.py",
+              "blob_sha": "9f7b7f29975c9bb9686d4d3a842bb97d7ca441f8"
             }
           ]
         }
@@ -1928,14 +1984,16 @@
         {
           "repository": "Shtenco/synergy_maps",
           "commit": "576871d1aee78273ec97a45cacca49de8873cf51",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
             {
-              "path": "src/main.ts",
-              "blob_sha": "e799b5d701046ae6be9c78d5a20cc6c7fc2ced8b"
+              "path": "src/regions/eaeu.ts",
+              "blob_sha": "e3e9c24155746997afc8e334fdaf98fbe91ffa83"
             },
             {
-              "path": "README.md",
-              "blob_sha": "0eb38b7916d9a4fd775982f5a35d764ed1323bbb"
+              "path": "scripts/audit_overture_coverage.py",
+              "blob_sha": "8083b62c590533b11478035fc9f0fc1a01ed13b8"
             }
           ]
         }
@@ -1953,14 +2011,36 @@
         {
           "repository": "Shtenco/synergy_lead_search_engline",
           "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
           "files": [
-            {
-              "path": "README.md",
-              "blob_sha": "b8fd0aeca7ed61a9fa49e892c36be3671b5dc583"
-            },
             {
               "path": "lead_os/core.py",
               "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
+            },
+            {
+              "path": "lead_os/api.py",
+              "blob_sha": "7b28abb05461ce491b67f2129d1a755000c0449f"
+            },
+            {
+              "path": "lead_os/crm.py",
+              "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_apps",
+          "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+          "audit_status": "source_reviewed_limited",
+          "evidence_scope": "Commit and blob pins are taken directly from the canonical repository audit ledger. They support a bounded overlap/scope review only; they do not assert production readiness, complete feature coverage or runtime integration.",
+          "files": [
+            {
+              "path": "runtime/read_models.py",
+              "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b"
+            },
+            {
+              "path": "tests/test_read_models.py",
+              "blob_sha": "9f7b7f29975c9bb9686d4d3a842bb97d7ca441f8"
             }
           ]
         }
