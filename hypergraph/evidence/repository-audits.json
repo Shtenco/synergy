@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 24,
-  "source_code_reviewed_count": 23,
+  "audited_repository_count": 28,
+  "source_code_reviewed_count": 26,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -910,6 +910,146 @@
       "commit_url": "https://github.com/Shtenco/synergy_riskguard/commit/e5ba5eab09e42ac25c695740bdc464ef3617c33c",
       "audited_at": "2026-11-25",
       "status": "source_reviewed_limited"
+    },
+    {
+      "name": "synergy_search_engline",
+      "commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+      "scope": "README, HardNAV multiplier simulation and assumptions/limits",
+      "status": "source_reviewed_limited",
+      "capabilities": [
+        "hardnav-multiplier-simulation",
+        "capacity-limited-edge-model"
+      ],
+      "findings": [
+        "Despite its name, main branch contains a deterministic HardNAV multiplier simulation and EVM lab baseline, not a general-purpose search engine or web index.",
+        "README labels outputs simulated and lists omitted stochastic edge decay, competition, missed fills, gas volatility, MEV distribution, bridge risk and latency."
+      ],
+      "limitations": [
+        "Do not assign this repository as the provider for classifieds, bank or real-estate search without separate implementation evidence."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "2404d42ac0d753a5e168451c3973f4cba48fdd5c"
+        },
+        {
+          "path": "sim/hardnav_multiplier_v2.py",
+          "blob_sha": "489b5121d91d842897fedec088826d69718d7905"
+        },
+        {
+          "path": "docs/10_ASSUMPTIONS_AND_LIMITS.md",
+          "blob_sha": "7bb742379bbde8123328110089ea13b5b9794816"
+        }
+      ],
+      "repository": "Shtenco/synergy_search_engline",
+      "commit_url": "https://github.com/Shtenco/synergy_search_engline/commit/8e3c6cd42c476cb900490c759774097f2c90dca2",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_lead_search_engline",
+      "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+      "scope": "README, SQLite/FTS5 lead store, token-protected API, CRM approval dispatcher and tests",
+      "status": "source_reviewed_limited",
+      "capabilities": [
+        "offline-real-estate-lead-store",
+        "fts5-search",
+        "rule-based-intent-candidates",
+        "human-review-audit",
+        "approval-gated-crm-outbox"
+      ],
+      "findings": [
+        "README labels V8 as offline candidate, not deployed lead discovery; scoring is an interpretable regex/rule baseline, not trained CatBoost.",
+        "Documents are stored in SQLite/FTS5; candidate signals never equal verified buyer; CRM outbox requires human review, documented lawful basis, contact opt-in and explicit approval.",
+        "API fails closed if LEAD_OS_API_TOKEN is missing/short; CRM dispatch requires approved outbox state and HTTPS webhook."
+      ],
+      "limitations": [
+        "No tenant_id isolation is present in inspected document/review/outbox schema; single operator token is not a multi-tenant authorization model.",
+        "No production deployment, external crawler or upgraded ML ranker is proven.",
+        "Configured CRM webhook checks HTTPS but does not enforce a fixed Bitrix24 host allowlist; outbound target is environment-controlled and should be hardened before hosting untrusted tenants."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "b8fd0aeca7ed61a9fa49e892c36be3671b5dc583"
+        },
+        {
+          "path": "lead_os/core.py",
+          "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
+        },
+        {
+          "path": "lead_os/api.py",
+          "blob_sha": "7b28abb05461ce491b67f2129d1a755000c0449f"
+        },
+        {
+          "path": "lead_os/crm.py",
+          "blob_sha": "9238ab72aa98334ea1e572421365ca2e0c8b22cf"
+        },
+        {
+          "path": "tests/test_lead_os.py",
+          "blob_sha": "0c5d9b2f9d0298e575ecfe3b229056f5e1e666f2"
+        }
+      ],
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "commit_url": "https://github.com/Shtenco/synergy_lead_search_engline/commit/5654e37fdc348ace7398a7104d54f52e6dbd6800",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_company",
+      "commit": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+      "scope": "README and complete repository tree",
+      "status": "stub_confirmed",
+      "capabilities": [],
+      "findings": [
+        "README explicitly labels the repository STUB/concept; tree contains README, docs and image assets only."
+      ],
+      "limitations": [
+        "No autonomous company runtime, agent role engine, process execution or integration is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "dcef01711df79f517101bdfca6d5a40a7358d681"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_company",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_company/commit/ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_maps",
+      "commit": "576871d1aee78273ec97a45cacca49de8873cf51",
+      "scope": "README, EAEU country registry and Overture tile coverage auditor",
+      "status": "source_reviewed_limited",
+      "capabilities": [
+        "cesium-global-globe-viewer",
+        "eaeu-country-boundary-subset",
+        "overture-tile-planning-and-audit"
+      ],
+      "findings": [
+        "Main branch has a CesiumJS global globe and EAEU country boundary subset, with country IDs and geometry validation tests.",
+        "Overture coverage auditor verifies raw tile artifact hashes, pinned release and run ledger; its output explicitly does not claim geographic completeness, authoritative borders, cross-tile deduplication or 3D Tiles publication."
+      ],
+      "limitations": [
+        "Not a detailed worldwide street/cadastral/3D map; higher-resolution L1-L4 layers remain planned or require external datasets.",
+        "No verified live integration with logistics, real-estate or enterprise routers was found in the inspected files."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "0eb38b7916d9a4fd775982f5a35d764ed1323bbb"
+        },
+        {
+          "path": "src/regions/eaeu.ts",
+          "blob_sha": "e3e9c24155746997afc8e334fdaf98fbe91ffa83"
+        },
+        {
+          "path": "scripts/audit_overture_coverage.py",
+          "blob_sha": "8083b62c590533b11478035fc9f0fc1a01ed13b8"
+        }
+      ],
+      "repository": "Shtenco/synergy_maps",
+      "commit_url": "https://github.com/Shtenco/synergy_maps/commit/576871d1aee78273ec97a45cacca49de8873cf51",
+      "audited_at": "2026-11-25"
     }
   ]
 }
