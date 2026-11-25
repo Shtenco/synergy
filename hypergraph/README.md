@@ -5,9 +5,9 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 ## Current snapshot
 - 112 repository nodes keyed by immutable GitHub repository IDs (100 search results on page 1, 12 on page 2).
 - 109 registry-declared `DEPENDS_ON` edges, all `candidate`; zero verified runtime edges.
-- Forty-eight README reviews and forty-one limited source reviews, each pinned to the exact main commit and file blob SHA.
+- Fifty-two README reviews and forty-five limited source reviews, each pinned to the exact main commit and file blob SHA.
 - 39 proposed shared cores and domain routers are kept separate from actual repositories; 26 have first-pass overlap assessments and 13 remain unaudited.
-- Six target architecture layers and fourteen candidate target relationships are documented separately from observed dependencies.
+- Six target architecture layers and twenty-eight candidate target relationships are documented separately from observed dependencies.
 
 ## Files
 - `nodes.json`: 112 repository nodes and per-repository audit status.
@@ -49,6 +49,9 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 18. `synergy_metachain` replay protection is process-local and does not verify chain proofs.
 19. `synergy_computing_topology` has archived correctness results, but kernel runtime on the current host was not tested.
 
+20. QuantLab is the validation authority; MIDAS AI is a target canonical advisory-contract layer; Market Maker and MarketVision are non-authorizing signal/feature producers.
+21. Market Maker quotes and MIDAS institutional assessments are not broker orders; canonical RiskGuard and Financial OS remain separate authorities.
+
 ## Evidence rules
 1. Repository names are not identities; GitHub repository IDs are.
 2. A registry dependency is a candidate edge, not proof of an import or runtime call.
@@ -60,14 +63,14 @@ Machine-readable repository inventory, evidence-aware dependency graph and targe
 
 ## Coverage
 - Inventory: 112/112 unique IDs returned by owner-scoped search.
-- README reviewed: 48/112 (42.86%).
-- Source reviewed (limited scope): 41/112 (36.61%).
+- README reviewed: 52/112 (46.43%).
+- Source reviewed (limited scope): 45/112 (40.18%).
 - Dependency edges verified: 0/109.
 - Cross-repository contracts verified: 0.
 
 ## Next audit sequence
 1. Close the browser subresource network-policy finding.
-2. Audit the remaining 71 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
+2. Audit the remaining 67 repositories in small batches: manifests, imports, API routes, event schemas, tests and workflows.
 3. Replace registry-only candidate edges with source-pinned evidence.
 4. Extract contracts and validate compatibility.
 5. Run capability-overlap analysis before proposing any new repository.
