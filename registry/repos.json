@@ -602,7 +602,10 @@
       ],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1428731702"
+      "github_repository_id": "1428731702",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+      "source_audit_scope": "README, deny-by-default policy and execution API"
     },
     {
       "name": "synergy_app",
@@ -1258,7 +1261,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1341273955"
+      "github_repository_id": "1341273955",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "84fbfb842be97e5c2195c30e7c4188e5af813001",
+      "source_audit_scope": "README, transport evidence contract and tests"
     },
     {
       "name": "synergy.github.io",
@@ -1547,7 +1553,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1387121392"
+      "github_repository_id": "1387121392",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+      "source_audit_scope": "README, economy simulation contract, ledger and closed-economy tests"
     },
     {
       "name": "synergy_pay_system",
@@ -1600,7 +1609,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1341271800"
+      "github_repository_id": "1341271800",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "997dbe4934f3f114a36d34bc2b0a719eae1f6a6f",
+      "source_audit_scope": "README, AI proposal contract and contract tests"
     },
     {
       "name": "synergy_algotrading_graph_system",
@@ -2014,7 +2026,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1341273343"
+      "github_repository_id": "1341273343",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+      "source_audit_scope": "README governance snapshot, federation config and typed event envelope"
     },
     {
       "name": "synergy_lead_search_engline",
@@ -2455,7 +2470,10 @@
         "Current sources index is keyed by URI rather than repository namespace; provenance collision risk",
         "No cross-repository memory contract or E2E integration is registered"
       ],
-      "github_repository_id": "1464742221"
+      "github_repository_id": "1464742221",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "8c23bcb41199f89bb9afb57ca5e0766787154fd7",
+      "source_audit_scope": "README, dependency AST scanner, cross-repository registry, contract intelligence, tests and security policy"
     },
     {
       "name": "timeweb_synergy_cpu_gpu_cost_benchmark",
@@ -2506,7 +2524,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1341275176"
+      "github_repository_id": "1341275176",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "cf3d18ca533ca9824794ad48e208b41b0fdf4475",
+      "source_audit_scope": "README, compatibility orchestrator and orchestrator tests"
     },
     {
       "name": "synergy_cold_nuclear",
@@ -2643,7 +2664,10 @@
       "risks": [],
       "default_branch": "main",
       "inventory_observed_at": "2026-11-25",
-      "github_repository_id": "1376377201"
+      "github_repository_id": "1376377201",
+      "audit_status": "source_reviewed_limited",
+      "source_audit_commit": "b38ed0fb94e0834244a88d863d19069bb33a62ba",
+      "source_audit_scope": "README, graph core, fair-value contract, enterprise resilience/auth and tests"
     },
     {
       "name": "synergy_ai_blockchain",
