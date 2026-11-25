@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 40,
-  "source_code_reviewed_count": 34,
+  "audited_repository_count": 44,
+  "source_code_reviewed_count": 38,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -1456,6 +1456,160 @@
       ],
       "repository": "Shtenco/synergy_apps",
       "commit_url": "https://github.com/Shtenco/synergy_apps/commit/7b3dec583964d26c0f2d326bb040f9166db9d793",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_chain",
+      "commit": "0f731f56c3f067095d3a2ff89f7e73bdc7365177",
+      "status": "source_reviewed_limited",
+      "scope": "README, packaged source boundary, QE V10 Solidity contracts and Foundry tests",
+      "capabilities": [
+        "packaged-growth-os-source-archive",
+        "static-pages-subset",
+        "evm-qe-v10-research-testbed"
+      ],
+      "findings": [
+        "Repository separates Node/web source archive, static GitHub Pages subset and QE V10 Solidity testbed as distinct evidence surfaces.",
+        "CI defines Node source validation and Foundry build/test; Pages deploys only the static public subset.",
+        "QE V10 tests use minimal custom test tokens, fixed DEX and local vault/debt contracts; tests assert NAV conservation and modeled fee loss."
+      ],
+      "limitations": [
+        "Source archive is not expanded in the repository; reproducibility depends on archive integrity and its internal lock/dependencies.",
+        "QE V10 custom tokens and bridge contracts are research fixtures, not production ERC20/bridge contracts.",
+        "Pages deployment cannot run backend sessions, CRM writes, vault or live model calls."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "833ac6455774203c66c049ad75755802230f72d0"
+        },
+        {
+          "path": "qe_v10/src/QEV10TwoElevator.sol",
+          "blob_sha": "896e2147647284f946398413bf666cef02dc46bf"
+        },
+        {
+          "path": "qe_v10/test/QEV10TwoElevator.t.sol",
+          "blob_sha": "9642ed2645b11e5924b2ded66077558ff411964b"
+        }
+      ],
+      "repository": "Shtenco/synergy_chain",
+      "commit_url": "https://github.com/Shtenco/synergy_chain/commit/0f731f56c3f067095d3a2ff89f7e73bdc7365177",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_metachain",
+      "commit": "a568a5afaea5bf2ca8f68202d2c64856367316ad",
+      "status": "source_reviewed_limited",
+      "scope": "README, trust/replay consumer and tests",
+      "capabilities": [
+        "finalized-commitment-gate",
+        "in-memory-replay-guard",
+        "source-event-digest-binding"
+      ],
+      "findings": [
+        "Consumer requires FINALIZED status, commitment ID, 64-hex payload digest, source event and source contract IDs; repeated commitment IDs in the same process are rejected.",
+        "Output explicitly sets claimable_once=true and accounting_authority=false."
+      ],
+      "limitations": [
+        "Replay state is an in-memory Python set and is lost on process restart; replay can be accepted after restart unless a durable store is added.",
+        "The consumer trusts the supplied FINALIZED flag and digest; it does not verify signatures, chain RPC, light-client proofs, validator set, Merkle/SPV proofs or reorgs.",
+        "This is a local trust/replay gate, not a full cross-chain bridge."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "bad687c1638e87a81c9b854c963c5fe955d093fe"
+        },
+        {
+          "path": "runtime/trust_contracts.py",
+          "blob_sha": "e62c5e2ddcfc4053b401afe535cf94b402301605"
+        },
+        {
+          "path": "tests/test_trust_contracts.py",
+          "blob_sha": "ea54138c42e9fb976d38ba477e838d3e8c8460df"
+        }
+      ],
+      "repository": "Shtenco/synergy_metachain",
+      "commit_url": "https://github.com/Shtenco/synergy_metachain/commit/a568a5afaea5bf2ca8f68202d2c64856367316ad",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_usds",
+      "commit": "0234edac62492ceff8af8195506aa1cef672ada1",
+      "status": "source_reviewed_limited",
+      "scope": "README, explicit security blocker, gitignore and deployment script; secret file contents deliberately not inspected",
+      "capabilities": [
+        "usds-mint-sell-pp-economic-model",
+        "base-fork-experiment",
+        "foundry-test-and-deploy-script"
+      ],
+      "findings": [
+        "Repository contains a dedicated SECURITY_FEDERATION_BLOCKER.md that says it is not eligible for runtime federation until deployer credential hygiene is completed.",
+        "Tracked root artifact named base-mainnet-deployer.key is present in the Git tree; contents were not inspected. The blocker explicitly says treat it as exposed until proven otherwise and rotate/revoke.",
+        "The deploy script expects a private key file, checks Base chain ID 8453 and a 0600 permission mode before deploying; this does not neutralize a tracked root credential."
+      ],
+      "limitations": [
+        "Keep ARCHITECTURAL_ONLY and block deployment/federation until rotation, history cleanup, secret scanning and independent verification are complete.",
+        "Economic model's external value-added assumption is scenario input, not profit generated by mint/sell mechanics."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "3aa046c0c0dba4467e8f4a435a83db27125988b4"
+        },
+        {
+          "path": "SECURITY_FEDERATION_BLOCKER.md",
+          "blob_sha": "a15b124e8da34f0d4687ca62cd89a50335378172"
+        },
+        {
+          "path": ".gitignore",
+          "blob_sha": "157cfeaa77bf49d1c02f4f40b7f4bf304412308c"
+        },
+        {
+          "path": "valut_v4/scripts/deploy_mainnet.sh",
+          "blob_sha": "cc531fbc0c097a90b0d5a8350d628b7ca9bdc608"
+        }
+      ],
+      "repository": "Shtenco/synergy_usds",
+      "commit_url": "https://github.com/Shtenco/synergy_usds/commit/0234edac62492ceff8af8195506aa1cef672ada1",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_cashero",
+      "commit": "4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
+      "status": "source_reviewed_limited",
+      "scope": "README, repository tree and CASRSv3/CASRGv3 Solidity token/collateral contracts; secret files not opened",
+      "capabilities": [
+        "two-token-collateral-economy",
+        "custom-erc20-like-token-contracts",
+        "cpmm-bot-and-reserve-experiments"
+      ],
+      "findings": [
+        "Main contains CASRSv3/CASRGv3 contracts, CPMM robot/simulation scripts and archived 150-cycle reports.",
+        "README explicitly warns that synthetic pool returns are not externally realized income and tracked configuration files may contain secrets.",
+        "Git tree contains tracked .env, owner.env, bot1.env and bot2.env files; their contents were not inspected. No .gitignore file was found at the expected root path."
+      ],
+      "limitations": [
+        "Treat any credentials in tracked environment files as exposed until proven otherwise; rotate/revoke and purge history if real secrets are present.",
+        "Custom token contracts and bot simulations require independent security review, fork-state evidence and reserve accounting before mainnet claims.",
+        "No external audit or verified live settlement evidence was established by this review."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a732eaeda0fa215160ea476f0fd6cceca4d99461"
+        },
+        {
+          "path": "contracts/CASRSv3.sol",
+          "blob_sha": "7f20cf546e2e87b2698b9ee05d8d5d141e7262c3"
+        },
+        {
+          "path": "contracts/CASRGv3.sol",
+          "blob_sha": "5bc9b21c6a9d4e47d670445470872ed134435029"
+        }
+      ],
+      "repository": "Shtenco/synergy_cashero",
+      "commit_url": "https://github.com/Shtenco/synergy_cashero/commit/4be5080ccf7516e3130ed2b7a53b95a32cdf57fd",
       "audited_at": "2026-11-25"
     }
   ]
