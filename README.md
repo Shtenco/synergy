@@ -224,14 +224,28 @@ These are responsibility boundaries, not assertions of live runtime integration.
 
 Four unresolved P0 credential/security blockers remain in `synergy_usds`, `synergy_cashero`, `synergy_turbo_linux` and `synergy_ai_trade_terminal`. A P1 production/promotion blocker is recorded for the cognitive-memory candidate: unauthenticated local API, symlink ingestion boundary and cross-repository source-identity collision risks. Secret rotation/revocation is not claimed unless externally evidenced.
 
+## Hypergraph V3 — machine-readable audit core
+
+The `hypergraph/` directory now contains a first-pass machine-readable graph seed:
+- 100 repository nodes keyed by immutable GitHub repository IDs;
+- 109 `DEPENDS_ON` edges copied from the prior registry, all explicitly marked `candidate` pending source-level verification;
+- JSON Schemas for repository nodes and n-ary hyperedges;
+- evidence provenance, coverage metrics, unresolved gaps and 39 proposed components kept separate from actual repositories.
+
+The current owner-list endpoint returned 100 records (100 unique IDs) and no further page. The 2026-11-20 registry snapshot contained 92 records. The eight additions are inventory-only and unclassified. Four previously reported lab names remain unresolved against the current listing. This is a lower-bound observation, not a verified 100- or 112-repository account total. No dependency edge is promoted to `verified` on registry evidence alone.
+
 ## Current next gates
 
+- Reconcile repository IDs beyond the current 100-record listing limit and resolve the four unconfirmed lab names.
+- Audit README, source trees, manifests, imports, API routes, event schemas, tests and workflows for all 100 inventoried repositories; source-audit coverage remains 0% in this pass.
+- Replace the 109 registry-only candidate dependency edges with file-, revision- and line-specific evidence.
+- Extract OpenAPI/JSON Schema/event contracts and test compatibility before asserting runtime integrations.
 - Re-fetch exact HEAD SHA and branch protection for the 211 branches still carrying historical census SHAs.
 - Enrich 198 remaining open PRs with head/base SHA, reviews, stacked dependencies and exact-head CI.
 - Complete the remaining source audits; the earlier 53-repository backlog is not marked complete.
 - Define the cognitive-memory contract and prove authenticated, namespace-safe integration with AI Language, AI Coder and Long Term Harness.
 - Restore actionable CI evidence for Autopilot, AI Coder, AI Language, Long Term Harness and cognitive memory.
-- Reconcile stale portfolio PRs against the 92-repository owner inventory.
+- Reconcile stale portfolio PRs against the refreshed 100-record minimum inventory.
 
 ---
-*Generated from connected GitHub inventory and repository-scoped PR discovery on 2026-11-20. No source branches were merged, deleted or force-updated by this README refresh.*
+*Generated from connected GitHub inventory and repository-scoped PR discovery on 2026-11-25. No source branches were merged, deleted or force-updated by this refresh.*
