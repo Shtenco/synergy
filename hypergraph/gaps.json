@@ -420,6 +420,22 @@
       "repository": "Shtenco/synergy_shhts",
       "description": "Main branch is a specification stub without parser, codec or decoder.",
       "next_action": "Define byte-level format, versioning, integrity envelope and cross-language round-trip tests before claiming a compression format."
+    },
+    {
+      "id": "GAP-054",
+      "severity": "high",
+      "area": "science_contract_numeric_validation",
+      "repository": "Shtenco/synergy_nexus_science_agent",
+      "description": "Science evidence contracts validate digest shape and some epistemic gates but do not verify source bytes against locators; several numeric fields accept NaN/infinity or negative counts because finiteness and range checks are incomplete.",
+      "next_action": "Use math.isfinite for every numeric field, constrain counts and physical bounds, validate required identifiers and bind source bytes/digests in a trusted ingestion adapter; add adversarial tests."
+    },
+    {
+      "id": "GAP-055",
+      "severity": "medium",
+      "area": "benchmark_scope_labeling",
+      "repository": "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "description": "The main scenario is an analytical scheduling simulation with no LLM calls, yet repository naming can be mistaken for an empirical multi-agent benchmark if its scope is not repeated in summaries.",
+      "next_action": "Keep simulation labels in every result card and distinguish scheduling arithmetic from measured agent quality, token cost, latency and failure rates."
     }
   ]
 }
