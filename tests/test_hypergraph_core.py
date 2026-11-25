@@ -126,6 +126,18 @@ class HypergraphCoreTests(unittest.TestCase):
             39,
         )
 
+    def test_all_proposals_have_overlap_assessments(self):
+        proposal_names = {item["name"] for item in self.proposals["proposals"]}
+        assessed_names = {item["proposal"] for item in self.overlap["assessments"]}
+        self.assertEqual(proposal_names, assessed_names)
+        self.assertEqual(len(self.overlap["assessments"]), len(proposal_names))
+        self.assertEqual(self.overlap["remaining_proposals"], [])
+        for assessment in self.overlap["assessments"]:
+            self.assertTrue(assessment["decision"])
+            for evidence in assessment.get("evidence", []):
+                self.assertRegex(evidence["commit"], r"^[0-9a-f]{40}$")
+                self.assertTrue(evidence["files"])
+
     def test_target_graph_links_resolve(self):
         target_ids = {node["node_id"] for node in self.target["nodes"]}
         for edge in self.target["edges"]:
