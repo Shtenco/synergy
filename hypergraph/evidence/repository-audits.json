@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 68,
-  "source_code_reviewed_count": 57,
+  "audited_repository_count": 72,
+  "source_code_reviewed_count": 60,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -2564,6 +2564,193 @@
       ],
       "repository": "Shtenco/synergy_binary_quantum_theory",
       "commit_url": "https://github.com/Shtenco/synergy_binary_quantum_theory/commit/3d48d8ba6c190efe23ee655528365f5045216af7",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_ai_blockchain",
+      "commit": "b9353bf52542ed55ec36c30d84046f330df5f1de",
+      "status": "source_reviewed_limited",
+      "scope": "README, Cargo feature graph, Rust PQ/NEXUS/consensus/migration modules and security document",
+      "capabilities": [
+        "pq-evm-consensus-reference-core",
+        "optional-fips203-204-205-provider",
+        "deterministic-q16-nexus-kernel",
+        "authorization-envelope-and-replay-model",
+        "agentic-economy-and-service-plane-contracts"
+      ],
+      "findings": [
+        "Main contains a substantial Rust library with PQ authorization policies, deterministic Q16.16 NEXUS reference kernel, consensus activation commitments, identity migration and agent/payment/service-plane modules.",
+        "Cargo.toml sets default features=[]; standards-based ML-KEM/ML-DSA/SLH-DSA reference provider is optional behind reference-pq feature.",
+        "NexusManifest explicitly says model_root is a quantized consensus artifact and that the PyTorch V18 checkpoint is not executed in consensus; activation requires a separately frozen quantized artifact.",
+        "README labels the repository research/integration, not audited, and says no real asset custody until EVM integration, light clients, bridge proofs and independent cryptographic audit are complete."
+      ],
+      "limitations": [
+        "No production EVM client/precompile integration or multi-client consensus implementation was established by inspected source.",
+        "Default build does not enable reference-pq; production cryptographic verification must explicitly wire an audited provider and key custody boundary.",
+        "Consensus reference kernel is a deterministic graph brick, not the full NEXUS neural checkpoint."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "4cd83d4584885d3f24a48b10012f4711534671ff"
+        },
+        {
+          "path": "Cargo.toml",
+          "blob_sha": "991bb74319c4bb683d9f3c3300109c528caa856b"
+        },
+        {
+          "path": "src/pq.rs",
+          "blob_sha": "902c477fdf0948cec00a138fcf988f272ca40685"
+        },
+        {
+          "path": "src/pq_reference.rs",
+          "blob_sha": "d75144be2bbae5d892660c3e6465c9f0b5943c5d"
+        },
+        {
+          "path": "src/nexus.rs",
+          "blob_sha": "e00235c20f9e9f5fa4a4923e5ebaa29b328fc9d7"
+        },
+        {
+          "path": "src/consensus.rs",
+          "blob_sha": "87f9efa31d3f4e3bf63bcf53e9bd1b82b7f160e7"
+        },
+        {
+          "path": "src/migration.rs",
+          "blob_sha": "286aa426d25c01d9372e53b91c0faba947a4c0c3"
+        },
+        {
+          "path": "docs/SECURITY.md",
+          "blob_sha": "8283a12e44230fce7df7736484bbe9b7fc78be16"
+        }
+      ],
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "commit_url": "https://github.com/Shtenco/synergy_ai_blockchain/commit/b9353bf52542ed55ec36c30d84046f330df5f1de",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_blochain_budget",
+      "commit": "bc31841d024b02c1b803e28d0a360e5893bb2c4b",
+      "status": "source_reviewed_limited",
+      "scope": "README, trace builder, trace graph, Merkle proof, versioned KBK registry, EIS normalizer and V0.3 tests",
+      "capabilities": [
+        "public-budget-data-normalization",
+        "versioned-year-partitioned-kbk-registry",
+        "eis-contract-payment-matching",
+        "append-only-trace-ledger",
+        "merkle-inclusion-proofs",
+        "evidence-scored-linking"
+      ],
+      "findings": [
+        "V0.3 implements year-partitioned KBK registry with effective dates/revisions, EIS contract/payment normalization, strong-ID mismatch rejection, ambiguous-match refusal and source/evidence hashes.",
+        "Trace graph links budget law/appropriation/limit/commitment/contract/supplier/payment/cash execution and produces Merkle inclusion proofs.",
+        "Tests cover year-specific registry resolution, contract/payment matching, mismatch and ambiguity rejection, trace graph and Merkle proof verification."
+      ],
+      "limitations": [
+        "TRACEABLE means evidence-scored linkage under this schema, not independent legal proof that a payment occurred or was authorized.",
+        "Hashes and Merkle proofs bind imported bytes but do not authenticate the publisher unless source signatures/transport are separately verified.",
+        "Public source crawler and ingestion need rate limits, license review, data retention and source revision monitoring before large-scale operation."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a5b98069e47c7a4f1d192a05c6dd5ffcc057f732"
+        },
+        {
+          "path": "src/synergy_budget/trace.py",
+          "blob_sha": "ea0013dad8a5bc25deff13d50fe601c6065aa8e7"
+        },
+        {
+          "path": "src/synergy_budget/trace_graph.py",
+          "blob_sha": "0cd3a48c6b1d864f8ace6ca7c2b61cf643ea8636"
+        },
+        {
+          "path": "src/synergy_budget/merkle.py",
+          "blob_sha": "cc0560c097647d893164ce3ebbe288bcec91465c"
+        },
+        {
+          "path": "src/synergy_budget/kbk_registry.py",
+          "blob_sha": "ebdf401ff406ce911ed484333061e47ed2c38c21"
+        },
+        {
+          "path": "src/synergy_budget/eis.py",
+          "blob_sha": "1e9d83457c0c9be00e77187ef9481e86324c5316"
+        },
+        {
+          "path": "tests/test_v03.py",
+          "blob_sha": "12f0de718b4d7cbc00c623b9965fa31d2268b285"
+        }
+      ],
+      "repository": "Shtenco/synergy_blochain_budget",
+      "commit_url": "https://github.com/Shtenco/synergy_blochain_budget/commit/bc31841d024b02c1b803e28d0a360e5893bb2c4b",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_triangle_money_system",
+      "commit": "8fb8a604a225a1ceaa9ee9272bf502d4603f9c39",
+      "status": "source_reviewed_limited",
+      "scope": "README, recursive engine, collateral vault, owner-controlled risk oracle and Foundry system tests",
+      "capabilities": [
+        "five-pool-cpmm-collateral-simulation",
+        "hardnav-vs-productive-liquidity-accounting",
+        "recursive-lp-collateral-haircut",
+        "stress-health-factor-model"
+      ],
+      "findings": [
+        "README labels system SIMULATION / EVM LAB and distinguishes HardNAV from productive liquidity; internal mint/sell/reuse is not external hard-asset creation.",
+        "RecursiveEngine hardNav counts WPOL/COLL in treasury, vault, engine and hard-side pools; mintSellX/Z asserts hardNav unchanged.",
+        "CollateralVault applies collateral factors, recursive tier haircut, reuse cap and health factor; tests assert 2.166x/2.556x productive liquidity multipliers while HardNAV remains separately accounted."
+      ],
+      "limitations": [
+        "RiskOracle price setters are owner-controlled; no independent oracle quorum, staleness, TWAP or manipulation defense is implemented in inspected path.",
+        "CollateralVault has draw but no repayment/debt-reduction method in inspected contracts; debt lifecycle is incomplete.",
+        "CPMM execution uses owner-controlled calls and some internal swaps pass minOut=0; no external execution or independent contract audit is established."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "a0db6b56bddd42852bdd25562587ef52c808002a"
+        },
+        {
+          "path": "src/RecursiveEngine.sol",
+          "blob_sha": "4f048d1857bea364d832c1ef21d2bccb3382abf5"
+        },
+        {
+          "path": "src/CollateralVault.sol",
+          "blob_sha": "bf054b6624247f813ec8f1c898fa00715f56d742"
+        },
+        {
+          "path": "src/RiskOracle.sol",
+          "blob_sha": "1d20ad2b84bdec57ff8255d686814c0260444903"
+        },
+        {
+          "path": "test/System.t.sol",
+          "blob_sha": "edd973e7bdd18c890425c99ee72537ed4038a3a3"
+        }
+      ],
+      "repository": "Shtenco/synergy_triangle_money_system",
+      "commit_url": "https://github.com/Shtenco/synergy_triangle_money_system/commit/8fb8a604a225a1ceaa9ee9272bf502d4603f9c39",
+      "audited_at": "2026-11-25"
+    },
+    {
+      "name": "synergy_qe",
+      "commit": "c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
+      "status": "stub_confirmed",
+      "scope": "README and complete main-branch tree",
+      "capabilities": [],
+      "findings": [
+        "README explicitly marks repository STUB: README + LICENSE only; no executable modules, tests or evidence artifacts."
+      ],
+      "limitations": [
+        "Do not treat as a quantitative easing engine or monetary authority until runtime, accounting contracts and stress tests exist."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "1a6e6c3b89608edc0a21f1651b8d716069d6468e"
+        }
+      ],
+      "repository": "Shtenco/synergy_qe",
+      "commit_url": "https://github.com/Shtenco/synergy_qe/commit/c69f19ae77ac244a19e1ead4009ea7dc0fb2afdf",
       "audited_at": "2026-11-25"
     }
   ]
