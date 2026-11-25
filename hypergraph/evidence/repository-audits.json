@@ -4490,7 +4490,50 @@
           "blob_sha": "7f7858802c29dbe17a1d2690022638b15d95a899"
         }
       ]
+    },
+    {
+      "name": "synegy_ai_compress",
+      "repository": "Shtenco/synegy_ai_compress",
+      "commit": "189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+      "commit_url": "https://github.com/Shtenco/synegy_ai_compress/commit/189dfd5f6f9643e5b3b57f7aa23918696c5ee8cc",
+      "audited_at": "2026-11-25",
+      "status": "benchmark_dossier",
+      "scope": "README, benchmark summary artifacts and Git submodule metadata reviewed; source snapshot is not retrievable from this repository; no benchmark rerun.",
+      "capabilities": [
+        "compression-benchmark-archive",
+        "historical-profile-ranking",
+        "fresh-world-38-profile-summary",
+        "exact-reconstruction-pass-ledger"
+      ],
+      "findings": [
+        "Main is a benchmark dossier, not an executable compression runtime; the README separates 69 frozen historical profiles from a current fresh-world benchmark and explicitly warns that their protocols are not directly comparable.",
+        "The fresh-world CSV reports 38 profiles x 11 datasets, 360,448 input bytes per profile and exact reconstruction PASS; this does not establish the proprietary compression source implementation or a unified 81-system competition.",
+        "source_snapshot is a Git submodule entry with no submodule URL; its target commit message says implementation sources and test harnesses were removed from public main, so the implementation cannot be independently reconstructed from this repository snapshot.",
+        "results/environment.json contains CSV header/rows rather than JSON, creating a machine-readable artifact format mismatch."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "d12b09678ac1b88c5c02c294abe28cba6569f8a0"
+        },
+        {
+          "path": "source_snapshot",
+          "blob_sha": "c681ec94fe5194156b71fc304035f7aaff4d2327"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/environment.json",
+          "blob_sha": "4f646c93655a9f22871d45bc264bb1044e9ffb11"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/fresh_world_38_summary.csv",
+          "blob_sha": "fbbd6ca07f9fda81f1f4b939b65466f2176da576"
+        },
+        {
+          "path": "benchmarks/extended_80plus_20261020/results/historical_top10_20260730_transcribed.csv",
+          "blob_sha": "4633381984a7478ca432e51c558c4895c44618d1"
+        }
+      ]
     }
   ],
-  "audit_record_count": 124
+  "audit_record_count": 125
 }
