@@ -30,13 +30,13 @@
     "registry_records_present": 100,
     "inventory_only_records": 12,
     "preliminary_readme_notes_from_prior_pass": 12,
-    "source_code_reviewed_in_this_pass": 19,
-    "source_code_audited_total": 19,
+    "source_code_reviewed_in_this_pass": 23,
+    "source_code_audited_total": 23,
     "verified_runtime_edges": 0,
     "registry_declared_candidate_edges": 109,
     "verified_contracts": 0,
     "repositories_added_since_original_main_snapshot": 20,
-    "readme_reviewed_in_this_pass": 20,
+    "readme_reviewed_in_this_pass": 24,
     "source_code_reviewed_repository_names": [
       "synergy_ai_browser-",
       "tiimeweb_synergy_exactly_once_delivery",
@@ -56,7 +56,11 @@
       "synergy_hierarchical_cognitive_memory_architecture",
       "synergy_agentic_ai_economy",
       "synergy_market_graph",
-      "synergy_meta_os"
+      "synergy_meta_os",
+      "synergy_financial_os",
+      "synergy_pay_system",
+      "synergy_ai_financial_system",
+      "synergy_riskguard"
     ],
     "stub_only_repository_names": [
       "synergy_agent_long_term_memory"
@@ -79,12 +83,16 @@
       "node_runtime_orchestration": "Shtenco/synergy_meta_os",
       "p2p_transport": "Shtenco/synergy_net",
       "agent_economic_simulation": "Shtenco/synergy_agentic_ai_economy",
-      "market_conversion_graph": "Shtenco/synergy_market_graph"
+      "market_conversion_graph": "Shtenco/synergy_market_graph",
+      "financial_accounting": "Shtenco/synergy_financial_os",
+      "payment_routing_and_settlement": "Shtenco/synergy_pay_system",
+      "financial_research_simulation": "Shtenco/synergy_ai_financial_system",
+      "trading_risk_veto": "Shtenco/synergy_riskguard"
     }
   },
   "completion_percentages": {
     "inventory_with_provider_id": 100,
-    "repository_source_audit": 16.96,
+    "repository_source_audit": 20.54,
     "edge_verification": 0,
     "contract_verification": 0
   },
