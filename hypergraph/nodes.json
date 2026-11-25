@@ -180,13 +180,16 @@
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "UNVERIFIED",
       "capabilities": [
-        "maps-concept"
+        "cesium-global-globe-viewer",
+        "eaeu-country-boundary-subset",
+        "overture-tile-planning-and-audit"
       ],
       "declared_dependencies": [],
       "risks": [
-        "no executable implementation in current main"
+        "Not a detailed worldwide street/cadastral/3D map; higher-resolution L1-L4 layers remain planned or require external datasets.",
+        "No verified live integration with logistics, real-estate or enterprise routers was found in the inspected files."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -194,6 +197,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1456611297",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "576871d1aee78273ec97a45cacca49de8873cf51",
+        "audited_at": "2026-11-25",
+        "scope": "README, EAEU country registry and Overture tile coverage auditor"
       }
     },
     {
@@ -1167,11 +1176,7 @@
       "category": "agi-agentic",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "agents",
-        "reasoning",
-        "orchestration"
-      ],
+      "capabilities": [],
       "declared_dependencies": [
         "Shtenco/synergy_agi_nexus",
         "Shtenco/synergy_agentic_ai_economy",
@@ -1181,9 +1186,9 @@
         "Shtenco/dlp_solver"
       ],
       "risks": [
-        "no-executable-runtime-confirmed"
+        "No autonomous company runtime, agent role engine, process execution or integration is established."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1191,6 +1196,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1368484353",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "ac013cfdf38d8c1de52011cb874ac6ac0a7145b7",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete repository tree"
       }
     },
     {
@@ -2881,16 +2892,19 @@
       "maturity": "RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "search",
-        "lead-discovery",
-        "hardnav",
-        "triangular-economy"
+        "offline-real-estate-lead-store",
+        "fts5-search",
+        "rule-based-intent-candidates",
+        "human-review-audit",
+        "approval-gated-crm-outbox"
       ],
       "declared_dependencies": [],
       "risks": [
-        "offline candidate only; no external crawling, production CRM dispatch or deployed service verified"
+        "No tenant_id isolation is present in inspected document/review/outbox schema; single operator token is not a multi-tenant authorization model.",
+        "No production deployment, external crawler or upgraded ML ranker is proven.",
+        "Configured CRM webhook checks HTTPS but does not enforce a fixed Bitrix24 host allowlist; outbound target is environment-controlled and should be hardened before hosting untrusted tenants."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2898,6 +2912,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1409209160",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+        "audited_at": "2026-11-25",
+        "scope": "README, SQLite/FTS5 lead store, token-protected API, CRM approval dispatcher and tests"
       }
     },
     {
@@ -3695,17 +3715,14 @@
       "maturity": "RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "hardnav",
-        "triangular-economy",
-        "canonical-dividend-simulation"
+        "hardnav-multiplier-simulation",
+        "capacity-limited-edge-model"
       ],
       "declared_dependencies": [],
       "risks": [
-        "simulation-only; independent external opportunity and live execution are not verified",
-        "no CI workflow or automated test suite found in main"
+        "Do not assign this repository as the provider for classifieds, bank or real-estate search without separate implementation evidence."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3713,6 +3730,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1409193535",
         "search_page": 2
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+        "audited_at": "2026-11-25",
+        "scope": "README, HardNAV multiplier simulation and assumptions/limits"
       }
     },
     {
