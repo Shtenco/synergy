@@ -1562,13 +1562,17 @@
       "maturity": "MODEL_SPEC_READY",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "economic-model",
-        "financial-protocol",
-        "value-flow"
+        "multi-sector-economic-allocation-model",
+        "project-proposal-evaluation",
+        "federation-policy-audit",
+        "scenario-optimization"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "README describes six failed tests in a 2026-11-07 snapshot; no workflow run was returned for the current main commit, so current CI state is unknown.",
+        "The model is a planning/simulation tool; no live national statistical data pipeline or calibrated causal model was established in this review."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1576,6 +1580,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1336911571",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "b911bb017103f122f2c75ef08b99ffebe665883d",
+        "audited_at": "2026-11-25",
+        "scope": "README, EIIOM optimizer, federation audit, sector optimizer and invariant tests"
       }
     },
     {
@@ -1817,12 +1827,17 @@
       "maturity": "ACTIVE_EXPERIMENTAL",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "scientific-research",
-        "evidence"
+        "mathematical_claim_registry",
+        "finite_falsification_harness",
+        "symbolic_and_numerical_validation",
+        "open_physical_gate_tracking"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Mathematical consistency and finite tests do not establish empirical physical validity or a complete quantum-gravity theory.",
+        "The audit document must be refreshed to the current README snapshot and all proof claims must retain their scope."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1830,6 +1845,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1293271223",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "3d48d8ba6c190efe23ee655528365f5045216af7",
+        "audited_at": "2026-11-25",
+        "scope": "README, current audit, falsification test matrix and core-scope audit script"
       }
     },
     {
@@ -3413,12 +3434,17 @@
       "maturity": "ACTIVE_RESEARCH",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "strategic-research",
-        "graph"
+        "research_claim_graph",
+        "evidence_provenance_schema",
+        "review_state_machine",
+        "graph_integrity_validator"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Source hash metadata and declared review state do not independently prove scientific truth; domain review and reproducible experiments remain necessary.",
+        "This graph should feed evidence review/provenance into Hypergraph V3 rather than be merged as verified software dependency edges."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3426,6 +3452,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1390438988",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "f1d359afd0729741ed9452518c5dfc26ea7ad979",
+        "audited_at": "2026-11-25",
+        "scope": "README, research graph validator, science evidence contracts and tests"
       }
     },
     {
@@ -3567,18 +3599,20 @@
       "maturity": "RND",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "registry",
-        "federation",
-        "architecture",
-        "governance"
+        "project_master_dossier",
+        "capital_authorization_contract",
+        "milestone_and_use_of_funds_policy"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_system",
         "Shtenco/synergy_pay_system",
         "Shtenco/synergy_algotrading_graph_system"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "No project execution engine, capital ledger, investor onboarding or payment authority is established in main.",
+        "Repository inventory counts and status in this dossier are historical and should not override the canonical 112-ID registry."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -3586,6 +3620,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1359110009",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "f1055866444a2e6bdbc8ac6b76f4334f1e171105",
+        "audited_at": "2026-11-25",
+        "scope": "README, capital governance contract and contract tests"
       }
     },
     {
