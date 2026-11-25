@@ -1129,14 +1129,16 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "midas"
+        "institutional-assessment-stage-machine",
+        "injected-validation-and-risk-hooks",
+        "bounded-notional-output"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "Quality and provenance of injected validator/risk functions are outside this repository's core.",
+        "The institutional assessment is not itself a canonical risk veto or execution adapter."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1144,6 +1146,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376377374",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "6eb09ac2b2c72bf7ec6aaa26390136f9013efd58",
+        "audited_at": "2026-11-25",
+        "scope": "README, bounded assessment core, contract and tests"
       }
     },
     {
@@ -1266,10 +1274,9 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution",
-        "regime-adaptation"
+        "bounded-online-expert-weighting",
+        "volatility-regime-classification",
+        "enterprise-rbac-audit"
       ],
       "declared_dependencies": [
         "Shtenco/synergy_midas_ai",
@@ -1278,8 +1285,11 @@
         "Shtenco/synergy_riskguard",
         "Shtenco/synergy_ai_investment_committee"
       ],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "No out-of-sample or live trading validation was executed in this review.",
+        "Core input validation for finite rewards/threshold ordering should be strengthened before adversarial or production use."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -1287,6 +1297,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376377980",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "f0622aa6d60be3c47d2ac752b9ef686e6dac6c5b",
+        "audited_at": "2026-11-25",
+        "scope": "README, adaptive ensemble core and market-regime contract"
       }
     },
     {
@@ -2322,16 +2338,12 @@
       "category": "trading-quant",
       "maturity": "STUB_SPEC_ONLY",
       "activity_band": "ACTIVE_30D",
-      "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
-      ],
+      "capabilities": [],
       "declared_dependencies": [],
       "risks": [
-        "no-executable-runtime-confirmed"
+        "Do not treat the architecture specification as an executable arbitrage engine."
       ],
-      "audit_status": "registry_snapshot_present",
+      "audit_status": "stub_confirmed",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2339,6 +2351,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1316045651",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "stub_confirmed",
+        "commit": "5fb87036fe833a6e7939654469766c86f92533ee",
+        "audited_at": "2026-11-25",
+        "scope": "README and complete main-branch tree"
       }
     },
     {
@@ -2961,13 +2979,17 @@
       "maturity": "CANDIDATE",
       "activity_band": "ACTIVE_30D",
       "capabilities": [
-        "market-data",
-        "quant-research",
-        "validation-or-execution"
+        "ols-pair-fit",
+        "spread-zscore",
+        "heuristic-carry-score",
+        "relative-value-signal-contract"
       ],
       "declared_dependencies": [],
-      "risks": [],
-      "audit_status": "registry_snapshot_present",
+      "risks": [
+        "OLS fit and high z-score do not establish cointegration, stationarity or stable hedge ratio; README explicitly lists these missing tests.",
+        "No costs, borrow/funding, liquidity, asynchronous price or selection-bias model in the core."
+      ],
+      "audit_status": "source_reviewed_limited",
       "inventory_source": {
         "provider": "GitHub",
         "query": "user:Shtenco",
@@ -2975,6 +2997,12 @@
         "observed_at": "2026-11-25",
         "provider_id": "1376377560",
         "search_page": 1
+      },
+      "source_audit": {
+        "status": "source_reviewed_limited",
+        "commit": "ef2a44ea4d5551dccbda4b24d9b0a0d06d9a6a77",
+        "audited_at": "2026-11-25",
+        "scope": "README, OLS pair core and non-authorizing signal contract"
       }
     },
     {
