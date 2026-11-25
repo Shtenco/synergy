@@ -237,6 +237,15 @@
         "Shtenco/synergy_market_graph"
       ],
       "decision": "Some discovery, route and payment primitives exist; a cross-domain demand/supply marketplace router is not established."
+    },
+    {
+      "proposal": "synergy_ai_api_router",
+      "status": "partial_overlap",
+      "existing_repositories": [
+        "Shtenco/synergy_meta_api",
+        "Shtenco/synergy_pay_system"
+      ],
+      "decision": "Local tool gateway and provider API boundaries exist; global API provider discovery, metering and failover remain unverified."
     }
   ],
   "remaining_proposals": [
@@ -274,10 +283,6 @@
     },
     {
       "proposal": "synergy_ai_advertising_router",
-      "status": "not_yet_overlap_audited"
-    },
-    {
-      "proposal": "synergy_ai_api_router",
       "status": "not_yet_overlap_audited"
     },
     {
