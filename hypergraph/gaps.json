@@ -284,6 +284,62 @@
       "repository": "Shtenco/synergy_quantlab",
       "description": "Validation contract permits an optional dataset manifest digest and does not verify the digest format or fetch/verify the dataset; strong validation runs can be emitted without bound dataset provenance.",
       "next_action": "Require a versioned dataset manifest and verify SHA-256/source revision before issuing a promotion gate."
+    },
+    {
+      "id": "GAP-037",
+      "severity": "critical",
+      "area": "risk_veto_crash",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "DecisionPipeline risk-veto path references undefined exc and bare-raises outside an active exception; a risk veto can crash instead of returning a blocked decision.",
+      "next_action": "Remove invalid exception path, return an explicit non-tradable veto decision, and add a test proving no execution adapter can be called after veto."
+    },
+    {
+      "id": "GAP-038",
+      "severity": "critical",
+      "area": "websocket_authentication",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "/logs/stream and /metrics/stream accept WebSocket connections without API-key validation while HTTP endpoints require the key.",
+      "next_action": "Authenticate before WebSocket accept, authorize per tenant/scope, rate-limit and add unauthenticated connection rejection tests."
+    },
+    {
+      "id": "GAP-039",
+      "severity": "high",
+      "area": "risk_sign_convention",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "RiskEngine computes lower-tail VaR/CVaR as negative returns but compares them against positive maximum-risk thresholds; risk sign conventions are inconsistent.",
+      "next_action": "Represent VaR/CVaR as positive loss magnitudes or invert comparisons consistently; add positive/negative return fixtures and veto boundary tests."
+    },
+    {
+      "id": "GAP-040",
+      "severity": "high",
+      "area": "archive_chain_persistence",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "ArchiveService previous chain hash is held only in instance memory and is lost on restart or across multiple service instances.",
+      "next_action": "Recover last trusted chain hash from durable archive transactionally and test restart, concurrent writers and tamper detection."
+    },
+    {
+      "id": "GAP-041",
+      "severity": "critical",
+      "area": "embedded_credentials",
+      "repository": "Shtenco/synergy_ai_trade_terminal",
+      "description": "README and source scan confirm credential fields are embedded in cassandra_v6_FIXED.py and bearer token material is emitted into login events/log prefix.",
+      "next_action": "Immediately rotate/revoke embedded account credentials and all issued tokens; purge history after rotation; move secrets to a secret manager and redact tokens from logs/events."
+    },
+    {
+      "id": "GAP-042",
+      "severity": "critical",
+      "area": "uncontrolled_live_execution",
+      "repository": "Shtenco/midas_lite",
+      "description": "Legacy agi_trader_final_v1.py contains multiple direct mt5.order_send calls; the reviewed repository includes a potentially live order path.",
+      "next_action": "Keep the script disabled outside isolated demo; add default-deny execution flag, account/environment allowlist, notional and daily loss limits, operator approval and tests that block order_send by default."
+    },
+    {
+      "id": "GAP-043",
+      "severity": "medium",
+      "area": "quantum_claim_boundary",
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "description": "The QPE-like circuit ignores the supplied market binary history; stochastic measurement output is compared to future labels without a causal prediction path.",
+      "next_action": "Treat as circuit simulation only; either encode causal history and compare against classical baselines or narrow all claims to a non-predictive Qiskit experiment."
     }
   ]
 }
