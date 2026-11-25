@@ -180,6 +180,22 @@
       "repository": "Shtenco/synergy_ai_coder",
       "description": "AI Coder main implements requirement/change evidence contracts only, not a full autonomous coding agent.",
       "next_action": "Keep coding execution in a separate sandboxed component and reuse the evidence contract for approvals."
+    },
+    {
+      "id": "GAP-024",
+      "severity": "medium",
+      "area": "graph_arbitrage_implementation",
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "description": "Repository describes settlement-aware graph arbitrage architecture but main branch contains only README and assets, no executable graph engine or tests.",
+      "next_action": "Keep it as a specification; implement inside an existing graph owner or add code/tests before claiming an engine."
+    },
+    {
+      "id": "GAP-025",
+      "severity": "medium",
+      "area": "relative_value_validation",
+      "repository": "Shtenco/synergy_relative_value",
+      "description": "Pair OLS/z-score signals are non-authorizing and do not establish cointegration, stationarity, hedge stability or executable edge after costs.",
+      "next_action": "Require aligned train/OOS data, cointegration/stationarity tests, rolling stability, borrow/funding, liquidity and cost-aware negative tests."
     }
   ]
 }
