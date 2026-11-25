@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-11-25",
   "method": "Read README, repository tree and selected source/tests/results at exact main commit SHAs. No tests were executed in this audit.",
-  "audited_repository_count": 105,
-  "source_code_reviewed_count": 92,
+  "audited_repository_count": 108,
+  "source_code_reviewed_count": 94,
   "records": [
     {
       "name": "synergy_agent_long_term_memory",
@@ -3873,7 +3873,101 @@
           "blob_sha": "f9927caf3c314ba1d18b7b72bc946c8008c7c353"
         }
       ]
+    },
+    {
+      "name": "3D_bars_market_structure",
+      "repository": "Shtenco/3D_bars_market_structure",
+      "commit": "5bcf5a95e54d454116d89fa23d1337500091accd",
+      "commit_url": "https://github.com/Shtenco/3D_bars_market_structure/commit/5bcf5a95e54d454116d89fa23d1337500091accd",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus main source/tests or complete main tree; no tests or backtests executed during this audit.",
+      "capabilities": [
+        "mt5-renko-derived-feature-generation",
+        "multidimensional-price-volume-time-visualization"
+      ],
+      "findings": [
+        "Source computes Renko-like derived features and interactive plots from MT5 bars; README says there is no dedicated unit-test suite or reproducible out-of-sample evaluation.",
+        "Inside the row loop, MinMaxScaler.fit_transform is called on a single time_numeric scalar, which maps each single-value sample to the lower feature bound and collapses that feature to a constant.",
+        "The source header states both CC BY-NC-ND and MIT, creating a material licensing conflict that must be resolved before commercial reuse."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "586ed88340dea89d807b386bd19814f286b8e20d"
+        },
+        {
+          "path": "3D_bars_market_structure.py",
+          "blob_sha": "1e9be9930b5b260ff4f3025e3345164eb905b6ab"
+        }
+      ]
+    },
+    {
+      "name": "synergy_epstein_network",
+      "repository": "Shtenco/synergy_epstein_network",
+      "commit": "48a00e43026f441a3b95a5e91bd442b8174f0c10",
+      "commit_url": "https://github.com/Shtenco/synergy_epstein_network/commit/48a00e43026f441a3b95a5e91bd442b8174f0c10",
+      "audited_at": "2026-11-25",
+      "status": "source_reviewed_limited",
+      "scope": "README plus main source/tests or complete main tree; no tests or backtests executed during this audit.",
+      "capabilities": [
+        "source-registry-and-provenance",
+        "entity-normalization",
+        "person-entity-resolution",
+        "neo4j-evidence-graph-import"
+      ],
+      "findings": [
+        "Main contains source adapters, normalization, entity resolution, graph build and tests; README limits the graph to public-source provenance and explicitly denies authority to infer wrongdoing or identity claims.",
+        "Exact normalized/token-order name matches are automatically mapped to a canonical person ID without corroborating attributes; identical names can refer to different individuals, so automatic identity merge can create false links. Fuzzy matches are only emitted as review candidates.",
+        "Email/phone identifiers are normalized and hashed with unsalted deterministic SHA-256 prefixes; these hashes are pseudonymous identifiers, not anonymization, and can be dictionary-matched. Public-source provenance, minimization, access control and retention remain necessary."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "009a45affddf898efb1453fcf28c5bc28e42d3b9"
+        },
+        {
+          "path": "src/epstein_network/normalize.py",
+          "blob_sha": "3d2e7e5901fd447733519dbc2cc5f416f38ca3f5"
+        },
+        {
+          "path": "src/epstein_network/entity_resolution.py",
+          "blob_sha": "b0d5004973b7ad609ff05418d244e6b0b2ee2884"
+        },
+        {
+          "path": "src/epstein_network/synergy_contracts.py",
+          "blob_sha": "e7ee7a593a68f985964cef3ad2d916bf3bb45dbf"
+        },
+        {
+          "path": "tests/test_normalize.py",
+          "blob_sha": "14c73d5e908b5b84413e07d02924ee779a6a6403"
+        },
+        {
+          "path": "tests/test_synergy_contracts.py",
+          "blob_sha": "d3c7ab5e21dd9cca3c359dee2895688c7d87a673"
+        }
+      ]
+    },
+    {
+      "name": "print_money_synergychain",
+      "repository": "Shtenco/print_money_synergychain",
+      "commit": "7dd01e7da992d2efedb957e83a48218b86d0083f",
+      "commit_url": "https://github.com/Shtenco/print_money_synergychain/commit/7dd01e7da992d2efedb957e83a48218b86d0083f",
+      "audited_at": "2026-11-25",
+      "status": "stub_confirmed",
+      "scope": "README plus main source/tests or complete main tree; no tests or backtests executed during this audit.",
+      "capabilities": [],
+      "findings": [
+        "Main contains README, LICENSE, assets and docs only; README explicitly states runtime, simulator, contracts, tests, CI, datasets and evidence artifacts are absent.",
+        "The repository is a research specification, not a deployed monetary protocol or production system."
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "blob_sha": "5242951d058c5131a3755c87dd7f318a2fd0de1c"
+        }
+      ]
     }
   ],
-  "audit_record_count": 109
+  "audit_record_count": 112
 }
