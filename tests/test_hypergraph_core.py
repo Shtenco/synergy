@@ -245,9 +245,10 @@ class HypergraphCoreTests(unittest.TestCase):
         self.assertIn("13,000-block corrected replay remains pending", by_id["GAP-095"]["description"])
         self.assertIn(
             "GAP-095",
-            {risk["hypergraph_gap"] for risk in self.governance["counts"].get("observed_contract_risk_details", [])}
-            | {risk["hypergraph_gap"] for risk in self.governance.get("observed_contract_risk_details", [])},
+            {risk["hypergraph_gap"] for risk in self.governance["counts"]["observed_contract_risk_details"]},
         )
+        self.assertIn("43754510440", by_id["GAP-094"]["validation"])
+        self.assertIn("43864234518", by_id["GAP-095"]["validation"])
 
     def test_critical_security_gaps_are_recorded_without_secret_values(self):
         critical = [gap for gap in self.gaps["gaps"] if gap["severity"] == "critical"]
