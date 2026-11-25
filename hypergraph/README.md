@@ -162,3 +162,14 @@ The dependency graph contains 38 unique cross-repository contract IDs. The 39th 
 
 
 A machine-readable `evidence/governance-scope-manifest.json` now reconciles all 112 inventory repositories against both canonical registries: 75 appear in both, two are interface-only, and 35 are absent from both and await an explicit owner scope decision. Absence is not treated as exclusion or as permission to invent a dependency edge.
+
+
+## Critical financial lifecycle blockers — 2026-11-25
+
+Three canonical risks from the current synergy_system integration-gap registry are now mapped to source-pinned Hypergraph gaps:
+
+- GAP-093 — Pay System's current main-branch settlement reference path can mark an execution settled without terminal provider-status validation, falls back from zero actual receipt to planned amount, posts planned route output rather than reconciled actual received amount, and uses in-memory idempotency/ledger state. The default API wires a paper executor; this remains a live-path blocker, not evidence of real funds being moved.
+- GAP-094 — Financial OS's accounting outbox exists on draft PR #39 only, not main. The branch validates a SHA-256 hash but not signer authenticity, shares a SQLite connection with check_same_thread=False and no explicit mutex, and has not received usable exact-head CI evidence (run 43754510440 failed with no steps/logs).
+- GAP-095 — Agentic Economy main currently credits modeled bridge and AMM fee estimates to HardNAV. Draft PR #10 proposes receipt-verified fee recognition and durable journaling, but is unmerged; three exact-head workflows failed before exposing steps/logs and the corrected 13,000-block replay remains pending.
+
+Do not present the proposed branch corrections as merged, tested or deployed. See gaps.json for exact source commits, blob SHAs, PR states and CI evidence.
