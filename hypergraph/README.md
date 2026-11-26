@@ -198,3 +198,11 @@ The dependency graph distinguishes the graph claim status (candidate, reviewed, 
 The first bounded pilot, dep:1091968186:github-repo:1341272872 (computer vision trading → MIDAS AI), was inspected against its pinned README and principal source plus the MIDAS portfolio-decision contract file. No MIDAS or portfolio-decision reference was observed in the two dependent files. Its review outcome is not_observed_in_reviewed_scope; graph status remains candidate. No runtime or contract integration is claimed.
 
 A second bounded review, dep:1091968186:github-repo:1341273343 (computer vision trading → synergy_system), found a README hyperlink to the umbrella repository but no corresponding import, API call, or contract use in the reviewed principal Python source. It is classified source_reference_found to preserve the documentation reference; this is not executable-dependency evidence and the graph status remains candidate.
+
+
+## Dependency review — application layer (2026-11-26)
+- Seven outgoing registry-declared edges from `synergy_apps` were reviewed against its pinned README/read-model source and target README snapshots.
+- The evidence supports architectural/documentation associations, including one reciprocal read-model intention (`sinergy_app` ↔ `synergy_apps`), but does not establish executable imports, package dependencies, contract conformance, or runtime calls.
+- The `dlp_solver` reference is a documentation-quality example, not evidence of a software dependency; the edge remains a candidate pending owner adjudication.
+- All seven graph edges remain `candidate`. Across the full graph, 9/109 edges now have bounded reviews; 0 contract-verified and 0 runtime-verified edges.
+- Review evidence and limitations are recorded per edge in `edges.json`; see `coverage.json` for counts. These reviews do not certify uninspected files or branches.
