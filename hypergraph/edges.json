@@ -149,7 +149,42 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "The source README names synergy_system as architectural parent and the read-model module defines local accounting/trust projection functions, but no executable import/API call to synergy_system was found in the inspected source. This is an architectural association, not a verified dependency.",
+      "review_outcome": "source_reference_found",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static cross-repository review of the pinned synergy_apps README and read_models implementation, plus the target repository audit-pinned README; inspected declared relationship direction and distinguished architecture/navigation from executable imports or runtime calls",
+        "conclusion": "The source README names synergy_system as architectural parent and the read-model module defines local accounting/trust projection functions, but no executable import/API call to synergy_system was found in the inspected source. This is an architectural association, not a verified dependency.",
+        "evidence": [
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "README.md",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda",
+            "role": "dependent_architecture_and_related_repositories_documentation"
+          },
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "runtime/read_models.py",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b",
+            "role": "dependent_principal_read_model_source"
+          },
+          {
+            "repository": "Shtenco/synergy_system",
+            "path": "README.md",
+            "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+            "blob_sha": "c53388642c4189e38daa537d431a23d77ee4b823",
+            "role": "target_repository_documentation"
+          }
+        ],
+        "limitations": [
+          "The dependent source review was limited to README.md and runtime/read_models.py; no exhaustive import graph, package manifest, workflow, deployment, or external orchestrator scan was performed.",
+          "Target evidence is limited to the listed README file; target implementation files were not exhaustively inspected.",
+          "No contract conformance test, integration test, or runtime interaction was executed.",
+          "Architectural parentage, cross-links, and documentation examples do not establish an executable DEPENDS_ON edge."
+        ]
+      }
     },
     {
       "edge_id": "dep:1371974932:github-repo:1344028054",
@@ -178,7 +213,42 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "The synergy_apps README lists synergy_app as a related repository. The inspected read_models module contains no import, API call, package reference, or release-contract invocation for synergy_app. Documentation association only.",
+      "review_outcome": "source_reference_found",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static cross-repository review of the pinned synergy_apps README and read_models implementation, plus the target repository audit-pinned README; inspected declared relationship direction and distinguished architecture/navigation from executable imports or runtime calls",
+        "conclusion": "The synergy_apps README lists synergy_app as a related repository. The inspected read_models module contains no import, API call, package reference, or release-contract invocation for synergy_app. Documentation association only.",
+        "evidence": [
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "README.md",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda",
+            "role": "dependent_architecture_and_related_repositories_documentation"
+          },
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "runtime/read_models.py",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b",
+            "role": "dependent_principal_read_model_source"
+          },
+          {
+            "repository": "Shtenco/synergy_app",
+            "path": "README.md",
+            "commit": "d0f531aa402b58326db3fad361a7ae8c88ee9667",
+            "blob_sha": "dc050539ced9562541e47987ade6472184ee6add",
+            "role": "target_repository_documentation"
+          }
+        ],
+        "limitations": [
+          "The dependent source review was limited to README.md and runtime/read_models.py; no exhaustive import graph, package manifest, workflow, deployment, or external orchestrator scan was performed.",
+          "Target evidence is limited to the listed README file; target implementation files were not exhaustively inspected.",
+          "No contract conformance test, integration test, or runtime interaction was executed.",
+          "Architectural parentage, cross-links, and documentation examples do not establish an executable DEPENDS_ON edge."
+        ]
+      }
     },
     {
       "edge_id": "dep:1371974932:github-repo:1344027509",
@@ -207,7 +277,42 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "Both repositories reference one another in documentation: synergy_apps lists sinergy_app, while sinergy_app describes typed read-models from synergy_apps. This is evidence of an intended read-model relationship, but the reviewed source scope does not establish a callable interface, package dependency, contract conformance, or runtime direction. Treat as an integration candidate only.",
+      "review_outcome": "source_reference_found",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static cross-repository review of the pinned synergy_apps README and read_models implementation, plus the target repository audit-pinned README; inspected declared relationship direction and distinguished architecture/navigation from executable imports or runtime calls",
+        "conclusion": "Both repositories reference one another in documentation: synergy_apps lists sinergy_app, while sinergy_app describes typed read-models from synergy_apps. This is evidence of an intended read-model relationship, but the reviewed source scope does not establish a callable interface, package dependency, contract conformance, or runtime direction. Treat as an integration candidate only.",
+        "evidence": [
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "README.md",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda",
+            "role": "dependent_architecture_and_related_repositories_documentation"
+          },
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "runtime/read_models.py",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b",
+            "role": "dependent_principal_read_model_source"
+          },
+          {
+            "repository": "Shtenco/sinergy_app",
+            "path": "README.md",
+            "commit": "2e8af43e14875442f89b6dca13d96306defaf1bd",
+            "blob_sha": "a301fe07f3b3e129c7482f3240d3fda5e2c00890",
+            "role": "target_repository_documentation"
+          }
+        ],
+        "limitations": [
+          "The dependent source review was limited to README.md and runtime/read_models.py; no exhaustive import graph, package manifest, workflow, deployment, or external orchestrator scan was performed.",
+          "Target evidence is limited to the listed README file; target implementation files were not exhaustively inspected.",
+          "No contract conformance test, integration test, or runtime interaction was executed.",
+          "Architectural parentage, cross-links, and documentation examples do not establish an executable DEPENDS_ON edge."
+        ]
+      }
     },
     {
       "edge_id": "dep:1371974932:github-repo:1227851612",
@@ -236,7 +341,42 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "The synergy_apps README lists sinergy_super_app as a related repository. The inspected synergy_apps read-model source contains no import, API call, or package-level dependency on the super-app. Documentation association only.",
+      "review_outcome": "source_reference_found",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static cross-repository review of the pinned synergy_apps README and read_models implementation, plus the target repository audit-pinned README; inspected declared relationship direction and distinguished architecture/navigation from executable imports or runtime calls",
+        "conclusion": "The synergy_apps README lists sinergy_super_app as a related repository. The inspected synergy_apps read-model source contains no import, API call, or package-level dependency on the super-app. Documentation association only.",
+        "evidence": [
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "README.md",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda",
+            "role": "dependent_architecture_and_related_repositories_documentation"
+          },
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "runtime/read_models.py",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b",
+            "role": "dependent_principal_read_model_source"
+          },
+          {
+            "repository": "Shtenco/sinergy_super_app",
+            "path": "README.md",
+            "commit": "3494f2cdebd0b9510ac65a470b32a085e4920537",
+            "blob_sha": "f1eeb27b14d4a027d061e7a514087dd16f837be1",
+            "role": "target_repository_documentation"
+          }
+        ],
+        "limitations": [
+          "The dependent source review was limited to README.md and runtime/read_models.py; no exhaustive import graph, package manifest, workflow, deployment, or external orchestrator scan was performed.",
+          "Target evidence is limited to the listed README file; target implementation files were not exhaustively inspected.",
+          "No contract conformance test, integration test, or runtime interaction was executed.",
+          "Architectural parentage, cross-links, and documentation examples do not establish an executable DEPENDS_ON edge."
+        ]
+      }
     },
     {
       "edge_id": "dep:1371974932:github-repo:1365353815",
@@ -265,7 +405,42 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "The synergy_apps README lists synergy_app_family; the target README also identifies synergy_apps as its architectural parent and depicts that hierarchy. This confirms architectural/documentation linkage, not an executable dependency or runtime integration.",
+      "review_outcome": "source_reference_found",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static cross-repository review of the pinned synergy_apps README and read_models implementation, plus the target repository audit-pinned README; inspected declared relationship direction and distinguished architecture/navigation from executable imports or runtime calls",
+        "conclusion": "The synergy_apps README lists synergy_app_family; the target README also identifies synergy_apps as its architectural parent and depicts that hierarchy. This confirms architectural/documentation linkage, not an executable dependency or runtime integration.",
+        "evidence": [
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "README.md",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda",
+            "role": "dependent_architecture_and_related_repositories_documentation"
+          },
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "runtime/read_models.py",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b",
+            "role": "dependent_principal_read_model_source"
+          },
+          {
+            "repository": "Shtenco/synergy_app_family",
+            "path": "README.md",
+            "commit": "b66ddd644a0e7ab1ce14559910a1e23dc93d9136",
+            "blob_sha": "c57e17c05c4f24daef8d1a04da8a7b5330fd81a1",
+            "role": "target_repository_documentation"
+          }
+        ],
+        "limitations": [
+          "The dependent source review was limited to README.md and runtime/read_models.py; no exhaustive import graph, package manifest, workflow, deployment, or external orchestrator scan was performed.",
+          "Target evidence is limited to the listed README file; target implementation files were not exhaustively inspected.",
+          "No contract conformance test, integration test, or runtime interaction was executed.",
+          "Architectural parentage, cross-links, and documentation examples do not establish an executable DEPENDS_ON edge."
+        ]
+      }
     },
     {
       "edge_id": "dep:1371974932:github-repo:1371942189",
@@ -294,7 +469,42 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "The synergy_apps README lists synergy_messenger and the target README explicitly identifies synergy_apps as its architectural parent. The reviewed synergy_apps read-model source contains no messenger integration call or package dependency. Architectural association only.",
+      "review_outcome": "source_reference_found",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static cross-repository review of the pinned synergy_apps README and read_models implementation, plus the target repository audit-pinned README; inspected declared relationship direction and distinguished architecture/navigation from executable imports or runtime calls",
+        "conclusion": "The synergy_apps README lists synergy_messenger and the target README explicitly identifies synergy_apps as its architectural parent. The reviewed synergy_apps read-model source contains no messenger integration call or package dependency. Architectural association only.",
+        "evidence": [
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "README.md",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda",
+            "role": "dependent_architecture_and_related_repositories_documentation"
+          },
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "runtime/read_models.py",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b",
+            "role": "dependent_principal_read_model_source"
+          },
+          {
+            "repository": "Shtenco/synergy_messenger",
+            "path": "README.md",
+            "commit": "549688f0346b351b43d485bf6e66b3bcfb65a59b",
+            "blob_sha": "410446bb271431207a0b51d077c8fe1c8f74c060",
+            "role": "target_repository_documentation"
+          }
+        ],
+        "limitations": [
+          "The dependent source review was limited to README.md and runtime/read_models.py; no exhaustive import graph, package manifest, workflow, deployment, or external orchestrator scan was performed.",
+          "Target evidence is limited to the listed README file; target implementation files were not exhaustively inspected.",
+          "No contract conformance test, integration test, or runtime interaction was executed.",
+          "Architectural parentage, cross-links, and documentation examples do not establish an executable DEPENDS_ON edge."
+        ]
+      }
     },
     {
       "edge_id": "dep:1371974932:github-repo:1362541171",
@@ -323,7 +533,42 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "The synergy_apps README cites dlp_solver as an example of documentation depth, not as a software dependency. No import, API call, package dependency, or contract use was found in the inspected synergy_apps source. The registry edge appears semantically over-broad.",
+      "review_outcome": "source_reference_found",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static cross-repository review of the pinned synergy_apps README and read_models implementation, plus the target repository audit-pinned README; inspected declared relationship direction and distinguished architecture/navigation from executable imports or runtime calls",
+        "conclusion": "The synergy_apps README cites dlp_solver as an example of documentation depth, not as a software dependency. No import, API call, package dependency, or contract use was found in the inspected synergy_apps source. The registry edge appears semantically over-broad.",
+        "evidence": [
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "README.md",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "00da577af4a33553c3a5231937db3c5014549dda",
+            "role": "dependent_architecture_and_related_repositories_documentation"
+          },
+          {
+            "repository": "Shtenco/synergy_apps",
+            "path": "runtime/read_models.py",
+            "commit": "7b3dec583964d26c0f2d326bb040f9166db9d793",
+            "blob_sha": "71947ec356b51283f7c522fd69eaaa724b64a08b",
+            "role": "dependent_principal_read_model_source"
+          },
+          {
+            "repository": "Shtenco/dlp_solver",
+            "path": "README.md",
+            "commit": "f140d3e7f1db141d7ce5497b65663fd4d4f5b305",
+            "blob_sha": "84bb2656aad88bdad70c32cf0a3301c00bb67217",
+            "role": "target_repository_documentation"
+          }
+        ],
+        "limitations": [
+          "The dependent source review was limited to README.md and runtime/read_models.py; no exhaustive import graph, package manifest, workflow, deployment, or external orchestrator scan was performed.",
+          "Target evidence is limited to the listed README file; target implementation files were not exhaustively inspected.",
+          "No contract conformance test, integration test, or runtime interaction was executed.",
+          "Architectural parentage, cross-links, and documentation examples do not establish an executable DEPENDS_ON edge."
+        ]
+      }
     },
     {
       "edge_id": "dep:1377447162:github-repo:1390438988",
