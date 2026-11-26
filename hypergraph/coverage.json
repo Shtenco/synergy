@@ -407,15 +407,15 @@
   "edge_review": {
     "as_of": "2026-11-26",
     "total_candidate_edges": 109,
-    "reviewed_edges": 1,
+    "reviewed_edges": 2,
     "outcomes": {
-      "not_reviewed": 108,
+      "not_reviewed": 107,
       "not_observed_in_reviewed_scope": 1,
-      "source_reference_found": 0,
+      "source_reference_found": 1,
       "contract_verified": 0,
       "runtime_verified": 0
     },
     "runtime_verified_edges": 0,
-    "method_note": "Evidence-review outcomes are distinct from graph status. Scoped negative observations do not reject an edge."
+    "method_note": "Evidence-review outcomes are distinct from graph status. Documentation references are not executable dependencies. Scoped negative observations do not reject an edge."
   }
 }
