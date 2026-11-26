@@ -93,7 +93,34 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "A README hyperlink to synergy_system was observed, but no executable dependency was observed in the reviewed principal source. This is documentation-level evidence only; edge remains candidate.",
+      "review_outcome": "source_reference_found",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static inspection of the dependent README and principal Python source; checked the README cross-reference and searched the source for the target repository name",
+        "conclusion": "The README contains a hyperlink to Shtenco/synergy_system (line 108), but the reviewed principal Python source contains no synergy_system import, API call, contract use, or repository reference. This supports a documentation-level association only, not an executable dependency or runtime integration.",
+        "evidence": [
+          {
+            "repository": "Shtenco/computer_vision_trading_metatrader_5",
+            "path": "README.md",
+            "commit": "0aabf5bf43052a1fb4bc98c07126811a165e911d",
+            "blob_sha": "d25f566d9f3113057288f4ee2f28afc58f24b834",
+            "role": "dependent_readme_documentation_link"
+          },
+          {
+            "repository": "Shtenco/computer_vision_trading_metatrader_5",
+            "path": "computer_vision_trading.py",
+            "commit": "0aabf5bf43052a1fb4bc98c07126811a165e911d",
+            "blob_sha": "587163516fb6ae1c4b46932b68b0d8168fd45027",
+            "role": "dependent_principal_source_reviewed_for_imports_and_calls"
+          }
+        ],
+        "limitations": [
+          "Only README.md and computer_vision_trading.py were reviewed on the pinned dependent commit.",
+          "No exhaustive scan of other files, branches, package manifests, workflows, deployment configuration, or external orchestration was performed.",
+          "No contract conformance or runtime integration test was performed."
+        ]
+      }
     },
     {
       "edge_id": "dep:1371974932:github-repo:1341273343",
