@@ -189,3 +189,10 @@ This projection does not promote edges: E2E-tested and deployed counts remain ze
 The related draft PR #56 in `synergy_system` passes four registry/schema/security workflows, but its 112-row portfolio explicitly says full source review is incomplete. Its interface registry remains 77 repositories and its federation backlog is also scoped to 77 (41 integrated, 36 non-integrated); it does not resolve the 35 inventory repositories absent from the interface registry. The 30 capability portfolio is separate from Hypergraph's 39 proposed components.
 
 Security re-audit adds GAP-096 for unauthenticated cognitive-memory API routes and GAP-097 for stale remediation PR states in PR #56's SECURITY_BLOCKERS snapshot. Two PR states are already closed-unmerged (USDS #6 and Turbo Linux #13); other remediation branches remain open/draft. A green branch hygiene scan or file deletion does not prove external credential rotation, revocation, history purge or production safety.
+
+
+## Edge-review outcomes — 2026-11-26
+
+The dependency graph distinguishes the graph claim status (candidate, reviewed, verified, rejected) from the evidence-review outcome (not_reviewed, not_observed_in_reviewed_scope, source_reference_found, contract_verified, runtime_verified). A negative observation is always bounded by explicit repository, commit/blob, file scope and limitations; it does not prove that an integration is absent elsewhere. The graph status must not be promoted solely because a source reference or contract declaration exists.
+
+The first bounded pilot, dep:1091968186:github-repo:1341272872 (computer vision trading → MIDAS AI), was inspected against its pinned README and principal source plus the MIDAS portfolio-decision contract file. No MIDAS or portfolio-decision reference was observed in the two dependent files. Its review outcome is not_observed_in_reviewed_scope; graph status remains candidate. No runtime or contract integration is claimed.
