@@ -6,8 +6,8 @@
       "id": "GAP-001",
       "severity": "high",
       "area": "source_audit",
-      "description": "112 repositories are inventoried; 20 README reviews and 19 limited source reviews are pinned in the evidence ledger. The remaining 93 repositories still require source-level review, and the 19 reviewed scopes are not full repository certification.",
-      "next_action": "Audit the remaining 93 repositories in batches; expand each limited review to dependencies, tests, workflows and runtime contracts."
+      "description": "112 repositories are inventoried and all 112 README/tree snapshots have been reviewed. Limited executable-source/prototype review covers 106/112 repositories (91 main-branch reviews and 15 branch-only prototype reviews); the remaining six are five documentation-only specifications and one benchmark dossier. These reviews are scoped evidence, not repository-wide certification.",
+      "next_action": "Keep README/content coverage separate from executable-source coverage. Revisit the six remaining repositories only if executable source appears; expand limited reviews selectively to dependencies, tests, workflows and runtime contracts. Do not describe the 106 reviewed scopes as full certification."
     },
     {
       "id": "GAP-002",
@@ -27,8 +27,8 @@
       "id": "GAP-004",
       "severity": "medium",
       "area": "proposals",
-      "description": "39 proposed shared cores and domain routers may overlap existing repositories.",
-      "next_action": "Perform capability overlap matrix before creating any repository."
+      "description": "All 39 proposed shared cores and domain routers have overlap assessments with 91 commit/blob-pinned repository/file evidence references. The remaining gap is owner/architecture adjudication and implementation-boundary validation; proposals are not approved repositories or runtime components.",
+      "next_action": "Review the 39 assessments and evidence scopes with the canonical owners; retain reuse decisions and pending owner decisions. Do not create repositories or promote proposals to runtime components without explicit approval and source-backed need."
     },
     {
       "id": "GAP-005",
