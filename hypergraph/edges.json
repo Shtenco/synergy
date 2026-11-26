@@ -31,7 +31,40 @@
         }
       ],
       "observed_at": "2026-11-25",
-      "verification_note": "Registry declaration only; source imports, API calls and runtime contracts have not yet verified this edge."
+      "verification_note": "Registry declaration only. A bounded review of the dependent README and principal source did not observe MIDAS or portfolio-decision references; edge remains candidate pending broader repository and integration-surface review.",
+      "review_outcome": "not_observed_in_reviewed_scope",
+      "review": {
+        "reviewed_at": "2026-11-26",
+        "method": "bounded static source and README inspection; searched for MIDAS and portfolio-decision references and inspected the principal source file",
+        "conclusion": "The reviewed README and principal Python source contain no MIDAS, synergy_midas_ai, or portfolio_decision reference. The reviewed pipeline appears self-contained within the inspected scope. This is a negative observation about the reviewed files only, not proof that no integration exists in other files, branches, deployment configuration, or external orchestration.",
+        "evidence": [
+          {
+            "repository": "Shtenco/computer_vision_trading_metatrader_5",
+            "path": "README.md",
+            "commit": "0aabf5bf43052a1fb4bc98c07126811a165e911d",
+            "blob_sha": "d25f566d9f3113057288f4ee2f28afc58f24b834",
+            "role": "dependent_readme"
+          },
+          {
+            "repository": "Shtenco/computer_vision_trading_metatrader_5",
+            "path": "computer_vision_trading.py",
+            "commit": "0aabf5bf43052a1fb4bc98c07126811a165e911d",
+            "blob_sha": "587163516fb6ae1c4b46932b68b0d8168fd45027",
+            "role": "dependent_principal_source"
+          },
+          {
+            "repository": "Shtenco/synergy_midas_ai",
+            "path": "contracts/portfolio_decision_v1.py",
+            "blob_sha": "ab6ed928111b2a35911bf5929e55091e07e94118",
+            "role": "claimed_dependency_contract"
+          }
+        ],
+        "limitations": [
+          "Only README.md and computer_vision_trading.py were reviewed on the dependent repository commit shown.",
+          "No exhaustive branch, deployment, workflow, package, or external orchestrator search was performed.",
+          "No runtime interaction or contract conformance test was performed."
+        ]
+      }
     },
     {
       "edge_id": "dep:1091968186:github-repo:1341273343",
