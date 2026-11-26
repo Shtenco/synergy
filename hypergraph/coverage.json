@@ -407,11 +407,11 @@
   "edge_review": {
     "as_of": "2026-11-26",
     "total_candidate_edges": 109,
-    "reviewed_edges": 9,
+    "reviewed_edges": 11,
     "outcomes": {
-      "not_reviewed": 100,
+      "not_reviewed": 98,
       "not_observed_in_reviewed_scope": 1,
-      "source_reference_found": 8,
+      "source_reference_found": 10,
       "contract_verified": 0,
       "runtime_verified": 0
     },
