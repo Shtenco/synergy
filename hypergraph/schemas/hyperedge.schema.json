@@ -96,6 +96,77 @@
     },
     "verification_note": {
       "type": "string"
+    },
+    "review_outcome": {
+      "enum": [
+        "not_reviewed",
+        "not_observed_in_reviewed_scope",
+        "source_reference_found",
+        "contract_verified",
+        "runtime_verified"
+      ],
+      "description": "Evidence review outcome; separate from graph truth/status. Negative observations are limited to the reviewed scope."
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "reviewed_at",
+        "method",
+        "conclusion",
+        "evidence",
+        "limitations"
+      ],
+      "properties": {
+        "reviewed_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conclusion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "repository",
+              "path",
+              "blob_sha",
+              "role"
+            ],
+            "properties": {
+              "repository": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "commit": {
+                "type": "string"
+              },
+              "blob_sha": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": true
