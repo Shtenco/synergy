@@ -1,0 +1,745 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "source_manifest": "hypergraph/evidence/governance-scope-manifest.json",
+  "inventory_repository_count": 112,
+  "absent_from_both_count": 35,
+  "owner_decision_count": 0,
+  "recommendations": [
+    {
+      "repository": "Shtenco/shtenco_micro_ai",
+      "github_repository_id": "1459873284",
+      "node_id": "github-repo:1459873284",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "5c9f0b341f59b1567c2d5109fbfeee17f357d196",
+      "recommendation": "research_or_model_component",
+      "owner_decision": "pending",
+      "rationale": "Research/model component; first define whether it exposes a stable service boundary or remains a library/research artifact.",
+      "evidence": [
+        {
+          "path": "scripts/download_model.py",
+          "blob_sha": "b3e190c3d688659e3b7da813bf5eea19b3db2905"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergistic_economics",
+      "github_repository_id": "1451354855",
+      "node_id": "github-repo:1451354855",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "7e9e5579ccb0835300b8336e1b675dcf5eaec4a9",
+      "recommendation": "domain_schema_research",
+      "owner_decision": "pending",
+      "rationale": "Economic schema/research domain; schema ownership can be registered without inventing a deployed runtime interface.",
+      "evidence": [
+        {
+          "path": "prototype/synergy_kernel.py",
+          "blob_sha": "9857dc0ac9b5bd4b25f28f108bcb331696441302"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy",
+      "github_repository_id": "1409433270",
+      "node_id": "github-repo:1409433270",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "9ab053764cde5cef74c304234ea9e1ac08204386",
+      "recommendation": "umbrella_governance_root",
+      "owner_decision": "pending",
+      "rationale": "Top-level portfolio/architecture repository; should be represented as a governance authority or parent, not as an ordinary runtime service dependency.",
+      "evidence": [
+        {
+          "path": "scripts/rebuild_registry.py",
+          "blob_sha": "38f367ec8d98d9e49c264fe71c874b2c457986b4"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_agent_long_term_memory",
+      "github_repository_id": "1465066359",
+      "node_id": "github-repo:1465066359",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "branch_only_prototype",
+      "source_commit": "04e666038ac7cd0652ea77ce4de2c2f1ec706dcf",
+      "recommendation": "branch_prototype_not_runtime",
+      "owner_decision": "pending",
+      "rationale": "Audit status is branch_only_prototype; do not register as a main-branch runtime provider until merged, reviewed and tested.",
+      "evidence": [
+        {
+          "path": "synergy_agent_long_term_memory/runtime.py",
+          "blob_sha": "36571e99ef4c18b0fb992f4ee2eea0e80e9fa7a7"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_ai_browser-",
+      "github_repository_id": "1469906584",
+      "node_id": "github-repo:1469906584",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "e69ce454424c4d29da54dc649d7379ec24b9bef0",
+      "recommendation": "runtime_interface_candidate_security_gated",
+      "owner_decision": "pending",
+      "rationale": "Service-like component may warrant an interface record, but security gates must be satisfied before any network or cross-repository use.",
+      "evidence": [
+        {
+          "path": "synergy_browser/browser.py",
+          "blob_sha": "7fe88d7bf0af89b7f454b642a7bd991d539d9851"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_ai_economic",
+      "github_repository_id": "1420783404",
+      "node_id": "github-repo:1420783404",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "branch_only_prototype",
+      "source_commit": "6a84410ad2107945069c4f153381854948816b91",
+      "recommendation": "branch_prototype_not_runtime",
+      "owner_decision": "pending",
+      "rationale": "Audit status is branch_only_prototype; do not register as a main-branch runtime provider until merged, reviewed and tested.",
+      "evidence": [
+        {
+          "path": "src/economy_v8.py",
+          "blob_sha": "9e76b5497066460ca2ff8ccaa342641f12dbeb30"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "github_repository_id": "1413525853",
+      "node_id": "github-repo:1413525853",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "branch_only_prototype",
+      "source_commit": "dfc163f018e5659e914bc727ab9ea6a5dfb335c6",
+      "recommendation": "branch_prototype_not_runtime",
+      "owner_decision": "pending",
+      "rationale": "Audit status is branch_only_prototype; do not register as a main-branch runtime provider until merged, reviewed and tested.",
+      "evidence": [
+        {
+          "path": "rwkv7_extreme_quant_v1/README.md",
+          "blob_sha": "3b164092c0341357b94214ada6fe1a1eac630e60"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_ai_workspace",
+      "github_repository_id": "1428810995",
+      "node_id": "github-repo:1428810995",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "branch_only_prototype",
+      "source_commit": "5483f61106e626267c521cf64be8eaeb82448fba",
+      "recommendation": "branch_prototype_not_runtime",
+      "owner_decision": "pending",
+      "rationale": "Audit status is branch_only_prototype; do not register as a main-branch runtime provider until merged, reviewed and tested.",
+      "evidence": [
+        {
+          "path": "workspace/service.py",
+          "blob_sha": "ae1933a93364ecd92255086e833372afec94d32d"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "github_repository_id": "1394514826",
+      "node_id": "github-repo:1394514826",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "077ce326b2037511c215f7d7b104be72e1b5e34d",
+      "recommendation": "compute_research_component",
+      "owner_decision": "pending",
+      "rationale": "Compute/research component; register as a runtime interface only if a stable callable contract and operational owner are confirmed.",
+      "evidence": [
+        {
+          "path": "src/qcno_v8_dedup_factor4_run.py",
+          "blob_sha": "b14a52396c7dcd95785717678c4bad12776900a6"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_computing_topology",
+      "github_repository_id": "1397603060",
+      "node_id": "github-repo:1397603060",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "ebc42bfe0fcbcb0ce50df52ff74b01b87af5a6ff",
+      "recommendation": "compute_research_component",
+      "owner_decision": "pending",
+      "rationale": "Compute/research component; register as a runtime interface only if a stable callable contract and operational owner are confirmed.",
+      "evidence": [
+        {
+          "path": "src/v4/v4_correctness_harness.py",
+          "blob_sha": "e51b1b173af4a0006511ca97addb6a190538efc2"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "github_repository_id": "1409209160",
+      "node_id": "github-repo:1409209160",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "5654e37fdc348ace7398a7104d54f52e6dbd6800",
+      "recommendation": "runtime_interface_candidate",
+      "owner_decision": "pending",
+      "rationale": "Source-reviewed service-like component absent from both registries; owner should decide whether to add a versioned interface record and runtime dependency edges only where evidenced.",
+      "evidence": [
+        {
+          "path": "lead_os/core.py",
+          "blob_sha": "4cb9b10e66fe84847d3243fd7985a8b505dc8579"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_maps",
+      "github_repository_id": "1456611297",
+      "node_id": "github-repo:1456611297",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "576871d1aee78273ec97a45cacca49de8873cf51",
+      "recommendation": "runtime_interface_candidate",
+      "owner_decision": "pending",
+      "rationale": "Source-reviewed service-like component absent from both registries; owner should decide whether to add a versioned interface record and runtime dependency edges only where evidenced.",
+      "evidence": [
+        {
+          "path": "src/regions/eaeu.ts",
+          "blob_sha": "e3e9c24155746997afc8e334fdaf98fbe91ffa83"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_meta_api",
+      "github_repository_id": "1428731702",
+      "node_id": "github-repo:1428731702",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "ffbb76fe95a3ca7ad3875ff5dfe7463fb909682c",
+      "recommendation": "runtime_interface_candidate_security_gated",
+      "owner_decision": "pending",
+      "rationale": "Service-like component may warrant an interface record, but security gates must be satisfied before any network or cross-repository use.",
+      "evidence": [
+        {
+          "path": "src/synergy_meta_api/policy.py",
+          "blob_sha": "b518f8ef2beedea02b88c9c31731c9b8276befa2"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_metaverse",
+      "github_repository_id": "1456604903",
+      "node_id": "github-repo:1456604903",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "63c180f6d6b0c4e20d84604d47599700c43d19c6",
+      "recommendation": "branch_prototype_not_runtime",
+      "owner_decision": "pending",
+      "rationale": "Audit status is branch_only_prototype; do not register as a main-branch runtime provider until merged, reviewed and tested.",
+      "evidence": [
+        {
+          "path": "src/synergy_metaverse/crypto.py",
+          "blob_sha": "3c3934d7e7cd9c29f7bd298161fd061a5a6bdea1"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_search_engline",
+      "github_repository_id": "1409193535",
+      "node_id": "github-repo:1409193535",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "8e3c6cd42c476cb900490c759774097f2c90dca2",
+      "recommendation": "domain_component_simulation",
+      "owner_decision": "pending",
+      "rationale": "Domain component is simulation-oriented; keep out of runtime integration registry until production service boundaries exist.",
+      "evidence": [
+        {
+          "path": "sim/hardnav_multiplier_v2.py",
+          "blob_sha": "489b5121d91d842897fedec088826d69718d7905"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy_triangle_money_system",
+      "github_repository_id": "1409209832",
+      "node_id": "github-repo:1409209832",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "8fb8a604a225a1ceaa9ee9272bf502d4603f9c39",
+      "recommendation": "domain_research_not_settlement_authority",
+      "owner_decision": "pending",
+      "rationale": "Economic/monetary research must not be treated as a settlement authority; document as a research domain until legal, ledger and operational contracts are established.",
+      "evidence": [
+        {
+          "path": "src/CPMMPool.sol",
+          "blob_sha": "637cf6a847904fcc399d2f0e93b93f262992daa7"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/synergy.github.io",
+      "github_repository_id": "1426159613",
+      "node_id": "github-repo:1426159613",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "4d1b67fd00c4a1584c8428ef71d17c8b707c1703",
+      "recommendation": "static_portal",
+      "owner_decision": "pending",
+      "rationale": "Static public portal; no runtime service contract should be inferred from the website repository.",
+      "evidence": [
+        {
+          "path": "scripts/audit_static_site.py",
+          "blob_sha": "5f6091d73de92f902cdcac2194ca47db9a50256b"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/tiimeweb_synergy_exactly_once_delivery",
+      "github_repository_id": "1465156316",
+      "node_id": "github-repo:1465156316",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "35e834a7b4bcabdc6c656a8beb3a167c1ced2b99",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "experiments/exactly_once_lab.py",
+          "blob_sha": "68b9261fa4409acc3256d7397d1ad7a19bf7f815"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "github_repository_id": "1465262827",
+      "node_id": "github-repo:1465262827",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "2bcb732a92fe8053c18f913edb1318ac21ef3620",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "experiments/sqlite_cross_session.py",
+          "blob_sha": "bd02b8802035600a882b619e20d6d26ed34ab3cc"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "github_repository_id": "1465024116",
+      "node_id": "github-repo:1465024116",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "6fb12232e07a82d86a6689d8aa0d1c6efde453d3",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/scenarios/article09.py",
+          "blob_sha": "1bcb2ae6d6e186bb3263e3da4adf5436cd2f1990"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "github_repository_id": "1465065411",
+      "node_id": "github-repo:1465065411",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "1c116e449ca992f5bccbaa70ae98d65972a08e69",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/scenarios/article10.py",
+          "blob_sha": "8540b9a43b34733f49922a0fdb4037ca20de1a2b"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_benchmark_statistics",
+      "github_repository_id": "1465066858",
+      "node_id": "github-repo:1465066858",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "9d6db41edc273189fe4795b3803f98181cff02be",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/real_experiments/article15_measured_uncertainty.py",
+          "blob_sha": "4633c08d69ba19034cce1fd0329f36fa6cc2f300"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_binary_neural_networks",
+      "github_repository_id": "1465021493",
+      "node_id": "github-repo:1465021493",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "e391b2f2809e8033a39258303017c23d023fe93a",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/real_experiments/article02_binary_digits.py",
+          "blob_sha": "fe4b90f2fa8a5ca949aa85750a50ef8773327f89"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_codebase_intelligence",
+      "github_repository_id": "1465022679",
+      "node_id": "github-repo:1465022679",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "9eca8881fa15cd8e14c5e4a714014adc0df95029",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/runner.py",
+          "blob_sha": "bfcac3f3f1787de10919da7f41c7c6ef04ae0c51"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "github_repository_id": "1465066115",
+      "node_id": "github-repo:1465066115",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "5c25ddb97838a1d14e40dc9458847743fa94191f",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/scenarios/article12.py",
+          "blob_sha": "bd445ee5aa1df4d571e2c07e99f96d3f088127c2"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_cpu_language_model",
+      "github_repository_id": "1465022937",
+      "node_id": "github-repo:1465022937",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "bcde48c89e60cd0498dbf33a969d009fe6e98df8",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/real_experiments/article05_real_text.py",
+          "blob_sha": "5a3063c2a74e3dab4a5531f6ca9d053f206471e0"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_fault_injection_lab",
+      "github_repository_id": "1465067741",
+      "node_id": "github-repo:1465067741",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "53585459cefbc3956f1601feaaece80d68da7170",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "experiments/fault_injection_lab.py",
+          "blob_sha": "8a07dab89460add97a322efaf030fdde642558f6"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_llm_memory_lab",
+      "github_repository_id": "1465021198",
+      "node_id": "github-repo:1465021198",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "b67b34f30a48a1a8b4bf1277a273da432711b725",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/scenarios/article01.py",
+          "blob_sha": "ba139e3fe11871ab9875625003d1eed5b9563e33"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_ml_validation_lab",
+      "github_repository_id": "1465023909",
+      "node_id": "github-repo:1465023909",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "ba93cabf4d2ec15886c7c524669c851f546e73d7",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/real_experiments/article08_group_leakage.py",
+          "blob_sha": "4e3b636a9b576ebdb4d8939d84e4499814a593d9"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "github_repository_id": "1465021727",
+      "node_id": "github-repo:1465021727",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "a493423ec344819de485b50d26eb7f85511bd54b",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/scenarios/article03.py",
+          "blob_sha": "53b65289ee67532cb36fab07c078703274643a19"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_python_cpp_performance",
+      "github_repository_id": "1465023729",
+      "node_id": "github-repo:1465023729",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "ea477e276c7339931864b8cea54b34756ae663b5",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/real_experiments/article07_cpp_benchmark.py",
+          "blob_sha": "f3e11dceea1979983efcff579d8663adf224f275"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_rag_quality_cost",
+      "github_repository_id": "1465066578",
+      "node_id": "github-repo:1465066578",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "a5ec554db4f10ec5076be74f8283603cb1fedf3d",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/scenarios/article14.py",
+          "blob_sha": "f5f6ccf8c613bfddf2c92e5bdf1ca766e0d984e8"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_retry_storm_lab",
+      "github_repository_id": "1466823100",
+      "node_id": "github-repo:1466823100",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "b601f79db253751e4c7d99d671420bf95d840d3c",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "src/retrystorm/policies.py",
+          "blob_sha": "461714632b18a9dde26097b9bae7760033ac35e6"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "github_repository_id": "1465023512",
+      "node_id": "github-repo:1465023512",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "76ec7c407f2015b391b9f0d4561ce3caa54e5c05",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/real_experiments/article06_har_sequences.py",
+          "blob_sha": "c6cd785b0917fdc88ec156feb1abd885b2075d6d"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    },
+    {
+      "repository": "Shtenco/timeweb_synergy_service_recovery",
+      "github_repository_id": "1465065775",
+      "node_id": "github-repo:1465065775",
+      "current_presence": {
+        "dependency_graph": false,
+        "interface_registry": false
+      },
+      "audit_status": "source_reviewed_limited",
+      "source_commit": "d350865dbf602c3b518ec0a1f6e183e6d0438d80",
+      "recommendation": "research_evidence_only",
+      "owner_decision": "pending",
+      "rationale": "Research or benchmark laboratory; preserve as evidence/evaluation assets, not production runtime dependencies.",
+      "evidence": [
+        {
+          "path": "prototypes/scenarios/article11.py",
+          "blob_sha": "42e35f6c33e6eec61831843041f66806f5b002f6"
+        }
+      ],
+      "decision_guard": "Recommendation only. Do not add, remove or promote governance/runtime edges until the repository owner confirms scope and a versioned interface contract exists."
+    }
+  ]
+}

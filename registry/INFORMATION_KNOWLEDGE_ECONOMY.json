@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0.0",
+  "status": "architecture_proposal",
+  "generated_at": "2026-11-25",
+  "source_repository": "Shtenco/synergy",
+  "source_branch": "feat/information-knowledge-economy-hypergraph",
+  "inventory_basis": {
+    "repository": "Shtenco/synergy",
+    "path": "registry/repos.json",
+    "observed_at": "2026-11-20",
+    "account_repository_count": 92,
+    "ecosystem_relation_rule": "Repository membership is determined by content and documented role, not name alone.",
+    "warning": "This is the count in the canonical snapshot, not a claim about the current live total. Refresh and reconcile provider IDs and commit SHAs before using as current inventory."
+  },
+  "lifecycle_states": [
+    "captured",
+    "classified",
+    "normalized",
+    "deduplicated",
+    "indexed",
+    "validated",
+    "active",
+    "cold",
+    "archived",
+    "expired",
+    "deleted"
+  ],
+  "trust_states": [
+    "candidate",
+    "reviewed",
+    "verified",
+    "rejected"
+  ],
+  "information_classes": [
+    {
+      "id": "ephemeral",
+      "purpose": "short-lived working context and caches",
+      "typical_placement": [
+        "memory",
+        "local_ssd"
+      ],
+      "retention": "short_ttl"
+    },
+    {
+      "id": "hot_working",
+      "purpose": "frequently accessed operational information",
+      "typical_placement": [
+        "nvme",
+        "ssd",
+        "replicated_database"
+      ],
+      "retention": "policy_defined"
+    },
+    {
+      "id": "warm",
+      "purpose": "searchable history and derived indexes",
+      "typical_placement": [
+        "ssd",
+        "hdd",
+        "object_storage"
+      ],
+      "retention": "policy_defined"
+    },
+    {
+      "id": "cold_archive",
+      "purpose": "infrequently accessed immutable source snapshots and completed artifacts",
+      "typical_placement": [
+        "high_capacity_hdd",
+        "archive_object_storage"
+      ],
+      "retention": "policy_defined"
+    },
+    {
+      "id": "critical_knowledge",
+      "purpose": "verified claims, contracts, provenance and cryptographic evidence",
+      "typical_placement": [
+        "replicated_storage",
+        "independent_backup"
+      ],
+      "retention": "policy_and_legal_hold"
+    }
+  ],
+  "node_types": [
+    "information_object",
+    "information_version",
+    "knowledge_claim",
+    "evidence",
+    "knowledge_entity",
+    "index_artifact",
+    "retention_policy",
+    "storage_placement",
+    "usage_event",
+    "cost_record",
+    "rights_grant",
+    "repository",
+    "agent",
+    "service",
+    "tenant",
+    "model"
+  ],
+  "hyperedge_relations": [
+    "GENERATES",
+    "CAPTURES",
+    "TRANSFORMS",
+    "DERIVES_CLAIM_FROM",
+    "EXACT_DUPLICATE_OF",
+    "SEMANTICALLY_SIMILAR_TO",
+    "CONTRADICTS",
+    "INDEXES",
+    "EMBEDS",
+    "VALIDATES",
+    "ATTESTS",
+    "CITES",
+    "STORED_AT",
+    "REPLICATED_TO",
+    "MIGRATED_TO",
+    "RESTORED_FROM",
+    "RETRIEVES",
+    "REUSES",
+    "CONSUMES",
+    "EXPORTS",
+    "SHARES_WITH",
+    "COSTS",
+    "SAVES_COST",
+    "IMPROVES_DECISION",
+    "EXPIRES_UNDER",
+    "AUTHORIZED_BY",
+    "GOVERNED_BY",
+    "DELETION_PROPAGATES_TO"
+  ],
+  "hyperedge_schema": {
+    "required": [
+      "id",
+      "relation",
+      "participants",
+      "status",
+      "provenance",
+      "observed_at"
+    ],
+    "participant_shape": {
+      "node_id": "string",
+      "role": "string"
+    },
+    "status": [
+      "candidate",
+      "reviewed",
+      "verified",
+      "rejected"
+    ],
+    "provenance_required": [
+      "source_uri_or_revision",
+      "evidence_ref",
+      "evidence_digest"
+    ],
+    "measurements": "Each measurement must include value, unit, measurement_kind (observed|estimated), interval and source; otherwise include not_measured_reason.",
+    "policy_fields": [
+      "tenant_id",
+      "purpose",
+      "rights_grant_id",
+      "retention_policy_id"
+    ]
+  },
+  "cost_dimensions": [
+    "ingest",
+    "transform",
+    "index",
+    "compute",
+    "storage",
+    "replication",
+    "backup",
+    "retrieval",
+    "egress",
+    "verification",
+    "security",
+    "deletion"
+  ],
+  "invariants": [
+    "content_hash proves integrity, not truth or rights",
+    "exact dedup requires digest and byte equality",
+    "semantic similarity never authorizes destructive merge",
+    "model-extracted claims start as candidate",
+    "source objects, claims and evidence remain separate entities",
+    "all runtime integration edges require concrete evidence",
+    "rights and retention apply to derived indexes, caches and backups",
+    "observed and estimated costs are never conflated"
+  ],
+  "candidate_repository_responsibilities": [
+    {
+      "repository": "Shtenco/synergy",
+      "responsibility": "ecosystem inventory and navigation",
+      "evidence": "README.md and registry/repos.json",
+      "status": "documented"
+    },
+    {
+      "repository": "Shtenco/synergy_system",
+      "responsibility": "governance, trust, contracts and security policy",
+      "evidence": "Shtenco/synergy README architecture ownership table",
+      "status": "documented_responsibility_runtime_unverified"
+    },
+    {
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "responsibility": "durable claims, provenance, RAG and graph memory",
+      "evidence": "README.md; docs/ARCHITECTURE.md; docs/DATA_MODEL.md",
+      "status": "source_reviewed_candidate_integration_unverified"
+    },
+    {
+      "repository": "Shtenco/synergy_net",
+      "responsibility": "distributed transport and mesh data plane",
+      "evidence": "Shtenco/synergy README architecture ownership table",
+      "status": "documented_responsibility_runtime_unverified"
+    },
+    {
+      "repository": "Shtenco/synergy_meta_os",
+      "responsibility": "node/service lifecycle and capability orchestration",
+      "evidence": "Shtenco/synergy README architecture ownership table",
+      "status": "documented_responsibility_runtime_unverified"
+    },
+    {
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "responsibility": "identity, cryptographic and trust evidence",
+      "evidence": "Shtenco/synergy README architecture ownership table",
+      "status": "documented_responsibility_runtime_unverified"
+    },
+    {
+      "repository": "Shtenco/synergy_project",
+      "responsibility": "economic and industrial model dossier",
+      "evidence": "Shtenco/synergy README architecture ownership table",
+      "status": "documented_responsibility_runtime_unverified"
+    }
+  ],
+  "rollout": [
+    "catalog",
+    "schema",
+    "evidence",
+    "metering",
+    "lifecycle",
+    "economics",
+    "federation"
+  ],
+  "non_goals": [
+    "retain_all_generated_data",
+    "hash_equals_truth",
+    "semantic_similarity_equals_duplicate",
+    "repo_name_proves_integration",
+    "simulation_equals_production_measurement"
+  ]
+}

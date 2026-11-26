@@ -1,0 +1,549 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "source": {
+    "repository": "Shtenco/synergy_system",
+    "commit": "f1183d54121c3bbc558e4a171ddbba20973f8520",
+    "commit_url": "https://github.com/Shtenco/synergy_system/commit/f1183d54121c3bbc558e4a171ddbba20973f8520",
+    "files": [
+      {
+        "path": "registry/AUTHORITY_REGISTRY.json",
+        "blob_sha": "b239cb4334d26441922c01f06979b869d870dafa"
+      },
+      {
+        "path": "registry/CONTRACT_REGISTRY.json",
+        "blob_sha": "e844fc6bf8ffdae80165568708d8ebd8c40f5633"
+      },
+      {
+        "path": "registry/DEPENDENCY_GRAPH.json",
+        "blob_sha": "fe391ee1811d57f2e449307a760013cf38129600"
+      },
+      {
+        "path": "registry/REPOSITORY_INTERFACES.json",
+        "blob_sha": "8ddaafbe2232b38644cf02b9cb84b94be83ad796"
+      },
+      {
+        "path": "registry/INTEGRATION_GAPS.json",
+        "blob_sha": "d9f9bad575ebd68ea4dde59c29ee39700800def4"
+      },
+      {
+        "path": "integration/m5_observed_execution/evidence_manifest_v1.json",
+        "blob_sha": "0ffaf9c7f265794f1677bb9329fcb04ad1ade769"
+      }
+    ]
+  },
+  "counts": {
+    "authority_registry_entries": 42,
+    "contract_registry_entries": 39,
+    "contract_lifecycle_status_counts": {
+      "ADAPTER_IMPLEMENTED": 39
+    },
+    "dependency_graph_nodes": 75,
+    "dependency_graph_edges": 136,
+    "dependency_graph_edge_type_counts": {
+      "ARCHITECTURAL_PARENT": 70,
+      "CONTRACT_FLOW": 22,
+      "RUNTIME_DEPENDENCY": 22,
+      "RUNTIME_CONTRACT": 22
+    },
+    "dependency_graph_edge_status_counts": {
+      "DOCUMENTED": 70,
+      "ADAPTER_IMPLEMENTED": 66
+    },
+    "dependency_graph_summary": {
+      "repositories": 75,
+      "typed_contracts": 17,
+      "adapter_implemented_runtime_edges": 22,
+      "e2e_tested_runtime_edges": 0,
+      "deployed_runtime_edges": 0
+    },
+    "repository_interface_records": 77,
+    "repository_interface_status_counts": {
+      "EXTERNAL_RUNTIME_PENDING": 11,
+      "ADAPTER_INTEGRATED": 41,
+      "DOCUMENTATION_ONLY": 14,
+      "NON_RUNTIME_SURFACE": 3,
+      "SECURITY_BLOCKED": 3,
+      "NEEDS_HARDENING": 2,
+      "ARCHITECTURAL_ONLY": 2,
+      "GOVERNANCE_ROOT": 1
+    },
+    "integration_gap_registry_totals": {
+      "contracts": 39,
+      "no_missing_endpoints": 39,
+      "contracts_with_gaps": 0,
+      "runtime_adapter_edges": 44,
+      "e2e_tested_edges": 0,
+      "uncontracted_components": 2,
+      "observed_contract_risks": 3
+    },
+    "uncontracted_components": 2,
+    "observed_contract_risks": 3,
+    "m5_required_runtime_edges": 44,
+    "m5_suite_count": 6,
+    "m5_observed_execution": {
+      "status": "BLOCKED_BY_RUNNER",
+      "successful_suites": 0,
+      "verified_runtime_edges": 0,
+      "github_actions_attempts": [
+        {
+          "run_id": 36495367465,
+          "workflow": "SYNERGY Federation Security Gate",
+          "attempt": 1,
+          "result": "failure-before-first-step",
+          "steps": 0
+        },
+        {
+          "run_id": 36495367465,
+          "workflow": "SYNERGY Federation Security Gate",
+          "attempt": 2,
+          "result": "failure-before-first-step",
+          "steps": 0
+        }
+      ],
+      "note": "Do not promote any edge until real suite evidence exists and passes all verifiers."
+    },
+    "unique_contract_ids_in_dependency_graph": 38,
+    "intra_repository_contracts_not_in_dependency_graph": 1,
+    "dependency_graph_summary_typed_contracts_field": 17,
+    "observed_contract_risk_details": [
+      {
+        "id": "PAYMENT-SETTLEMENT-LIFECYCLE-2026-11-20",
+        "severity": "CRITICAL",
+        "status": "ADAPTER_PRESENT_LIFECYCLE_UNVERIFIED",
+        "hypergraph_gap": "GAP-093"
+      },
+      {
+        "id": "FINANCIAL-OUTBOX-AUTHENTICITY-AND-CONCURRENCY-2026-11-20",
+        "severity": "P1",
+        "status": "IMPLEMENTED_WITH_VERIFICATION_GAPS",
+        "hypergraph_gap": "GAP-094",
+        "branch_only": true
+      },
+      {
+        "id": "AGENTIC-ECONOMY-HARDNAV-V4-ACCOUNTING-CORRECTION-2026-11-20",
+        "severity": "P1",
+        "status": "ACCOUNTING_CORRECTION_CODE_PRESENT_REPLAY_PENDING",
+        "hypergraph_gap": "GAP-095",
+        "branch_only_correction": true
+      }
+    ]
+  },
+  "reconciliation": {
+    "hypergraph_inventory_repositories": 112,
+    "dependency_graph_repositories": 75,
+    "interface_registry_repositories": 77,
+    "dependency_graph_names_missing_from_hypergraph": [],
+    "interface_names_missing_from_hypergraph": [],
+    "hypergraph_names_missing_from_dependency_graph": [
+      "Shtenco/synergy",
+      "Shtenco/synergy_maps",
+      "Shtenco/timeweb_synergy_retry_storm_lab",
+      "Shtenco/timeweb_synergy_llm_memory_lab",
+      "Shtenco/timeweb_synergy_ml_validation_lab",
+      "Shtenco/synergy_ai_browser-",
+      "Shtenco/timeweb_synergy_python_cpp_performance",
+      "Shtenco/timeweb_synergy_benchmark_statistics",
+      "Shtenco/synergy_computing_topology",
+      "Shtenco/synergy_meta_api",
+      "Shtenco/synergy_ai_economic",
+      "Shtenco/synergy_agent_long_term_memory",
+      "Shtenco/synergy_ai_workspace",
+      "Shtenco/timeweb_synergy_binary_neural_networks",
+      "Shtenco/synergy.github.io",
+      "Shtenco/synergy_metaverse",
+      "Shtenco/shtenco_micro_ai",
+      "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "Shtenco/timeweb_synergy_fault_injection_lab",
+      "Shtenco/synergy_complex_matrix_multiplication",
+      "Shtenco/synergy_long_term_harness",
+      "Shtenco/timeweb_synergy_codebase_intelligence",
+      "Shtenco/timeweb_synergy_service_recovery",
+      "Shtenco/synergy_ai_llm_rwkv",
+      "Shtenco/timeweb_synergy_rag_quality_cost",
+      "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "Shtenco/synergy_triangle_money_system",
+      "Shtenco/synergy_lead_search_engline",
+      "Shtenco/synergistic_economics",
+      "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "Shtenco/timeweb_synergy_cpu_language_model",
+      "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "Shtenco/synergy_search_engline",
+      "Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "Shtenco/tiimeweb_synergy_exactly_once_delivery"
+    ],
+    "hypergraph_names_missing_from_interface_registry": [
+      "Shtenco/synergy",
+      "Shtenco/synergy_maps",
+      "Shtenco/timeweb_synergy_retry_storm_lab",
+      "Shtenco/timeweb_synergy_llm_memory_lab",
+      "Shtenco/timeweb_synergy_ml_validation_lab",
+      "Shtenco/synergy_ai_browser-",
+      "Shtenco/timeweb_synergy_python_cpp_performance",
+      "Shtenco/timeweb_synergy_benchmark_statistics",
+      "Shtenco/synergy_computing_topology",
+      "Shtenco/synergy_meta_api",
+      "Shtenco/synergy_ai_economic",
+      "Shtenco/synergy_agent_long_term_memory",
+      "Shtenco/synergy_ai_workspace",
+      "Shtenco/timeweb_synergy_binary_neural_networks",
+      "Shtenco/synergy.github.io",
+      "Shtenco/synergy_metaverse",
+      "Shtenco/shtenco_micro_ai",
+      "Shtenco/timeweb_synergy_ai_infrastructure_agent",
+      "Shtenco/timeweb_synergy_fault_injection_lab",
+      "Shtenco/synergy_complex_matrix_multiplication",
+      "Shtenco/timeweb_synergy_codebase_intelligence",
+      "Shtenco/timeweb_synergy_service_recovery",
+      "Shtenco/synergy_ai_llm_rwkv",
+      "Shtenco/timeweb_synergy_rag_quality_cost",
+      "Shtenco/timeweb_synergy_agent_long_term_memory",
+      "Shtenco/synergy_triangle_money_system",
+      "Shtenco/synergy_lead_search_engline",
+      "Shtenco/synergistic_economics",
+      "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "Shtenco/timeweb_synergy_backtest_oos_lab",
+      "Shtenco/timeweb_synergy_cpu_language_model",
+      "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "Shtenco/synergy_search_engline",
+      "Shtenco/timeweb_synergy_rnn_transformer_benchmark",
+      "Shtenco/tiimeweb_synergy_exactly_once_delivery"
+    ],
+    "interface_only_names_not_in_dependency_graph": [
+      "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "Shtenco/synergy_long_term_harness"
+    ],
+    "dependency_graph_names_not_in_interface_registry": [],
+    "dependency_graph_repository_names": [
+      "Shtenco/3D_bars_market_structure",
+      "Shtenco/computer_vision_trading_metatrader_5",
+      "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "Shtenco/dlp_solver",
+      "Shtenco/global_liquidity_dataminer",
+      "Shtenco/midas_lite",
+      "Shtenco/print_money_synergychain",
+      "Shtenco/quantum-trading_metatrader5",
+      "Shtenco/shtenco.github.io",
+      "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "Shtenco/shtencoauantai.github.io",
+      "Shtenco/sinergy_app",
+      "Shtenco/sinergy_super_app",
+      "Shtenco/swap_arbitrage_metatrader_5",
+      "Shtenco/synegy_ai_compress",
+      "Shtenco/synergy_2chain_qe",
+      "Shtenco/synergy_adaptive_engine",
+      "Shtenco/synergy_agentic_ai_economy",
+      "Shtenco/synergy_agi_autopilot",
+      "Shtenco/synergy_agi_nexus",
+      "Shtenco/synergy_agi_olga",
+      "Shtenco/synergy_agi_trader",
+      "Shtenco/synergy_ai_blockchain",
+      "Shtenco/synergy_ai_coder",
+      "Shtenco/synergy_ai_company",
+      "Shtenco/synergy_ai_financial_system",
+      "Shtenco/synergy_ai_investment_committee",
+      "Shtenco/synergy_ai_language",
+      "Shtenco/synergy_ai_trade_terminal",
+      "Shtenco/synergy_algotrading_graph_system",
+      "Shtenco/synergy_app",
+      "Shtenco/synergy_app_family",
+      "Shtenco/synergy_apps",
+      "Shtenco/synergy_binary_quantum_theory",
+      "Shtenco/synergy_blochain_budget",
+      "Shtenco/synergy_cashero",
+      "Shtenco/synergy_chain",
+      "Shtenco/synergy_chain_print_money",
+      "Shtenco/synergy_cold_nuclear",
+      "Shtenco/synergy_crypto_pump",
+      "Shtenco/synergy_epstein_network",
+      "Shtenco/synergy_eurasian",
+      "Shtenco/synergy_financial_os",
+      "Shtenco/synergy_gguf_compress",
+      "Shtenco/synergy_gllm_nexus",
+      "Shtenco/synergy_graph_print_money",
+      "Shtenco/synergy_market_graph",
+      "Shtenco/synergy_market_maker",
+      "Shtenco/synergy_marketvision",
+      "Shtenco/synergy_matrix_sota",
+      "Shtenco/synergy_megaproject",
+      "Shtenco/synergy_messenger",
+      "Shtenco/synergy_meta_os",
+      "Shtenco/synergy_metachain",
+      "Shtenco/synergy_midas_ai",
+      "Shtenco/synergy_midas_ai_trading_system",
+      "Shtenco/synergy_midas_institutional",
+      "Shtenco/synergy_motherboard_xpu_xml",
+      "Shtenco/synergy_net",
+      "Shtenco/synergy_nexus_science_agent",
+      "Shtenco/synergy_pay_system",
+      "Shtenco/synergy_post_quantum_radio",
+      "Shtenco/synergy_project",
+      "Shtenco/synergy_qe",
+      "Shtenco/synergy_qr_compress",
+      "Shtenco/synergy_quantlab",
+      "Shtenco/synergy_relative_value",
+      "Shtenco/synergy_riskguard",
+      "Shtenco/synergy_shhts",
+      "Shtenco/synergy_shttps",
+      "Shtenco/synergy_system",
+      "Shtenco/synergy_trademux",
+      "Shtenco/synergy_turbo_linux",
+      "Shtenco/synergy_usds",
+      "Shtenco/synergychain.github.io"
+    ],
+    "interface_registry_repository_names": [
+      "Shtenco/3D_bars_market_structure",
+      "Shtenco/computer_vision_trading_metatrader_5",
+      "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "Shtenco/dlp_solver",
+      "Shtenco/global_liquidity_dataminer",
+      "Shtenco/midas_lite",
+      "Shtenco/print_money_synergychain",
+      "Shtenco/quantum-trading_metatrader5",
+      "Shtenco/shtenco.github.io",
+      "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "Shtenco/shtencoauantai.github.io",
+      "Shtenco/sinergy_app",
+      "Shtenco/sinergy_super_app",
+      "Shtenco/swap_arbitrage_metatrader_5",
+      "Shtenco/synegy_ai_compress",
+      "Shtenco/synergy_2chain_qe",
+      "Shtenco/synergy_adaptive_engine",
+      "Shtenco/synergy_agentic_ai_economy",
+      "Shtenco/synergy_agi_autopilot",
+      "Shtenco/synergy_agi_nexus",
+      "Shtenco/synergy_agi_olga",
+      "Shtenco/synergy_agi_trader",
+      "Shtenco/synergy_ai_blockchain",
+      "Shtenco/synergy_ai_coder",
+      "Shtenco/synergy_ai_company",
+      "Shtenco/synergy_ai_financial_system",
+      "Shtenco/synergy_ai_investment_committee",
+      "Shtenco/synergy_ai_language",
+      "Shtenco/synergy_ai_trade_terminal",
+      "Shtenco/synergy_algotrading_graph_system",
+      "Shtenco/synergy_app",
+      "Shtenco/synergy_app_family",
+      "Shtenco/synergy_apps",
+      "Shtenco/synergy_binary_quantum_theory",
+      "Shtenco/synergy_blochain_budget",
+      "Shtenco/synergy_cashero",
+      "Shtenco/synergy_chain",
+      "Shtenco/synergy_chain_print_money",
+      "Shtenco/synergy_cold_nuclear",
+      "Shtenco/synergy_crypto_pump",
+      "Shtenco/synergy_epstein_network",
+      "Shtenco/synergy_eurasian",
+      "Shtenco/synergy_financial_os",
+      "Shtenco/synergy_gguf_compress",
+      "Shtenco/synergy_gllm_nexus",
+      "Shtenco/synergy_graph_print_money",
+      "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "Shtenco/synergy_long_term_harness",
+      "Shtenco/synergy_market_graph",
+      "Shtenco/synergy_market_maker",
+      "Shtenco/synergy_marketvision",
+      "Shtenco/synergy_matrix_sota",
+      "Shtenco/synergy_megaproject",
+      "Shtenco/synergy_messenger",
+      "Shtenco/synergy_meta_os",
+      "Shtenco/synergy_metachain",
+      "Shtenco/synergy_midas_ai",
+      "Shtenco/synergy_midas_ai_trading_system",
+      "Shtenco/synergy_midas_institutional",
+      "Shtenco/synergy_motherboard_xpu_xml",
+      "Shtenco/synergy_net",
+      "Shtenco/synergy_nexus_science_agent",
+      "Shtenco/synergy_pay_system",
+      "Shtenco/synergy_post_quantum_radio",
+      "Shtenco/synergy_project",
+      "Shtenco/synergy_qe",
+      "Shtenco/synergy_qr_compress",
+      "Shtenco/synergy_quantlab",
+      "Shtenco/synergy_relative_value",
+      "Shtenco/synergy_riskguard",
+      "Shtenco/synergy_shhts",
+      "Shtenco/synergy_shttps",
+      "Shtenco/synergy_system",
+      "Shtenco/synergy_trademux",
+      "Shtenco/synergy_turbo_linux",
+      "Shtenco/synergy_usds",
+      "Shtenco/synergychain.github.io"
+    ],
+    "governance_scope_manifest": "hypergraph/evidence/governance-scope-manifest.json"
+  },
+  "interpretation": [
+    "The governance registry is a 75-repository subset of the 112-repository owner-scoped inventory; it is not a complete inventory mirror.",
+    "The 77 interface records contain the 75 dependency-graph repositories plus two interface-only repositories.",
+    "39 contract registry entries marked ADAPTER_IMPLEMENTED are contract lifecycle records, not proof of E2E or deployed integration.",
+    "The dependency graph has 22 RUNTIME_DEPENDENCY, 22 RUNTIME_CONTRACT and 22 CONTRACT_FLOW edges; all 66 carry ADAPTER_IMPLEMENTED status, while its integration summary counts 22 adapter-implemented runtime dependency edges.",
+    "The M5 manifest defines 44 required runtime edges across six suites, but observed execution is BLOCKED_BY_RUNNER with zero successful suites and zero verified runtime edges.",
+    "Do not collapse registry-declared adapter status, required M5 scope, E2E-tested edges and deployed runtime edges into one metric."
+  ],
+  "contract_reconciliation": {
+    "registry_contract_count": 39,
+    "unique_cross_repository_contract_ids_in_graph": 38,
+    "intra_repository_contracts_not_in_graph": [
+      "synergy.trading.execution-plan/v1"
+    ],
+    "stale_summary_value": {
+      "field": "dependency_graph.integration_summary.typed_contracts",
+      "reported": 17,
+      "observed_unique_cross_repository_contract_ids": 38
+    }
+  },
+  "m5_scope_reconciliation": {
+    "source_files": [
+      {
+        "path": "integration/m3_federation/m3_edge_scope_v1.json",
+        "blob_sha": "9c1ba06af370412e45a24d4b06ccabf710e1ed24"
+      },
+      {
+        "path": "integration/m4_market_advisory/edge_scope_v1.json",
+        "blob_sha": "e8c5b5c1a89dbccae48c36bcae78aba2622c4609"
+      },
+      {
+        "path": "integration/m4_wave2/edge_scope_v1.json",
+        "blob_sha": "368d835935a0ae335030b2ab8018f3978bc0b5c7"
+      },
+      {
+        "path": "integration/m4_wave3/edge_scope_v1.json",
+        "blob_sha": "f159498906344362dbf76f359e086ebf93129b73"
+      },
+      {
+        "path": "integration/m4_wave4/edge_scope_v1.json",
+        "blob_sha": "53062c142c5fecb3530f9494aeff04cbef0c533e"
+      },
+      {
+        "path": "integration/m4_wave5/edge_scope_v1.json",
+        "blob_sha": "006dc9985a5dcb3c850b0683cdea0b1cf50edfd1"
+      }
+    ],
+    "required_edges": 44,
+    "unique_scope_edges": 44,
+    "exact_name_matches_to_dependency_graph": 42,
+    "legacy_alias_matches": 2,
+    "normalized_matches_to_dependency_graph": 44,
+    "unmatched_after_alias_normalization": 0,
+    "matched_edge_type_counts": {
+      "RUNTIME_DEPENDENCY": 22,
+      "RUNTIME_CONTRACT": 22
+    },
+    "matched_status_counts": {
+      "ADAPTER_IMPLEMENTED": 44
+    },
+    "aliases": [
+      {
+        "scope_from": "Shtenco/binary_quantum_theory",
+        "canonical_from": "Shtenco/synergy_binary_quantum_theory",
+        "contract_id": "synergy.science.quantum-reference-control/v1"
+      },
+      {
+        "scope_from": "Shtenco/epstein_network",
+        "canonical_from": "Shtenco/synergy_epstein_network",
+        "contract_id": "synergy.science.provenance-graph/v1"
+      }
+    ],
+    "interpretation": "The frozen M5 scope resolves to all 44 graph edges after applying the two explicit legacy repository-name aliases. The two aliases are name/provenance drift, not missing implementations. The M5 execution remains BLOCKED_BY_RUNNER; scope matching is not E2E verification."
+  },
+  "related_branch_audits": [
+    {
+      "repository": "Shtenco/synergy_system",
+      "pull_request": 56,
+      "title": "docs: SYNERGY 2X master architecture and 30-capability portfolio",
+      "state": "OPEN",
+      "draft": true,
+      "head_branch": "feat/synergy-2x-master-architecture-2026-11-24",
+      "head_commit": "77a410a2166bd41795ecda776aabbb720c807c64",
+      "ahead_by": 28,
+      "behind_by": 0,
+      "workflows": [
+        {
+          "run_id": 45498706833,
+          "name": "SYNERGY Federation Maturity Gate",
+          "result": "success"
+        },
+        {
+          "run_id": 45498706792,
+          "name": "Validate SYNERGY Typed Contracts",
+          "result": "success"
+        },
+        {
+          "run_id": 45498706667,
+          "name": "Validate SYNERGY Federation",
+          "result": "success"
+        },
+        {
+          "run_id": 45498706640,
+          "name": "SYNERGY Federation Security Gate",
+          "result": "success"
+        }
+      ],
+      "registry": {
+        "interface_records": 77,
+        "interface_repository_set_unchanged": true,
+        "dependency_graph_nodes": 75,
+        "dependency_graph_edges": 136,
+        "backlog_repository_count": 77,
+        "backlog_integrated_count": 41,
+        "backlog_non_integrated_count": 36,
+        "backlog_unclassified_count": 0
+      },
+      "portfolio": {
+        "live_repository_count": 112,
+        "previous_registry_count": 92,
+        "delta_count": 20,
+        "all_112_readmes_fetched": true,
+        "full_source_review_complete": false,
+        "new_repositories": 20,
+        "capabilities": 30
+      },
+      "interface_status_changes": [
+        {
+          "repo": "Shtenco/synergy_ai_trade_terminal",
+          "from": "EXTERNAL_RUNTIME_PENDING",
+          "to": "SECURITY_BLOCKED"
+        },
+        {
+          "repo": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+          "from": "ARCHITECTURAL_ONLY",
+          "to": "SECURITY_BLOCKED"
+        },
+        {
+          "repo": "Shtenco/synergy_long_term_harness",
+          "from": "ARCHITECTURAL_ONLY",
+          "to": "DOCUMENTATION_ONLY"
+        }
+      ],
+      "source_files": [
+        {
+          "path": "registry/REPOSITORY_INTERFACES.json",
+          "blob_sha": "f439ed0ebd1910797bf081e2332c95f9d3fb6b4b"
+        },
+        {
+          "path": "registry/FEDERATION_BACKLOG.json",
+          "blob_sha": "8fefccefc237363bb06a083636889e7529ce5a4c"
+        },
+        {
+          "path": "registry/SYNERGY_LIVE_112_ASSOCIATIVE_EXPANSION.json",
+          "blob_sha": "b7678cc8d6a83fb8ba79d50f412e3cbb4022c13a"
+        },
+        {
+          "path": "registry/SYNERGY_2X_CAPABILITIES.json",
+          "blob_sha": "feb5bc0e147dfc8f79ecb56be830dbdf98006af9"
+        },
+        {
+          "path": "registry/SECURITY_BLOCKERS.json",
+          "blob_sha": "4d81c0a2a9d4ff1ab9d67ea4191e81a999330c5a"
+        },
+        {
+          "path": "docs/SYNERGY_20_NEW_REPOSITORIES_SOURCE_AUDIT_2026-11-24.md",
+          "blob_sha": "5d79fdc63847f1ef7610977b368d45312e8ef86c"
+        }
+      ],
+      "interpretation": "This branch has passing registry/schema/security workflows but is not merged. Its 112-row portfolio is README-level and explicitly not a full source audit; its interface registry remains 77 and backlog is scoped to those 77, so it does not close the 112-versus-75/77 governance gap. The 30 capabilities are a separate portfolio proposal set from Hypergraph's 39 proposed components."
+    }
+  ]
+}

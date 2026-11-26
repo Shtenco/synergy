@@ -1,0 +1,1570 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "status": "target_architecture",
+  "layers": [
+    {
+      "id": "L1_INTELLIGENCE",
+      "name": "Intelligence",
+      "description": "LLM, agents, model inference, reasoning and evaluation",
+      "repositories": [
+        "synergy_agi_nexus",
+        "synergy_agi_olga",
+        "synergy_agi_trader",
+        "synergy_gllm_nexus",
+        "synergy_ai_llm_rwkv",
+        "synergy_matrix_sota",
+        "shtenco_micro_ai",
+        "synergy_nexus_science_agent"
+      ],
+      "proposals": [
+        "synergy_ai_model_router",
+        "synergy_ai_evaluation_core"
+      ],
+      "repository_node_ids": [
+        "github-repo:1341271800",
+        "github-repo:1167196077",
+        "github-repo:1373708585",
+        "github-repo:1370636640",
+        "github-repo:1413525853",
+        "github-repo:1336912141",
+        "github-repo:1459873284",
+        "github-repo:1341273613"
+      ],
+      "proposal_node_ids": [
+        "proposal:synergy_ai_model_router",
+        "proposal:synergy_ai_evaluation_core"
+      ]
+    },
+    {
+      "id": "L2_MEMORY_KNOWLEDGE",
+      "name": "Memory & Knowledge",
+      "description": "Hierarchical memory, retrieval, provenance, evidence and knowledge graphs",
+      "repositories": [
+        "synergy_hierarchical_cognitive_memory_architecture",
+        "synergy_agent_long_term_memory",
+        "timeweb_synergy_agent_long_term_memory",
+        "timeweb_synergy_llm_memory_lab",
+        "synergy_search_engline",
+        "timeweb_synergy_rag_quality_cost"
+      ],
+      "proposals": [
+        "synergy_agent_memory_core"
+      ],
+      "repository_node_ids": [
+        "github-repo:1464742221",
+        "github-repo:1465066359",
+        "github-repo:1465262827",
+        "github-repo:1465021198",
+        "github-repo:1409193535",
+        "github-repo:1465066578"
+      ],
+      "proposal_node_ids": [
+        "proposal:synergy_agent_memory_core"
+      ]
+    },
+    {
+      "id": "L3_ROUTING_ORCHESTRATION",
+      "name": "Routing & Orchestration",
+      "description": "API, agent, workflow and provider routing",
+      "repositories": [
+        "synergy_meta_api",
+        "synergy_agi_autopilot",
+        "synergy_system",
+        "synergy_net",
+        "synergy_ai_browser-",
+        "timeweb_synergy_ai_infrastructure_agent"
+      ],
+      "proposals": [
+        "synergy_ai_router_core",
+        "synergy_agent_browser_core",
+        "synergy_event_delivery_core",
+        "synergy_provider_registry"
+      ],
+      "repository_node_ids": [
+        "github-repo:1428731702",
+        "github-repo:1343965302",
+        "github-repo:1341273343",
+        "github-repo:1341273955",
+        "github-repo:1469906584",
+        "github-repo:1465024116"
+      ],
+      "proposal_node_ids": [
+        "proposal:synergy_ai_router_core",
+        "proposal:synergy_agent_browser_core",
+        "proposal:synergy_event_delivery_core",
+        "proposal:synergy_provider_registry"
+      ]
+    },
+    {
+      "id": "L4_ECONOMIC_GRAPH",
+      "name": "Economic Graph",
+      "description": "Supply/demand, offers, matching, pricing, reputation and arbitrage",
+      "repositories": [
+        "synergy_agentic_ai_economy",
+        "synergy_market_graph",
+        "synergistic_economics",
+        "synergy_triangle_money_system",
+        "synergy_lead_search_engline"
+      ],
+      "proposals": [
+        "synergy_economic_graph",
+        "synergy_offer_protocol",
+        "synergy_graph_arbitrage_engine",
+        "synergy_marketplace_core",
+        "synergy_ai_pricing_engine",
+        "synergy_ai_reputation_engine",
+        "synergy_ai_economy_router",
+        "synergy_ai_classifieds_graph"
+      ],
+      "repository_node_ids": [
+        "github-repo:1387121392",
+        "github-repo:1376377201",
+        "github-repo:1451354855",
+        "github-repo:1409209832",
+        "github-repo:1409209160"
+      ],
+      "proposal_node_ids": [
+        "proposal:synergy_economic_graph",
+        "proposal:synergy_offer_protocol",
+        "proposal:synergy_graph_arbitrage_engine",
+        "proposal:synergy_marketplace_core",
+        "proposal:synergy_ai_pricing_engine",
+        "proposal:synergy_ai_reputation_engine",
+        "proposal:synergy_ai_economy_router",
+        "proposal:synergy_ai_classifieds_graph"
+      ]
+    },
+    {
+      "id": "L5_FINANCIAL_SETTLEMENT",
+      "name": "Financial Settlement",
+      "description": "Payment, accounting, credit, liquidity and digital assets",
+      "repositories": [
+        "synergy_financial_os",
+        "synergy_pay_system",
+        "synergy_ai_financial_system",
+        "synergy_usds",
+        "synergy_chain",
+        "synergy_metachain",
+        "synergy_riskguard"
+      ],
+      "proposals": [
+        "synergy_transaction_orchestrator",
+        "synergy_ai_policy_engine",
+        "synergy_ai_credit_router",
+        "synergy_ai_bank_router",
+        "synergy_ai_remittance_router"
+      ],
+      "repository_node_ids": [
+        "github-repo:1336910945",
+        "github-repo:1317622231",
+        "github-repo:1310793915",
+        "github-repo:1331946228",
+        "github-repo:1317824815",
+        "github-repo:1351534269",
+        "github-repo:1376376981"
+      ],
+      "proposal_node_ids": [
+        "proposal:synergy_transaction_orchestrator",
+        "proposal:synergy_ai_policy_engine",
+        "proposal:synergy_ai_credit_router",
+        "proposal:synergy_ai_bank_router",
+        "proposal:synergy_ai_remittance_router"
+      ]
+    },
+    {
+      "id": "L6_EXECUTION_INFRASTRUCTURE",
+      "name": "Execution & Infrastructure",
+      "description": "Compute, runtime, delivery, recovery, security and observability",
+      "repositories": [
+        "synergy_meta_os",
+        "synergy_turbo_linux",
+        "synergy_computing_topology",
+        "synergy_motherboard_xpu_xml",
+        "synergy_long_term_harness",
+        "tiimeweb_synergy_exactly_once_delivery",
+        "timeweb_synergy_fault_injection_lab",
+        "timeweb_synergy_service_recovery",
+        "timeweb_synergy_retry_storm_lab",
+        "timeweb_synergy_cpu_gpu_cost_benchmark"
+      ],
+      "proposals": [
+        "synergy_reliability_core",
+        "synergy_compute_optimizer",
+        "synergy_trading_validation_core"
+      ],
+      "repository_node_ids": [
+        "github-repo:1341275176",
+        "github-repo:1165635662",
+        "github-repo:1397603060",
+        "github-repo:1351698135",
+        "github-repo:1463301548",
+        "github-repo:1465156316",
+        "github-repo:1465067741",
+        "github-repo:1465065775",
+        "github-repo:1466823100",
+        "github-repo:1465066115"
+      ],
+      "proposal_node_ids": [
+        "proposal:synergy_reliability_core",
+        "proposal:synergy_compute_optimizer",
+        "proposal:synergy_trading_validation_core"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "github-repo:937796740",
+      "kind": "repository",
+      "name": "quantum-trading_metatrader5"
+    },
+    {
+      "node_id": "github-repo:1091983056",
+      "kind": "repository",
+      "name": "cross_forex_arbitrage_trading_metatrader_5"
+    },
+    {
+      "node_id": "github-repo:1091968186",
+      "kind": "repository",
+      "name": "computer_vision_trading_metatrader_5"
+    },
+    {
+      "node_id": "github-repo:1181574900",
+      "kind": "repository",
+      "name": "synergy_ai_language"
+    },
+    {
+      "node_id": "github-repo:1409433270",
+      "kind": "repository",
+      "name": "synergy"
+    },
+    {
+      "node_id": "github-repo:1456611297",
+      "kind": "repository",
+      "name": "synergy_maps"
+    },
+    {
+      "node_id": "github-repo:1376377703",
+      "kind": "repository",
+      "name": "synergy_ai_investment_committee"
+    },
+    {
+      "node_id": "github-repo:1466823100",
+      "kind": "repository",
+      "name": "timeweb_synergy_retry_storm_lab"
+    },
+    {
+      "node_id": "github-repo:1098247138",
+      "kind": "repository",
+      "name": "shtenco_multi_threaded_trading_robot_with_machine_learning_python"
+    },
+    {
+      "node_id": "github-repo:1465021198",
+      "kind": "repository",
+      "name": "timeweb_synergy_llm_memory_lab"
+    },
+    {
+      "node_id": "github-repo:1465023909",
+      "kind": "repository",
+      "name": "timeweb_synergy_ml_validation_lab"
+    },
+    {
+      "node_id": "github-repo:1371974932",
+      "kind": "repository",
+      "name": "synergy_apps"
+    },
+    {
+      "node_id": "github-repo:1377447162",
+      "kind": "repository",
+      "name": "synergy_epstein_network"
+    },
+    {
+      "node_id": "github-repo:1341272872",
+      "kind": "repository",
+      "name": "synergy_midas_ai"
+    },
+    {
+      "node_id": "github-repo:1469906584",
+      "kind": "repository",
+      "name": "synergy_ai_browser-"
+    },
+    {
+      "node_id": "github-repo:1336912141",
+      "kind": "repository",
+      "name": "synergy_matrix_sota"
+    },
+    {
+      "node_id": "github-repo:1168739656",
+      "kind": "repository",
+      "name": "synergy_ai_coder"
+    },
+    {
+      "node_id": "github-repo:1227851612",
+      "kind": "repository",
+      "name": "sinergy_super_app"
+    },
+    {
+      "node_id": "github-repo:1465023729",
+      "kind": "repository",
+      "name": "timeweb_synergy_python_cpp_performance"
+    },
+    {
+      "node_id": "github-repo:1310793915",
+      "kind": "repository",
+      "name": "synergy_ai_financial_system"
+    },
+    {
+      "node_id": "github-repo:1364848219",
+      "kind": "repository",
+      "name": "synergy_graph_print_money"
+    },
+    {
+      "node_id": "github-repo:1336910945",
+      "kind": "repository",
+      "name": "synergy_financial_os"
+    },
+    {
+      "node_id": "github-repo:1465066858",
+      "kind": "repository",
+      "name": "timeweb_synergy_benchmark_statistics"
+    },
+    {
+      "node_id": "github-repo:1397603060",
+      "kind": "repository",
+      "name": "synergy_computing_topology"
+    },
+    {
+      "node_id": "github-repo:1428731702",
+      "kind": "repository",
+      "name": "synergy_meta_api"
+    },
+    {
+      "node_id": "github-repo:1344028054",
+      "kind": "repository",
+      "name": "synergy_app"
+    },
+    {
+      "node_id": "github-repo:1151919657",
+      "kind": "repository",
+      "name": "synergy_midas_ai_trading_system"
+    },
+    {
+      "node_id": "github-repo:1167196077",
+      "kind": "repository",
+      "name": "synergy_agi_olga"
+    },
+    {
+      "node_id": "github-repo:1366684382",
+      "kind": "repository",
+      "name": "synergy_chain_print_money"
+    },
+    {
+      "node_id": "github-repo:1370636640",
+      "kind": "repository",
+      "name": "synergy_gllm_nexus"
+    },
+    {
+      "node_id": "github-repo:1371942189",
+      "kind": "repository",
+      "name": "synergy_messenger"
+    },
+    {
+      "node_id": "github-repo:1351698135",
+      "kind": "repository",
+      "name": "synergy_motherboard_xpu_xml"
+    },
+    {
+      "node_id": "github-repo:1376377374",
+      "kind": "repository",
+      "name": "synergy_midas_institutional"
+    },
+    {
+      "node_id": "github-repo:1341358637",
+      "kind": "repository",
+      "name": "synergy_blochain_budget"
+    },
+    {
+      "node_id": "github-repo:1368484353",
+      "kind": "repository",
+      "name": "synergy_ai_company"
+    },
+    {
+      "node_id": "github-repo:1420783404",
+      "kind": "repository",
+      "name": "synergy_ai_economic"
+    },
+    {
+      "node_id": "github-repo:1376377980",
+      "kind": "repository",
+      "name": "synergy_adaptive_engine"
+    },
+    {
+      "node_id": "github-repo:1365353815",
+      "kind": "repository",
+      "name": "synergy_app_family"
+    },
+    {
+      "node_id": "github-repo:1368539352",
+      "kind": "repository",
+      "name": "synergy_shttps"
+    },
+    {
+      "node_id": "github-repo:1171792036",
+      "kind": "repository",
+      "name": "shtencoauantai.github.io"
+    },
+    {
+      "node_id": "github-repo:1364435985",
+      "kind": "repository",
+      "name": "synergy_crypto_pump"
+    },
+    {
+      "node_id": "github-repo:1336911571",
+      "kind": "repository",
+      "name": "synergy_eurasian"
+    },
+    {
+      "node_id": "github-repo:1376378295",
+      "kind": "repository",
+      "name": "synergy_trademux"
+    },
+    {
+      "node_id": "github-repo:1376378125",
+      "kind": "repository",
+      "name": "synergy_marketvision"
+    },
+    {
+      "node_id": "github-repo:1465066359",
+      "kind": "repository",
+      "name": "synergy_agent_long_term_memory"
+    },
+    {
+      "node_id": "github-repo:1317273998",
+      "kind": "repository",
+      "name": "synegy_ai_compress"
+    },
+    {
+      "node_id": "github-repo:1428810995",
+      "kind": "repository",
+      "name": "synergy_ai_workspace"
+    },
+    {
+      "node_id": "github-repo:1341273613",
+      "kind": "repository",
+      "name": "synergy_nexus_science_agent"
+    },
+    {
+      "node_id": "github-repo:1293271223",
+      "kind": "repository",
+      "name": "synergy_binary_quantum_theory"
+    },
+    {
+      "node_id": "github-repo:1465021493",
+      "kind": "repository",
+      "name": "timeweb_synergy_binary_neural_networks"
+    },
+    {
+      "node_id": "github-repo:1165635662",
+      "kind": "repository",
+      "name": "synergy_turbo_linux"
+    },
+    {
+      "node_id": "github-repo:1341273955",
+      "kind": "repository",
+      "name": "synergy_net"
+    },
+    {
+      "node_id": "github-repo:1426159613",
+      "kind": "repository",
+      "name": "synergy.github.io"
+    },
+    {
+      "node_id": "github-repo:1456604903",
+      "kind": "repository",
+      "name": "synergy_metaverse"
+    },
+    {
+      "node_id": "github-repo:1459873284",
+      "kind": "repository",
+      "name": "shtenco_micro_ai"
+    },
+    {
+      "node_id": "github-repo:1368537298",
+      "kind": "repository",
+      "name": "synergy_shhts"
+    },
+    {
+      "node_id": "github-repo:1376377837",
+      "kind": "repository",
+      "name": "synergy_market_maker"
+    },
+    {
+      "node_id": "github-repo:1465024116",
+      "kind": "repository",
+      "name": "timeweb_synergy_ai_infrastructure_agent"
+    },
+    {
+      "node_id": "github-repo:1465067741",
+      "kind": "repository",
+      "name": "timeweb_synergy_fault_injection_lab"
+    },
+    {
+      "node_id": "github-repo:1091998611",
+      "kind": "repository",
+      "name": "3D_bars_market_structure"
+    },
+    {
+      "node_id": "github-repo:1394514826",
+      "kind": "repository",
+      "name": "synergy_complex_matrix_multiplication"
+    },
+    {
+      "node_id": "github-repo:1391275828",
+      "kind": "repository",
+      "name": "synergy_post_quantum_radio"
+    },
+    {
+      "node_id": "github-repo:1091973987",
+      "kind": "repository",
+      "name": "swap_arbitrage_metatrader_5"
+    },
+    {
+      "node_id": "github-repo:1387121392",
+      "kind": "repository",
+      "name": "synergy_agentic_ai_economy"
+    },
+    {
+      "node_id": "github-repo:1317622231",
+      "kind": "repository",
+      "name": "synergy_pay_system"
+    },
+    {
+      "node_id": "github-repo:1341271800",
+      "kind": "repository",
+      "name": "synergy_agi_nexus"
+    },
+    {
+      "node_id": "github-repo:1316045651",
+      "kind": "repository",
+      "name": "synergy_algotrading_graph_system"
+    },
+    {
+      "node_id": "github-repo:1463301548",
+      "kind": "repository",
+      "name": "synergy_long_term_harness"
+    },
+    {
+      "node_id": "github-repo:1465022679",
+      "kind": "repository",
+      "name": "timeweb_synergy_codebase_intelligence"
+    },
+    {
+      "node_id": "github-repo:1465065775",
+      "kind": "repository",
+      "name": "timeweb_synergy_service_recovery"
+    },
+    {
+      "node_id": "github-repo:1165602026",
+      "kind": "repository",
+      "name": "midas_lite"
+    },
+    {
+      "node_id": "github-repo:1331946228",
+      "kind": "repository",
+      "name": "synergy_usds"
+    },
+    {
+      "node_id": "github-repo:1413525853",
+      "kind": "repository",
+      "name": "synergy_ai_llm_rwkv"
+    },
+    {
+      "node_id": "github-repo:1368875919",
+      "kind": "repository",
+      "name": "synergy_gguf_compress"
+    },
+    {
+      "node_id": "github-repo:1168765679",
+      "kind": "repository",
+      "name": "synergy_ai_trade_terminal"
+    },
+    {
+      "node_id": "github-repo:1317824815",
+      "kind": "repository",
+      "name": "synergy_chain"
+    },
+    {
+      "node_id": "github-repo:1465066578",
+      "kind": "repository",
+      "name": "timeweb_synergy_rag_quality_cost"
+    },
+    {
+      "node_id": "github-repo:1465262827",
+      "kind": "repository",
+      "name": "timeweb_synergy_agent_long_term_memory"
+    },
+    {
+      "node_id": "github-repo:1351534269",
+      "kind": "repository",
+      "name": "synergy_metachain"
+    },
+    {
+      "node_id": "github-repo:1409209832",
+      "kind": "repository",
+      "name": "synergy_triangle_money_system"
+    },
+    {
+      "node_id": "github-repo:1376376805",
+      "kind": "repository",
+      "name": "synergy_quantlab"
+    },
+    {
+      "node_id": "github-repo:1376376981",
+      "kind": "repository",
+      "name": "synergy_riskguard"
+    },
+    {
+      "node_id": "github-repo:1341273343",
+      "kind": "repository",
+      "name": "synergy_system"
+    },
+    {
+      "node_id": "github-repo:1409209160",
+      "kind": "repository",
+      "name": "synergy_lead_search_engline"
+    },
+    {
+      "node_id": "github-repo:1376377560",
+      "kind": "repository",
+      "name": "synergy_relative_value"
+    },
+    {
+      "node_id": "github-repo:1343965302",
+      "kind": "repository",
+      "name": "synergy_agi_autopilot"
+    },
+    {
+      "node_id": "github-repo:1344027509",
+      "kind": "repository",
+      "name": "sinergy_app"
+    },
+    {
+      "node_id": "github-repo:1318145141",
+      "kind": "repository",
+      "name": "synergychain.github.io"
+    },
+    {
+      "node_id": "github-repo:1357102715",
+      "kind": "repository",
+      "name": "print_money_synergychain"
+    },
+    {
+      "node_id": "github-repo:1451354855",
+      "kind": "repository",
+      "name": "synergistic_economics"
+    },
+    {
+      "node_id": "github-repo:1390438988",
+      "kind": "repository",
+      "name": "synergy_megaproject"
+    },
+    {
+      "node_id": "github-repo:1465021727",
+      "kind": "repository",
+      "name": "timeweb_synergy_multiagent_benchmark"
+    },
+    {
+      "node_id": "github-repo:1465065411",
+      "kind": "repository",
+      "name": "timeweb_synergy_backtest_oos_lab"
+    },
+    {
+      "node_id": "github-repo:890519259",
+      "kind": "repository",
+      "name": "shtenco.github.io"
+    },
+    {
+      "node_id": "github-repo:1091992955",
+      "kind": "repository",
+      "name": "global_liquidity_dataminer"
+    },
+    {
+      "node_id": "github-repo:1359110009",
+      "kind": "repository",
+      "name": "synergy_project"
+    },
+    {
+      "node_id": "github-repo:1180497488",
+      "kind": "repository",
+      "name": "synergy_cashero"
+    },
+    {
+      "node_id": "github-repo:1373708585",
+      "kind": "repository",
+      "name": "synergy_agi_trader"
+    },
+    {
+      "node_id": "github-repo:1380118593",
+      "kind": "repository",
+      "name": "synergy_qe"
+    },
+    {
+      "node_id": "github-repo:1465022937",
+      "kind": "repository",
+      "name": "timeweb_synergy_cpu_language_model"
+    },
+    {
+      "node_id": "github-repo:1464742221",
+      "kind": "repository",
+      "name": "synergy_hierarchical_cognitive_memory_architecture"
+    },
+    {
+      "node_id": "github-repo:1465066115",
+      "kind": "repository",
+      "name": "timeweb_synergy_cpu_gpu_cost_benchmark"
+    },
+    {
+      "node_id": "github-repo:1341275176",
+      "kind": "repository",
+      "name": "synergy_meta_os"
+    },
+    {
+      "node_id": "github-repo:1327916781",
+      "kind": "repository",
+      "name": "synergy_cold_nuclear"
+    },
+    {
+      "node_id": "github-repo:1362541171",
+      "kind": "repository",
+      "name": "dlp_solver"
+    },
+    {
+      "node_id": "github-repo:1350374084",
+      "kind": "repository",
+      "name": "synergy_qr_compress"
+    },
+    {
+      "node_id": "github-repo:1378708908",
+      "kind": "repository",
+      "name": "synergy_2chain_qe"
+    },
+    {
+      "node_id": "github-repo:1409193535",
+      "kind": "repository",
+      "name": "synergy_search_engline"
+    },
+    {
+      "node_id": "github-repo:1376377201",
+      "kind": "repository",
+      "name": "synergy_market_graph"
+    },
+    {
+      "node_id": "github-repo:1317641638",
+      "kind": "repository",
+      "name": "synergy_ai_blockchain"
+    },
+    {
+      "node_id": "github-repo:1465023512",
+      "kind": "repository",
+      "name": "timeweb_synergy_rnn_transformer_benchmark"
+    },
+    {
+      "node_id": "github-repo:1465156316",
+      "kind": "repository",
+      "name": "tiimeweb_synergy_exactly_once_delivery"
+    },
+    {
+      "node_id": "proposal:synergy_reliability_core",
+      "kind": "proposal",
+      "name": "synergy_reliability_core",
+      "domain": "reliability"
+    },
+    {
+      "node_id": "proposal:synergy_agent_memory_core",
+      "kind": "proposal",
+      "name": "synergy_agent_memory_core",
+      "domain": "memory"
+    },
+    {
+      "node_id": "proposal:synergy_agent_browser_core",
+      "kind": "proposal",
+      "name": "synergy_agent_browser_core",
+      "domain": "browser"
+    },
+    {
+      "node_id": "proposal:synergy_event_delivery_core",
+      "kind": "proposal",
+      "name": "synergy_event_delivery_core",
+      "domain": "delivery"
+    },
+    {
+      "node_id": "proposal:synergy_ai_evaluation_core",
+      "kind": "proposal",
+      "name": "synergy_ai_evaluation_core",
+      "domain": "evaluation"
+    },
+    {
+      "node_id": "proposal:synergy_compute_optimizer",
+      "kind": "proposal",
+      "name": "synergy_compute_optimizer",
+      "domain": "compute"
+    },
+    {
+      "node_id": "proposal:synergy_trading_validation_core",
+      "kind": "proposal",
+      "name": "synergy_trading_validation_core",
+      "domain": "trading_validation"
+    },
+    {
+      "node_id": "proposal:synergy_ai_router_core",
+      "kind": "proposal",
+      "name": "synergy_ai_router_core",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_economic_graph",
+      "kind": "proposal",
+      "name": "synergy_economic_graph",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_offer_protocol",
+      "kind": "proposal",
+      "name": "synergy_offer_protocol",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_provider_registry",
+      "kind": "proposal",
+      "name": "synergy_provider_registry",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_graph_arbitrage_engine",
+      "kind": "proposal",
+      "name": "synergy_graph_arbitrage_engine",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_marketplace_core",
+      "kind": "proposal",
+      "name": "synergy_marketplace_core",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_ai_pricing_engine",
+      "kind": "proposal",
+      "name": "synergy_ai_pricing_engine",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_ai_reputation_engine",
+      "kind": "proposal",
+      "name": "synergy_ai_reputation_engine",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_transaction_orchestrator",
+      "kind": "proposal",
+      "name": "synergy_transaction_orchestrator",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_ai_policy_engine",
+      "kind": "proposal",
+      "name": "synergy_ai_policy_engine",
+      "domain": "shared_core"
+    },
+    {
+      "node_id": "proposal:synergy_ai_economy_router",
+      "kind": "proposal",
+      "name": "synergy_ai_economy_router",
+      "domain": "marketplace"
+    },
+    {
+      "node_id": "proposal:synergy_ai_skills_marketplace",
+      "kind": "proposal",
+      "name": "synergy_ai_skills_marketplace",
+      "domain": "marketplace"
+    },
+    {
+      "node_id": "proposal:synergy_ai_classifieds_graph",
+      "kind": "proposal",
+      "name": "synergy_ai_classifieds_graph",
+      "domain": "marketplace"
+    },
+    {
+      "node_id": "proposal:synergy_ai_tutors",
+      "kind": "proposal",
+      "name": "synergy_ai_tutors",
+      "domain": "education"
+    },
+    {
+      "node_id": "proposal:synergy_ai_courses",
+      "kind": "proposal",
+      "name": "synergy_ai_courses",
+      "domain": "education"
+    },
+    {
+      "node_id": "proposal:synergy_ai_video_router",
+      "kind": "proposal",
+      "name": "synergy_ai_video_router",
+      "domain": "digital_services"
+    },
+    {
+      "node_id": "proposal:synergy_ai_model_router",
+      "kind": "proposal",
+      "name": "synergy_ai_model_router",
+      "domain": "digital_services"
+    },
+    {
+      "node_id": "proposal:synergy_ai_advertising_router",
+      "kind": "proposal",
+      "name": "synergy_ai_advertising_router",
+      "domain": "digital_services"
+    },
+    {
+      "node_id": "proposal:synergy_ai_api_router",
+      "kind": "proposal",
+      "name": "synergy_ai_api_router",
+      "domain": "digital_services"
+    },
+    {
+      "node_id": "proposal:synergy_ai_seo_router",
+      "kind": "proposal",
+      "name": "synergy_ai_seo_router",
+      "domain": "digital_services"
+    },
+    {
+      "node_id": "proposal:synergy_ai_credit_router",
+      "kind": "proposal",
+      "name": "synergy_ai_credit_router",
+      "domain": "finance"
+    },
+    {
+      "node_id": "proposal:synergy_ai_card_router",
+      "kind": "proposal",
+      "name": "synergy_ai_card_router",
+      "domain": "finance"
+    },
+    {
+      "node_id": "proposal:synergy_ai_microloan_router",
+      "kind": "proposal",
+      "name": "synergy_ai_microloan_router",
+      "domain": "finance"
+    },
+    {
+      "node_id": "proposal:synergy_ai_remittance_router",
+      "kind": "proposal",
+      "name": "synergy_ai_remittance_router",
+      "domain": "finance"
+    },
+    {
+      "node_id": "proposal:synergy_ai_cashback_router",
+      "kind": "proposal",
+      "name": "synergy_ai_cashback_router",
+      "domain": "finance"
+    },
+    {
+      "node_id": "proposal:synergy_ai_broker_router",
+      "kind": "proposal",
+      "name": "synergy_ai_broker_router",
+      "domain": "finance"
+    },
+    {
+      "node_id": "proposal:synergy_ai_coupon_router",
+      "kind": "proposal",
+      "name": "synergy_ai_coupon_router",
+      "domain": "commerce"
+    },
+    {
+      "node_id": "proposal:synergy_ai_bank_router",
+      "kind": "proposal",
+      "name": "synergy_ai_bank_router",
+      "domain": "finance"
+    },
+    {
+      "node_id": "proposal:synergy_ai_logistics_router",
+      "kind": "proposal",
+      "name": "synergy_ai_logistics_router",
+      "domain": "services"
+    },
+    {
+      "node_id": "proposal:synergy_ai_real_estate_router",
+      "kind": "proposal",
+      "name": "synergy_ai_real_estate_router",
+      "domain": "services"
+    },
+    {
+      "node_id": "proposal:synergy_ai_enterprise_router",
+      "kind": "proposal",
+      "name": "synergy_ai_enterprise_router",
+      "domain": "services"
+    },
+    {
+      "node_id": "proposal:synergy_ai_legal_router",
+      "kind": "proposal",
+      "name": "synergy_ai_legal_router",
+      "domain": "services"
+    },
+    {
+      "node_id": "concept:synergy_hypergraph_core",
+      "kind": "architecture_concept",
+      "name": "SYNERGY Hypergraph Core",
+      "repository": false,
+      "description": "Canonical graph projection/read model stored in Shtenco/synergy/hypergraph; not a separate repository."
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "target:ORCHESTRATES:synergy_agi_nexus:timeweb_synergy_ai_infrastructure_agent",
+      "relation": "ORCHESTRATES",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1465024116",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target orchestration role; implementation and authorization boundaries require verification."
+    },
+    {
+      "edge_id": "target:USES_BROWSER:synergy_agi_nexus:synergy_ai_browser-",
+      "relation": "USES_BROWSER",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1469906584",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target browser capability; no runtime call asserted."
+    },
+    {
+      "edge_id": "target:PERSISTS_TO:synergy_hierarchical_cognitive_memory_architecture:synergy_agent_long_term_memory",
+      "relation": "PERSISTS_TO",
+      "participants": [
+        {
+          "node_id": "github-repo:1464742221",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1465066359",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Potential long-term memory handoff; contract and ownership are not yet established."
+    },
+    {
+      "edge_id": "target:RETRIEVES_FROM:timeweb_synergy_agent_long_term_memory:timeweb_synergy_rag_quality_cost",
+      "relation": "RETRIEVES_FROM",
+      "participants": [
+        {
+          "node_id": "github-repo:1465262827",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1465066578",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target RAG evaluation relationship; not a verified dependency."
+    },
+    {
+      "edge_id": "target:PROTECTED_BY:synergy_meta_api:timeweb_synergy_retry_storm_lab",
+      "relation": "PROTECTED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1428731702",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1466823100",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Reliability research should inform provider-scoped retry policies."
+    },
+    {
+      "edge_id": "target:RECOVERED_BY:synergy_meta_os:timeweb_synergy_service_recovery",
+      "relation": "RECOVERED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1465065775",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target recovery validation relationship."
+    },
+    {
+      "edge_id": "target:DELIVERY_GUARDED_BY:tiimeweb_synergy_exactly_once_delivery:synergy_system",
+      "relation": "DELIVERY_GUARDED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1465156316",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target event-delivery contract; exactly-once semantics require idempotency and receiver-side deduplication."
+    },
+    {
+      "edge_id": "target:FAULT_TESTED_BY:synergy_meta_os:timeweb_synergy_fault_injection_lab",
+      "relation": "FAULT_TESTED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341275176",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1465067741",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target fault-injection coverage."
+    },
+    {
+      "edge_id": "target:COST_BENCHMARKED_BY:synergy_computing_topology:timeweb_synergy_cpu_gpu_cost_benchmark",
+      "relation": "COST_BENCHMARKED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1397603060",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1465066115",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target cost benchmark relationship."
+    },
+    {
+      "edge_id": "target:STATISTICALLY_EVALUATED_BY:synergy_gllm_nexus:timeweb_synergy_benchmark_statistics",
+      "relation": "STATISTICALLY_EVALUATED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1370636640",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1465066858",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target statistical evaluation relationship."
+    },
+    {
+      "edge_id": "target:VALIDATED_BY:synergy_quantlab:timeweb_synergy_backtest_oos_lab",
+      "relation": "VALIDATED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376805",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1465065411",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target out-of-sample validation relationship."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_agentic_ai_economy:synergy_economic_graph",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1387121392",
+          "role": "source"
+        },
+        {
+          "node_id": "proposal:synergy_economic_graph",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target shared economic graph responsibility."
+    },
+    {
+      "edge_id": "target:CONSUMES:synergy_meta_api:synergy_ai_router_core",
+      "relation": "CONSUMES",
+      "participants": [
+        {
+          "node_id": "github-repo:1428731702",
+          "role": "source"
+        },
+        {
+          "node_id": "proposal:synergy_ai_router_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target common routing contract."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_system:synergy_ai_policy_engine",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "source"
+        },
+        {
+          "node_id": "proposal:synergy_ai_policy_engine",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "target_architecture_not_observed_runtime",
+      "rationale": "Target policy ownership and enforcement relationship."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_agi_nexus:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341271800",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "documented_architecture_or_contract_not_runtime_integration",
+      "rationale": "README declares synergy_system as architecture root; not a runtime authorization edge."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_meta_api:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1428731702",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "documented_architecture_or_contract_not_runtime_integration",
+      "rationale": "META API identifies itself as an ecosystem gateway; governance contract remains to be bound."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_net:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273955",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "documented_architecture_or_contract_not_runtime_integration",
+      "rationale": "SynergyNet README declares synergy_system as architecture root; no runtime dependency claimed."
+    },
+    {
+      "edge_id": "target:HOSTS:synergy:synergy_hypergraph_core",
+      "relation": "HOSTS",
+      "participants": [
+        {
+          "node_id": "github-repo:1409433270",
+          "role": "source"
+        },
+        {
+          "node_id": "concept:synergy_hypergraph_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "ownership_map_and_source_review",
+      "rationale": "Umbrella repository contains the Hypergraph V3 canonical graph projection."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_system:synergy_hypergraph_core",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "source"
+        },
+        {
+          "node_id": "concept:synergy_hypergraph_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "ownership_map_and_source_review",
+      "rationale": "System remains canonical federation governance and contract authority."
+    },
+    {
+      "edge_id": "target:PROVIDES_EVIDENCE_INTELLIGENCE:synergy_hierarchical_cognitive_memory_architecture:synergy_hypergraph_core",
+      "relation": "PROVIDES_EVIDENCE_INTELLIGENCE",
+      "participants": [
+        {
+          "node_id": "github-repo:1464742221",
+          "role": "source"
+        },
+        {
+          "node_id": "concept:synergy_hypergraph_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "ownership_map_and_source_review",
+      "rationale": "Memory repository provides commit-pinned static dependency scans and cross-repository evidence ledger; adapter mapping remains to be implemented."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_marketvision:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376378125",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Market feature contract is a declared upstream advisory input."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_adaptive_engine:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377980",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Market regime contract is declared as an upstream advisory input."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_market_maker:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377837",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Liquidity quote contract is declared as an upstream advisory input."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_market_graph:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377201",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Fair-value contract is declared as an upstream advisory input."
+    },
+    {
+      "edge_id": "target:PROVIDES:synergy_relative_value:synergy_midas_ai",
+      "relation": "PROVIDES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377560",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Relative-value signal is a research producer; target MIDAS integration remains advisory."
+    },
+    {
+      "edge_id": "target:VALIDATES:synergy_quantlab:synergy_midas_ai",
+      "relation": "VALIDATES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376805",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "QuantLab validation contract consumes portfolio decision contract."
+    },
+    {
+      "edge_id": "target:PROTECTED_BY:synergy_riskguard:synergy_midas_ai",
+      "relation": "PROTECTED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1376376981",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "RiskGuard is intended as independent veto; no runtime wiring asserted."
+    },
+    {
+      "edge_id": "target:VALIDATES:synergy_midas_institutional:synergy_midas_ai",
+      "relation": "VALIDATES",
+      "participants": [
+        {
+          "node_id": "github-repo:1376377374",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341272872",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "README_and_typed_contract_relationship_not_runtime_integration",
+      "rationale": "Institutional assessment requires canonical risk validation and binds exact signal."
+    },
+    {
+      "edge_id": "target:PROVIDES_EVIDENCE:synergy_megaproject:concept:synergy_hypergraph_core",
+      "relation": "PROVIDES_EVIDENCE",
+      "participants": [
+        {
+          "node_id": "github-repo:1390438988",
+          "role": "source"
+        },
+        {
+          "node_id": "concept:synergy_hypergraph_core",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "source_reviewed_architecture_and_contracts_not_runtime_integration",
+      "rationale": "Science claim/evidence graph can provide reviewed claim evidence to Hypergraph; this is a target data feed, not a runtime dependency."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_eurasian:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1336911571",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "source_reviewed_architecture_and_contracts_not_runtime_integration",
+      "rationale": "Eurasian federation policy references the ecosystem governance authority; no runtime call is asserted."
+    },
+    {
+      "edge_id": "target:GOVERNED_BY:synergy_project:synergy_system",
+      "relation": "GOVERNED_BY",
+      "participants": [
+        {
+          "node_id": "github-repo:1359110009",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1341273343",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "source_reviewed_architecture_and_contracts_not_runtime_integration",
+      "rationale": "Project capital governance contracts reference the canonical federation authority; no runtime call is asserted."
+    },
+    {
+      "edge_id": "target:PROVIDES_CLAIMS:synergy_binary_quantum_theory:synergy_megaproject",
+      "relation": "PROVIDES_CLAIMS",
+      "participants": [
+        {
+          "node_id": "github-repo:1293271223",
+          "role": "source"
+        },
+        {
+          "node_id": "github-repo:1390438988",
+          "role": "target"
+        }
+      ],
+      "status": "candidate",
+      "basis": "source_reviewed_architecture_and_contracts_not_runtime_integration",
+      "rationale": "Binary Quantum Gravity research claims may be ingested into the science evidence graph after provenance review."
+    }
+  ],
+  "guardrails": [
+    "All target edges remain candidate until source-level contracts and integration tests exist.",
+    "Financial authority, identity, settlement and policy enforcement must remain in their owning services.",
+    "Agent orchestration does not grant cross-service write authority.",
+    "Proposed repositories are not actual repositories and are not counted in inventory."
+  ]
+}

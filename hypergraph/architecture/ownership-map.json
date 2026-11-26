@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "decision": "Do not create a separate synergy_hypergraph_core repository at this stage. Keep the canonical graph projection and inventory in Shtenco/synergy/hypergraph; reuse the existing memory dependency/evidence engine and System governance registry.",
+  "owners": [
+    {
+      "domain": "federation_governance_and_contract_authority",
+      "owner": "Shtenco/synergy_system",
+      "role": "Canonical authority map, interface registry and contract families; 0 E2E edges in the 2026-11-20 snapshot."
+    },
+    {
+      "domain": "static_dependency_and_cross_repository_evidence",
+      "owner": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "role": "Commit-pinned AST dependency scans, cross-repository observations, explicit candidate edges and contract ID matching."
+    },
+    {
+      "domain": "intelligence_and_proposals",
+      "owner": "Shtenco/synergy_agi_nexus",
+      "role": "NEXUS inference and typed proposals; no automatic payment, ledger or deployment authority."
+    },
+    {
+      "domain": "api_and_tool_gateway",
+      "owner": "Shtenco/synergy_meta_api",
+      "role": "Local typed tool registry and deny-by-default policy; current V0.1 prototype is not production."
+    },
+    {
+      "domain": "node_runtime_orchestration",
+      "owner": "Shtenco/synergy_meta_os",
+      "role": "Manifest and service orchestration; compatibility runtime requires stronger isolation before untrusted execution."
+    },
+    {
+      "domain": "p2p_transport",
+      "owner": "Shtenco/synergy_net",
+      "role": "Target transport evidence and planned mesh architecture; complete production data plane not established by inspected code."
+    },
+    {
+      "domain": "agent_economic_simulation",
+      "owner": "Shtenco/synergy_agentic_ai_economy",
+      "role": "Closed agent-economy simulation and ledger model; not real payment settlement."
+    },
+    {
+      "domain": "market_conversion_graph",
+      "owner": "Shtenco/synergy_market_graph",
+      "role": "Executable conversion-path/fair-value graph; not a general marketplace or transaction authority."
+    },
+    {
+      "domain": "canonical_accounting",
+      "owner": "Shtenco/synergy_financial_os",
+      "role": "Accounting recognition and canonical accounting authority; main branch currently exposes contract-level artifacts, larger runtime remains in open PR/feature lines."
+    },
+    {
+      "domain": "payment_routing_and_settlement",
+      "owner": "Shtenco/synergy_pay_system",
+      "role": "Provider registry, compliance/readiness gates, route selection, settlement orchestration and live-execution coordinator; live execution remains disabled by default."
+    },
+    {
+      "domain": "financial_research_simulation",
+      "owner": "Shtenco/synergy_ai_financial_system",
+      "role": "Integer AMM graph-arbitrage and dual-circuit research simulation; no accounting or settlement authority."
+    },
+    {
+      "domain": "trading_risk_veto",
+      "owner": "Shtenco/synergy_riskguard",
+      "role": "Independent pre-trade risk veto and enterprise RBAC/audit boundary; insufficient-history handling requires fail-closed hardening."
+    },
+    {
+      "domain": "real_estate_lead_discovery",
+      "owner": "Shtenco/synergy_lead_search_engline",
+      "role": "Offline candidate scoring, human review and approval-gated CRM outbox; not a deployed public crawler or multi-tenant service."
+    },
+    {
+      "domain": "geospatial_viewer_and_boundary_assets",
+      "owner": "Shtenco/synergy_maps",
+      "role": "Cesium global globe and EAEU boundary subset; not authoritative cadastral or global city-scale map data."
+    },
+    {
+      "domain": "engineering_change_evidence",
+      "owner": "Shtenco/synergy_ai_coder",
+      "role": "Requirement-to-change trace and approval-gated evidence contract; not an autonomous coder."
+    },
+    {
+      "domain": "local_operator_workspace",
+      "owner": "Shtenco/synergy_ai_workspace",
+      "role": "Branch-only local control plane prototype; default main remains README-only."
+    },
+    {
+      "domain": "messaging",
+      "owner": "Shtenco/synergy_messenger",
+      "role": "Main branch currently documentation/manifest only; alpha runtime claims require branch/release evidence."
+    },
+    {
+      "domain": "autonomous_workflow_orchestration",
+      "owner": "Shtenco/synergy_agi_autopilot",
+      "role": "Main branch architecture stub; no runtime ownership established."
+    },
+    {
+      "domain": "relative_value_research",
+      "owner": "Shtenco/synergy_relative_value",
+      "role": "OLS pair and spread research signal; no execution authority."
+    },
+    {
+      "domain": "adaptive_policy_and_regime",
+      "owner": "Shtenco/synergy_adaptive_engine",
+      "role": "Bounded online strategy weighting and regime signal; execution disabled by default."
+    },
+    {
+      "domain": "institutional_assessment",
+      "owner": "Shtenco/synergy_midas_institutional",
+      "role": "Bounded notional assessment that still requires canonical RiskGuard validation."
+    },
+    {
+      "domain": "superapp_mobile_surface",
+      "owner": "Shtenco/sinergy_super_app",
+      "role": "PWA/Android presentation shell with source-integrity contract; APK build and backend integrations are not proven."
+    },
+    {
+      "domain": "finance_mobile_client",
+      "owner": "Shtenco/synergy_app",
+      "role": "Android/iOS/web finance client source and source-integrity checks; artifact/store publication remains separate."
+    },
+    {
+      "domain": "application_registry_and_read_models",
+      "owner": "Shtenco/synergy_apps",
+      "role": "Application master registry and read-only accounting/trust projections, not a unified runtime."
+    },
+    {
+      "domain": "chain_application_and_evm_research",
+      "owner": "Shtenco/synergy_chain",
+      "role": "Packaged Growth OS, static Pages subset and QE V10 testbed; not a production blockchain or payment authority."
+    },
+    {
+      "domain": "cross_chain_trust_consumer",
+      "owner": "Shtenco/synergy_metachain",
+      "role": "Local finalized-commitment and replay gate; in-memory only and no light client."
+    },
+    {
+      "domain": "usds_monetary_research",
+      "owner": "Shtenco/synergy_usds",
+      "role": "Base fork mint/sell/PP experiment; blocked from federation/deployment pending deployer credential rotation."
+    },
+    {
+      "domain": "two_token_collateral_experiment",
+      "owner": "Shtenco/synergy_cashero",
+      "role": "CASRS/CASRG collateral and CPMM experiments; tracked env files require secret rotation review."
+    },
+    {
+      "domain": "low_level_runtime_primitives",
+      "owner": "Shtenco/synergy_turbo_linux",
+      "role": "Turbo Core capabilities, scheduler and SPSC IPC; historical SSH credential incident requires confirmed revocation; duplicate task enqueue needs a fix."
+    },
+    {
+      "domain": "compute_topology_and_benchmarks",
+      "owner": "Shtenco/synergy_computing_topology",
+      "role": "V4 correctness closure and compact-index benchmarks; kernel runtime on current kernel remains untested."
+    },
+    {
+      "domain": "xpu_architecture_model",
+      "owner": "Shtenco/synergy_motherboard_xpu_xml",
+      "role": "Parameterized EML/XPU model and reference evaluator; no physical silicon or measured RTL claim."
+    },
+    {
+      "domain": "long_term_test_harness",
+      "owner": "Shtenco/synergy_long_term_harness",
+      "role": "Reserved architecture node only; main branch contains no harness implementation."
+    },
+    {
+      "domain": "trading_validation_authority",
+      "owner": "Shtenco/synergy_quantlab",
+      "role": "Purged walk-forward, cost-adjusted metrics and RESEARCH/PAPER/CANARY decision; not execution authority."
+    },
+    {
+      "domain": "canonical_trading_intelligence_contracts",
+      "owner": "Shtenco/synergy_midas_ai",
+      "role": "Target canonical MIDAS contract layer for portfolio decisions and advisory inputs; main is not yet a full trading runtime."
+    },
+    {
+      "domain": "liquidity_quote_engine",
+      "owner": "Shtenco/synergy_market_maker",
+      "role": "Bounded inventory/volatility quote proposals with enterprise RBAC; no fill/execution authority."
+    },
+    {
+      "domain": "market_feature_representation",
+      "owner": "Shtenco/synergy_marketvision",
+      "role": "OHLCV feature cube and compressed summary contract; not a predictive signal or execution authority."
+    },
+    {
+      "domain": "modular_midas_research_runtime",
+      "owner": "Shtenco/synergy_midas_ai_trading_system",
+      "role": "Strategy/fusion/policy/optimizer/risk/archive/API research package; risk-veto, WebSocket auth and archive chain issues block safe use."
+    },
+    {
+      "domain": "eurusd_h1_specialist_and_legacy_agent",
+      "owner": "Shtenco/midas_lite",
+      "role": "Sealed EURUSD H1 research plus legacy agent with direct MT5 order_send path; isolate and default-deny execution."
+    },
+    {
+      "domain": "cassandra_trading_terminal",
+      "owner": "Shtenco/synergy_ai_trade_terminal",
+      "role": "Legacy terminal/data/orderbook application with embedded credentials; not safe for public deployment until rotation and hardening."
+    },
+    {
+      "domain": "quantum_market_experiment",
+      "owner": "Shtenco/quantum-trading_metatrader5",
+      "role": "Fixed Qiskit/Aer circuit research; not a validated market prediction or execution system."
+    },
+    {
+      "domain": "source_indexed_coding_agent_and_compiler",
+      "owner": "Shtenco/synergy_ai_language",
+      "role": "Requirement-to-change trace, AST graphs and multi-language scaffold compiler; codegen escaping, command sandbox and trace redaction require hardening."
+    },
+    {
+      "domain": "graph_native_cognitive_model",
+      "owner": "Shtenco/synergy_gllm_nexus",
+      "role": "Typed cognitive hypergraph, recurrent graph reasoning and Russian compiler on branch unified-v3-generalization-first; default main is docs-only."
+    },
+    {
+      "domain": "rwkv_quantization_research",
+      "owner": "Shtenco/synergy_ai_llm_rwkv",
+      "role": "Experimental mixed-bit converter and Triton matvec on feature branch; no full-model quality or inference evidence."
+    },
+    {
+      "domain": "debt_credit_maturity_design",
+      "owner": "Shtenco/synergy_matrix_sota",
+      "role": "Documentation owner for maturity-sensitive credit mechanisms; no executable implementation on main."
+    },
+    {
+      "domain": "compression_benchmark_dossier",
+      "owner": "Shtenco/synegy_ai_compress",
+      "role": "Benchmark artifacts and source snapshot pointer; source URL/reproducibility needs repair."
+    },
+    {
+      "domain": "shared_model_temporal_compression",
+      "owner": "Shtenco/synergy_qr_compress",
+      "role": "QTC2/QTD3 dictionary-reference and patch codec; exact mode depends on shared model retention."
+    },
+    {
+      "domain": "gguf_compression_research",
+      "owner": "Shtenco/synergy_gguf_compress",
+      "role": "Documentation-only proposal; no executable codec on main."
+    },
+    {
+      "domain": "shhts_format_research",
+      "owner": "Shtenco/synergy_shhts",
+      "role": "Documentation-only format concept; no executable decoder on main."
+    },
+    {
+      "domain": "regional_economic_allocation_research",
+      "owner": "Shtenco/synergy_eurasian",
+      "role": "EIIOM project/sector allocation simulation with scenario coefficients; not a live macroeconomic data authority."
+    },
+    {
+      "domain": "project_capital_governance_dossier",
+      "owner": "Shtenco/synergy_project",
+      "role": "Master project dossier and typed capital authorization artifact; not a capital ledger or payment executor."
+    },
+    {
+      "domain": "scientific_claim_and_evidence_graph",
+      "owner": "Shtenco/synergy_megaproject",
+      "role": "Research claim/evidence graph and review-state validator; its evidence should feed Hypergraph without being misclassified as runtime dependencies."
+    },
+    {
+      "domain": "binary_quantum_gravity_research",
+      "owner": "Shtenco/synergy_binary_quantum_theory",
+      "role": "Mathematical claim registry and falsification harness; physical validity gates remain open."
+    },
+    {
+      "domain": "pq_evm_consensus_research",
+      "owner": "Shtenco/synergy_ai_blockchain",
+      "role": "Rust PQ-EVM/NEXUS consensus reference core and optional FIPS PQ provider; not audited or integrated with production EVM clients."
+    },
+    {
+      "domain": "public_budget_traceability",
+      "owner": "Shtenco/synergy_blochain_budget",
+      "role": "Public budget/EIS data normalizer, append-only trace graph and Merkle proofs; not accounting or legal authorization."
+    },
+    {
+      "domain": "recursive_collateral_money_simulation",
+      "owner": "Shtenco/synergy_triangle_money_system",
+      "role": "Five-pool CPMM/collateral simulation with HardNAV conservation; incomplete repayment lifecycle and owner oracle."
+    },
+    {
+      "domain": "quantitative_easing_research",
+      "owner": "Shtenco/synergy_qe",
+      "role": "Documentation-only monetary design stub; no executable runtime on main."
+    }
+  ],
+  "integration_contract": {
+    "identity": "Keep GitHub numeric repository ID as Hypergraph canonical node identity; map to memory engine canonical clone URL/hash without replacing provider ID.",
+    "evidence": "Import memory engine candidate dependency records only with source and target commit SHA, file path, blob SHA, relation and confidence.",
+    "trust": "Candidate remains candidate; source review may become reviewed; verified requires reproducible contract/runtime evidence.",
+    "governance": "Reference System contract IDs and authority declarations; do not fork or duplicate canonical contract authority.",
+    "projection": "Hypergraph V3 is a read model / cross-repository projection in the umbrella repository, not a new runtime or new repository."
+  }
+}

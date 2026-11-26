@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "policy": "Candidate architecture only; these are not confirmed repositories and must not be counted in repository inventory.",
+  "proposal_count": 39,
+  "proposals": [
+    {
+      "proposal_id": "proposal:synergy_reliability_core",
+      "name": "synergy_reliability_core",
+      "domain": "reliability",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_agent_memory_core",
+      "name": "synergy_agent_memory_core",
+      "domain": "memory",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_agent_browser_core",
+      "name": "synergy_agent_browser_core",
+      "domain": "browser",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_event_delivery_core",
+      "name": "synergy_event_delivery_core",
+      "domain": "delivery",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_evaluation_core",
+      "name": "synergy_ai_evaluation_core",
+      "domain": "evaluation",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_compute_optimizer",
+      "name": "synergy_compute_optimizer",
+      "domain": "compute",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_trading_validation_core",
+      "name": "synergy_trading_validation_core",
+      "domain": "trading_validation",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_router_core",
+      "name": "synergy_ai_router_core",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_economic_graph",
+      "name": "synergy_economic_graph",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_offer_protocol",
+      "name": "synergy_offer_protocol",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_provider_registry",
+      "name": "synergy_provider_registry",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_graph_arbitrage_engine",
+      "name": "synergy_graph_arbitrage_engine",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_marketplace_core",
+      "name": "synergy_marketplace_core",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_pricing_engine",
+      "name": "synergy_ai_pricing_engine",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_reputation_engine",
+      "name": "synergy_ai_reputation_engine",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_transaction_orchestrator",
+      "name": "synergy_transaction_orchestrator",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_policy_engine",
+      "name": "synergy_ai_policy_engine",
+      "domain": "shared_core",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_economy_router",
+      "name": "synergy_ai_economy_router",
+      "domain": "marketplace",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_skills_marketplace",
+      "name": "synergy_ai_skills_marketplace",
+      "domain": "marketplace",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_classifieds_graph",
+      "name": "synergy_ai_classifieds_graph",
+      "domain": "marketplace",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_tutors",
+      "name": "synergy_ai_tutors",
+      "domain": "education",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_courses",
+      "name": "synergy_ai_courses",
+      "domain": "education",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_video_router",
+      "name": "synergy_ai_video_router",
+      "domain": "digital_services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_model_router",
+      "name": "synergy_ai_model_router",
+      "domain": "digital_services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_advertising_router",
+      "name": "synergy_ai_advertising_router",
+      "domain": "digital_services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_api_router",
+      "name": "synergy_ai_api_router",
+      "domain": "digital_services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_seo_router",
+      "name": "synergy_ai_seo_router",
+      "domain": "digital_services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_credit_router",
+      "name": "synergy_ai_credit_router",
+      "domain": "finance",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_card_router",
+      "name": "synergy_ai_card_router",
+      "domain": "finance",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_microloan_router",
+      "name": "synergy_ai_microloan_router",
+      "domain": "finance",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_remittance_router",
+      "name": "synergy_ai_remittance_router",
+      "domain": "finance",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_cashback_router",
+      "name": "synergy_ai_cashback_router",
+      "domain": "finance",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_broker_router",
+      "name": "synergy_ai_broker_router",
+      "domain": "finance",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_coupon_router",
+      "name": "synergy_ai_coupon_router",
+      "domain": "commerce",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_bank_router",
+      "name": "synergy_ai_bank_router",
+      "domain": "finance",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_logistics_router",
+      "name": "synergy_ai_logistics_router",
+      "domain": "services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_real_estate_router",
+      "name": "synergy_ai_real_estate_router",
+      "domain": "services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_enterprise_router",
+      "name": "synergy_ai_enterprise_router",
+      "domain": "services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    },
+    {
+      "proposal_id": "proposal:synergy_ai_legal_router",
+      "name": "synergy_ai_legal_router",
+      "domain": "services",
+      "node_type": "proposed_component",
+      "status": "candidate",
+      "creation_decision": "defer_until_overlap_and_contract_audit",
+      "rule": "Do not create a repository until existing capability ownership, API contracts, runtime evidence and maintenance cost are reviewed."
+    }
+  ]
+}

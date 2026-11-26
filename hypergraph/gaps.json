@@ -1,0 +1,968 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-25",
+  "gaps": [
+    {
+      "id": "GAP-001",
+      "severity": "high",
+      "area": "source_audit",
+      "description": "112 repositories are inventoried and all 112 README/tree snapshots have been reviewed. Limited executable-source/prototype review covers 106/112 repositories (91 main-branch reviews and 15 branch-only prototype reviews); the remaining six are five documentation-only specifications and one benchmark dossier. These reviews are scoped evidence, not repository-wide certification.",
+      "next_action": "Keep README/content coverage separate from executable-source coverage. Revisit the six remaining repositories only if executable source appears; expand limited reviews selectively to dependencies, tests, workflows and runtime contracts. Do not describe the 106 reviewed scopes as full certification."
+    },
+    {
+      "id": "GAP-002",
+      "severity": "high",
+      "area": "edges",
+      "description": "109 DEPENDS_ON edges were copied from the 92-record umbrella registry and remain candidate claims, not verified source dependencies.",
+      "next_action": "Verify imports, API calls, package manifests, workflow references and runtime contracts."
+    },
+    {
+      "id": "GAP-003",
+      "severity": "high",
+      "area": "contracts",
+      "description": "No cross-repository API/event contracts have been independently extracted in this pass.",
+      "next_action": "Create contracts directory with OpenAPI, JSON Schema and event envelope artifacts."
+    },
+    {
+      "id": "GAP-004",
+      "severity": "medium",
+      "area": "proposals",
+      "description": "All 39 proposed shared cores and domain routers have overlap assessments with 91 commit/blob-pinned repository/file evidence references. The remaining gap is owner/architecture adjudication and implementation-boundary validation; proposals are not approved repositories or runtime components.",
+      "next_action": "Review the 39 assessments and evidence scopes with the canonical owners; retain reuse decisions and pending owner decisions. Do not create repositories or promote proposals to runtime components without explicit approval and source-backed need."
+    },
+    {
+      "id": "GAP-005",
+      "severity": "high",
+      "area": "evidence",
+      "description": "Registry dependency assertions cite the umbrella registry blob rather than original source lines.",
+      "next_action": "Replace or supplement each candidate edge with source-level evidence."
+    },
+    {
+      "id": "GAP-006",
+      "severity": "high",
+      "area": "browser_security",
+      "repository": "Shtenco/synergy_ai_browser-",
+      "description": "Playwright request guard applies policy only to top-level document navigations; subresource requests are continued without equivalent host/IP restrictions. Potential private-network/SSRF path through an allowlisted page.",
+      "next_action": "Enforce policy for every request, resolve and reject private/loopback/link-local/reserved IPs, validate redirects and add local fixtures proving blocked subresource requests."
+    },
+    {
+      "id": "GAP-007",
+      "severity": "medium",
+      "area": "evidence_scope",
+      "repository": "Shtenco/timeweb_synergy_service_recovery",
+      "description": "README describes local HTTP/SQLite restarts, but inspected article11 source is an in-memory state simulator with no real side effects.",
+      "next_action": "Add reproducible HTTP/SQLite recovery experiments or narrow README claims to the implemented simulator."
+    },
+    {
+      "id": "GAP-008",
+      "severity": "medium",
+      "area": "evidence_scope",
+      "repository": "Shtenco/timeweb_synergy_cpu_gpu_cost_benchmark",
+      "description": "README references local CPU measurements, but inspected source exposes an assumption-based cost calculator and no independent GPU benchmark harness.",
+      "next_action": "Add reproducible CPU/GPU measurement scripts and provider invoice evidence, or narrow README claims."
+    },
+    {
+      "id": "GAP-009",
+      "severity": "medium",
+      "area": "governance_inventory",
+      "repository": "Shtenco/synergy_system",
+      "description": "Existing governance snapshots report 92 repositories in README and 75 in repository_federation_v2.yaml (2026-09-28), while the reconciled current inventory contains 112.",
+      "next_action": "Synchronize the governance inventory from immutable GitHub IDs while preserving historical snapshot provenance."
+    },
+    {
+      "id": "GAP-010",
+      "severity": "high",
+      "area": "api_security",
+      "repository": "Shtenco/synergy_meta_api",
+      "description": "Connector execution endpoint has no authentication and is disabled by default; enabling the environment flag is documented as private-development-only.",
+      "next_action": "Keep connector execution disabled on public interfaces until tenant authentication, scoped authorization, audit, egress allowlist, quotas and secret management are implemented and tested."
+    },
+    {
+      "id": "GAP-011",
+      "severity": "high",
+      "area": "memory_inventory_conflict",
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "description": "synergy_system README snapshot dated 2026-11-20 says the cognitive-memory main branch is README-only, but current main contains a full Python package, tests, git dependency intelligence, cross-repository registry and contract intelligence.",
+      "next_action": "Refresh governance snapshot from exact current main SHA; do not rely on stale README-only status."
+    },
+    {
+      "id": "GAP-012",
+      "severity": "high",
+      "area": "runtime_isolation",
+      "repository": "Shtenco/synergy_meta_os",
+      "description": "The compatibility orchestrator applies POSIX RLIMITs and a minimal environment but does not enforce namespaces, seccomp, filesystem or network isolation. It is not a complete sandbox.",
+      "next_action": "Keep untrusted service execution disabled or externally sandboxed until a dedicated isolation layer and adversarial tests are implemented."
+    },
+    {
+      "id": "GAP-013",
+      "severity": "medium",
+      "area": "market_graph_model",
+      "repository": "Shtenco/synergy_market_graph",
+      "description": "Fair-value graph does not apply capacity/latency constraints; fee/slippage values are not bounded in Edge, and negative executable paths are silently filtered.",
+      "next_action": "Add fee/slippage validation, capacity/latency-aware path evaluation and tests before using outputs for execution decisions."
+    },
+    {
+      "id": "GAP-014",
+      "severity": "high",
+      "area": "accounting_recognition",
+      "repository": "Shtenco/synergy_financial_os",
+      "description": "Main-branch accounting recognition helper accepts settlement_payload=None, bypassing its reconciled-settlement precondition; an empty double-entry list also balances and is accepted.",
+      "next_action": "Require reconciled settlement evidence for every recognition path (or explicit non-recognition classification), reject empty/zero journals and add bypass tests."
+    },
+    {
+      "id": "GAP-015",
+      "severity": "high",
+      "area": "durable_settlement",
+      "repository": "Shtenco/synergy_pay_system",
+      "description": "Inspected settlement engine keeps settlement records and idempotency keys in process memory; this does not survive restart and does not prove exactly-once external side effects.",
+      "next_action": "Persist settlement state, idempotency keys and outbox atomically; add crash-after-provider-call recovery and reconciliation tests."
+    },
+    {
+      "id": "GAP-016",
+      "severity": "high",
+      "area": "risk_fail_closed",
+      "repository": "Shtenco/synergy_riskguard",
+      "description": "VaR/CVaR return 0 when fewer than five returns are available, so the risk core can understate uncertainty and continue to approve orders without sufficient history.",
+      "next_action": "Make insufficient history an explicit blocker or use a conservative fallback; validate positive notional and side at the core boundary."
+    },
+    {
+      "id": "GAP-017",
+      "severity": "medium",
+      "area": "domain_ownership",
+      "repository": "Shtenco/synergy_search_engline",
+      "description": "The repository named search_engline is a HardNAV multiplier simulation, not a general search engine; it cannot be treated as the search backend for classifieds, banks or real estate.",
+      "next_action": "Map each actual search implementation to its domain and rename/clarify the repository role in the federation registry."
+    },
+    {
+      "id": "GAP-018",
+      "severity": "high",
+      "area": "tenant_privacy",
+      "repository": "Shtenco/synergy_lead_search_engline",
+      "description": "Lead OS schema has no tenant_id isolation and the API uses a single operator bearer token; it is not a safe multi-tenant CRM lead service as-is.",
+      "next_action": "Add tenant-scoped document/review/outbox ownership, per-tenant auth and authorization, retention/deletion workflows and cross-tenant negative tests before multi-client hosting."
+    },
+    {
+      "id": "GAP-019",
+      "severity": "medium",
+      "area": "spatial_integration",
+      "repository": "Shtenco/synergy_maps",
+      "description": "Current Maps implementation is a global globe plus EAEU boundary subset; higher-detail layers and live logistics/real-estate data integration are not established.",
+      "next_action": "Define versioned geospatial contracts and source licensing/authority before routing commercial services through Maps."
+    },
+    {
+      "id": "GAP-020",
+      "severity": "high",
+      "area": "messenger_main_branch",
+      "repository": "Shtenco/synergy_messenger",
+      "description": "Main branch package scripts reference missing tests/v3 and scripts/copy-www.js; inspected main tree has no messenger source or test suite despite README describing alpha.9.",
+      "next_action": "Reconcile default branch with the claimed release artifact; add required source/test files or narrow main README/package scripts."
+    },
+    {
+      "id": "GAP-021",
+      "severity": "medium",
+      "area": "workspace_release_branch",
+      "repository": "Shtenco/synergy_ai_workspace",
+      "description": "Workspace implementation exists on release/v1.0-desktop-rc but main is README-only; the release branch is not a production desktop installer and has no tenant-isolated public backend.",
+      "next_action": "Keep branch status explicit; complete release build, GUI E2E, tenant/privacy review and provider adapter verification before production claims."
+    },
+    {
+      "id": "GAP-022",
+      "severity": "medium",
+      "area": "autopilot_runtime",
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "description": "Main branch is a stub with no DAG planner or autonomous runtime; do not treat the architecture node as an orchestrator implementation.",
+      "next_action": "Assign orchestration runtime ownership to verified components and keep Autopilot as a proposal until source is added."
+    },
+    {
+      "id": "GAP-023",
+      "severity": "medium",
+      "area": "coding_agent_scope",
+      "repository": "Shtenco/synergy_ai_coder",
+      "description": "AI Coder main implements requirement/change evidence contracts only, not a full autonomous coding agent.",
+      "next_action": "Keep coding execution in a separate sandboxed component and reuse the evidence contract for approvals."
+    },
+    {
+      "id": "GAP-024",
+      "severity": "medium",
+      "area": "graph_arbitrage_implementation",
+      "repository": "Shtenco/synergy_algotrading_graph_system",
+      "description": "Repository describes settlement-aware graph arbitrage architecture but main branch contains only README and assets, no executable graph engine or tests.",
+      "next_action": "Keep it as a specification; implement inside an existing graph owner or add code/tests before claiming an engine."
+    },
+    {
+      "id": "GAP-025",
+      "severity": "medium",
+      "area": "relative_value_validation",
+      "repository": "Shtenco/synergy_relative_value",
+      "description": "Pair OLS/z-score signals are non-authorizing and do not establish cointegration, stationarity, hedge stability or executable edge after costs.",
+      "next_action": "Require aligned train/OOS data, cointegration/stationarity tests, rolling stability, borrow/funding, liquidity and cost-aware negative tests."
+    },
+    {
+      "id": "GAP-026",
+      "severity": "medium",
+      "area": "superapp_integration",
+      "repository": "Shtenco/sinergy_super_app",
+      "description": "Main branch contains a PWA/Android source surface and UI descriptions of wallet/AGI/DAO/L1/MetaPay/mesh, but the source contract explicitly does not prove backend integrations or a built APK.",
+      "next_action": "Bind each UI module to a versioned backend contract and attach successful APK build artifact evidence before claiming operational features."
+    },
+    {
+      "id": "GAP-027",
+      "severity": "medium",
+      "area": "mobile_release_evidence",
+      "repository": "Shtenco/synergy_app",
+      "description": "Mobile source integrity contract verifies source files but explicitly returns artifact_built=false and store_published=false; source checks are not release evidence.",
+      "next_action": "Add reproducible signed build workflow, artifact digest/attestation and install smoke tests before release claims."
+    },
+    {
+      "id": "GAP-028",
+      "severity": "medium",
+      "area": "read_model_trust",
+      "repository": "Shtenco/synergy_apps",
+      "description": "Read-model helpers label payloads read-only but do not authenticate upstream evidence or verify canonical accounting/trust signatures.",
+      "next_action": "Require validated contract envelope and source provenance before constructing any user-visible authoritative projection."
+    },
+    {
+      "id": "GAP-029",
+      "severity": "critical",
+      "area": "credential_exposure",
+      "repository": "Shtenco/synergy_usds",
+      "description": "Tracked root artifact base-mainnet-deployer.key exists. Contents were deliberately not inspected; repository's own SECURITY_FEDERATION_BLOCKER confirms credential hygiene is an explicit federation blocker.",
+      "next_action": "Immediately rotate/revoke the associated deployer credential, remove the file and sensitive history, move secrets to a secret manager, enable secret scanning/push protection and provide verified cleanup evidence. Keep deployment disabled.",
+      "remediation_state": {
+        "current_main_path_present": true,
+        "security_pr": 6,
+        "security_pr_state": "CLOSED_NOT_MERGED",
+        "security_pr_head": "9554fcdace121599e37ed2b70b7deae04df2a8d3",
+        "external_rotation_verified": false,
+        "history_purge_verified": false
+      },
+      "last_reaudited": "2026-11-25"
+    },
+    {
+      "id": "GAP-030",
+      "severity": "critical",
+      "area": "credential_exposure",
+      "repository": "Shtenco/synergy_cashero",
+      "description": "Tracked .env, owner.env, bot1.env and bot2.env files are present in the repository tree. Contents were deliberately not inspected; README warns tracked configs may include secrets; root .gitignore was not found.",
+      "next_action": "Treat any credentials as exposed until proven otherwise; rotate/revoke wallet and bot credentials, remove secret files/history, add secret scanning and provide evidence before any deployment.",
+      "remediation_state": {
+        "current_main_paths_present": [
+          ".env",
+          "owner.env",
+          "bot1.env",
+          "bot2.env"
+        ],
+        "security_pr": 10,
+        "security_pr_state": "OPEN_DRAFT",
+        "security_pr_head": "37efc706410125abc68fac04f225b86a52ccd041",
+        "secret_hygiene_workflow_run": 45498923978,
+        "secret_hygiene_workflow_result": "success",
+        "external_rotation_verified": false,
+        "history_purge_verified": false
+      },
+      "last_reaudited": "2026-11-25"
+    },
+    {
+      "id": "GAP-031",
+      "severity": "high",
+      "area": "bridge_replay_durability",
+      "repository": "Shtenco/synergy_metachain",
+      "description": "Commitment replay guard stores consumed IDs in process memory and trusts supplied FINALIZED/digest fields; restart loses replay state and no chain proof/signature is verified.",
+      "next_action": "Persist replay state transactionally with unique constraints and verify signed source authority/finality proofs plus reorg handling."
+    },
+    {
+      "id": "GAP-032",
+      "severity": "critical",
+      "area": "historical_ssh_credential",
+      "repository": "Shtenco/synergy_turbo_linux",
+      "description": "Repository incident report confirms an unencrypted SSH private key was committed to main history. Current tree removal is not proof that the credential was rotated/revoked or that history was sanitized.",
+      "next_action": "Verify new key issuance, revoke old public key on every authorized host, inspect access logs, rotate dependent credentials and complete human-approved history sanitization.",
+      "remediation_state": {
+        "private_key_path_present_in_current_main": false,
+        "historical_exposure_remains": true,
+        "security_pr": 13,
+        "security_pr_state": "CLOSED_NOT_MERGED",
+        "security_pr_head": "006cd6b48dbf4be8b6f2003f66240dc662e67126",
+        "external_rotation_verified": false,
+        "history_purge_verified": false
+      },
+      "last_reaudited": "2026-11-25"
+    },
+    {
+      "id": "GAP-033",
+      "severity": "high",
+      "area": "scheduler_queue_integrity",
+      "repository": "Shtenco/synergy_turbo_linux",
+      "description": "turbo_scheduler_enqueue does not reject an already-enqueued task ID; duplicate enqueue can set next[id]=id and create a self-loop.",
+      "next_action": "Track queued membership or add a state bitset, reject duplicates, and add regression tests for duplicate enqueue, dequeue/re-enqueue and queue count invariants."
+    },
+    {
+      "id": "GAP-034",
+      "severity": "medium",
+      "area": "long_term_testing",
+      "repository": "Shtenco/synergy_long_term_harness",
+      "description": "Long-Term Harness main branch is README-only; no executable soak test framework exists in the inspected repository.",
+      "next_action": "Keep long-term test coverage assigned to existing CI/soak workflows until this repository gains a reproducible runner."
+    },
+    {
+      "id": "GAP-035",
+      "severity": "medium",
+      "area": "market_maker_config_validation",
+      "repository": "Shtenco/synergy_market_maker",
+      "description": "MMConfig has no explicit validation for gamma, kappa, horizon, max_inventory or min spread; malformed values can produce invalid quote geometry or math errors.",
+      "next_action": "Add immutable config validation for finite values and safe parameter ranges, plus property tests for non-crossed quotes and monotonic inventory/volatility behavior."
+    },
+    {
+      "id": "GAP-036",
+      "severity": "medium",
+      "area": "validation_provenance",
+      "repository": "Shtenco/synergy_quantlab",
+      "description": "Validation contract permits an optional dataset manifest digest and does not verify the digest format or fetch/verify the dataset; strong validation runs can be emitted without bound dataset provenance.",
+      "next_action": "Require a versioned dataset manifest and verify SHA-256/source revision before issuing a promotion gate."
+    },
+    {
+      "id": "GAP-037",
+      "severity": "critical",
+      "area": "risk_veto_crash",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "DecisionPipeline risk-veto path references undefined exc and bare-raises outside an active exception; a risk veto can crash instead of returning a blocked decision.",
+      "next_action": "Remove invalid exception path, return an explicit non-tradable veto decision, and add a test proving no execution adapter can be called after veto."
+    },
+    {
+      "id": "GAP-038",
+      "severity": "critical",
+      "area": "websocket_authentication",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "/logs/stream and /metrics/stream accept WebSocket connections without API-key validation while HTTP endpoints require the key.",
+      "next_action": "Authenticate before WebSocket accept, authorize per tenant/scope, rate-limit and add unauthenticated connection rejection tests."
+    },
+    {
+      "id": "GAP-039",
+      "severity": "high",
+      "area": "risk_sign_convention",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "RiskEngine computes lower-tail VaR/CVaR as negative returns but compares them against positive maximum-risk thresholds; risk sign conventions are inconsistent.",
+      "next_action": "Represent VaR/CVaR as positive loss magnitudes or invert comparisons consistently; add positive/negative return fixtures and veto boundary tests."
+    },
+    {
+      "id": "GAP-040",
+      "severity": "high",
+      "area": "archive_chain_persistence",
+      "repository": "Shtenco/synergy_midas_ai_trading_system",
+      "description": "ArchiveService previous chain hash is held only in instance memory and is lost on restart or across multiple service instances.",
+      "next_action": "Recover last trusted chain hash from durable archive transactionally and test restart, concurrent writers and tamper detection."
+    },
+    {
+      "id": "GAP-041",
+      "severity": "critical",
+      "area": "embedded_credentials",
+      "repository": "Shtenco/synergy_ai_trade_terminal",
+      "description": "README and source scan confirm credential fields are embedded in cassandra_v6_FIXED.py and bearer token material is emitted into login events/log prefix.",
+      "next_action": "Immediately rotate/revoke embedded account credentials and all issued tokens; purge history after rotation; move secrets to a secret manager and redact tokens from logs/events.",
+      "remediation_state": {
+        "current_main_paths_present": [
+          "cassandra_v6_FIXED.py",
+          "cassandra_ai_collector.py"
+        ],
+        "security_pr": 5,
+        "security_pr_state": "OPEN_DRAFT",
+        "security_pr_head": "1c77b9156c8d772bd862b22b5a021823f9758d29",
+        "credential_hygiene_workflow_run": 45498737127,
+        "credential_hygiene_workflow_result": "failure_before_steps_or_logs",
+        "external_broker_revocation_verified": false,
+        "history_purge_verified": false
+      },
+      "last_reaudited": "2026-11-25"
+    },
+    {
+      "id": "GAP-042",
+      "severity": "critical",
+      "area": "uncontrolled_live_execution",
+      "repository": "Shtenco/midas_lite",
+      "description": "Legacy agi_trader_final_v1.py contains multiple direct mt5.order_send calls; the reviewed repository includes a potentially live order path.",
+      "next_action": "Keep the script disabled outside isolated demo; add default-deny execution flag, account/environment allowlist, notional and daily loss limits, operator approval and tests that block order_send by default."
+    },
+    {
+      "id": "GAP-043",
+      "severity": "medium",
+      "area": "quantum_claim_boundary",
+      "repository": "Shtenco/quantum-trading_metatrader5",
+      "description": "The QPE-like circuit ignores the supplied market binary history; stochastic measurement output is compared to future labels without a causal prediction path.",
+      "next_action": "Treat as circuit simulation only; either encode causal history and compare against classical baselines or narrow all claims to a non-predictive Qiskit experiment."
+    },
+    {
+      "id": "GAP-044",
+      "severity": "high",
+      "area": "compiler_code_injection",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "C/Rust/Solidity/Kotlin code generators interpolate action/target strings directly into target-language string literals without escaping, enabling generated-code injection from crafted instructions.",
+      "next_action": "Use target-language literal encoders or AST emitters, reject control characters where appropriate, and add adversarial quote/newline/escape payload tests for every target."
+    },
+    {
+      "id": "GAP-045",
+      "severity": "high",
+      "area": "local_command_sandbox",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "Workspace.run_command and execute_python_file execute subprocesses with the user's OS permissions; path guards and command filters do not isolate filesystem, network or process capabilities.",
+      "next_action": "Run commands in a dedicated OS/container sandbox with read-only base filesystem, workspace-only mounts, no secrets, no network by default, CPU/memory/time limits and explicit egress policy."
+    },
+    {
+      "id": "GAP-046",
+      "severity": "medium",
+      "area": "trace_secret_redaction",
+      "repository": "Shtenco/synergy_ai_language",
+      "description": "SemanticTrace.record stores the first result line after truncation but does not redact credential patterns, despite documenting that raw credentials are not persisted.",
+      "next_action": "Apply structured secret redaction before trace persistence and test API keys, bearer tokens, passwords, private keys and multiline output."
+    },
+    {
+      "id": "GAP-047",
+      "severity": "medium",
+      "area": "branch_authority",
+      "repository": "Shtenco/synergy_gllm_nexus",
+      "description": "The graph-native runtime and MoE experiments are on unified-v3-generalization-first at a 2026-09-20 commit; default main is documentation/benchmark registry only.",
+      "next_action": "Choose an explicit canonical branch/release and pin runtime, checkpoint, data and benchmark artifacts before integrating NEXUS."
+    },
+    {
+      "id": "GAP-048",
+      "severity": "medium",
+      "area": "model_quantization_evidence",
+      "repository": "Shtenco/synergy_ai_llm_rwkv",
+      "description": "RWKV converter and Triton matvec are branch-only; tests use synthetic matrices/checkpoints and no full 2.9B model perplexity or target-GPU performance has been measured.",
+      "next_action": "Run exact full-checkpoint restore, aligned held-out logits/PPL, long-context drift, GPU kernel correctness and matched latency/memory benchmarks."
+    },
+    {
+      "id": "GAP-049",
+      "severity": "medium",
+      "area": "debt_credit_runtime_gap",
+      "repository": "Shtenco/synergy_matrix_sota",
+      "description": "Debt/credit lifecycle repository is documentation-only with five mechanisms and 42 legacy units assigned for rewrite; no executable maturity or expected-loss engine exists.",
+      "next_action": "Keep the Financial OS as accounting authority and implement a contract-first maturity/expected-loss module only after ownership and legacy rewrite review."
+    },
+    {
+      "id": "GAP-050",
+      "severity": "medium",
+      "area": "compression_source_reproducibility",
+      "repository": "Shtenco/synegy_ai_compress",
+      "description": "Compression engine is represented by a source_snapshot gitlink, but .gitmodules is absent; the benchmark repository does not independently expose the exact engine source or a cloneable submodule URL.",
+      "next_action": "Add .gitmodules with a stable public source URL and pin commit; provide a reproducible environment lock and benchmark runner."
+    },
+    {
+      "id": "GAP-051",
+      "severity": "medium",
+      "area": "shared_model_storage_economics",
+      "repository": "Shtenco/synergy_qr_compress",
+      "description": "QTC2 zero-residual exact mode depends on a shared temporal dictionary; dictionary storage/distribution and retention costs must be amortized before claiming net compression savings.",
+      "next_action": "Publish full amortized cost model: model bytes, container bytes, update/replication/retention, number of consumers and decoder availability; benchmark against standalone compressors."
+    },
+    {
+      "id": "GAP-052",
+      "severity": "medium",
+      "area": "gguf_compression_implementation",
+      "repository": "Shtenco/synergy_gguf_compress",
+      "description": "Main branch is README-only and contains no executable GGUF compressor.",
+      "next_action": "Keep as concept or implement parser/codec with bit-exact round-trip, quantization-quality and compatibility tests."
+    },
+    {
+      "id": "GAP-053",
+      "severity": "medium",
+      "area": "shhts_format_implementation",
+      "repository": "Shtenco/synergy_shhts",
+      "description": "Main branch is a specification stub without parser, codec or decoder.",
+      "next_action": "Define byte-level format, versioning, integrity envelope and cross-language round-trip tests before claiming a compression format."
+    },
+    {
+      "id": "GAP-054",
+      "severity": "high",
+      "area": "science_contract_numeric_validation",
+      "repository": "Shtenco/synergy_nexus_science_agent",
+      "description": "Science evidence contracts validate digest shape and some epistemic gates but do not verify source bytes against locators; several numeric fields accept NaN/infinity or negative counts because finiteness and range checks are incomplete.",
+      "next_action": "Use math.isfinite for every numeric field, constrain counts and physical bounds, validate required identifiers and bind source bytes/digests in a trusted ingestion adapter; add adversarial tests."
+    },
+    {
+      "id": "GAP-055",
+      "severity": "medium",
+      "area": "benchmark_scope_labeling",
+      "repository": "Shtenco/timeweb_synergy_multiagent_benchmark",
+      "description": "The main scenario is an analytical scheduling simulation with no LLM calls, yet repository naming can be mistaken for an empirical multi-agent benchmark if its scope is not repeated in summaries.",
+      "next_action": "Keep simulation labels in every result card and distinguish scheduling arithmetic from measured agent quality, token cost, latency and failure rates."
+    },
+    {
+      "id": "GAP-056",
+      "severity": "medium",
+      "area": "economic_ml_split_safety",
+      "repository": "Shtenco/synergy_crypto_pump",
+      "description": "The purged walk-forward helper defaults purge_bars=0 and embargo_bars=0; leakage safety depends on every caller explicitly passing a purge at least as long as the maximum target horizon.",
+      "next_action": "Require a declared maximum label horizon in the split contract, derive purge from it, reject negative/insufficient purge and add tests that unsafe defaults cannot be used."
+    },
+    {
+      "id": "GAP-057",
+      "severity": "high",
+      "area": "eurasian_main_branch_release_integrity",
+      "repository": "Shtenco/synergy_eurasian",
+      "description": "The main README reports pytest stops during collection because main-branch tests import V6.6 modules that are absent from main; the feature implementation is present only on research PR branches.",
+      "next_action": "Either merge the complete dependency set with green CI or remove/mark branch-only tests and modules so main is a coherent, reproducible release."
+    },
+    {
+      "id": "GAP-058",
+      "severity": "high",
+      "area": "budget_ledger_durability",
+      "repository": "Shtenco/synergy_blochain_budget",
+      "description": "The JSONL append-only chain reads then appends without process locking, atomic commit or fsync; concurrent writers can race on height/previous hash and crashes can leave partial trailing records.",
+      "next_action": "Use SQLite transactional append or locked temp-write/fsync/replace, add recovery for partial lines, concurrency tests and externally anchored checkpoints."
+    },
+    {
+      "id": "GAP-059",
+      "severity": "medium",
+      "area": "external_arbitrage_execution_gap",
+      "repository": "Shtenco/synergy_2chain_qe",
+      "description": "ArbitrageExecutor's Cycle A documents the external DEX purchase as simulated and requiring a production router; the checked code does not establish a real external buy/sell leg.",
+      "next_action": "Keep the strategy classified as simulation until an allowlisted DEX adapter, atomic settlement path and fork tests against pinned external liquidity are present."
+    },
+    {
+      "id": "GAP-060",
+      "severity": "medium",
+      "area": "economic_kernel_durability",
+      "repository": "Shtenco/synergistic_economics",
+      "description": "The balanced ledger and idempotent event store are in-memory only; they are not a durable accounting or settlement service.",
+      "next_action": "Treat as a deterministic research kernel and only promote after transactional persistence, crash recovery, concurrency control and external settlement boundaries are tested."
+    },
+    {
+      "id": "GAP-061",
+      "severity": "high",
+      "area": "trademux_numeric_validation_and_idempotency",
+      "repository": "Shtenco/synergy_trademux",
+      "description": "Venue quote, approved notional and fill fields are not consistently checked for finiteness, valid ranges and schema integrity; correlation UUIDs do not provide durable idempotency or broker-side deduplication.",
+      "next_action": "Validate every numeric with isfinite and non-negative bounds, validate side/symbol/venue IDs and fill invariants, persist plan/result state and implement broker idempotency keys with reconciliation."
+    },
+    {
+      "id": "GAP-062",
+      "severity": "high",
+      "area": "capital_governance_nonfinite_amounts",
+      "repository": "Shtenco/synergy_project",
+      "description": "Capital governance contract uses Decimal comparisons without is_finite(), so positive Infinity can pass capital_required and max_amount validation.",
+      "next_action": "Reject non-finite Decimal values before comparisons, validate currency/UUID/timezone fields and add NaN/Infinity adversarial tests."
+    },
+    {
+      "id": "GAP-063",
+      "severity": "medium",
+      "area": "matrix_benchmark_reproducibility_and_untrusted_artifacts",
+      "repository": "Shtenco/synergy_complex_matrix_multiplication",
+      "description": "Research runners depend on fixed /mnt/data artifacts and one evaluation script executes a source prefix via exec; checkpoint loading uses weights_only=False. This is not a portable or safe untrusted-artifact execution path.",
+      "next_action": "Package deterministic entry points, pin and verify checkpoint/source hashes, avoid dynamic exec, use safe checkpoint loading where possible and record exact environment/artifact manifests."
+    },
+    {
+      "id": "GAP-064",
+      "severity": "medium",
+      "area": "economic_master_dossier_inventory_drift",
+      "repository": "Shtenco/synergy_project",
+      "description": "The master dossier's open PR #2 still describes an 89-repository assessment, while the current owner-scoped inventory contains 112 unique repositories.",
+      "next_action": "Reconcile the dossier/PR to canonical GitHub IDs and current Hypergraph coverage before promoting it as the master ecosystem assessment."
+    },
+    {
+      "id": "GAP-065",
+      "severity": "high",
+      "area": "metaverse_key_management_and_erasure",
+      "repository": "Shtenco/synergy_metaverse",
+      "description": "The spatial signature/envelope components depend on external key and consent resolvers; production KMS/HSM, governed key registry, consent/revocation adapters and retention/legal authorization are not deployed. Backup/WAL/replica erasure and host-failure recovery remain unverified.",
+      "next_action": "Implement independently governed KMS/HSM and key registry adapters, consent/revocation source, legal retention authorizer, backup/WAL erasure and cross-process recovery tests; keep deployment blocked until all are evidenced."
+    },
+    {
+      "id": "GAP-066",
+      "severity": "high",
+      "area": "pq_blockchain_production_assurance",
+      "repository": "Shtenco/synergy_ai_blockchain",
+      "description": "PQ/EVM consensus integration remains research/integration code; production PQ provider, client integration, cross-client vectors, light clients, bridge proofs and independent cryptographic audit are incomplete.",
+      "next_action": "Keep real-asset custody disabled; complete provider and client implementations, cross-client deterministic vectors, light-client/bridge proof verification and independent cryptographic audit."
+    },
+    {
+      "id": "GAP-067",
+      "severity": "high",
+      "area": "messenger_release_evidence_mismatch",
+      "repository": "Shtenco/synergy_messenger",
+      "description": "The alpha.9 release manifest claims 249/249 tests and 293 files, but main and the reviewed open PR branch do not contain tests/v3; package.json points npm test at that missing directory. The branch is not a verified releasable build.",
+      "next_action": "Restore the exact test suite and checksum manifest into the release branch, make npm test pass in CI, generate a reproducible Android APK/AAB and align the release manifest with the exact commit/file set."
+    },
+    {
+      "id": "GAP-068",
+      "severity": "medium",
+      "area": "canonical_inventory_registry_drift",
+      "repository": "Shtenco/synergy",
+      "description": "Legacy registry/repos.json remains a 92-record snapshot and rebuild_registry.py omits immutable GitHub numeric IDs; current Hypergraph V3 is 112-ID keyed. Open inventory refresh PRs #5/#6 are not yet merged.",
+      "next_action": "Merge one reconciled 112-ID inventory update, add GitHub numeric IDs to the canonical registry schema and make Hypergraph nodes a deterministic projection of that source."
+    },
+    {
+      "id": "GAP-069",
+      "severity": "medium",
+      "area": "long_term_harness_external_verification_authority",
+      "repository": "Shtenco/synergy_long_term_harness",
+      "description": "Mission approval relies on the host authenticating actor identity and signed verification uses a supplied HMAC secret; an independently operated verifier service/key lifecycle is not yet connected. Implementation exists only on open PR branches.",
+      "next_action": "Bind actor identity to authenticated host principal, move verifier keys to managed secret/KMS service, separate executor/verifier identities and add cross-process receipt verification and key-rotation tests."
+    },
+    {
+      "id": "GAP-070",
+      "severity": "high",
+      "area": "ai_company_risk_cap_numeric_validation",
+      "repository": "Shtenco/synergy_ai_company",
+      "description": "Auto-Company 2.0 Settings._float accepts NaN/Infinity and RiskPolicy does not reject non-finite spend/loss limits or action amounts before comparison.",
+      "next_action": "Require math.isfinite on all configured caps and action amounts, reject negative/NaN/Infinity at settings and domain-model boundaries, and add adversarial tests for all risk classes."
+    },
+    {
+      "id": "GAP-071",
+      "severity": "medium",
+      "area": "cryptographic_benchmark_contract_numeric_validation",
+      "repository": "Shtenco/dlp_solver",
+      "description": "constraint_benchmark_payload accepts NaN elapsed_s because it only checks elapsed_s < 0; non-finite measurements can be labelled MEASURED.",
+      "next_action": "Require math.isfinite(elapsed_s), strict integer validation for dimensions/counts and add NaN/Infinity adversarial tests."
+    },
+    {
+      "id": "GAP-072",
+      "severity": "medium",
+      "area": "investment_committee_input_validation",
+      "repository": "Shtenco/synergy_ai_investment_committee",
+      "description": "MarketContext and investment_thesis_payload accept non-finite float inputs; NaN volatility can evade the risk-veto threshold and produce an undefined advisory thesis.",
+      "next_action": "Validate all market values and veto thresholds with math.isfinite and domain ranges before voting; add NaN/Infinity and out-of-range tests."
+    },
+    {
+      "id": "GAP-073",
+      "severity": "critical",
+      "area": "mt5_live_order_execution_safety",
+      "repository": "Shtenco/shtenco_multi_threaded_trading_robot_with_machine_learning_python",
+      "description": "The live MT5 robot calls order_send and retries up to 30,000 times without a durable idempotency key or single order executor; concurrent symbol workers can race global position/risk state. Position sizing can exceed budget when broker minimum lot is forced and tick_size is omitted.",
+      "next_action": "Disable live order_send by default; add one serialized executor, broker request idempotency/reconciliation, bounded retries with explicit ambiguous-outcome handling, account-wide exposure lock, and order_calc_profit-based risk sizing with min-lot rejection when over budget."
+    },
+    {
+      "id": "GAP-074",
+      "severity": "high",
+      "area": "cross_forex_backtest_lookahead_and_units",
+      "repository": "Shtenco/cross_forex_arbitrage_trading_metatrader_5",
+      "description": "Backtest uses the entire day's average spread to choose direction before simulating trades through that same day, creating look-ahead; fixed 0.00001 pip conversion is invalid for JPY and broker-specific symbol precision.",
+      "next_action": "Use event-driven signal generation only after each timestamp, use contemporaneous bid/ask for every leg, model conversion direction and executable cycle costs, and derive pip/tick size from symbol metadata."
+    },
+    {
+      "id": "GAP-075",
+      "severity": "high",
+      "area": "cv_trading_overlapping_window_leakage",
+      "repository": "Shtenco/computer_vision_trading_metatrader_5",
+      "description": "Chronological train/test split is followed by shuffled train/validation splitting of heavily overlapping rolling windows with 24-bar forward targets, allowing adjacent target windows to cross partitions.",
+      "next_action": "Use purged chronological walk-forward folds with embargo at least the target horizon and verify no source/target timestamp overlap across partitions."
+    },
+    {
+      "id": "GAP-076",
+      "severity": "high",
+      "area": "global_liquidity_source_validity_and_confidence",
+      "repository": "Shtenco/global_liquidity_dataminer",
+      "description": "FX price series are scaled and labelled as ECB/BOJ/PBOC balance-sheet proxies; forecast confidence is clipped test R² rather than a calibrated probability, and macro vintage/release-time leakage is unhandled.",
+      "next_action": "Replace proxies with official central-bank series or label them as FX proxies, store release_time/first_available_time/vintage/source_hash, and rename R²-derived score to an uncalibrated fit metric."
+    },
+    {
+      "id": "GAP-077",
+      "severity": "high",
+      "area": "swap_arbitrage_historical_cost_model",
+      "repository": "Shtenco/swap_arbitrage_metatrader_5",
+      "description": "Portfolio simulation combines current broker swap metadata with historical price returns and omits spread, commissions, slippage, margin and stop-out; a historical carry edge is not established.",
+      "next_action": "Acquire dated historical swap schedules and broker contract specifications, model all execution/financing costs and margin calls, then run purged OOS tests before any paper/live use."
+    },
+    {
+      "id": "GAP-078",
+      "severity": "high",
+      "area": "person_entity_resolution_false_merge_and_privacy",
+      "repository": "Shtenco/synergy_epstein_network",
+      "description": "Exact normalized-name/token-order matches are automatically merged into one person ID without corroborating identifiers; common or homonymous names can create false identity links. Deterministic unsalted email/phone hashes are pseudonymous and dictionary-matchable, not anonymization.",
+      "next_action": "Require multi-attribute corroboration and human review before identity merges, preserve source-level identities, minimize contact fields, use keyed HMAC or opaque IDs where appropriate, and enforce access/retention controls."
+    },
+    {
+      "id": "GAP-079",
+      "severity": "medium",
+      "area": "3d_bars_feature_scaling_bug",
+      "repository": "Shtenco/3D_bars_market_structure",
+      "description": "time_numeric is scaled by fitting MinMaxScaler to one scalar at a time; each one-row fit maps to the lower bound and collapses the feature to a constant.",
+      "next_action": "Fit scalers on a training partition or stable reference range, transform held-out data without refitting, add constant-feature and chronological OOS tests."
+    },
+    {
+      "id": "GAP-080",
+      "severity": "medium",
+      "area": "3d_bars_license_conflict",
+      "repository": "Shtenco/3D_bars_market_structure",
+      "description": "Source header simultaneously states CC BY-NC-ND and MIT, which impose materially different commercial/modification permissions.",
+      "next_action": "Select one authoritative license, update source headers and repository LICENSE consistently, and verify third-party dependency licenses."
+    },
+    {
+      "id": "GAP-081",
+      "severity": "medium",
+      "area": "external_archive_integrity_pin",
+      "repository": "Shtenco/synergychain.github.io",
+      "description": "Google Drive archive workflow checks byte size and ZIP integrity, then calculates a SHA-256 after download; it does not compare the downloaded file to a pre-pinned expected digest before splitting.",
+      "next_action": "Pin expected source SHA-256 in a reviewed manifest or signed release, verify before unzip/split, and add a corrupted/same-size substitution negative test."
+    },
+    {
+      "id": "GAP-082",
+      "severity": "low",
+      "area": "static_portal_evidence_documentation_drift",
+      "repository": "Shtenco/synergy.github.io",
+      "description": "README states tests/test_capital_montecarlo.cjs is absent, but the file exists in the inspected main tree; current documentation no longer matches repository evidence.",
+      "next_action": "Refresh README audit note and publish the latest workflow run/commit that actually executes the test."
+    },
+    {
+      "id": "GAP-083",
+      "severity": "critical",
+      "area": "shttps_remote_mcp_command_execution",
+      "repository": "Shtenco/synergy_shttps",
+      "description": "RemoteMCPGateway.run is not a safe command allowlist: allowed python/cargo/rustc/git executables accept arbitrary arguments, including arbitrary Python code, and basename-only matching can execute a different path with an allowed basename. No OS-level sandbox or syscall/network confinement is enforced in this gateway.",
+      "next_action": "Treat the endpoint as privileged remote code execution until redesigned: remove generic interpreters/compilers from allowlist, use typed fixed operations, resolve executable paths to trusted absolute binaries, run in an isolated ephemeral sandbox with no ambient credentials/network by default, enforce per-principal capabilities and audit every action.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The reviewed implementation is on a branch-only prototype; the repository's main branch was classified as a stub at audit time. This is a critical blocker if the prototype is merged, deployed or exposed; it is not evidence of a currently deployed main-branch endpoint."
+    },
+    {
+      "id": "GAP-084",
+      "severity": "critical",
+      "area": "pq_radio_hardware_attestation_verification",
+      "repository": "Shtenco/synergy_post_quantum_radio",
+      "description": "Hardware teleportation receipt accepts any nonzero driver-supplied attestation root; the claim-strengthening method checks only Hardware mode and root presence. A fake driver with a constant [7;32] root passes the test, so the root is not independently authenticated.",
+      "next_action": "Verify a signed hardware attestation chain against pinned device/vendor roots, bind device identity/calibration/experiment transcript and measurements, reject unknown keys and test forged/expired/replayed attestations; keep all simulation receipts non-authoritative.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The reviewed fake-attestation weakness is in a branch-only prototype; the repository's main branch was classified as a stub at audit time. No verified physical hardware attestation or production hardware integration is established."
+    },
+    {
+      "id": "GAP-085",
+      "severity": "critical",
+      "area": "autopilot_plugin_authorization_fail_open",
+      "repository": "Shtenco/synergy_agi_autopilot",
+      "description": "The shared plugin PolicyEngine defaults to Allow for unmapped capabilities; PluginManifest does not require mapped_core_capabilities or signed/approved manifests. PluginCall.approved is caller-supplied and, when no persistent control-plane DB is configured, requires_approval can be bypassed by setting approved=true without an independently authenticated approval record.",
+      "next_action": "Change policy default to Deny, require every capability to map to a canonical core capability, require signed/admin-approved manifests and bind approval to authenticated principal, plugin/version/capability/input hash/work item with mandatory persistent control-plane verification for all side effects.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The fail-open policy behavior is in a branch-only prototype; the repository's main branch was classified as a stub at audit time. Treat it as a merge/deployment blocker, not as evidence that the main branch currently runs this plugin runtime."
+    },
+    {
+      "id": "GAP-086",
+      "severity": "high",
+      "area": "qe_bridge_claim_attestation",
+      "repository": "Shtenco/synergy_qe",
+      "description": "BridgeAccounting trusts BRIDGE_ROLE callers to open source-settled claims and mark destination-settled values; no on-chain light-client proof, finality verification or destination inclusion proof is checked by the contract.",
+      "next_action": "Add a verified bridge proof adapter/light-client or explicitly constrain the trust model to a named multisig/attestor set with threshold, timelock, monitoring and emergency pause; do not describe as trustless settlement.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The reviewed bridge contract is a branch-only prototype; the repository's main branch was classified as a stub at audit time. No production bridge settlement or trustless proof verification is established."
+    },
+    {
+      "id": "GAP-087",
+      "severity": "medium",
+      "area": "revenue_vault_owner_key_governance",
+      "repository": "Shtenco/print_money_synergychain",
+      "description": "RevenueVault protects principal and refundable liabilities but places all expense/distribution authority behind one immutable owner EOA with no multisig, timelock, pause or role separation.",
+      "next_action": "Keep as a test fixture/research contract until ownership is a reviewed multisig/timelock with guardian pause, role-separated accounting and independent Solidity audit.",
+      "implementation_scope": "branch_only_prototype_main_branch_stub",
+      "scope_qualification": "The reviewed RevenueVault is a branch-only prototype; the repository's main branch was classified as a stub at audit time. Do not interpret it as a deployed treasury contract."
+    },
+    {
+      "id": "GAP-088",
+      "severity": "high",
+      "area": "compression_benchmark_source_reproducibility",
+      "repository": "Shtenco/synegy_ai_compress",
+      "description": "source_snapshot is a Git submodule entry with no submodule URL; its target commit message says implementation sources and test harnesses were removed from public main. The benchmark results therefore cannot be independently regenerated from this repository snapshot.",
+      "next_action": "Publish a reproducible source archive or accessible immutable source repository with commit and dependency lock, test harness, raw inputs, environment manifest and signed result provenance; otherwise label all benchmark figures as archived and non-reproducible."
+    },
+    {
+      "id": "GAP-089",
+      "severity": "medium",
+      "area": "compression_benchmark_corpus_generalization",
+      "repository": "Shtenco/synegy_ai_compress",
+      "description": "The fresh-world compression summary covers 38 profiles over 11 fixed datasets of 32,768 bytes each. The README itself separates historical and current protocols and does not claim universal superiority; the small fixed corpus does not establish performance across larger, heterogeneous enterprise workloads.",
+      "next_action": "Add larger multi-size corpora, representative real-world workload families, strong current baselines, full CPU/RAM/energy/restore measurements and independent reproduction before making broad generalization claims."
+    },
+    {
+      "id": "GAP-090",
+      "severity": "high",
+      "area": "governance_registry_inventory_coverage",
+      "repository": "Shtenco/synergy_system",
+      "description": "The canonical governance registry is a 75-repository dependency-graph subset and 77-repository interface subset, while Hypergraph V3 inventories 112 repositories. 35 inventory repositories have no interface record and 37 have no dependency-graph node; the two additional interface records are synergy_hierarchical_cognitive_memory_architecture and synergy_long_term_harness, which are not dependency-graph nodes. This may be an intentional scope boundary, but no explicit inclusion/exclusion manifest currently reconciles the sets.",
+      "next_action": "A machine-readable scope-presence manifest now classifies all 112 inventory nodes by observed dependency-graph/interface-registry presence. Obtain an explicit owner decision for the 35 repositories absent from both registries; add interface records where ownership/contract boundaries are relevant, and update dependency graph only for evidenced relationships. Preserve 0 E2E and 0 deployed claims until observed verification."
+    },
+    {
+      "id": "GAP-091",
+      "severity": "high",
+      "area": "m5_scope_legacy_repository_aliases",
+      "repository": "Shtenco/synergy_system",
+      "description": "The frozen M5 manifest contains 44 unique required edges, but only 42 match the current dependency graph by exact producer/consumer names. Two M4 Wave 4 entries use legacy names `binary_quantum_theory` and `epstein_network`; the current canonical repositories are `synergy_binary_quantum_theory` and `synergy_epstein_network`. The contract IDs and current graph edges match after explicit alias normalization.",
+      "next_action": "Preserve the frozen M5 scope and add a versioned alias/reconciliation manifest that maps legacy repository names to immutable GitHub repository IDs and canonical full names. Update future scope versions to canonical names; do not silently rewrite historical evidence. Keep all 44 edges unverified until M5 observed execution passes."
+    },
+    {
+      "id": "GAP-092",
+      "severity": "medium",
+      "area": "dependency_graph_summary_typed_contract_count",
+      "repository": "Shtenco/synergy_system",
+      "description": "The dependency graph contains 66 contract-bearing edges and 38 unique cross-repository contract IDs, while its integration_summary.typed_contracts field reports 17. The contract registry contains 39 contracts; the only registry contract absent from the cross-repository graph is synergy.trading.execution-plan/v1, whose producer and consumer are both synergy_trademux and whose scope is INTRA_REPOSITORY. The summary count 17 therefore appears stale or differently defined and is not explained by the current graph data.",
+      "next_action": "Define the exact typed_contracts counting rule and regenerate the summary from registry data. If it means unique cross-repository contract IDs, set it to 38; if it means another subset, publish that filter. Keep the intra-repository execution-plan contract separately identified."
+    },
+    {
+      "id": "GAP-093",
+      "severity": "critical",
+      "area": "payment_settlement_actual_receipt_reconciliation",
+      "repository": "Shtenco/synergy_pay_system",
+      "description": "The main-branch reference SettlementEngine marks a settlement SETTLED after provider calls without validating each provider result against a terminal-success allowlist. It uses `result.received_amount or step.output_amount`, so a zero received amount falls back to the planned output, and `_post_ledger` posts `route.output_amount` rather than the actual accumulated received amount. The engine stores records/idempotency in process-memory dictionaries and uses an InMemoryLedger; this is not durable exactly-once settlement. The API currently wires a paper executor by default, so this is a live-path blocker if the engine is used with live adapters, not evidence that real funds were moved.",
+      "next_action": "Keep live settlement disabled until provider receipts are validated for SUCCESS/FINALIZED state, actual received amounts are independently reconciled, zero/partial/mismatched amounts fail closed, ledger postings use reconciled actual amounts, and durable transactional idempotency/outbox plus crash/retry/concurrency E2E tests exist.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_pay_system",
+          "ref": "main",
+          "commit": "d9a05854d3ca38f838c835c56fa5189b536da5a0",
+          "files": [
+            {
+              "path": "src/synergy_pay/settlement.py",
+              "blob_sha": "6d96842e474955d27d57e0c0426022bc2db0e9a2"
+            },
+            {
+              "path": "src/synergy_pay/api.py",
+              "blob_sha": "05b7306aa5822870f6c67f0c02b51c3affdaf718"
+            },
+            {
+              "path": "src/synergy_pay/ledger.py",
+              "blob_sha": "865b3cd015ee481c88a2caa1f4b6c0991e9b0dfd"
+            }
+          ]
+        }
+      ],
+      "validation": "Source review of main only; no tests or live-provider executions were run in this Hypergraph audit."
+    },
+    {
+      "id": "GAP-094",
+      "severity": "high",
+      "area": "financial_outbox_authenticity_and_concurrency",
+      "repository": "Shtenco/synergy_financial_os",
+      "description": "The AccountingTransactionalOutbox implementation is present only on draft/open PR #39 branch federation-v3-domain-expansion, not on main. The inspected branch validates event bytes against a caller-supplied SHA-256 digest but does not authenticate a signer identity or cryptographic signature, despite describing the event as signed. It opens SQLite with check_same_thread=False and shares one connection across methods without an explicit per-connection mutex; current tests cover atomicity and idempotent retry but not concurrent transaction callers or signature authenticity. The associated exact-head workflow run 43754510440 failed with an empty step list and unavailable logs, so no test pass or code failure can be asserted.",
+      "next_action": "Keep the outbox branch-only and non-authoritative until signer identity/key policy is independently verified, per-connection transaction serialization is implemented or concurrency is otherwise proven safe, and exact-head CI executes tests for concurrency, crash recovery, replay, authenticity and consumer verification. Reconcile the PR description's validation statement with the actual failed zero-step run.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_financial_os",
+          "ref": "federation-v3-domain-expansion",
+          "commit": "935780514b2b3ff2c93a16bbfdfaaab0bc2f7d24",
+          "files": [
+            {
+              "path": "src/synergy_financial_os/federation_outbox.py",
+              "blob_sha": "ce8a405d52cf67edd22b9a8f4d669c5479ea8108"
+            },
+            {
+              "path": "src/synergy_financial_os/contracts.py",
+              "blob_sha": "c37f8170bd5831c5e5bb44939891f62b3a4146bd"
+            },
+            {
+              "path": "tests/test_federation_outbox.py",
+              "blob_sha": "58386651ea9b1ea28ab228341f9da15bf6ab1b9e"
+            }
+          ]
+        }
+      ],
+      "validation": "PR #39 is open/draft/unmerged; run 43754510440 concluded failure, steps=[], job-log download returned BlobNotFound."
+    },
+    {
+      "id": "GAP-095",
+      "severity": "critical",
+      "area": "modeled_external_fee_recognition_in_hardnav",
+      "repository": "Shtenco/synergy_agentic_ai_economy",
+      "description": "The current main branch computes external bridge fees from modeled gross volume and configured fee basis points, and credits those fees to protected USDC/HardNAV without transaction-level receipts. Its external market move also adds modeled AMM fees to HardNAV from price-ratio simulation. The committed V4 report records bridge/swap fees 339.64424 and external AMM fees 7.808553498290258 while marking external_bridge_fees_in_hardnav and external_amm_fees_in_hardnav true. Draft PR #10 adds an injected receipt verifier and durable journal and excludes modeled fee estimates, but it is unmerged; its three exact-head workflows failed before exposing any steps/logs and the 13,000-block corrected replay remains pending. The corrected accounting must not be treated as deployed or validated.",
+      "next_action": "Keep the current V4 fee-derived HardNAV figures flagged as superseded/unverified for realized external revenue. Merge only after the receipt verifier is independently trusted, journal/replay tests execute, exact-head CI passes, and the pinned 13,000-block replay regenerates a new report with modeled fees excluded and transaction-level receipts required for realized fees.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_agentic_ai_economy",
+          "ref": "main",
+          "commit": "3f5e7f328227b5b4ac6a32b99c15f736a8d565e2",
+          "files": [
+            {
+              "path": "agent_economy/multimarket.py",
+              "blob_sha": "c19a1b5cb80c7fce339e6e3d0f494ff2ba3bfb52"
+            },
+            {
+              "path": "experiments/closed_multimarket_hardnav_v4.py",
+              "blob_sha": "7d0b7cc21ff154d92242221648dd40c3488886dc"
+            },
+            {
+              "path": "reports/closed_multimarket_hardnav_v4/seed77_10000_train_3000_oos.json",
+              "blob_sha": "d123102c170e86950100ca9d23cf3af87294c7ae"
+            },
+            {
+              "path": "tests/test_multimarket_hardnav.py",
+              "blob_sha": "7090677060388f50a5a1db1b764b05f137e38a80"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_agentic_ai_economy",
+          "ref": "fix/v4-exclude-modeled-fees-from-hardnav-20261116",
+          "commit": "0effe839d160af295d511eaea6a3d3830e024557",
+          "files": [
+            {
+              "path": "experiments/closed_multimarket_hardnav_v4.py",
+              "blob_sha": "05d560443c5a50e75147b54c342ef7341411359b"
+            },
+            {
+              "path": "tests/test_multimarket_hardnav.py",
+              "blob_sha": "038a7c599b4f76cba86252994021cb62df0ac517"
+            }
+          ]
+        }
+      ],
+      "validation": "PR #10 is open/draft/unmerged. Runs 43864234518, 43864234530 and 43864234504 failed with empty step lists and unavailable logs; no exact-head tests or corrected replay are attested."
+    },
+    {
+      "id": "GAP-096",
+      "severity": "high",
+      "area": "cognitive_memory_api_authentication",
+      "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+      "description": "The current main API exposes unauthenticated read/write endpoints for memory put/get/search/retrieve, consolidation proposals and context planning. Only the system-core mutation endpoint checks X-Synergy-Admin-Token. The open draft PR #7 hardens symlink containment and repository-scoped source identities, but its api.py is unchanged and still has no general caller authentication, authorization, tenant isolation or rate limiting. Its exact-head CI run 45475196929 failed with no steps and unavailable logs.",
+      "next_action": "Keep the API loopback/local-only. Before any network exposure, add authenticated caller identity, per-tenant authorization, namespace isolation, rate limiting, audit events and adversarial tests; require exact-head CI with executed steps. Do not treat the ingestion fixes as an API security fix.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+          "ref": "main",
+          "commit": "8c23bcb41199f89bb9afb57ca5e0766787154fd",
+          "files": [
+            {
+              "path": "synergy_memory/api.py",
+              "blob_sha": "7b6e7547ffd076e33c4c1e8295c76e380eea5d05"
+            },
+            {
+              "path": "synergy_memory/ingest.py",
+              "blob_sha": "2e34b4f2d494ffd86c9d7c1990185c405d245d9e"
+            }
+          ]
+        },
+        {
+          "repository": "Shtenco/synergy_hierarchical_cognitive_memory_architecture",
+          "ref": "fix/ingest-symlink-and-source-identity-2026-11-24",
+          "commit": "536b18ecae65ec565007f825ee964ea073d44095",
+          "files": [
+            {
+              "path": "synergy_memory/api.py",
+              "blob_sha": "7b6e7547ffd076e33c4c1e8295c76e380eea5d05"
+            },
+            {
+              "path": "synergy_memory/ingest.py",
+              "blob_sha": "53ad69af6ddb4f116e02655eeff23e249244d0f0"
+            }
+          ]
+        }
+      ],
+      "validation": "PR #7 open/draft/unmerged. Its CI run 45475196929 concluded failure with steps=[] and job-log download returned BlobNotFound."
+    },
+    {
+      "id": "GAP-097",
+      "severity": "high",
+      "area": "security_blocker_registry_stale_pr_state",
+      "repository": "Shtenco/synergy_system",
+      "description": "The SECURITY_BLOCKERS.json snapshot on draft PR #56 is dated 2026-11-25 but contains stale remediation PR state/head data. It reports synergy_usds PR #6 as OPEN_NOT_MERGED although live GitHub state is CLOSED and unmerged; it reports synergy_turbo_linux PR #13 as OPEN_DRAFT although live state is CLOSED and unmerged. It also records stale head SHAs for the current Cashero PR #10 and AI Trade Terminal PR #5. These discrepancies affect P0 incident tracking and must not be treated as proof of remediation.",
+      "next_action": "Refresh the security blocker registry from live PR metadata and immutable head SHAs. Distinguish open/draft, closed-unmerged and merged states; retain current-main path state, historical exposure, external credential rotation, session/allowance revocation and history purge as separate gates. Do not clear any P0 blocker solely because a remediation branch deletes a file.",
+      "evidence": [
+        {
+          "repository": "Shtenco/synergy_system",
+          "ref": "feat/synergy-2x-master-architecture-2026-11-24",
+          "commit": "77a410a2166bd41795ecda776aabbb720c807c64",
+          "files": [
+            {
+              "path": "registry/SECURITY_BLOCKERS.json",
+              "blob_sha": "4d81c0a2a9d4ff1ab9d67ea4191e81a999330c5a"
+            }
+          ]
+        }
+      ],
+      "validation": "Live PR API rechecked on 2026-11-25: synergy_usds#6 CLOSED/unmerged; synergy_turbo_linux#13 CLOSED/unmerged; synergy_cashero#10 OPEN/draft; synergy_ai_trade_terminal#5 OPEN/draft; cognitive memory#7 OPEN/draft."
+    }
+  ]
+}
