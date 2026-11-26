@@ -204,5 +204,5 @@ A second bounded review, dep:1091968186:github-repo:1341273343 (computer vision 
 - Seven outgoing registry-declared edges from `synergy_apps` were reviewed against its pinned README/read-model source and target README snapshots.
 - The evidence supports architectural/documentation associations, including one reciprocal read-model intention (`sinergy_app` ↔ `synergy_apps`), but does not establish executable imports, package dependencies, contract conformance, or runtime calls.
 - The `dlp_solver` reference is a documentation-quality example, not evidence of a software dependency; the edge remains a candidate pending owner adjudication.
-- All seven graph edges remain `candidate`. Across the full graph, 9/109 edges now have bounded reviews; 0 contract-verified and 0 runtime-verified edges.
+- All seven graph edges remain `candidate`. Two reciprocal declarations (`synergy_app_family → synergy_apps` and `sinergy_app → synergy_apps`) were also reviewed; both are documentation-level parent/read-model claims, not runtime-verified integrations. Across the full graph, 11/109 edges now have bounded reviews; 0 contract-verified and 0 runtime-verified edges.
 - Review evidence and limitations are recorded per edge in `edges.json`; see `coverage.json` for counts. These reviews do not certify uninspected files or branches.
